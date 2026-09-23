@@ -1,0 +1,12 @@
+<svg width="240" height="160" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Detail/Crop marks">
+<rect id="Mark" width="16" height="1.5" fill="#133FAA"/>
+<rect id="Mark_2" width="1.5" height="16" fill="#133FAA"/>
+<rect id="Mark_3" x="224" width="16" height="1.5" fill="#133FAA"/>
+<rect id="Mark_4" x="238.5" width="1.5" height="16" fill="#133FAA"/>
+<rect id="Mark_5" y="158.5" width="16" height="1.5" fill="#133FAA"/>
+<rect id="Mark_6" y="144" width="1.5" height="16" fill="#133FAA"/>
+<rect id="Mark_7" x="224" y="158.5" width="16" height="1.5" fill="#133FAA"/>
+<rect id="Mark_8" x="238.5" y="144" width="1.5" height="16" fill="#133FAA"/>
+</g>
+</svg>

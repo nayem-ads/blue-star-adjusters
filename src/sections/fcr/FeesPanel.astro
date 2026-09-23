@@ -1,0 +1,25 @@
+---
+// Panel / How fees work: desktop sidebar card 73:2737 (white, line stroke, p32) and mobile panel 74:4364 (paper, px20 py24).
+// Locked fee wording, no percentage figure anywhere.
+import IconCircle from './IconCircle.astro';
+interface Props { variant: 'd'|'m'; node?: string; id?: string }
+const { variant, node, id } = Astro.props;
+const d = variant === 'd';
+---
+{d
+  ? <div class="bg-white border border-line rounded-[4px] p-[32px] flex flex-col gap-[16px] items-start" data-node={node}>
+      <div class="flex gap-[16px] items-center">
+        <IconCircle name="shield" tone="paper" />
+        <h2 id={id} class="m-0 t-h3 text-navy whitespace-nowrap">How fees work</h2>
+      </div>
+      <p class="m-0 t-body-strong text-ink">No upfront cost. We’re paid a percentage of what we recover.</p>
+      <p class="m-0 font-body font-medium text-[15px] leading-[24px] text-ink">The percentage is set in writing before we start. In California, our fee can never leave you with less than your insurer had already paid before you hired us.</p>
+    </div>
+  : <div class="bg-paper rounded-[4px] px-[20px] py-[24px] flex flex-col gap-[12px] items-start w-full" data-node-m={node}>
+      <div class="flex gap-[12px] items-center">
+        <IconCircle name="shield" />
+        <h2 id={id} class="m-0 tm-h3 text-navy whitespace-nowrap">How fees work</h2>
+      </div>
+      <p class="m-0 tm-body-strong text-ink">No upfront cost. We’re paid a percentage of what we recover.</p>
+      <p class="m-0 tm-body text-ink">The percentage is set in writing before we start. In California, our fee can never leave you with less than your insurer had already paid before you hired us.</p>
+    </div>}

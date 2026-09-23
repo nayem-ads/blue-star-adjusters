@@ -1,0 +1,8 @@
+55:170 claim types (condensed). bg paper flex gap40 px80 py120. Two cols flex-1 gap32:
+img h360 (wood-house / apartment). copy col gap20 pr40: icon circle 48 white radius24 icon24 (home/building, navy); H2 48/54 navy "Your Home.<br>Fully Recovered." / "Your Business.<br>Fully Recovered."; body 17/28 ink.
+ Res: "When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won’t let the carrier set the scope."
+ Com: "Commercial claims are more complex: more code requirements, more stakeholders, more ways for carriers to undervalue the loss. Michael’s development background means nothing gets missed."
+list: items border-t line, py12 gap12 items-center; check 20 + 17/28 regular navy.
+ Res: Fire, wildfire & smoke losses / Water & plumbing failures / Trees & falling-object damage / Collapse: snow load & structural / Ordinance of law & code upgrades / Contents valuation & inventory / Additional living expenses (ALE) / Lead, asbestos & mold remediation analysis
+ Com: Fire, water & structural losses / Business interruption & loss of income / Dependent-property / contingent BI / Equipment breakdown & failure claims / Ordinance of law & seismic code upgrades / Rebuild cost estimating & Xactimate / IH report interpretation & remediation / Litigation support & demand packaging
+link: SemiBold 17/28 royal + arrow 24 gap8: "Homeowner claims" / "Business claims".

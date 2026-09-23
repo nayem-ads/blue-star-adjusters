@@ -1,0 +1,6 @@
+get_design_context 74:4077 (Section / Commercial, mobile) — condensed
+Section bg navy flex-col gap24 pt64 pb56 px20. Faint white logo mark abs left 190 top 0 280x340.
+Order: Eyebrow dark "Commercial claims"; H2 32/36 white; Lead Montserrat 18/28 white (same copy);
+ IMG ai-commercial-fire 350x240; Photo pair gap16: business-interruption 167x160, apartment 167x160;
+ Body 16/26 white (same copy); List (white hairlines, items gap16 py16, icon circle border white, text 16/26 with SemiBold lead-in; same 5 items);
+ CTA stack pt8 gap12 full width h56: On-dark "Schedule a Free Review"; Outline on-dark phone "Call (916) 507-1005". (No tagline rule on mobile.)

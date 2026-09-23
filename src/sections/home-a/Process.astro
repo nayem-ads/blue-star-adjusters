@@ -1,0 +1,49 @@
+---
+// Process: 5 steps. Desktop 56:160 (horizontal timeline), mobile 63:635 (ruled rows).
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import Button from '../../components/Button.astro';
+import { ROUTES } from '../../data/site';
+const steps = [
+  { n: '01', icon: 'phone', title: 'Free review', body: 'Discuss your claim with our team at no cost or obligation.', d: ['56:163', '56:164', '56:165', '56:166'], m: ['63:638', '63:639', '63:641', '63:642'] },
+  { n: '02', icon: 'document', title: 'Policy review', body: 'We identify all avenues of recovery available under your policy.', d: ['56:167', '56:168', '56:169', '56:170'], m: ['63:643', '63:644', '63:646', '63:647'] },
+  { n: '03', icon: 'ruler', title: 'Scope the loss', body: 'We take part in determining the full scope of your loss from day one.', d: ['56:171', '56:172', '56:173', '56:174'], m: ['63:648', '63:649', '63:651', '63:652'] },
+  { n: '04', icon: 'search', title: 'Build your claim', body: 'We prepare and present a detailed, itemized claim package on your behalf.', d: ['56:175', '56:176', '56:177', '56:178'], m: ['63:653', '63:654', '63:656', '63:657'] },
+  { n: '05', icon: 'shield', title: 'Maximize settlement', body: 'We negotiate proactively to get you the most money as fast as possible.', d: ['56:179', '56:180', '56:181', '56:182'], m: ['63:658', '63:659', '63:661', '63:662'] },
+];
+---
+<section aria-labelledby="process-title" class="relative bg-navy text-white overflow-hidden" data-node="56:160" data-node-m="63:635">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col items-start gap-[32px] lg:gap-[64px]">
+    <span aria-hidden="true" class="proc-bmark absolute pointer-events-none opacity-[.06]"><Logo variant="mark-white" bare width={428.294} height={520} class="w-full h-full" label="" /></span>
+    <h2 id="process-title" class="relative m-0 tm-h2 lg:t-h2 lg:w-[720px]" data-node="56:161" data-node-m="63:636">Why Starting Early<br class="hidden lg:inline" /> Makes All the Difference</h2>
+    <ol class="steps relative m-0 p-0 list-none w-full flex flex-col lg:flex-row lg:gap-[24px]" data-node="56:162" data-node-m="63:637">
+      {steps.map((s, i) => (
+        <li class="step relative flex items-start gap-[16px] pt-[20px] pb-[20px] border-t border-white max-lg:last:border-b lg:border-0 lg:flex-1 lg:min-w-0 lg:flex-col lg:gap-[12px] lg:pt-[24px] lg:pb-0" data-node={s.d[0]} data-node-m={s.m[0]}>
+          <span aria-hidden="true" class:list={['dot hidden lg:block absolute left-0 -top-[5px] w-[11px] h-[11px] rounded-full border border-white', i === 0 ? 'bg-white' : 'bg-navy']}></span>
+          <div class="contents lg:flex lg:items-center lg:justify-between lg:w-full">
+            <span class="tm-h3 lg:t-h3 w-[40px] shrink-0 lg:w-auto" data-node={s.d[1]} data-node-m={s.m[1]}>{s.n}</span>
+            <Icon name={s.icon} size={24} class="order-last lg:order-none shrink-0" />
+          </div>
+          <div class="flex-1 min-w-0 flex flex-col gap-[4px] lg:contents">
+            <h3 class="m-0 w-full tm-body-strong lg:t-body-strong" data-node={s.d[2]} data-node-m={s.m[2]}>{s.title}</h3>
+            <p class="m-0 w-full tm-body lg:text-[15px] lg:leading-[24px] lg:font-medium" data-node={s.d[3]} data-node-m={s.m[3]}>{s.body}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+    <div class="relative flex flex-col items-start gap-[32px] w-full lg:w-auto lg:flex-row lg:items-center lg:gap-[40px]" data-node="56:183">
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="56:184" data-node-m="63:663">Schedule a Free Review</Button>
+      <a href="/how-it-works/" class="arrow-link flex items-center gap-[8px] h-[44px] lg:h-[28px] tm-body-strong lg:t-body-strong text-white" data-node="56:189" data-node-m="63:668"><span>How It Works</span><Icon name="arrow-right" size={24} /></a>
+    </div>
+  </div>
+</section>
+<style>
+  .steps::before { content: none; }
+  @media (min-width: 1024px) {
+    .steps::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: #fff; }
+  }
+  .proc-bmark { left: 180px; top: 724px; width: 329px; height: 400px; }
+  @media (min-width: 1024px) { .proc-bmark { left: 860px; top: 260px; width: 428.294px; height: 520px; } }
+  .arrow-link { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color .15s ease; }
+  .arrow-link:hover, .arrow-link:focus-visible { text-decoration-color: currentColor; }
+</style>

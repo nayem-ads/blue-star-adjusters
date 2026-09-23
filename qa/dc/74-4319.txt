@@ -1,0 +1,3 @@
+get_design_context 74:4319 (What happens next section, mobile): bg navy col gap32 pt64 pb56 px20. Watermark abs left160 top40 345.6x419.6.
+Tagline rule: rules 32x1 white, gap16, "Your Claim. Our Fight." tm-label white. H2 "What happens next" tm-h2 white.
+Steps: gap16; circle 44 border white r22, icon 24; connectors as desktop; text pt8 pb32 gap4: label tm-label (12/16 .24), text tm-body-strong white.

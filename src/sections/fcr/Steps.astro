@@ -1,0 +1,41 @@
+---
+// "What happens next" steps (73:2704 desktop panel, 74:4330 mobile section). variant d = 40px circles, 13/17 type;
+// m = 44px circles, 12/16 type. ty = post-submit state (74:2193 / 74:4828): step 1 gets a white circle and a "Next" pill.
+import IconCircle from './IconCircle.astro';
+interface Props { variant: 'd'|'m'; ty?: boolean; nodes?: string[] }
+const { variant, ty = false, nodes = [] } = Astro.props;
+const d = variant === 'd';
+const steps = [
+  { icon: 'phone', label: 'Step 1', text: 'We call you.' },
+  { icon: 'document', label: 'Step 2', text: 'We read your policy and the carrier’s letters.' },
+  { icon: 'search', label: 'Step 3', text: 'We tell you whether we can add value, and why.' },
+];
+const label = d ? 't-label' : 'tm-label';
+---
+<ol class="relative flex flex-col w-full m-0 p-0 list-none">
+  {steps.map((s, i) => {
+    const last = i === steps.length - 1;
+    const next = ty && i === 0;
+    return (
+      <li class="flex gap-[16px] items-start" data-node={d ? nodes[i] : undefined} data-node-m={d ? undefined : nodes[i]}>
+        <div aria-hidden="true" class:list={['flex flex-col items-center shrink-0', !last && 'self-stretch']}>
+          <IconCircle name={s.icon} size={d ? 40 : 44} tone={next ? 'solid-white' : 'ghost'} />
+          {!last && <>
+            <span class="block w-px flex-1 bg-white"></span>
+            <span class="block size-[5px] rounded-full bg-white shrink-0"></span>
+            <span class="block w-px h-[8px] bg-white shrink-0"></span>
+          </>}
+        </div>
+        <div class:list={['flex-1 min-w-0 flex flex-col gap-[4px] pt-[8px] text-white', !last && 'pb-[32px]']}>
+          {next
+            ? <p class="m-0 flex items-center gap-[8px]">
+                <span class:list={['bg-white text-navy rounded-[4px] px-[8px] py-[4px]', label]}>Next</span>
+                <span class:list={['self-stretch', label]}>{s.label}</span>
+              </p>
+            : <p class:list={['m-0', label]}>{s.label}</p>}
+          <p class:list={['m-0', d ? 't-body-strong' : 'tm-body-strong']}>{s.text}</p>
+        </div>
+      </li>
+    );
+  })}
+</ol>

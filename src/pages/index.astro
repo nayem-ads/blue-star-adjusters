@@ -1,0 +1,48 @@
+---
+// Home A (Figma desktop 22:62, mobile 58:463). Indexable main homepage.
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CallBar from '../components/CallBar.astro';
+import Hero from '../sections/home-a/Hero.astro';
+import Results from '../sections/home-a/Results.astro';
+import WhyNow from '../sections/home-a/WhyNow.astro';
+import ClaimsIndex from '../sections/home-a/ClaimsIndex.astro';
+import Founder from '../sections/home-a/Founder.astro';
+import WhoWeAre from '../sections/home-a/WhoWeAre.astro';
+import ClaimTypes from '../sections/home-a/ClaimTypes.astro';
+import Process from '../sections/home-a/Process.astro';
+import Comparison from '../sections/home-a/Comparison.astro';
+import WhoWeServe from '../sections/home-a/WhoWeServe.astro';
+import Offices from '../sections/home-a/Offices.astro';
+import FinalCta from '../sections/home-a/FinalCta.astro';
+const title = 'The New Way to Settle Claims | Blue Star Adjusters';
+const description = 'Blue Star Adjusters exists because the old way wasn’t good enough. Licensed public adjusters. No upfront cost. You have final say on any settlement.';
+---
+<Base title={title} description={description}>
+  <div class="absolute top-0 left-0 right-0" data-node="53:74" data-node-m="58:468"><Header theme="dark" overlay={false} /></div>
+  <main class="bs-home-a">
+    <Hero />
+    <Results />
+    <WhyNow />
+    <ClaimsIndex />
+    <Founder />
+    <WhoWeAre />
+    <ClaimTypes />
+    <Process />
+    <Comparison />
+    <WhoWeServe />
+    <Offices />
+    <FinalCta />
+  </main>
+  <div data-node="57:316" data-node-m="63:736"><Footer /></div>
+  <CallBar />
+</Base>
+
+<style is:global>
+  /* Chrome rounds Montserrat 16/26, 18/28 and the mobile Schibsted headings 1px higher than Figma
+     (baseline rounding). Nudge those glyphs down 1px below lg; boxes are unchanged. Same fix as the other pages. */
+  @media (max-width: 1023.98px) {
+    .bs-home-a :where(.tm-body, .tm-body-strong, .tm-lead, .tm-h2, .tm-h3, .tm-display) { position: relative; top: 1px; }
+  }
+</style>

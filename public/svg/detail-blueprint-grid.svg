@@ -1,0 +1,35 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Detail/Blueprint grid" clip-path="url(#clip0_37_70)">
+<rect id="V" opacity="0.08" width="1" height="400" fill="#133FAA"/>
+<rect id="V_2" opacity="0.08" x="40" width="1" height="400" fill="#133FAA"/>
+<rect id="V_3" opacity="0.08" x="80" width="1" height="400" fill="#133FAA"/>
+<rect id="V_4" opacity="0.08" x="120" width="1" height="400" fill="#133FAA"/>
+<rect id="V_5" opacity="0.08" x="160" width="1" height="400" fill="#133FAA"/>
+<rect id="V_6" opacity="0.08" x="200" width="1" height="400" fill="#133FAA"/>
+<rect id="V_7" opacity="0.08" x="240" width="1" height="400" fill="#133FAA"/>
+<rect id="V_8" opacity="0.08" x="280" width="1" height="400" fill="#133FAA"/>
+<rect id="V_9" opacity="0.08" x="320" width="1" height="400" fill="#133FAA"/>
+<rect id="V_10" opacity="0.08" x="360" width="1" height="400" fill="#133FAA"/>
+<rect id="V_11" opacity="0.08" x="400" width="1" height="400" fill="#133FAA"/>
+<rect id="V_12" opacity="0.08" x="440" width="1" height="400" fill="#133FAA"/>
+<rect id="V_13" opacity="0.08" x="480" width="1" height="400" fill="#133FAA"/>
+<rect id="V_14" opacity="0.08" x="520" width="1" height="400" fill="#133FAA"/>
+<rect id="V_15" opacity="0.08" x="560" width="1" height="400" fill="#133FAA"/>
+<rect id="V_16" opacity="0.08" x="600" width="1" height="400" fill="#133FAA"/>
+<rect id="H" opacity="0.08" width="640" height="1" fill="#133FAA"/>
+<rect id="H_2" opacity="0.08" y="40" width="640" height="1" fill="#133FAA"/>
+<rect id="H_3" opacity="0.08" y="80" width="640" height="1" fill="#133FAA"/>
+<rect id="H_4" opacity="0.08" y="120" width="640" height="1" fill="#133FAA"/>
+<rect id="H_5" opacity="0.08" y="160" width="640" height="1" fill="#133FAA"/>
+<rect id="H_6" opacity="0.08" y="200" width="640" height="1" fill="#133FAA"/>
+<rect id="H_7" opacity="0.08" y="240" width="640" height="1" fill="#133FAA"/>
+<rect id="H_8" opacity="0.08" y="280" width="640" height="1" fill="#133FAA"/>
+<rect id="H_9" opacity="0.08" y="320" width="640" height="1" fill="#133FAA"/>
+<rect id="H_10" opacity="0.08" y="360" width="640" height="1" fill="#133FAA"/>
+</g>
+<defs>
+<clipPath id="clip0_37_70">
+<rect width="640" height="400" fill="white"/>
+</clipPath>
+</defs>
+</svg>

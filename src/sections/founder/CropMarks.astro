@@ -1,0 +1,12 @@
+---
+// Detail / Crop marks (71:533): four royal 16px corner marks, 1.5px thick. Position/size via class (absolute).
+interface Props { class?: string; node?: string; nodeM?: string }
+const { class: cls = '', node, nodeM } = Astro.props;
+const m = 'absolute bg-royal';
+---
+<div aria-hidden="true" class:list={['pointer-events-none', cls]} data-node={node} data-node-m={nodeM}>
+  <span class={`${m} left-0 top-0 w-[16px] h-[1.5px]`}></span><span class={`${m} left-0 top-0 w-[1.5px] h-[16px]`}></span>
+  <span class={`${m} right-0 top-0 w-[16px] h-[1.5px]`}></span><span class={`${m} right-0 top-0 w-[1.5px] h-[16px]`}></span>
+  <span class={`${m} left-0 bottom-0 w-[16px] h-[1.5px]`}></span><span class={`${m} left-0 bottom-0 w-[1.5px] h-[16px]`}></span>
+  <span class={`${m} right-0 bottom-0 w-[16px] h-[1.5px]`}></span><span class={`${m} right-0 bottom-0 w-[1.5px] h-[16px]`}></span>
+</div>

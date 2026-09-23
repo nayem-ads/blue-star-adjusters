@@ -1,0 +1,12 @@
+56:277 Section / Founder DESKTOP condensed. bg navy flex gap24 pt120 pb96 px80.
+73:2265 B-mark (faint) absolute left686.98 top340 593.022x720 (svg).
+Index 56:278: "Founder" white Medium 15/20, rule white 48x2.
+Content 928: Founder row flex gap64:
+ Media 85:3134 flex-col: Print/mike 416x500 bg white border 1 line; tab navy 56x12 left31 top-13 rounded-t3; photo left11 top11 392x476 I56:285;41:71 (alt: Michael Rapport, Founding Principal of Blue Star Adjusters.)
+  gap56 / chips flex-wrap gap12: border white rounded4 pl12 pr16 py8 gap8; icon white 24; Medium 15/24 white: ruler "25 years as a developer and builder"; shield "CA DOI License No. 2B60428"
+  gap24 / CTAs flex-wrap gap12: Button On-dark "Schedule a Free Review with Michael"; Button Outline on-dark "Meet Michael".
+ Text 56:288 w448 flex-col: Tagline rule flex gap12 items-center: rule 32x1 white, Montserrat Medium 13/18 .26 white "Your Claim. Our Fight.", rule / gap24
+  H2 t-h2 white "Built From the Ground Up." / gap24 / body 17/28 white "Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco's seismic retrofit ordinance, and he knows what a code-compliant rebuild costs because he's paid for plenty of them."
+  gap40 / glyph Schibsted Bold 72/56 white "“" / gap8 / quote Montserrat 20/32 white "“I've stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”"
+  gap24 / "Michael Rapport" SemiBold 17/28 white / Medium 15/24 white "Founding Principal, Blue Star Adjusters." + "Principal, MSR Properties."
+73:2291 Crop marks absolute left256 top104 448x532: 8 white marks 16x1.5 / 1.5x16 at corners.

@@ -1,0 +1,23 @@
+get_design_context 74:707 (Section / Callouts, desktop) — condensed
+Section bg white, flex gap 64 px80 py120.
+Left 74:708 w640 flex-col gap 24:
+ Photo 640x424: IMG stair-detail 616x400 at (12,12) alt "Exposed structural framing at a stair, opened up for inspection"; crop marks full 640x424.
+ Callout label pt16 gap12 items-center: icon circle 40 border 1 navy (ruler) + Montserrat SemiBold 13/18 .26 ink "Code upgrades"
+ H3 28/34 navy "You Can't Rebuild It the Way It Was. The City Won't Let You."
+ Body 17/28 ink "We identify and quantify code upgrade costs that may be covered under your policy, a significant source of recovery that most homeowners and insurance company adjusters miss entirely."
+ List: line hairlines; items py16 text 17/28 ink with SemiBold lead-in:
+  "What the city will require:" " energy code, fire sprinklers, accessibility, seismic bracing."
+  "Undamaged portions" " that must come up to code because the damaged part does."
+  "Where the money is:" " ordinance or law coverage (often an endorsement, with its own limit), demolition, increased cost of construction."
+ Pull quote pt16 flex gap 20: glyph “ Schibsted Bold 64/68 -1.28 royal ; text Montserrat 20/32 ink "Michael has built to San Francisco's seismic retrofit ordinance. Ordinance-of-law and code-upgrade triggers other adjusters miss are his specialty."
+Right 74:742 w416 flex-col gap 20:
+ IMG ai-contents 416x240 alt "Household contents laid out for a room-by-room inventory"; Rule heavy 2px navy;
+ label: icon circle 40 bg paper (search) + "Contents & Valuables" (13/18 SemiBold ink)
+ 17/28 ink "An estate owner had recovered $6 million on his own and stalled on fine wine and art."
+ Figures flex gap 32: each flex-1 gap 4: Schibsted Medium 64/64 -1.28 navy "$11M" / "$5.2M"; Montserrat Medium 15/24 ink "Structure settled" / "More for contents"
+ Disclaimer Montserrat Medium 12/16 .12 ink "Results reflect specific losses and policies. Past results don't guarantee a similar outcome."
+ Link gap8: Montserrat Medium 15/20 royal "Contents & Valuables claims" + arrow 24
+ Hairline line; label icon circle paper (flame) "Fire & Smoke"
+ Result: border-t line pt24 flex-col gap8: Montserrat SemiBold 15/24 ink "Fire & Smoke, Palisades fire, full strip-out"; struck Schibsted SemiBold 28/34 -0.28 ink "$38,000"; Schibsted Medium 64/64 navy "$276,000"
+ Disclaimer again.
+ Panel: bg paper border line r4 p24 gap16: row gap16: document icon 24 + 17/28 ink "Room-by-room inventory built from our databases, your photos and purchase records."; Outline button "Schedule a Free Review".

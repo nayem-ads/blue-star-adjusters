@@ -1,0 +1,6 @@
+53:199 Intro (desktop hero). Condensed from get_design_context:
+flex-col items-start. Eyebrow Light "Your Claim. Our Fight." / gap16 / H1 53:204 Schibsted Bold 64/68 -1.28px navy "The New Way to Settle Claims."
+gap16 / Lead 53:206 Montserrat 400 20/32 ink "We level the playing field." / gap32
+CTAs 53:208 flex gap16: Button Solid "Schedule a Free Review"; Button Outline showIcon(phone) "Call (916) 507-1005"
+gap16 / Trust 53:219 Montserrat Medium 15/24 ink, 3 lines:
+"No upfront cost. We're paid a percentage of what we recover." / "You always have final say on any settlement." / "CA DOI License No. 2B60428."

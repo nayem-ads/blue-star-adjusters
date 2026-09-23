@@ -1,0 +1,19 @@
+---
+// Mobile only: Section / What happens next (navy) 74:4319 (thank-you 74:4820).
+import Steps from './Steps.astro';
+import Watermark from './Watermark.astro';
+interface Props { ty?: boolean }
+const { ty = false } = Astro.props;
+---
+<section aria-labelledby="fcr-next-m" class="lg:hidden relative overflow-hidden bg-navy text-white" data-node-m={ty ? '74:4820' : '74:4319'}>
+  <Watermark width={345.6} height={419.6} class="left-[160px] top-[40px]" />
+  <div class="relative flex flex-col gap-[32px] items-start px-[20px] pt-[64px] pb-[56px]">
+    <p class="m-0 flex items-center gap-[16px] tm-label whitespace-nowrap" data-node-m={ty ? '74:4822' : '74:4325'}>
+      <span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>Your Claim. Our Fight.<span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>
+    </p>
+    <h2 id="fcr-next-m" class="m-0 tm-h2 w-full" data-node-m={ty ? '74:4826' : '74:4329'}>What happens next</h2>
+    <div class="w-full" data-node-m={ty ? '74:4827' : '74:4330'}>
+      <Steps variant="m" ty={ty} nodes={ty ? ['74:4828', '74:4838', '74:4848'] : ['74:4331', '74:4342', '74:4354']} />
+    </div>
+  </div>
+</section>

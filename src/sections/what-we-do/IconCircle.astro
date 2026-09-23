@@ -1,0 +1,16 @@
+---
+// Figma "Icon circle": 40px circle holding a 24px icon. Variants seen on What We Do:
+//   outline = 1px navy ring (navy icon) · paper / white = filled circle (navy icon) · outline-white = 1px white ring on navy.
+import Icon from '../../components/Icon.astro';
+interface Props { icon: string; variant?: 'outline'|'paper'|'white'|'outline-white'; class?: string; node?: string; nodeM?: string }
+const { icon, variant = 'paper', class: cls = '', node, nodeM } = Astro.props;
+const look = {
+  outline: 'border border-navy text-navy',
+  paper: 'bg-paper text-navy',
+  white: 'bg-white text-navy',
+  'outline-white': 'border border-white text-white',
+}[variant];
+---
+<span aria-hidden="true" class:list={['flex items-center justify-center shrink-0 size-[40px] rounded-full box-border', look, cls]} data-node={node} data-node-m={nodeM}>
+  <Icon name={icon} size={24} />
+</span>

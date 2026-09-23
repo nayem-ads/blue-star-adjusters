@@ -1,0 +1,62 @@
+---
+// FormField: Figma Form field set 39:122. Single (39:92 default / 39:97 focus / 39:102 error), Multi = textarea
+// (39:107 / 39:112 / 39:117). text, email, tel and select all use the Single style.
+// Wrapper keeps data-field and data-state="default|error" (src/scripts/forms.ts toggles it on validation).
+// Focus = :focus-within (2px royal + 3px line ring). Error = [data-state=error]: 2px error border, helper hidden,
+// error text shown in the helper slot in the error colour (as in 39:102). state="focus" forces the focus look (QA).
+// Width fills its container (Figma instances are 400 wide inside their form column).
+import Icon from './Icon.astro';
+interface Props { label: string; name: string; type?: 'text'|'email'|'tel'|'textarea'|'select'; required?: boolean; placeholder?: string; helper?: string; error?: string; options?: string[]; autocomplete?: string; state?: 'default'|'focus'|'error'; class?: string; node?: string; rows?: number; id?: string; value?: string }
+const { label, name, type = 'text', required = false, placeholder = '', helper, error = 'This field is required.', options = [], autocomplete, state = 'default', class: cls = '', node, rows = 4, id: idProp, value } = Astro.props;
+const id = idProp ?? `f-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+const helpId = `${id}-help`, errId = `${id}-err`;
+const describedBy = [helper && helpId, errId].filter(Boolean).join(' ');
+const invalid = state === 'error' ? 'true' : undefined;
+---
+<div data-field data-state={state} class:list={['bs-field', cls]} data-node={node}>
+  <label for={id} class="bs-field__label">{label}</label>
+  {type === 'textarea'
+    ? <textarea id={id} name={name} required={required} placeholder={placeholder} rows={rows} aria-describedby={describedBy} aria-invalid={invalid} class="bs-field__control bs-field__control--multi">{value}</textarea>
+    : type === 'select'
+      ? <div class="bs-field__select">
+          <select id={id} name={name} required={required} autocomplete={autocomplete} aria-describedby={describedBy} aria-invalid={invalid} class="bs-field__control">
+            {placeholder && <option value="" selected={!value} disabled={required}>{placeholder}</option>}
+            {options.map((o) => <option value={o} selected={o === value}>{o}</option>)}
+          </select>
+          <Icon name="chevron-down" size={20} class="bs-field__chevron" />
+        </div>
+      : <input id={id} name={name} type={type} required={required} placeholder={placeholder} autocomplete={autocomplete} value={value} aria-describedby={describedBy} aria-invalid={invalid} class="bs-field__control" />}
+  {helper && <p id={helpId} class="bs-field__helper" data-helper>{helper}</p>}
+  <p id={errId} class="bs-field__error" data-error-text aria-live="polite">{error}</p>
+</div>
+
+<style is:global>
+  @layer theme, base, components, utilities;
+  @layer components {
+  .bs-field { display: flex; flex-direction: column; align-items: stretch; gap: 8px; min-width: 0; }
+  .bs-field__label { font-family: var(--font-body); font-weight: 600; font-size: 15px; line-height: 20px; color: var(--color-navy); }
+  .bs-field__control {
+    display: block; box-sizing: border-box; width: 100%; height: 52px; margin: 0; padding: 0 16px;
+    border: 0; border-radius: 10px; background: #fff; color: var(--color-ink); outline: none;
+    font-family: var(--font-body); font-weight: 400; font-size: 16px; line-height: 24px;
+    /* Figma strokes are inside: inset shadow keeps text at 16px regardless of 1.5px / 2px stroke */
+    box-shadow: inset 0 0 0 1.5px var(--color-muted);
+    transition: box-shadow .15s ease;
+    -webkit-appearance: none; appearance: none;
+  }
+  .bs-field__control::placeholder { color: var(--color-muted); opacity: 1; }
+  .bs-field__control--multi { height: 128px; padding: 14px 16px; resize: none; }
+  .bs-field__select { position: relative; }
+  .bs-field__select .bs-field__control { padding-right: 48px; cursor: pointer; }
+  .bs-field__select .bs-field__control:has(option[value=""]:checked) { color: var(--color-muted); }
+  .bs-field__chevron { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--color-navy); pointer-events: none; }
+  .bs-field__helper, .bs-field__error { margin: 0; font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 20px; color: var(--color-ink); }
+  .bs-field__error { display: none; color: var(--color-error); }
+
+  .bs-field:focus-within .bs-field__control, .bs-field[data-state="focus"] .bs-field__control { box-shadow: inset 0 0 0 2px var(--color-royal), 0 0 0 3px var(--color-line); }
+  .bs-field[data-state="error"] .bs-field__control { box-shadow: inset 0 0 0 2px var(--color-error); }
+  .bs-field[data-state="error"]:focus-within .bs-field__control { box-shadow: inset 0 0 0 2px var(--color-error), 0 0 0 3px var(--color-line); }
+  .bs-field[data-state="error"] .bs-field__helper { display: none; }
+  .bs-field[data-state="error"] .bs-field__error { display: block; }
+  }
+</style>

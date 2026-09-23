@@ -1,0 +1,55 @@
+---
+// What We Do / Denied or underpaid + CTA. Desktop 74:764 (1280×1043), mobile 74:4198 (390×1646).
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import IconCircle from './IconCircle.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const questions = [
+  { icon: 'ruler', lead: 'Scope:', rest: ' was everything measured? Heat damage, code upgrades, hidden water.', d: ['74:802', '74:803', '74:807'], m: ['74:4206', '74:4207', '74:4211'] },
+  { icon: 'document', lead: 'Reassignment:', rest: ' every new adjuster restarts the file. We keep one record and one scope, and send it to each of them.', d: ['74:809', '74:810', '74:814'], m: ['74:4213', '74:4214', '74:4218'] },
+  { icon: 'search', lead: 'Wording:', rest: ' which policy language did the letter cite, and what does it actually say?', d: ['74:816', '74:817', '74:821'], m: ['74:4220', '74:4221', '74:4225'] },
+  { icon: 'shield', lead: 'Appraisal:', rest: " California's standard fire policy lets either side request appraisal in writing when you disagree on the amount of loss. Appraisal decides the amount. It doesn't decide coverage.", d: ['74:823', '74:824', '74:828'], m: ['74:4227', '74:4228', '74:4232'] },
+];
+const facts = [
+  { icon: 'shield', text: "No upfront cost. We're paid a percentage of what we recover.", d: ['74:835', '74:839'], m: ['74:4239', '74:4243'] },
+  { icon: 'check', text: 'You always have final say on any settlement.', d: ['74:841', '74:844'], m: ['74:4245', '74:4248'] },
+  { icon: 'document', text: 'We represent the insured only.', d: ['74:846', '74:850'], m: ['74:4250', '74:4254'] },
+  { icon: 'shield', text: 'CA DOI License No. 2B60428', d: ['74:852', '74:856'], m: ['74:4256', '74:4260'] },
+];
+---
+<section aria-labelledby="wwd-denied-title" class="relative overflow-hidden bg-paper" data-node="74:764" data-node-m="74:4198">
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[24px] px-[20px] py-[64px] lg:flex-row lg:items-start lg:gap-[96px] lg:px-[80px] lg:py-[120px]">
+    <img src="/svg/detail-blueprint-grid.svg" width="432" height="200" alt="" aria-hidden="true" loading="lazy"
+      class="hidden lg:block absolute left-[768px] top-[747px] w-[432px] h-[200px] opacity-40 pointer-events-none" data-node="74:765" />
+    <div class="relative flex flex-col items-start gap-[24px] w-full lg:flex-[0_1_592px] lg:min-w-0" data-node="74:794">
+      <div class="w-fit" data-node="74:795" data-node-m="74:4199"><Eyebrow>Second opinion</Eyebrow></div>
+      <h2 id="wwd-denied-title" class="m-0 w-full text-navy tm-h2 lg:t-h2" data-node="74:798" data-node-m="74:4202">Denied or Underpaid. Measure It Again.</h2>
+      <p class="m-0 w-full text-ink tm-lead lg:t-lead" data-node="74:799" data-node-m="74:4203">A denial letter or a low offer isn't always final. A second look at scope, coverage language and deadlines.</p>
+      <ul class="m-0 p-0 list-none w-full border-t border-line" data-node="74:800" data-node-m="74:4204">
+        {questions.map((q) => (
+          <li class="flex items-start gap-[16px] py-[16px] border-b border-line lg:gap-[20px] lg:py-[20px]" data-node={q.d[0]} data-node-m={q.m[0]}>
+            <IconCircle icon={q.icon} variant="white" node={q.d[1]} nodeM={q.m[1]} />
+            <p class="flex-1 min-w-0 m-0 text-ink tm-body lg:t-body" data-node={q.d[2]} data-node-m={q.m[2]}><strong class="font-semibold">{q.lead}</strong>{q.rest}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="m-0 w-full text-ink font-body font-medium text-[16px] leading-[26px] lg:text-[15px] lg:leading-[24px]" data-node="74:830" data-node-m="74:4234"><strong class="font-semibold">Public adjuster or attorney?</strong> We measure, document and negotiate the claim. We don't give legal advice. When a claim needs counsel, we say so and work alongside them.</p>
+    </div>
+    <aside aria-labelledby="wwd-facts-title" class="relative flex flex-col gap-[20px] w-full px-[24px] py-[32px] bg-navy text-white rounded-[4px] lg:flex-[0_1_432px] lg:min-w-0 lg:gap-[24px] lg:px-[40px] lg:py-[48px]" data-node="74:831" data-node-m="74:4235">
+      <h2 id="wwd-facts-title" class="m-0 w-full tm-h3 lg:t-h3" data-node="74:832" data-node-m="74:4236">Your Claim. Our Fight.</h2>
+      <ul class="m-0 p-0 list-none w-full border-t border-white" data-node="74:833" data-node-m="74:4237">
+        {facts.map((f) => (
+          <li class="flex items-start gap-[12px] py-[16px] border-b border-white lg:items-center lg:gap-[16px]" data-node={f.d[0]} data-node-m={f.m[0]}>
+            <Icon name={f.icon} size={24} class="shrink-0 text-white" />
+            <span class="flex-1 min-w-0 font-body font-medium text-[16px] leading-[26px] lg:text-[15px] lg:leading-[24px]" data-node={f.d[1]} data-node-m={f.m[1]}>{f.text}</span>
+          </li>
+        ))}
+      </ul>
+      <div class="flex flex-col gap-[12px] w-full lg:pt-[8px]" data-node="74:858" data-node-m="74:4262">
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" full class="h-[56px] lg:h-[52px]" data-node="74:859" data-node-m="74:4263">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" full class="h-[56px] lg:h-[52px]" data-node="74:864" data-node-m="74:4267">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </aside>
+  </div>
+</section>

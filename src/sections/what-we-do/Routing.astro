@@ -1,0 +1,54 @@
+---
+// What We Do / Where claims go wrong. Desktop 73:932 (1280×871), mobile 74:3511 (390×1077).
+// Each line links to its claim page (best matching existing route; free claim review when no page exists yet).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import IconCircle from './IconCircle.astro';
+import ArrowLink from './ArrowLink.astro';
+import Ruler from './Ruler.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const routes = [
+  { icon: 'ruler', line: "The estimate won't rebuild the house.", label: 'Code Upgrades', href: ROUTES.freeClaimReview,
+    d: ['73:1014', '73:1015', '73:1019', '73:1020'], m: ['74:3542', '74:3543', '74:3548', '74:3549'] },
+  { icon: 'flame', line: 'The smoke will "clean out."', label: 'Fire & Smoke', href: '/claims/fire-smoke-damage/',
+    d: ['73:1025', '73:1026', '73:1030', '73:1031'], m: ['74:3554', '74:3555', '74:3560', '74:3561'] },
+  { icon: 'droplet', line: 'The water claim became a mold claim.', label: 'Water', href: '/claims/water-damage/',
+    d: ['73:1036', '73:1037', '73:1040', '73:1041'], m: ['74:3566', '74:3567', '74:3571', '74:3572'] },
+  { icon: 'document', line: 'The adjuster changed three times.', label: 'Denied or Underpaid', href: '/claims/denied-or-underpaid/',
+    d: ['73:1046', '73:1047', '73:1051', '73:1052'], m: ['74:3577', '74:3578', '74:3583', '74:3584'] },
+  { icon: 'search', line: 'The fine art was priced like furniture.', label: 'Contents', href: ROUTES.freeClaimReview,
+    d: ['73:1057', '73:1058', '73:1062', '73:1063'], m: ['74:3589', '74:3590', '74:3595', '74:3596'] },
+  { icon: 'home', line: 'The rental ends before the rebuild does.', label: 'Additional Living Expenses', href: ROUTES.freeClaimReview,
+    d: ['73:1068', '73:1069', '73:1073', '73:1074'], m: ['74:3601', '74:3602', '74:3607', '74:3608'] },
+];
+---
+<section aria-labelledby="wwd-routing-title" class="bg-white" data-node="73:932" data-node-m="74:3511">
+  <div class="max-w-[1280px] mx-auto flex flex-col gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:gap-[56px] lg:px-[80px] lg:pt-[96px] lg:pb-[96px]">
+    <Ruler class="w-full" node="73:933" nodeM="74:3512" />
+    <div class="contents lg:flex lg:items-start lg:gap-[80px]" data-node="73:1004">
+      <div class="contents lg:flex lg:flex-col lg:gap-[24px] lg:items-start lg:w-[368px] lg:shrink-0" data-node="73:1005">
+        <IconCircle icon="clock" variant="outline" node="73:1006" nodeM="74:3535" />
+        <h2 id="wwd-routing-title" class="m-0 text-navy tm-h2 lg:t-h2 lg:w-full" data-node="73:1010" data-node-m="74:3539">Our ability to affect your outcome diminishes with time.</h2>
+        <p class="hidden lg:block m-0 t-body text-ink w-full" data-node="73:1011">Each line links to its claim page.</p>
+        <div class="hidden lg:flex flex-col items-start gap-[16px] w-full p-[24px] bg-paper border border-line rounded-[4px]" data-node="85:3066">
+          <div class="flex items-start gap-[16px] w-full" data-node="85:3067">
+            <Icon name="phone" size={24} class="shrink-0 text-navy" />
+            <p class="flex-1 m-0 font-body font-medium text-[12px] leading-[15px] text-ink" data-node="85:3072">Call us first, and we can look at your claim the same day.</p>
+          </div>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="w-[235px]" node="85:3073">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+      <ul class="m-0 p-0 list-none flex flex-col w-full border-t border-line lg:flex-1 lg:min-w-0" data-node="73:1012" data-node-m="74:3540">
+        {routes.map((r) => (
+          <li class="flex items-start gap-[16px] py-[16px] border-b border-line lg:items-center lg:gap-[24px] lg:py-[24px]" data-node={r.d[0]} data-node-m={r.m[0]}>
+            <IconCircle icon={r.icon} variant="paper" node={r.d[1]} nodeM={r.m[1]} />
+            <div class="flex-1 min-w-0 flex flex-col items-start gap-[4px] lg:flex-row lg:items-center lg:gap-[24px]">
+              <p class="m-0 w-full tm-body text-ink lg:flex-1 lg:min-w-0 lg:t-lead" data-node={r.d[2]} data-node-m={r.m[2]}>{r.line}</p>
+              <ArrowLink href={r.href} class="min-h-[44px] lg:min-h-0 lg:w-[216px] lg:shrink-0" labelClass="tm-body-strong lg:flex-1 lg:min-w-0 lg:font-medium lg:text-[15px] lg:leading-[20px]" node={r.d[3]} nodeM={r.m[3]}>{r.label}</ArrowLink>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

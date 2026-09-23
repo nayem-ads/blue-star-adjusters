@@ -1,0 +1,4 @@
+Header/Desktop Dark 42:102: no bg, no border; flex h-88 items-center justify-between px-80 w-1280
+ Logo 42:103 white (mark 32.946x40 + gap 12 + wordmark 135.385x20)
+ Nav 42:112 gap-32 Montserrat Medium 15/20 white: What We Do | Our Founder | How It Works | Fees
+ Actions 42:118 gap-24: Phone (gap 8, icon 20 white, SemiBold 16/20 white "(916) 507-1005") + Button On-dark default

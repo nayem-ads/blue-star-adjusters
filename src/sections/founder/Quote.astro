@@ -1,0 +1,55 @@
+---
+// S5 Both sides of the plans — quote. Desktop 73:2993 (y 3839, 1280×1536); mobile M5 74:3278 (y 4400, 390×1456).
+// Desktop hangs the royal opening mark at x 44 (85:3327); mobile sets it inline in royal.
+import Button from '../../components/Button.astro';
+import Badge from './Badge.astro';
+import DimLine from './DimLine.astro';
+import Pic from './Pic.astro';
+import { ROUTES } from '../../data/site';
+---
+<section aria-label="Both sides of the plans" class="bg-white">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] flex flex-col gap-[24px] lg:px-[80px] lg:py-[120px] lg:gap-[64px]" data-node="73:2993" data-node-m="74:3278">
+    <div class="relative flex flex-col items-start gap-[24px] lg:gap-[32px]" data-node="73:2994">
+      <figure class="contents m-0">
+        <blockquote class="relative m-0 w-full lg:max-w-[944px]" data-node="73:3000" data-node-m="74:3282">
+          <p class="m-0 text-ink tm-h3 lg:font-bold lg:text-[64px] lg:leading-[70px] lg:tracking-[-1.28px]"><span class="text-royal lg:absolute lg:left-[-36px] lg:top-0 lg:w-[35px] lg:whitespace-nowrap" data-node="85:3327">“</span>I’ve stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”</p>
+        </blockquote>
+        <figcaption class="flex items-center gap-[12px] w-full lg:w-auto lg:gap-[16px]" data-node="73:3001" data-node-m="74:3283">
+          <span aria-hidden="true" class="block shrink-0 w-[32px] h-[2px] bg-royal lg:w-[40px]"></span>
+          <span class="flex-1 min-w-0 text-ink tm-body-strong lg:t-body-strong lg:whitespace-nowrap" data-node="73:3003" data-node-m="74:3285">Michael Rapport, Founding Principal, Blue Star Adjusters</span>
+        </figcaption>
+      </figure>
+      <div class="pt-[8px] w-full lg:pt-0 lg:w-auto" data-node-m="85:2977">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:hidden" data-node-m="85:2978">Schedule a Free Review</Button>
+        <Button href={ROUTES.freeClaimReview} variant="outline" class="hidden lg:inline-flex lg:min-w-[253px]" data-node="85:2965">Schedule a Free Review</Button>
+      </div>
+    </div>
+    <div class="flex flex-col gap-[20px] pt-[16px] lg:pt-0 lg:gap-[24px]" data-node="73:3004" data-node-m="74:3286">
+      <DimLine label="Both sides of a construction set of plans" class="hidden! lg:flex! w-full" node="73:3005" />
+      <DimLine label="Both sides of the plans" class="lg:hidden! w-full" nodeM="74:3287" />
+      <div class="flex flex-col gap-[20px] lg:flex-row lg:gap-[32px]" data-node="73:3011">
+        <div class="flex flex-col gap-[20px] lg:flex-1 lg:basis-0 lg:min-w-0 lg:h-[488px]" data-node="73:3012">
+          <h3 class="m-0 flex items-center gap-[12px] lg:gap-[16px] self-start" data-node="73:3013" data-node-m="74:3293">
+            <Badge icon="building" variant="paper" node="73:3014" nodeM="74:3294" />
+            <span class="text-navy lg:whitespace-nowrap tm-h3 lg:t-h3 lg:w-[347px]" data-node="73:3017" data-node-m="74:3297">As a developer who builds</span>
+          </h3>
+          <div class="w-full h-[248px] lg:h-[400px]" data-node="73:3018" data-node-m="74:3298">
+            <Pic node="I73:3018;41:71" nodeM="I74:3298;41:71" alt="Construction plans and drawings spread on a table (illustrative)" class="block w-full h-full object-cover" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-[20px] lg:flex-1 lg:basis-0 lg:min-w-0 lg:h-[488px]" data-node="73:3021">
+          <h3 class="m-0 flex items-center gap-[12px] pt-[16px] lg:gap-[16px] lg:pt-0 self-start" data-node="73:3022" data-node-m="74:3301">
+            <Badge icon="shield" variant="solid" node="73:3023" nodeM="74:3302" />
+            <span class="text-navy lg:whitespace-nowrap tm-h3 lg:t-h3 lg:w-[260px]" data-node="73:3027" data-node-m="74:3306">As a public adjuster</span>
+          </h3>
+          <figure class="m-0 flex flex-col gap-[12px] w-full h-[468px] lg:h-[428px]" data-node="73:3028" data-node-m="74:3307">
+            <div class="flex-1 min-h-0">
+              <Pic node="I73:3028;41:71" nodeM="I74:3307;41:71" alt="Public adjuster documenting a damaged property on site" class="block w-full h-full object-cover" />
+            </div>
+            <figcaption class="t-caption text-ink whitespace-nowrap">Field photograph</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

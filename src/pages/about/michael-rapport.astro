@@ -1,0 +1,36 @@
+---
+// Our Founder: Michael Rapport (Figma desktop 68:449, mobile 68:450). Indexable.
+// data-node = desktop (68:449) node id, data-node-m = mobile (68:450) node id; the 390 QA run swaps them in via --prep.
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/founder/Hero.astro';
+import Career from '../../sections/founder/Career.astro';
+import Background from '../../sections/founder/Background.astro';
+import Job from '../../sections/founder/Job.astro';
+import Quote from '../../sections/founder/Quote.astro';
+import Cta from '../../sections/founder/Cta.astro';
+const title = 'Michael Rapport, Founding Principal | Blue Star Adjusters';
+const description = "Michael Rapport: 25 years as a developer and merchant builder. Licensed personally in 7 states, always working for the insured, never for the carrier.";
+---
+<Base title={title} description={description}>
+  <div data-node="73:1814" data-node-m="74:2697"><Header theme="light" /></div>
+  <main class="bs-founder">
+    <Hero />
+    <Career />
+    <Background />
+    <Job />
+    <Quote />
+    <Cta />
+  </main>
+  <div data-node="73:3068" data-node-m="74:3341"><Footer /></div>
+  <CallBar />
+</Base>
+<style is:global>
+  /* Below lg, Chrome sets Montserrat 16/26 and Schibsted 22/28, 32/36, 46/48 one pixel higher than Figma does
+     (baseline rounding). Nudge those glyphs down 1px so the 390 build matches Figma; boxes move 1px at most. */
+  @media (max-width: 1023.98px) {
+    .bs-founder :where(.tm-body, .tm-body-strong, .tm-h2, .tm-h3, .tm-display, .bs-fnudge) { position: relative; top: 1px; }
+  }
+</style>

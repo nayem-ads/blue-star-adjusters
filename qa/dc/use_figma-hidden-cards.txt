@@ -1,0 +1,9 @@
+use_figma read-only dump (What We Do page)
+Hidden mobile cards text:
+74:3735 Wildfire | "Total Loss or Standing Home. Two Different Claims." | "Whether the foundation can be reused." | "Code upgrades, extended replacement cost and debris removal." | "See the claim page"
+74:3752 Water & Plumbing | "Water Dries. The Evidence Goes With It." | "If the water isn't measured, it dries, and mold begins to grow." | link
+74:3767 Wind, Hail & Falling Trees | "Hail Shortens a Roof. A Tree Racks a House." | "Framing connections, racked walls, cracks in the foundation." | link
+74:3782 Contents & Valuables | "Everything You Owned. Accounted For." | "Most people can't list one room from memory, and what isn't listed isn't paid." | link
+74:3798 Additional Living Expenses | "Same Size Home. Same School District." | "The rental ends before the rebuild does." | link
+Faint logo mark 73:2568 / 74:4078: node opacity 0.07 (includes #0D1C5A backing rect).
+Commercial / key-facts hairlines: solid white opacity 1. Ruler ticks navy #081D5E.

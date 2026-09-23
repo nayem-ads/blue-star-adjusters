@@ -1,0 +1,8 @@
+get_design_context 74:3473 (Section / Hero, mobile) — condensed
+Section bg paper flex-col gap 20 pt24 pb48 px20.
+Photo 350x216: IMG onsite-adjuster 338x204 at (6,6); crop marks full.
+H1 Schibsted Bold 46/48 -1.15 navy "Where Claims Go Wrong. Where We Start." (natural wrap)
+Sub Montserrat 18/28 ink "Your insurer sends their adjuster. We send ours." (mobile-only shortened line)
+CTA stack gap12 full width h56: Solid "Schedule a Free Review"; Outline phone "Call (916) 507-1005"
+Spacer 350x68 (call bar clearance).
+Trust list border-b line pb24 gap12: rows gap12 items-start: icon 24 + Montserrat Medium 16/26 ink (shield / check / document), same copy as desktop.

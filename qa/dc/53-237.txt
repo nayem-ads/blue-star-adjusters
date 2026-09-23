@@ -1,0 +1,10 @@
+53:237 results ledger (condensed). bg paper; flex col gap56 pt96 pb120 px80.
+Blueprint grid 85:2982 abs inset0: royal 1px lines every 40px, opacity 5%; every 160px (0,160,..,1280) opacity 10%. Both V and H (H at 0..1000).
+53:238 header flex gap80 items-end: H2 48/54 -0.72 navy w640 "What the Carrier Offered.<br>What We Recovered."; 73:1623 col gap24: body 17/28 ink w400 "Having a licensed public adjuster evaluate the loss often results in an entirely different financial outcome for the policyholder."; Dimension line w320 (tick 1x12, rule flex1 h1, label Montserrat Medium 12/16 .12px royal "Measured, not estimated", rule, tick; gap8).
+53:241 ledger col: ruler ticks 1120x12: base navy 1px at top11; ticks navy every 8px: h12 at multiples of 40 else h6 top6 (last at 1112).
+ Rows (LedgerRow): Palisades fire / We measured the structural damage and proved the subfloor and electrical needed a full strip-out. / Carrier's offer $38,000 / Settlement $276,000
+ Smoke damage / An industrial hygienist proved the combustion byproducts in the home’s porous materials and doors. / $17,000 / About $1.1M
+ Estate fire / Specialist valuation of fine wine and art: $11M for the structure and $5.2M for contents. / offerLabel "Owner recovered alone, then stalled" $6M / $11M + $5.2M
+ note text = Montserrat MEDIUM 15/24 (component uses t-small regular).
+ 53:272 bottom rule 1px line.
+53:273 footer flex justify-between items-center: Montserrat Medium 15/24 ink w760 "Results reflect specific losses and policies. Past results don’t guarantee a similar outcome." + solid button.

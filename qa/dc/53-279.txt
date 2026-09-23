@@ -1,0 +1,5 @@
+53:279 why now (condensed). bg navy, flex row. img 53:280 w520 self-stretch (cover). Copy 53:281 flex-1 col gap32 pl96 pr80 py120:
+H2 white 48/54 "The Rules Changed.<br>The First Estimate Didn’t."
+Fact chip 73:1801: border 1px white radius2 pl12 pr16 py8 gap8; icon document 20; Montserrat SemiBold 13/18 .26px white "Signed September 15, 2026"
+Body col gap16 17/28 white: "California’s Smoke Damage Recovery Act, signed September 15, 2026, presumes smoke in a home inside a wildfire zone came from that fire, and makes insurers pay for the testing." / "But the carrier still writes the first estimate. We measure the loss forensically and push for what it takes to return your property to its pre-loss condition."
+Pull line 53:286: border-l 2px white(?) pl32 py8 col; quote icon 40; H3 28/34 white "Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas.<br>That wealth came from somewhere."

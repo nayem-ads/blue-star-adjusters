@@ -1,0 +1,14 @@
+---
+// Mobile only: Section / Fees and contact 74:4363.
+import FeesPanel from './FeesPanel.astro';
+import ContactList from './ContactList.astro';
+import Button from '../../components/Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+---
+<section aria-labelledby="fcr-fees-m" class="lg:hidden bg-white" data-node-m="74:4363">
+  <div class="flex flex-col gap-[32px] items-start px-[20px] pt-[64px] pb-[56px]">
+    <FeesPanel variant="m" node="74:4364" id="fcr-fees-m" />
+    <ContactList variant="m" node="74:4373" />
+    <Button href={PHONE_TEL} variant="outline" icon="phone" class="w-full h-[56px]" data-node-m="74:4402">Call {PHONE_DISPLAY}</Button>
+  </div>
+</section>

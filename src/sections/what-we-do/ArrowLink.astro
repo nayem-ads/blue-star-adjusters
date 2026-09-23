@@ -1,0 +1,10 @@
+---
+// Text link + 24px arrow (Figma "Link / …" and mobile "Tap/Link …"). Hover/focus: underline on the label.
+import Icon from '../../components/Icon.astro';
+interface Props { href: string; class?: string; labelClass?: string; node?: string; nodeM?: string; [key: string]: any }
+const { href, class: cls = '', labelClass = '', node, nodeM, ...rest } = Astro.props;
+---
+<a href={href} class:list={['wwd-link group flex items-center gap-[8px] text-royal', cls]} data-node={node} data-node-m={nodeM} {...rest}>
+  <span class:list={['group-hover:underline group-focus-visible:underline underline-offset-[3px]', labelClass]}><slot /></span>
+  <Icon name="arrow-right" size={24} class="shrink-0 transition-transform duration-150 group-hover:translate-x-[2px]" />
+</a>

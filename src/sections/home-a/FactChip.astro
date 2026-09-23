@@ -1,0 +1,11 @@
+---
+// Fact chip (73:1801 family): 1px border, radius 2, 12/16 side padding, 20px icon + label (13/18 desktop, 12/16 mobile).
+import Icon from '../../components/Icon.astro';
+interface Props { icon: string; theme?: 'light' | 'dark'; class?: string; node?: string; nodeM?: string; iconClass?: string }
+const { icon, theme = 'light', class: cls = '', node, nodeM, iconClass } = Astro.props;
+const dark = theme === 'dark';
+---
+<p class:list={['m-0 inline-flex items-center gap-[8px] pl-[12px] pr-[16px] py-[8px] border rounded-[2px] tm-label lg:t-label whitespace-nowrap',
+  dark ? 'border-white text-white' : 'border-line bg-white text-ink', cls]} data-node={node} data-node-m={nodeM}>
+  <Icon name={icon} size={20} class={iconClass ?? (dark ? 'text-white' : 'text-royal')} /><span><slot /></span>
+</p>

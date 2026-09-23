@@ -1,0 +1,56 @@
+---
+// Where claims go wrong: index + field photo. Desktop 54:257, mobile 62:645.
+import Pic from './Pic.astro';
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import CropMarks from './CropMarks.astro';
+import { ROUTES } from '../../data/site';
+const rows = [
+  { icon: 'home', text: 'The estimate won’t rebuild the house.', link: 'Code Upgrades', href: ROUTES.whatWeDo, n: ['54:156', '73:2453', '54:157', '54:158'], m: ['62:648', '74:3140', '62:649', '62:650'] },
+  { icon: 'flame', text: 'The smoke will “clean out.”', link: 'Fire & Smoke', href: '/claims/fire-smoke-damage/', n: ['54:162', '73:2458', '54:163', '54:164'], m: ['62:654', '74:3145', '62:655', '62:656'] },
+  { icon: 'droplet', text: 'The water claim became a mold claim.', link: 'Water', href: '/claims/water-damage/', n: ['54:168', '73:2463', '54:169', '54:170'], m: ['62:660', '74:3150', '62:661', '62:662'] },
+  { icon: 'document', text: 'The adjuster changed three times.', link: 'Denied or Underpaid', href: '/claims/denied-or-underpaid/', n: ['54:174', '73:2467', '54:175', '54:176'], m: ['62:666', '74:3154', '62:667', '62:668'] },
+  { icon: 'search', text: 'The fine art was priced like furniture.', link: 'Contents', href: ROUTES.whatWeDo, n: ['54:180', '73:2472', '54:181', '54:182'], m: ['62:672', '74:3159', '62:673', '62:674'] },
+  { icon: 'clock', text: 'The rental ends before the rebuild does.', link: 'Additional Living Expenses', href: ROUTES.whatWeDo, n: ['54:186', '73:2477', '54:187', '54:188'], m: ['62:678', '74:3164', '62:679', '62:680'] },
+];
+---
+<section aria-labelledby="wrong-title" class="bg-white" data-node="54:257" data-node-m="62:645">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[24px] lg:gap-[64px]">
+    <h2 id="wrong-title" class="m-0 tm-h2 lg:t-h2 text-navy" data-node="54:146" data-node-m="62:646">Where Claims Go Wrong.<br class="hidden lg:inline" /> Where We Start.</h2>
+    <div class="flex flex-col gap-[24px] lg:flex-row lg:items-start lg:gap-[80px]" data-node="54:144">
+      <figure class="relative order-2 lg:order-none m-0 flex flex-col gap-[20px] lg:gap-[24px] lg:w-[400px] lg:shrink-0" data-node="54:145" data-node-m="62:684">
+        <div class="relative h-[420px] lg:h-[760px]">
+          <Pic d="54:153" m="62:685" alt="Smoke-blackened interior corner with a burned wall and debris on the floor." />
+          <CropMarks class="absolute -left-[10px] -top-[10px] -right-[10px] -bottom-[10px] lg:-left-[12px] lg:-top-[12px] lg:-right-[12px] lg:-bottom-[12px]" node="73:2482" nodeM="74:3169" />
+        </div>
+        <figcaption class="self-start t-caption text-ink whitespace-nowrap" data-node="54:154" data-node-m="62:686">Field photograph</figcaption>
+      </figure>
+      <div class="contents lg:flex lg:flex-col lg:gap-[40px] lg:flex-1 lg:min-w-0" data-node="64:703">
+        <ul class="order-1 lg:order-none m-0 p-0 list-none border-t border-line" data-node="54:155" data-node-m="62:647">
+          {rows.map((r) => (
+            <li class="flex items-start gap-[16px] lg:gap-[24px] pt-[20px] pb-[20px] lg:py-[28px] border-b border-line" data-node={r.n[0]} data-node-m={r.m[0]}>
+              <span class="flex items-center justify-center w-[40px] h-[40px] rounded-full bg-paper shrink-0 text-navy"><Icon name={r.icon} size={24} /></span>
+              <div class="flex-1 min-w-0 flex flex-col items-start gap-[8px] lg:gap-[12px]" data-node={r.n[1]} data-node-m={r.m[1]}>
+                <h3 class="m-0 tm-h3 lg:t-h3 text-navy w-full" data-node={r.n[2]} data-node-m={r.m[2]}>{r.text}</h3>
+                <a href={r.href} class="idx-link flex items-center gap-[8px] h-[44px] lg:h-[28px] tm-body-strong lg:t-body-strong text-royal" data-node={r.n[3]} data-node-m={r.m[3]}><span>{r.link}</span><Icon name="arrow-right" size={24} /></a>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div class="order-3 lg:order-none flex flex-col gap-[24px] lg:flex-row lg:flex-wrap lg:gap-y-[16px] lg:items-center lg:justify-between" data-node="54:259">
+          <div class="flex items-center gap-[16px]" data-node="85:3096">
+            <span class="hidden lg:flex items-center justify-center w-[40px] h-[40px] rounded-full bg-paper shrink-0 text-navy"><Icon name="clock" size={24} /></span>
+            <p class="m-0 t-body-strong text-ink lg:w-[300px]" data-node="54:147" data-node-m="62:687">Our ability to affect your outcome diminishes with time.</p>
+          </div>
+          <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="54:148" data-node-m="62:688">Schedule a Free Review</Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .idx-link { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color .15s ease; }
+  .idx-link:hover, .idx-link:focus-visible { text-decoration-color: currentColor; }
+  .idx-link :global(svg) { transition: transform .15s ease; }
+  .idx-link:hover :global(svg) { transform: translateX(3px); }
+</style>

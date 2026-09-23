@@ -1,0 +1,54 @@
+---
+// Section / Review promise: desktop navy 73:2775 (photo left, copy right, CTA), mobile paper 74:4406
+// (photo, dimension line, copy, quote stacked; no tagline or CTA).
+import images from '../../data/images.json';
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import CropMarks from './CropMarks.astro';
+import DimLine from './DimLine.astro';
+import Watermark from './Watermark.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+// Responsive crop: mobile slot I74:4408;41:71 (326×408), desktop slot I73:2782;41:71 (448×560), one <picture> so only one loads.
+const imgs = images as Record<string, { src: string; width: number; height: number }>;
+const mImg = imgs['I74:4408;41:71'], dImg = imgs['I73:2782;41:71'];
+const alt = 'A homeowner’s policy, carrier letters and a marked-up estimate spread on a table';
+const qa = 'flex flex-col gap-[8px] w-full';
+const q = 'm-0 tm-body-strong lg:t-body-strong';
+const a = 'm-0 tm-body lg:t-body';
+---
+<section aria-labelledby="fcr-review" class="relative overflow-hidden bg-paper text-ink lg:bg-navy lg:text-white" data-node="73:2775" data-node-m="74:4406">
+  <Watermark width={691.2} height={839.2} class="hidden lg:block left-[max(720px,calc(50%+80px))] top-[-120px]" />
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[24px] items-start px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-center lg:gap-[96px] lg:px-[80px] lg:py-[120px]">
+    <div class="relative shrink-0 w-[350px] h-[432px] max-w-full lg:w-[480px] lg:h-[592px]" data-node="73:2781" data-node-m="74:4407">
+      <div class="absolute left-[12px] top-[12px] w-[326px] h-[408px] lg:left-[16px] lg:top-[16px] lg:w-[448px] lg:h-[560px]" data-node="73:2782" data-node-m="74:4408">
+        <picture>
+          <source media="(min-width: 64rem)" srcset={dImg.src} width={dImg.width} height={dImg.height} />
+          <img src={mImg.src} width={mImg.width} height={mImg.height} alt={alt} loading="lazy" decoding="async" class="block w-full h-full object-cover" />
+        </picture>
+      </div>
+      <CropMarks />
+    </div>
+    <div class="contents lg:flex lg:flex-col lg:gap-[32px] lg:items-start lg:flex-1 lg:min-w-0" data-node="73:2794">
+      <DimLine class="lg:hidden" nodeM="74:4420" />
+      <p class="hidden lg:flex m-0 items-center gap-[16px] t-label whitespace-nowrap" data-node="73:2795">
+        <span aria-hidden="true" class="block w-[40px] h-px bg-white"></span>Your Claim. Our Fight.<span aria-hidden="true" class="block w-[40px] h-px bg-white"></span>
+      </p>
+      <h2 id="fcr-review" class="m-0 w-full tm-h2 text-navy lg:t-h2 lg:text-white" data-node="73:2799" data-node-m="74:4426">Before you sign anything.</h2>
+      <div class={qa} data-node="73:2800" data-node-m="74:4427">
+        <h3 class={q}>What if my claim isn’t covered?</h3>
+        <p class={a}>We’ll tell you at the free review, before you sign anything.</p>
+      </div>
+      <div class={qa} data-node="73:2803" data-node-m="74:4430">
+        <h3 class={q}>When we’ll tell you not to hire us.</h3>
+        <p class={a}>If the carrier’s offer is already fair, or the loss is small enough that our fee would outweigh what we add, we’ll say so at the free review.</p>
+      </div>
+      <hr class="hidden lg:block w-full h-px m-0 border-0 bg-white" data-node="73:2806" />
+      <figure class="m-0 w-full flex flex-col gap-[12px] pt-[8px] lg:flex-row lg:gap-[20px] lg:pt-0" data-node="73:2807" data-node-m="74:4433">
+        <Icon name="quote" size={40} class="lg:hidden text-royal" />
+        <Icon name="quote" size={48} class="hidden lg:block text-white shrink-0" />
+        <blockquote class="m-0 flex-1 min-w-0 tm-h3 text-navy lg:t-h3 lg:text-white" data-node="73:2811" data-node-m="74:4437"><p class="m-0">You always have final say on any settlement.</p></blockquote>
+      </figure>
+      <Button href={PHONE_TEL} variant="on-dark" icon="phone" class="hidden lg:inline-flex" data-node="73:2813">Call {PHONE_DISPLAY}</Button>
+    </div>
+  </div>
+</section>

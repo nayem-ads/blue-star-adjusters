@@ -1,0 +1,12 @@
+get_design_context 73:1611 (FCR Sidebar, desktop) — condensed.
+Sidebar col gap24.
+Panel What happens next: bg navy r4 px32 py40 col gap32 overflow clip. Watermark Logo mark white abs left176 top120 302.4x367.15.
+ Title "What happens next" t-h3 white. Steps col: step = flex gap16; rail col items-center self-stretch: circle 40 border 1 white r20 icon 24; connector 1px white flex-1; dot 5px; connector h8. Step 3 rail no connector.
+ Step text col gap4 pt8 pb32 (step3 no pb) white 600: label 13/18 tracking .26 ("Step 1"); text 17/28.
+ "We call you." / "We read your policy and the carrier’s letters." / "We tell you whether we can add value, and why."
+Panel How fees work: bg white border line r4 p32 col gap16. heading flex gap16 items-center: circle 40 bg paper r20, shield 24; "How fees work" t-h3 navy.
+ "No upfront cost. We’re paid a percentage of what we recover." 600 17/28 ink.
+ "The percentage is set in writing before we start. In California, our fee can never leave you with less than your insurer had already paid before you hired us." 500 15/24 ink.
+Contact details: col gap20 pt8. rows flex gap16: circle 40 white border navy; text col gap4: main 600 17/28 navy; sub 500 15/24 ink.
+ (916) 507-1005 / Mon–Sun, 8 AM–6 PM Pacific ; 1610 R Street, Suite 300 / Sacramento, California 95811, USA ; CA DOI License No. 2B60428 / We represent the insured only.
+ Fact chips flex gap8 pt4: chip white border navy r2 px12 py8, t-label navy: "7 offices" "5 states".

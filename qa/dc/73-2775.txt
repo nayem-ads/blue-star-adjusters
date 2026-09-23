@@ -1,0 +1,9 @@
+get_design_context 73:2775 (Review promise navy, desktop) — condensed.
+Section bg navy flex gap96 items-center px80 py120. Watermark mark white abs left720 top-120 691.2x839.2 (clipped by section).
+Photo group 480x592: photo 448x560 at 16,16 (IMG I73:2782;41:71, alt: A homeowner’s policy, carrier letters and a marked-up estimate spread on a table). Crop marks: white 16x1.5 / 1.5x16 at 4 corners.
+Review copy col gap32 flex-1: Tagline rule flex gap16 items-center: rule 40x1 white, "Your Claim. Our Fight." t-label white, rule 40.
+ H2 "Before you sign anything." t-h2 white.
+ Q/A col gap8 17/28 white: "What if my claim isn’t covered?" (600) / "We’ll tell you at the free review, before you sign anything." (400)
+ "When we’ll tell you not to hire us." / "If the carrier’s offer is already fair, or the loss is small enough that our fee would outweigh what we add, we’ll say so at the free review."
+ Divider 1px white. Quote flex gap20: quote icon 48; "You always have final say on any settlement." t-h3 white.
+ CTA: Button on-dark with phone icon "Call (916) 507-1005".

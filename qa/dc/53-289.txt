@@ -1,0 +1,14 @@
+53:289 Ledger sheet (condensed). bg white, border 1px line, flex-col, pt32 pb40 px48.
+85:3101 label (annotation: render as section H2, visually Desktop/Label 13 ink) "What the Carrier Offered. What We Recovered." / gap24
+53:290 Case Palisades: flex-col gap16. Loss H3 28/34 navy "Palisades fire".
+ Figures flex gap48 items-end: Offer (flex-col gap4 pb12): caption Montserrat Medium 12/16 .12px ink "Carrier's offer"; Schibsted Medium 64/64 -1.28 line-through #070f33 "$38,000".
+ Settlement flex-col gap4: caption "Settlement"; Schibsted Medium 120/112 -4.8px navy "$276,000".
+ Dimension line 73:1320: flex gap8 items-center w-full: tick 1x12 royal, rule flex-1 h1 royal, label Montserrat Medium 12/16 .12 royal "Measured, not estimated", rule, tick.
+ Note 53:293 Montserrat Medium 15/24 ink w560 "We measured the structural damage and proved the subfloor and electrical needed a full strip-out."
+gap40 / rule 1px line / gap40
+53:302 flex gap48:
+ 53:303 w440 flex-col gap12: "Smoke damage" Montserrat SemiBold 17/28 ink; note Medium 15/24 "An industrial hygienist proved the combustion byproducts in the home's porous materials and doors.";
+   Offer pt8 gap4: caption + Schibsted SemiBold 28/34 -0.28 line-through "$17,000"; Settlement pt8 gap4: caption + figure line flex gap12 items-baseline: "About" Montserrat 400 17/28 + "$1.1 million" Schibsted Medium 64/64.
+ 53:312 w344 gap12: "Estate fire"; note "Specialist valuation of fine wine and art."; Offer h86 pt8: Medium 15/24 "Owner recovered $6M alone, then stalled";
+   Settlement pt8 gap4: caption; line "$11M" + "structure"; line "+ $5.2M" + "contents".
+gap40 / 53:326 Montserrat Medium 12/18 ink "Results reflect specific losses and policies. Past results don't guarantee a similar outcome."

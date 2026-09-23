@@ -1,0 +1,27 @@
+---
+// Why now: The Rules Changed. Desktop 53:279, mobile 62:637.
+import Pic from './Pic.astro';
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import FactChip from './FactChip.astro';
+---
+<section aria-labelledby="rules-title" class="relative bg-navy text-white overflow-hidden" data-node="53:279" data-node-m="62:637">
+  <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:items-stretch">
+    <div class="relative h-[300px] lg:h-auto lg:w-[520px] lg:shrink-0" data-node="53:280" data-node-m="62:638">
+          <Pic d="53:280" m="62:638" alt="Fire-damaged exterior stair and debris beside a white modern house." wrap="absolute inset-0" />
+    </div>
+    <div class="relative flex-1 min-w-0 flex flex-col items-start gap-[20px] lg:gap-[32px] px-[20px] pt-[48px] pb-[56px] lg:pl-[96px] lg:pr-[80px] lg:py-[120px]" data-node="53:281" data-node-m="62:639">
+      <span aria-hidden="true" class="lg:hidden absolute left-[190px] top-[480px] opacity-[.05] pointer-events-none"><Logo variant="mark-white" bare width={280} height={340} label="" /></span>
+      <h2 id="rules-title" class="relative m-0 tm-h2 lg:t-h2 w-full" data-node="53:282" data-node-m="62:640">The Rules Changed.<br class="hidden lg:inline" /> The First Estimate Didn’t.</h2>
+      <FactChip icon="document" theme="dark" class="relative" node="73:1801" nodeM="74:3127">Signed September 15, 2026</FactChip>
+      <div class="relative contents lg:flex lg:flex-col lg:gap-[16px] lg:w-full" data-node="53:283">
+        <p class="m-0 tm-body lg:t-body" data-node="53:284" data-node-m="62:641">California’s Smoke Damage Recovery Act, signed September 15, 2026, presumes smoke in a home inside a wildfire zone came from that fire, and makes insurers pay for the testing.</p>
+        <p class="m-0 tm-body lg:t-body" data-node="53:285" data-node-m="62:642">But the carrier still writes the first estimate. We measure the loss forensically and push for what it takes to return your property to its pre-loss condition.</p>
+      </div>
+      <blockquote class="relative m-0 w-full flex flex-col items-start border-l-2 border-white/40 lg:border-[#051138] pl-[20px] lg:pl-[32px] py-[8px]" data-node="53:286" data-node-m="62:643">
+        <Icon name="quote" size={40} class="text-white lg:text-white/15 w-[32px] h-[32px] lg:w-[40px] lg:h-[40px]" />
+        <p class="m-0 tm-h3 lg:t-h3" data-node="53:287" data-node-m="62:644">Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas.<br />That wealth came<br class="lg:hidden" /> from somewhere.</p>
+      </blockquote>
+    </div>
+  </div>
+</section>

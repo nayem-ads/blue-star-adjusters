@@ -1,0 +1,33 @@
+---
+// StubPage: shared noindex placeholder for routes linked from the header/footer that aren't built yet.
+// Usage (src/pages/<route>/index.astro): <StubPage name="Fees" eyebrow="The firm" />
+import Base from '../layouts/Base.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import CallBar from './CallBar.astro';
+import Button from './Button.astro';
+import Eyebrow from './Eyebrow.astro';
+import WaveCorner from './WaveCorner.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../data/site';
+interface Props { name: string; eyebrow?: string; message?: string; title?: string }
+const { name, eyebrow = 'Blue Star Adjusters', message = 'This page is coming soon. For help with your claim today, request a free claim review or call us.', title } = Astro.props;
+---
+<Base title={title ?? `${name} | Blue Star Adjusters`} description={`${name} from Blue Star Adjusters, licensed public adjusters. This page is coming soon.`} noindex>
+  <Header theme="light" />
+  <main>
+    <section aria-labelledby="stub-title" class="relative overflow-hidden bg-paper">
+      <WaveCorner position="bottom-right" class="absolute right-0 bottom-0 hidden lg:block" />
+      <div class="relative max-w-[1280px] mx-auto px-[20px] lg:px-[80px] py-[72px] lg:py-[120px] flex flex-col items-start gap-[24px]">
+        <Eyebrow>{eyebrow}</Eyebrow>
+        <h1 id="stub-title" class="tm-display lg:t-display-l text-navy m-0 max-w-[800px]">{name}</h1>
+        <p class="tm-lead lg:t-lead text-ink m-0 max-w-[640px]">{message}</p>
+        <div class="flex flex-col sm:flex-row gap-[12px] lg:gap-[16px] w-full sm:w-auto pt-[8px]">
+          <Button href={ROUTES.freeClaimReview} variant="solid">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <CallBar />
+</Base>

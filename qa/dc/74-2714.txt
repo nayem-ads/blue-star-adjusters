@@ -1,0 +1,7 @@
+get_design_context 74:2714 (M1 hero, mobile). Condensed:
+section bg paper flex-col (frame h 760; children 264 + 490)
+ Portrait block 390x264 overflow-clip: photo 390x264 bg paper, img mix-blend-multiply; crop marks abs 366x240 at 12,12
+ Intro flex-col gap-16 pt-24 pb-120 px-20:
+  Eyebrow (rule royal 24x2, Montserrat SemiBold 13/18 .26 INK) "Your Adjuster. Your Advocate."
+  Headline flex-col gap-12: H1 Schibsted Bold 46/48 -1.15 navy "Michael Rapport."; role Montserrat 18/28 ink
+  CTAs flex-col gap-12 pt-8 w-full: solid h56 full; outline+phone h56 full

@@ -1,0 +1,53 @@
+---
+// Section / FAQ: desktop 73:2817 (intro column + accordion), mobile 74:4438 (H2, accordion, closing line, CTA).
+// Accordion = native <details>/<summary> (keyboard operable); the first two are open, as designed.
+// Collapsed answers are verbatim from the content doc FAQ (items 3, 4, 6, 10).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import IconCircle from './IconCircle.astro';
+import DimLine from './DimLine.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const faqs = [
+  { q: 'What is a public adjuster?', a: 'A licensed professional who prepares, presents and negotiates your claim, working only for you. The insurer’s adjuster works for the insurer.', open: true, d: '73:2833', m: '74:4441' },
+  { q: 'How are you paid?', a: 'A percentage of the settlement, set in writing before we start. No upfront cost.', open: true, d: '73:2839', m: '74:4447' },
+  { q: 'I already have an offer. Is it too late?', a: 'Usually not; we can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.', d: '73:2845', m: '74:4453' },
+  { q: 'Will hiring you slow my claim?', a: 'We have a strong financial incentive to expedite settlement on your behalf.', d: '73:2850', m: '74:4458' },
+  { q: 'Do I still talk to my insurer?', a: 'You can. Most clients prefer we handle it.', d: '73:2855', m: '74:4463' },
+  { q: 'Can I cancel?', a: 'In California, within three business days of signing and receiving the contract; five calendar days in a declared catastrophic-disaster area.', d: '73:2860', m: '74:4468' },
+];
+const sub = 'font-body font-medium text-[15px] leading-[24px] text-ink';
+---
+<section aria-labelledby="fcr-faq" class="bg-white">
+  <div class="max-w-[1280px] mx-auto flex flex-col gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[32px] lg:px-[80px] lg:py-[120px]" data-node="73:2817" data-node-m="74:4438">
+    <div class="contents lg:flex lg:flex-col lg:gap-[24px] lg:items-start lg:w-[440px] lg:shrink-0" data-node="73:2818">
+      <h2 id="fcr-faq" class="m-0 w-full tm-h2 lg:t-h2 text-navy" data-node="73:2819" data-node-m="74:4439">Your Questions.<br />Straight Answers.</h2>
+      <DimLine class="hidden lg:flex" node="73:2820" />
+      <p class="m-0 w-full order-3 lg:order-none tm-body-strong lg:t-body-strong text-ink" data-node="73:2826" data-node-m="74:4473">Still have a question?</p>
+      <Button href={ROUTES.freeClaimReview} class="order-4 lg:order-none w-full h-[56px] lg:w-auto lg:h-[52px]" data-node="73:2828" data-node-m="74:4474">Schedule a Free Review</Button>
+      <div class="hidden lg:flex flex-col gap-[24px] pt-[8px] w-full" data-node="85:3187">
+        <div class="flex gap-[16px] items-center">
+          <IconCircle name="phone" />
+          <div class="flex flex-col gap-[4px] whitespace-nowrap">
+            <a href={PHONE_TEL} class="fcr-link self-start t-body-strong text-navy">{PHONE_DISPLAY}</a>
+            <p class:list={['m-0', sub]}>Mon–Sun, 8 AM–6 PM Pacific</p>
+          </div>
+        </div>
+        <div class="flex gap-[16px] items-center">
+          <IconCircle name="clock" />
+          <p class:list={['m-0 whitespace-nowrap', sub]}>We call back the same day.</p>
+        </div>
+      </div>
+    </div>
+    <div class="order-2 lg:order-none w-full lg:flex-1 lg:min-w-0 flex flex-col" data-node="73:2832" data-node-m="74:4440">
+      {faqs.map((f) => (
+        <details class="fcr-faq border-t border-line py-[20px] lg:py-[24px]" open={f.open} data-node={f.d} data-node-m={f.m}>
+          <summary class="fcr-faq__q flex items-center gap-[16px] lg:gap-[24px] cursor-pointer">
+            <h3 class="m-0 flex-1 min-w-0 font-body font-semibold text-[18px] leading-[28px] lg:text-[20px] lg:leading-[32px] text-navy">{f.q}</h3>
+            <Icon name="chevron-down" size={24} class="fcr-faq__chev shrink-0 text-navy" />
+          </summary>
+          <p class="m-0 mt-[8px] lg:mt-[12px] lg:w-[560px] max-w-full tm-body lg:t-body text-ink">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

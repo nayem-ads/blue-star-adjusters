@@ -1,0 +1,14 @@
+get_design_context 73:2348 (S3 navy, desktop). Condensed:
+section bg navy flex-col gap-72 px-80 py-120 relative
+ B-mark watermark 73:2349 abs 561.6x681.85 at 718.4,379.15 (svg asset)
+ Head 73:2354 flex gap-64 items-start:
+  Left w-464 flex-col gap-24: tagline rule (flex gap-12 items-center: rule white 32x1, "Your Claim. Our Fight." Montserrat Medium 15/24 white, rule); H2 48/54 white "The Background That Changes Everything."
+  Right w-592 flex-col gap-24 Montserrat 20/32 white:
+   "Michael built his career developing affordable housing, commercial projects, and hospitality assets: measuring and estimating rebuild costs to current building and fire code, value-engineering plans across electrical, mechanical, and structural trades, and coordinating with health departments, planning commissions, and use-and-occupancy authorities."
+   "As the redevelopment developer for MSR Properties, he has built to the City of San Francisco's seismic retrofit ordinance, arguably the most complex seismic code in the world. That ground-up experience with the strictest life-safety, structural, and code-upgrade requirements is exactly what he brings to every insurance claim: he already knows what a full code-compliant rebuild looks like, and he knows how to prove it to a carrier."
+ Ledger 73:2363 border-t white, flex-wrap gap 40px/32px; each fact w-544 flex-col gap-24: rule white h1 opacity-30; row flex gap-20: badge 40 rounded-20 border white + icon 24; text 20/32 white
+   building "Developing affordable housing, commercial projects, and hospitality assets"
+   ruler "Measuring and estimating rebuild costs to current building and fire code"
+   document "Value-engineering plans across electrical, mechanical, and structural trades"
+   pin "Coordinating with health departments, planning commissions, and use-and-occupancy authorities"
+ CTAs flex gap-16: Button on-dark "Schedule a Free Review"; Button outline-on-dark + phone "Call (916) 507-1005"

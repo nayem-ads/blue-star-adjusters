@@ -1,0 +1,10 @@
+Mobile — Menu open (390) 63:780 (contains Mobile menu instance 63:781 of 42:164)
+ Menu 63:781: bg navy, flex-col h-844 w-390
+  Top bar I63:781;42:165: h-64 pl-20 pr-8 justify-between; Logo white 30 (mark 24.709x30 gap 9 wordmark 101.538x15); Tap/Close h-44 px-10 (icon close 24, white)
+  Nav list 42:178: flex-col pt-24 px-20; items py-16 border-b 1px white, justify-between; label Schibsted SemiBold 22/28 tracking -0.22px white; Icon arrow-right 24 white
+   Home | What We Do | Our Founder | How It Works | Fees
+  Spacer flex-1
+  Actions 42:204: flex-col gap-12 pb-32 px-20: Button On-dark h-56 w-full "Schedule a Free Review"; Button Outline on-dark h-56 w-full icon "Call (916) 507-1005"; caption Montserrat Medium 12/16 tracking .12px white "CA DOI License No. 2B60428"
+ 85:3166 Detail / B-mark (faint) abs left 199 top 400 191.085x232
+ 85:3171 Detail / Tagline rule abs left 20 top 600: flex gap-12: rule 24x1 white | "Your Claim. Our Fight." Montserrat SemiBold 12/16 tracking .24px white | rule 24x1 white
+Annotations: focus trapped, Esc closes, no call bar while open, close tap target 44x44.

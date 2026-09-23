@@ -1,0 +1,4 @@
+get_design_context 74:4406 (Review promise mobile): bg PAPER col gap24 pt64 pb56 px20.
+Photo group 350x432: photo 326x408 at 12,12; crop marks ROYAL 16x1.5. Dimension line (royal) full width. H2 tm-h2 navy "Before you sign anything."
+Q/A col gap8 16/26 ink (600 / 400). Quote col gap12 pt8: quote icon 40 (royal); text tm-h3 navy.
+No tagline, no CTA on mobile.

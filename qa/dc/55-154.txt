@@ -1,0 +1,5 @@
+55:154 who we are (condensed). bg white col gap56 px80 py120.
+photo col gap12: img 1120x560; caption Medium 12/16 "Field photograph".
+copy flex gap96: left col gap40: H2 48/54 navy w512 "Same Experience.<br>A New Way."; panel bg navy p32 col gap20 w448: facts flex gap16: icon24 white (check/shield/document) + 17/28 regular white: "No upfront cost. We're paid a percentage of what we recover." / "You always have final say on any settlement." / "CA DOI License No. 2B60428"
+right col flex-1 gap24: lead 20/32 navy "We left a legacy firm to build something leaner, more responsive, and 100% focused on you, without the bureaucracy that slows claims down."; col gap8 17/28: SemiBold navy "No Conflict of Interest." + regular ink "We eliminate the fundamental problem with insurance company adjusters: one person representing two sides of a financial negotiation. Our sole allegiance is to you."; outline button w/ phone icon "Call (916) 507-1005".
+stair inset 73:2514 abs left960 top72 200x264 border 8 white, shadow 0 12 32 rgba(8,15,51,.18).

@@ -1,0 +1,99 @@
+---
+// Footer: Figma Footer/Desktop 43:139 (1280×557) and Footer/Mobile 43:191 (390×853), one responsive component.
+// Desktop column widths (107/159/104) are the Figma frame widths from 43:159/43:166/43:173.
+// Props: node = data-node id of this footer instance in the page frame (e.g. "73:3068"); class = extra classes.
+import Logo from './Logo.astro';
+import Button from './Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE, ADDRESS } from '../data/site';
+interface Props { node?: string; class?: string }
+const { node, class: cls = '' } = Astro.props;
+const firm = [
+  { label: 'Our Founder', href: ROUTES.founder },
+  { label: 'How It Works', href: '/how-it-works/' },
+  { label: 'Fees', href: '/fees/' },
+  { label: 'Why Blue Star', href: '/about/' },
+  { label: 'Results', href: '/results/' },
+];
+const claims = [
+  { label: 'Residential', href: ROUTES.whatWeDo },
+  { label: 'Commercial', href: '/commercial-claims/' },
+  { label: 'Fire & Smoke', href: '/claims/fire-smoke-damage/' },
+  { label: 'Water & Plumbing', href: '/claims/water-damage/' },
+  { label: 'Denied or Underpaid', href: '/claims/denied-or-underpaid/' },
+];
+const offices = [
+  { label: 'Santa Monica', href: '/locations/california/santa-monica/' },
+  { label: 'Sacramento', href: '/locations/california/sacramento/' },
+  { label: 'San Francisco', href: '/locations/california/san-francisco/' },
+  { label: 'Reno', href: '/locations/nevada/reno/' },
+  { label: 'Portland', href: '/locations/oregon/portland/' },
+  { label: 'Seattle', href: '/locations/washington/seattle/' },
+  { label: 'Scottsdale', href: '/locations/arizona/scottsdale/' },
+];
+// w = Figma text box widths (43:188-43:190) so the desktop links row is 201px as in Figma.
+const legal = [
+  { label: 'Privacy', href: '/privacy/', w: 'lg:min-w-[43px]' },
+  { label: 'Terms', href: '/terms/', w: 'lg:min-w-[37px]' },
+  { label: 'Accessibility', href: '/accessibility/', w: 'lg:min-w-[73px]' },
+];
+const colHead = 'tm-label lg:t-label m-0';
+const item = 'bs-flink block tm-body lg:t-small';
+---
+<footer class:list={['bs-footer bg-navy text-white', cls]} data-node={node}>
+  <div class="max-w-[1280px] mx-auto flex flex-col gap-[40px] lg:gap-[64px] px-[20px] lg:px-[80px] pt-[56px] pb-[120px] lg:pt-[96px] lg:pb-[40px]">
+    <div class="flex flex-col gap-[40px] lg:flex-row lg:gap-[80px] lg:items-start">
+      <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[400px] lg:shrink-0">
+        <a href={ROUTES.home} class="bs-flogo" aria-label="Blue Star Adjusters home">
+          <Logo variant="horizontal-white" bare width={213} height={72} class="hidden lg:block -m-[16px]" label="Blue Star Adjusters" />
+          <Logo variant="horizontal-white" bare width={159.75} height={54} class="lg:hidden -m-[12px]" label="Blue Star Adjusters" />
+        </a>
+        <p class="tm-body lg:t-body m-0 whitespace-nowrap">Your Claim. Our Fight.</p>
+        <a href={PHONE_TEL} class="bs-flink tm-h3 lg:t-h3 whitespace-nowrap">{PHONE_DISPLAY}</a>
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="hidden lg:inline-flex">Schedule a Free Review</Button>
+      </div>
+
+      <nav aria-label="Footer" class="flex gap-[24px] lg:gap-[56px] lg:flex-1 lg:justify-end lg:min-w-0">
+        <div class="flex flex-col gap-[12px] flex-1 min-w-0 lg:flex-none lg:w-[107px]">
+          <p class={colHead}>The firm</p>
+          <ul class="contents">{firm.map((l) => <li class="list-none"><a href={l.href} class={item}>{l.label}</a></li>)}</ul>
+        </div>
+        <div class="flex flex-col gap-[12px] flex-1 min-w-0 lg:flex-none lg:w-[159px]">
+          <p class={colHead}>Claims</p>
+          <ul class="contents">{claims.map((l) => <li class="list-none"><a href={l.href} class={item}>{l.label}</a></li>)}</ul>
+        </div>
+        <div class="hidden lg:flex flex-col gap-[12px] lg:w-[104px]">
+          <p class={colHead}>Offices</p>
+          <ul class="contents">{offices.map((l) => <li class="list-none"><a href={l.href} class={item}>{l.label}</a></li>)}</ul>
+        </div>
+      </nav>
+
+      <div class="flex flex-col gap-[8px] lg:hidden">
+        <p class={colHead}>Offices</p>
+        <p class="tm-body m-0">{offices.map((l, i) => <>{i > 0 && ', '}<a href={l.href} class="bs-flink">{l.label}</a></>)}</p>
+      </div>
+    </div>
+
+    <div class="border-t border-white pt-[24px] flex flex-col gap-[6px] lg:flex-row lg:justify-between lg:items-start lg:gap-0 t-legal">
+      <div class="flex flex-col gap-[6px] lg:gap-[4px] lg:whitespace-nowrap">
+        <p class="m-0">Blue Star Adjusters, {ADDRESS}, USA</p>
+        <p class="m-0">{LICENSE}</p>
+        <p class="m-0">We represent the insured only.</p>
+      </div>
+      <p class="bs-flegal m-0 whitespace-pre lg:flex lg:gap-[24px]">{legal.map((l, i) => <>{i > 0 && <span class="lg:hidden">{'   '}</span>}<a href={l.href} class:list={['bs-flink', l.w]}>{l.label}</a></>)}</p>
+    </div>
+  </div>
+</footer>
+
+<style is:global>
+  /* Mobile baseline rounding (same as the pages): Chrome sets Montserrat 16/26 1px higher than Figma. */
+  @media (max-width: 1023.98px) { .bs-footer :where(.tm-body, .tm-body-strong, .tm-h3) { position: relative; top: 1px; } }
+
+  @layer theme, base, components, utilities;
+  @layer components {
+  .bs-flink { color: #fff; text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1px; text-underline-offset: 3px; transition: text-decoration-color .15s ease, opacity .15s ease; border-radius: 2px; }
+  .bs-flink:hover, .bs-flink:focus-visible { text-decoration-color: currentColor; }
+  .bs-footer :focus-visible { outline-color: #fff; }
+  .bs-footer ul { margin: 0; padding: 0; }
+  .bs-flogo { display: flex; border-radius: 4px; }
+  }
+</style>

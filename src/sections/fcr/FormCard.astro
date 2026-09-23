@@ -1,0 +1,104 @@
+---
+// Form card: desktop 73:1440 (error 74:1794), mobile 74:3913 (error 74:4521).
+// FormSubmit lead form: data-lead-form + FormSubmitFields + FormField, validated by src/scripts/forms.ts;
+// the "What happened" radio group, the error summary and the receipt hand-off to the thank-you page are
+// handled by fcr-form.ts. Mobile order: name, phone, fee strip, what happened, email, state, message, upload,
+// button, callback. Desktop (lg grid): header, name|phone, email|state, what happened, message, upload, divider, submit row.
+import FormField from '../../components/FormField.astro';
+import FormSubmitFields from '../../components/FormSubmitFields.astro';
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Ruler from './Ruler.astro';
+import IconCircle from './IconCircle.astro';
+import { FORM_ACTION, LICENSE } from '../../data/site';
+const options = [
+  { label: 'Fire or smoke', lw: 104, lwm: 111, icon: 'flame', d: '73:1554', m: '74:3977', o: 'order-1' },
+  { label: 'Wildfire', lw: 60, lwm: 64, icon: 'flame', d: '73:1559', m: '74:3982', o: 'order-2' },
+  { label: 'Water', lw: 47, lwm: 50, icon: 'droplet', d: '73:1564', m: '74:3987', o: 'order-3' },
+  { label: 'Wind, hail or tree', lw: 131, lwm: 140, icon: 'wind', d: '73:1568', m: '74:3991', o: 'order-5' },
+  { label: 'Collapse', lw: 65, lwm: 69, icon: 'home', d: '73:1572', m: '74:3995', o: 'order-6' },
+  { label: 'Commercial loss', lw: 126, lwm: 134, icon: 'building', d: '73:1577', m: '74:4000', o: 'order-4' },
+  { label: 'Other', lw: 45, lwm: 48, icon: 'document', d: '73:1581', m: '74:4004', o: 'order-7' },
+];
+const states = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Other'];
+const span = 'lg:col-span-2 lg:order-1';
+---
+<div class="fcr-card relative w-full bg-white border border-line rounded-[4px] pt-[28px] pb-[24px] px-[20px] lg:flex-1 lg:min-w-0 lg:max-w-[648px] lg:p-[48px]" data-node="73:1440" data-node-m="74:3913">
+  <Ruler />
+  <form action={FORM_ACTION} method="POST" enctype="multipart/form-data" data-lead-form novalidate aria-labelledby="fcr-form-title"
+    class="fcr-form flex flex-col gap-[16px] lg:grid lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[32px] lg:items-start">
+    <FormSubmitFields source="Free Claim Review page" />
+
+    <div class="hidden lg:flex lg:col-span-2 items-baseline gap-[16px]" data-node="73:1523">
+      <h2 id="fcr-form-title" class="m-0 t-h3 text-navy whitespace-nowrap" data-node="73:1524">Your details</h2>
+      <p class="m-0 flex-1 min-w-0 text-right tf-helper text-ink" data-node="73:1525">Every field is required unless marked optional.</p>
+    </div>
+
+    <div data-form-error hidden tabindex="-1" role="alert" class="fcr-summary lg:col-span-2 bg-white rounded-[4px] border border-error border-l-4 px-[16px] py-[12px] lg:px-[24px] lg:py-[20px] flex-col gap-[4px] lg:gap-[8px]" data-node="74:2361" data-node-m="74:4980">
+      <p class="m-0 tm-body-strong lg:t-body-strong text-ink">Check <span data-summary-count>3</span> <span data-summary-noun>fields</span><span class="hidden lg:inline"> before we send your request</span>.</p>
+      <ul class="hidden lg:flex flex-col gap-[8px] m-0 p-0 list-none" data-summary-list></ul>
+      <p class="lg:hidden m-0 font-body font-medium text-[16px] leading-[26px] text-error" data-summary-inline></p>
+    </div>
+
+    <div data-node="73:1528" data-node-m="74:3959">
+      <FormField label="Full name" name="Name" id="f-name" required autocomplete="name" placeholder="First and last name" error="Enter your full name." />
+    </div>
+    <div data-node="73:1533" data-node-m="74:3964">
+      <FormField label="Phone" name="Phone" id="f-phone" type="tel" required autocomplete="tel" placeholder="(916) 555-0123"
+        error="Enter a 10-digit phone number so we can call you back." />
+    </div>
+
+    <div class="lg:hidden flex flex-col gap-[12px] items-start bg-paper border-t border-line px-[20px] pt-[20px] pb-[24px]" data-node-m="85:3142">
+      <IconCircle name="shield" />
+      <p class="m-0 tm-body-strong text-ink">No upfront cost. We’re paid a percentage of what we recover.</p>
+      <p class="m-0 tm-label text-ink">{LICENSE}</p>
+    </div>
+
+    <div class:list={['fcr-group flex flex-col gap-[8px] pt-[24px] lg:gap-[12px] lg:pt-0', span]} data-group data-state="default" data-node="73:1551" data-node-m="74:3974"
+      role="radiogroup" aria-labelledby="f-what-label" aria-describedby="f-what-help f-what-err">
+      <p id="f-what-label" class="m-0 tf-label text-navy whitespace-nowrap">What happened?</p>
+      <div class="flex flex-wrap gap-[8px]">
+        {options.map((o) => (
+          <label class:list={['fcr-chip', o.o, 'lg:order-none']} data-node={o.d} data-node-m={o.m}>
+            <input type="radio" name="What happened" value={o.label} class="sr-only" />
+            <Icon name={o.icon} size={20} class="shrink-0" />
+            <span style={`--lw:${o.lw}px;--lwm:${o.lwm}px`}>{o.label}</span>
+          </label>
+        ))}
+      </div>
+      <p id="f-what-help" class="fcr-group__help m-0 tf-helper text-ink">Choose the closest match. We sort out the details on the call.</p>
+      <p id="f-what-err" class="fcr-group__err m-0 tf-helper text-error" aria-live="polite">Choose what happened, or pick Other.</p>
+    </div>
+
+    <div class="lg:-mt-[8px]" data-node="73:1539" data-node-m="74:3969">
+      <FormField label="Email" name="Email" id="f-email" type="email" required autocomplete="email" placeholder="name@example.com"
+        error="Enter a full email address, like name@example.com." />
+    </div>
+    <div class="lg:-mt-[8px]" data-node="73:1544" data-node-m="74:4010">
+      <FormField label="Property state" name="Property state" id="f-state" type="select" required autocomplete="address-level1" placeholder="Select a state" options={states} error="Choose the state the property is in." />
+    </div>
+
+    <div class={span} data-node="73:1587" data-node-m="74:4018">
+      <FormField label="Anything we should know (optional)" name="Anything we should know" id="f-message" type="textarea" placeholder="What was damaged, and where things stand with your insurer" />
+    </div>
+
+    <label class:list={['fcr-upload flex items-center gap-[12px] p-[16px] lg:gap-[16px] lg:p-[20px] bg-paper border border-dashed border-muted rounded-[8px] cursor-pointer', span]} data-node="73:1592" data-node-m="74:4023">
+      <input type="file" name="Documents" multiple accept=".pdf,application/pdf,image/*" class="sr-only" data-upload aria-describedby="f-upload-help" />
+      <IconCircle name="document" />
+      <span class="flex-1 min-w-0 flex flex-col gap-[4px]">
+        <span class="tm-body-strong lg:t-body-strong text-navy">Add your policy or the carrier’s letters</span>
+        <span id="f-upload-help" class="tf-helper text-ink" data-upload-help>Optional. You can also send them after the first call.</span>
+      </span>
+    </label>
+
+    <hr class:list={['hidden lg:block w-full h-px m-0 border-0 bg-line', span]} data-node="73:1600" />
+
+    <div class:list={['flex flex-col gap-[16px] lg:flex-row lg:flex-wrap lg:items-center lg:gap-[24px]', span]} data-node="73:1601">
+      <Button type="submit" class="w-full h-[56px] lg:w-auto lg:h-[52px]" data-node="73:1602" data-node-m="74:4031">Request My Review</Button>
+      <p class="m-0 flex-1 min-w-0 lg:min-w-[240px] flex gap-[12px] items-start" data-node="73:1606" data-node-m="74:4035">
+        <Icon name="clock" size={20} class="shrink-0 text-navy" />
+        <span class="flex-1 min-w-0 tm-body lg:font-medium lg:text-[15px] lg:leading-[24px] text-ink">We call back the same day, Mon–Sun, 8 AM–6 PM Pacific. Every engagement is discreet.</span>
+      </p>
+    </div>
+  </form>
+</div>

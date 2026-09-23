@@ -1,0 +1,143 @@
+---
+// Home B "Section / Claims". Desktop 57:215 (1280×1817), Mobile 58:683 (390×1678).
+// Routing list (each row links to its claim page), CTA, case-file prints, and the Home / Business lists
+// (two columns on desktop, keyboard-accessible <details> accordions on mobile, collapsed by default).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import Print from './Print.astro';
+import CropMarks from './CropMarks.astro';
+import SectionIndex from './SectionIndex.astro';
+import { ROUTES } from '../../data/site';
+
+const routes = [
+  { icon: 'building', text: "The estimate won't rebuild the house.", link: 'Code Upgrades', href: ROUTES.whatWeDo, d: ['57:224', '57:225', '57:226'], m: ['58:691', '58:693', '58:694'] },
+  { icon: 'flame', text: 'The smoke will <br class="lg:hidden" />“clean out.”', link: 'Fire & Smoke', href: '/claims/fire-smoke-damage/', d: ['57:230', '57:231', '57:232'], m: ['58:697', '58:699', '58:700'] },
+  { icon: 'droplet', text: 'The water claim became a mold claim.', link: 'Water', href: '/claims/water-damage/', d: ['57:236', '57:237', '57:238'], m: ['58:703', '58:705', '58:706'] },
+  { icon: 'document', text: 'The adjuster changed three times.', link: 'Denied or Underpaid', href: '/claims/denied-or-underpaid/', d: ['57:242', '57:243', '57:244'], m: ['58:709', '58:711', '58:712'] },
+  { icon: 'search', text: 'The fine art was priced like furniture.', link: 'Contents', href: ROUTES.whatWeDo, d: ['57:248', '57:249', '57:250'], m: ['58:715', '58:717', '58:718'] },
+  { icon: 'home', text: 'The rental ends before the rebuild does.', link: 'Additional Living Expenses', href: ROUTES.whatWeDo, d: ['57:254', '57:255', '57:256'], m: ['58:721', '58:723', '58:724'] },
+];
+const lists = [
+  {
+    icon: 'home', title: 'Your Home. Fully Recovered.', link: 'Homeowner claims', href: ROUTES.whatWeDo,
+    d: ['57:378', '57:379', '57:398'], m: ['58:748', '58:749'],
+    items: ['Fire, wildfire & smoke losses', 'Water & plumbing failures', 'Trees & falling-object damage', 'Collapse: snow load & structural', 'Ordinance of law & code upgrades', 'Contents valuation & inventory', 'Additional living expenses (ALE)', 'Lead, asbestos & mold remediation analysis'],
+  },
+  {
+    icon: 'building', title: 'Your Business. Fully Recovered.', link: 'Business claims', href: '/commercial-claims/',
+    d: ['57:402', '57:403', '57:422'], m: ['58:752', '58:753'],
+    items: ['Fire, water & structural losses', 'Business interruption & loss of income', 'Dependent-property / contingent BI', 'Equipment breakdown & failure claims', 'Ordinance of law & seismic code upgrades', 'Rebuild cost estimating & Xactimate', 'IH report interpretation & remediation', 'Litigation support & demand packaging'],
+  },
+];
+const circle = 'flex items-center justify-center size-[40px] shrink-0 rounded-full bg-white border border-navy text-navy';
+---
+<section id="claims" aria-labelledby="hb-claims" class="bg-paper scroll-mt-[52px] lg:scroll-mt-0" data-node-d="57:215" data-node-m="58:683">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[96px] lg:flex lg:items-start lg:gap-[24px]">
+    <CropMarks class="hidden lg:block absolute left-[896px] top-[252px] w-[336px] h-[688px]" node="73:2337" />
+    <SectionIndex label="Claims" nodeD="57:216" nodeM="58:684" />
+    <div class="flex flex-col items-start mt-[16px] lg:mt-0 lg:w-[928px] lg:shrink-0" data-node-d="57:219">
+      <h2 id="hb-claims" class="m-0 w-full tm-h2 lg:t-h2 lg:w-[640px] text-navy" data-node-d="57:220" data-node-m="58:688">Where Claims <br class="lg:hidden" />Go Wrong. <br class="lg:hidden" />Where We Start.</h2>
+
+      <div class="flex flex-col w-full mt-[24px] lg:mt-[48px] lg:flex-row lg:gap-[48px] lg:items-start" data-node-d="57:222">
+        <div class="flex flex-col items-start w-full lg:w-[592px] lg:shrink-0" data-node-d="57:223">
+          <ul class="w-full p-0 list-none border-t border-line" data-node-m="58:690">
+            {routes.map((r) => (
+              <li>
+                <a href={r.href} class="hb-route border-b border-line flex gap-[16px] items-center py-[16px] lg:gap-[20px] lg:items-start lg:py-[24px]" data-node-d={r.d[0]} data-node-m={r.m[0]}>
+                  <span class={circle}><Icon name={r.icon} size={24} /></span>
+                  <span class="flex flex-col gap-[4px] items-start flex-1 min-w-0 lg:gap-[8px]">
+                    <span class="block w-full tm-h3 text-ink lg:t-h3 lg:text-navy" data-node-d={r.d[1]} data-node-m={r.m[1]} set:html={r.text} />
+                    <span class="flex gap-[8px] items-center w-full lg:w-auto" data-node-d={r.d[2]}>
+                      <span class="hb-route__label w-full lg:w-auto tm-body lg:font-medium lg:text-[15px] lg:leading-[24px] text-ink whitespace-nowrap" data-node-m={r.m[2]}>{r.link}</span>
+                      <Icon name="arrow-right" size={16} class="hb-route__arrow hidden lg:block shrink-0 text-ink" />
+                    </span>
+                  </span>
+                  <Icon name="arrow-right" size={24} class="hb-route__arrow lg:hidden shrink-0 text-ink" />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div class="w-full mt-[24px] lg:mt-[40px] lg:w-auto" data-node-d="57:261" data-node-m="58:728">
+            <Button href={ROUTES.freeClaimReview} full class="h-[56px] lg:h-[52px] lg:w-auto lg:inline-flex" data-node-d="57:262" data-node-m="58:729">Schedule a Free Review</Button>
+          </div>
+        </div>
+
+        <!-- Desktop print stack -->
+        <div class="hidden lg:block relative w-[288px] h-[640px] shrink-0" data-node="57:267">
+          <Print class="absolute left-[8px] top-[14.65px]" bw={279.005} bh={329.158} w={268} h={320} rot={-2} tabLeft={149} tabColor="var(--color-line)" photoNode="I57:270;41:71" alt="Commercial kitchen after a fire, with a soot-covered hood, range and debris." />
+          <Print class="absolute left-[15.62px] top-[300px]" bw={268.288} bh={326.696} w={260} h={320} rot={1.5} tabLeft={39} tabColor="var(--color-navy)" photoNode="I57:275;41:71" alt="Inventory specialists in gloves cataloguing wine bottles and household contents." />
+        </div>
+      </div>
+
+      <!-- Mobile photo row: horizontal scroll, snap per print, next print peeks at the right edge -->
+      <div class="lg:hidden w-[calc(100%+20px)] mt-[40px] -mr-[20px]">
+      <div class="hb-photorow" data-node="58:734" tabindex="0" role="group" aria-label="Case photos">
+        <div class="relative w-[280px] h-[300px] shrink-0 snap-start" data-node="58:735">
+          <Print class="absolute left-[3.11px] top-[10px]" bw={268.846} bh={284.565} w={264} h={280} rot={1} tabLeft={23} tabTop={-11} tabW={44} tabH={10} tabColor="var(--color-line)" photoNode="I58:738;41:71" alt="Commercial kitchen after a fire, with a soot-covered hood, range and debris." />
+        </div>
+        <div class="relative w-[280px] h-[300px] shrink-0 snap-start">
+          <div class="absolute left-[8px] top-[10px] w-[264px] h-[280px] bg-white border border-line box-border">
+            <span aria-hidden="true" class="absolute left-[11px] top-[-11px] w-[44px] h-[10px] rounded-t-[3px] bg-navy"></span>
+            <Img node="I57:275;41:71" alt="Inventory specialists in gloves cataloguing wine bottles and household contents." class="absolute left-[9px] top-[9px] w-[244px] h-[260px] object-cover max-w-none" />
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Desktop lists -->
+      <div class="hidden lg:flex gap-[32px] items-start w-full mt-[96px]" data-node="57:377">
+        {lists.map((l) => (
+          <div class="flex flex-col items-start w-[448px] shrink-0" data-node={l.d[0]}>
+            <div class="flex flex-col gap-[16px] h-[90px] w-full">
+              <span class={circle}><Icon name={l.icon} size={24} /></span>
+              <h3 class="m-0 w-full t-h3 text-navy" data-node={l.d[1]}>{l.title}</h3>
+            </div>
+            <ul class="w-full mt-[16px] p-0 list-none">
+              {l.items.map((it) => <li class="border-b border-line py-[12px] font-body font-medium text-[15px] leading-[24px] text-ink">{it}</li>)}
+            </ul>
+            <a href={l.href} class="hb-link flex gap-[8px] items-center py-[12px] mt-[16px]" data-node={l.d[2]}>
+              <span class="t-body-strong underline text-ink">{l.link}</span>
+              <Icon name="arrow-right" size={24} class="hb-link__arrow text-ink shrink-0" />
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <!-- Mobile accordions -->
+      <div class="lg:hidden w-full mt-[40px]">
+        {lists.map((l) => (
+          <details class="hb-acc border-b border-line first:border-t" data-node={l.m[0]}>
+            <summary class="flex gap-[16px] items-center py-[20px] cursor-pointer list-none">
+              <span class={circle}><Icon name={l.icon} size={24} /></span>
+              <h3 class="m-0 flex-1 min-w-0 tm-h3 text-ink" data-node={l.m[1]}>{l.title}</h3>
+              <Icon name="chevron-down" size={24} class="hb-acc__chev shrink-0 text-ink" />
+            </summary>
+            <ul class="w-full p-0 list-none pb-[8px]">
+              {l.items.map((it) => <li class="border-t border-line py-[12px] tm-body text-ink">{it}</li>)}
+            </ul>
+            <a href={l.href} class="hb-link flex gap-[8px] items-center h-[48px] mb-[12px]">
+              <span class="tm-body-strong underline text-ink">{l.link}</span>
+              <Icon name="arrow-right" size={24} class="hb-link__arrow text-ink shrink-0" />
+            </a>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .hb-route { color: inherit; }
+  .hb-route .hb-route__arrow { transition: transform .15s ease; }
+  .hb-route:hover .hb-route__label, .hb-route:focus-visible .hb-route__label { text-decoration: underline; text-underline-offset: 3px; color: var(--color-royal); }
+  .hb-route:hover .hb-route__arrow, .hb-route:focus-visible .hb-route__arrow { transform: translateX(4px); color: var(--color-royal); }
+  .hb-route:focus-visible { outline-offset: 2px; }
+  .hb-photorow { display: flex; gap: 16px; padding: 12px 20px 12px 0; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; box-sizing: border-box; }
+  .hb-photorow::-webkit-scrollbar { display: none; }
+  .hb-acc summary::-webkit-details-marker { display: none; }
+  .hb-acc__chev { transition: transform .2s ease; }
+  .hb-acc[open] .hb-acc__chev { transform: rotate(180deg); }
+  .hb-acc summary:hover h3 { color: var(--color-royal); }
+  .hb-acc summary:focus-visible { outline-offset: 2px; }
+</style>

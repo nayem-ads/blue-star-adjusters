@@ -1,0 +1,478 @@
+{
+  "53:71": {
+    "src": "/img/ai-hero-22-62-1280x840.webp",
+    "width": 1280,
+    "height": 840,
+    "frame": "22:62",
+    "name": "IMG:ai-hero"
+  },
+  "53:280": {
+    "src": "/img/modern-home-22-62-520x892.webp",
+    "width": 520,
+    "height": 892,
+    "frame": "22:62",
+    "name": "IMG:modern-home"
+  },
+  "54:153": {
+    "src": "/img/smoke-corner-22-62-400x760.webp",
+    "width": 400,
+    "height": 760,
+    "frame": "22:62",
+    "name": "IMG:smoke-corner"
+  },
+  "54:193": {
+    "src": "/img/mike-22-62-448x560.webp",
+    "width": 448,
+    "height": 560,
+    "frame": "22:62",
+    "name": "IMG:mike"
+  },
+  "55:156": {
+    "src": "/img/onsite-adjuster-22-62-1120x560.webp",
+    "width": 1120,
+    "height": 560,
+    "frame": "22:62",
+    "name": "IMG:onsite-adjuster"
+  },
+  "73:2514": {
+    "src": "/img/stair-detail-22-62-200x264.webp",
+    "width": 200,
+    "height": 264,
+    "frame": "22:62",
+    "name": "IMG:stair-detail (inset)"
+  },
+  "55:172": {
+    "src": "/img/wood-house-22-62-540x360.webp",
+    "width": 540,
+    "height": 360,
+    "frame": "22:62",
+    "name": "IMG:wood-house"
+  },
+  "55:198": {
+    "src": "/img/apartment-22-62-540x360.webp",
+    "width": 540,
+    "height": 360,
+    "frame": "22:62",
+    "name": "IMG:apartment"
+  },
+  "57:299": {
+    "src": "/img/gym-ruin-22-62-1280x704.webp",
+    "width": 1280,
+    "height": 704,
+    "frame": "22:62",
+    "name": "IMG:gym-ruin"
+  },
+  "58:465": {
+    "src": "/img/ai-hero-58-463-390x844.webp",
+    "width": 390,
+    "height": 844,
+    "frame": "58:463",
+    "name": "IMG:ai-hero"
+  },
+  "62:638": {
+    "src": "/img/modern-home-58-463-390x300.webp",
+    "width": 390,
+    "height": 300,
+    "frame": "58:463",
+    "name": "IMG:modern-home"
+  },
+  "62:685": {
+    "src": "/img/smoke-corner-58-463-350x420.webp",
+    "width": 350,
+    "height": 420,
+    "frame": "58:463",
+    "name": "IMG:smoke-corner"
+  },
+  "62:694": {
+    "src": "/img/mike-58-463-350x420.webp",
+    "width": 350,
+    "height": 420,
+    "frame": "58:463",
+    "name": "IMG:mike"
+  },
+  "62:705": {
+    "src": "/img/onsite-adjuster-58-463-390x320.webp",
+    "width": 390,
+    "height": 320,
+    "frame": "58:463",
+    "name": "IMG:onsite-adjuster"
+  },
+  "63:586": {
+    "src": "/img/wood-house-58-463-350x236.webp",
+    "width": 350,
+    "height": 236,
+    "frame": "58:463",
+    "name": "IMG:wood-house"
+  },
+  "63:611": {
+    "src": "/img/apartment-58-463-350x236.webp",
+    "width": 350,
+    "height": 236,
+    "frame": "58:463",
+    "name": "IMG:apartment"
+  },
+  "63:720": {
+    "src": "/img/gym-ruin-58-463-390x720.webp",
+    "width": 390,
+    "height": 720,
+    "frame": "58:463",
+    "name": "IMG:gym-ruin"
+  },
+  "I53:234;41:71": {
+    "src": "/img/gym-ruin-53-148-264x344.webp",
+    "width": 264,
+    "height": 344,
+    "frame": "53:148",
+    "name": "IMG:gym-ruin"
+  },
+  "I53:224;41:71": {
+    "src": "/img/ai-water-loss-53-148-340x254.webp",
+    "width": 340,
+    "height": 254,
+    "frame": "53:148",
+    "name": "IMG:ai-water-loss"
+  },
+  "I53:229;41:71": {
+    "src": "/img/stair-detail-53-148-256x340.webp",
+    "width": 256,
+    "height": 340,
+    "frame": "53:148",
+    "name": "IMG:stair-detail"
+  },
+  "I56:285;41:71": {
+    "src": "/img/mike-53-148-392x476.webp",
+    "width": 392,
+    "height": 476,
+    "frame": "53:148",
+    "name": "IMG:mike"
+  },
+  "I57:270;41:71": {
+    "src": "/img/ai-commercial-fire-53-148-248x300.webp",
+    "width": 248,
+    "height": 300,
+    "frame": "53:148",
+    "name": "IMG:ai-commercial-fire"
+  },
+  "I57:275;41:71": {
+    "src": "/img/ai-contents-53-148-240x300.webp",
+    "width": 240,
+    "height": 300,
+    "frame": "53:148",
+    "name": "IMG:ai-contents"
+  },
+  "I57:490;41:71": {
+    "src": "/img/ai-rebuilt-home-53-148-356x238.webp",
+    "width": 356,
+    "height": 238,
+    "frame": "53:148",
+    "name": "IMG:ai-rebuilt-home"
+  },
+  "I58:415;41:71": {
+    "src": "/img/gym-ruin-53-149-204x144.webp",
+    "width": 204,
+    "height": 144,
+    "frame": "53:149",
+    "name": "IMG:gym-ruin"
+  },
+  "I58:410;41:71": {
+    "src": "/img/stair-detail-53-149-112x144.webp",
+    "width": 112,
+    "height": 144,
+    "frame": "53:149",
+    "name": "IMG:stair-detail"
+  },
+  "I58:628;41:71": {
+    "src": "/img/mike-53-149-330x372.webp",
+    "width": 330,
+    "height": 372,
+    "frame": "53:149",
+    "name": "IMG:mike"
+  },
+  "I58:738;41:71": {
+    "src": "/img/ai-commercial-fire-53-149-244x260.webp",
+    "width": 244,
+    "height": 260,
+    "frame": "53:149",
+    "name": "IMG:ai-commercial-fire"
+  },
+  "I58:744;41:71": {
+    "src": "/img/ai-contents-53-149-56x260.webp",
+    "width": 56,
+    "height": 260,
+    "frame": "53:149",
+    "name": "IMG:ai-contents"
+  },
+  "I62:547;41:71": {
+    "src": "/img/ai-rebuilt-home-53-149-330x220.webp",
+    "width": 330,
+    "height": 220,
+    "frame": "53:149",
+    "name": "IMG:ai-rebuilt-home"
+  },
+  "I73:1896;41:71": {
+    "src": "/img/mike-portrait-68-449-560x700.webp",
+    "width": 560,
+    "height": 700,
+    "frame": "68:449",
+    "name": "IMG:mike-portrait"
+  },
+  "I73:3018;41:71": {
+    "src": "/img/ai-plans-68-449-544x400.webp",
+    "width": 544,
+    "height": 400,
+    "frame": "68:449",
+    "name": "IMG:ai-plans"
+  },
+  "I73:3028;41:71": {
+    "src": "/img/onsite-adjuster-68-449-544x400.webp",
+    "width": 544,
+    "height": 400,
+    "frame": "68:449",
+    "name": "IMG:onsite-adjuster"
+  },
+  "I74:2716;41:71": {
+    "src": "/img/mike-portrait-68-450-390x264.webp",
+    "width": 390,
+    "height": 264,
+    "frame": "68:450",
+    "name": "IMG:mike-portrait"
+  },
+  "I74:3298;41:71": {
+    "src": "/img/ai-plans-68-450-350x248.webp",
+    "width": 350,
+    "height": 248,
+    "frame": "68:450",
+    "name": "IMG:ai-plans"
+  },
+  "I74:3307;41:71": {
+    "src": "/img/onsite-adjuster-68-450-350x440.webp",
+    "width": 350,
+    "height": 440,
+    "frame": "68:450",
+    "name": "IMG:onsite-adjuster"
+  },
+  "73:915": {
+    "src": "/img/onsite-adjuster-70-574-424x504.webp",
+    "width": 424,
+    "height": 504,
+    "frame": "70:574",
+    "name": "IMG:onsite-adjuster"
+  },
+  "73:925": {
+    "src": "/img/ai-moisture-70-574-176x224.webp",
+    "width": 176,
+    "height": 224,
+    "frame": "70:574",
+    "name": "IMG:ai-moisture"
+  },
+  "73:2120": {
+    "src": "/img/wood-house-70-574-200x144.webp",
+    "width": 200,
+    "height": 144,
+    "frame": "70:574",
+    "name": "IMG:wood-house"
+  },
+  "73:2146": {
+    "src": "/img/malibu-frame-70-574-200x144.webp",
+    "width": 200,
+    "height": 144,
+    "frame": "70:574",
+    "name": "IMG:malibu-frame"
+  },
+  "73:2168": {
+    "src": "/img/ai-water-loss-70-574-200x144.webp",
+    "width": 200,
+    "height": 144,
+    "frame": "70:574",
+    "name": "IMG:ai-water-loss"
+  },
+  "73:2189": {
+    "src": "/img/ai-hail-roof-70-574-200x144.webp",
+    "width": 200,
+    "height": 144,
+    "frame": "70:574",
+    "name": "IMG:ai-hail-roof"
+  },
+  "73:2214": {
+    "src": "/img/ai-contents-70-574-200x144.webp",
+    "width": 200,
+    "height": 144,
+    "frame": "70:574",
+    "name": "IMG:ai-contents"
+  },
+  "73:2236": {
+    "src": "/img/modern-home-70-574-200x144.webp",
+    "width": 200,
+    "height": 144,
+    "frame": "70:574",
+    "name": "IMG:modern-home"
+  },
+  "73:2626": {
+    "src": "/img/ai-commercial-fire-70-574-544x640.webp",
+    "width": 544,
+    "height": 640,
+    "frame": "70:574",
+    "name": "IMG:ai-commercial-fire"
+  },
+  "73:2628": {
+    "src": "/img/ai-business-interruption-70-574-264x320.webp",
+    "width": 264,
+    "height": 320,
+    "frame": "70:574",
+    "name": "IMG:ai-business-interruption"
+  },
+  "73:2629": {
+    "src": "/img/apartment-70-574-264x320.webp",
+    "width": 264,
+    "height": 320,
+    "frame": "70:574",
+    "name": "IMG:apartment"
+  },
+  "74:710": {
+    "src": "/img/stair-detail-70-574-616x400.webp",
+    "width": 616,
+    "height": 400,
+    "frame": "70:574",
+    "name": "IMG:stair-detail"
+  },
+  "74:743": {
+    "src": "/img/ai-contents-70-574-416x240.webp",
+    "width": 416,
+    "height": 240,
+    "frame": "70:574",
+    "name": "IMG:ai-contents"
+  },
+  "74:3475": {
+    "src": "/img/onsite-adjuster-70-575-338x204.webp",
+    "width": 338,
+    "height": 204,
+    "frame": "70:575",
+    "name": "IMG:onsite-adjuster"
+  },
+  "74:3719": {
+    "src": "/img/wood-house-70-575-278x200.webp",
+    "width": 278,
+    "height": 200,
+    "frame": "70:575",
+    "name": "IMG:wood-house"
+  },
+  "74:3861": {
+    "src": "/img/malibu-frame-70-575-74x200.webp",
+    "width": 74,
+    "height": 200,
+    "frame": "70:575",
+    "name": "IMG:malibu-frame"
+  },
+  "74:3736": {
+    "src": "/img/malibu-frame-70-575-278x200.webp",
+    "width": 278,
+    "height": 200,
+    "frame": "70:575",
+    "name": "IMG:malibu-frame"
+  },
+  "74:3753": {
+    "src": "/img/ai-water-loss-70-575-278x200.webp",
+    "width": 278,
+    "height": 200,
+    "frame": "70:575",
+    "name": "IMG:ai-water-loss"
+  },
+  "74:3768": {
+    "src": "/img/ai-hail-roof-70-575-278x200.webp",
+    "width": 278,
+    "height": 200,
+    "frame": "70:575",
+    "name": "IMG:ai-hail-roof"
+  },
+  "74:3783": {
+    "src": "/img/ai-contents-70-575-278x200.webp",
+    "width": 278,
+    "height": 200,
+    "frame": "70:575",
+    "name": "IMG:ai-contents"
+  },
+  "74:3799": {
+    "src": "/img/modern-home-70-575-278x200.webp",
+    "width": 278,
+    "height": 200,
+    "frame": "70:575",
+    "name": "IMG:modern-home"
+  },
+  "74:4088": {
+    "src": "/img/ai-commercial-fire-70-575-350x240.webp",
+    "width": 350,
+    "height": 240,
+    "frame": "70:575",
+    "name": "IMG:ai-commercial-fire"
+  },
+  "74:4090": {
+    "src": "/img/ai-business-interruption-70-575-167x160.webp",
+    "width": 167,
+    "height": 160,
+    "frame": "70:575",
+    "name": "IMG:ai-business-interruption"
+  },
+  "74:4091": {
+    "src": "/img/apartment-70-575-167x160.webp",
+    "width": 167,
+    "height": 160,
+    "frame": "70:575",
+    "name": "IMG:apartment"
+  },
+  "74:4140": {
+    "src": "/img/stair-detail-70-575-338x276.webp",
+    "width": 338,
+    "height": 276,
+    "frame": "70:575",
+    "name": "IMG:stair-detail"
+  },
+  "74:4173": {
+    "src": "/img/ai-contents-70-575-350x260.webp",
+    "width": 350,
+    "height": 260,
+    "frame": "70:575",
+    "name": "IMG:ai-contents"
+  },
+  "I73:2782;41:71": {
+    "src": "/img/ai-claim-table-73-1379-448x560.webp",
+    "width": 448,
+    "height": 560,
+    "frame": "73:1379",
+    "name": "IMG:ai-claim-table"
+  },
+  "I74:1992;41:71": {
+    "src": "/img/ai-claim-table-74-1785-448x560.webp",
+    "width": 448,
+    "height": 560,
+    "frame": "74:1785",
+    "name": "IMG:ai-claim-table"
+  },
+  "I74:2254;41:71": {
+    "src": "/img/ai-claim-table-74-2047-448x560.webp",
+    "width": 448,
+    "height": 560,
+    "frame": "74:2047",
+    "name": "IMG:ai-claim-table"
+  },
+  "I74:4408;41:71": {
+    "src": "/img/ai-claim-table-74-3862-326x408.webp",
+    "width": 326,
+    "height": 408,
+    "frame": "74:3862",
+    "name": "IMG:ai-claim-table"
+  },
+  "I74:4679;41:71": {
+    "src": "/img/ai-claim-table-74-4514-326x408.webp",
+    "width": 326,
+    "height": 408,
+    "frame": "74:4514",
+    "name": "IMG:ai-claim-table"
+  },
+  "I74:4890;41:71": {
+    "src": "/img/ai-claim-table-74-4725-326x408.webp",
+    "width": 326,
+    "height": 408,
+    "frame": "74:4725",
+    "name": "IMG:ai-claim-table"
+  }
+}

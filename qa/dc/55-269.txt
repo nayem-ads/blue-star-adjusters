@@ -1,0 +1,16 @@
+55:269 Section / Why early DESKTOP condensed. bg white flex gap24 pt120 pb96 px80.
+Section index 55:270 w168 flex-col gap12 pt8: "Why early" Montserrat Medium 15/20 ink; rule navy 48x2.
+Content 928 flex-col: H2 t-h2 navy w720 "Why Starting Early Makes All the Difference" / gap24
+Lead row flex gap12 items-center: clock icon 24; Lead 20/32 ink w640 "Our ability to affect your outcome diminishes with time." / gap56
+Five steps flex gap32 w-full; connector navy h1 left20 top20 w768 (absolute).
+ Step w160 flex-col gap12: circle 40 rounded border 1 navy (step1 bg navy, others bg white), icon 24; spacer 8x8; number Montserrat SemiBold 13/18 .26 ink;
+ name Montserrat SemiBold 17/28 ink h56; note Montserrat Medium 15/24 ink.
+ 01 search "Free review" "Discuss your claim with our team at no cost or obligation."
+ 02 document "Policy review" "We identify all avenues of recovery available under your policy."
+ 03 ruler "Scope the loss" "We take part in determining the full scope of your loss from day one."
+ 04 home "Build your claim" "We prepare and present a detailed, itemized claim package on your behalf."
+ 05 shield "Maximize settlement" "We negotiate proactively to get you the most money as fast as possible."
+gap32 / Link 55:300 flex gap8 py12: "How It Works" Montserrat SemiBold 17/28 #070f33 underline + arrow-right 24 / gap96
+55:305 flex gap32: left w448 flex-col gap16: chip bg paper border line rounded4 pl12 pr16 py8 gap8 document icon "Signed September 15, 2026" Medium 15/24;
+ H3 28/34 navy "The Rules Changed. The First Estimate Didn't."; body 17/28 "California's Smoke Damage Recovery Act, signed September 15, 2026, presumes smoke in a home inside a wildfire zone came from that fire, and makes insurers pay for the testing."; body "But the carrier still writes the first estimate. We measure the loss forensically and push for what it takes to return your property to its pre-loss condition."
+ right w448 border-l-2 navy pl32 flex-col: glyph "“" Schibsted Bold 96/72 -1.92 royal; pull Schibsted SemiBold 28/34 navy "Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas. That wealth came from somewhere."

@@ -1,0 +1,10 @@
+---
+// Detail / Tagline rule (85:3090): 40px rule, "Your Claim. Our Fight.", 40px rule (32px and 12/16 type on mobile). Rules are white at 50%.
+interface Props { class?: string; node?: string; nodeM?: string }
+const { class: cls = '', node, nodeM } = Astro.props;
+---
+<p class:list={['m-0 flex items-center gap-[16px] tm-label lg:t-label whitespace-nowrap text-white', cls]} data-node={node} data-node-m={nodeM}>
+  <span aria-hidden="true" class="block w-[32px] lg:w-[40px] h-px bg-white/50"></span>
+  <span>Your Claim. Our Fight.</span>
+  <span aria-hidden="true" class="block w-[32px] lg:w-[40px] h-px bg-white/50"></span>
+</p>

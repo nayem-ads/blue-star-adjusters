@@ -1,0 +1,8 @@
+58:573 Section / Why early MOBILE condensed. bg white flex-col pt64 pb56 px20. Connector navy w1 h562 absolute left40 top344.
+Section index flex gap12 items-center: rule navy 24x2; "Why early" Montserrat SemiBold 12/16 .24 ink. / gap16
+H2 Schibsted SemiBold 32/36 -0.48 navy / gap16 / lead row flex gap12 items-start: clock 24; lead 18/28 flex-1 / gap32
+Steps: each flex gap16 py16 w-full: circle 40 (step1 navy bg, others white) border navy; text flex-col gap4: num SemiBold 12/16 .24; name SemiBold 16/26; note Regular 16/26 (ink).
+gap8 / link h48 py12 gap8 "How It Works" SemiBold 16/26 underline + arrow 24 / gap48
+chip paper bg border line rounded4 pl12 pr16 py8 gap8 doc icon + Medium 12/16 .12 "Signed September 15, 2026" / gap16
+H3 Schibsted SemiBold 22/28 -0.22 INK / gap12 / body 16/26 / gap12 / body / gap32
+Pull: border-l-2 navy pl20: glyph Schibsted Bold 72/56 -1.8 royal "“"; text Schibsted SemiBold 22/28 -0.22 ink.

@@ -1,0 +1,53 @@
+---
+// Offices: Local Codes. Local Contractors. Desktop 57:281, mobile 63:697.
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import FactChip from './FactChip.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+const offices = [
+  { name: 'Santa Monica', w: 'lg:min-w-[346px]', href: '/locations/california/santa-monica/', d: ['74:1694', '57:291'], m: ['63:701', '63:702'] },
+  { name: 'Sacramento', w: 'lg:min-w-[313px]', href: '/locations/california/sacramento/', d: ['74:1698', '57:292'], m: ['63:703', '63:704'] },
+  { name: 'San Francisco', w: 'lg:min-w-[355px]', href: '/locations/california/san-francisco/', d: ['74:1702', '57:293'], m: ['63:705', '63:706'] },
+  { name: 'Reno', w: 'lg:min-w-[156px]', href: '/locations/nevada/reno/', d: ['74:1706', '57:294'], m: ['63:707', '63:708'] },
+  { name: 'Portland', w: 'lg:min-w-[234px]', href: '/locations/oregon/portland/', d: ['74:1710', '57:295'], m: ['63:709', '63:710'] },
+  { name: 'Seattle', w: 'lg:min-w-[199px]', href: '/locations/washington/seattle/', d: ['74:1714', '57:296'], m: ['63:711', '63:712'] },
+  { name: 'Scottsdale', w: 'lg:min-w-[281px]', href: '/locations/arizona/scottsdale/', d: ['74:1718', '57:297'], m: ['63:713', '63:714'] },
+];
+---
+<section aria-labelledby="offices-title" class="relative bg-white overflow-hidden" data-node="57:281" data-node-m="63:697">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[24px] lg:gap-[56px]">
+    <div aria-hidden="true" class="office-grid hidden lg:block absolute left-[720px] top-[504px] w-[560px] h-[280px] pointer-events-none" data-node="74:1734"></div>
+    <div class="contents lg:flex lg:items-start lg:gap-[80px]" data-node="57:282">
+      <h2 id="offices-title" class="m-0 tm-h2 lg:t-h2 text-navy lg:flex-1 lg:max-w-[640px]" data-node="57:283" data-node-m="63:698">Local Codes.<br /> Local Contractors.</h2>
+      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[24px] lg:w-[400px] lg:shrink-0" data-node="57:284">
+        <div class="order-2 lg:order-none self-start flex gap-[12px]" data-node="74:1722" data-node-m="74:3671">
+          <FactChip icon="map-pin" node="74:1723" nodeM="74:3672">7 offices</FactChip>
+          <FactChip icon="document" node="74:1728" nodeM="74:3677">5 states</FactChip>
+        </div>
+        <p class="order-1 lg:order-none m-0 tm-body lg:t-body text-ink" data-node="57:285" data-node-m="63:699">Seven offices from Santa Monica to Seattle. We know your community, your local codes and your local contractors.</p>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="order-5 lg:order-none h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="57:286" data-node-m="63:715">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+    <ul class="order-3 lg:order-none m-0 p-0 list-none flex flex-col lg:flex-row lg:flex-wrap lg:gap-x-[48px] lg:gap-y-[8px] lg:py-[32px] lg:border-t lg:border-b border-line" data-node="57:290" data-node-m="63:700">
+      {offices.map((o, i) => (
+        <li class:list={['border-t border-line py-[12px] lg:border-0 lg:py-0', o.w, i === offices.length - 1 && 'border-b']} data-node={o.d[0]} data-node-m={o.m[0]}>
+          <a href={o.href} class="office flex items-center gap-[12px] text-navy">
+            <Icon name="map-pin" size={28} class="text-royal shrink-0 w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
+            <span class="flex-1 tm-h3 lg:t-h2 whitespace-nowrap" data-node={o.d[1]} data-node-m={o.m[1]}>{o.name}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="order-4 lg:order-none m-0 tm-body-strong lg:t-body-strong text-ink lg:self-start lg:whitespace-nowrap" data-node="74:1733" data-node-m="74:3682">California, Nevada, Oregon, Washington and Arizona</p>
+  </div>
+</section>
+<style>
+  .office span { text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 2px; text-underline-offset: 6px; transition: text-decoration-color .15s ease; }
+  .office:hover span, .office:focus-visible span { text-decoration-color: currentColor; }
+  .office-grid {
+    opacity: .12;
+    background:
+      linear-gradient(to right, rgb(19 63 170 / .08) 1px, transparent 1px) 0 0 / 35px 28px,
+      linear-gradient(to bottom, rgb(19 63 170 / .08) 1px, transparent 1px) 0 0 / 35px 28px;
+  }
+</style>

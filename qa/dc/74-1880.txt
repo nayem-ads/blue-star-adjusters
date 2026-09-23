@@ -1,0 +1,3 @@
+get_design_context 74:1880 (Fields, error state desktop). Error frame is a filled-but-invalid submit:
+Full name value "Jordan Moreno" (ok). Phone value "(916) 555-01" error: border 2 error; error text 500 14/20 error "Enter a 10-digit phone number so we can call you back."
+Email "jmoreno@" error: "Enter a full email address, like name@example.com." Property state "California" (ok). Values text ink.

@@ -1,0 +1,8 @@
+Form field 39:122: flex-col gap-8 w-400 (instance width)
+ Label 39:93 Montserrat SemiBold 15/20 navy
+ Input box: bg white rounded-10 px-16 overflow-clip
+  Single Default 39:92: h-52 items-center border 1.5 muted #5e6885, value text Montserrat 16/24 muted (placeholder look)
+  Single Focus 39:97: border 2 royal, shadow 0 0 0 3px line #d9dfee, text ink
+  Single Error 39:102: border 2 error #b42318, text ink
+  Multi Default 39:107 / Focus 39:112 / Error 39:117: same but h-128 items-start py-14
+ Helper 39:96 Montserrat Medium 14/20 ink (Default/Focus); Error 39:106 same text in error colour (helper slot shows the message in red)

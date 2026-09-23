@@ -1,0 +1,9 @@
+58:431 Section / Results ledger MOBILE condensed. bg paper flex-col gap12 pt80 pb56 px20.
+Trust 58:430 Montserrat Medium 12/16 .12 ink 4 lines: "No upfront cost." / "We're paid a percentage of what we recover." / "You always have final say on any settlement." / "CA DOI License No. 2B60428."
+Ledger header flex gap12 items-center: circle 40 white border navy + document icon; H3 Schibsted SemiBold 22/28 -0.22 navy flex-1 "What the Carrier Offered. What We Recovered."
+Dimension line (as desktop) "Measured, not estimated". gap4 spacer.
+Cards bg white rounded16 px20 py24 flex-col gap12 w-full:
+ Palisades: loss Montserrat SemiBold 16/26 ink; Offer flex gap8 baseline: caption 12/16 "Carrier's offer" + Schibsted SemiBold 28/34 line-through w111 "$38,000"; Recovered flex-col gap2: caption "Settlement" + Schibsted Medium 48/50 -0.96 navy "$276,000"; note Montserrat 16/26 "We measured the structural damage and proved the subfloor and electrical needed a full strip-out."
+ Smoke: offer "$17,000"; recovered: "About" Montserrat Medium 16/26 -0.32 #070f33 on own line, then "$1.1 million" 48/50; note "An industrial hygienist proved the combustion byproducts in the home's porous materials and doors."
+ Estate: Offer row: Montserrat 16/26 "Owner recovered $6M alone, then stalled"; recovered: "$11M" 48/50 + " structure" Montserrat Medium 16 lh50 -0.32; "+ $5.2M" + " contents"; note "Specialist valuation of fine wine and art."
+gap4 / disclaimer Montserrat Medium 12/16 .12 / gap24 / statement Montserrat 18/28 ink / gap12 / fact chips flex-wrap gap8: chip label Montserrat Medium 12/16 .12 (same chips as desktop).

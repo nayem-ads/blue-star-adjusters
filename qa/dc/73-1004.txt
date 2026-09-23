@@ -1,0 +1,9 @@
+get_design_context 73:1004 (Routing / Row, desktop) — condensed
+Row: flex gap 80 items-start.
+Statement 73:1005 w368 flex-col gap 24: Icon circle clock 40 (border 1px navy, radius 20, icon 24) ;
+ 73:1010 Schibsted SemiBold 48/54 tracking -0.72 navy "Our ability to affect your outcome diminishes with time."
+ 73:1011 Montserrat 17/28 ink "Each line links to its claim page."
+ Panel 85:3066: bg paper, border 1 line, radius 4, p 24, flex-col gap 16. Row gap16 items-start: phone icon 24 + Montserrat Medium 12 / normal lh ink "Call us first, and we can look at your claim the same day." ; Outline button w/ phone icon "Call (916) 507-1005".
+List 73:1012 flex-1 flex-col: hairline 1px line between items (and top/bottom).
+ Route: flex gap 24 items-center py 24: icon circle 40 bg paper radius 20 (icon 24 navy) ; text flex-1 Montserrat 20/32 ink ; link w216 flex gap 8: label flex-1 Montserrat Medium 15/20 royal + arrow 24.
+ Routes: ruler "The estimate won't rebuild the house." -> Code Upgrades | flame 'The smoke will "clean out."' -> Fire & Smoke | droplet "The water claim became a mold claim." -> Water | document "The adjuster changed three times." -> Denied or Underpaid | search "The fine art was priced like furniture." -> Contents | home "The rental ends before the rebuild does." -> Additional Living Expenses

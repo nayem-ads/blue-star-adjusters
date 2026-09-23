@@ -1,0 +1,3 @@
+get_design_context 85:3246 (Panel Where we work, error desktop only). Annotation: fills the sidebar while the error state lengthens the form.
+bg paper, border 1 line, (no radius), p32 col gap16. Head flex gap16 items-center: circle 40 white border navy, pin 24; "Where we work" 600 17/28 navy.
+"Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, Scottsdale." 500 15/24 ink; "California, Nevada, Oregon, Washington, Arizona." same.

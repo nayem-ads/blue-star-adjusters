@@ -1,0 +1,4 @@
+Header/Mobile Light 42:129: bg white, border-b 1px line, flex h-64 items-center justify-between pl-20 pr-8 w-390
+ Logo/Horizontal/Color 30 (4:73): mark 24.709x30 + gap 9 + wordmark 101.538x15
+ Actions 42:139 flex: Tap/Call 42:140 44x44 (Icon/phone 24) + Tap/Menu 42:143 44x44 (Icon/menu 24); icons navy
+(Dark 42:146 not fetched: same geometry, transparent, white logo/icons per ref 58-463)

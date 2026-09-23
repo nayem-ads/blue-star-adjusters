@@ -1,0 +1,10 @@
+53:70 hero (condensed from get_design_context, home-a agent)
+section bg paper #f4f6fb, 1280x968. Photo clip 53:220 1280x840 overflow hidden.
+53:71 img 1280x840 (img h102.23% top -2.23%, pre-cropped in images.json)
+53:72 overlay ink #070f33 full, "ink 36%" (opacity .36)
+53:73 overlay ink, blur 80px, 880x840 at 0,0
+Header dark 42:102 at top.
+53:108 hero copy abs left80 top168 w720, flex col gap24: Eyebrow dark "Your Claim. Our Fight."; H1 Display XL 96/96 -2.88px white w720 "The New Way to Settle Claims."; 53:113 col gap12: H3 28/34 -0.28 "We level the playing field." w560; Lead 20/32 w560 "Blue Star Adjusters exists because the old way wasn’t good enough. Our experience isn’t new. We bring years at the top of the industry and the conviction to finally do it right."; Button outline-on-dark w/ phone icon "Call (916) 507-1005".
+53:122 bar: abs left80 top752 w1120 white, flex col gap20, pt28 pb24 px32, radius 4, shadow 0 24 48 rgba(7,15,51,.14).
+ 53:123 fields row flex gap16 items-end: 3 fields flex-1 (label 15/20 semibold navy, input h52 border1.5 muted radius10 px16 placeholder muted 16/24): Name "Your name", Phone "(555) 555-5555", What happened "Fire, smoke, water, wind…"; solid button "Schedule a Free Review".
+ 53:144 trust line flex gap24 items-center: Montserrat Medium 15/24 ink: "No upfront cost." | divider 1x16 line | "You always have final say on any settlement." | divider | "CA License No. 2B60428"

@@ -1,0 +1,57 @@
+---
+// Results ledger. Desktop 53:237, mobile 58:538.
+import LedgerRow from '../../components/LedgerRow.astro';
+import Button from '../../components/Button.astro';
+import DimLine from './DimLine.astro';
+import Ruler from './Ruler.astro';
+import { ROUTES } from '../../data/site';
+const rows = [
+  { loss: 'Palisades fire', note: 'We measured the structural damage and proved the subfloor and electrical needed a full strip-out.', offer: '$38,000', recovered: '$276,000', node: '53:242', nodeM: '58:541' },
+  { loss: 'Smoke damage', note: 'An industrial hygienist proved the combustion byproducts in the home’s porous materials and doors.', offer: '$17,000', recovered: 'About $1.1M', node: '53:252', nodeM: '58:550' },
+];
+const estate = { loss: 'Estate fire', note: 'Specialist valuation of fine wine and art: $11M for the structure and $5.2M for contents.', offer: '$6M', recovered: '$11M + $5.2M' };
+---
+<section aria-labelledby="results-title" class="results relative bg-paper overflow-hidden" data-node="53:237" data-node-m="58:538">
+  <div aria-hidden="true" class="results-grid absolute pointer-events-none" data-node="85:2982" data-node-m="74:3098"></div>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[96px] lg:pb-[120px] flex flex-col gap-[32px] lg:gap-[56px]">
+    <div class="flex flex-col gap-[32px] lg:flex-row lg:items-end lg:gap-[80px]" data-node="53:238">
+      <h2 id="results-title" class="m-0 tm-h2 lg:t-h2 text-navy lg:flex-1 lg:max-w-[640px]" data-node="53:239" data-node-m="58:539">What the Carrier Offered.<br class="hidden lg:inline" /> What We Recovered.</h2>
+      <div class="flex flex-col gap-[24px] lg:w-[400px] lg:shrink-0" data-node="73:1623">
+        <p class="m-0 hidden lg:block t-body text-ink" data-node="53:240">Having a licensed public adjuster evaluate the loss often results in an entirely different financial outcome for the policyholder.</p>
+        <DimLine class="w-[320px]" node="73:1624" nodeM="74:3092" />
+      </div>
+    </div>
+    <div class="ledger flex flex-col gap-[16px] lg:gap-0" data-node="53:241" data-node-m="58:540">
+      <Ruler class="hidden lg:block" node="73:1630" />
+      {rows.map((r) => <div data-node={r.node} data-node-m={r.nodeM}><LedgerRow loss={r.loss} note={r.note} offer={r.offer} recovered={r.recovered} /></div>)}
+      <div class="lg:hidden" data-node-m="58:559"><LedgerRow loss={estate.loss} note={estate.note} offer={estate.offer} recovered={estate.recovered} offerLabel="Recovered alone, then stalled" /></div>
+      <div class="hidden lg:block" data-node="53:262"><LedgerRow loss={estate.loss} note={estate.note} offer={estate.offer} recovered={estate.recovered} offerLabel="Owner recovered alone, then stalled" /></div>
+      <div aria-hidden="true" class="hidden lg:block h-px bg-line" data-node="53:272"></div>
+    </div>
+    <div class="flex flex-col gap-[32px] lg:flex-row lg:items-center lg:justify-between" data-node="53:273">
+      <p class="m-0 t-caption lg:text-[15px] lg:leading-[24px] lg:tracking-normal text-ink lg:w-[760px]" data-node="53:274" data-node-m="58:568">Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.</p>
+      <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="53:275" data-node-m="58:569">Schedule a Free Review</Button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .results-grid {
+    right: 0; top: 0; width: 240px; height: 200px; opacity: .12;
+    background:
+      linear-gradient(to right, rgb(19 63 170 / .08) 1px, transparent 1px) 0 0 / 40px 40px,
+      linear-gradient(to bottom, rgb(19 63 170 / .08) 1px, transparent 1px) 0 0 / 40px 40px;
+  }
+  @media (min-width: 1024px) {
+    .results-grid {
+      inset: 0; width: auto; height: auto; opacity: 1;
+      background:
+        linear-gradient(to right, rgb(19 63 170 / .05) 1px, transparent 1px) 0 0 / 160px 160px,
+        linear-gradient(to bottom, rgb(19 63 170 / .05) 1px, transparent 1px) 0 0 / 160px 160px,
+        linear-gradient(to right, rgb(19 63 170 / .05) 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(to bottom, rgb(19 63 170 / .05) 1px, transparent 1px) 0 0 / 40px 40px;
+    }
+    /* Figma note text in the ledger rows is Montserrat Medium 15/24 */
+    .ledger :global(p.order-last) { font-weight: 500; }
+  }
+</style>

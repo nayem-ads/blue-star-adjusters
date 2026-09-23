@@ -1,0 +1,13 @@
+---
+// Detail / Crop marks (71:533 instances): four 16×1.5 corner marks around a print. Decorative.
+interface Props { color?: string; class?: string; node?: string; nodeD?: string; nodeM?: string }
+const { color = 'var(--color-royal)', class: cls = '', node, nodeD, nodeM } = Astro.props;
+const h = 'absolute block w-[16px] h-[1.5px]';
+const v = 'absolute block w-[1.5px] h-[16px]';
+---
+<span aria-hidden="true" class:list={['pointer-events-none', cls]} style={`--cm:${color}`} data-node={node} data-node-d={nodeD} data-node-m={nodeM}>
+  <span class={`${h} left-0 top-0`} style="background:var(--cm)"></span><span class={`${v} left-0 top-0`} style="background:var(--cm)"></span>
+  <span class={`${h} right-0 top-0`} style="background:var(--cm)"></span><span class={`${v} right-0 top-0`} style="background:var(--cm)"></span>
+  <span class={`${h} left-0 bottom-0`} style="background:var(--cm)"></span><span class={`${v} left-0 bottom-0`} style="background:var(--cm)"></span>
+  <span class={`${h} right-0 bottom-0`} style="background:var(--cm)"></span><span class={`${v} right-0 bottom-0`} style="background:var(--cm)"></span>
+</span>

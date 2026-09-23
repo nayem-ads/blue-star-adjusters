@@ -1,0 +1,9 @@
+---
+// Logo / Mark / White watermark at 7% (sampled from the Figma renders), positioned by the caller.
+import Logo from '../../components/Logo.astro';
+interface Props { width: number; height: number; class?: string }
+const { width, height, class: cls = '' } = Astro.props;
+---
+<span aria-hidden="true" class:list={['absolute pointer-events-none opacity-[.07]', cls]}>
+  <Logo variant="mark-white" bare width={width} height={height} label="" />
+</span>

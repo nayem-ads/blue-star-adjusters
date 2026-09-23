@@ -1,0 +1,17 @@
+---
+// Responsive Figma image slot: mobile crop (nodeM) below lg, desktop crop (node) from lg. Both from src/data/images.json.
+// Size the <img> with classes (object-cover). dataNode / dataNodeM go on the <img>.
+// decoding=sync: a <picture> re-selects its source when the viewport is resized (full-page screenshots do this),
+// and an async decode then paints nothing for a frame, so QA captures missed the photo.
+import images from '../../data/images.json';
+interface Props { node: string; nodeM: string; alt: string; class?: string; priority?: boolean; dataNode?: string; dataNodeM?: string }
+const { node, nodeM, alt, class: cls = '', priority = false, dataNode, dataNodeM } = Astro.props;
+const all = images as Record<string, { src: string; width: number; height: number }>;
+const d = all[node], m = all[nodeM];
+if (!d || !m) throw new Error(`Pic: missing image ${!d ? node : nodeM}`);
+---
+<picture class="contents">
+  <source media="(min-width: 1024px)" srcset={d.src} width={d.width} height={d.height} />
+  <img src={m.src} width={m.width} height={m.height} alt={alt} class={cls} loading={priority ? 'eager' : 'lazy'}
+    decoding="sync" fetchpriority={priority ? 'high' : 'auto'} data-node={dataNode} data-node-m={dataNodeM} />
+</picture>

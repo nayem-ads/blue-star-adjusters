@@ -1,0 +1,269 @@
+---
+// What We Do / Loss index. Desktop 73:2095 (1280×2294), mobile 74:3699 (390×1866).
+// Segmented control = real tabs (Figma annotation: role=tablist, arrow keys move between segments; Commercial swaps
+// the rows/cards for the commercial set and the H2 for "Your Business. Fully Recovered."). Figma only draws the
+// Residential state; the Commercial panel reuses the same row/card templates with the Commercial section's copy.
+// Desktop = index table, mobile = horizontal snap scroller (6 cards; Figma draws card 1 + a peek, cards 2-6 are the
+// same template, hidden in the design) with a progress bar.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import IconCircle from './IconCircle.astro';
+import { ROUTES } from '../../data/site';
+
+type Row = { name: string; sub: string; icon: string; href: string; alt: string; misses: string[]; missesM: string[];
+  img: string; imgM: string; d?: Record<string, string>; m?: Record<string, string> };
+const rows: Row[] = [
+  { name: 'Fire & Smoke', sub: 'Heat Is Fire Damage. Smoke Is Chemistry.', icon: 'flame', href: '/claims/fire-smoke-damage/',
+    alt: 'Fire-damaged wood-frame house, exterior, documented on site', img: '73:2120', imgM: '74:3719',
+    misses: ['Rooms the flames never reached, written up as undamaged.', 'Warped vinyl windows, priced as paint.', "Porous materials the carrier wants cleaned, when they can't be."],
+    missesM: ['Rooms the flames never reached, written up as undamaged.', 'Warped vinyl windows, priced as paint.'],
+    d: { row: '73:2119', name: '73:2121', circle: '73:2122', h3: '73:2126', sub: '73:2127', misses: '73:2128', tap: '73:2141' },
+    m: { card: '74:3718', body: '74:3720', circle: '74:3721', h3: '74:3725', sub: '74:3726', link: '74:3731' } },
+  { name: 'Wildfire', sub: 'Total Loss or Standing Home. Two Different Claims.', icon: 'home', href: '/claims/fire-smoke-damage/',
+    alt: 'Charred timber frame of a house after a wildfire', img: '73:2146', imgM: '74:3736',
+    misses: ["Whether the foundation can be reused. Heat-damaged concrete and rebar often can't carry a new house.", 'Code upgrades, extended replacement cost and debris removal, once the dwelling limit is reached.'],
+    missesM: ['Whether the foundation can be reused.', 'Code upgrades, extended replacement cost and debris removal.'],
+    d: { row: '73:2145', name: '73:2147', h3: '73:2152', sub: '73:2153', misses: '73:2154', tap: '73:2163' } },
+  { name: 'Water & Plumbing', sub: 'Water Dries. The Evidence Goes With It.', icon: 'droplet', href: '/claims/water-damage/',
+    alt: 'Water-damaged interior with wet flooring', img: '73:2168', imgM: '74:3753',
+    misses: ["If the water isn't measured, it dries, and mold begins to grow.", 'Firefighting water: after a fire, the water damage is its own line on the claim.'],
+    missesM: ["If the water isn't measured, it dries, and mold begins to grow."],
+    d: { row: '73:2167', name: '73:2169', h3: '73:2173', sub: '73:2174', misses: '73:2175', tap: '73:2184' } },
+  { name: 'Wind, Hail & Falling Trees', sub: 'Hail Shortens a Roof. A Tree Racks a House.', icon: 'wind', href: ROUTES.freeClaimReview,
+    alt: 'Hail-damaged roof shingles, close view', img: '73:2189', imgM: '74:3768',
+    misses: ["Hail can take years off a roof's life. A patch doesn't give it back.", 'Framing connections, racked walls, cracks in the foundation.', "Wind uplift, before it's called wear and tear. Snow-load collapse gets the same structural review."],
+    missesM: ['Framing connections, racked walls, cracks in the foundation.'],
+    d: { row: '73:2188', name: '73:2190', h3: '73:2194', sub: '73:2195', misses: '73:2196', tap: '73:2209' } },
+  { name: 'Contents & Valuables', sub: 'Everything You Owned. Accounted For.', icon: 'search', href: ROUTES.freeClaimReview,
+    alt: 'Smoke-damaged household contents set out for inventory', img: '73:2214', imgM: '74:3783',
+    misses: ["Most people can't list one room from memory, and what isn't listed isn't paid.", 'The depreciation the carrier held back, if your policy pays replacement cost.'],
+    missesM: ["Most people can't list one room from memory, and what isn't listed isn't paid."],
+    d: { row: '73:2213', name: '73:2215', h3: '73:2220', sub: '73:2221', misses: '73:2222', tap: '73:2231' } },
+  { name: 'Additional Living Expenses', sub: 'Same Size Home. Same School District.', icon: 'clock', href: ROUTES.freeClaimReview,
+    alt: 'Modern home exterior after a fire, debris in the foreground', img: '73:2236', imgM: '74:3799',
+    misses: ['The rental ends before the rebuild does.', 'Pet accommodations, extra mileage, meals above your normal budget, storage, utility set-up.'],
+    missesM: ['The rental ends before the rebuild does.'],
+    d: { row: '73:2235', name: '73:2237', h3: '73:2242', sub: '73:2243', misses: '73:2244', tap: '73:2253' } },
+];
+// Commercial set (copy from the Commercial section 73:2580 / 74:4093).
+const commercial = [
+  { icon: 'clock', lead: 'Loss of income and extra expense,', rest: ' built from your books by a forensic accountant.' },
+  { icon: 'building', lead: 'Tenant improvements vs. building:', rest: ' who owns what, and whose policy pays.' },
+  { icon: 'search', lead: 'Inventory and equipment,', rest: ' at replacement cost where the policy allows.' },
+  { icon: 'ruler', lead: 'Code:', rest: ' we meet building officials early, so the rebuild scope reflects what the city will actually require.' },
+  { icon: 'document', lead: 'Xactimate and IH reports:', rest: " we rebuild the carrier's estimate line by line, and read the industrial hygienist's report before the carrier does." },
+];
+const buckets = [
+  { icon: 'home', name: 'Dwelling', text: 'The structure, returned to its pre-loss condition and to current code.',
+    d: ['73:2540', '73:2541', '73:2545', '73:2546'], m: ['74:3823', '74:3824', '74:3829', '74:3830'] },
+  { icon: 'building', name: 'Other structures', text: 'Fences, decks, garages, barns, guest houses.',
+    d: ['73:2547', '73:2548', '73:2551', '73:2552'], m: ['74:3831', '74:3832', '74:3836', '74:3837'] },
+  { icon: 'search', name: 'Contents', text: 'Everything inside, from furniture to fine art.',
+    d: ['73:2553', '73:2554', '73:2558', '73:2559'], m: ['74:3838', '74:3839', '74:3844', '74:3845'] },
+  { icon: 'clock', name: 'Loss of use', text: "Comparable living while you're displaced, including pet accommodations where your policy allows.",
+    d: ['73:2560', '73:2561', '73:2565', '73:2566'], m: ['74:3846', '74:3847', '74:3852', '74:3853'] },
+];
+const progress = ['74:3815', '74:3816', '74:3817', '74:3818', '74:3819', '74:3820'];
+const tapCls = 'wwd-tap flex items-center justify-center size-[48px] shrink-0 rounded-full border border-navy text-navy transition-colors duration-150 hover:bg-navy hover:text-white focus-visible:bg-navy focus-visible:text-white after:absolute after:inset-0 after:content-[\'\']';
+const cardCls = 'wwd-card relative flex flex-col shrink-0 w-[280px] h-[622px] bg-white border border-line rounded-[4px] overflow-hidden snap-start';
+---
+<section aria-labelledby="wwd-index-title" class="bg-paper" data-node="73:2095" data-node-m="74:3699" data-wwd-tabs>
+  <div class="max-w-[1280px] mx-auto flex flex-col gap-[24px] pl-[20px] pt-[64px] pb-[56px] lg:gap-[48px] lg:px-[80px] lg:pt-[120px] lg:pb-[96px]">
+    <!-- Head -->
+    <div class="flex flex-col items-start gap-[16px] pr-[20px] lg:flex-row lg:items-end lg:gap-[48px] lg:pr-0" data-node="73:2096" data-node-m="74:3700">
+      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[20px] lg:flex-[0_1_640px] lg:min-w-0" data-node="73:2097">
+        <div class="w-fit" data-node="73:2098" data-node-m="74:3701"><Eyebrow>Loss index</Eyebrow></div>
+        <h2 id="wwd-index-title" class="m-0 w-full text-navy tm-h2 lg:t-h2" data-node="73:2101" data-node-m="74:3704">Your <span data-wwd-word data-residential="Home" data-commercial="Business">Home</span>. Fully<br class="hidden lg:inline" /> Recovered.</h2>
+        <p class="m-0 w-full tm-body text-ink lg:t-body" data-node="73:2102" data-node-m="74:3705">Your insurer's adjuster already came out? Good. We start from their estimate and measure what it left out.</p>
+      </div>
+      <div class="hidden lg:block flex-1" aria-hidden="true"></div>
+      <div role="tablist" aria-label="Claim type" class="flex gap-[4px] p-[4px] w-full bg-white border border-line rounded-[28px] lg:w-auto lg:shrink-0" data-node="73:2104" data-node-m="74:3706">
+        <button type="button" role="tab" id="wwd-tab-res" aria-controls="wwd-panel-res" aria-selected="true" tabindex="0" data-wwd-tab="residential"
+          class="wwd-seg" data-node="73:2105" data-node-m="74:3707"><Icon name="home" size={24} class="shrink-0" /><span>Residential</span></button>
+        <button type="button" role="tab" id="wwd-tab-com" aria-controls="wwd-panel-com" aria-selected="false" tabindex="-1" data-wwd-tab="commercial"
+          class="wwd-seg" data-node="73:2110" data-node-m="74:3712"><Icon name="building" size={24} class="shrink-0" /><span>Commercial</span></button>
+      </div>
+      <p class="lg:hidden m-0 w-full tm-label text-ink" data-node-m="74:3716">What the first estimate usually misses</p>
+    </div>
+
+    <!-- Residential panel -->
+    <div id="wwd-panel-res" role="tabpanel" aria-labelledby="wwd-tab-res" class="contents" data-wwd-panel="residential">
+      <!-- Desktop table -->
+      <div class="hidden lg:flex flex-col w-full" data-node="73:2114">
+        <div class="flex gap-[32px] pb-[16px] t-label text-ink" data-node="73:2115" aria-hidden="true">
+          <p class="m-0 w-[552px] shrink-0" data-node="73:2116">Loss type</p>
+          <p class="m-0 flex-1" data-node="73:2117">What the first estimate usually misses</p>
+        </div>
+        <div class="h-[2px] bg-navy" data-node="73:2118"></div>
+        <ul class="m-0 p-0 list-none">
+          {rows.map((r, i) => (
+            <li class="relative flex items-start gap-[32px] py-[32px] border-b border-line" data-node={r.d!.row}>
+              <Img node={r.img} alt={r.alt} class="w-[200px] h-[144px] shrink-0 object-cover" dataNode={r.img} />
+              <div class="flex flex-col items-start gap-[12px] w-[320px] shrink-0" data-node={r.d!.name}>
+                <IconCircle icon={r.icon} variant="white" node={r.d!.circle} />
+                <h3 class="m-0 w-full t-h3 text-navy" data-node={r.d!.h3}>{r.name}</h3>
+                <p class="m-0 w-full t-small text-ink" data-node={r.d!.sub}>{r.sub}</p>
+              </div>
+              <ul class="m-0 p-0 list-none flex-1 min-w-0 flex flex-col gap-[12px] pt-[4px]" data-node={r.d!.misses}>
+                {r.misses.map((t) => (
+                  <li class="flex items-start gap-[16px]"><span aria-hidden="true" class="shrink-0 w-[16px] h-[2px] mt-[12px] bg-royal"></span><span class="flex-1 t-body text-ink">{t}</span></li>
+                ))}
+              </ul>
+              <a href={r.href} class={tapCls} aria-label={`${r.name}: see the claim page`} data-node={r.d!.tap}><Icon name="arrow-right" size={24} /></a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <!-- Mobile scroller -->
+      <div class="lg:hidden flex gap-[16px] w-full overflow-x-auto snap-x snap-mandatory wwd-scroller" data-node-m="74:3717" data-wwd-scroller tabindex="0" aria-label="Loss types, scroll sideways">
+        {rows.map((r, i) => (
+          <article class={cardCls} data-node-m={r.m?.card}>
+            <div class="w-full h-[200px] shrink-0" data-node-m={i === 0 ? r.imgM : undefined}><Img node={r.imgM} alt={r.alt} class="w-full h-full object-cover" /></div>
+            <div class="flex-1 flex flex-col items-start gap-[12px] p-[20px]" data-node-m={r.m?.body}>
+              <IconCircle icon={r.icon} variant="paper" nodeM={r.m?.circle} />
+              <h3 class="m-0 w-full tm-h3 text-navy" data-node-m={r.m?.h3}>{r.name}</h3>
+              <p class="m-0 w-full font-body font-medium text-[16px] leading-[26px] text-ink" data-node-m={r.m?.sub}>{r.sub}</p>
+              <div class="w-full h-px bg-line shrink-0" aria-hidden="true"></div>
+              {r.missesM.map((t) => <p class="m-0 w-full tm-body text-ink">{t}</p>)}
+              <div class="flex-1" aria-hidden="true"></div>
+              <a href={r.href} class="wwd-cardlink group flex items-center gap-[8px] min-h-[44px] text-royal after:absolute after:inset-0 after:content-['']" data-node-m={r.m?.link}>
+                <span class="tm-body-strong group-hover:underline group-focus-visible:underline underline-offset-[3px]">See the claim page</span><Icon name="arrow-right" size={24} class="shrink-0" /><span class="sr-only">: {r.name}</span>
+              </a>
+            </div>
+          </article>
+        ))}
+        <div class="shrink-0 w-[4px]" aria-hidden="true"></div>
+      </div>
+      <div class="lg:hidden flex gap-[4px] w-full pr-[20px]" aria-hidden="true" data-node-m="74:3814" data-wwd-progress>
+        {progress.map((id, i) => <span class:list={['flex-1 h-[2px]', i === 0 ? 'bg-navy' : 'bg-line']} data-node-m={id}></span>)}
+      </div>
+    </div>
+
+    <!-- Commercial panel (no separate Figma state: same templates, Commercial section copy) -->
+    <div id="wwd-panel-com" role="tabpanel" aria-labelledby="wwd-tab-com" class="contents" data-wwd-panel="commercial" hidden>
+      <div class="hidden lg:flex flex-col w-full">
+        <div class="flex gap-[32px] pb-[16px] t-label text-ink" aria-hidden="true">
+          <p class="m-0 w-[552px] shrink-0">Loss type</p>
+          <p class="m-0 flex-1">What the first estimate usually misses</p>
+        </div>
+        <div class="h-[2px] bg-navy"></div>
+        <ul class="m-0 p-0 list-none">
+          {commercial.map((c) => (
+            <li class="relative flex items-start gap-[32px] py-[32px] border-b border-line">
+              <IconCircle icon={c.icon} variant="white" />
+              <p class="m-0 flex-1 min-w-0 t-body text-ink pt-[6px]"><strong class="font-semibold">{c.lead}</strong>{c.rest}</p>
+              <a href="/commercial-claims/" class={tapCls} aria-label={`${c.lead.replace(/[,:]$/, '')}: commercial claims`}><Icon name="arrow-right" size={24} /></a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="lg:hidden flex gap-[16px] w-full overflow-x-auto snap-x snap-mandatory wwd-scroller" data-wwd-scroller tabindex="0" aria-label="Commercial claim types, scroll sideways">
+        {commercial.map((c) => (
+          <article class="wwd-card relative flex flex-col shrink-0 w-[280px] bg-white border border-line rounded-[4px] overflow-hidden snap-start">
+            <div class="flex-1 flex flex-col items-start gap-[12px] p-[20px]">
+              <IconCircle icon={c.icon} variant="paper" />
+              <p class="m-0 w-full tm-body text-ink"><strong class="font-semibold">{c.lead}</strong>{c.rest}</p>
+              <div class="flex-1" aria-hidden="true"></div>
+              <a href="/commercial-claims/" class="wwd-cardlink group flex items-center gap-[8px] min-h-[44px] text-royal after:absolute after:inset-0 after:content-['']">
+                <span class="tm-body-strong group-hover:underline group-focus-visible:underline underline-offset-[3px]">See the claim page</span><Icon name="arrow-right" size={24} class="shrink-0" />
+              </a>
+            </div>
+          </article>
+        ))}
+        <div class="shrink-0 w-[4px]" aria-hidden="true"></div>
+      </div>
+      <div class="lg:hidden flex gap-[4px] w-full pr-[20px]" aria-hidden="true" data-wwd-progress>
+        {commercial.map((_, i) => <span class:list={['flex-1 h-[2px]', i === 0 ? 'bg-navy' : 'bg-line']}></span>)}
+      </div>
+    </div>
+
+    <!-- Four buckets -->
+    <div class="flex flex-col gap-[20px] w-[calc(100%-20px)] px-[20px] py-[24px] bg-white border border-line rounded-[4px] lg:w-full lg:max-w-none lg:gap-[32px] lg:p-[40px] lg:pb-[28px]" data-node="73:2531" data-node-m="74:3821">
+      <div class="contents lg:flex lg:items-center lg:gap-[32px]" data-node="73:2532">
+        <h3 class="m-0 w-full text-navy tm-h3 lg:t-h3 lg:flex-1 lg:self-stretch" data-node="73:2533" data-node-m="74:3822">Four buckets. We measure each one.</h3>
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="hidden lg:inline-flex lg:w-[253px]" data-node="73:2535">Schedule a Free Review</Button>
+      </div>
+      <div class="contents lg:flex lg:items-start" data-node="73:2539">
+        {buckets.map((b, i) => (
+          <div class:list={['flex items-start gap-[16px] pt-[16px] border-t border-line',
+            'lg:flex-1 lg:flex-col lg:gap-[12px] lg:h-[188px] lg:pt-0 lg:border-t-0 lg:pr-[16px]', i > 0 && 'lg:border-l lg:pl-[24px]']} data-node={b.d[0]} data-node-m={b.m[0]}>
+            <IconCircle icon={b.icon} variant="paper" node={b.d[1]} nodeM={b.m[1]} />
+            <div class="flex-1 min-w-0 flex flex-col gap-[4px] lg:flex-none lg:w-full lg:gap-[12px]">
+              <h4 class="m-0 tm-body-strong text-navy lg:t-body-strong" data-node={b.d[2]} data-node-m={b.m[2]}>{b.name}</h4>
+              <p class="m-0 tm-body text-ink lg:font-medium lg:text-[15px] lg:leading-[24px]" data-node={b.d[3]} data-node-m={b.m[3]}>{b.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="lg:hidden pt-[8px]" data-node-m="74:3854">
+        <Button href={ROUTES.freeClaimReview} variant="solid" full class="h-[56px]" data-node-m="74:3855">Schedule a Free Review</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .wwd-scroller { scrollbar-width: none; scroll-padding-left: 0; }
+  .wwd-scroller::-webkit-scrollbar { display: none; }
+  .wwd-scroller:focus-visible { outline: 2px solid var(--color-royal); outline-offset: 2px; }
+  .wwd-card:has(a:focus-visible) { outline: 2px solid var(--color-royal); outline-offset: -2px; }
+  .wwd-cardlink:focus-visible { outline: none; }
+  .wwd-seg {
+    display: flex; align-items: center; justify-content: center; gap: 8px; flex: 1 1 0%; min-width: 0; height: 48px;
+    padding: 0 24px; border: 0; border-radius: 24px; background: transparent; color: var(--color-ink);
+    font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 20px; white-space: nowrap;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  @media (min-width: 64rem) { .wwd-seg { flex: none; width: 176px; } }
+  .wwd-seg[aria-selected="true"] { background: var(--color-navy); color: #fff; }
+  .wwd-seg[aria-selected="false"]:hover { background: var(--color-paper); }
+  .wwd-seg:focus-visible { outline: 2px solid var(--color-royal); outline-offset: 2px; }
+  [data-wwd-panel][hidden] { display: none !important; }
+</style>
+
+<script>
+  // Tabs (Residential | Commercial) and the mobile scroller progress bar.
+  for (const root of document.querySelectorAll<HTMLElement>('[data-wwd-tabs]')) {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('[data-wwd-tab]')];
+    const word = root.querySelector<HTMLElement>('[data-wwd-word]');
+    const select = (tab: HTMLButtonElement, focus = false) => {
+      for (const t of tabs) {
+        const on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        const panel = root.querySelector<HTMLElement>(`[data-wwd-panel="${t.dataset.wwdTab}"]`);
+        if (panel) panel.hidden = !on;
+      }
+      if (word) word.textContent = word.dataset[tab.dataset.wwdTab as 'residential' | 'commercial'] ?? word.textContent;
+      if (focus) tab.focus();
+    };
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('click', () => select(tab));
+      tab.addEventListener('keydown', (e) => {
+        const k = e.key;
+        let n = -1;
+        if (k === 'ArrowRight' || k === 'ArrowDown') n = (i + 1) % tabs.length;
+        else if (k === 'ArrowLeft' || k === 'ArrowUp') n = (i - 1 + tabs.length) % tabs.length;
+        else if (k === 'Home') n = 0;
+        else if (k === 'End') n = tabs.length - 1;
+        if (n < 0) return;
+        e.preventDefault();
+        select(tabs[n], true);
+      });
+    });
+    for (const sc of root.querySelectorAll<HTMLElement>('[data-wwd-scroller]')) {
+      const bars = [...(sc.nextElementSibling?.children ?? [])] as HTMLElement[];
+      const cards = [...sc.querySelectorAll<HTMLElement>('.wwd-card')];
+      const update = () => {
+        const x = sc.scrollLeft, max = sc.scrollWidth - sc.clientWidth;
+        let idx = cards.findIndex((c) => c.offsetLeft - sc.offsetLeft >= x - 8);
+        if (max > 0 && x >= max - 2) idx = cards.length - 1;
+        if (idx < 0) idx = 0;
+        bars.forEach((b, j) => { b.classList.toggle('bg-navy', j === idx); b.classList.toggle('bg-line', j !== idx); });
+      };
+      sc.addEventListener('scroll', update, { passive: true });
+    }
+  }
+</script>

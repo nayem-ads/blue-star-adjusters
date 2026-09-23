@@ -1,0 +1,27 @@
+---
+// Section / Request form: 73:1403 (default), 74:1787 (error), 74:2049 (thank you); mobile 74:3880 / 74:4516 / 74:4727.
+// Paper background, blueprint-grid detail top right, intro (eyebrow on desktop only, H1, lead), then the columns:
+// form card (or the thank-you card) + desktop sidebar.
+import Eyebrow from '../../components/Eyebrow.astro';
+import FormCard from './FormCard.astro';
+import ThanksCard from './ThanksCard.astro';
+import Sidebar from './Sidebar.astro';
+interface Props { ty?: boolean }
+const { ty = false } = Astro.props;
+---
+<section aria-labelledby="fcr-h1" class="relative overflow-hidden bg-paper" data-node={ty ? '74:2049' : '73:1403'} data-node-m={ty ? '74:4727' : '74:3880'}>
+  <span aria-hidden="true" class="fcr-grid absolute top-0 right-0"></span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[32px] pb-[56px] lg:px-[80px] lg:pt-[96px] lg:pb-[120px]">
+    <div class="flex flex-col gap-[16px] lg:gap-[24px] items-start" data-node={ty ? '74:2051' : '73:1433'}>
+      <Eyebrow class="hidden lg:flex" node={ty ? '74:2052' : '73:1434'}>Free Claim Review</Eyebrow>
+      {ty
+        ? <h1 id="fcr-h1" class="m-0 w-full lg:w-[1000px] max-w-full tm-display lg:t-display-l text-navy" data-node="74:2053" data-node-m="74:4729">Request Received.<br />We’ll Call You.</h1>
+        : <h1 id="fcr-h1" class="m-0 w-full lg:w-[1000px] max-w-full tm-display lg:t-display-l text-navy" data-node="73:1437" data-node-m="74:3910">Tell Us What Happened.<br />We’ll Read Your Policy.</h1>}
+      <p class="m-0 w-full lg:w-[648px] max-w-full tm-lead lg:t-lead text-ink" data-node={ty ? '74:2054' : '73:1438'} data-node-m={ty ? '74:4730' : '74:3911'}>There is no cost or obligation for the initial review.</p>
+    </div>
+    <div class="fcr-cols flex flex-col mt-[40px] lg:mt-[56px] lg:flex-row lg:items-start lg:justify-between lg:gap-[48px]" data-node={ty ? '74:2055' : '73:1439'}>
+      {ty ? <ThanksCard /> : <FormCard />}
+      <Sidebar ty={ty} />
+    </div>
+  </div>
+</section>

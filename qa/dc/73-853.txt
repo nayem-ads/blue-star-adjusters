@@ -1,0 +1,14 @@
+get_design_context 73:853 (Section / Hero, desktop) — condensed (blueprint grid lines + shared Button/Eyebrow code omitted)
+Section: bg paper, flex gap 64, pt 96 pb 120 px 80.
+Blueprint grid 73:854: abs left 640 top 0 640x400, opacity 40, royal lines opacity 8, V every 6.25% (40px) 1px wide, H every 10% (40px) 1px tall.
+Hero/Copy 73:883: flex-col gap 32 w 560 overflow-clip.
+ Eyebrow "What we do"
+ H1 73:887 Schibsted Bold 64/68 tracking -1.28 navy: "Where Claims" / "Go Wrong." / "Where We Start." (manual line breaks)
+ Lead 73:888 Montserrat Regular 20/32 ink: "When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won't let the carrier set the scope."
+ CTA row 73:889 gap 16: Solid "Schedule a Free Review"; Outline w/ phone icon "Call (916) 507-1005"
+ Trust list 73:899: border-t line, pt 24, gap 12; rows gap 12 items-center: icon 24 + Montserrat Medium 15/24 ink:
+   shield "No upfront cost. We're paid a percentage of what we recover." / check "You always have final say on any settlement." / document "CA DOI License No. 2B60428"
+Photo stack 73:914 496x584: IMG onsite-adjuster 424x504 at (72,16) alt "Public adjuster documenting fire damage on site";
+ crop marks at (60,4) 448x528: royal 1.5px x 16px L-marks at corners;
+ IMG ai-moisture at (0,336) 176x224 border 6 white; alt "Moisture meter reading taken against a wall";
+ Dimension line at (72,560) w 424: flex gap 8 items-center: tick 1x12, rule flex-1 1px, caption Montserrat Medium 12/16 tracking .12 royal "We measure each one.", rule, tick. all royal.

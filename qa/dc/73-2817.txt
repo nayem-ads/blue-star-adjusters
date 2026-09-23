@@ -1,0 +1,7 @@
+get_design_context 73:2817 (FAQ, desktop) — condensed.
+Section bg white flex gap32 px80 py120. Intro col gap24 w440: H2 t-h2 navy "Your Questions.<br>Straight Answers."; Detail/Dimension line (royal ticks 1x12, rules, label "Measured, not estimated" 500 12/16 tracking .12 royal) full width;
+ "Still have a question?" 600 17/28 ink; Button solid "Schedule a Free Review"; FAQ contact col gap24 pt8: row items-center gap16: circle 40 white border navy phone; "(916) 507-1005" 600 17/28 navy / "Mon–Sun, 8 AM–6 PM Pacific" 500 15/24 ink; clock circle + "We call back the same day." 500 15/24 ink.
+FAQ list flex-1 col: item border-t line py24 col gap12; question row flex gap24 items-center: question 600 20/32 navy flex-1; chevron 24 (rotate 180 when open). Answer 400 17/28 ink w560.
+ Open: "What is a public adjuster?" -> "A licensed professional who prepares, presents and negotiates your claim, working only for you. The insurer’s adjuster works for the insurer."
+ Open: "How are you paid?" -> "A percentage of the settlement, set in writing before we start. No upfront cost."
+ Closed: "I already have an offer. Is it too late?", "Will hiring you slow my claim?", "Do I still talk to my insurer?", "Can I cancel?" (answers verbatim from doc FAQ 3,4,6,10 — not in frame).

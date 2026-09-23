@@ -1,0 +1,12 @@
+---
+// Detail / Dimension line (71:527): tick, rule, royal caption, rule, tick. Width set by class.
+interface Props { label?: string; class?: string; node?: string; nodeM?: string }
+const { label = 'Measured, not estimated', class: cls = '', node, nodeM } = Astro.props;
+---
+<div aria-hidden="true" class:list={['flex items-center gap-[8px] text-royal', cls]} data-node={node} data-node-m={nodeM}>
+  <span class="block w-px h-[12px] bg-royal shrink-0"></span>
+  <span class="block flex-1 min-w-px h-px bg-royal"></span>
+  <span class="t-caption whitespace-nowrap">{label}</span>
+  <span class="block flex-1 min-w-px h-px bg-royal"></span>
+  <span class="block w-px h-[12px] bg-royal shrink-0"></span>
+</div>

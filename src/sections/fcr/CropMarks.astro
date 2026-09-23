@@ -1,0 +1,22 @@
+---
+// Detail / Crop marks (71:533): 16 × 1.5 corner marks. Royal on light (mobile 74:4411), white on navy (desktop 73:2785).
+interface Props { class?: string }
+const { class: cls = '' } = Astro.props;
+---
+<span aria-hidden="true" class:list={['fcr-crop', cls]}></span>
+<style>
+  .fcr-crop {
+    --c: var(--color-royal);
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      linear-gradient(var(--c), var(--c)) left top / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) left top / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) right top / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) right top / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) left bottom / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) left bottom / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) right bottom / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) right bottom / 1.5px 16px no-repeat;
+  }
+  @media (min-width: 64rem) { .fcr-crop { --c: #fff; } }
+</style>

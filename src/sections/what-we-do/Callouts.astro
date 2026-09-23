@@ -1,0 +1,95 @@
+---
+// What We Do / Callouts. Desktop 74:707 (1280×1376), mobile 74:4138 (390×2130).
+// Left: Code upgrades callout. Right: Contents & Valuables + Fire & Smoke results (the Inventory panel is desktop only).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import IconCircle from './IconCircle.astro';
+import ArrowLink from './ArrowLink.astro';
+import CropMarks from './CropMarks.astro';
+import { ROUTES } from '../../data/site';
+const code = [
+  { lead: 'What the city will require:', rest: ' energy code, fire sprinklers, accessibility, seismic bracing.', d: ['74:730', '74:731'], m: ['74:4160', '74:4161'] },
+  { lead: 'Undamaged portions', rest: ' that must come up to code because the damaged part does.', d: ['74:733', '74:734'], m: ['74:4163', '74:4164'] },
+  { lead: 'Where the money is:', rest: ' ordinance or law coverage (often an endorsement, with its own limit), demolition, increased cost of construction.', d: ['74:736', '74:737'], m: ['74:4166', '74:4167'] },
+];
+const disclaimer = "Results reflect specific losses and policies. Past results don't guarantee a similar outcome.";
+const label = 'm-0 whitespace-nowrap text-ink tm-label lg:t-label';
+---
+<section aria-labelledby="wwd-code-title" class="bg-white" data-node="74:707" data-node-m="74:4138">
+  <div class="max-w-[1280px] mx-auto flex flex-col gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[64px] lg:px-[80px] lg:py-[120px]">
+    <!-- Code upgrades -->
+    <div class="flex flex-col items-start gap-[24px] w-full lg:flex-[0_1_640px] lg:min-w-0" data-node="74:708">
+      <div class="relative w-full h-[288px] lg:h-[424px]" data-node="74:709" data-node-m="74:4139">
+        <div class="absolute left-[6px] top-[6px] right-[6px] bottom-[6px] lg:left-[12px] lg:top-[12px] lg:right-[12px] lg:bottom-[12px]" data-node="74:710" data-node-m="74:4140">
+          <Img node="74:4140" alt="Exposed structural framing at a stair, opened up for inspection" class="lg:hidden w-full h-full object-cover" />
+          <Img node="74:710" alt="Exposed structural framing at a stair, opened up for inspection" class="hidden lg:block w-full h-full object-cover" />
+        </div>
+        <CropMarks class="absolute inset-0" node="74:711" nodeM="74:4141" />
+      </div>
+      <div class="flex items-center gap-[12px] lg:pt-[16px]" data-node="74:720" data-node-m="74:4150">
+        <IconCircle icon="ruler" variant="outline" node="74:721" nodeM="74:4151" />
+        <p class={label} data-node="74:725" data-node-m="74:4155">Code upgrades</p>
+      </div>
+      <h2 id="wwd-code-title" class="m-0 w-full text-navy tm-h3 lg:t-h3" data-node="74:726" data-node-m="74:4156">You Can't Rebuild It the Way It Was. The City Won't Let You.</h2>
+      <p class="m-0 w-full text-ink tm-body lg:t-body" data-node="74:727" data-node-m="74:4157">We identify and quantify code upgrade costs that may be covered under your policy, a significant source of recovery that most homeowners and insurance company adjusters miss entirely.</p>
+      <ul class="m-0 p-0 list-none w-full border-t border-line" data-node="74:728" data-node-m="74:4158">
+        {code.map((c) => (
+          <li class="py-[16px] border-b border-line" data-node={c.d[0]} data-node-m={c.m[0]}>
+            <p class="m-0 text-ink tm-body lg:t-body" data-node={c.d[1]} data-node-m={c.m[1]}><strong class="font-semibold">{c.lead}</strong>{c.rest}</p>
+          </li>
+        ))}
+      </ul>
+      <figure class="m-0 flex items-start gap-[16px] w-full lg:gap-[20px] lg:pt-[16px]" data-node="74:739" data-node-m="74:4169">
+        <span aria-hidden="true" class="shrink-0 w-[25px] lg:w-[35px] text-royal font-display font-bold text-[46px] leading-[48px] tracking-[-1.15px] lg:text-[64px] lg:leading-[68px] lg:tracking-[-1.28px]" data-node="74:740" data-node-m="74:4170">“</span>
+        <blockquote class="m-0 flex-1 min-w-0 text-ink tm-lead lg:t-lead" data-node="74:741" data-node-m="74:4171">Michael has built to San Francisco's seismic retrofit ordinance. Ordinance-of-law and code-upgrade triggers other adjusters miss are his specialty.</blockquote>
+      </figure>
+    </div>
+
+    <!-- Results -->
+    <div class="flex flex-col items-start gap-[16px] w-full pt-[32px] lg:gap-[20px] lg:pt-0 lg:flex-[0_1_416px] lg:min-w-0" data-node="74:742" data-node-m="74:4172">
+      <div class="w-full h-[260px] lg:h-[240px]" data-node="74:743" data-node-m="74:4173">
+        <Img node="74:4173" alt="Household contents laid out for a room-by-room inventory" class="lg:hidden w-full h-full object-cover" />
+        <Img node="74:743" alt="Household contents laid out for a room-by-room inventory" class="hidden lg:block w-full h-full object-cover" />
+      </div>
+      <div class="w-full h-[2px] bg-navy shrink-0" data-node="74:744" data-node-m="74:4174"></div>
+      <div class="flex items-center gap-[12px]" data-node="74:745" data-node-m="74:4175">
+        <IconCircle icon="search" variant="paper" node="74:746" nodeM="74:4176" />
+        <h3 class={label} data-node="74:750" data-node-m="74:4180">Contents &amp; Valuables</h3>
+      </div>
+      <p class="m-0 w-full text-ink tm-body lg:t-body" data-node="74:751" data-node-m="74:4181">An estate owner had recovered $6 million on his own and stalled on fine wine and art.</p>
+      <div class="flex gap-[24px] w-full lg:gap-[32px]" data-node="74:752" data-node-m="74:4182">
+        <p class="m-0 flex-1 min-w-0 flex flex-col gap-[4px]" data-node="74:753" data-node-m="74:4183">
+          <span class="text-navy tm-figure lg:t-figure" data-node="74:754" data-node-m="74:4184">$11M</span>
+          <span class="text-ink font-body font-medium text-[16px] leading-[26px] lg:text-[15px] lg:leading-[24px]" data-node="74:755" data-node-m="74:4185">Structure settled</span>
+        </p>
+        <p class="m-0 flex-1 min-w-0 flex flex-col gap-[4px]" data-node="74:756" data-node-m="74:4186">
+          <span class="text-navy tm-figure lg:t-figure" data-node="74:757" data-node-m="74:4187">$5.2M</span>
+          <span class="text-ink font-body font-medium text-[16px] leading-[26px] lg:text-[15px] lg:leading-[24px]" data-node="74:758" data-node-m="74:4188">More for contents</span>
+        </p>
+      </div>
+      <p class="m-0 w-full text-ink t-caption" data-node="74:759" data-node-m="74:4193">{disclaimer}</p>
+      <ArrowLink href={ROUTES.freeClaimReview} class="min-h-[44px] lg:min-h-0" labelClass="whitespace-nowrap tm-body-strong lg:font-medium lg:text-[15px] lg:leading-[20px]" node="74:760" nodeM="74:4194">Contents &amp; Valuables claims</ArrowLink>
+      <div class="w-full h-px bg-line shrink-0" data-node="85:3044" data-node-m="85:3108"></div>
+      <div class="flex items-center gap-[12px]" data-node="85:3045" data-node-m="85:3109">
+        <IconCircle icon="flame" variant="paper" node="85:3046" nodeM="85:3110" />
+        <h3 class={label} data-node="85:3048" data-node-m="85:3112">Fire &amp; Smoke</h3>
+      </div>
+      <div class="flex flex-col items-start gap-[4px] w-full pt-[16px] border-t border-line lg:gap-[8px] lg:pt-[24px]" data-node="74:1778" data-node-m="74:4189">
+        <p class="m-0 w-full text-ink font-body font-semibold text-[16px] leading-[26px] lg:text-[15px] lg:leading-[24px]" data-node="74:1779" data-node-m="74:4190">Fire &amp; Smoke, Palisades fire, full strip-out</p>
+        <p class="m-0 flex flex-col items-start gap-[4px] whitespace-nowrap lg:gap-0 lg:w-[275px]" data-node="74:1780">
+          <s class="text-ink tm-h3 lg:t-h3" data-node="74:1781" data-node-m="74:4191"><span class="sr-only">Carrier's offer: </span>$38,000</s>
+          <span class="text-navy tm-figure lg:t-figure w-[206px] lg:w-full" data-node="74:1783" data-node-m="74:4192"><span class="sr-only">Recovered: </span>$276,000</span>
+        </p>
+      </div>
+      <p class="m-0 w-full text-ink t-caption" data-node="85:3053" data-node-m="85:3117">{disclaimer}</p>
+      <div class="hidden lg:flex flex-col items-start gap-[16px] w-full p-[24px] bg-paper border border-line rounded-[4px]" data-node="85:3054">
+        <div class="flex items-start gap-[16px] w-full" data-node="85:3055">
+          <Icon name="document" size={24} class="shrink-0 text-navy" />
+          <p class="flex-1 m-0 t-body text-ink" data-node="85:3061">Room-by-room inventory built from our databases, your photos and purchase records.</p>
+        </div>
+        <Button href={ROUTES.freeClaimReview} variant="outline" class="w-[253px]" node="85:3062">Schedule a Free Review</Button>
+      </div>
+    </div>
+  </div>
+</section>

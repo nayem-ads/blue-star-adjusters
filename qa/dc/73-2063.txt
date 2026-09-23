@@ -1,0 +1,9 @@
+get_design_context 73:2063 (S2 Timeline, desktop). Condensed:
+Timeline flex-col gap-32
+ Track 1120x40 relative: connector navy h2 left20 top19 w1100; end tick navy 1x16 left1119 top12
+  Badges 40x40 rounded-20: building (bg white border navy) at 0; document (bg white border navy) at 384; shield (bg navy) at 768; icon 24
+ Stages flex gap-32; each flex-col gap-12 w-352:
+  label Montserrat SemiBold 13/18 .26 royal; title Schibsted SemiBold 28/34 -0.28 navy; body 17/28 ink; fact tag border line rounded-2 px-8 py-4 Montserrat Medium 15/24 ink nowrap
+  1: "25 years" / "Developer and merchant builder" / "Affordable housing, commercial projects and hospitality assets, measured and estimated to current building and fire code." / tag "Principal, MSR Properties"
+  2: "Then" / "Public adjuster" / "Top producer at one of the nation's leading public adjusting firms, across hundreds of losses."
+  3: "Now" / "Founding Principal, Blue Star Adjusters" / "A boutique firm. Licensed personally in 7 states, always working for the insured, never for the carrier." / tag "CA DOI License No. 2B60428"

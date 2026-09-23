@@ -1,0 +1,14 @@
+get_design_context 73:2993 (S5, desktop). Condensed:
+section bg white flex-col gap-64 px-80 py-120
+ Quote block 73:2994 flex gap-40 relative:
+  Quote 73:2999 flex-1 flex-col gap-32:
+   73:3000 Schibsted Bold 64 leading 1.1 (70.4) -1.28 INK w-944: "I’ve stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”"
+   Attribution flex gap-16 items-center: rule royal 40x2; Montserrat SemiBold 17/28 ink nowrap "Michael Rapport, Founding Principal, Blue Star Adjusters"
+   Button outline "Schedule a Free Review"
+  85:3327 hanging glyph abs left-36 top-0 Schibsted Bold 64/1.1 royal "“"
+ Split 73:3004 flex-col gap-24: Dimension line w-full label ink "Both sides of a construction set of plans"
+  Pair flex gap-32: each w-544 h-488 flex-col gap-20
+   label flex gap-16 items-center: badge 40 rounded-20 (developer: bg paper; adjuster: bg navy) icon 24; H3 Schibsted SemiBold 28/34 -0.28 navy nowrap
+     "As a developer who builds" / "As a public adjuster"
+   developer photo 544x400 (alt "Construction plans and drawings spread on a table (illustrative)"; annotation AI illustrative)
+   adjuster photo 73:3028 544x428 flex-col gap-12: img 544x400 (alt "Public adjuster documenting a damaged property on site") + caption Montserrat Medium 12/16 .12 ink "Field photograph"

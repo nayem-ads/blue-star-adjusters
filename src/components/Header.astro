@@ -1,0 +1,184 @@
+---
+// Header: Figma Header/Desktop Light 42:76 / Dark 42:102 (1280×88) and Header/Mobile Light 42:129 / Dark 42:146 (390×64).
+// Mobile menu: 42:164 as shown in frame 63:780 (incl. faint B-mark 85:3166 and tagline rule 85:3171).
+// Props:
+//   theme   'light' | 'dark'  dark = transparent over the hero photo, white logo/nav/icons.
+//   current route to mark with aria-current (defaults to the current URL path).
+//   overlay position the header absolutely over the next element (defaults to true for dark).
+//   node    data-node id of this header instance in the page frame (e.g. "73:1814").
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import Button from './Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE } from '../data/site';
+interface Props { theme?: 'light'|'dark'; current?: string; overlay?: boolean; node?: string; class?: string }
+const { theme = 'light', current = Astro.url.pathname, overlay = theme === 'dark', node, class: cls = '' } = Astro.props;
+const dark = theme === 'dark';
+const norm = (p: string) => (p.endsWith('/') ? p : p + '/');
+const here = norm(current);
+const nav = [
+  // w = Figma text box width (42:87-42:90); keeps the nav exactly 431px wide as in Figma.
+  { label: 'What We Do', href: ROUTES.whatWeDo, w: 98 },
+  { label: 'Our Founder', href: ROUTES.founder, w: 98 },
+  { label: 'How It Works', href: '/how-it-works/', w: 103 },
+  { label: 'Fees', href: '/fees/', w: 36 },
+];
+const menu = [{ label: 'Home', href: ROUTES.home }, ...nav];
+const menuId = `bs-menu-${Math.random().toString(36).slice(2, 8)}`;
+const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWith(href));
+---
+<header class:list={['bs-header', dark ? 'bs-header--dark' : 'bs-header--light', overlay && 'bs-header--overlay', cls]} data-theme={theme} data-node={node}>
+  <div class="bs-header__row">
+    <a href={ROUTES.home} class="bs-header__logo" aria-label="Blue Star Adjusters home" aria-current={here === '/' ? 'page' : undefined}>
+      {dark
+        ? <>
+            <Logo variant="horizontal-white" bare width={213} height={72} class="hidden lg:block -m-[16px]" label="Blue Star Adjusters" />
+            <Logo variant="horizontal-white" bare width={159.75} height={54} class="lg:hidden -m-[12px]" label="Blue Star Adjusters" />
+          </>
+        : <>
+            <Logo variant="horizontal-color" width={181} height={40} class="hidden lg:block" label="Blue Star Adjusters" />
+            <Logo variant="horizontal-color" width={135.75} height={30} class="lg:hidden" label="Blue Star Adjusters" />
+          </>}
+    </a>
+
+    <nav class="bs-header__nav" aria-label="Main">
+      <ul>
+        {nav.map((l) => <li><a href={l.href} class="bs-navlink" style={`min-width:${l.w}px`} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <div class="bs-header__actions">
+      <a href={PHONE_TEL} class="bs-header__phone" aria-label={`Call ${PHONE_DISPLAY}`}><Icon name="phone" size={20} /><span class="bs-header__phone-text min-w-[114px]">{PHONE_DISPLAY}</span></a>
+      <Button href={ROUTES.freeClaimReview} variant={dark ? 'on-dark' : 'solid'}>Schedule a Free Review</Button>
+    </div>
+
+    <div class="bs-header__taps">
+      <a href={PHONE_TEL} class="bs-tap" aria-label={`Call ${PHONE_DISPLAY}`}><Icon name="phone" size={24} /></a>
+      <button type="button" class="bs-tap" data-menu-open aria-expanded="false" aria-controls={menuId} aria-label="Open menu"><Icon name="menu" size={24} /></button>
+    </div>
+  </div>
+
+  <div id={menuId} class="bs-menu" data-menu role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="bs-menu__bar">
+      <a href={ROUTES.home} class="bs-header__logo" aria-label="Blue Star Adjusters home">
+        <Logo variant="horizontal-white" bare width={159.75} height={54} class="-m-[12px]" label="Blue Star Adjusters" />
+      </a>
+      <button type="button" class="bs-tap bs-menu__close" data-menu-close aria-label="Close menu"><Icon name="close" size={24} /></button>
+    </div>
+    <nav class="bs-menu__nav" aria-label="Mobile">
+      <ul>
+        {menu.map((l) => <li><a href={l.href} class="bs-menu__item" aria-current={isCurrent(l.href) ? 'page' : undefined}><span>{l.label}</span><Icon name="arrow-right" size={24} /></a></li>)}
+      </ul>
+    </nav>
+    <div class="bs-menu__spacer" aria-hidden="true">
+      <Logo variant="mark-white" bare width={191.085} height={232.6} class="bs-menu__mark" label="" />
+      <p class="bs-menu__tagline"><span class="bs-menu__rule"></span>Your Claim. Our Fight.<span class="bs-menu__rule"></span></p>
+    </div>
+    <div class="bs-menu__actions">
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" full class="bs-menu__btn">Schedule a Free Review</Button>
+      <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" full class="bs-menu__btn">Call {PHONE_DISPLAY}</Button>
+      <p class="bs-menu__license">{LICENSE}</p>
+    </div>
+  </div>
+</header>
+
+<style is:global>
+  @layer theme, base, components, utilities;
+  @layer components {
+  .bs-header { position: relative; z-index: 40; width: 100%; box-sizing: border-box; height: 64px; }
+  @media (min-width: 64rem) { .bs-header { height: 88px; } }
+  .bs-header--overlay { position: absolute; top: 0; left: 0; right: 0; }
+  .bs-header--open { z-index: 100; } /* the menu lives in the header's stacking context: lift it over the call bar and page */
+  .bs-header--light { background: #fff; border-bottom: 1px solid var(--color-line); } /* Figma lays content out in 87px (y 23.5) above the 1px stroke */
+  .bs-header--dark { background: transparent; color: #fff; }
+  .bs-header__row { box-sizing: border-box; max-width: 1280px; margin: 0 auto; height: 100%; padding: 0 8px 0 20px; display: flex; align-items: center; justify-content: space-between; }
+  .bs-header__logo { display: flex; flex-shrink: 0; border-radius: 4px; }
+  .bs-header__nav, .bs-header__actions { display: none; }
+  .bs-header__taps { display: flex; }
+  .bs-tap { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--color-navy); background: none; border: 0; padding: 0; border-radius: 999px; }
+  .bs-header--dark .bs-tap { color: #fff; }
+  .bs-tap:hover { background: rgb(8 29 94 / .06); }
+  .bs-header--dark .bs-tap:hover, .bs-menu .bs-tap:hover { background: rgb(255 255 255 / .1); }
+  @media (min-width: 64rem) {
+    .bs-header__row { padding: 0 80px; }
+    .bs-header__nav { display: block; }
+    .bs-header__actions { display: flex; align-items: center; gap: 24px; }
+    .bs-header__taps { display: none; }
+  }
+  /* 1024–1279: the 1280 design doesn't fit, so tighten spacing and show the phone as an icon (lead fix for horizontal overflow). */
+  @media (min-width: 64rem) and (max-width: 79.999rem) {
+    .bs-header__row { padding: 0 40px; }
+    .bs-header__nav ul { gap: 20px !important; }
+    .bs-header__actions { gap: 16px !important; }
+    .bs-header__phone-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  }
+  .bs-header__nav ul { display: flex; gap: 32px; align-items: center; list-style: none; margin: 0; padding: 0; }
+  .bs-navlink, .bs-header__phone { color: var(--color-navy); white-space: nowrap; text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1.5px; text-underline-offset: 6px; transition: color .15s ease, text-decoration-color .15s ease; border-radius: 2px; }
+  .bs-navlink { display: block; font-family: var(--font-body); font-weight: 500; font-size: 15px; line-height: 20px; }
+  .bs-header__phone { display: flex; align-items: center; gap: 8px; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 20px; }
+  .bs-header__phone svg { flex-shrink: 0; }
+  .bs-navlink:hover, .bs-navlink:focus-visible, .bs-header__phone:hover, .bs-header__phone:focus-visible { color: var(--color-royal); text-decoration-color: currentColor; }
+  .bs-header--dark .bs-navlink, .bs-header--dark .bs-header__phone { color: #fff; }
+  .bs-header--dark .bs-navlink:hover, .bs-header--dark .bs-navlink:focus-visible, .bs-header--dark .bs-header__phone:hover, .bs-header--dark .bs-header__phone:focus-visible { color: #fff; text-decoration-color: currentColor; }
+  .bs-header--dark :focus-visible { outline-color: #fff; }
+
+  /* Mobile menu (42:164 / 63:780): full-screen navy overlay */
+  .bs-menu { position: fixed; inset: 0; z-index: 60; background: var(--color-navy); color: #fff; display: flex; flex-direction: column; height: 100vh; height: 100dvh; overflow-y: auto; overscroll-behavior: contain; }
+  .bs-menu[hidden] { display: none; }
+  @media (min-width: 64rem) { .bs-menu { display: none !important; } }
+  .bs-menu :focus-visible { outline-color: #fff; }
+  .bs-menu__bar { flex-shrink: 0; box-sizing: border-box; height: 64px; padding: 0 8px 0 20px; display: flex; align-items: center; justify-content: space-between; }
+  .bs-menu .bs-tap { color: #fff; }
+  .bs-menu__nav { flex-shrink: 0; padding: 24px 20px 0; }
+  .bs-menu__nav ul { list-style: none; margin: 0; padding: 0; }
+  .bs-menu__item { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #fff; font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 28px; letter-spacing: -0.22px; white-space: nowrap; color: #fff; }
+  .bs-menu__item svg { transition: transform .15s ease; }
+  .bs-menu__item:hover svg, .bs-menu__item:focus-visible svg { transform: translateX(4px); }
+  .bs-menu__spacer { position: relative; flex: 1 0 auto; min-height: 120px; }
+  /* 85:3166 at (199,400) and 85:3171 at (20,600) in the 390×844 frame: anchored to the bottom of the spacer (spacer ends at y 660). */
+  .bs-menu__mark { position: absolute; right: 0; bottom: 28px; opacity: .06; pointer-events: none; }
+  .bs-menu__tagline { position: absolute; left: 20px; bottom: 44px; margin: 0; display: flex; align-items: center; gap: 12px; font-family: var(--font-body); font-weight: 600; font-size: 12px; line-height: 16px; letter-spacing: 0.24px; white-space: nowrap; }
+  .bs-menu__rule { display: block; width: 24px; height: 1px; background: #fff; }
+  .bs-menu__actions { flex-shrink: 0; display: flex; flex-direction: column; gap: 12px; padding: 0 20px 32px; }
+  .bs-menu__btn { height: 56px; }
+  .bs-menu__license { margin: 0; font-family: var(--font-body); font-weight: 500; font-size: 12px; line-height: 16px; letter-spacing: 0.12px; white-space: nowrap; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-menu-open]').forEach((opener) => {
+    const menu = document.getElementById(opener.getAttribute('aria-controls') || '');
+    if (!menu) return;
+    const focusables = () => [...menu.querySelectorAll<HTMLElement>('a[href], button:not([disabled])')];
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+      if (e.key !== 'Tab') return;
+      const f = focusables(); const first = f[0], last = f[f.length - 1];
+      if (!menu.contains(document.activeElement)) { e.preventDefault(); first.focus(); return; }
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    };
+    const open = () => {
+      menu.hidden = false;
+      menu.closest('.bs-header')?.classList.add('bs-header--open');
+      opener.setAttribute('aria-expanded', 'true');
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('keydown', onKey);
+      menu.querySelector<HTMLElement>('[data-menu-close]')?.focus();
+    };
+    const close = (restore = true) => {
+      if (menu.hidden) return;
+      menu.hidden = true;
+      menu.closest('.bs-header')?.classList.remove('bs-header--open');
+      opener.setAttribute('aria-expanded', 'false');
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+      if (restore) opener.focus();
+    };
+    opener.addEventListener('click', open);
+    menu.querySelector('[data-menu-close]')?.addEventListener('click', () => close());
+    menu.querySelectorAll('a[href]').forEach((a) => a.addEventListener('click', () => close(false)));
+    window.matchMedia('(min-width: 64rem)').addEventListener('change', (m) => { if (m.matches) close(false); });
+  });
+</script>

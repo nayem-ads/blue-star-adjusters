@@ -1,0 +1,10 @@
+56:160 process (condensed). bg navy col gap64 px80 py120.
+H2 white 48/54 w720 "Why Starting Early<br>Makes All the Difference"
+Steps flex gap24 (5 x flex-1), connector line white 1px at top (abs), each step pt24 col gap12: head justify-between: number H3 28/34 white "01".. + icon 24 (phone, document, ruler, search, shield); title SemiBold 17/28 white; body Montserrat Medium 15/24 white. Connector dot 11px at left0 top-5 (first filled white, others outlined).
+ 01 Free review / Discuss your claim with our team at no cost or obligation.
+ 02 Policy review / We identify all avenues of recovery available under your policy.
+ 03 Scope the loss / We take part in determining the full scope of your loss from day one.
+ 04 Build your claim / We prepare and present a detailed, itemized claim package on your behalf.
+ 05 Maximize settlement / We negotiate proactively to get you the most money as fast as possible.
+Actions flex gap40 items-center: on-dark button "Schedule a Free Review"; link SemiBold 17/28 white "How It Works" + arrow.
+B-mark faint 73:2979 abs left860 top260 428.294x520.

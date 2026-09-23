@@ -1,0 +1,7 @@
+get_design_context 74:3511 (Section / Where claims go wrong, mobile) — condensed
+Section bg white flex-col gap24 pt64 pb56 px20.
+Ruler ticks 350x16: navy 1px ticks every 16px; every 5th (x%80==0) 16 tall at top 0, others 8 tall at top 8. (22 ticks, x 0..336)
+Icon circle clock 40 border 1 navy.
+H2 Schibsted SemiBold 32/36 -0.48 navy "Our ability to affect your outcome diminishes with time."
+List: line hairlines; route flex gap16 items-start py16: icon circle 40 bg paper ; Route text flex-col gap4: line Montserrat 16/26 ink ; link min-h44 gap8 items-center: Montserrat SemiBold 16/26 royal + arrow 24.
+(Same 6 routes/links as desktop; no intro line and no Call-first panel on mobile.)

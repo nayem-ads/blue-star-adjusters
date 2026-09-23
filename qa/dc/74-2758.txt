@@ -1,0 +1,8 @@
+get_design_context 74:2758 (M2 career line, mobile). Condensed:
+section bg white flex-col gap-40 pt-64 pb-56 px-20 relative
+ Ruler ticks abs left-20 top-0 350x16 overflow-clip: navy 1px ticks every 8px; h16 at multiples of 80, h12 at 40 mod 80, else h6
+ Head flex-col gap-16: H2 Schibsted SemiBold 32/36 -0.48 navy; intro Montserrat 16/26 ink
+ Timeline flex-col; each stage flex gap-16:
+  Rail flex-col items-center self-stretch: badge 40 (building/document: bg white border navy; shield: bg navy) + connector navy w2 flex-1 (not on last)
+  Content flex-1 flex-col gap-8 pt-8 pb-40 (last no pb): label Montserrat SemiBold 12/16 .24 royal; title Schibsted SemiBold 22/28 -0.22 navy; body 16/26 ink;
+   tag border line rounded-2 px-8 py-4 Montserrat SemiBold 12/16 .24 ink nowrap

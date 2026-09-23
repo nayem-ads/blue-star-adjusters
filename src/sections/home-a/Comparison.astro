@@ -1,0 +1,84 @@
+---
+// Comparison: Blue Star vs. Going It Alone. Desktop 56:193 (table), mobile 63:672 (tab switch 63:675 + panel 63:680).
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import DimLine from './DimLine.astro';
+import { ROUTES } from '../../data/site';
+const rows = [
+  { label: 'Building Scope', us: 'We dictate scope using hundreds of prior claims; familiar with fire vs. new construction standards', you: 'Insurance company determines scope and chooses the contractor, protecting their interests, not yours',
+    d: ['56:205', '56:207', '56:208', '56:209', '56:211'], m: ['63:681', '63:682', '74:3632', '63:683'] },
+  { label: 'Control', us: 'We dictate the manner and method of the entire adjustment process: proactively, not reactively', you: 'The insurance company controls the process end to end',
+    d: ['56:212', '56:214', '56:215', '56:216', '56:218'], m: ['63:684', '63:685', '74:3635', '63:686'] },
+  { label: 'Final Say', us: 'You always have final say on any settlement', you: 'You have final say, but far less information to make the right decision',
+    d: ['56:219', '56:221', '56:222', '56:223', '56:225'], m: ['63:687', '63:688', '74:3638', '63:689'] },
+];
+const cell = 'flex-1 min-w-0';
+---
+<section aria-labelledby="compare-title" class="bg-paper" data-node="56:193" data-node-m="63:672">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[24px] lg:gap-[56px]">
+    <div class="flex flex-col gap-[24px] lg:flex-row lg:items-end lg:gap-[80px]" data-node="56:194">
+      <h2 id="compare-title" class="m-0 tm-h2 lg:t-h2 text-navy lg:flex-1 lg:max-w-[640px]" data-node="56:195" data-node-m="63:673">Blue Star Adjusters<br /> vs. Going It Alone</h2>
+      <div class="flex flex-col gap-[24px] lg:w-[400px] lg:shrink-0 lg:h-[124px]" data-node="85:3122">
+        <p class="m-0 tm-body lg:t-body text-ink" data-node="56:196" data-node-m="63:674">Most homeowners don’t realize they have the right to hire their own adjuster, someone who works for them, not the insurance company.</p>
+        <DimLine class="hidden lg:flex w-[400px]" node="85:3123" />
+      </div>
+    </div>
+
+    <!-- Desktop table -->
+    <div role="table" aria-label="Blue Star Adjusters compared with handling a claim yourself" class="hidden lg:flex relative flex-col" data-node="56:197">
+      <div aria-hidden="true" style="width: calc((100% - 320px) / 2 + 40px)" class="absolute left-[260px] -top-[12px] h-[464px] bg-white border-t-[3px] border-royal" data-node="73:2984"></div>
+      <div role="row" class="relative flex gap-[40px] pb-[16px]" data-node="56:198">
+        <div role="columnheader" class="w-[240px] shrink-0"><span class="sr-only">Topic</span></div>
+        <div role="columnheader" class={`${cell} flex items-center gap-[12px] h-[28px] t-body-strong text-navy`} data-node="56:201">
+          <span class="flex items-center justify-center w-[40px] h-[40px] rounded-full bg-paper shrink-0 text-navy"><Icon name="shield" size={24} /></span>
+          <span class="flex-1 min-w-0" data-node="56:202">Blue Star Adjusters</span>
+        </div>
+        <div role="columnheader" class={`${cell} t-body-strong text-ink`} data-node="56:204">Handling It Yourself</div>
+      </div>
+      {rows.map((r, i) => (
+        <div role="row" class:list={['relative flex items-start gap-[40px] py-[28px] border-t border-line', i === rows.length - 1 && 'border-b']} data-node={r.d[0]}>
+          <div role="rowheader" class="w-[240px] shrink-0 t-body-strong text-navy" data-node={r.d[1]}>{r.label}</div>
+          <div role="cell" class={`${cell} flex items-start gap-[12px] pt-[4px] t-body text-navy`} data-node={r.d[2]}><Icon name="check" size={20} class="text-royal shrink-0" /><span class="flex-1 min-w-0" data-node={r.d[3]}>{r.us}</span></div>
+          <div role="cell" class={`${cell} t-body text-ink`} data-node={r.d[4]}>{r.you}</div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Mobile tabs -->
+    <div class="lg:hidden flex flex-col gap-[24px]" data-tabs>
+      <div role="tablist" aria-label="Compare" class="flex p-[4px] bg-white border border-line rounded-full" data-node-m="63:675">
+        <button type="button" role="tab" id="cmp-tab-us" aria-controls="cmp-panel-us" aria-selected="true" class="tab flex-1 h-[48px] rounded-full tm-body-strong" data-node-m="63:676">Blue Star</button>
+        <button type="button" role="tab" id="cmp-tab-you" aria-controls="cmp-panel-you" aria-selected="false" tabindex="-1" class="tab flex-1 h-[48px] rounded-full tm-body-strong" data-node-m="63:678">On your own</button>
+      </div>
+      {[{ key: 'us', m: true }, { key: 'you', m: false }].map((p) => (
+        <div id={`cmp-panel-${p.key}`} role="tabpanel" aria-labelledby={`cmp-tab-${p.key}`} class:list={['panel bg-white border-t-[3px] border-royal px-[20px] pt-[8px] pb-[8px]', p.m && 'is-active']} data-node-m={p.m ? '63:680' : undefined}>
+          <dl class="m-0">
+            {rows.map((r, i) => (
+              <div class:list={['flex flex-col gap-[8px] pt-[20px] pb-[20px] border-t border-line', i === rows.length - 1 && 'border-b']} data-node-m={p.m ? r.m[0] : undefined}>
+                <dt class="tm-label text-navy" data-node-m={p.m ? r.m[1] : undefined}>{r.label}</dt>
+                {p.m
+                  ? <dd class="m-0 flex items-start gap-[12px] tm-body text-navy" data-node-m={r.m[2]}><Icon name="check" size={20} class="text-royal shrink-0" /><span class="flex-1 min-w-0" data-node-m={r.m[3]}>{r.us}</span></dd>
+                  : <dd class="m-0 tm-body text-ink">{r.you}</dd>}
+              </div>
+            ))}
+          </dl>
+        </div>
+      ))}
+    </div>
+
+    <div class="flex flex-col items-start gap-[32px] lg:flex-row lg:items-center lg:self-start" data-node="85:3129">
+      <Button href={ROUTES.freeClaimReview} variant="outline" class="hidden lg:inline-flex lg:min-w-[253px]" data-node="85:3130">Schedule a Free Review</Button>
+      <a href="/about/" class="cmp-link flex items-center gap-[8px] h-[44px] lg:h-[28px] tm-body-strong lg:t-body-strong text-royal" data-node="56:226" data-node-m="63:690"><span>See all seven</span><Icon name="arrow-right" size={24} /></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tab { color: var(--color-navy); background: transparent; border: 0; transition: background-color .15s ease, color .15s ease; }
+  .tab[aria-selected='true'] { background: var(--color-navy); color: #fff; }
+  .tab:not([aria-selected='true']):hover { background: var(--color-paper); }
+  .panel:not(.is-active) { display: none; }
+  .cmp-link { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color .15s ease; }
+  .cmp-link:hover, .cmp-link:focus-visible { text-decoration-color: currentColor; }
+</style>
+<script>import './tabs.ts';</script>

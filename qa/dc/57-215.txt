@@ -1,0 +1,14 @@
+57:215 Section / Claims DESKTOP condensed. bg paper flex gap24 pt120 pb96 px80. Index "Claims".
+Content 928: H2 t-h2 navy w640 "Where Claims Go Wrong. Where We Start." / gap48
+Claims row flex gap48:
+ Routing list w592 border-t line flex-col: 6 routes each border-b line flex gap20 py24: circle 40 white border navy + icon; route text flex-1 flex-col gap8: situation H3 28/34 navy; link flex gap8 items-center: Montserrat Medium 15/24 ink + arrow 16.
+  building "The estimate won't rebuild the house." Code Upgrades; flame "The smoke will “clean out.”" Fire & Smoke; droplet "The water claim became a mold claim." Water;
+  document "The adjuster changed three times." Denied or Underpaid; search "The fine art was priced like furniture." Contents; home "The rental ends before the rebuild does." Additional Living Expenses
+  gap40 / CTA Button Solid "Schedule a Free Review".
+ Photo stack 288x640 relative:
+  57:268 bbox left8 top14.65 279.005x329.158 rotate(-2deg) print 268x320 border line; tab line left149 top-13; photo 248x300 I57:270;41:71 alt "Commercial kitchen after a fire, with a soot-covered hood, range and debris."
+  57:273 bbox left15.62 top300 268.288x326.696 rotate(1.5deg) print 260x320; tab navy left39; photo 240x300 I57:275;41:71 alt "Inventory specialists in gloves cataloguing wine bottles and household contents."
+gap96 / Home and business flex gap32: two lists w448: H3 row h90 flex-col gap16: circle(home/building) + H3 28/34 navy; gap16; 8 items border-b line py12 Montserrat Medium 15/24 ink; gap16; link py12 gap8 SemiBold 17/28 underline + arrow 24.
+ Home: Fire, wildfire & smoke losses | Water & plumbing failures | Trees & falling-object damage | Collapse: snow load & structural | Ordinance of law & code upgrades | Contents valuation & inventory | Additional living expenses (ALE) | Lead, asbestos & mold remediation analysis -> "Homeowner claims"
+ Business: Fire, water & structural losses | Business interruption & loss of income | Dependent-property / contingent BI | Equipment breakdown & failure claims | Ordinance of law & seismic code upgrades | Rebuild cost estimating & Xactimate | IH report interpretation & remediation | Litigation support & demand packaging -> "Business claims"
+73:2337 Crop marks royal absolute left896 top252 336x688.

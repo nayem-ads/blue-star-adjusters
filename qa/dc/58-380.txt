@@ -1,0 +1,3 @@
+58:380 Chip bar / Section index (sticky) MOBILE. bg paper border-b 1px line, flex gap4 items-end pl20 pt8 (390x52).
+Annotation: sticky under header (top 64), horizontal scroll; Compare and Review tabs continue off-screen (hidden in static state; hidden="true" in metadata so not rendered per brief). Active follows scroll.
+Tabs h44 px8 rounded-t 6px, Montserrat SemiBold 16/26: Results w80 bg navy white text; Why early w100 / Founder w88 / Claims w78 bg white border l/r/t line, ink.

@@ -1,0 +1,16 @@
+get_design_context 73:1837 (S1 Hero — Portrait, desktop). Key code (condensed, verbatim classes):
+section: bg paper, flex gap-24 items-center pb-112 pt-96 px-80
+Intro 73:1838: flex-col gap-32 w-504
+ Eyebrow 73:1839: rule royal 24x2, text Montserrat SemiBold 13/18 tracking .26 INK "Your Adjuster. Your Advocate."
+ Headline 73:1842 flex-col gap-20: H1 Schibsted Bold 96/96 -2.88 navy "Michael Rapport."; Role Montserrat 20/32 ink "Founding Principal, Blue Star Adjusters. Principal, MSR Properties."
+ Bio 73:1845 17/28 ink: "25 years as a developer and merchant builder. Top producer at one of the nation's leading public adjusting firms. Licensed personally in 7 states, always working for the insured, never for the carrier."
+   annotation: [CLIENT: confirm] "top producer" substantiation; "Licensed personally in 7 states" vs 5 states named.
+ CTAs 73:1846 flex gap-16: Button solid "Schedule a Free Review"; Button outline + phone icon "Call (916) 507-1005"
+ Trust rows 73:1855: border-t line, pt-24, flex-col gap-12; rows gap-12 items-center: icon 20 (shield/document), text Montserrat Medium 15/24 ink
+   "CA DOI License No. 2B60428" / "No upfront cost. We're paid a percentage of what we recover."
+Portrait block 73:1866 592x800 relative:
+ Mount 85:3262 abs bg paper border 1px line, 560x700 at 16,56
+ Photo 73:1896 abs bg paper 560x700 at 32,40; img mix-blend-multiply (alt: "Michael Rapport, Founding Principal of Blue Star Adjusters, portrait")
+ Crop marks abs 592x732 at 16,24 (royal 16x1.5 / 1.5x16 corners)
+ Dimension line 73:1908 abs 32,772 w560 flex gap-8 items-center: tick 1x12 royal, rule flex-1 h1 royal, label Montserrat Medium 12/16 tracking .12 ink "Founding Principal", rule, tick
+ Fact card 73:1914 abs 0,556 w240 bg navy p-24 gap-8 white: "25" Schibsted Medium 64/64 -1.28; "years as a developer and merchant builder" Montserrat Medium 15/24

@@ -1,0 +1,5 @@
+54:192 founder (condensed). bg paper, flex gap96 items-center px80 py120.
+img 448x560. copy flex-1 col gap28: H2 48/54 navy "Built From the Ground Up."; body 17/28 ink "Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco’s seismic retrofit ordinance, and he knows what a code-compliant rebuild costs because he’s paid for plenty of them."
+facts flex-wrap gap12: chips bg white border1 line radius2 pl12 pr16 py8 gap8 icon20 + Montserrat SemiBold 13/18 .26 ink: ruler "25 years as a developer and builder"; home "Built to San Francisco’s seismic retrofit ordinance"
+quote col gap16: quote icon 48; H3 28/34 navy w544 "“I’ve stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”"; Montserrat Medium 15/24 ink "Michael Rapport, Founding Principal"
+Button outline "Meet Michael". Crop marks abs left68 top191 472x584.

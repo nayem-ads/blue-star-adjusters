@@ -1,0 +1,5 @@
+53:221 Case file / photo stack (desktop hero), condensed. Annotation: prints rotated ±2deg, white paper mat w/ 1px line border; index tabs decorative (aria-hidden).
+53:232 bbox left -0.35 top 176 290.309x368.901 -> inner rotate(1deg) print 284x364 bg white border 1px line; tab navy 56x12 left 39 top -13 rounded-t 3px; photo slot left 9 top 9 264x344 img I53:234;41:71 (alt: Burned-out ruin with twisted metal equipment and ash in front of a white house.)
+53:222 bbox left 2.44 top 8 369.343x286.397 -> rotate(2deg) print 360x274; tab muted #5e6885 left 219 top -13; photo 340x254 I53:224;41:71 (alt: Kitchen after a water loss, with collapsed ceiling drywall and insulation over wet flooring.)
+53:227 bbox left 162 top 54.37 288.396x369.413 -> rotate(-2deg) print 276x360; tab line #d9dfee left 149 top -13; photo 256x340 I53:229;41:71 (alt: Fire-damaged concrete stair and debris at a burned home.)
+Stacking order in DOM: gym-ruin, water-loss, stair-detail (last on top).

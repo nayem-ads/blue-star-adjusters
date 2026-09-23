@@ -1,0 +1,6 @@
+54:257 where claims go wrong (condensed). bg white, col gap64 px80 py120.
+H2 48/54 navy w1120 "Where Claims Go Wrong.<br>Where We Start."
+Body flex gap80: photo col w400 gap24: img 400x760; caption Montserrat Medium 12/16 .12 ink "Field photograph"; crop marks abs -12,-12 424x784 royal 16x1.5 marks at corners.
+Right col flex-1 col gap40: list border-t line; rows border-b line py28 flex gap24: icon circle 40 paper radius20 w/ icon 24 (navy); text col gap12: H3 28/34 navy; link flex gap8: Montserrat SemiBold 17/28 royal + arrow-right 24.
+ rows: home "The estimate won’t rebuild the house." Code Upgrades | flame "The smoke will “clean out.”" Fire & Smoke | droplet "The water claim became a mold claim." Water | document "The adjuster changed three times." Denied or Underpaid | search "The fine art was priced like furniture." Contents | clock "The rental ends before the rebuild does." Additional Living Expenses
+ side row justify-between: clock circle + gap16 Montserrat SemiBold 17/28 ink w300 "Our ability to affect your outcome diminishes with time." ; solid button Schedule a Free Review.

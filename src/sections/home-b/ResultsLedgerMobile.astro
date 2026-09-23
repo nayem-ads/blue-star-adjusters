@@ -1,0 +1,90 @@
+---
+// Home B mobile "Section / Results ledger" 58:431 (390×1713). Mobile only: on desktop this content sits in the hero ledger sheet.
+// Cards are Figma instances of the ledger card (41:83) with per-case overrides ("About" line, two-line estate figure,
+// ink loss names), which the shared LedgerRow can't express, so they're laid out here.
+import Icon from '../../components/Icon.astro';
+const cap = 't-caption text-ink m-0 whitespace-nowrap';
+const chips = [
+  { icon: 'map-pin', label: '7 offices', node: '74:2858' },
+  { icon: 'building', label: '5 states: CA, NV, OR, WA, AZ', node: '74:2863' },
+  { icon: 'shield', label: 'CA DOI License No. 2B60428', node: '74:2867' },
+];
+---
+<section aria-labelledby="hb-ledger-m" class="lg:hidden bg-paper" data-node="58:431">
+  <div class="flex flex-col gap-[12px] items-start px-[20px] pt-[80px] pb-[56px]">
+    <p class="m-0 w-full t-caption text-ink" data-node="58:430">No upfront cost.<br />We're paid a percentage of what we recover.<br />You always have final say on any settlement.<br />CA DOI License No. 2B60428.</p>
+    <div class="flex gap-[12px] items-center w-full" data-node="74:2843">
+      <span class="flex items-center justify-center size-[40px] shrink-0 rounded-full bg-white border border-navy text-navy" data-node="74:2844"><Icon name="document" size={24} /></span>
+      <h2 id="hb-ledger-m" class="m-0 flex-1 min-w-0 tm-h3 text-navy" data-node="74:2848">What the Carrier Offered. What We Recovered.</h2>
+    </div>
+    <div class="flex gap-[8px] items-center w-full" aria-hidden="true" data-node="74:2849">
+      <span class="block w-px h-[12px] bg-royal shrink-0"></span><span class="block flex-1 h-px bg-royal"></span>
+      <span class="t-caption text-royal whitespace-nowrap">Measured, not estimated</span>
+      <span class="block flex-1 h-px bg-royal"></span><span class="block w-px h-[12px] bg-royal shrink-0"></span>
+    </div>
+    <div class="h-[4px]" aria-hidden="true"></div>
+
+    <article class="hb-card" data-node="58:432">
+      <h3 class="m-0 tm-body-strong text-ink whitespace-nowrap">Palisades fire</h3>
+      <p class="m-0 flex gap-[8px] items-baseline w-full text-ink">
+        <span class={cap}>Carrier's offer</span>
+        <s class="t-h3 w-[111px] shrink-0">$38,000</s>
+      </p>
+      <p class="m-0 flex flex-col gap-[2px] items-start w-full">
+        <span class={cap}>Settlement</span>
+        <span class="tm-figure text-navy">$276,000</span>
+      </p>
+      <p class="m-0 tm-body text-ink w-full">We measured the structural damage and proved the subfloor and electrical needed a full strip-out.</p>
+    </article>
+
+    <article class="hb-card" data-node="58:441">
+      <h3 class="m-0 tm-body-strong text-ink whitespace-nowrap">Smoke damage</h3>
+      <p class="m-0 flex gap-[8px] items-baseline w-full text-ink">
+        <span class={cap}>Carrier's offer</span>
+        <s class="t-h3 w-[111px] shrink-0">$17,000</s>
+      </p>
+      <p class="m-0 flex flex-col gap-[2px] items-start w-full">
+        <span class={cap}>Settlement</span>
+        <span class="block pb-[1px]">
+          <span class="block font-body font-medium text-[16px] leading-[26px] tracking-[-0.32px] text-ink">About</span>
+          <span class="block tm-figure text-navy">$1.1 million</span>
+        </span>
+      </p>
+      <p class="m-0 tm-body text-ink w-full">An industrial hygienist proved the combustion byproducts in the home's porous materials and doors.</p>
+    </article>
+
+    <article class="hb-card" data-node="58:450">
+      <h3 class="m-0 tm-body-strong text-ink whitespace-nowrap">Estate fire</h3>
+      <p class="m-0 tm-body text-ink w-full">Owner recovered $6M alone, then stalled</p>
+      <p class="m-0 flex flex-col gap-[2px] items-start w-full">
+        <span class={cap}>Settlement</span>
+        <span class="block">
+          <span class="hb-fline"><span class="tm-figure text-navy">$11M</span><span class="hb-unit"> structure</span></span>
+          <span class="hb-fline"><span class="tm-figure text-navy">+ $5.2M</span><span class="hb-unit"> contents</span></span>
+        </span>
+      </p>
+      <p class="m-0 tm-body text-ink w-full">Specialist valuation of fine wine and art.</p>
+    </article>
+
+    <div class="h-[4px]" aria-hidden="true"></div>
+    <p class="m-0 w-full t-caption text-ink" data-node="58:460">Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</p>
+    <div class="h-[24px]" aria-hidden="true"></div>
+    <p class="m-0 w-full tm-lead text-ink" data-node="58:462">Blue Star Adjusters exists because the old way wasn't good enough. Our experience isn't new. We bring years at the top of the industry and the conviction to finally do it right.</p>
+    <div class="h-[12px]" aria-hidden="true"></div>
+    <ul class="flex flex-wrap gap-[8px] items-start w-full m-0 p-0 list-none" data-node="74:2857">
+      {chips.map((c) => (
+        <li class="flex gap-[8px] items-center bg-white border border-line rounded-[4px] pl-[12px] pr-[16px] py-[8px]" data-node={c.node}>
+          <Icon name={c.icon} size={24} class="text-navy shrink-0" />
+          <span class="t-caption text-ink whitespace-nowrap">{c.label}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .hb-card { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; width: 100%; box-sizing: border-box; padding: 24px 20px; background: #fff; border-radius: 16px; }
+  .hb-fline { display: block; height: 50px; line-height: 50px; white-space: nowrap; }
+  .hb-fline > span { line-height: 50px; vertical-align: baseline; }
+  .hb-unit { font-family: var(--font-body); font-weight: 500; font-size: 16px; letter-spacing: -0.32px; color: var(--color-ink); }
+</style>

@@ -1,0 +1,33 @@
+---
+// Desktop sidebar (73:1611 / 74:1926 / 74:2188): What happens next (navy), How fees work, contact details,
+// and "Where we work" (85:3246), which only shows while the form's error summary is visible (it fills the
+// column the error state lengthens). Hidden below lg: mobile gets NextSection + FeesSection instead.
+import Steps from './Steps.astro';
+import FeesPanel from './FeesPanel.astro';
+import ContactList from './ContactList.astro';
+import IconCircle from './IconCircle.astro';
+import Watermark from './Watermark.astro';
+interface Props { ty?: boolean }
+const { ty = false } = Astro.props;
+---
+<aside class="hidden lg:flex flex-col gap-[24px] w-[376px] shrink-0" aria-label="What happens next, fees and contact" data-node={ty ? '74:2188' : '73:1611'}>
+  <div class="relative overflow-hidden bg-navy rounded-[4px] px-[32px] py-[40px] flex flex-col gap-[32px]" data-node={ty ? '74:2189' : '73:2697'}>
+    <Watermark width={302.4} height={367.15} class="left-[176px] top-[120px]" />
+    <h2 class="relative m-0 t-h3 text-white" data-node={ty ? '74:2191' : '73:2703'}>What happens next</h2>
+    <div class="relative" data-node={ty ? '74:2192' : '73:2704'}>
+      <Steps variant="d" ty={ty} nodes={ty ? ['74:2193', '74:2203', '74:2213'] : ['73:2705', '73:2716', '73:2728']} />
+    </div>
+  </div>
+  <FeesPanel variant="d" node={ty ? '74:2220' : '73:2737'} />
+  <ContactList variant="d" node={ty ? '74:2227' : '73:2746'} />
+  {!ty && (
+    <div class="fcr-where bg-paper border border-line p-[32px] flex-col gap-[16px] items-start" data-node="85:3246">
+      <div class="flex gap-[16px] items-center">
+        <IconCircle name="map-pin" />
+        <h2 class="m-0 t-body-strong text-navy whitespace-nowrap">Where we work</h2>
+      </div>
+      <p class="m-0 font-body font-medium text-[15px] leading-[24px] text-ink">Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, Scottsdale.</p>
+      <p class="m-0 font-body font-medium text-[15px] leading-[24px] text-ink">California, Nevada, Oregon, Washington, Arizona.</p>
+    </div>
+  )}
+</aside>

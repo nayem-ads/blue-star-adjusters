@@ -1,0 +1,7 @@
+get_design_context 74:3223 (M4, mobile). Condensed:
+section bg PAPER flex-col gap-24 pt-64 pb-56 px-20 relative (frame h 848, content 842)
+ Blueprint grid abs 390x336 top-left, container opacity .18, lines royal 8%: V every 6.25% (24.375px), H every 10% (33.6px)
+ Dimension line w-240 label ink "Line by line"
+ Statement Schibsted SemiBold 32/36 -0.48 navy
+ Rows pt-8 flex-col: each border-t navy py-24 flex gap-16 items-start (last border-b); badge 40 bg white border navy; text 16/26 ink
+NOTE mobile M4 is light (paper bg, navy text) while desktop S4 is dark ink bg with navy text.

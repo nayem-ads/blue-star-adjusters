@@ -1,0 +1,58 @@
+---
+// Button: Figma Button set 37:176 (Solid / Outline / On-dark / Outline on-dark × Default / Hover / Focus).
+// Pill, 52px tall (16px padding + 20px line), 28px side padding (override with px-[..]/h-[..] utilities), 10px icon gap; hugs its label.
+// Default = base style, Hover = :hover, Focus = :focus-visible (exact Figma double ring).
+// Renders <a> when href is set, else <button>. Extra attributes (aria-*, data-*, target...) pass through.
+import Icon from './Icon.astro';
+interface Props { href?: string; variant?: 'solid'|'outline'|'on-dark'|'outline-on-dark'; icon?: string; iconPosition?: 'left'|'right'; type?: 'button'|'submit'; class?: string; node?: string; full?: boolean; [key: string]: any }
+const { href, variant = 'solid', icon, iconPosition = 'left', type = 'button', class: cls = '', node, full = false, ...rest } = Astro.props;
+const Tag = href ? 'a' : 'button';
+---
+<Tag href={href} type={href ? undefined : type} class:list={['bs-btn', `bs-btn--${variant}`, full && 'bs-btn--full', cls]} data-node={node} {...rest}>
+  {icon && iconPosition === 'left' && <Icon name={icon} size={20} class="bs-btn__icon" />}
+  <span class="bs-btn__label"><slot /></span>
+  {icon && iconPosition === 'right' && <Icon name={icon} size={20} class="bs-btn__icon" />}
+</Tag>
+
+<style is:global>
+  @layer theme, base, components, utilities;
+  @layer components {
+  .bs-btn {
+    --bs-stroke: transparent; --bs-ring: 0 0 #0000;
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    box-sizing: border-box; height: 52px; padding: 0 28px; border: 0; border-radius: 999px;
+    /* Figma strokes are inside and don't move content: drawn as an inset shadow, focus ring stacked after it. */
+    box-shadow: inset 0 0 0 1.5px var(--bs-stroke), var(--bs-ring);
+    font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 20px; letter-spacing: 0;
+    white-space: nowrap; text-decoration: none; cursor: pointer; flex-shrink: 0;
+    background: transparent; outline: none;
+    transition: background-color .15s ease, color .15s ease, box-shadow .15s ease;
+  }
+  .bs-btn--full { display: flex; width: 100%; }
+  .bs-btn__icon { flex-shrink: 0; width: 20px; height: 20px; }
+  .bs-btn__label { display: block; }
+  .bs-btn:focus-visible { outline: none; }
+  .bs-btn[disabled] { cursor: progress; opacity: .8; }
+
+  /* Solid: 37:128 / 37:132 / 37:136 */
+  .bs-btn--solid { background: var(--color-royal); color: #fff; }
+  .bs-btn--solid:hover { background: var(--color-navy); }
+  .bs-btn--solid:focus-visible { background: var(--color-royal); --bs-ring: 0 0 0 2px #fff, 0 0 0 5px var(--color-royal); }
+
+  /* Outline: 37:140 / 37:144 / 37:148 */
+  .bs-btn--outline { --bs-stroke: var(--color-navy); color: var(--color-navy); }
+  .bs-btn--outline:hover { background: var(--color-paper); }
+  .bs-btn--outline:focus-visible { background: #fff; --bs-ring: 0 0 0 2px #fff, 0 0 0 5px var(--color-royal); }
+
+  /* On-dark: 37:152 / 37:156 / 37:160 */
+  .bs-btn--on-dark { background: #fff; color: var(--color-navy); }
+  .bs-btn--on-dark:hover { background: var(--color-paper); }
+  .bs-btn--on-dark:focus-visible { background: #fff; --bs-ring: 0 0 0 2px var(--color-navy), 0 0 0 5px #fff; }
+
+  /* Outline on-dark: 37:164 / 37:168 / 37:172 */
+  .bs-btn--outline-on-dark { --bs-stroke: #fff; color: #fff; }
+  /* Figma 37:168 fills white but keeps a white label (label would vanish); label goes navy so it stays readable. */
+  .bs-btn--outline-on-dark:hover { background: #fff; color: var(--color-navy); }
+  .bs-btn--outline-on-dark:focus-visible { background: var(--color-navy); color: #fff; --bs-ring: 0 0 0 2px var(--color-navy), 0 0 0 5px #fff; }
+  }
+</style>

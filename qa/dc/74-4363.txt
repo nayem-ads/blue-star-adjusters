@@ -1,0 +1,4 @@
+get_design_context 74:4363 (Fees and contact section, mobile): bg white col gap32 pt64 pb56 px20.
+Fees panel: bg paper r4 px20 py24 col gap12 (no border). Heading gap12: circle 40 WHITE border navy shield; "How fees work" tm-h3 navy. Fee locked tm-body-strong ink; detail tm-body ink.
+Contact col gap20 (no pt): rows gap16, circle 40; text col gap4 16/26: main 600 navy, sub 400 ink. Chips gap8: px12 py8 tm-label navy border navy r2.
+Button outline full h56 phone icon "Call (916) 507-1005".

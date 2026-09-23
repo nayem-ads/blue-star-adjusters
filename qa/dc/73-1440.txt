@@ -1,0 +1,12 @@
+get_design_context 73:1440 (FCR Form card, desktop) — condensed by fcr agent.
+Card: bg white, border 1px line, rounded 4, p 48, flex-col gap 32, overflow clip. Ruler ticks: abs top-left 646x16, navy 1px ticks every 8px; h16 at every 80, h10 at every 40, else h6.
+Card header (flex gap16 items-baseline): "Your details" t-h3 navy nowrap | "Every field is required unless marked optional." Montserrat 500 14/20 ink, text-right, flex-1.
+Fields: col gap24; rows gap24 two cols. Field label 15/20 600 navy; input h52 border 1.5 muted r10 px16; placeholder muted.
+ Full name "First and last name" (text, autocomplete=name, required); Phone "(916) 555-0123" (tel, required, validate 10 digits on blur);
+ Email "name@example.com" (email, required); Property state select "Select a state": California, Nevada, Oregon, Washington, Arizona, Other. Chevron 24 at x510 y42.
+Group What happened: col gap12. Label "What happened?" 15/20 600 navy. Options flex-wrap gap8: chip bg white border 1 muted r8 pl16 pr20 py12 gap8, icon 20, label Montserrat 500 15/24 ink nowrap.
+ Fire or smoke(flame) Wildfire(flame) Water(droplet) Wind, hail or tree(wind) Collapse(home) Commercial loss(building) Other(document). Radio group, one choice.
+ Helper: "Choose the closest match. We sort out the details on the call." 500 14/20 ink.
+Textarea: "Anything we should know (optional)" placeholder "What was damaged, and where things stand with your insurer" h128 px16 py14.
+Upload: bg paper, border 1 dashed muted, r8, p20, gap16 items-center. Icon circle 40 white border navy r20, doc icon 24. Text col gap4: "Add your policy or the carrier’s letters" 600 17/28 navy; "Optional. You can also send them after the first call." 500 14/20 ink. Accept PDF and images.
+Divider h1 line. Submit row flex gap24 items-center: Button solid "Request My Review"; callback note flex gap12 items-start: clock 20; "We call back the same day, Mon–Sun, 8 AM–6 PM Pacific. Every engagement is discreet." 500 15/24 ink.

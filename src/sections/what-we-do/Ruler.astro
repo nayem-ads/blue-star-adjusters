@@ -1,0 +1,10 @@
+---
+// Detail / Ruler ticks (73:933 desktop 1120 wide, 74:3512 mobile 350 wide): navy 1px ticks every 16px,
+// every fifth tick 16px tall, the rest 8px. Clipped to its box, so one set of ticks serves both widths.
+interface Props { class?: string; node?: string; nodeM?: string }
+const { class: cls = '', node, nodeM } = Astro.props;
+const ticks = Array.from({ length: 70 }, (_, i) => i);
+---
+<div aria-hidden="true" class:list={['relative h-[16px] overflow-hidden', cls]} data-node={node} data-node-m={nodeM}>
+  {ticks.map((i) => <span class:list={['absolute w-px bg-navy', i % 5 === 0 ? 'top-0 h-[16px]' : 'top-[8px] h-[8px]']} style={`left:${i * 16}px`}></span>)}
+</div>

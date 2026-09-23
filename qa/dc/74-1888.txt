@@ -1,0 +1,1 @@
+get_design_context 74:1888 (What happened group, error desktop): chips border 1 error (instead of muted); helper replaced by error text 500 14/20 error "Choose what happened, or pick Other." Layout identical (col gap12).

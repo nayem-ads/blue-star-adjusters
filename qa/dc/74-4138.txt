@@ -1,0 +1,11 @@
+get_design_context 74:4138 (Section / Callouts, mobile) — condensed
+Section bg white flex-col gap24 pt64 pb56 px20.
+Photo 350x288: stair-detail 338x276 at (6,6) + crop marks.
+Callout label gap12 (no pt): icon circle border navy ruler + Montserrat SemiBold 12/16 .24 ink "Code upgrades"
+H3 22/28 -0.22 navy; body 16/26 ink; Code list: items py16, text 16/26 w/ SemiBold lead-in.
+Pull quote gap16: glyph “ Schibsted Bold 46/48 -1.15 royal; text Montserrat 18/28 ink.
+Contents result pt32 flex-col gap16: IMG ai-contents 350x260; rule heavy 2 navy; label (paper circle search, 12/16) "Contents & Valuables";
+ 16/26 ink estate line; Figures gap24: Schibsted Medium 48/50 -0.96 navy + Montserrat Medium 16/26 ink captions;
+ disclaimer 12/16 Medium .12; link min-h44 gap8 Montserrat SemiBold 16/26 royal "Contents & Valuables claims" + arrow;
+ hairline; label flame "Fire & Smoke"; Result border-t pt16 gap4: SemiBold 16/26 ink label; struck Schibsted SemiBold 22/28 ink "$38,000"; Schibsted Medium 48/50 navy "$276,000"; disclaimer.
+ (No Inventory panel on mobile.)

@@ -1,0 +1,10 @@
+53:184 Section / Results (hero) desktop, condensed (intro + ledger same as 53-199.txt / 53-289.txt; photo stack as 53-221.txt).
+Section: bg paper, flex gap24 items-start, pt40 pb120 px80.
+74:4048 Blueprint grid: absolute left800 top16 480x400, opacity 14%, overflow clip. V lines royal 0.75w x 400h at x=0,30,...,330. H lines royal 320w x 1h at y=0,40,...,400.
+54:256 Diagonal: absolute left0 top769.74 1280x611 svg; annotation: decorative 1px line at 25.5deg, line colour, aria-hidden, runs behind ledger sheet.
+53:185 Rail: border-l 1px line, flex-col, w168, overflow clip. Annotation: sticky top 112px from Results through Review; active tab follows scroll; each tab anchor to its section.
+ Tab h44 pl16 pr12 rounded-r 6px, Montserrat Medium 15/20. Active "Results" bg navy text white w168; others ink w152: Why early, Founder, Claims, Compare, Review.
+53:198 Hero content w928 flex-col: Intro(512) / gap24 / Ledger sheet / gap64 / 54:255 Statement Montserrat 400 20/32 ink w640:
+ "Blue Star Adjusters exists because the old way wasn't good enough. Our experience isn't new. We bring years at the top of the industry and the conviction to finally do it right."
+ gap24 / 73:1328 Fact chips flex gap12: chip bg white border 1px line rounded 4px pl12 pr16 py8 gap8, icon 24 + Montserrat Medium 15/24 ink:
+ map-pin "7 offices"; building "5 states: CA, NV, OR, WA, AZ"; shield "CA DOI License No. 2B60428".

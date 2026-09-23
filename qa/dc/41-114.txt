@@ -1,0 +1,1 @@
+Brand wave corner 41:114: 360x200 image; Top-left 41:108 / Bottom-right 41:113 (public/svg/wave-*.svg)

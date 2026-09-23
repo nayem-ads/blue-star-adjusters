@@ -1,0 +1,7 @@
+get_design_context 74:3178 (M3 navy, mobile). Condensed:
+section bg navy flex-col gap-32 px-20 py-64 relative (frame h 1272 vs content 1265)
+ watermark abs 302.4x367.15 at 87.6,991.85 (overflows section bottom -> clipped)
+ Tagline rule flex gap-12: rule white 32x1; Montserrat SemiBold 12/16 .24 white "Your Claim. Our Fight."; rule
+ H2 32/36 -0.48 white; Background para (2nd desktop para only) 16/26 white
+ Facts flex-col: each border-t white py-20 flex gap-16 items-start (last also border-b); badge 40 border white rounded-20; text 16/26 white
+ CTAs flex-col gap-12 pt-8: on-dark h56 full; outline-on-dark+phone h56 full

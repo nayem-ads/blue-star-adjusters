@@ -1,0 +1,67 @@
+---
+// What We Do / Hero. Desktop 73:853 (1280×867), mobile 74:3473 (390×1007).
+// Mobile order: photo, H1, short sub, CTA stack, call-bar spacer, trust list. The copy column uses
+// `contents` below lg so its children join the section's mobile flex column.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import CropMarks from './CropMarks.astro';
+import images from '../../data/images.json';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const imgs = images as Record<string, { src: string; width: number; height: number }>;
+const desk = imgs['73:915'];
+const trust = [
+  { icon: 'shield', text: "No upfront cost. We're paid a percentage of what we recover.", d: ['73:900', '73:904'], m: ['74:3497', '74:3501'] },
+  { icon: 'check', text: 'You always have final say on any settlement.', d: ['73:905', '73:908'], m: ['74:3502', '74:3505'] },
+  { icon: 'document', text: 'CA DOI License No. 2B60428', d: ['73:909', '73:913'], m: ['74:3506', '74:3510'] },
+];
+---
+<section aria-labelledby="wwd-hero-title" class="relative overflow-hidden bg-paper" data-node="73:853" data-node-m="74:3473">
+  <img src="/svg/detail-blueprint-grid.svg" width="640" height="400" alt="" aria-hidden="true"
+    class="hidden lg:block absolute top-0 left-1/2 w-[640px] h-[400px] opacity-40 pointer-events-none" data-node="73:854" />
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[20px] px-[20px] pt-[24px] pb-[48px] lg:flex-row lg:items-start lg:gap-[64px] lg:px-[80px] lg:pt-[96px] lg:pb-[120px]">
+    <div class="contents lg:flex lg:flex-col lg:gap-[32px] lg:items-start lg:flex-[0_1_560px] lg:min-w-0" data-node="73:883">
+      <div class="hidden lg:block w-fit" data-node="73:884"><Eyebrow>What we do</Eyebrow></div>
+      <h1 id="wwd-hero-title" class="m-0 text-navy tm-display lg:t-display-l lg:w-full" data-node="73:887" data-node-m="74:3485">
+        Where Claims<br class="hidden lg:inline" /> Go Wrong.<br class="hidden lg:inline" /> Where We Start.
+      </h1>
+      <p class="hidden lg:block m-0 t-lead text-ink w-full" data-node="73:888">When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won't let the carrier set the scope.</p>
+      <p class="lg:hidden m-0 tm-lead text-ink" data-node-m="74:3486">Your insurer sends their adjuster. We send ours.</p>
+      <div class="flex flex-col gap-[12px] w-full lg:flex-row lg:gap-[16px] lg:w-auto" data-node="73:889" data-node-m="74:3487">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] lg:h-[52px] lg:w-[253px]" data-node="73:890" data-node-m="74:3488">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] lg:h-[52px] lg:w-[235px]" data-node="73:895" data-node-m="74:3492">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <div class="lg:hidden h-[68px] shrink-0" aria-hidden="true" data-node-m="85:3186"></div>
+      <ul class="m-0 p-0 list-none flex flex-col gap-[12px] w-full border-b border-line pb-[24px] lg:border-b-0 lg:border-t lg:pb-0 lg:pt-[24px]" data-node="73:899" data-node-m="74:3496">
+        {trust.map((t) => (
+          <li class="flex items-start gap-[12px] lg:items-center lg:w-fit" data-node={t.d[0]} data-node-m={t.m[0]}>
+            <Icon name={t.icon} size={24} class="shrink-0 text-navy" />
+            <span class="flex-1 min-w-0 font-body font-medium text-[16px] leading-[26px] text-ink lg:flex-none lg:text-[15px] lg:leading-[24px] lg:whitespace-nowrap" data-node={t.d[1]} data-node-m={t.m[1]}>{t.text}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="relative order-first shrink-0 w-full h-[216px] lg:order-none lg:flex-[0_1_496px] lg:min-w-0 lg:h-auto lg:aspect-[496/584]" data-node="73:914" data-node-m="74:3474">
+      <div class="absolute inset-[6px] lg:inset-auto lg:left-[14.516%] lg:top-[2.7397%] lg:w-[85.484%] lg:h-[86.301%]" data-node="73:915" data-node-m="74:3475">
+        <!-- Two crops (mobile 74:3475 / desktop 73:915). Mobile one is the LCP image (eager); the desktop one is lazy so phones never fetch it. -->
+        <Img node="74:3475" alt="Public adjuster documenting fire damage on site" class="lg:hidden w-full h-full object-cover" priority />
+        <img src={desk.src} width={desk.width} height={desk.height} alt="Public adjuster documenting fire damage on site"
+          class="hidden lg:block w-full h-full object-cover" loading="lazy" decoding="async" fetchpriority="high" />
+      </div>
+      <CropMarks class="absolute inset-0 lg:inset-auto lg:left-[12.097%] lg:top-[0.6849%] lg:w-[90.323%] lg:h-[90.411%]" node="73:916" nodeM="74:3476" />
+      <div class="hidden lg:block absolute left-0 top-[57.534%] w-[35.484%] h-[38.356%]" data-node="73:925">
+        <Img node="73:925" alt="Moisture meter reading taken against a wall" class="w-full h-full object-cover" />
+        <span aria-hidden="true" class="absolute inset-0 border-[6px] border-white"></span>
+      </div>
+      <div aria-hidden="true" class="hidden lg:flex absolute left-[14.516%] top-[95.890%] w-[85.484%] h-[16px] items-center gap-[8px] text-royal" data-node="73:926">
+        <span class="w-px h-[12px] bg-royal shrink-0"></span>
+        <span class="flex-1 h-px bg-royal"></span>
+        <span class="t-caption whitespace-nowrap">We measure each one.</span>
+        <span class="flex-1 h-px bg-royal"></span>
+        <span class="w-px h-[12px] bg-royal shrink-0"></span>
+      </div>
+    </div>
+  </div>
+</section>

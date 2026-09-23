@@ -1,0 +1,1 @@
+get_design_context 74:4568 (Phone field error mobile): error text 'Enter a 10-digit number.' (shorter than desktop). Value (916) 555-01.

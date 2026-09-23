@@ -1,0 +1,4 @@
+57:278 who we serve (condensed). bg navy flex gap96 items-start px80 py120.
+left col w640 gap40: H2 Display L 64/68 -1.28 bold white "A Boutique Practice.<br>A Family Office."; tagline rule flex gap16: 40x1 white rule + SemiBold 13/18 .26 white "Your Claim. Our Fight." + rule.
+right col h333 gap24 (w384): icon circle 48 border1 white radius24 shield24; lead 20/32 white w384 "Every engagement is discreet, senior-led, and built around the client’s privacy. References are held in confidence and available on request."; rule 1px white full; facts col gap12: flex gap12: icon20 + Medium 15/24 white: document "CA DOI License No. 2B60428"; shield "No upfront cost. We're paid a percentage of what we recover."
+column rule abs left768 top120 1x333 white.

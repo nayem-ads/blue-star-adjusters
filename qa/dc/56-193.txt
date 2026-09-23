@@ -1,0 +1,9 @@
+56:193 comparison (condensed). bg paper col gap56 px80 py120.
+header flex gap80 items-end: H2 w640 "Blue Star Adjusters<br>vs. Going It Alone"; intro col w400 h124 gap24: body 17/28 ink "Most homeowners don’t realize they have the right to hire their own adjuster, someone who works for them, not the insurance company." + DimLine w400.
+table col: highlight abs left260 top-12 440x464 white, border-t 3px royal.
+ head flex gap40 pb16: label cell w240 (empty); Blue Star cell flex-1 gap12 h28: shield in 40 paper circle + SemiBold 17/28 navy "Blue Star Adjusters"; Yourself cell flex-1 SemiBold 17/28 ink "Handling It Yourself".
+ rows border-t line py28 flex gap40: label SemiBold 17/28 navy w240; BS cell pt4 gap12: check 20 + regular 17/28 navy; Yourself regular 17/28 ink. last row also border-b.
+  Building Scope | We dictate scope using hundreds of prior claims; familiar with fire vs. new construction standards | Insurance company determines scope and chooses the contractor, protecting their interests, not yours
+  Control | We dictate the manner and method of the entire adjustment process: proactively, not reactively | The insurance company controls the process end to end
+  Final Say | You always have final say on any settlement | You have final say, but far less information to make the right decision
+actions flex gap32: outline button "Schedule a Free Review"; link royal "See all seven" + arrow.

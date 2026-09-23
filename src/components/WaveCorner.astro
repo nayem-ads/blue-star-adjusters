@@ -1,0 +1,10 @@
+---
+// WaveCorner: Figma Brand wave corner 41:114 (Top-left 41:108 / Bottom-right 41:113), 360×200, decorative.
+// Uses the exact exports public/svg/wave-top-left.svg and wave-bottom-right.svg.
+// Usage: <WaveCorner position="bottom-right" class="absolute right-0 bottom-0" />
+// Props: position 'top-left'|'bottom-right'; width/height (default 360×200, keep the 9:5 ratio); node; class.
+interface Props { position?: 'top-left'|'bottom-right'; width?: number; height?: number; node?: string; class?: string }
+const { position = 'top-left', width = 360, height = Math.round((width * 200) / 360 * 100) / 100, node, class: cls = '' } = Astro.props;
+---
+<img src={`/svg/wave-${position}.svg`} width={width} height={height} alt="" aria-hidden="true" loading="lazy" decoding="async"
+  class:list={['pointer-events-none select-none', cls]} data-node={node} />

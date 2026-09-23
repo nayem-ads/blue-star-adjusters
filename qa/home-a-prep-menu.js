@@ -1,0 +1,1 @@
+document.querySelector('astro-dev-toolbar')?.remove();document.querySelectorAll('img').forEach(i=>{i.decoding='sync';if(!i.complete)i.loading='eager'});document.querySelectorAll('[data-node]').forEach(e=>delete e.dataset.node);document.querySelector('.bs-header [data-menu]').style.height='844px';document.activeElement.blur()

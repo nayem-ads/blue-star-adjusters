@@ -1,0 +1,34 @@
+---
+// Founder: Built From the Ground Up. Desktop 54:192, mobile 62:693.
+import Pic from './Pic.astro';
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import CropMarks from './CropMarks.astro';
+import FactChip from './FactChip.astro';
+import { ROUTES } from '../../data/site';
+---
+<section aria-labelledby="founder-title" class="bg-paper overflow-hidden" data-node="54:192" data-node-m="62:693">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[24px] lg:flex-row lg:items-center lg:gap-[96px]">
+    <div class="relative h-[420px] lg:h-[560px] lg:w-[448px] lg:shrink-0">
+          <Pic d="54:193" m="62:694" alt="Portrait of Michael Rapport, founding principal of Blue Star Adjusters." />
+      <CropMarks class="absolute -inset-[10px] lg:-inset-[12px]" node="73:2491" nodeM="74:3393" />
+    </div>
+    <div class="flex flex-col items-start gap-[24px] lg:gap-[28px] lg:flex-1 lg:min-w-0" data-node="54:194">
+      <h2 id="founder-title" class="m-0 tm-h2 lg:t-h2 text-navy w-full" data-node="54:195" data-node-m="62:695">Built From<br class="lg:hidden" /> the Ground Up.</h2>
+      <p class="m-0 tm-body lg:t-body text-ink w-[340px] lg:w-full" data-node="54:196" data-node-m="62:696">Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco’s seismic retrofit ordinance, and he knows what a code-compliant rebuild costs because he’s paid for plenty of them.</p>
+      <div class="flex flex-wrap gap-[12px] w-full" data-node="73:2503">
+        <FactChip icon="ruler" node="73:2504" nodeM="74:3388">25 years as a developer and builder</FactChip>
+        <div class="hidden lg:flex"><FactChip icon="home" node="73:2509">Built to San Francisco’s seismic retrofit ordinance</FactChip></div>
+      </div>
+      <figure class="m-0 flex flex-col items-start gap-[12px] lg:gap-[16px] w-full" data-node="54:197" data-node-m="62:697">
+        <Icon name="quote" size={48} class="text-royal w-[40px] h-[40px] lg:w-[48px] lg:h-[48px]" />
+        <blockquote class="m-0 tm-h3 lg:t-h3 text-navy w-[310px] lg:w-auto lg:max-w-[544px]" data-node="54:198" data-node-m="62:698"><p class="m-0">“I’ve stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”</p></blockquote>
+        <figcaption class="w-full lg:w-auto tm-body text-ink whitespace-nowrap" data-node="54:199" data-node-m="62:699">Michael Rapport, Founding Principal</figcaption>
+      </figure>
+      <Button href={ROUTES.founder} variant="outline" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="54:200" data-node-m="62:700">Meet Michael</Button>
+    </div>
+  </div>
+</section>
+<style>
+  @media (min-width: 1024px) { figcaption { font-weight: 500; font-size: 15px; line-height: 24px; } }
+</style>

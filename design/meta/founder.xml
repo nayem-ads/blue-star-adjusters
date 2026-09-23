@@ -1,0 +1,702 @@
+<canvas id="45:71" name="Our Founder" x="0" y="0" width="0" height="0">
+  <frame id="68:449" name="Desktop — Our Founder (1280)" x="0" y="0" width="1280" height="6644">
+    <instance id="73:1814" name="Header / Desktop (Light)" x="0" y="0" width="1280" height="88" />
+    <frame id="73:1837" name="S1 Hero — Portrait" x="0" y="88" width="1280" height="1008">
+      <frame id="73:1838" name="Intro" x="80" y="160.5" width="504" height="671">
+        <instance id="73:1839" name="Eyebrow (V)" x="0" y="0" width="242" height="18" />
+        <frame id="73:1842" name="Headline" x="0" y="50" width="504" height="276">
+          <text id="73:1843" name="H1 (V)" x="0" y="0" width="504" height="192" />
+          <text id="73:1844" name="Role line" x="0" y="212" width="504" height="64" />
+        </frame>
+        <text id="73:1845" name="Bio (V)" x="0" y="358" width="504" height="112" />
+        <frame id="73:1846" name="CTAs" x="0" y="502" width="504" height="52">
+          <instance id="73:1847" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+          <instance id="73:1851" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+        </frame>
+        <frame id="73:1855" name="Trust rows" x="0" y="586" width="504" height="85">
+          <frame id="73:1856" name="Trust / shield" x="0" y="25" width="504" height="24">
+            <instance id="73:1857" name="Icon / shield" x="0" y="2" width="20" height="20" />
+            <text id="73:1860" name="CA DOI License No. 2B60428" x="32" y="0" width="472" height="24" />
+          </frame>
+          <frame id="73:1861" name="Trust / document" x="0" y="61" width="504" height="24">
+            <instance id="73:1862" name="Icon / document" x="0" y="2" width="20" height="20" />
+            <text id="73:1865" name="No upfront cost. We&#39;re paid " x="32" y="0" width="472" height="24" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="73:1866" name="Portrait block" x="608" y="96" width="592" height="800">
+        <rounded-rectangle id="85:3262" name="Mount (paper, line stroke)" x="16" y="56" width="560" height="700" />
+        <instance id="73:1896" name="Photo / mike-portrait" x="32" y="40" width="560" height="700" />
+        <instance id="73:1899" name="Detail / Crop marks" x="16" y="24" width="592" height="732" />
+        <instance id="73:1908" name="Detail / Dimension line" x="32" y="772" width="560" height="16" />
+        <frame id="73:1914" name="Fact card — 25 years" x="0" y="556" width="240" height="168">
+          <text id="73:1915" name="Figure 25" x="24" y="24" width="192" height="64" />
+          <text id="73:1916" name="Fact 25 years" x="24" y="96" width="192" height="48" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="73:1917" name="S2 Career line — Built From the Ground Up" x="0" y="1096" width="1280" height="848">
+      <frame id="73:1918" name="Ruler ticks" x="80" y="0" width="1120" height="16">
+        <rounded-rectangle id="73:1919" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1920" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1921" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1922" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1923" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1924" name="Tick" x="40" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1925" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1926" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1927" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1928" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1929" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1930" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1931" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1932" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1933" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1934" name="Tick" x="120" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1935" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1936" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1937" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1938" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1939" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1940" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1941" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1942" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1943" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1944" name="Tick" x="200" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1945" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1946" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1947" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1948" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1949" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1950" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1951" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1952" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1953" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1954" name="Tick" x="280" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1955" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1956" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1957" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1958" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1959" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1960" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1961" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1962" name="Tick" x="344" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1963" name="Tick" x="352" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1964" name="Tick" x="360" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1965" name="Tick" x="368" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1966" name="Tick" x="376" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1967" name="Tick" x="384" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1968" name="Tick" x="392" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1969" name="Tick" x="400" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1970" name="Tick" x="408" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1971" name="Tick" x="416" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1972" name="Tick" x="424" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1973" name="Tick" x="432" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1974" name="Tick" x="440" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1975" name="Tick" x="448" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1976" name="Tick" x="456" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1977" name="Tick" x="464" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1978" name="Tick" x="472" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1979" name="Tick" x="480" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1980" name="Tick" x="488" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1981" name="Tick" x="496" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1982" name="Tick" x="504" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1983" name="Tick" x="512" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1984" name="Tick" x="520" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1985" name="Tick" x="528" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1986" name="Tick" x="536" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1987" name="Tick" x="544" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1988" name="Tick" x="552" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1989" name="Tick" x="560" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:1990" name="Tick" x="568" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1991" name="Tick" x="576" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1992" name="Tick" x="584" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1993" name="Tick" x="592" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1994" name="Tick" x="600" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:1995" name="Tick" x="608" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1996" name="Tick" x="616" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1997" name="Tick" x="624" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1998" name="Tick" x="632" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:1999" name="Tick" x="640" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:2000" name="Tick" x="648" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2001" name="Tick" x="656" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2002" name="Tick" x="664" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2003" name="Tick" x="672" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2004" name="Tick" x="680" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:2005" name="Tick" x="688" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2006" name="Tick" x="696" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2007" name="Tick" x="704" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2008" name="Tick" x="712" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2009" name="Tick" x="720" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:2010" name="Tick" x="728" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2011" name="Tick" x="736" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2012" name="Tick" x="744" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2013" name="Tick" x="752" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2014" name="Tick" x="760" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:2015" name="Tick" x="768" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2016" name="Tick" x="776" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2017" name="Tick" x="784" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2018" name="Tick" x="792" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2019" name="Tick" x="800" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:2020" name="Tick" x="808" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2021" name="Tick" x="816" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2022" name="Tick" x="824" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2023" name="Tick" x="832" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2024" name="Tick" x="840" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:2025" name="Tick" x="848" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2026" name="Tick" x="856" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2027" name="Tick" x="864" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2028" name="Tick" x="872" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2029" name="Tick" x="880" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:2030" name="Tick" x="888" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2031" name="Tick" x="896" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2032" name="Tick" x="904" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2033" name="Tick" x="912" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2034" name="Tick" x="920" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:2035" name="Tick" x="928" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2036" name="Tick" x="936" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2037" name="Tick" x="944" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2038" name="Tick" x="952" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2039" name="Tick" x="960" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:2040" name="Tick" x="968" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2041" name="Tick" x="976" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2042" name="Tick" x="984" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2043" name="Tick" x="992" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2044" name="Tick" x="1000" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:2045" name="Tick" x="1008" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2046" name="Tick" x="1016" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2047" name="Tick" x="1024" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2048" name="Tick" x="1032" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2049" name="Tick" x="1040" y="0" width="1" height="16" />
+        <rounded-rectangle id="73:2050" name="Tick" x="1048" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2051" name="Tick" x="1056" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2052" name="Tick" x="1064" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2053" name="Tick" x="1072" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2054" name="Tick" x="1080" y="0" width="1" height="12" />
+        <rounded-rectangle id="73:2055" name="Tick" x="1088" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2056" name="Tick" x="1096" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2057" name="Tick" x="1104" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2058" name="Tick" x="1112" y="0" width="1" height="6" />
+        <rounded-rectangle id="73:2059" name="Tick" x="1120" y="0" width="1" height="16" />
+      </frame>
+      <frame id="73:2060" name="Head" x="80" y="120" width="1120" height="206">
+        <frame id="85:3263" name="Head copy" x="0" y="0" width="656" height="206">
+          <text id="73:2061" name="H2 (V)" x="0" y="0" width="656" height="54" />
+          <text id="73:2062" name="Intro (V)" x="0" y="78" width="656" height="128" />
+        </frame>
+        <frame id="85:3264" name="Head facts" x="720" y="76" width="400" height="130">
+          <instance id="85:3265" name="Detail / Dimension line" x="0" y="0" width="400" height="16" />
+          <frame id="85:3271" name="Fact chip — 25 years" x="0" y="40" width="400" height="90">
+            <frame id="85:3272" name="Badge / ruler" x="17" y="25" width="40" height="40">
+              <instance id="85:3273" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="85:3274" name="Fact chip text" x="73" y="17" width="306" height="56" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="73:2063" name="Timeline" x="80" y="406" width="1120" height="340">
+        <frame id="73:2064" name="Track" x="0" y="0" width="1120" height="40">
+          <rounded-rectangle id="73:2065" name="Connector" x="20" y="19" width="1100" height="2" />
+          <rounded-rectangle id="73:2066" name="End tick" x="1119" y="12" width="1" height="16" />
+          <frame id="73:2067" name="Badge / building" x="0" y="0" width="40" height="40">
+            <instance id="73:2068" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="73:2070" name="Badge / document" x="384" y="0" width="40" height="40">
+            <instance id="73:2071" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="73:2074" name="Badge / shield" x="768" y="0" width="40" height="40">
+            <instance id="73:2075" name="Icon / shield" x="8" y="8" width="24" height="24" />
+          </frame>
+        </frame>
+        <frame id="73:2078" name="Stages" x="0" y="72" width="1120" height="268">
+          <frame id="73:2079" name="Stage — Developer and merchant builder" x="0" y="0" width="352" height="268">
+            <text id="73:2080" name="Stage label" x="0" y="0" width="352" height="18" />
+            <text id="73:2081" name="Stage title" x="0" y="30" width="352" height="68" />
+            <text id="73:2082" name="Stage body" x="0" y="110" width="352" height="112" />
+            <frame id="73:2083" name="Fact tag" x="0" y="234" width="210" height="34">
+              <text id="73:2084" name="Fact tag text" x="9" y="5" width="192" height="24" />
+            </frame>
+          </frame>
+          <frame id="73:2085" name="Stage — Public adjuster" x="384" y="0" width="352" height="160">
+            <text id="73:2086" name="Stage label" x="0" y="0" width="352" height="18" />
+            <text id="73:2087" name="Stage title" x="0" y="30" width="352" height="34" />
+            <text id="73:2088" name="Stage body" x="0" y="76" width="352" height="84" />
+          </frame>
+          <frame id="73:2089" name="Stage — Founding Principal, Blue Star Adjusters" x="768" y="0" width="352" height="240">
+            <text id="73:2090" name="Stage label" x="0" y="0" width="352" height="18" />
+            <text id="73:2091" name="Stage title" x="0" y="30" width="352" height="68" />
+            <text id="73:2092" name="Stage body" x="0" y="110" width="352" height="84" />
+            <frame id="73:2093" name="Fact tag" x="0" y="206" width="236" height="34">
+              <text id="73:2094" name="Fact tag text" x="9" y="5" width="218" height="24" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="73:2348" name="S3 The Background That Changes Everything (navy)" x="0" y="1944" width="1280" height="1191">
+      <instance id="73:2349" name="B-mark (watermark)" x="718.3999633789062" y="379.14996337890625" width="561.6000366210938" height="681.8500366210938" />
+      <frame id="73:2354" name="Head" x="80" y="120" width="1120" height="504">
+        <frame id="73:2355" name="Left" x="0" y="0" width="464" height="210">
+          <frame id="73:2356" name="Tagline rule" x="0" y="0" width="255" height="24">
+            <rounded-rectangle id="73:2357" name="Rule" x="0" y="11.5" width="32" height="1" />
+            <text id="73:2358" name="Tagline" x="44" y="0" width="167" height="24" />
+            <rounded-rectangle id="73:2359" name="Rule" x="223" y="11.5" width="32" height="1" />
+          </frame>
+          <text id="73:2360" name="H2 (V)" x="0" y="48" width="464" height="162" />
+        </frame>
+        <frame id="73:2361" name="Right" x="528" y="0" width="592" height="504">
+          <text id="85:3330" name="Career para (V)" x="0" y="0" width="592" height="224" />
+          <text id="73:2362" name="Background para (V)" x="0" y="248" width="592" height="256" />
+        </frame>
+      </frame>
+      <frame id="73:2363" name="Before he adjusted — ledger (2x2)" x="80" y="696" width="1120" height="251">
+        <frame id="73:2364" name="Fact — building" x="0" y="1" width="544" height="89">
+          <rounded-rectangle id="85:3331" name="Rule (white 30%)" x="0" y="0" width="544" height="1" />
+          <frame id="85:3332" name="Row" x="0" y="25" width="544" height="64">
+            <frame id="73:2365" name="Badge / building" x="0" y="0" width="40" height="40">
+              <instance id="73:2366" name="Icon / building" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="73:2368" name="Fact text" x="60" y="0" width="484" height="64" />
+          </frame>
+        </frame>
+        <frame id="73:2369" name="Fact — ruler" x="576" y="1" width="544" height="89">
+          <rounded-rectangle id="85:3333" name="Rule (white 30%)" x="0" y="0" width="544" height="1" />
+          <frame id="85:3334" name="Row" x="0" y="25" width="544" height="64">
+            <frame id="73:2370" name="Badge / ruler" x="0" y="0" width="40" height="40">
+              <instance id="73:2371" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="73:2374" name="Fact text" x="60" y="0" width="484" height="64" />
+          </frame>
+        </frame>
+        <frame id="73:2375" name="Fact — document" x="0" y="130" width="544" height="89">
+          <rounded-rectangle id="85:3335" name="Rule (white 30%)" x="0" y="0" width="544" height="1" />
+          <frame id="85:3336" name="Row" x="0" y="25" width="544" height="64">
+            <frame id="73:2376" name="Badge / document" x="0" y="0" width="40" height="40">
+              <instance id="73:2377" name="Icon / document" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="73:2380" name="Fact text" x="60" y="0" width="484" height="64" />
+          </frame>
+        </frame>
+        <frame id="73:2381" name="Fact — pin" x="576" y="130" width="544" height="121">
+          <rounded-rectangle id="85:3337" name="Rule (white 30%)" x="0" y="0" width="544" height="1" />
+          <frame id="85:3338" name="Row" x="0" y="25" width="544" height="96">
+            <frame id="73:2382" name="Badge / pin" x="0" y="0" width="40" height="40">
+              <instance id="73:2383" name="Icon / pin" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="73:2386" name="Fact text" x="60" y="0" width="484" height="96" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="73:2387" name="CTAs" x="80" y="1019" width="504" height="52">
+        <instance id="73:2388" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+        <instance id="73:2393" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+      </frame>
+    </frame>
+    <frame id="73:2397" name="S4 On every claim — the job" x="0" y="3135" width="1280" height="704">
+      <frame id="85:3275" name="Blueprint grid (full bleed, 40px)" x="0" y="0" width="1280" height="704">
+        <rounded-rectangle id="85:3276" name="V" x="0" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3277" name="V" x="40" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3278" name="V" x="80" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3279" name="V" x="120" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3280" name="V" x="160" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3281" name="V" x="200" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3282" name="V" x="240" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3283" name="V" x="280" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3284" name="V" x="320" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3285" name="V" x="360" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3286" name="V" x="400" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3287" name="V" x="440" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3288" name="V" x="480" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3289" name="V" x="520" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3290" name="V" x="560" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3291" name="V" x="600" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3292" name="V" x="640" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3293" name="V" x="680" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3294" name="V" x="720" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3295" name="V" x="760" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3296" name="V" x="800" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3297" name="V" x="840" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3298" name="V" x="880" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3299" name="V" x="920" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3300" name="V" x="960" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3301" name="V" x="1000" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3302" name="V" x="1040" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3303" name="V" x="1080" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3304" name="V" x="1120" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3305" name="V" x="1160" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3306" name="V" x="1200" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3307" name="V" x="1240" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3308" name="V" x="1280" y="0" width="1" height="704" />
+        <rounded-rectangle id="85:3309" name="H" x="0" y="0" width="1280" height="1" />
+        <rounded-rectangle id="85:3310" name="H" x="0" y="40" width="1280" height="1" />
+        <rounded-rectangle id="85:3311" name="H" x="0" y="80" width="1280" height="1" />
+        <rounded-rectangle id="85:3312" name="H" x="0" y="120" width="1280" height="1" />
+        <rounded-rectangle id="85:3313" name="H" x="0" y="160" width="1280" height="1" />
+        <rounded-rectangle id="85:3314" name="H" x="0" y="200" width="1280" height="1" />
+        <rounded-rectangle id="85:3315" name="H" x="0" y="240" width="1280" height="1" />
+        <rounded-rectangle id="85:3316" name="H" x="0" y="280" width="1280" height="1" />
+        <rounded-rectangle id="85:3317" name="H" x="0" y="320" width="1280" height="1" />
+        <rounded-rectangle id="85:3318" name="H" x="0" y="360" width="1280" height="1" />
+        <rounded-rectangle id="85:3319" name="H" x="0" y="400" width="1280" height="1" />
+        <rounded-rectangle id="85:3320" name="H" x="0" y="440" width="1280" height="1" />
+        <rounded-rectangle id="85:3321" name="H" x="0" y="480" width="1280" height="1" />
+        <rounded-rectangle id="85:3322" name="H" x="0" y="520" width="1280" height="1" />
+        <rounded-rectangle id="85:3323" name="H" x="0" y="560" width="1280" height="1" />
+        <rounded-rectangle id="85:3324" name="H" x="0" y="600" width="1280" height="1" />
+        <rounded-rectangle id="85:3325" name="H" x="0" y="640" width="1280" height="1" />
+        <rounded-rectangle id="85:3326" name="H" x="0" y="680" width="1280" height="1" />
+      </frame>
+      <frame id="73:2427" name="Statement" x="80" y="120" width="496" height="372">
+        <instance id="73:2428" name="Detail / Dimension line" x="0" y="0" width="320" height="16" />
+        <text id="73:2434" name="Statement" x="0" y="48" width="496" height="324" />
+      </frame>
+      <frame id="73:2435" name="How he reads a claim" x="640" y="120" width="560" height="460">
+        <frame id="73:2436" name="Row — search" x="0" y="0" width="560" height="153">
+          <frame id="73:2437" name="Badge / search" x="0" y="29" width="40" height="40">
+            <instance id="73:2438" name="Icon / search" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="73:2441" name="Row text" x="64" y="29" width="496" height="96" />
+        </frame>
+        <frame id="73:2442" name="Row — ruler" x="0" y="153" width="560" height="121">
+          <frame id="73:2443" name="Badge / ruler" x="0" y="29" width="40" height="40">
+            <instance id="73:2444" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="73:2447" name="Row text" x="64" y="29" width="496" height="64" />
+        </frame>
+        <frame id="73:2448" name="Row — building" x="0" y="274" width="560" height="186">
+          <frame id="73:2449" name="Badge / building" x="0" y="29" width="40" height="40">
+            <instance id="73:2450" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="73:2452" name="Row text" x="64" y="29" width="496" height="128" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="73:2993" name="S5 Both sides of the plans — quote" x="0" y="3839" width="1280" height="1536">
+      <frame id="73:2994" name="Quote block" x="80" y="120" width="1120" height="704">
+        <frame id="73:2999" name="Quote" x="0" y="0" width="1120" height="704">
+          <text id="73:3000" name="Quote (V)" x="0" y="0" width="944" height="560" />
+          <frame id="73:3001" name="Attribution" x="0" y="592" width="553" height="28">
+            <rounded-rectangle id="73:3002" name="Rule" x="0" y="13" width="40" height="2" />
+            <text id="73:3003" name="Attribution" x="56" y="0" width="497" height="28" />
+          </frame>
+          <instance id="85:2965" name="Button / Schedule a Free Review" x="0" y="652" width="253" height="52" />
+        </frame>
+        <text id="85:3327" name="Quote glyph (hanging)" x="-36" y="0" width="35" height="70" />
+      </frame>
+      <frame id="73:3004" name="Split — both sides" x="80" y="888" width="1120" height="528">
+        <instance id="73:3005" name="Detail / Dimension line" x="0" y="0" width="1120" height="16" />
+        <frame id="73:3011" name="Pair" x="0" y="40" width="1120" height="488">
+          <frame id="73:3012" name="Side — developer" x="0" y="0" width="544" height="488">
+            <frame id="73:3013" name="Side label" x="0" y="0" width="403" height="40">
+              <frame id="73:3014" name="Badge / building" x="0" y="0" width="40" height="40">
+                <instance id="73:3015" name="Icon / building" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="73:3017" name="Side label text" x="56" y="3" width="347" height="34" />
+            </frame>
+            <instance id="73:3018" name="Photo / ai-plans" x="0" y="60" width="544" height="400" />
+          </frame>
+          <frame id="73:3021" name="Side — adjuster" x="576" y="0" width="544" height="488">
+            <frame id="73:3022" name="Side label" x="0" y="0" width="316" height="40">
+              <frame id="73:3023" name="Badge / shield" x="0" y="0" width="40" height="40">
+                <instance id="73:3024" name="Icon / shield" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="73:3027" name="Side label text" x="56" y="3" width="260" height="34" />
+            </frame>
+            <instance id="73:3028" name="Photo / onsite-adjuster" x="0" y="60" width="544" height="428" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="73:3031" name="S6 Schedule a Free Review with Michael" x="0" y="5375" width="1280" height="712">
+      <frame id="73:3032" name="CTA copy" x="80" y="120" width="560" height="472">
+        <instance id="85:3339" name="Detail / Dimension line" x="0" y="0" width="560" height="16" />
+        <text id="73:3033" name="CTA headline" x="0" y="48" width="560" height="204" />
+        <frame id="73:3034" name="Terms" x="0" y="284" width="560" height="104">
+          <text id="73:3035" name="Fee (exact)" x="0" y="0" width="560" height="64" />
+          <text id="73:3036" name="Final say" x="0" y="72" width="560" height="32" />
+        </frame>
+        <frame id="73:3037" name="CTAs" x="0" y="420" width="504" height="52">
+          <instance id="73:3038" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+          <instance id="73:3042" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+        </frame>
+      </frame>
+      <frame id="73:3046" name="Key facts panel (navy)" x="704" y="120" width="496" height="460">
+        <frame id="73:3047" name="Panel head" x="40" y="40" width="182" height="48">
+          <rounded-rectangle id="73:3048" name="Rule" x="0" y="11.5" width="24" height="1" />
+          <text id="73:3049" name="Panel label" x="36" y="0" width="146" height="24" />
+        </frame>
+        <frame id="73:3050" name="Fact — shield" x="40" y="88" width="416" height="69">
+          <instance id="73:3051" name="Icon / shield" x="0" y="21" width="24" height="24" />
+          <text id="73:3054" name="Fact text" x="40" y="21" width="376" height="28" />
+        </frame>
+        <frame id="73:3055" name="Fact — check" x="40" y="157" width="416" height="69">
+          <instance id="73:3056" name="Icon / check" x="0" y="21" width="24" height="24" />
+          <text id="73:3058" name="Fact text" x="40" y="21" width="376" height="28" />
+        </frame>
+        <frame id="73:3059" name="Fact — pin" x="40" y="226" width="416" height="125">
+          <instance id="73:3060" name="Icon / pin" x="0" y="21" width="24" height="24" />
+          <text id="73:3063" name="Fact text" x="40" y="21" width="376" height="84" />
+        </frame>
+        <frame id="73:3064" name="Fact — phone" x="40" y="351" width="416" height="69">
+          <instance id="73:3065" name="Icon / phone" x="0" y="21" width="24" height="24" />
+          <text id="73:3067" name="Fact text" x="40" y="21" width="376" height="28" />
+        </frame>
+      </frame>
+    </frame>
+    <instance id="73:3068" name="Footer / Desktop" x="0" y="6087" width="1280" height="557" />
+  </frame>
+  <frame id="68:450" name="Mobile — Our Founder (390)" x="1400" y="0" width="390" height="7581">
+    <instance id="74:2697" name="Header / Mobile (Light)" x="0" y="0" width="390" height="64" />
+    <frame id="74:2714" name="M1 Hero — Portrait" x="0" y="64" width="390" height="760">
+      <frame id="74:2715" name="Portrait block" x="0" y="0" width="390" height="264">
+        <instance id="74:2716" name="Photo / mike-portrait" x="0" y="0" width="390" height="264" />
+        <instance id="74:2719" name="Detail / Crop marks" x="12" y="12" width="366" height="240" />
+      </frame>
+      <frame id="74:2728" name="Intro" x="0" y="264" width="390" height="490">
+        <instance id="74:2729" name="Eyebrow (V)" x="20" y="24" width="242" height="18" />
+        <frame id="74:2732" name="Headline" x="20" y="58" width="350" height="164">
+          <text id="74:2733" name="H1 (V)" x="0" y="0" width="350" height="96" />
+          <text id="74:2734" name="Role line" x="0" y="108" width="350" height="56" />
+        </frame>
+        <frame id="74:2735" name="CTAs" x="20" y="238" width="350" height="132">
+          <instance id="74:2736" name="Button / Schedule a Free Review" x="0" y="8" width="350" height="56" />
+          <instance id="74:2741" name="Button / Call (916) 507-1005" x="0" y="76" width="350" height="56" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="74:3859" name="M1b Bio + trust" x="0" y="824" width="390" height="352">
+      <frame id="74:2745" name="Bio + trust" x="20" y="32" width="350" height="261">
+        <text id="74:2746" name="Bio (V)" x="0" y="0" width="350" height="130" />
+        <frame id="74:2747" name="Trust rows" x="0" y="150" width="350" height="111">
+          <frame id="74:2748" name="Trust / shield" x="0" y="21" width="350" height="26">
+            <instance id="74:2749" name="Icon / shield" x="0" y="0" width="20" height="20" />
+            <text id="74:2752" name="CA DOI License No. 2B60428" x="32" y="0" width="318" height="26" />
+          </frame>
+          <frame id="74:2753" name="Trust / document" x="0" y="59" width="350" height="52">
+            <instance id="74:2754" name="Icon / document" x="0" y="0" width="20" height="20" />
+            <text id="74:2757" name="No upfront cost. We&#39;re paid " x="32" y="0" width="318" height="52" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="74:2758" name="M2 Career line — Built From the Ground Up" x="0" y="1176" width="390" height="1104">
+      <frame id="74:2759" name="Ruler ticks" x="20" y="0" width="350" height="16">
+        <rounded-rectangle id="74:2760" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="74:2761" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2762" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2763" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2764" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2765" name="Tick" x="40" y="0" width="1" height="12" />
+        <rounded-rectangle id="74:2766" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2767" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2768" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2769" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2770" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="74:2771" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2772" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2773" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2774" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2775" name="Tick" x="120" y="0" width="1" height="12" />
+        <rounded-rectangle id="74:2776" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2777" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2778" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2779" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2780" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="74:2781" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2782" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2783" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2784" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2785" name="Tick" x="200" y="0" width="1" height="12" />
+        <rounded-rectangle id="74:2786" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2787" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2788" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2789" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2790" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="74:2791" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2792" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2793" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2794" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2795" name="Tick" x="280" y="0" width="1" height="12" />
+        <rounded-rectangle id="74:2796" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2797" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2798" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2799" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2800" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="74:2801" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2802" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="74:2803" name="Tick" x="344" y="0" width="1" height="6" />
+      </frame>
+      <frame id="74:2804" name="Head" x="20" y="64" width="350" height="270">
+        <text id="74:2805" name="H2 (V)" x="0" y="0" width="350" height="72" />
+        <text id="74:2806" name="Intro (V)" x="0" y="88" width="350" height="182" />
+      </frame>
+      <frame id="74:2807" name="Timeline" x="20" y="374" width="350" height="668">
+        <frame id="74:2808" name="Stage — Developer and merchant builder" x="0" y="0" width="350" height="274">
+          <frame id="74:2809" name="Rail" x="0" y="0" width="40" height="274">
+            <frame id="74:2810" name="Badge / building" x="0" y="0" width="40" height="40">
+              <instance id="74:2811" name="Icon / building" x="8" y="8" width="24" height="24" />
+            </frame>
+            <rounded-rectangle id="74:2813" name="Connector" x="19" y="40" width="2" height="234" />
+          </frame>
+          <frame id="74:2814" name="Content" x="56" y="0" width="294" height="274">
+            <text id="74:2815" name="Stage label" x="0" y="8" width="294" height="16" />
+            <text id="74:2816" name="Stage title" x="0" y="32" width="294" height="56" />
+            <text id="74:2817" name="Stage body" x="0" y="96" width="294" height="104" />
+            <frame id="74:2818" name="Fact tag" x="0" y="208" width="180" height="26">
+              <text id="74:2819" name="Fact tag text" x="9" y="5" width="162" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="74:2820" name="Stage — Public adjuster" x="0" y="274" width="350" height="186">
+          <frame id="74:2821" name="Rail" x="0" y="0" width="40" height="186">
+            <frame id="74:2822" name="Badge / document" x="0" y="0" width="40" height="40">
+              <instance id="74:2823" name="Icon / document" x="8" y="8" width="24" height="24" />
+            </frame>
+            <rounded-rectangle id="74:2826" name="Connector" x="19" y="40" width="2" height="146" />
+          </frame>
+          <frame id="74:2827" name="Content" x="56" y="0" width="294" height="186">
+            <text id="74:2828" name="Stage label" x="0" y="8" width="294" height="16" />
+            <text id="74:2829" name="Stage title" x="0" y="32" width="294" height="28" />
+            <text id="74:2830" name="Stage body" x="0" y="68" width="294" height="78" />
+          </frame>
+        </frame>
+        <frame id="74:2831" name="Stage — Founding Principal, Blue Star Adjusters" x="0" y="460" width="350" height="208">
+          <frame id="74:2832" name="Rail" x="0" y="0" width="40" height="208">
+            <frame id="74:2833" name="Badge / shield" x="0" y="0" width="40" height="40">
+              <instance id="74:2834" name="Icon / shield" x="8" y="8" width="24" height="24" />
+            </frame>
+          </frame>
+          <frame id="74:2837" name="Content" x="56" y="0" width="294" height="208">
+            <text id="74:2838" name="Stage label" x="0" y="8" width="294" height="16" />
+            <text id="74:2839" name="Stage title" x="0" y="32" width="294" height="56" />
+            <text id="74:2840" name="Stage body" x="0" y="96" width="294" height="78" />
+            <frame id="74:2841" name="Fact tag" x="0" y="182" width="201" height="26">
+              <text id="74:2842" name="Fact tag text" x="9" y="5" width="183" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="74:3178" name="M3 The Background That Changes Everything (navy)" x="0" y="2280" width="390" height="1272">
+      <instance id="74:3179" name="B-mark (watermark)" x="87.60000610351562" y="991.8499755859375" width="302.3999938964844" height="367.1499938964844" />
+      <frame id="74:3184" name="Tagline rule" x="20" y="64" width="229" height="16">
+        <rounded-rectangle id="74:3185" name="Rule" x="0" y="7.5" width="32" height="1" />
+        <text id="74:3186" name="Tagline" x="44" y="0" width="141" height="16" />
+        <rounded-rectangle id="74:3187" name="Rule" x="197" y="7.5" width="32" height="1" />
+      </frame>
+      <text id="74:3188" name="H2 (V)" x="20" y="112" width="350" height="72" />
+      <text id="74:3189" name="Background para (V)" x="20" y="216" width="350" height="286" />
+      <frame id="74:3190" name="Before he adjusted — facts" x="20" y="534" width="350" height="503">
+        <frame id="74:3191" name="Fact — building" x="0" y="0" width="350" height="119">
+          <frame id="74:3192" name="Badge / building" x="0" y="21" width="40" height="40">
+            <instance id="74:3193" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3195" name="Fact text" x="56" y="21" width="294" height="78" />
+        </frame>
+        <frame id="74:3196" name="Fact — ruler" x="0" y="119" width="350" height="119">
+          <frame id="74:3197" name="Badge / ruler" x="0" y="21" width="40" height="40">
+            <instance id="74:3198" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3201" name="Fact text" x="56" y="21" width="294" height="78" />
+        </frame>
+        <frame id="74:3202" name="Fact — document" x="0" y="238" width="350" height="119">
+          <frame id="74:3203" name="Badge / document" x="0" y="21" width="40" height="40">
+            <instance id="74:3204" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3207" name="Fact text" x="56" y="21" width="294" height="78" />
+        </frame>
+        <frame id="74:3208" name="Fact — pin" x="0" y="357" width="350" height="146">
+          <frame id="74:3209" name="Badge / pin" x="0" y="21" width="40" height="40">
+            <instance id="74:3210" name="Icon / pin" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3213" name="Fact text" x="56" y="21" width="294" height="104" />
+        </frame>
+      </frame>
+      <frame id="74:3214" name="CTAs" x="20" y="1069" width="350" height="132">
+        <instance id="74:3215" name="Button / Schedule a Free Review" x="0" y="8" width="350" height="56" />
+        <instance id="74:3219" name="Button / Call (916) 507-1005" x="0" y="76" width="350" height="56" />
+      </frame>
+    </frame>
+    <frame id="74:3223" name="M4 On every claim — the job" x="0" y="3552" width="390" height="848">
+      <instance id="74:3224" name="Detail / Blueprint grid" x="0" y="0" width="390" height="336" />
+      <instance id="74:3253" name="Detail / Dimension line" x="20" y="64" width="240" height="16" />
+      <text id="74:3259" name="Statement" x="20" y="104" width="350" height="216" />
+      <frame id="74:3260" name="How he reads a claim" x="20" y="344" width="350" height="442">
+        <frame id="74:3261" name="Row — search" x="0" y="8" width="350" height="127">
+          <frame id="74:3262" name="Badge / search" x="0" y="25" width="40" height="40">
+            <instance id="74:3263" name="Icon / search" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3266" name="Row text" x="56" y="25" width="294" height="78" />
+        </frame>
+        <frame id="74:3267" name="Row — ruler" x="0" y="135" width="350" height="127">
+          <frame id="74:3268" name="Badge / ruler" x="0" y="25" width="40" height="40">
+            <instance id="74:3269" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3272" name="Row text" x="56" y="25" width="294" height="78" />
+        </frame>
+        <frame id="74:3273" name="Row — building" x="0" y="262" width="350" height="180">
+          <frame id="74:3274" name="Badge / building" x="0" y="25" width="40" height="40">
+            <instance id="74:3275" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3277" name="Row text" x="56" y="25" width="294" height="130" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="74:3278" name="M5 Both sides of the plans — quote" x="0" y="4400" width="390" height="1456">
+      <text id="74:3282" name="Quote (V)" x="20" y="64" width="350" height="224" />
+      <frame id="74:3283" name="Attribution" x="20" y="312" width="350" height="52">
+        <rounded-rectangle id="74:3284" name="Rule" x="0" y="25" width="32" height="2" />
+        <text id="74:3285" name="Attribution" x="44" y="0" width="306" height="52" />
+      </frame>
+      <frame id="85:2977" name="CTA" x="20" y="388" width="350" height="64">
+        <instance id="85:2978" name="Button / Schedule a Free Review" x="0" y="8" width="350" height="56" />
+      </frame>
+      <frame id="74:3286" name="Split — both sides" x="20" y="476" width="350" height="924">
+        <instance id="74:3287" name="Detail / Dimension line" x="0" y="16" width="350" height="16" />
+        <frame id="74:3293" name="Side label — developer" x="0" y="52" width="324" height="40">
+          <frame id="74:3294" name="Badge / building" x="0" y="0" width="40" height="40">
+            <instance id="74:3295" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3297" name="Side label text" x="52" y="6" width="272" height="28" />
+        </frame>
+        <instance id="74:3298" name="Photo / ai-plans" x="0" y="112" width="350" height="248" />
+        <frame id="74:3301" name="Side label — adjuster" x="0" y="380" width="256" height="56">
+          <frame id="74:3302" name="Badge / shield" x="0" y="16" width="40" height="40">
+            <instance id="74:3303" name="Icon / shield" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3306" name="Side label text" x="52" y="22" width="204" height="28" />
+        </frame>
+        <instance id="74:3307" name="Photo / onsite-adjuster" x="0" y="456" width="350" height="468" />
+      </frame>
+    </frame>
+    <frame id="74:3310" name="M6 Schedule a Free Review with Michael" x="0" y="5856" width="390" height="872">
+      <text id="74:3311" name="CTA headline" x="20" y="64" width="350" height="72" />
+      <text id="74:3312" name="Fee (exact)" x="20" y="160" width="350" height="52" />
+      <text id="74:3313" name="Final say" x="20" y="236" width="350" height="52" />
+      <frame id="74:3314" name="CTAs" x="20" y="312" width="350" height="124">
+        <instance id="74:3315" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+        <instance id="74:3319" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+      </frame>
+      <frame id="74:3323" name="Key facts panel (navy)" x="20" y="460" width="350" height="343">
+        <frame id="74:3324" name="Panel head" x="24" y="32" width="159" height="32">
+          <rounded-rectangle id="74:3325" name="Rule" x="0" y="7.5" width="24" height="1" />
+          <text id="74:3326" name="Panel label" x="36" y="0" width="123" height="16" />
+        </frame>
+        <frame id="74:3327" name="Fact — shield" x="24" y="64" width="302" height="59">
+          <instance id="74:3328" name="Icon / shield" x="0" y="17" width="24" height="24" />
+          <text id="74:3331" name="Fact text" x="40" y="17" width="262" height="26" />
+        </frame>
+        <frame id="74:3332" name="Fact — check" x="24" y="123" width="302" height="59">
+          <instance id="74:3333" name="Icon / check" x="0" y="17" width="24" height="24" />
+          <text id="74:3335" name="Fact text" x="40" y="17" width="262" height="26" />
+        </frame>
+        <frame id="74:3336" name="Fact — pin" x="24" y="182" width="302" height="137">
+          <instance id="74:3337" name="Icon / pin" x="0" y="17" width="24" height="24" />
+          <text id="74:3340" name="Fact text" x="40" y="17" width="262" height="104" />
+        </frame>
+      </frame>
+    </frame>
+    <instance id="74:3341" name="Footer / Mobile" x="0" y="6728" width="390" height="853" />
+    <instance id="74:3377" name="Mobile call bar (sticky)" x="0" y="756" width="390" height="88" />
+  </frame>
+</canvas>

@@ -1,0 +1,7 @@
+get_design_context 74:3913 (Form card mobile) — condensed.
+Card white border line r4 pt28 pb24 px20 col gap16; ruler 348 wide ticks. No card header on mobile.
+Order: Full name, Phone, Fee strip, What happened, Email, State (chevron at 268,42), Textarea, Upload, Button, Callback note.
+Fee strip (85:3142): bg paper, border-t line, pt20 pb24 px20 col gap12: circle 40 white border navy shield; "No upfront cost. We’re paid a percentage of what we recover." tm-body-strong ink; "CA DOI License No. 2B60428" tm-label ink. Non-interactive.
+What happened group: pt24 col gap8; chips pl12 pr16 py12 gap8, label 500 16/26 ink. Mobile chip order: Fire or smoke, Wildfire, Water, Commercial loss, Wind hail or tree, Collapse, Other. Helper 500 14/20.
+Upload: p16 gap12; label 600 16/26 navy; helper 500 14/20.
+Button solid full width h56 "Request My Review". Callback: clock 20 + text tm-body (400 16/26) ink, gap12.

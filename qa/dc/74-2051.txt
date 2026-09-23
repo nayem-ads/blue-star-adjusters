@@ -1,0 +1,2 @@
+get_design_context 74:2051 (TY intro desktop): col gap24; Eyebrow "Free Claim Review"; H1 t-display-l navy w1000 "Request Received.<br>We’ll Call You." (annotation: new post-submit H1); lead t-lead ink w648 "There is no cost or obligation for the initial review."
+Default intro (73:1433) same structure; H1 "Tell Us What Happened.<br>We’ll Read Your Policy." (read from reference PNG, not fetched).

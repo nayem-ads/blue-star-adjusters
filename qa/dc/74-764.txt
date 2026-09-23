@@ -1,0 +1,13 @@
+get_design_context 74:764 (Section / Denied or underpaid + CTA, desktop) — condensed
+Section bg paper, flex gap 96, px80 py120. Blueprint grid abs left 768 top 747 432x200 opacity 40 (royal lines opacity 8; V at 6.25% steps, H at 10% steps).
+Copy w592 flex-col gap 24: Eyebrow "Second opinion"; H2 48/54 navy "Denied or Underpaid. Measure It Again."; Lead 20/32 ink "A denial letter or a low offer isn't always final. A second look at scope, coverage language and deadlines."
+ Questions: line hairlines; items flex gap20 items-start py20: icon circle 40 bg white r20 + 17/28 ink with SemiBold lead-in:
+  ruler "Scope:" " was everything measured? Heat damage, code upgrades, hidden water."
+  document "Reassignment:" " every new adjuster restarts the file. We keep one record and one scope, and send it to each of them."
+  search "Wording:" " which policy language did the letter cite, and what does it actually say?"
+  shield "Appraisal:" " California's standard fire policy lets either side request appraisal in writing when you disagree on the amount of loss. Appraisal decides the amount. It doesn't decide coverage."
+ Attorney note Montserrat Medium 15/24 ink: SemiBold "Public adjuster or attorney?" + " We measure, document and negotiate the claim. We don't give legal advice. When a claim needs counsel, we say so and work alongside them."
+Key facts panel flex-1: bg navy r4 px40 py48 flex-col gap24: H 28/34 SemiBold white "Your Claim. Our Fight."
+ Facts: white hairlines; fact flex gap16 items-center py16: icon 24 white + Montserrat Medium 15/24 white:
+  shield "No upfront cost. We're paid a percentage of what we recover." / check "You always have final say on any settlement." / document "We represent the insured only." / shield "CA DOI License No. 2B60428"
+ CTA stack pt8 gap12 full width: On-dark "Schedule a Free Review"; Outline on-dark phone "Call (916) 507-1005".

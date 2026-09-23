@@ -1,0 +1,54 @@
+---
+// S3 The Background That Changes Everything (navy). Desktop 73:2348 (y 1944, 1280×1191); mobile M3 74:3178 (y 2280, 390×1272).
+// Mobile shows only the second paragraph; the four "before he adjusted" facts become a ruled list.
+import Button from '../../components/Button.astro';
+import Logo from '../../components/Logo.astro';
+import Badge from './Badge.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const facts = [
+  { icon: 'building', text: 'Developing affordable housing, commercial projects, and hospitality assets', n: ['73:2364', '73:2365', '73:2368'], m: ['74:3191', '74:3192', '74:3195'] },
+  { icon: 'ruler', text: 'Measuring and estimating rebuild costs to current building and fire code', n: ['73:2369', '73:2370', '73:2374'], m: ['74:3196', '74:3197', '74:3201'] },
+  { icon: 'document', text: 'Value-engineering plans across electrical, mechanical, and structural trades', n: ['73:2375', '73:2376', '73:2380'], m: ['74:3202', '74:3203', '74:3207'] },
+  { icon: 'map-pin', text: 'Coordinating with health departments, planning commissions, and use-and-occupancy authorities', n: ['73:2381', '73:2382', '73:2386'], m: ['74:3208', '74:3209', '74:3213'] },
+];
+---
+<section aria-labelledby="background-title" class="relative overflow-hidden bg-navy text-white" data-node="73:2348" data-node-m="74:3178">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[71px] lg:px-[80px] lg:pt-[120px] lg:pb-[120px]">
+    <div aria-hidden="true" class="absolute right-0 top-[991.85px] w-[302.4px] h-[367.15px] lg:top-[379.15px] lg:w-[561.6px] lg:h-[681.85px] opacity-[.07] pointer-events-none" data-node="73:2349" data-node-m="74:3179">
+      <Logo variant="mark-white" bare width={216} height={263} class="w-[302.4px] h-[368.2px] lg:w-[561.6px] lg:h-[683.8px]" label="" />
+    </div>
+
+    <div class="relative flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[64px]" data-node="73:2354">
+      <div class="flex flex-col gap-[32px] lg:gap-[24px] lg:flex-[0_1_464px] lg:min-w-0" data-node="73:2355">
+        <p class="bs-ftagline m-0 flex items-center gap-[12px] self-start whitespace-nowrap tm-label" data-node="73:2356" data-node-m="74:3184">
+          <span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>Your Claim. Our Fight.<span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>
+        </p>
+        <h2 id="background-title" class="m-0 tm-h2 lg:t-h2" data-node="73:2360" data-node-m="74:3188">The Background That Changes Everything.</h2>
+      </div>
+      <div class="flex flex-col gap-[24px] lg:flex-[0_1_592px] lg:min-w-0 tm-body lg:t-lead" data-node="73:2361">
+        <p class="hidden lg:block m-0" data-node="85:3330">Michael built his career developing affordable housing, commercial projects, and hospitality assets: measuring and estimating rebuild costs to current building and fire code, value-engineering plans across electrical, mechanical, and structural trades, and coordinating with health departments, planning commissions, and use-and-occupancy authorities.</p>
+        <p class="m-0" data-node="73:2362" data-node-m="74:3189">As the redevelopment developer for MSR Properties, he has built to the City of San Francisco's seismic retrofit ordinance, arguably the most complex seismic code in the world. That ground-up experience with the strictest life-safety, structural, and code-upgrade requirements is exactly what he brings to every insurance claim: he already knows what a full code-compliant rebuild looks like, and he knows how to prove it to a carrier.</p>
+      </div>
+    </div>
+
+    <ul class="relative m-0 p-0 list-none mt-[32px] flex flex-col lg:mt-[72px] lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-[32px] lg:gap-y-[40px] lg:border-t lg:border-white" aria-label="Before he adjusted" data-node="73:2363" data-node-m="74:3190">
+      {facts.map((f) => (
+        <li class="flex flex-col border-t border-white py-[20px] last:border-b lg:border-0 lg:last:border-b-0 lg:py-0 lg:gap-[24px] lg:min-w-0" data-node={f.n[0]} data-node-m={f.m[0]}>
+          <span aria-hidden="true" class="hidden lg:block h-px w-full bg-white/30"></span>
+          <div class="flex items-start gap-[16px] lg:gap-[20px]">
+            <Badge icon={f.icon} variant="on-dark" node={f.n[1]} nodeM={f.m[1]} />
+            <p class="m-0 flex-1 min-w-0 tm-body lg:t-lead" data-node={f.n[2]} data-node-m={f.m[2]}>{f.text}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+
+    <div class="relative flex flex-col gap-[12px] pt-[8px] mt-[32px] lg:w-fit lg:flex-row lg:flex-wrap lg:gap-[16px] lg:pt-0 lg:mt-[72px]" data-node="73:2387" data-node-m="74:3214">
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="73:2388" data-node-m="74:3215">Schedule a Free Review</Button>
+      <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="73:2393" data-node-m="74:3219">Call {PHONE_DISPLAY}</Button>
+    </div>
+  </div>
+</section>
+<style>
+  @media (min-width: 1024px) { .bs-ftagline { font-weight: 500; font-size: 15px; line-height: 24px; letter-spacing: 0; } }
+</style>

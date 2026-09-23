@@ -1,0 +1,12 @@
+---
+// Home B "Section index" marker (where the desktop rail sits for each section).
+// Desktop (e.g. 55:270): 168 wide, pt 8, label Montserrat Medium 15/20 over a 48×2 rule, gap 12.
+// Mobile (e.g. 58:574): 24×2 rule then label Montserrat SemiBold 12/16, gap 12, hugs its content.
+interface Props { label: string; theme?: 'light' | 'dark'; nodeD: string; nodeM: string }
+const { label, theme = 'light', nodeD, nodeM } = Astro.props;
+const dark = theme === 'dark';
+---
+<p class:list={['m-0 flex items-center gap-[12px] self-start w-fit lg:flex-col-reverse lg:items-start lg:w-[168px] lg:pt-[8px] lg:shrink-0', dark ? 'text-white' : 'text-ink']} data-node-d={nodeD} data-node-m={nodeM}>
+  <span aria-hidden="true" class:list={['block h-[2px] w-[24px] lg:w-[48px] shrink-0', dark ? 'bg-white' : 'bg-navy']}></span>
+  <span class="tm-label lg:t-nav lg:tracking-[0px] whitespace-nowrap">{label}</span>
+</p>

@@ -1,0 +1,85 @@
+---
+// Home B "Section / Review" (closing CTA + practice sign-off). Desktop 57:466 (1280×1093), Mobile 62:536 (390×1463).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import Print from './Print.astro';
+import CropMarks from './CropMarks.astro';
+import SectionIndex from './SectionIndex.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+
+const offices = [
+  { name: 'Santa Monica', wd: 104, wm: 109, d: '57:503', m: '62:573' },
+  { name: 'Sacramento', wd: 93, wm: 98, d: '57:504', m: '62:574' },
+  { name: 'San Francisco', wd: 105, wm: 111, d: '57:505', m: '62:575' },
+  { name: 'Reno', wd: 40, wm: 43, d: '57:506', m: '62:576' },
+  { name: 'Portland', wd: 67, wm: 70, d: '57:507', m: '62:577' },
+  { name: 'Seattle', wd: 53, wm: 56, d: '57:508', m: '62:578' },
+  { name: 'Scottsdale', wd: 80, wm: 84, d: '57:509', m: '62:579' },
+];
+const alt = 'A rebuilt two-storey home at dusk with its lights on.';
+const circle = 'flex items-center justify-center size-[40px] shrink-0 rounded-full border border-white';
+---
+<section id="review" aria-labelledby="hb-review" class="bg-navy text-white scroll-mt-[52px] lg:scroll-mt-0" data-node-d="57:466" data-node-m="62:536">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[96px] lg:flex lg:items-start lg:gap-[24px]">
+    <CropMarks color="#fff" class="hidden lg:block absolute left-[792px] top-[104px] w-[415px] h-[300px]" node="73:2669" />
+    <SectionIndex label="Review" theme="dark" nodeD="57:467" nodeM="62:537" />
+    <div class="flex flex-col items-start mt-[16px] lg:mt-0 lg:w-[928px] lg:shrink-0" data-node-d="57:470">
+      <div class="flex flex-col w-full lg:flex-row lg:gap-[32px] lg:items-start" data-node-d="57:471">
+        <div class="flex flex-col items-start w-full lg:w-[504px] lg:shrink-0" data-node-d="57:472">
+          <p class="hidden lg:flex m-0 gap-[12px] items-center mb-[24px]" data-node="73:2686">
+            <span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>
+            <span class="font-body font-medium text-[13px] leading-[18px] tracking-[0.26px] whitespace-nowrap">Your Claim. Our Fight.</span>
+            <span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>
+          </p>
+          <h2 id="hb-review" class="m-0 w-full tm-h2 lg:t-h2 text-white" data-node-d="57:473" data-node-m="62:541">Call Before the <br class="hidden lg:inline" />Carrier Sets <br class="hidden lg:inline" />the Narrative</h2>
+          <p class="m-0 w-full mt-[16px] lg:mt-[24px] tm-body lg:t-body" data-node-d="57:475" data-node-m="62:543">Your insurance company has an adjuster protecting their interests. You have the right to one too. We level the playing field, and we fight to make sure you get every dollar you're owed.</p>
+
+          <div class="lg:hidden relative w-full h-[240px] mt-[32px]">
+            <CropMarks color="#fff" class="absolute -inset-x-[12px] -inset-y-[8px]" node="74:3026" />
+            <div class="relative size-full bg-white" data-node="62:545">
+              <span aria-hidden="true" class="absolute left-[280px] top-[-10px] w-[44px] h-[10px] rounded-t-[3px] bg-line"></span>
+              <Img node="I62:547;41:71" alt={alt} class="absolute left-[10px] top-[10px] w-[330px] h-[220px] object-cover max-w-none" dataNode="62:547" />
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-[12px] w-full mt-[32px] lg:flex-row lg:gap-[16px] lg:w-auto lg:mt-[40px]" data-node-d="57:477" data-node-m="62:551">
+            <Button href={ROUTES.freeClaimReview} variant="on-dark" full class="h-[56px] lg:h-[52px] lg:w-[253px] lg:inline-flex" data-node-d="57:478" data-node-m="62:552">Schedule a Free Review</Button>
+            <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" full class="h-[56px] lg:h-[52px] lg:w-[235px] lg:inline-flex" data-node-d="57:482" data-node-m="62:557">Call {PHONE_DISPLAY}</Button>
+          </div>
+          <p class="m-0 w-full mt-[16px] lg:mt-[24px] tm-body lg:font-medium lg:text-[15px] lg:leading-[24px]" data-node-d="57:487" data-node-m="62:562">No upfront cost.<br />We're paid a percentage <br class="lg:hidden" />of what we recover.</p>
+        </div>
+        <div class="hidden lg:block shrink-0">
+          <Print bw={382.625} bh={267.754} w={376} h={258} rot={-1.5} pad={10} bordered={false} tabLeft={288} tabColor="var(--color-line)" photoNode="I57:490;41:71" alt={alt} />
+        </div>
+      </div>
+
+      <div class="w-full h-px bg-white mt-[48px] lg:mt-[96px]" data-node-d="57:494" data-node-m="62:564"></div>
+
+      <div class="flex flex-col w-full mt-[32px] lg:mt-[48px] lg:flex-row lg:gap-[32px] lg:items-start" data-node-d="57:496">
+        <div class="flex flex-col items-start w-full lg:w-[448px] lg:shrink-0" data-node-d="57:497">
+          <span class={circle} data-node-d="73:2678" data-node-m="74:3016"><Icon name="shield" size={24} /></span>
+          <h3 class="m-0 w-full mt-[12px] lg:mt-[16px] tm-h3 lg:t-h3 text-white" data-node-d="57:498" data-node-m="62:566">A Boutique Practice.<br />A Family Office.</h3>
+          <p class="m-0 w-full mt-[8px] lg:mt-[16px] tm-body lg:font-medium lg:text-[15px] lg:leading-[24px]" data-node-d="57:499" data-node-m="62:568">Every engagement is discreet, senior-led, and built around the client's privacy. References are held in confidence and available on request.</p>
+        </div>
+        <div class="flex flex-col items-start w-full mt-[32px] lg:mt-0 lg:w-[448px] lg:shrink-0" data-node-d="57:500">
+          <span class={circle} data-node-d="73:2682" data-node-m="74:3021"><Icon name="map-pin" size={24} /></span>
+          <h3 class="m-0 w-full mt-[12px] lg:mt-[16px] tm-h3 lg:t-h3 text-white" data-node-d="57:501" data-node-m="62:570">Local Codes.<br />Local Contractors.</h3>
+          <div class="flex gap-[8px] items-center w-full mt-[8px] lg:mt-[16px]" aria-hidden="true" data-node-d="73:2691" data-node-m="74:3010">
+            <span class="block w-px h-[12px] bg-white shrink-0"></span><span class="block flex-1 h-px bg-white"></span>
+            <span class="t-caption whitespace-nowrap">7 offices</span>
+            <span class="block flex-1 h-px bg-white"></span><span class="block w-px h-[12px] bg-white shrink-0"></span>
+          </div>
+          <ul class="flex flex-wrap gap-x-[20px] gap-y-[8px] w-full mt-[12px] p-0 list-none lg:gap-x-[24px] lg:mt-[16px]" aria-label="Offices" data-node-d="57:502" data-node-m="62:572">
+            {offices.map((o) => <li class="hb-office tm-body lg:font-medium lg:text-[15px] lg:leading-[24px] whitespace-nowrap" style={`--wd:${o.wd}px;--wm:${o.wm}px`} data-node-d={o.d} data-node-m={o.m}>{o.name}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hb-office { min-width: var(--wm); }
+  @media (min-width: 64rem) { .hb-office { min-width: var(--wd); } }
+</style>

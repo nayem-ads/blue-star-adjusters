@@ -1,0 +1,19 @@
+---
+// Logo = exact Figma logo component exports (never redrawn). White variants include the navy
+// backing rect from the component; pass bare to drop it when the design shows no box.
+// Usage: <Logo variant="horizontal-color" width={181} height={40} />
+interface Props { variant: 'horizontal-color'|'horizontal-white'|'stacked-color'|'stacked-white'|'mark-color'|'mark-white'; width?: number; height?: number; class?: string; bare?: boolean; label?: string }
+const { variant, width, height, class: cls = '', bare = false, label = 'Blue Star Adjusters' } = Astro.props;
+const all = import.meta.glob('/public/svg/logo-*.svg', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+let svg = all[`/public/svg/logo-${variant}.svg`];
+if (!svg) throw new Error('Logo: unknown variant ' + variant);
+// Unique clip-path ids per instance: several inline logos on one page (header, menu, footer) otherwise share
+// "clip0_0_1", and a url(#...) that resolves into a display:none copy drops the wordmark. Layer-name ids are removed.
+const uid = `l${Math.random().toString(36).slice(2, 8)}`;
+svg = svg.replace(/ id="(clip[^"]*)"/g, ` id="$1-${uid}"`).replace(/url\(#(clip[^)]*)\)/g, `url(#$1-${uid})`).replace(/ id="(?!clip)[^"]*"/g, '');
+if (bare) svg = svg.replace(/<rect width="[\d.]+" height="[\d.]+" fill="#0D1C5A"\/>/, '');
+svg = svg.replace('<svg ', `<svg class="${cls}" role="img" aria-label="${label}" `);
+if (width) svg = svg.replace(/width="[\d.]+"/, `width="${width}"`);
+if (height) svg = svg.replace(/height="[\d.]+"/, `height="${height}"`);
+---
+<Fragment set:html={svg} />

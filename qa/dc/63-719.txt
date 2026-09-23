@@ -1,0 +1,1 @@
+63:719 mobile final CTA: overlay ink 44% + soft bottom ink blur 60 (y80 h640); copy left20 top142 w350 gap20; tagline 12/16 rules 32; H2 32/36; body 16/26; buttons pt8 gap12 h56 full; trust col gap12, items gap12 icon20 + Montserrat MEDIUM 16/26 white.

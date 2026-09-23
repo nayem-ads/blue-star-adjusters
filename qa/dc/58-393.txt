@@ -1,0 +1,8 @@
+58:393 Section / Results (hero) MOBILE, condensed. bg paper flex-col pt24 pb56 px20.
+Eyebrow light "Your Claim. Our Fight." / gap12 / H1 Schibsted Bold 46/48 -1.15 navy / gap12 / lead Montserrat 18/28 ink / gap16
+58:402 photo stack h168 w-full relative:
+ 58:413 bbox left -0.19 top0 224.113x165.704 rotate(1.5deg) print 220x160 border line; tab navy 40x10 left23 top-10; photo left7 top7 204x144 I58:415;41:71
+ 58:408 bbox left216 top1.53 133.506x164.37 rotate(-2deg) print 128x160; tab line 40x10 left63 top-10; photo 112x144 I58:410;41:71
+gap16 / 85:3175 hero figure flex-col gap4: "Palisades fire" Montserrat SemiBold 12/16 .24px ink; figures flex gap12 baseline: "$38,000" Montserrat SemiBold 16/26 line-through ink; "$276,000" Schibsted SemiBold 32/36 -0.48 navy;
+ disclaimer Montserrat 400 12/18 ink "Results reflect specific losses and policies. Past results don't guarantee a similar outcome."
+gap24 / CTAs flex-col gap12 w-full: solid h56 "Schedule a Free Review"; outline h56 phone icon "Call (916) 507-1005".

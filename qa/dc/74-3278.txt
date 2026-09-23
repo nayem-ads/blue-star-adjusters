@@ -1,0 +1,8 @@
+get_design_context 74:3278 (M5 quote, mobile). Condensed:
+section bg white flex-col gap-24 pt-64 pb-56 px-20 (h 1456 exact)
+ Quote p Schibsted SemiBold 22/28 -0.22 ink; opening “ in royal inline span, rest ink (verbatim, same as desktop)
+ Attribution flex gap-12 items-center: rule royal 32x2; Montserrat SemiBold 16/26 ink flex-1 (wraps to 2 lines)
+ CTA pt-8: solid h56 full "Schedule a Free Review"
+ Split pt-16 flex-col gap-20: dimension line full label ink "Both sides of the plans";
+   label (gap-12): badge paper + building, H3 22/28 navy "As a developer who builds"; photo 350x248
+   label pt-16 (gap-12): badge navy + shield, "As a public adjuster"; photo slot 350x468 = img 440 + gap12 + caption "Field photograph" 12/16

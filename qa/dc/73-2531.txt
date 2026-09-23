@@ -1,0 +1,6 @@
+get_design_context 73:2531 (Index / Four buckets, desktop) — condensed
+Box: bg white, border 1 line, radius 4, p 40, flex-col gap 32.
+Lead: flex gap 32 items-center: H3 flex-1 (box h52) Schibsted SemiBold 28/34 -0.28 navy "Four buckets. We measure each one." ; Solid button "Schedule a Free Review".
+Columns: flex, 4 cols flex-1 h188 flex-col gap 12, first pr16, others border-l line pl24 pr16.
+ icon circle 40 bg paper r20 ; name Montserrat SemiBold 17/28 navy ; text Montserrat Medium 15/24 ink
+ home "Dwelling" "The structure, returned to its pre-loss condition and to current code." | building "Other structures" "Fences, decks, garages, barns, guest houses." | search "Contents" "Everything inside, from furniture to fine art." | clock "Loss of use" "Comparable living while you're displaced, including pet accommodations where your policy allows."

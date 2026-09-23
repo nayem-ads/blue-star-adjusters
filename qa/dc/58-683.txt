@@ -1,0 +1,8 @@
+58:683 Section / Claims MOBILE condensed. bg paper flex-col pt64 pb56 px20. Index "Claims" / gap16
+H2 32/36 navy explicit lines "Where Claims" / "Go Wrong." / "Where We Start." / gap24
+Routing list border-t line; rows border-b line flex gap16 items-center py16: circle 40; text flex-1 gap4: situation Schibsted SemiBold 22/28 -0.22 INK (Fire & Smoke explicit break "The smoke will" / "“clean out.”"); claim page Montserrat 16/26; arrow-right 24.
+gap24 / CTA solid h56 w-full / gap40
+Photo row (horizontal scroll, snap per print, next print peeks at right edge) w370 flex gap16 py12:
+ holder 280x300: print bbox left3.11 top10 268.846x284.565 rotate(1deg) 264x280, tab line 44x10 left23 top-11, photo 244x260 I58:738;41:71
+ holder 74x300: print (cut at screen edge) left8 top10 66x280 border l/t/b, tab navy 44x10 left11 top-11, photo 56x260 I58:744;41:71
+gap40 / Accordions (collapsed by default, expand to the 8-item list + hub link): border-t(first)+border-b line, flex gap16 items-center py20: circle(home/building); H3 22/28 ink flex-1 "Your Home. Fully Recovered." / "Your Business. Fully Recovered."; chevron-down 24.

@@ -1,0 +1,166 @@
+---
+// Home B hero: "Section / Results (hero)". Desktop 53:184 (1280×1667), Mobile 58:393 (390×691).
+// Desktop = sticky section rail + intro + ledger sheet + statement + fact chips, with the case-file photo stack,
+// blueprint grid and the 25.5° diagonal behind. Mobile = intro + two-print stack + hero figure + CTAs
+// (the mobile ledger lives in ResultsLedgerMobile.astro, 58:431).
+// data-node-d / data-node-m: desktop / mobile ids for shared elements (QA prep maps them to data-node per frame).
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import Print from './Print.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+
+const tabs = [
+  { label: 'Results', href: '#results', node: '53:186', text: '53:187' },
+  { label: 'Why early', href: '#why-early', node: '53:188', text: '53:189' },
+  { label: 'Founder', href: '#founder', node: '53:190', text: '53:191' },
+  { label: 'Claims', href: '#claims', node: '53:192', text: '53:193' },
+  { label: 'Compare', href: '#compare', node: '53:194', text: '53:195' },
+  { label: 'Review', href: '#review', node: '53:196', text: '53:197' },
+];
+const chips = [
+  { icon: 'map-pin', label: '7 offices', node: '73:1329', w: 63 },
+  { icon: 'building', label: '5 states: CA, NV, OR, WA, AZ', node: '73:1334', w: 211 },
+  { icon: 'shield', label: 'CA DOI License No. 2B60428', node: '73:1338', w: 218 },
+];
+const note = 'font-body font-medium text-[15px] leading-[24px] text-ink m-0';
+const cap = 't-caption text-ink m-0';
+---
+<section id="results" aria-labelledby="hb-h1" class="relative bg-paper scroll-mt-[52px] lg:scroll-mt-0" data-node-d="53:184" data-node-m="58:393">
+  <!-- Desktop decor: blueprint grid, diagonal, photo stack -->
+  <div class="hidden lg:block absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="relative max-w-[1280px] h-full mx-auto">
+      <div class="absolute left-[800px] top-[16px] w-[480px] h-[400px] overflow-hidden opacity-[.14]" data-node="74:4048">
+        {Array.from({ length: 12 }, (_, i) => <span class="absolute top-0 h-[400px] w-[0.75px] bg-royal" style={`left:${i * 30}px`}></span>)}
+        {Array.from({ length: 10 }, (_, i) => <span class="absolute left-0 w-[320px] h-px bg-royal" style={`top:${i * 40}px`}></span>)}
+      </div>
+      <svg class="absolute left-0 top-[769.74px]" width="1280" height="611" viewBox="0 0 1280 611" fill="none" data-node="54:256">
+        <line x1="0" y1="611" x2="1280" y2="0" stroke="#D9DFEE" stroke-width="1" />
+      </svg>
+    </div>
+  </div>
+  <div class="hidden lg:block absolute inset-x-0 top-0 pointer-events-none">
+    <div class="relative max-w-[1280px] mx-auto">
+      <div class="absolute left-[800px] top-[16px] w-[440px] h-[540px]" data-node="53:221">
+        <Print class="absolute left-[-0.35px] top-[176px]" bw={290.309} bh={368.901} w={284} h={364} rot={1} tabLeft={39} tabColor="var(--color-navy)" photoNode="I53:234;41:71" alt="Burned-out ruin with twisted metal equipment and ash in front of a white house." />
+        <Print class="absolute left-[2.44px] top-[8px]" bw={369.343} bh={286.397} w={360} h={274} rot={2} tabLeft={219} tabColor="var(--color-muted)" photoNode="I53:224;41:71" alt="Kitchen after a water loss, with collapsed ceiling drywall and insulation over wet flooring." priority />
+        <Print class="absolute left-[162px] top-[54.37px]" bw={288.396} bh={369.413} w={276} h={360} rot={-2} tabLeft={149} tabColor="var(--color-line)" photoNode="I53:229;41:71" alt="Fire-damaged concrete stair and debris at a burned home." />
+      </div>
+    </div>
+  </div>
+
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[24px] pb-[56px] lg:px-[80px] lg:pt-[40px] lg:pb-[120px] lg:flex lg:items-start lg:gap-[24px]">
+    <nav aria-label="Sections" class="hidden lg:flex flex-col w-[168px] shrink-0 border-l border-line overflow-hidden sticky top-[112px]" data-node="53:185">
+      {tabs.map((t, i) => (
+        <a href={t.href} class:list={['hb-tab flex items-center h-[44px] pl-[16px] pr-[12px] rounded-r-[6px] t-nav whitespace-nowrap', i === 0 ? 'w-[168px] bg-navy text-white' : 'w-[152px] text-ink']} data-node={t.node}>
+          <span data-node={t.text}>{t.label}</span>
+        </a>
+      ))}
+    </nav>
+
+    <div class="flex flex-col items-start lg:w-[928px] lg:shrink-0" data-node-d="53:198">
+      <div class="flex flex-col items-start w-full lg:w-[512px]" data-node-d="53:199">
+        <div class="flex" data-node-d="53:200" data-node-m="58:394"><Eyebrow>Your Claim. Our Fight.</Eyebrow></div>
+        <h1 id="hb-h1" class="m-0 mt-[12px] lg:mt-[16px] w-full tm-display lg:t-display-l text-navy" data-node-d="53:204" data-node-m="58:398">The New Way to Settle Claims.</h1>
+        <p class="m-0 mt-[12px] lg:mt-[16px] w-full tm-lead lg:t-lead text-ink" data-node-d="53:206" data-node-m="58:400">We level the playing field.</p>
+
+        <!-- Mobile: two-print stack + hero figure -->
+        <div class="lg:hidden relative w-full h-[168px] mt-[16px]" data-node="58:402">
+          <Print class="absolute left-[-0.19px] top-0" bw={224.113} bh={165.704} w={220} h={160} rot={1.5} pad={7} tabLeft={23} tabTop={-10} tabW={40} tabH={10} tabColor="var(--color-navy)" photoNode="I58:415;41:71" alt="Burned-out ruin with twisted metal equipment and ash in front of a white house." />
+          <Print class="absolute left-[216px] top-[1.53px]" bw={133.506} bh={164.37} w={128} h={160} rot={-2} pad={7} tabLeft={63} tabTop={-10} tabW={40} tabH={10} tabColor="var(--color-line)" photoNode="I58:410;41:71" alt="Fire-damaged concrete stair and debris at a burned home." />
+        </div>
+        <div class="lg:hidden flex flex-col items-start gap-[4px] w-full mt-[16px]" data-node="85:3175">
+          <p class="m-0 tm-label text-ink whitespace-nowrap" data-node="85:3176">Palisades fire</p>
+          <p class="m-0 flex items-baseline gap-[12px] whitespace-nowrap" data-node="85:3177">
+            <s class="tm-body-strong text-ink" data-node="85:3178"><span class="sr-only">Carrier's offer </span>$38,000</s>
+            <span class="font-display font-semibold text-[32px] leading-[36px] tracking-[-0.48px] text-navy" data-node="85:3179"><span class="sr-only">Settlement </span>$276,000</span>
+          </p>
+          <p class="m-0 t-legal text-ink w-full" data-node="85:3180">Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</p>
+        </div>
+
+        <div class="flex flex-col gap-[12px] w-full mt-[24px] lg:flex-row lg:gap-[16px] lg:w-auto lg:mt-[32px]" data-node-d="53:208" data-node-m="58:419">
+          <Button href={ROUTES.freeClaimReview} full class="h-[56px] lg:h-[52px] lg:w-[253px] lg:inline-flex" data-node-d="53:209" data-node-m="58:420">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" full class="h-[56px] lg:h-[52px] lg:w-[235px] lg:inline-flex" data-node-d="53:213" data-node-m="58:425">Call {PHONE_DISPLAY}</Button>
+        </div>
+        <p class="hidden lg:block m-0 mt-[16px] w-full font-body font-medium text-[15px] leading-[24px] text-ink" data-node="53:219">No upfront cost. We're paid a percentage of what we recover.<br />You always have final say on any settlement.<br />CA DOI License No. 2B60428.</p>
+      </div>
+
+      <!-- Desktop ledger sheet -->
+      <div class="hidden lg:flex flex-col items-start w-full mt-[24px] bg-white border border-line pt-[32px] pb-[40px] px-[48px] relative" data-node="53:289">
+        <h2 class="m-0 t-label text-ink w-full" data-node="85:3101">What the Carrier Offered. What We Recovered.</h2>
+        <div class="flex flex-col gap-[16px] items-start w-full mt-[24px]" data-node="53:290">
+          <h3 class="m-0 t-h3 text-navy w-full" data-node="53:292">Palisades fire</h3>
+          <div class="flex gap-[48px] items-end whitespace-nowrap" data-node="53:294">
+            <p class="m-0 flex flex-col gap-[4px] items-start pb-[12px]" data-node="53:295">
+              <span class={cap} data-node="53:296">Carrier's offer</span>
+              <s class="t-figure text-ink w-[246px]" data-node="53:297">$38,000</s>
+            </p>
+            <p class="m-0 flex flex-col gap-[4px] items-start" data-node="53:298">
+              <span class={cap} data-node="53:299">Settlement</span>
+              <span class="t-figure-xl text-navy w-[498px]" data-node="53:300">$276,000</span>
+            </p>
+          </div>
+          <div class="flex gap-[8px] items-center w-full" aria-hidden="true" data-node="73:1320">
+            <span class="block w-px h-[12px] bg-royal shrink-0"></span><span class="block flex-1 h-px bg-royal"></span>
+            <span class="t-caption text-royal whitespace-nowrap">Measured, not estimated</span>
+            <span class="block flex-1 h-px bg-royal"></span><span class="block w-px h-[12px] bg-royal shrink-0"></span>
+          </div>
+          <p class={`${note} w-[560px]`} data-node="53:293">We measured the structural damage and proved the subfloor and electrical needed a full strip-out.</p>
+        </div>
+        <div class="w-full h-px bg-line mt-[40px]" data-node="53:301"></div>
+        <div class="flex gap-[48px] items-start w-full mt-[40px]" data-node="53:302">
+          <div class="flex flex-col gap-[12px] items-start w-[440px] shrink-0" data-node="53:303">
+            <h3 class="m-0 t-body-strong text-ink w-full" data-node="53:304">Smoke damage</h3>
+            <p class={`${note} w-full`} data-node="53:305">An industrial hygienist proved the combustion byproducts in the home's porous materials and doors.</p>
+            <p class="m-0 flex flex-col gap-[4px] items-start pt-[8px] w-full" data-node="53:306">
+              <span class={`${cap} whitespace-nowrap`} data-node="53:307">Carrier's offer</span>
+              <s class="t-h3 text-ink w-full" data-node="53:308">$17,000</s>
+            </p>
+            <p class="m-0 flex flex-col gap-[4px] items-start pt-[8px] w-full whitespace-nowrap" data-node="53:309">
+              <span class={cap} data-node="53:310">Settlement</span>
+              <span class="flex gap-[12px] items-baseline" data-node="54:251">
+                <span class="t-body text-ink w-[53px]" data-node="54:252">About</span>
+                <span class="t-figure text-navy w-[298px]" data-node="54:253">$1.1 million</span>
+              </span>
+            </p>
+          </div>
+          <div class="flex flex-col gap-[12px] items-start w-[344px] shrink-0" data-node="53:312">
+            <h3 class="m-0 t-body-strong text-ink w-full" data-node="53:313">Estate fire</h3>
+            <p class={`${note} w-full`} data-node="53:314">Specialist valuation of fine wine and art.</p>
+            <div class="flex flex-col h-[86px] pt-[8px] w-full" data-node="53:315">
+              <p class={`${note} w-full`} data-node="53:317">Owner recovered $6M alone, then stalled</p>
+            </div>
+            <p class="m-0 flex flex-col gap-[4px] items-start pt-[8px] w-full whitespace-nowrap" data-node="53:318">
+              <span class={cap} data-node="53:319">Settlement</span>
+              <span class="flex gap-[12px] items-baseline" data-node="53:320">
+                <span class="t-figure text-navy w-[136px]" data-node="53:321">$11M</span>
+                <span class="t-body text-ink w-[79px]" data-node="53:322">structure</span>
+              </span>
+              <span class="flex gap-[12px] items-baseline" data-node="53:323">
+                <span class="t-figure text-navy w-[236px]" data-node="53:324">+ $5.2M</span>
+                <span class="t-body text-ink w-[76px]" data-node="53:325">contents</span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <p class="m-0 mt-[40px] w-full font-body font-medium text-[12px] leading-[18px] text-ink" data-node="53:326">Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</p>
+      </div>
+
+      <p class="hidden lg:block m-0 mt-[64px] w-[640px] t-lead text-ink" data-node="54:255">Blue Star Adjusters exists because the old way wasn't good enough. Our experience isn't new. We bring years at the top of the industry and the conviction to finally do it right.</p>
+      <ul class="hidden lg:flex gap-[12px] items-start mt-[24px] p-0 list-none" data-node="73:1328">
+        {chips.map((c) => (
+          <li class="flex gap-[8px] items-center bg-white border border-line rounded-[4px] pl-[12px] pr-[16px] py-[8px]" data-node={c.node}>
+            <Icon name={c.icon} size={24} class="text-navy shrink-0" />
+            <span class="font-body font-medium text-[15px] leading-[24px] text-ink whitespace-nowrap" style={`min-width:${c.w}px`}>{c.label}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hb-tab { transition: background-color .15s ease, color .15s ease; }
+  .hb-tab:not(.bg-navy):hover, .hb-tab:not(.bg-navy):focus-visible { background: var(--color-white); color: var(--color-royal); }
+  .hb-tab:focus-visible { outline-offset: -2px; }
+</style>

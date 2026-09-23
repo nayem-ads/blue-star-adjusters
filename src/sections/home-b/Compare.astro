@@ -1,0 +1,105 @@
+---
+// Home B "Section / Compare". Desktop 57:426 (1280×1123), Mobile 62:508 (390×1070).
+// Desktop: 3-column comparison table. Mobile: two-option switch (CSS-only radio group, keyboard arrows switch)
+// showing the Blue Star or Handling It Yourself values for the same three rows. Key facts panel below.
+import Icon from '../../components/Icon.astro';
+import SectionIndex from './SectionIndex.astro';
+
+const rows = [
+  { icon: 'ruler', label: 'Building Scope', bs: 'We dictate scope using hundreds of prior claims; familiar with fire vs. new construction standards', own: 'Insurance company determines scope and chooses the contractor, protecting their interests, not yours', d: ['57:440', '57:442', '57:444', '57:446'], m: ['62:522', '62:524'] },
+  { icon: 'document', label: 'Control', bs: 'We dictate the manner and method of the entire adjustment process: proactively, not reactively', own: 'The insurance company controls the process end to end', d: ['57:447', '57:449', '57:451', '57:453'], m: ['62:525', '62:527'] },
+  { icon: 'shield', label: 'Final Say', bs: 'You always have final say on any settlement', own: 'You have final say, but far less information to make the right decision', d: ['57:454', '57:456', '57:458', '57:460'], m: ['62:528', '62:530'] },
+];
+const facts = [
+  { icon: 'document', text: "No upfront cost. We're paid a percentage of what we recover.", d: '73:2645', m: '74:2984' },
+  { icon: 'check', text: 'You always have final say on any settlement.', d: '73:2654', m: '74:2991' },
+  { icon: 'shield', text: 'CA DOI License No. 2B60428', d: '73:2663', m: '74:2998' },
+];
+---
+<section id="compare" aria-labelledby="hb-compare" class="bg-white scroll-mt-[52px] lg:scroll-mt-0" data-node-d="57:426" data-node-m="62:508">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[96px] lg:flex lg:items-start lg:gap-[24px]">
+    <SectionIndex label="Compare" nodeD="57:427" nodeM="62:509" />
+    <div class="flex flex-col items-start mt-[16px] lg:mt-0 lg:w-[928px] lg:shrink-0" data-node-d="57:430">
+      <h2 id="hb-compare" class="m-0 w-full tm-h2 lg:t-h2 lg:w-[720px] text-navy" data-node-d="57:431" data-node-m="62:513">Blue Star Adjusters<br />vs. Going It Alone</h2>
+
+      <!-- Desktop table -->
+      <table class="hidden lg:table w-[928px] mt-[48px] table-fixed border-collapse" data-node="57:433">
+        <colgroup><col class="w-[224px]" /><col class="w-[352px]" /><col class="w-[352px]" /></colgroup>
+        <thead>
+          <tr data-node="57:434">
+            <td class="p-0"></td>
+            <th scope="col" class="bg-paper border-t-2 border-navy px-[32px] py-[24px] text-left align-top font-normal" data-node="57:436"><span class="block t-h3 text-navy" data-node="57:437">Blue Star Adjusters</span></th>
+            <th scope="col" class="pl-[32px] pr-0 py-[24px] text-left align-top font-normal" data-node="57:438"><span class="block t-h3 text-navy" data-node="57:439">Handling It Yourself</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr data-node={r.d[0]}>
+              <th scope="row" class="border-t border-line pr-[24px] pl-0 py-[24px] text-left align-top font-normal">
+                <span class="flex flex-col gap-[12px] items-start">
+                  <Icon name={r.icon} size={24} class="text-navy" />
+                  <span class="block w-full t-body-strong text-ink" data-node={r.d[1]}>{r.label}</span>
+                </span>
+              </th>
+              <td class="bg-paper border-t border-line px-[32px] py-[24px] align-top"><p class="m-0 t-body text-ink" data-node={r.d[2]}>{r.bs}</p></td>
+              <td class="border-t border-line pl-[32px] pr-0 py-[24px] align-top"><p class="m-0 t-body text-ink" data-node={r.d[3]}>{r.own}</p></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <!-- Mobile switch -->
+      <div class="hb-cmp lg:hidden w-full mt-[24px]">
+        <div role="radiogroup" aria-label="Compare" class="flex gap-[4px] p-[4px] bg-white border border-line rounded-[8px]" data-node="62:515">
+          <input type="radio" name="hb-cmp" id="hb-cmp-bs" value="bs" class="sr-only" checked />
+          <label for="hb-cmp-bs" class="hb-cmp__tab" data-node="62:516"><span>Blue Star</span></label>
+          <input type="radio" name="hb-cmp" id="hb-cmp-own" value="own" class="sr-only" />
+          <label for="hb-cmp-own" class="hb-cmp__tab" data-node="62:518"><span>On your own</span></label>
+        </div>
+        <dl class="hb-cmp__panel hb-cmp__panel--bs m-0 mt-[8px] bg-paper px-[20px]" data-node="62:521" aria-label="Blue Star Adjusters">
+          {rows.map((r) => (
+            <div class="flex flex-col gap-[4px] items-start py-[20px] border-b border-line last:border-b-0" data-node={r.m[0]}>
+              <dt class="flex gap-[8px] items-center"><Icon name={r.icon} size={24} class="text-navy shrink-0" /><span class="tm-label text-ink">{r.label}</span></dt>
+              <dd class="m-0 w-full tm-body text-ink" data-node={r.m[1]}>{r.bs}</dd>
+            </div>
+          ))}
+        </dl>
+        <dl class="hb-cmp__panel hb-cmp__panel--own m-0 mt-[8px] bg-paper px-[20px]" aria-label="Handling It Yourself">
+          {rows.map((r) => (
+            <div class="flex flex-col gap-[4px] items-start py-[20px] border-b border-line last:border-b-0">
+              <dt class="flex gap-[8px] items-center"><Icon name={r.icon} size={24} class="text-navy shrink-0" /><span class="tm-label text-ink">{r.label}</span></dt>
+              <dd class="m-0 w-full tm-body text-ink">{r.own}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+
+      <a href="/about/" class="hb-link flex gap-[8px] items-center h-[48px] mt-[8px] lg:h-[52px] lg:mt-[32px]" data-node-d="57:462" data-node-m="62:532">
+        <span class="tm-body-strong lg:t-body-strong underline text-ink">See all seven</span>
+        <Icon name="arrow-right" size={24} class="hb-link__arrow text-ink shrink-0" />
+      </a>
+
+      <ul class="flex flex-col gap-[16px] items-start w-full mt-[32px] px-[20px] py-[24px] bg-navy text-white rounded-[2px] list-none lg:flex-row lg:items-center lg:gap-0 lg:mt-[48px] lg:p-[32px]" data-node-d="73:2644" data-node-m="74:2983">
+        {facts.map((f, i) => (
+          <>
+            {i > 0 && <li aria-hidden="true" class="block w-full h-px bg-white shrink-0 lg:w-px lg:h-[56px] lg:mx-[32px]"></li>}
+            <li class="flex gap-[16px] items-center w-full lg:flex-1 lg:min-w-0" data-node-d={f.d} data-node-m={f.m}>
+              <span class="flex items-center justify-center size-[40px] shrink-0 rounded-full border border-white"><Icon name={f.icon} size={24} /></span>
+              <span class="flex-1 min-w-0 tm-body lg:font-medium lg:text-[15px] lg:leading-[24px]">{f.text}</span>
+            </li>
+          </>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hb-cmp__tab { flex: 1 1 0; min-width: 0; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 26px; white-space: nowrap; color: var(--color-ink); cursor: pointer; transition: background-color .15s ease, color .15s ease; }
+  .hb-cmp__tab:hover { background: var(--color-paper); }
+  input:checked + .hb-cmp__tab { background: var(--color-navy); color: #fff; }
+  input:focus-visible + .hb-cmp__tab { outline: 2px solid var(--color-royal); outline-offset: 2px; }
+  .hb-cmp__panel--own { display: none; }
+  .hb-cmp:has(#hb-cmp-own:checked) .hb-cmp__panel--own { display: block; }
+  .hb-cmp:has(#hb-cmp-own:checked) .hb-cmp__panel--bs { display: none; }
+</style>

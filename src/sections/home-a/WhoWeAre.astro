@@ -1,0 +1,43 @@
+---
+// Who we are: on-site field photo. Desktop 55:154, mobile 62:704.
+import images from '../../data/images.json';
+import Pic from './Pic.astro';
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+const stair = (images as Record<string, { src: string; width: number; height: number }>)['73:2514'];
+const facts = [
+  { icon: 'check', text: "No upfront cost. We're paid a percentage of what we recover.", n: '73:2517', m: '74:3403' },
+  { icon: 'shield', text: 'You always have final say on any settlement.', n: '73:2521', m: '74:3407' },
+  { icon: 'document', text: 'CA DOI License No. 2B60428', n: '73:2526', m: '74:3412' },
+];
+---
+<section aria-labelledby="who-title" class="bg-white" data-node="55:154" data-node-m="62:704">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[20px] lg:gap-[56px]">
+    <figure class="contents lg:flex lg:flex-col lg:gap-[12px] m-0" data-node="55:155">
+      <div class="-mx-[20px] h-[320px] lg:mx-0 lg:h-[560px]">
+          <Pic d="55:156" m="62:705" alt="A Blue Star adjuster on site with policyholders inside a fire-damaged apartment." />
+      </div>
+      <figcaption class="self-start mt-[20px] lg:mt-0 t-caption text-ink whitespace-nowrap" data-node="55:157" data-node-m="62:707">Field photograph</figcaption>
+    </figure>
+    <div class="contents lg:flex lg:items-start lg:gap-[96px]" data-node="55:158">
+      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[40px] lg:w-[512px] lg:shrink-0" data-node="73:2515">
+        <h2 id="who-title" class="m-0 tm-h2 lg:t-h2 text-navy lg:w-full" data-node="55:159" data-node-m="62:708">Same Experience.<br /> A New Way.</h2>
+        <ul class="order-5 lg:order-none m-0 list-none bg-navy text-white flex flex-col gap-[16px] lg:gap-[20px] p-[24px] lg:p-[32px] lg:w-[448px]" data-node="73:2516" data-node-m="74:3402">
+          {facts.map((f) => <li class="flex items-start gap-[12px] lg:gap-[16px] tm-body lg:t-body" data-node={f.n} data-node-m={f.m}><Icon name={f.icon} size={24} class="shrink-0" /><span class="flex-1 min-w-0">{f.text}</span></li>)}
+        </ul>
+      </div>
+      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[24px] lg:flex-1 lg:min-w-0" data-node="55:160">
+        <p class="order-3 lg:order-none m-0 tm-lead lg:t-lead text-navy" data-node="55:161" data-node-m="62:709">We left a legacy firm to build something leaner, more responsive, and 100% focused on you, without the bureaucracy that slows claims down.</p>
+        <div class="order-4 lg:order-none flex flex-col gap-[4px] lg:gap-[8px]" data-node="55:162" data-node-m="62:710">
+          <h3 class="m-0 tm-body-strong lg:t-body-strong text-navy" data-node="55:163" data-node-m="62:711">No Conflict of Interest.</h3>
+          <p class="m-0 tm-body lg:t-body text-ink" data-node="55:164" data-node-m="62:712">We eliminate the fundamental problem with insurance company adjusters: one person representing two sides of a financial negotiation. Our sole allegiance is to you.</p>
+        </div>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="order-6 lg:order-none h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="55:165" data-node-m="62:713">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+    <div class="hidden lg:block absolute right-[120px] top-[72px] w-[200px] h-[264px] border-[8px] border-white bg-white shadow-[0_12px_32px_0_rgba(8,15,51,0.18)]" data-node="73:2514">
+      <img src={stair.src} width={stair.width} height={stair.height} alt="Close detail of a fire-damaged exterior stair after a loss." class="w-full h-full object-cover" decoding="async" fetchpriority="low" />
+    </div>
+  </div>
+</section>

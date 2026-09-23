@@ -1,0 +1,1 @@
+62:637 mobile why now: same copy; H2 3 lines explicit (The Rules Changed./The First Estimate/Didn’t.) — natural wrap; pull line pl20 py8 border-l2, quote 32, H3 22/28; pull text explicit break 'That wealth came<br>from somewhere.'; B-mark 280x340 at 190,480 in copy.

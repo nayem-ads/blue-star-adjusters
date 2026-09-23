@@ -1,0 +1,5 @@
+get_design_context 74:4732 (TY form card mobile): white border line r4 pt44 pb24 px20 col gap20 (ruler ticks).
+Check circle 56 navy; "Thank you, Jordan." tm-h3 navy; callback clock 20 + tm-body gap12.
+Receipt bg paper r4 p16: title 600 15/20 navy; rows col py12 border-b line: key 500 14/20 ink; value 600 16/26 ink. Rows: Name, Phone, Property state, What happened (last, no border). NO Documents row on mobile.
+"Need us sooner? Call and mention your request." tm-body-strong ink. Button outline full h56 phone "Call (916) 507-1005". Licence line 400 12/18 ink (t-legal).
+No First 48 Hours link row on mobile.

@@ -1,0 +1,31 @@
+---
+// Contact details (73:2746 desktop sidebar / 74:4373 mobile): phone, address, licence rows + fact chips.
+import IconCircle from './IconCircle.astro';
+import { PHONE_DISPLAY, PHONE_TEL, LICENSE } from '../../data/site';
+interface Props { variant: 'd'|'m'; node?: string }
+const { variant, node } = Astro.props;
+const d = variant === 'd';
+const main = d ? 't-body-strong text-navy' : 'tm-body-strong text-navy';
+const sub = d ? 'font-body font-medium text-[15px] leading-[24px] text-ink' : 'tm-body text-ink';
+const rows = [
+  { icon: 'phone', main: PHONE_DISPLAY, sub: 'Mon–Sun, 8 AM–6 PM Pacific', href: PHONE_TEL },
+  { icon: 'map-pin', main: '1610 R Street, Suite 300', sub: 'Sacramento, California 95811, USA' },
+  { icon: 'document', main: LICENSE, sub: 'We represent the insured only.' },
+];
+---
+<div class:list={['flex flex-col gap-[20px] w-full', d && 'pt-[8px]']} data-node={d ? node : undefined} data-node-m={d ? undefined : node}>
+  {rows.map((r) => (
+    <div class="flex gap-[16px] items-start">
+      <IconCircle name={r.icon} />
+      <div class="flex-1 min-w-0 flex flex-col gap-[4px]">
+        {r.href
+          ? <a href={r.href} class:list={['fcr-link self-start', main]}>{r.main}</a>
+          : <p class:list={['m-0', main]}>{r.main}</p>}
+        <p class:list={['m-0', sub]}>{r.sub}</p>
+      </div>
+    </div>
+  ))}
+  <ul class:list={['flex gap-[8px] m-0 p-0 list-none', d && 'pt-[4px]']}>
+    {['7 offices', '5 states'].map((c) => <li class:list={['bg-white border border-navy rounded-[2px] px-[12px] py-[8px] text-navy whitespace-nowrap', d ? 't-label' : 'tm-label']}>{c}</li>)}
+  </ul>
+</div>

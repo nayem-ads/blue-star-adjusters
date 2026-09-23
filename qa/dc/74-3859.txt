@@ -1,0 +1,4 @@
+get_design_context 74:3859 (M1b bio + trust, mobile). Condensed:
+section bg paper flex-col pt-32 pb-56 px-20 (frame h 352 vs content 349)
+ Bio+trust flex-col gap-20: bio Montserrat 16/26 ink (same copy as desktop bio)
+ Trust rows border-t line pt-20 flex-col gap-12; rows flex gap-12 items-START: icon 20; text Montserrat Medium 16/26 ink

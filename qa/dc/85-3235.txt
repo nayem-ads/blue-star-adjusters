@@ -1,0 +1,9 @@
+get_design_context 85:3235 (Thank-you left column desktop) — condensed. Left col gap32.
+Card: white border line r4 p48 col gap24; ruler ticks as default.
+ Confirmation head flex gap20 items-center: circle 56 bg navy r28, check icon 28 (white); "Thank you, Jordan." t-h3 navy flex-1. (annotation: from "Thank you, Jordan. Your request is in.")
+ Callback note flex gap12 items-start: clock 24; "We call back the same day, Mon–Sun, 8 AM–6 PM Pacific. Every engagement is discreet." t-body ink.
+ Receipt: bg paper r4 p24 col. Title "What you sent us" 600 15/20 navy. Rows border-b line py12 flex gap24: key 500 15/24 ink w160; value 600 17/28 ink flex-1. Last row no border.
+  Name / Jordan Moreno; Phone / (916) 555-0123; Property state / California; What happened / Fire or smoke; Documents / None yet. You can send them after the first call.
+ Divider 1px line. Call row flex gap24 items-center: "Need us sooner? Call and mention your request." 600 17/28 ink flex-1; Button outline phone icon "Call (916) 507-1005".
+ "Blue Star Adjusters. CA DOI License No. 2B60428. We represent the insured only." 500 15/24 ink.
+Link row First 48 Hours: white border line (no radius) p24 flex gap16 items-center: circle 40 white border navy doc icon; "First 48 Hours" 600 17/28 navy / "Checklist, downloadable" 500 15/24 ink; arrow-right 24. Link to /first-48-hours [CLIENT confirm].

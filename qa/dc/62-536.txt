@@ -1,0 +1,8 @@
+62:536 Section / Review MOBILE condensed. bg navy flex-col pt64 pb56 px20. Index "Review" white / gap16
+H2 32/36 white "Call Before the Carrier Sets the Narrative" / gap16 / body 16/26 white / gap32
+Print 350x240 bg white no border; tab line 44x10 left280 top-10; photo left10 top10 330x220 I62:547;41:71 / gap32
+CTAs flex-col gap12: On-dark h56 full "Schedule a Free Review"; Outline on-dark h56 phone "Call (916) 507-1005" / gap16
+fee Regular 16/26 white 3 lines "No upfront cost." / "We're paid a percentage" / "of what we recover." / gap48 / rule 1px white / gap32
+circle 40 border white shield / gap12 / H3 22/28 white "A Boutique Practice." / "A Family Office." / gap8 / body 16/26 / gap32
+circle map-pin / gap12 / H3 "Local Codes." / "Local Contractors." / gap8 / dimension line white "7 offices" / gap12 / office list flex-wrap gap 8px 20px Regular 16/26.
+Crop marks white absolute left8 top338 374x256.

@@ -1,0 +1,14 @@
+Button set 37:176 (get_design_context summary, verbatim values)
+base: flex gap-[10px] items-center justify-center px-[28px] py-[16px] rounded-[999px]; label Montserrat SemiBold 16/20 nowrap; icon 20x20 left of label
+Solid  Default 37:128 bg royal #133faa, text white
+Solid  Hover   37:132 bg navy #081d5e
+Solid  Focus   37:136 bg royal, shadow 0 0 0 2px white, 0 0 0 5px royal
+Outline Default 37:140 border 1.5px navy, text navy, no bg
+Outline Hover   37:144 bg paper #f4f6fb, border 1.5 navy
+Outline Focus   37:148 bg white, border 1.5 navy, shadow 0 0 0 2px white, 0 0 0 5px royal
+On-dark Default 37:152 bg white, text navy
+On-dark Hover   37:156 bg paper
+On-dark Focus   37:160 bg white, shadow 0 0 0 2px navy, 0 0 0 5px white
+Outline on-dark Default 37:164 border 1.5 white, text white
+Outline on-dark Hover   37:168 bg white, border 1.5 white (text white per codegen)
+Outline on-dark Focus   37:172 bg navy, border 1.5 white, shadow 0 0 0 2px navy, 0 0 0 5px white

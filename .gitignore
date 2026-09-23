@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+.figma-cache/
+.figma-cache.tar
+.figma-refs.tar
+.figma-svg.tar
+qa/out/
+.env
+qa/ref/
+design/source-img/

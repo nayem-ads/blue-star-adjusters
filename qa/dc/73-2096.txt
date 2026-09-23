@@ -1,0 +1,6 @@
+get_design_context 73:2096 (Index / Head, desktop) — condensed
+Head: flex gap 48 items-end. Heading w640 flex-col gap 20: Eyebrow "Loss index"; H2 Schibsted SemiBold 48/54 -0.72 navy "Your Home. Fully Recovered." [annotation: swaps to 'Your Business. Fully Recovered.' when Commercial selected];
+ intro Montserrat 17/28 ink "Your insurer's adjuster already came out? Good. We start from their estimate and measure what it left out."
+Filler flex-1. Segmented control 73:2104: bg white, border 1 line, radius 28, p4, gap 4. Segments 176x48 radius 24 px24 gap 8 center: icon 24 + Montserrat SemiBold 16/20.
+ Selected: bg navy, white text ("Residential", home icon). Unselected: ink text ("Commercial", building icon).
+ ANNOTATION: Selecting Commercial swaps the rows for the commercial set (loss of income and extra expense, tenant improvements vs. building, inventory and equipment, code, Xactimate and IH reports; see the navy Commercial section). Keyboard: arrow keys move between segments; role=tablist.

@@ -1,0 +1,11 @@
+57:426 Section / Compare DESKTOP condensed. bg white flex gap24 pt120 pb96 px80. Index "Compare".
+H2 48/54 navy w720, explicit lines "Blue Star Adjusters" / "vs. Going It Alone" / gap48
+Table (annotation: 3 of 7 rows; 'See all seven' links to /why-blue-star): rows flex, cols 224 | 352 | 352.
+ Header: empty label cell; Blue Star cell bg paper border-t-2 navy px32 py24 H3 28/34 navy "Blue Star Adjusters"; On-your-own cell pl32 py24 "Handling It Yourself".
+ Rows: label cell border-t line pr24 py24 flex-col gap12: icon 24 + SemiBold 17/28 ink; Blue Star cell bg paper border-t line px32 py24 Regular 17/28; own cell border-t pl32 py24.
+  ruler Building Scope | "We dictate scope using hundreds of prior claims; familiar with fire vs. new construction standards" | "Insurance company determines scope and chooses the contractor, protecting their interests, not yours"
+  document Control | "We dictate the manner and method of the entire adjustment process: proactively, not reactively" | "The insurance company controls the process end to end"
+  shield Final Say | "You always have final say on any settlement" | "You have final say, but far less information to make the right decision"
+gap32 / link py12 gap8 "See all seven" SemiBold 17/28 underline + arrow 24 / gap48
+Key facts panel bg navy rounded2 p32 flex items-center: 3 facts flex-1 gap16 items-center (circle 40 border white + icon white; Medium 15/24 white), separated by 32 gap + divider 1x56 white + 32 gap.
+ document "No upfront cost. We're paid a percentage of what we recover." | check "You always have final say on any settlement." | shield "CA DOI License No. 2B60428"

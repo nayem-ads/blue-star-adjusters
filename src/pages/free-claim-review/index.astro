@@ -1,0 +1,33 @@
+---
+// Free Claim Review (Figma page 45:73): default 73:1379 / mobile 74:3862. Error state = forms.ts on an invalid
+// submit (74:1785 / 74:4514). Thank-you state = ./thank-you.astro (74:2047 / 74:4725).
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import FcrStyles from '../../sections/fcr/FcrStyles.astro';
+import RequestSection from '../../sections/fcr/RequestSection.astro';
+import NextSection from '../../sections/fcr/NextSection.astro';
+import FeesSection from '../../sections/fcr/FeesSection.astro';
+import Review from '../../sections/fcr/Review.astro';
+import Faq from '../../sections/fcr/Faq.astro';
+const title = 'Free Claim Review | Blue Star Adjusters';
+const description = 'Tell us what happened. We’ll read your policy. There is no cost or obligation for the initial review. Licensed public adjusters; you have final say.';
+---
+<Base title={title} description={description}>
+  <FcrStyles />
+  <div data-node="73:1380" data-node-m="74:3863"><Header theme="light" /></div>
+  <main>
+    <RequestSection />
+    <NextSection />
+    <FeesSection />
+    <Review />
+    <Faq />
+  </main>
+  <div data-node="73:2865" data-node-m="74:4478"><Footer /></div>
+  <CallBar />
+</Base>
+
+<script>
+  import '../../sections/fcr/fcr-form.ts';
+</script>

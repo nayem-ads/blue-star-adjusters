@@ -1,0 +1,11 @@
+57:466 Section / Review DESKTOP condensed. bg navy flex gap24 pt120 pb96 px80. Index "Review" (white).
+Content 928: CTA row flex gap32 items-start:
+ CTA text w504: tagline rule (32x1 white, Medium 13/18 .26 "Your Claim. Our Fight.") / gap24 / H2 48/54 white explicit lines "Call Before the" / "Carrier Sets" / "the Narrative" / gap24
+  body 17/28 white "Your insurance company has an adjuster protecting their interests. You have the right to one too. We level the playing field, and we fight to make sure you get every dollar you're owed." / gap40
+  CTAs flex gap16: On-dark "Schedule a Free Review"; Outline on-dark phone "Call (916) 507-1005" / gap24 / Medium 15/24 white "No upfront cost." / "We're paid a percentage of what we recover."
+ Print 57:488 bbox 382.625x267.754 rotate(-1.5deg) print 376x258 bg white NO border; tab line 56x12 left288 top-12; photo left10 top10 356x238 I57:490;41:71 alt "A rebuilt two-storey home at dusk with its lights on."
+gap96 / rule 1px white / gap48
+Practice sign-off flex gap32: cols w448 flex-col gap16: circle 40 border white + icon (shield / map-pin) white; H3 28/34 white explicit lines;
+ "A Boutique Practice." / "A Family Office." + Medium 15/24 "Every engagement is discreet, senior-led, and built around the client's privacy. References are held in confidence and available on request."
+ "Local Codes." / "Local Contractors." + dimension line white "7 offices" + office list flex-wrap gap 8px 24px Medium 15/24 white: Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, Scottsdale.
+73:2669 crop marks white absolute left792 top104 415x300.

@@ -1,0 +1,9 @@
+get_design_context 73:2060 (S2 Head, desktop). Condensed:
+Head: flex gap-64 items-end
+ Head copy 85:3263 flex-col gap-24 w-656: H2 Schibsted SemiBold 48/54 -0.72 navy "Built From the Ground Up."
+   Intro 20/32 ink: "Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco's seismic retrofit ordinance, and he knows what a code-compliant rebuild costs because he's paid for plenty of them."
+ Head facts 85:3264 flex-col gap-24 w-400:
+   Dimension line (w-full): tick 1x12 royal, rule flex-1, label Montserrat Medium 12/16 tracking .12 ROYAL "Measured, not estimated", rule, tick; gap-8
+   Fact chip 85:3271: bg paper border 1px line flex gap-16 items-center pl-16 pr-20 py-16
+     Badge 40x40 rounded-20 bg paper border line, icon ruler 24
+     text Montserrat SemiBold 17/28 ink "25 years as a developer and builder"

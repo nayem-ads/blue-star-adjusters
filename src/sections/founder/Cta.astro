@@ -1,0 +1,53 @@
+---
+// S6 Schedule a Free Review with Michael. Desktop 73:3031 (y 5375, 1280×712); mobile M6 74:3310 (y 5856, 390×872).
+// Mobile has no dimension line and no phone row in the navy panel.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import DimLine from './DimLine.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE } from '../../data/site';
+const facts = [
+  { icon: 'shield', text: LICENSE, n: ['73:3050', '73:3054'], m: ['74:3327', '74:3331'] },
+  { icon: 'check', text: 'We represent the insured only.', n: ['73:3055', '73:3058'], m: ['74:3332', '74:3335'] },
+  { icon: 'map-pin', text: 'Offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle and Scottsdale.', n: ['73:3059', '73:3063'], m: ['74:3336', '74:3340'] },
+];
+---
+<section aria-labelledby="cta-title" class="bg-paper" data-node="73:3031" data-node-m="74:3310">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[69px] flex flex-col gap-[24px] lg:flex-row lg:items-start lg:gap-[64px] lg:px-[80px] lg:py-[120px]">
+    <div class="contents lg:flex lg:flex-col lg:gap-[32px] lg:flex-[0_1_560px] lg:min-w-0" data-node="73:3032">
+      <DimLine label="Your Adjuster. Your Advocate." tone="royal" class="hidden! lg:flex! w-full" node="85:3339" />
+      <h2 id="cta-title" class="m-0 text-navy tm-h2 lg:t-display-l" data-node="73:3033" data-node-m="74:3311">Schedule a Free Review with Michael.</h2>
+      <div class="contents lg:flex lg:flex-col lg:gap-[8px] lg:t-lead" data-node="73:3034">
+        <p class="m-0 text-ink tm-body lg:t-lead" data-node="73:3035" data-node-m="74:3312">No upfront cost. We're paid a percentage of what we recover.</p>
+        <p class="m-0 text-ink tm-body lg:t-lead" data-node="73:3036" data-node-m="74:3313">You always have final say on any settlement.</p>
+      </div>
+      <div class="flex flex-col gap-[12px] lg:self-start lg:flex-row lg:flex-wrap lg:gap-[16px]" data-node="73:3037" data-node-m="74:3314">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="73:3038" data-node-m="74:3315">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="73:3042" data-node-m="74:3319">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+
+    <aside aria-label="Key facts" class="bg-navy text-white flex flex-col px-[24px] pt-[32px] pb-[24px] lg:p-[40px] lg:flex-[0_1_496px] lg:min-w-[360px]" data-node="73:3046" data-node-m="74:3323">
+      <p class="bs-fpanelhead m-0 flex items-center gap-[12px] pb-[16px] lg:pb-[24px] self-start whitespace-nowrap tm-label" data-node="73:3047" data-node-m="74:3324">
+        <span aria-hidden="true" class="block w-[24px] h-px bg-white"></span>Blue Star Adjusters
+      </p>
+      <ul class="m-0 p-0 list-none">
+        {facts.map((f) => (
+          <li class="flex items-start gap-[16px] py-[16px] border-t border-white lg:py-[20px]" data-node={f.n[0]} data-node-m={f.m[0]}>
+            <Icon name={f.icon} size={24} class="shrink-0" />
+            <span class="flex-1 min-w-0 tm-body lg:t-body" data-node={f.n[1]} data-node-m={f.m[1]}>{f.text}</span>
+          </li>
+        ))}
+        <li class="hidden lg:flex items-start gap-[16px] py-[20px] border-t border-white" data-node="73:3064">
+          <Icon name="phone" size={24} class="shrink-0" />
+          <a href={PHONE_TEL} class="bs-fpanellink flex-1 min-w-0 t-body" data-node="73:3067">{PHONE_DISPLAY}</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</section>
+<style>
+  @media (min-width: 1024px) { .bs-fpanelhead { font-weight: 500; font-size: 15px; line-height: 24px; letter-spacing: 0; } }
+  .bs-fpanellink { text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1px; text-underline-offset: 3px; transition: text-decoration-color .15s ease; border-radius: 2px; }
+  .bs-fpanellink:hover, .bs-fpanellink:focus-visible { text-decoration-color: currentColor; }
+  .bs-fpanellink:focus-visible { outline-color: #fff; }
+</style>

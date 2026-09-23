@@ -1,0 +1,4 @@
+Header/Desktop Light 42:76: bg white, border-b 1px line #d9dfee, flex h-88 items-center justify-between px-80 w-1280
+ Logo/Horizontal/Color 40 (4:63): mark 32.946x40 + gap12 + wordmark 135.385x20  => 180.33x40
+ Nav 42:86: flex gap-32, Montserrat Medium 15/20 navy, nowrap: What We Do | Our Founder | How It Works | Fees
+ Actions 42:92: flex gap-24: Phone 42:93 (gap 8: Icon/phone 20px + "(916) 507-1005" Montserrat SemiBold 16/20 navy) + Button Solid default "Schedule a Free Review"

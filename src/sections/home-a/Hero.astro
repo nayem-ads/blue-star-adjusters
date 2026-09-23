@@ -1,0 +1,79 @@
+---
+// Home A hero. Desktop 53:70 (photo 53:220 + claim-review bar 53:122); mobile 58:464 (first screen) + 58:511 (claim review form).
+// data-node = desktop (22:62) node, data-node-m = mobile (58:463) node. QA swaps them for 390 runs (see qa notes in the final report).
+import Eyebrow from '../../components/Eyebrow.astro';
+import Button from '../../components/Button.astro';
+import Ruler from './Ruler.astro';
+import FormField from '../../components/FormField.astro';
+import FormSubmitFields from '../../components/FormSubmitFields.astro';
+import images from '../../data/images.json';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, FORM_ACTION } from '../../data/site';
+const img = images as Record<string, { src: string; width: number; height: number }>;
+const heroD = img['53:71'], heroM = img['58:465'];
+---
+<div class="relative lg:bg-paper" data-node="53:70">
+  <section aria-labelledby="hero-title" class="relative h-[844px] lg:h-[840px] overflow-hidden bg-ink text-white" data-node="53:220" data-node-m="58:464">
+    <picture>
+      <source media="(min-width: 1024px)" srcset={heroD.src} width={heroD.width} height={heroD.height} />
+      <img src={heroM.src} width={heroM.width} height={heroM.height} alt="A public adjuster measures a fire-damaged hillside home at dusk while the homeowner looks on."
+        class="absolute inset-0 w-full h-full object-cover" loading="eager" fetchpriority="high" decoding="async" data-node="53:71" data-node-m="58:465" />
+    </picture>
+    <div aria-hidden="true" class="absolute inset-0 bg-ink lg:bg-black opacity-[.36]"></div>
+    <div aria-hidden="true" class="hero-soft absolute bg-ink lg:bg-black left-0 right-0 top-[284px] bottom-0 lg:right-auto lg:bottom-0 lg:top-0 lg:w-[880px]"></div>
+    <div class="relative h-full max-w-[1280px] mx-auto px-[20px] lg:px-[80px] flex flex-col justify-end pb-[112px] lg:justify-start lg:pb-0 lg:pt-[168px]">
+      <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[720px]" data-node="53:108" data-node-m="58:495">
+        <Eyebrow theme="dark" node="53:109">Your Claim. Our Fight.</Eyebrow>
+        <h1 id="hero-title" class="m-0 w-full tm-display lg:t-display-xl" data-node="53:112" data-node-m="58:499">The New Way to Settle Claims.</h1>
+        <div class="flex flex-col gap-[12px] w-full" data-node="53:113">
+          <p class="m-0 tm-lead lg:t-h3 lg:w-[560px]" data-node="53:114" data-node-m="58:500">We level the playing field.</p>
+          <p class="m-0 hidden lg:block t-lead w-[560px]" data-node="53:115">Blue Star Adjusters exists because the old way wasn’t good enough. Our experience isn’t new. We bring years at the top of the industry and the conviction to finally do it right.</p>
+        </div>
+        <div class="flex flex-col gap-[12px] w-full pt-[8px] lg:pt-0 lg:w-auto" data-node-m="58:501">
+          <Button href={ROUTES.freeClaimReview} variant="on-dark" full class="h-[56px] lg:hidden" data-node-m="58:502">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="53:116" data-node-m="58:507">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="claim-review" aria-labelledby="claim-review-title" class="relative bg-white lg:bg-transparent lg:-mt-[88px] lg:pb-[40px]" data-node-m="58:511">
+    <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-0 lg:pb-0">
+      <form action={FORM_ACTION} method="POST" data-lead-form novalidate
+        class="flex flex-col gap-[24px] lg:gap-[20px] lg:bg-white lg:rounded-[4px] lg:pt-[28px] lg:pb-[24px] lg:px-[32px] lg:shadow-[0_24px_48px_0_rgba(7,15,51,0.14)]" data-node="53:122">
+        <FormSubmitFields source="Home, claim review form" />
+        <Ruler class="lg:hidden" nodeM="74:3046" />
+        <div class="flex flex-col gap-[8px] lg:sr-only" data-node-m="58:512">
+          <h2 id="claim-review-title" class="m-0 tm-h2 text-navy" data-node-m="58:513">Free Claim Review</h2>
+          <p class="m-0 tm-body text-ink" data-node-m="58:514">Tell us a little about your situation. There is no cost or obligation for the initial review.</p>
+        </div>
+        <div class="flex flex-col gap-[24px] lg:flex-row lg:items-end lg:gap-[16px]" data-node="53:123">
+          <div class="lg:flex-1 lg:min-w-0" data-node="53:124" data-node-m="58:515"><FormField label="Name" name="Name" required placeholder="Your name" autocomplete="name" id="hero-name" /></div>
+          <div class="lg:flex-1 lg:min-w-0" data-node="53:129" data-node-m="58:520"><FormField label="Phone" name="Phone" type="tel" required placeholder="(555) 555-5555" autocomplete="tel" id="hero-phone" /></div>
+          <div class="hero-what lg:flex-1 lg:min-w-0" data-node="53:134" data-node-m="58:525"><FormField label="What happened" name="Message" type="textarea" placeholder="Fire, smoke, water, wind…" id="hero-what" rows={1} /></div>
+          <Button type="submit" variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="53:139" data-node-m="58:530">Schedule a Free Review</Button>
+        </div>
+        <ul class="trust m-0 p-0 list-none self-start flex flex-col gap-[12px] lg:flex-row lg:items-center lg:gap-[24px]" data-node="53:144" data-node-m="58:534">
+          <li class="trust-item tm-body" data-node="73:1612" data-node-m="74:3035">No upfront cost.</li>
+          <li aria-hidden="true" class="w-[32px] h-px lg:w-px lg:h-[16px] bg-line" data-node="85:3095" data-node-m="85:3185"></li>
+          <li class="trust-item tm-body" data-node="73:1615" data-node-m="74:3038">You always have final say on any settlement.</li>
+          <li aria-hidden="true" class="w-[32px] h-px lg:w-px lg:h-[16px] bg-line" data-node="85:3094" data-node-m="85:3184"></li>
+          <li class="trust-item tm-body" data-node="73:1619" data-node-m="74:3042">CA License No. 2B60428</li>
+        </ul>
+      </form>
+    </div>
+  </section>
+</div>
+
+<script>import '../../scripts/forms.ts';</script>
+
+<style>
+  /* Measured against the Figma renders: mobile overlays are ink, desktop ones render as black. */
+  .hero-soft { filter: blur(40px); opacity: .67; }
+  @media (min-width: 1024px) { .hero-soft { opacity: .8; } }
+  .hero-what :global(textarea) { height: 128px; }
+  @media (min-width: 1024px) {
+    .hero-what :global(textarea) { height: 52px; overflow: hidden; }
+    .trust li { white-space: nowrap; }
+    .trust-item { font-family: var(--font-body); font-weight: 500; font-size: 15px; line-height: 24px; }
+  }
+</style>

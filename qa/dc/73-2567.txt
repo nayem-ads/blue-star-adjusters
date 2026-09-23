@@ -1,0 +1,14 @@
+get_design_context 73:2567 (Section / Commercial, desktop) — condensed
+Section bg navy, flex gap 64, px 80 py 120. Faint logo mark white abs left 840 top 820 440x534 (clipped by section).
+Copy w512 flex-col gap 24: Eyebrow dark "Commercial claims"; H2 48/54 white "Your Business. Fully Recovered.";
+ Lead 20/32 white "Commercial claims are more complex: more code requirements, more stakeholders, more ways for carriers to undervalue the loss. Michael's development background means nothing gets missed."
+ Body 17/28 white "When a business burns, payroll, customers, suppliers and the landlord all wait on the same scope. We write that scope first."
+ List pt 8: white 1px hairlines; items flex gap 20 items-start py16: icon circle 40 border 1 white r20 (icon 24 white) + text 17/28 white with SemiBold lead-in:
+  clock "Loss of income and extra expense," " built from your books by a forensic accountant."
+  building "Tenant improvements vs. building:" " who owns what, and whose policy pays."
+  search "Inventory and equipment," " at replacement cost where the policy allows."
+  ruler "Code:" " we meet building officials early, so the rebuild scope reflects what the city will actually require."
+  document "Xactimate and IH reports:" " we rebuild the carrier's estimate line by line, and read the industrial hygienist's report before the carrier does."
+ CTA row pt16 gap16: On-dark "Schedule a Free Review"; Outline on-dark phone "Call (916) 507-1005"
+Photos w544 flex-col gap 24: ai-commercial-fire 544x640 alt "Commercial building interior after a fire"; pair gap16: ai-business-interruption 264x320 alt "Closed storefront during business interruption"; apartment 264x320 alt "Fire-damaged apartment building exterior";
+ Tagline rule pt16 gap16 items-center: hairline white flex-1 | "Your Claim. Our Fight." Montserrat SemiBold 13/18 .26 white | hairline.

@@ -1,0 +1,64 @@
+---
+// What We Do / Commercial. Desktop 73:2567 (1280×1282), mobile 74:4077 (390×1764). Navy.
+// Mobile puts the photos between the lead and the body; desktop has them in a right column (different crops = different nodes).
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Img from '../../components/Img.astro';
+import Logo from '../../components/Logo.astro';
+import IconCircle from './IconCircle.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const items = [
+  { icon: 'clock', lead: 'Loss of income and extra expense,', rest: ' built from your books by a forensic accountant.', d: ['73:2582', '73:2583', '73:2587'], m: ['74:4095', '74:4096', '74:4100'] },
+  { icon: 'building', lead: 'Tenant improvements vs. building:', rest: ' who owns what, and whose policy pays.', d: ['73:2589', '73:2590', '73:2593'], m: ['74:4102', '74:4103', '74:4106'] },
+  { icon: 'search', lead: 'Inventory and equipment,', rest: ' at replacement cost where the policy allows.', d: ['73:2595', '73:2596', '73:2600'], m: ['74:4108', '74:4109', '74:4113'] },
+  { icon: 'ruler', lead: 'Code:', rest: ' we meet building officials early, so the rebuild scope reflects what the city will actually require.', d: ['73:2602', '73:2603', '73:2607'], m: ['74:4115', '74:4116', '74:4120'] },
+  { icon: 'document', lead: 'Xactimate and IH reports:', rest: " we rebuild the carrier's estimate line by line, and read the industrial hygienist's report before the carrier does.", d: ['73:2609', '73:2610', '73:2614'], m: ['74:4122', '74:4123', '74:4127'] },
+];
+---
+<section id="commercial" aria-labelledby="wwd-commercial-title" class="relative overflow-hidden bg-navy text-white" data-node="73:2567" data-node-m="74:4077">
+  <div class="relative max-w-[1280px] mx-auto">
+    <div aria-hidden="true" class="absolute left-[190px] top-0 w-[280px] h-[340px] opacity-[0.07] pointer-events-none lg:left-[840px] lg:top-[820px] lg:w-[440px] lg:h-[534px]" data-node="73:2568" data-node-m="74:4078">
+      <Logo variant="mark-white" class="w-full h-full" label="" />
+    </div>
+    <div class="relative flex flex-col gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[64px] lg:px-[80px] lg:py-[120px]">
+      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[24px] lg:flex-[0_1_512px] lg:min-w-0" data-node="73:2573">
+        <div class="w-fit" data-node="73:2574" data-node-m="74:4083"><Eyebrow theme="dark">Commercial claims</Eyebrow></div>
+        <h2 id="wwd-commercial-title" class="m-0 w-full tm-h2 lg:t-h2" data-node="73:2577" data-node-m="74:4086">Your Business. Fully Recovered.</h2>
+        <p class="m-0 w-full tm-lead lg:t-lead" data-node="73:2578" data-node-m="74:4087">Commercial claims are more complex: more code requirements, more stakeholders, more ways for carriers to undervalue the loss. Michael's development background means nothing gets missed.</p>
+        <div class="lg:hidden w-full h-[240px]" data-node-m="74:4088"><Img node="74:4088" alt="Commercial building interior after a fire" class="w-full h-full object-cover" /></div>
+        <div class="lg:hidden flex gap-[16px] w-full" data-node-m="74:4089">
+          <div class="flex-1 h-[160px]" data-node-m="74:4090"><Img node="74:4090" alt="Closed storefront during business interruption" class="w-full h-full object-cover" /></div>
+          <div class="flex-1 h-[160px]" data-node-m="74:4091"><Img node="74:4091" alt="Fire-damaged apartment building exterior" class="w-full h-full object-cover" /></div>
+        </div>
+        <p class="m-0 w-full tm-body lg:t-body" data-node="73:2579" data-node-m="74:4092">When a business burns, payroll, customers, suppliers and the landlord all wait on the same scope. We write that scope first.</p>
+        <div class="w-full lg:pt-[8px]" data-node="73:2580" data-node-m="74:4093">
+          <ul class="m-0 p-0 list-none border-t border-white">
+            {items.map((it) => (
+              <li class="flex items-start gap-[16px] py-[16px] border-b border-white lg:gap-[20px]" data-node={it.d[0]} data-node-m={it.m[0]}>
+                <IconCircle icon={it.icon} variant="outline-white" node={it.d[1]} nodeM={it.m[1]} />
+                <p class="flex-1 min-w-0 m-0 tm-body lg:t-body" data-node={it.d[2]} data-node-m={it.m[2]}><strong class="font-semibold">{it.lead}</strong>{it.rest}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="flex flex-col gap-[12px] w-full pt-[8px] lg:flex-row lg:gap-[16px] lg:w-auto lg:pt-[16px]" data-node="73:2616" data-node-m="74:4129">
+          <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] lg:h-[52px] lg:w-[253px]" data-node="73:2617" data-node-m="74:4130">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] lg:h-[52px] lg:w-[235px]" data-node="73:2621" data-node-m="74:4134">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex flex-col gap-[24px] flex-[0_1_544px] min-w-0" data-node="73:2625">
+        <div class="w-full h-[640px]" data-node="73:2626"><Img node="73:2626" alt="Commercial building interior after a fire" class="w-full h-full object-cover" /></div>
+        <div class="flex gap-[16px]" data-node="73:2627">
+          <div class="flex-1 min-w-0 h-[320px]" data-node="73:2628"><Img node="73:2628" alt="Closed storefront during business interruption" class="w-full h-full object-cover" /></div>
+          <div class="flex-1 min-w-0 h-[320px]" data-node="73:2629"><Img node="73:2629" alt="Fire-damaged apartment building exterior" class="w-full h-full object-cover" /></div>
+        </div>
+        <div aria-hidden="true" class="flex items-center gap-[16px] pt-[16px]" data-node="73:2630">
+          <span class="flex-1 h-px bg-white"></span>
+          <span class="t-label whitespace-nowrap" data-node="73:2632">Your Claim. Our Fight.</span>
+          <span class="flex-1 h-px bg-white"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

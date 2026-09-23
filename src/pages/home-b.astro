@@ -1,0 +1,48 @@
+---
+// Home B, "Private-client case file" (second homepage concept). Noindex.
+// Figma: Desktop 53:148 (1280×8641), Mobile 53:149 (390×10816) on page "Home B" (45:70).
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CallBar from '../components/CallBar.astro';
+import ChipBar from '../sections/home-b/ChipBar.astro';
+import Hero from '../sections/home-b/Hero.astro';
+import ResultsLedgerMobile from '../sections/home-b/ResultsLedgerMobile.astro';
+import WhyEarly from '../sections/home-b/WhyEarly.astro';
+import Founder from '../sections/home-b/Founder.astro';
+import Claims from '../sections/home-b/Claims.astro';
+import Compare from '../sections/home-b/Compare.astro';
+import Review from '../sections/home-b/Review.astro';
+---
+<Base
+  title="The New Way to Settle Claims | Blue Star Adjusters"
+  description="We level the playing field. No upfront cost: we're paid a percentage of what we recover, and you always have final say on any settlement."
+  noindex
+>
+  <Header theme="light" node="53:150" />
+  <ChipBar />
+  <main class="hb-main overflow-x-clip">
+    <Hero />
+    <ResultsLedgerMobile />
+    <WhyEarly />
+    <Founder />
+    <Claims />
+    <Compare />
+    <Review />
+  </main>
+  <Footer node="57:510" />
+  <CallBar node="62:624" />
+</Base>
+
+<style is:global>
+  /* Baseline nudge (mobile only). Figma sets glyphs on a fractional baseline; Chrome rounds the font ascent/descent
+     to whole pixels, which lands these mobile styles 1px higher than the design: Montserrat 16/26 and 16/20,
+     Schibsted 22/28, 32/36, 46/48 and 72/56 (measured per style against the 53:149 render; the others already match).
+     Only leaf text boxes move (position:relative, so layout and backgrounds are untouched). */
+  /* 1024–1279: the desktop layout is drawn for 1280, so scale it down in two steps instead of overflowing. */
+  @media (min-width: 64rem) and (max-width: 71.998rem) { .hb-main { zoom: .8; } }
+  @media (min-width: 72rem) and (max-width: 79.998rem) { .hb-main { zoom: .9; } }
+  @media (max-width: 63.998rem) {
+    :is(.hb-main, .hb-chipbar) :is(p, h1, h2, h3, li, dt, dd, blockquote, label, a, s, span):not(:empty):not(.sr-only):not(.absolute):not(:has(p, h1, h2, h3, li, dt, dd, blockquote, label, a, s, span, svg, img)):is(.tm-body, .tm-body-strong, .tm-h2, .tm-h3, .tm-display, .bs-btn__label, .hb-nudge, :is(.tm-body, .tm-body-strong, .hb-cmp__tab) *) { position: relative; top: 1px; }
+  }
+</style>

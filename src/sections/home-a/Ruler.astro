@@ -1,0 +1,14 @@
+---
+// Detail / Ruler ticks (73:1630): navy 1px base, a tick every 8px (6px tall), every 40px full height (12px).
+interface Props { class?: string; node?: string; nodeM?: string }
+const { class: cls = '', node, nodeM } = Astro.props;
+---
+<div aria-hidden="true" class:list={['bs-ruler h-[12px] w-full', cls]} data-node={node} data-node-m={nodeM}></div>
+<style>
+  .bs-ruler {
+    background:
+      linear-gradient(var(--color-navy), var(--color-navy)) left bottom / 100% 1px no-repeat,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) left top / 40px 12px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) left bottom / 8px 6px repeat-x;
+  }
+</style>

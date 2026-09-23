@@ -1,0 +1,24 @@
+---
+// Home B mobile chip bar "Section index (sticky)" 58:380 (390×52). Mobile only; sticks to the top of the viewport.
+// Compare / Review tabs (58:389, 58:391) are hidden in Figma and not rendered.
+const tabs = [
+  { label: 'Results', href: '#results', node: '58:381', w: 80 },
+  { label: 'Why early', href: '#why-early', node: '58:383', w: 100 },
+  { label: 'Founder', href: '#founder', node: '58:385', w: 88 },
+  { label: 'Claims', href: '#claims', node: '58:387', w: 78 },
+];
+---
+<nav aria-label="Sections" class="hb-chipbar lg:hidden sticky top-0 z-30 bg-paper border-b border-line h-[52px] box-border overflow-x-auto" data-node="58:380">
+  <ul class="flex gap-[4px] items-end h-full pl-[20px] m-0 list-none">
+    {tabs.map((t, i) => (
+      <li class="shrink-0">
+        <a href={t.href} style={`width:${t.w}px`} class:list={['hb-chip flex items-center justify-center h-[44px] px-[8px] rounded-t-[6px] tm-body-strong whitespace-nowrap box-border', i === 0 ? 'bg-navy text-white' : 'bg-white text-ink border-x border-t border-line']} data-node={t.node}><span>{t.label}</span></a>
+      </li>
+    ))}
+  </ul>
+</nav>
+<style>
+  .hb-chip { transition: color .15s ease, background-color .15s ease; }
+  .hb-chip.bg-white:hover, .hb-chip.bg-white:focus-visible { color: var(--color-royal); background: var(--color-paper); }
+  .hb-chip:focus-visible { outline-offset: -3px; }
+</style>

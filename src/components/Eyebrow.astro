@@ -1,0 +1,13 @@
+---
+// Eyebrow: Figma Section eyebrow 39:91 (Light 39:85 / Dark 39:88). Same size at 390 and 1280.
+// 24×2 rule + 12px gap + Montserrat SemiBold 13/18, 0.26px tracking. Light = royal, Dark = white.
+// Usage: <Eyebrow theme="dark" node="73:1839">Your Claim. Our Fight.</Eyebrow>
+// Props: theme 'light'|'dark'; node = data-node id; as = tag (default 'p'); class = extra classes.
+interface Props { theme?: 'light'|'dark'; node?: string; as?: string; class?: string; id?: string }
+const { theme = 'light', node, as: Tag = 'p', class: cls = '', id } = Astro.props;
+const dark = theme === 'dark';
+---
+<Tag id={id} class:list={['flex items-center gap-[12px] m-0 t-label whitespace-nowrap', dark ? 'text-white' : 'text-royal', cls]} data-node={node}>
+  <span aria-hidden="true" class:list={['block w-[24px] h-[2px] shrink-0', dark ? 'bg-white' : 'bg-royal']}></span>
+  <span><slot /></span>
+</Tag>

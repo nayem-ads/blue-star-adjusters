@@ -1,0 +1,4 @@
+get_design_context 74:2361 (Error summary, desktop). Annotation: shown on submit, receives focus (role=alert); each line links to its field. Inline errors also show on blur.
+Box: bg white, border 1 error + left 4 error, r4, px24 py20, col gap8.
+Title "Check 3 fields before we send your request." 600 17/28 ink.
+Links 500 15/24 error underline: "Phone: enter a 10-digit number." / "Email: enter a full email address." / "What happened: choose one option."

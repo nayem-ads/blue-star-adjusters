@@ -1,0 +1,7 @@
+Results ledger row 41:92
+Desktop 41:73: border-t 1px line, flex gap-40 items-end py-32 w-1120
+ Loss 41:74 w-360 flex-col gap-8: loss Montserrat SemiBold 17/28 navy nowrap; note Montserrat 15/24 ink
+ Offer 41:77 w-240 flex-col gap-6: "Carrier's offer" Montserrat Medium 12/16 .12px ink; offer Schibsted SemiBold 28/34 -0.28px ink line-through
+ Recovered 41:80 flex-1 flex-col gap-6: "Settlement" Montserrat Medium 12/16 .12px royal; recovered Schibsted Medium 64/64 -1.28px navy
+Mobile 41:83: bg white rounded-16 px-20 py-24 w-350 flex-col gap-12
+ loss SemiBold 16/26 navy; Offer row flex gap-8 items-baseline ("Carrier's offer" 12/16 + offer 28/34 line-through); Recovered flex-col gap-2 ("Settlement" 12/16 royal + figure Schibsted Medium 48/50 -0.96px navy); note Montserrat 16/26 ink

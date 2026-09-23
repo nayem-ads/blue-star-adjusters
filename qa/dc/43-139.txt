@@ -1,0 +1,10 @@
+Footer/Desktop 43:139: bg navy, flex-col gap-64 pt-96 pb-40 px-80 w-1280 (h 557)
+ Top 43:140 flex gap-80
+  Lead 43:141 flex-col gap-24 w-400: Logo white 40 (43:142) | "Your Claim. Our Fight." Montserrat 17/28 white | "(916) 507-1005" Schibsted SemiBold 28/34 tracking -0.28 white | Button On-dark "Schedule a Free Review"
+  Columns 43:158 flex-1 gap-56 justify-end, white nowrap; each col flex-col gap-12; head Montserrat SemiBold 13/18 tracking .26px; items Montserrat 15/24
+   The firm: Our Founder, How It Works, Fees, Why Blue Star, Results
+   Claims: Residential, Commercial, Fire & Smoke, Water & Plumbing, Denied or Underpaid
+   Offices: Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, Scottsdale
+ Legal 43:182: border-t 1px white, pt-24, flex justify-between, Montserrat 12/18 white nowrap
+  Disclosure flex-col gap-4: "Blue Star Adjusters, 1610 R Street, Suite 300, Sacramento, California 95811, USA" / "CA DOI License No. 2B60428" / "We represent the insured only."
+  Legal links flex gap-24 items-end: Privacy | Terms | Accessibility

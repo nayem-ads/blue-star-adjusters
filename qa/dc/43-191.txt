@@ -1,0 +1,7 @@
+Footer/Mobile 43:191: bg navy flex-col gap-40 pt-56 pb-120 px-20 w-390 (h 853)
+ Lead 43:192 flex-col gap-16: Logo white 30 | "Your Claim. Our Fight." Montserrat 16/26 | "(916) 507-1005" Schibsted SemiBold 22/28 -0.22px
+ Columns 43:204 flex gap-24; cols flex-1 flex-col gap-12; head Montserrat SemiBold 12/16 .24px; items Montserrat 16/26
+  The firm: Our Founder, How It Works, Fees, Why Blue Star, Results
+  Claims: Residential, Commercial, Fire & Smoke, Water & Plumbing, Denied or Underpaid
+ Offices 43:219 flex-col gap-8: head "Offices"; p 16/26 "Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, Scottsdale"
+ Legal 43:222 border-t white pt-24 flex-col gap-6 Montserrat 12/18: address / license / "We represent the insured only." / "Privacy   Terms   Accessibility" (pre-wrap, 3 spaces)

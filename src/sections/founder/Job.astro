@@ -1,0 +1,45 @@
+---
+// S4 On every claim — the job. Desktop 73:2397 (y 3135, 1280×704, ink with a full-bleed 40px blueprint grid);
+// mobile M4 74:3223 (y 3552, 390×848, paper with a faint 390×336 blueprint grid). Colours exactly as designed.
+import Badge from './Badge.astro';
+import DimLine from './DimLine.astro';
+const rows = [
+  { icon: 'search', text: "He reads a carrier's estimate the way a builder reads a bid, line by line, hunting for what's missing.", n: ['73:2436', '73:2437', '73:2441'], m: ['74:3261', '74:3262', '74:3266'] },
+  { icon: 'ruler', text: 'He knows where upgrade costs hide, from seismic bracing to fire sprinklers.', n: ['73:2442', '73:2443', '73:2447'], m: ['74:3267', '74:3268', '74:3272'] },
+  { icon: 'building', text: 'He has sat across from plan checkers and fire marshals. On a commercial loss, what the building department will require often decides the scope.', n: ['73:2448', '73:2449', '73:2452'], m: ['74:3273', '74:3274', '74:3277'] },
+];
+---
+<section aria-label="On every claim" class="bs-fjob relative overflow-hidden bg-paper lg:bg-ink lg:min-h-[704px]" data-node="73:2397" data-node-m="74:3223">
+  <div aria-hidden="true" class="bs-fjob__grid hidden lg:block absolute inset-0" data-node="85:3275"></div>
+  <div aria-hidden="true" class="bs-fjob__grid-m lg:hidden absolute left-0 top-0 w-full h-[336px]" data-node-m="74:3224"></div>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[62px] flex flex-col gap-[24px] lg:flex-row lg:items-start lg:gap-[64px] lg:px-[80px] lg:py-[120px]">
+    <div class="contents lg:flex lg:flex-col lg:gap-[32px] lg:flex-[0_1_496px] lg:min-w-0" data-node="73:2427">
+      <DimLine label="Line by line" class="w-[240px] lg:w-[320px]" node="73:2428" nodeM="74:3253" />
+      <p class="m-0 text-navy tm-h2 lg:t-h2" data-node="73:2434" data-node-m="74:3259">On every claim, the job is the same: forensically measure the loss to return the property to its pre-loss condition.</p>
+    </div>
+    <ul class="m-0 p-0 list-none flex flex-col pt-[8px] lg:pt-0 lg:flex-[0_1_560px] lg:min-w-0" aria-label="How he reads a claim" data-node="73:2435" data-node-m="74:3260">
+      {rows.map((r) => (
+        <li class="flex items-start gap-[16px] py-[24px] border-t border-navy last:border-b lg:gap-[24px] lg:py-[28px]" data-node={r.n[0]} data-node-m={r.m[0]}>
+          <Badge icon={r.icon} node={r.n[1]} nodeM={r.m[1]} />
+          <p class="m-0 flex-1 min-w-0 text-ink tm-body lg:t-lead" data-node={r.n[2]} data-node-m={r.m[2]}>{r.text}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  /* 85:3275: royal 1px lines every 40px, every 4th line at 10%, the others at 5% (frame is 704 tall, last H line at 680). */
+  .bs-fjob__grid {
+    --maj: rgb(19 63 170 / .10); --min: rgb(19 63 170 / .05);
+    background:
+      repeating-linear-gradient(to right, var(--maj) 0 1px, transparent 1px 40px, var(--min) 40px 41px, transparent 41px 80px, var(--min) 80px 81px, transparent 81px 120px, var(--min) 120px 121px, transparent 121px 160px),
+      repeating-linear-gradient(to bottom, var(--maj) 0 1px, transparent 1px 40px, var(--min) 40px 41px, transparent 41px 80px, var(--min) 80px 81px, transparent 81px 120px, var(--min) 120px 121px, transparent 121px 160px);
+  }
+  /* 74:3224: Detail/Blueprint grid (640×400 master) scaled to 390×336 at 18% opacity; lines royal 8%. */
+  .bs-fjob__grid-m {
+    opacity: .18;
+    background:
+      repeating-linear-gradient(to right, rgb(19 63 170 / .08) 0 1px, transparent 1px 24.375px),
+      repeating-linear-gradient(to bottom, rgb(19 63 170 / .08) 0 1px, transparent 1px 33.6px);
+  }
+</style>

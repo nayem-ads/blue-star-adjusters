@@ -1,0 +1,1073 @@
+<canvas id="45:70" name="Home B" x="0" y="0" width="0" height="0">
+  <frame id="53:148" name="Desktop — Home B (1280)" x="0" y="0" width="1280" height="8641">
+    <instance id="53:150" name="Header / Desktop (Light)" x="0" y="0" width="1280" height="88" />
+    <frame id="53:184" name="Section / Results (hero)" x="0" y="88" width="1280" height="1667">
+      <frame id="74:4048" name="Blueprint grid (cropped)" x="800" y="16" width="480" height="400">
+        <rounded-rectangle id="74:4049" name="V" x="0" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4050" name="V" x="30" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4051" name="V" x="60" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4052" name="V" x="90" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4053" name="V" x="120" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4054" name="V" x="150" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4055" name="V" x="180" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4056" name="V" x="210" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4057" name="V" x="240" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4058" name="V" x="270" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4059" name="V" x="300" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4060" name="V" x="330" y="0" width="0.75" height="400" />
+        <rounded-rectangle id="74:4066" name="H" x="0" y="0" width="320" height="1" />
+        <rounded-rectangle id="74:4067" name="H" x="0" y="40" width="320" height="1" />
+        <rounded-rectangle id="74:4068" name="H" x="0" y="80" width="320" height="1" />
+        <rounded-rectangle id="74:4069" name="H" x="0" y="120" width="320" height="1" />
+        <rounded-rectangle id="74:4070" name="H" x="0" y="160" width="320" height="1" />
+        <rounded-rectangle id="74:4071" name="H" x="0" y="200" width="320" height="1" />
+        <rounded-rectangle id="74:4072" name="H" x="0" y="240" width="320" height="1" />
+        <rounded-rectangle id="74:4073" name="H" x="0" y="280" width="320" height="1" />
+        <rounded-rectangle id="74:4074" name="H" x="0" y="320" width="320" height="1" />
+        <rounded-rectangle id="74:4075" name="H" x="0" y="360" width="320" height="1" />
+        <rounded-rectangle id="74:4076" name="H" x="0" y="400" width="320" height="1" />
+      </frame>
+      <vector id="54:256" name="Diagonal (B-mark angle 25.5°)" x="0" y="769.7373657226562" width="1280" height="611" />
+      <frame id="53:221" name="Case file / photo stack" x="800" y="16" width="440" height="540">
+        <frame id="53:232" name="Print / gym-ruin" x="6" y="176" width="290.30942537635565" height="368.90104972571135">
+          <rounded-rectangle id="53:233" name="Index tab" x="40" y="-12" width="56.20090063661337" height="12.975507244467735" />
+          <instance id="53:234" name="Photo slot" x="10" y="10" width="269.9634230583906" height="348.5550474077463" />
+        </frame>
+        <frame id="53:222" name="Print / ai-water-loss" x="12" y="8" width="369.3431643694639" height="286.39690870046616">
+          <rounded-rectangle id="53:223" name="Index tab" x="220" y="-12" width="56.38468101620674" height="13.947061836719513" />
+          <instance id="53:224" name="Photo slot" x="10" y="10" width="348.657357648015" height="265.71110197901726" />
+        </frame>
+        <frame id="53:227" name="Print / stair-detail" x="162" y="64" width="288.39569038152695" height="369.412963360548">
+          <rounded-rectangle id="53:228" name="Index tab" x="150" y="-12" width="56.38468101620674" height="13.947061836719513" />
+          <instance id="53:229" name="Photo slot" x="10" y="10" width="267.70988366007805" height="348.7271566390991" />
+        </frame>
+      </frame>
+      <frame id="53:185" name="Rail / Section index (sticky)" x="80" y="40" width="168" height="264">
+        <frame id="53:186" name="Tab / Results" x="1" y="0" width="168" height="44">
+          <text id="53:187" name="Tab label" x="16" y="12" width="56" height="20" />
+        </frame>
+        <frame id="53:188" name="Tab / Why early" x="1" y="44" width="152" height="44">
+          <text id="53:189" name="Tab label" x="16" y="12" width="76" height="20" />
+        </frame>
+        <frame id="53:190" name="Tab / Founder" x="1" y="88" width="152" height="44">
+          <text id="53:191" name="Tab label" x="16" y="12" width="65" height="20" />
+        </frame>
+        <frame id="53:192" name="Tab / Claims" x="1" y="132" width="152" height="44">
+          <text id="53:193" name="Tab label" x="16" y="12" width="52" height="20" />
+        </frame>
+        <frame id="53:194" name="Tab / Compare" x="1" y="176" width="152" height="44">
+          <text id="53:195" name="Tab label" x="16" y="12" width="71" height="20" />
+        </frame>
+        <frame id="53:196" name="Tab / Review" x="1" y="220" width="152" height="44">
+          <text id="53:197" name="Tab label" x="16" y="12" width="56" height="20" />
+        </frame>
+      </frame>
+      <frame id="53:198" name="Hero content" x="272" y="40" width="928" height="1507">
+        <frame id="53:199" name="Intro" x="0" y="0" width="512" height="390">
+          <instance id="53:200" name="Eyebrow" x="0" y="0" width="189" height="18" />
+          <frame id="53:203" name="Gap" x="0" y="18" width="8" height="16" />
+          <text id="53:204" name="H1" x="0" y="34" width="512" height="136" />
+          <frame id="53:205" name="Gap" x="0" y="170" width="8" height="16" />
+          <text id="53:206" name="Lead line" x="0" y="186" width="512" height="32" />
+          <frame id="53:207" name="Gap" x="0" y="218" width="8" height="32" />
+          <frame id="53:208" name="CTAs" x="0" y="250" width="504" height="52">
+            <instance id="53:209" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+            <instance id="53:213" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+          </frame>
+          <frame id="53:218" name="Gap" x="0" y="302" width="8" height="16" />
+          <text id="53:219" name="Trust line" x="0" y="318" width="512" height="72" />
+        </frame>
+        <frame id="53:288" name="Gap" x="0" y="390" width="8" height="24" />
+        <frame id="53:289" name="Ledger sheet" x="0" y="414" width="928" height="867">
+          <text id="85:3101" name="Ledger label (H2 for SEO)" x="49" y="33" width="830" height="18" />
+          <frame id="85:3105" name="Gap" x="49" y="51" width="8" height="24" />
+          <frame id="53:290" name="Case / Palisades fire" x="49" y="75" width="830" height="278">
+            <text id="53:292" name="Loss" x="0" y="0" width="830" height="34" />
+            <frame id="53:294" name="Figures" x="0" y="50" width="792" height="132">
+              <frame id="53:295" name="Offer" x="0" y="36" width="246" height="96">
+                <text id="53:296" name="Offer caption" x="0" y="0" width="83" height="16" />
+                <text id="53:297" name="Offer figure" x="0" y="20" width="246" height="64" />
+              </frame>
+              <frame id="53:298" name="Settlement" x="294" y="0" width="498" height="132">
+                <text id="53:299" name="Settlement caption" x="0" y="0" width="70" height="16" />
+                <text id="53:300" name="Settlement figure" x="0" y="20" width="498" height="112" />
+              </frame>
+            </frame>
+            <instance id="73:1320" name="Dimension line / Measured" x="0" y="198" width="830" height="16" />
+            <text id="53:293" name="Note" x="0" y="230" width="560" height="48" />
+          </frame>
+          <frame id="85:3104" name="Gap" x="49" y="353" width="8" height="40" />
+          <rounded-rectangle id="53:301" name="Rule" x="49" y="393" width="830" height="1" />
+          <frame id="85:3103" name="Gap" x="49" y="394" width="8" height="40" />
+          <frame id="53:302" name="Cases 2–3" x="49" y="434" width="830" height="334">
+            <frame id="53:303" name="Case / Smoke damage" x="0" y="0" width="440" height="266">
+              <text id="53:304" name="Loss" x="0" y="0" width="440" height="28" />
+              <text id="53:305" name="Note" x="0" y="40" width="440" height="48" />
+              <frame id="53:306" name="Offer" x="0" y="100" width="440" height="62">
+                <text id="53:307" name="Offer caption" x="0" y="8" width="83" height="16" />
+                <text id="53:308" name="Offer figure" x="0" y="28" width="440" height="34" />
+              </frame>
+              <frame id="53:309" name="Settlement" x="0" y="174" width="440" height="92">
+                <text id="53:310" name="Settlement caption" x="0" y="8" width="70" height="16" />
+                <frame id="54:251" name="Figure line" x="0" y="28" width="363" height="64">
+                  <text id="54:252" name="Figure unit" x="0" y="35" width="53" height="28" />
+                  <text id="54:253" name="Settlement figure" x="65" y="0" width="298" height="64" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="53:312" name="Case / Estate fire" x="488" y="0" width="344" height="334">
+              <text id="53:313" name="Loss" x="0" y="0" width="344" height="28" />
+              <text id="53:314" name="Note" x="0" y="40" width="344" height="24" />
+              <frame id="53:315" name="Offer" x="0" y="76" width="344" height="86">
+                <text id="53:317" name="Offer figure" x="0" y="8" width="344" height="24" />
+              </frame>
+              <frame id="53:318" name="Settlement" x="0" y="174" width="344" height="160">
+                <text id="53:319" name="Settlement caption" x="0" y="8" width="70" height="16" />
+                <frame id="53:320" name="Figure line" x="0" y="28" width="227" height="64">
+                  <text id="53:321" name="Settlement figure" x="0" y="0" width="136" height="64" />
+                  <text id="53:322" name="Figure unit" x="148" y="35" width="79" height="28" />
+                </frame>
+                <frame id="53:323" name="Figure line" x="0" y="96" width="324" height="64">
+                  <text id="53:324" name="Settlement figure" x="0" y="0" width="236" height="64" />
+                  <text id="53:325" name="Figure unit" x="248" y="35" width="76" height="28" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="85:3102" name="Gap" x="49" y="768" width="8" height="40" />
+          <text id="53:326" name="Results disclaimer" x="49" y="808" width="830" height="18" />
+        </frame>
+        <frame id="54:254" name="Gap" x="0" y="1281" width="8" height="64" />
+        <text id="54:255" name="Statement (V)" x="0" y="1345" width="640" height="96" />
+        <frame id="73:1327" name="Gap" x="0" y="1441" width="8" height="24" />
+        <frame id="73:1328" name="Fact chips" x="0" y="1465" width="702" height="42">
+          <frame id="73:1329" name="Fact chip / 7 offices" x="0" y="0" width="125" height="42">
+            <instance id="73:1330" name="Icon/map-pin" x="13" y="9" width="24" height="24" />
+            <text id="73:1333" name="Chip label" x="45" y="9" width="63" height="24" />
+          </frame>
+          <frame id="73:1334" name="Fact chip / 5 states: CA, NV, OR, WA, AZ" x="137" y="0" width="273" height="42">
+            <instance id="73:1335" name="Icon/building" x="13" y="9" width="24" height="24" />
+            <text id="73:1337" name="Chip label" x="45" y="9" width="211" height="24" />
+          </frame>
+          <frame id="73:1338" name="Fact chip / CA DOI License No. 2B60428" x="422" y="0" width="280" height="42">
+            <instance id="73:1339" name="Icon/shield" x="13" y="9" width="24" height="24" />
+            <text id="73:1342" name="Chip label" x="45" y="9" width="218" height="24" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="55:269" name="Section / Why early" x="0" y="1755" width="1280" height="1288">
+      <frame id="55:270" name="Section index" x="80" y="120" width="168" height="42">
+        <text id="55:271" name="Index label" x="0" y="8" width="76" height="20" />
+        <rounded-rectangle id="55:272" name="Index rule" x="0" y="40" width="48" height="2" />
+      </frame>
+      <frame id="55:273" name="Content" x="272" y="120" width="928" height="1072">
+        <text id="55:274" name="H2 (V)" x="0" y="0" width="720" height="108" />
+        <frame id="55:275" name="Gap" x="0" y="108" width="8" height="24" />
+        <frame id="73:1369" name="Lead row (clock)" x="0" y="132" width="676" height="32">
+          <instance id="73:1370" name="Icon/clock" x="0" y="4" width="24" height="24" />
+          <text id="55:276" name="Lead (V)" x="36" y="0" width="640" height="32" />
+        </frame>
+        <frame id="55:277" name="Gap" x="0" y="164" width="8" height="56" />
+        <frame id="55:278" name="Five steps" x="0" y="220" width="928" height="290">
+          <rounded-rectangle id="73:1343" name="Connector line" x="20" y="20" width="768" height="1" />
+          <frame id="55:279" name="Step 01" x="0" y="0" width="160" height="242">
+            <frame id="73:1344" name="Icon circle / step 1" x="0" y="0" width="40" height="40">
+              <instance id="73:1345" name="Icon/search" x="8" y="8" width="24" height="24" />
+            </frame>
+            <frame id="73:1348" name="Gap" x="0" y="52" width="8" height="8" />
+            <text id="55:280" name="Step number" x="0" y="72" width="14" height="18" />
+            <text id="55:281" name="Step name" x="0" y="102" width="160" height="56" />
+            <text id="55:282" name="Step note" x="0" y="170" width="160" height="72" />
+          </frame>
+          <frame id="55:283" name="Step 02" x="192" y="0" width="160" height="266">
+            <frame id="73:1349" name="Icon circle / step 2" x="0" y="0" width="40" height="40">
+              <instance id="73:1350" name="Icon/document" x="8" y="8" width="24" height="24" />
+            </frame>
+            <frame id="73:1353" name="Gap" x="0" y="52" width="8" height="8" />
+            <text id="55:284" name="Step number" x="0" y="72" width="17" height="18" />
+            <text id="55:285" name="Step name" x="0" y="102" width="160" height="56" />
+            <text id="55:286" name="Step note" x="0" y="170" width="160" height="96" />
+          </frame>
+          <frame id="55:287" name="Step 03" x="384" y="0" width="160" height="266">
+            <frame id="73:1354" name="Icon circle / step 3" x="0" y="0" width="40" height="40">
+              <instance id="73:1355" name="Icon/ruler" x="8" y="8" width="24" height="24" />
+            </frame>
+            <frame id="73:1358" name="Gap" x="0" y="52" width="8" height="8" />
+            <text id="55:288" name="Step number" x="0" y="72" width="17" height="18" />
+            <text id="55:289" name="Step name" x="0" y="102" width="160" height="56" />
+            <text id="55:290" name="Step note" x="0" y="170" width="160" height="96" />
+          </frame>
+          <frame id="55:291" name="Step 04" x="576" y="0" width="160" height="290">
+            <frame id="73:1359" name="Icon circle / step 4" x="0" y="0" width="40" height="40">
+              <instance id="73:1360" name="Icon/home" x="8" y="8" width="24" height="24" />
+            </frame>
+            <frame id="73:1363" name="Gap" x="0" y="52" width="8" height="8" />
+            <text id="55:292" name="Step number" x="0" y="72" width="18" height="18" />
+            <text id="55:293" name="Step name" x="0" y="102" width="160" height="56" />
+            <text id="55:294" name="Step note" x="0" y="170" width="160" height="120" />
+          </frame>
+          <frame id="55:295" name="Step 05" x="768" y="0" width="160" height="266">
+            <frame id="73:1364" name="Icon circle / step 5" x="0" y="0" width="40" height="40">
+              <instance id="73:1365" name="Icon/shield" x="8" y="8" width="24" height="24" />
+            </frame>
+            <frame id="73:1368" name="Gap" x="0" y="52" width="8" height="8" />
+            <text id="55:296" name="Step number" x="0" y="72" width="17" height="18" />
+            <text id="55:297" name="Step name" x="0" y="102" width="160" height="56" />
+            <text id="55:298" name="Step note" x="0" y="170" width="160" height="96" />
+          </frame>
+        </frame>
+        <frame id="55:299" name="Gap" x="0" y="510" width="8" height="32" />
+        <frame id="55:300" name="Link / How It Works" x="0" y="542" width="150" height="52">
+          <text id="55:301" name="Link label" x="0" y="12" width="118" height="28" />
+          <instance id="55:302" name="Icon / arrow-right" x="126" y="14" width="24" height="24" />
+        </frame>
+        <frame id="55:304" name="Gap" x="0" y="594" width="8" height="96" />
+        <frame id="55:305" name="Rules changed + pull line" x="0" y="690" width="928" height="382">
+          <frame id="55:306" name="The rules changed" x="0" y="0" width="448" height="382">
+            <frame id="73:1374" name="Fact chip / signed date" x="0" y="0" width="267" height="42">
+              <instance id="73:1375" name="Icon/document" x="13" y="9" width="24" height="24" />
+              <text id="73:1378" name="Chip label" x="45" y="9" width="205" height="24" />
+            </frame>
+            <text id="55:307" name="H3" x="0" y="58" width="448" height="68" />
+            <text id="55:308" name="Body / Act" x="0" y="142" width="448" height="112" />
+            <text id="55:309" name="Body / First estimate" x="0" y="270" width="448" height="112" />
+          </frame>
+          <frame id="55:310" name="Pull line (V)" x="480" y="0" width="448" height="276">
+            <text id="73:1373" name="Quote glyph" x="34" y="0" width="52" height="72" />
+            <text id="55:311" name="Pull line" x="34" y="72" width="414" height="204" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="56:277" name="Section / Founder" x="0" y="3043" width="1280" height="1008">
+      <instance id="73:2265" name="B-mark (faint)" x="686.97802734375" y="340" width="593.02197265625" height="720" />
+      <frame id="56:278" name="Section index" x="80" y="120" width="168" height="42">
+        <text id="56:279" name="Index label" x="0" y="8" width="65" height="20" />
+        <rounded-rectangle id="56:280" name="Index rule" x="0" y="40" width="48" height="2" />
+      </frame>
+      <frame id="56:281" name="Content" x="272" y="120" width="928" height="792">
+        <frame id="56:282" name="Founder row" x="0" y="0" width="928" height="792">
+          <frame id="85:3134" name="Founder media" x="0" y="0" width="416" height="792">
+            <frame id="56:283" name="Print / mike" x="0" y="0" width="416" height="500">
+              <rounded-rectangle id="56:284" name="Index tab" x="32" y="-12" width="56" height="12" />
+              <instance id="56:285" name="Photo slot" x="12" y="12" width="392" height="476" />
+            </frame>
+            <frame id="85:3135" name="Gap" x="0" y="500" width="8" height="56" />
+            <frame id="73:2280" name="Fact chips" x="0" y="556" width="416" height="96">
+              <frame id="73:2281" name="Fact chip / 25 years as a developer and builder" x="0" y="0" width="329" height="42">
+                <instance id="73:2282" name="Icon/ruler" x="13" y="9" width="24" height="24" />
+                <text id="73:2285" name="Chip label" x="45" y="9" width="267" height="24" />
+              </frame>
+              <frame id="73:2286" name="Fact chip / CA DOI License No. 2B60428" x="0" y="54" width="280" height="42">
+                <instance id="73:2287" name="Icon/shield" x="13" y="9" width="24" height="24" />
+                <text id="73:2290" name="Chip label" x="45" y="9" width="218" height="24" />
+              </frame>
+            </frame>
+            <frame id="85:3136" name="Gap" x="0" y="652" width="8" height="24" />
+            <frame id="56:298" name="CTAs" x="0" y="676" width="416" height="116">
+              <instance id="85:3137" name="Button / Schedule a Free Review with Michael" x="0" y="0" width="363" height="52" />
+              <instance id="56:299" name="Button / Meet Michael" x="0" y="64" width="167" height="52" />
+            </frame>
+          </frame>
+          <frame id="56:288" name="Founder text" x="480" y="0" width="448" height="738">
+            <frame id="73:2270" name="Tagline rule" x="0" y="0" width="239" height="18">
+              <rounded-rectangle id="73:2271" name="Rule" x="0" y="8.5" width="32" height="1" />
+              <text id="73:2272" name="Tagline" x="44" y="0" width="151" height="18" />
+              <rounded-rectangle id="73:2273" name="Rule" x="207" y="8.5" width="32" height="1" />
+            </frame>
+            <frame id="73:2274" name="Gap" x="0" y="18" width="8" height="24" />
+            <text id="56:289" name="H2 (V)" x="0" y="42" width="448" height="108" />
+            <frame id="56:290" name="Gap" x="0" y="150" width="8" height="24" />
+            <text id="56:291" name="Body" x="0" y="174" width="448" height="168" />
+            <frame id="56:292" name="Gap" x="0" y="342" width="8" height="40" />
+            <text id="85:3141" name="Quote glyph" x="0" y="382" width="39" height="56" />
+            <frame id="73:2278" name="Gap" x="0" y="438" width="8" height="8" />
+            <text id="56:293" name="Quote (V)" x="0" y="446" width="448" height="192" />
+            <frame id="56:294" name="Gap" x="0" y="638" width="8" height="24" />
+            <text id="56:295" name="Attribution name" x="0" y="662" width="448" height="28" />
+            <text id="56:296" name="Attribution role" x="0" y="690" width="448" height="48" />
+          </frame>
+        </frame>
+      </frame>
+      <instance id="73:2291" name="Crop marks / founder print" x="256" y="104" width="448" height="532" />
+    </frame>
+    <frame id="57:215" name="Section / Claims" x="0" y="4051" width="1280" height="1817">
+      <frame id="57:216" name="Section index" x="80" y="120" width="168" height="42">
+        <text id="57:217" name="Index label" x="0" y="8" width="52" height="20" />
+        <rounded-rectangle id="57:218" name="Index rule" x="0" y="40" width="48" height="2" />
+      </frame>
+      <frame id="57:219" name="Content" x="272" y="120" width="928" height="1601">
+        <text id="57:220" name="H2" x="0" y="0" width="640" height="108" />
+        <frame id="57:221" name="Gap" x="0" y="108" width="8" height="48" />
+        <frame id="57:222" name="Claims row" x="0" y="156" width="928" height="783">
+          <frame id="57:223" name="Routing list" x="0" y="0" width="592" height="783">
+            <frame id="57:224" name="Route / Code Upgrades" x="0" y="1" width="592" height="115">
+              <frame id="73:2301" name="Icon circle / Code Upgrades" x="0" y="24" width="40" height="40">
+                <instance id="73:2302" name="Icon/building" x="8" y="8" width="24" height="24" />
+              </frame>
+              <frame id="73:2300" name="Route text" x="60" y="24" width="532" height="66">
+                <text id="57:225" name="Situation" x="0" y="0" width="532" height="34" />
+                <frame id="57:226" name="Link" x="0" y="42" width="142" height="24">
+                  <text id="57:227" name="Claim page" x="0" y="0" width="118" height="24" />
+                  <instance id="57:228" name="Icon / arrow-right" x="126" y="4" width="16" height="16" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="57:230" name="Route / Fire &amp; Smoke" x="0" y="116" width="592" height="115">
+              <frame id="73:2305" name="Icon circle / Fire &amp; Smoke" x="0" y="24" width="40" height="40">
+                <instance id="73:2306" name="Icon/flame" x="8" y="8" width="24" height="24" />
+              </frame>
+              <frame id="73:2304" name="Route text" x="60" y="24" width="532" height="66">
+                <text id="57:231" name="Situation" x="0" y="0" width="532" height="34" />
+                <frame id="57:232" name="Link" x="0" y="42" width="124" height="24">
+                  <text id="57:233" name="Claim page" x="0" y="0" width="100" height="24" />
+                  <instance id="57:234" name="Icon / arrow-right" x="108" y="4" width="16" height="16" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="57:236" name="Route / Water" x="0" y="231" width="592" height="115">
+              <frame id="73:2310" name="Icon circle / Water" x="0" y="24" width="40" height="40">
+                <instance id="73:2311" name="Icon/droplet" x="8" y="8" width="24" height="24" />
+              </frame>
+              <frame id="73:2309" name="Route text" x="60" y="24" width="532" height="66">
+                <text id="57:237" name="Situation" x="0" y="0" width="532" height="34" />
+                <frame id="57:238" name="Link" x="0" y="42" width="71" height="24">
+                  <text id="57:239" name="Claim page" x="0" y="0" width="47" height="24" />
+                  <instance id="57:240" name="Icon / arrow-right" x="55" y="4" width="16" height="16" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="57:242" name="Route / Denied or Underpaid" x="0" y="346" width="592" height="115">
+              <frame id="73:2314" name="Icon circle / Denied or Underpaid" x="0" y="24" width="40" height="40">
+                <instance id="73:2315" name="Icon/document" x="8" y="8" width="24" height="24" />
+              </frame>
+              <frame id="73:2313" name="Route text" x="60" y="24" width="532" height="66">
+                <text id="57:243" name="Situation" x="0" y="0" width="532" height="34" />
+                <frame id="57:244" name="Link" x="0" y="42" width="185" height="24">
+                  <text id="57:245" name="Claim page" x="0" y="0" width="161" height="24" />
+                  <instance id="57:246" name="Icon / arrow-right" x="169" y="4" width="16" height="16" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="57:248" name="Route / Contents" x="0" y="461" width="592" height="115">
+              <frame id="73:2319" name="Icon circle / Contents" x="0" y="24" width="40" height="40">
+                <instance id="73:2320" name="Icon/search" x="8" y="8" width="24" height="24" />
+              </frame>
+              <frame id="73:2318" name="Route text" x="60" y="24" width="532" height="66">
+                <text id="57:249" name="Situation" x="0" y="0" width="532" height="34" />
+                <frame id="57:250" name="Link" x="0" y="42" width="94" height="24">
+                  <text id="57:251" name="Claim page" x="0" y="0" width="70" height="24" />
+                  <instance id="57:252" name="Icon / arrow-right" x="78" y="4" width="16" height="16" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="57:254" name="Route / Additional Living Expenses" x="0" y="576" width="592" height="115">
+              <frame id="73:2324" name="Icon circle / Additional Living Expenses" x="0" y="24" width="40" height="40">
+                <instance id="73:2325" name="Icon/home" x="8" y="8" width="24" height="24" />
+              </frame>
+              <frame id="73:2323" name="Route text" x="60" y="24" width="532" height="66">
+                <text id="57:255" name="Situation" x="0" y="0" width="532" height="34" />
+                <frame id="57:256" name="Link" x="0" y="42" width="230" height="24">
+                  <text id="57:257" name="Claim page" x="0" y="0" width="206" height="24" />
+                  <instance id="57:258" name="Icon / arrow-right" x="214" y="4" width="16" height="16" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="57:260" name="Gap" x="0" y="691" width="8" height="40" />
+            <frame id="57:261" name="CTAs" x="0" y="731" width="253" height="52">
+              <instance id="57:262" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+            </frame>
+          </frame>
+          <frame id="57:267" name="Case file / photo stack" x="640" y="0" width="288" height="640">
+            <frame id="57:268" name="Print / ai-commercial-fire" x="8" y="24" width="279.0045838356018" height="329.1581337749958">
+              <rounded-rectangle id="57:269" name="Index tab" x="150" y="-12" width="56.38468101620674" height="13.947061836719513" />
+              <instance id="57:270" name="Photo slot" x="10" y="10" width="258.3187771141529" height="308.4723270535469" />
+            </frame>
+            <frame id="57:273" name="Print / ai-contents" x="24" y="300" width="268.28752994537354" height="326.696353033185">
+              <rounded-rectangle id="57:274" name="Index tab" x="40" y="-12" width="56.29493401944637" height="13.461797088384628" />
+              <instance id="57:275" name="Photo slot" x="10" y="10" width="247.77084432542324" height="306.1796674132347" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="57:376" name="Gap" x="0" y="939" width="8" height="96" />
+        <frame id="57:377" name="Home and business" x="0" y="1035" width="928" height="566">
+          <frame id="57:378" name="List / Homeowner claims" x="0" y="0" width="448" height="566">
+            <frame id="73:2328" name="H3 row" x="0" y="0" width="448" height="90">
+              <frame id="73:2329" name="Icon circle / list" x="0" y="0" width="40" height="40">
+                <instance id="73:2330" name="Icon/home" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="57:379" name="H3 (V)" x="0" y="56" width="448" height="34" />
+            </frame>
+            <frame id="57:380" name="Gap" x="0" y="90" width="8" height="16" />
+            <frame id="57:381" name="Item" x="0" y="106" width="448" height="49">
+              <text id="57:382" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:383" name="Item" x="0" y="155" width="448" height="49">
+              <text id="57:384" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:385" name="Item" x="0" y="204" width="448" height="49">
+              <text id="57:386" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:387" name="Item" x="0" y="253" width="448" height="49">
+              <text id="57:388" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:389" name="Item" x="0" y="302" width="448" height="49">
+              <text id="57:390" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:391" name="Item" x="0" y="351" width="448" height="49">
+              <text id="57:392" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:393" name="Item" x="0" y="400" width="448" height="49">
+              <text id="57:394" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:395" name="Item" x="0" y="449" width="448" height="49">
+              <text id="57:396" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:397" name="Gap" x="0" y="498" width="8" height="16" />
+            <frame id="57:398" name="Link / Homeowner claims" x="0" y="514" width="203" height="52">
+              <text id="57:399" name="Link label" x="0" y="12" width="171" height="28" />
+              <instance id="57:400" name="Icon / arrow-right" x="179" y="14" width="24" height="24" />
+            </frame>
+          </frame>
+          <frame id="57:402" name="List / Business claims" x="480" y="0" width="448" height="566">
+            <frame id="73:2333" name="H3 row" x="0" y="0" width="448" height="90">
+              <frame id="73:2334" name="Icon circle / list" x="0" y="0" width="40" height="40">
+                <instance id="73:2335" name="Icon/building" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="57:403" name="H3 (V)" x="0" y="56" width="448" height="34" />
+            </frame>
+            <frame id="57:404" name="Gap" x="0" y="90" width="8" height="16" />
+            <frame id="57:405" name="Item" x="0" y="106" width="448" height="49">
+              <text id="57:406" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:407" name="Item" x="0" y="155" width="448" height="49">
+              <text id="57:408" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:409" name="Item" x="0" y="204" width="448" height="49">
+              <text id="57:410" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:411" name="Item" x="0" y="253" width="448" height="49">
+              <text id="57:412" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:413" name="Item" x="0" y="302" width="448" height="49">
+              <text id="57:414" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:415" name="Item" x="0" y="351" width="448" height="49">
+              <text id="57:416" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:417" name="Item" x="0" y="400" width="448" height="49">
+              <text id="57:418" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:419" name="Item" x="0" y="449" width="448" height="49">
+              <text id="57:420" name="Item text" x="0" y="12" width="448" height="24" />
+            </frame>
+            <frame id="57:421" name="Gap" x="0" y="498" width="8" height="16" />
+            <frame id="57:422" name="Link / Business claims" x="0" y="514" width="172" height="52">
+              <text id="57:423" name="Link label" x="0" y="12" width="140" height="28" />
+              <instance id="57:424" name="Icon / arrow-right" x="148" y="14" width="24" height="24" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <instance id="73:2337" name="Crop marks / claims prints" x="896" y="252" width="336" height="688" />
+    </frame>
+    <frame id="57:426" name="Section / Compare" x="0" y="5868" width="1280" height="1123">
+      <frame id="57:427" name="Section index" x="80" y="120" width="168" height="42">
+        <text id="57:428" name="Index label" x="0" y="8" width="71" height="20" />
+        <rounded-rectangle id="57:429" name="Index rule" x="0" y="40" width="48" height="2" />
+      </frame>
+      <frame id="57:430" name="Content" x="272" y="120" width="928" height="907">
+        <text id="57:431" name="H2 (V)" x="0" y="0" width="720" height="108" />
+        <frame id="57:432" name="Gap" x="0" y="108" width="8" height="48" />
+        <frame id="57:433" name="Comparison table" x="0" y="156" width="928" height="483">
+          <frame id="57:434" name="Header row" x="0" y="0" width="928" height="84">
+            <frame id="57:435" name="Row label" x="0" y="0" width="224" height="84" />
+            <frame id="57:436" name="Cell / Blue Star" x="224" y="0" width="352" height="84">
+              <text id="57:437" name="Column head" x="32" y="26" width="288" height="34" />
+            </frame>
+            <frame id="57:438" name="Cell / On your own" x="576" y="0" width="352" height="84">
+              <text id="57:439" name="Column head" x="32" y="24" width="320" height="34" />
+            </frame>
+          </frame>
+          <frame id="57:440" name="Row / Building Scope" x="0" y="84" width="928" height="133">
+            <frame id="57:441" name="Row label" x="0" y="0" width="224" height="133">
+              <instance id="73:2634" name="Icon/ruler" x="0" y="25" width="24" height="24" />
+              <text id="57:442" name="Label" x="0" y="61" width="200" height="28" />
+            </frame>
+            <frame id="57:443" name="Cell / Blue Star" x="224" y="0" width="352" height="133">
+              <text id="57:444" name="Cell text" x="32" y="25" width="288" height="84" />
+            </frame>
+            <frame id="57:445" name="Cell / On your own" x="576" y="0" width="352" height="133">
+              <text id="57:446" name="Cell text" x="32" y="25" width="320" height="84" />
+            </frame>
+          </frame>
+          <frame id="57:447" name="Row / Control" x="0" y="217" width="928" height="133">
+            <frame id="57:448" name="Row label" x="0" y="0" width="224" height="133">
+              <instance id="73:2637" name="Icon/document" x="0" y="25" width="24" height="24" />
+              <text id="57:449" name="Label" x="0" y="61" width="200" height="28" />
+            </frame>
+            <frame id="57:450" name="Cell / Blue Star" x="224" y="0" width="352" height="133">
+              <text id="57:451" name="Cell text" x="32" y="25" width="288" height="84" />
+            </frame>
+            <frame id="57:452" name="Cell / On your own" x="576" y="0" width="352" height="133">
+              <text id="57:453" name="Cell text" x="32" y="25" width="320" height="56" />
+            </frame>
+          </frame>
+          <frame id="57:454" name="Row / Final Say" x="0" y="350" width="928" height="133">
+            <frame id="57:455" name="Row label" x="0" y="0" width="224" height="133">
+              <instance id="73:2640" name="Icon/shield" x="0" y="25" width="24" height="24" />
+              <text id="57:456" name="Label" x="0" y="61" width="200" height="28" />
+            </frame>
+            <frame id="57:457" name="Cell / Blue Star" x="224" y="0" width="352" height="133">
+              <text id="57:458" name="Cell text" x="32" y="25" width="288" height="56" />
+            </frame>
+            <frame id="57:459" name="Cell / On your own" x="576" y="0" width="352" height="133">
+              <text id="57:460" name="Cell text" x="32" y="25" width="320" height="84" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="57:461" name="Gap" x="0" y="639" width="8" height="32" />
+        <frame id="57:462" name="Link / See all seven" x="0" y="671" width="145" height="52">
+          <text id="57:463" name="Link label" x="0" y="12" width="113" height="28" />
+          <instance id="57:464" name="Icon / arrow-right" x="121" y="14" width="24" height="24" />
+        </frame>
+        <frame id="73:2643" name="Gap" x="0" y="723" width="8" height="48" />
+        <frame id="73:2644" name="Key facts panel" x="0" y="771" width="928" height="136">
+          <frame id="73:2645" name="Fact" x="32" y="32" width="244.6666717529297" height="72">
+            <frame id="73:2646" name="Icon circle / fact" x="0" y="16" width="40" height="40">
+              <instance id="73:2647" name="Icon/document" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="73:2650" name="Fact text" x="56" y="0" width="188.6666717529297" height="72" />
+          </frame>
+          <frame id="73:2653" name="Gap" x="276.66668701171875" y="64" width="32" height="8" />
+          <rounded-rectangle id="73:2651" name="Divider" x="308.66668701171875" y="40" width="1" height="56" />
+          <frame id="73:2652" name="Gap" x="309.66668701171875" y="64" width="32" height="8" />
+          <frame id="73:2654" name="Fact" x="341.66668701171875" y="44" width="244.66665649414062" height="48">
+            <frame id="73:2655" name="Icon circle / fact" x="0" y="4" width="40" height="40">
+              <instance id="73:2656" name="Icon/check" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="73:2659" name="Fact text" x="56" y="0" width="188.66665649414062" height="48" />
+          </frame>
+          <frame id="73:2662" name="Gap" x="586.3333740234375" y="64" width="32" height="8" />
+          <rounded-rectangle id="73:2660" name="Divider" x="618.3333740234375" y="40" width="1" height="56" />
+          <frame id="73:2661" name="Gap" x="619.3333740234375" y="64" width="32" height="8" />
+          <frame id="73:2663" name="Fact" x="651.3333740234375" y="44" width="244.66665649414062" height="48">
+            <frame id="73:2664" name="Icon circle / fact" x="0" y="4" width="40" height="40">
+              <instance id="73:2665" name="Icon/shield" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="73:2668" name="Fact text" x="56" y="0" width="188.66665649414062" height="48" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="57:466" name="Section / Review" x="0" y="6991" width="1280" height="1093">
+      <frame id="57:467" name="Section index" x="80" y="120" width="168" height="42">
+        <text id="57:468" name="Index label" x="0" y="8" width="56" height="20" />
+        <rounded-rectangle id="57:469" name="Index rule" x="0" y="40" width="48" height="2" />
+      </frame>
+      <frame id="57:470" name="Content" x="272" y="120" width="928" height="877">
+        <frame id="57:471" name="CTA row" x="0" y="0" width="928" height="504">
+          <frame id="57:472" name="CTA text" x="0" y="0" width="504" height="504">
+            <frame id="73:2686" name="Tagline rule" x="0" y="0" width="239" height="18">
+              <rounded-rectangle id="73:2687" name="Rule" x="0" y="8.5" width="32" height="1" />
+              <text id="73:2688" name="Tagline" x="44" y="0" width="151" height="18" />
+              <rounded-rectangle id="73:2689" name="Rule" x="207" y="8.5" width="32" height="1" />
+            </frame>
+            <frame id="73:2690" name="Gap" x="0" y="18" width="8" height="24" />
+            <text id="57:473" name="H2 (V)" x="0" y="42" width="504" height="162" />
+            <frame id="57:474" name="Gap" x="0" y="204" width="8" height="24" />
+            <text id="57:475" name="Body (V)" x="0" y="228" width="504" height="112" />
+            <frame id="57:476" name="Gap" x="0" y="340" width="8" height="40" />
+            <frame id="57:477" name="CTAs" x="0" y="380" width="504" height="52">
+              <instance id="57:478" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+              <instance id="57:482" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+            </frame>
+            <frame id="57:486" name="Gap" x="0" y="432" width="8" height="24" />
+            <text id="57:487" name="Fee line" x="0" y="456" width="504" height="48" />
+          </frame>
+          <frame id="57:488" name="Print / ai-rebuilt-home" x="536" y="9.842530250549316" width="382.6248097792268" height="267.75412437319756">
+            <rounded-rectangle id="57:489" name="Index tab" x="288" y="-12" width="56.29493401944637" height="13.461797088384628" />
+            <instance id="57:490" name="Photo slot" x="10" y="10" width="362.1081241592765" height="247.23743875324726" />
+          </frame>
+        </frame>
+        <frame id="57:493" name="Gap" x="0" y="504" width="8" height="96" />
+        <rounded-rectangle id="57:494" name="Rule" x="0" y="600" width="928" height="1" />
+        <frame id="57:495" name="Gap" x="0" y="601" width="8" height="48" />
+        <frame id="57:496" name="Practice sign-off" x="0" y="649" width="928" height="228">
+          <frame id="57:497" name="Family office" x="0" y="0" width="448" height="212">
+            <frame id="73:2678" name="Icon circle / practice" x="0" y="0" width="40" height="40">
+              <instance id="73:2679" name="Icon/shield" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="57:498" name="H3 (V)" x="0" y="56" width="448" height="68" />
+            <text id="57:499" name="Body (V)" x="0" y="140" width="448" height="72" />
+          </frame>
+          <frame id="57:500" name="Offices" x="480" y="0" width="448" height="228">
+            <frame id="73:2682" name="Icon circle / practice" x="0" y="0" width="40" height="40">
+              <instance id="73:2683" name="Icon/map-pin" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="57:501" name="H3" x="0" y="56" width="448" height="68" />
+            <instance id="73:2691" name="Dimension line / 7 offices" x="0" y="140" width="448" height="16" />
+            <frame id="57:502" name="Office list" x="0" y="172" width="448" height="56">
+              <text id="57:503" name="Office" x="0" y="0" width="104" height="24" />
+              <text id="57:504" name="Office" x="128" y="0" width="93" height="24" />
+              <text id="57:505" name="Office" x="245" y="0" width="105" height="24" />
+              <text id="57:506" name="Office" x="374" y="0" width="40" height="24" />
+              <text id="57:507" name="Office" x="0" y="32" width="67" height="24" />
+              <text id="57:508" name="Office" x="91" y="32" width="53" height="24" />
+              <text id="57:509" name="Office" x="168" y="32" width="80" height="24" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <instance id="73:2669" name="Crop marks / rebuilt print" x="792" y="104" width="415" height="300" />
+    </frame>
+    <instance id="57:510" name="Footer / Desktop" x="0" y="8084" width="1280" height="557" />
+  </frame>
+  <frame id="53:149" name="Mobile — Home B (390)" x="1400" y="0" width="390" height="10816">
+    <instance id="58:353" name="Header / Mobile (Light)" x="0" y="0" width="390" height="64" />
+    <frame id="58:380" name="Chip bar / Section index (sticky)" x="0" y="64" width="390" height="52">
+      <frame id="58:381" name="Tap/Tab Results" x="20" y="7" width="80" height="44">
+        <text id="58:382" name="Tab label" x="9.5" y="9" width="61" height="26" />
+      </frame>
+      <frame id="58:383" name="Tap/Tab Why early" x="104" y="7" width="100" height="44">
+        <text id="58:384" name="Tab label" x="8.5" y="9.5" width="83" height="26" />
+      </frame>
+      <frame id="58:385" name="Tap/Tab Founder" x="208" y="7" width="88" height="44">
+        <text id="58:386" name="Tab label" x="9" y="9.5" width="70" height="26" />
+      </frame>
+      <frame id="58:387" name="Tap/Tab Claims" x="300" y="7" width="78" height="44">
+        <text id="58:388" name="Tab label" x="11" y="9.5" width="56" height="26" />
+      </frame>
+      <frame id="58:389" name="Tap/Tab Compare" x="408" y="7" width="102" height="44" hidden="true">
+        <text id="58:390" name="Tab label" x="13" y="9.5" width="76" height="26" />
+      </frame>
+      <frame id="58:391" name="Tap/Tab Review" x="408" y="7" width="86" height="44" hidden="true">
+        <text id="58:392" name="Tab label" x="13" y="9.5" width="60" height="26" />
+      </frame>
+    </frame>
+    <frame id="58:393" name="Section / Results (hero)" x="0" y="116" width="390" height="691">
+      <instance id="58:394" name="Eyebrow" x="20" y="24" width="189" height="18" />
+      <frame id="58:397" name="Gap" x="20" y="42" width="8" height="12" />
+      <text id="58:398" name="H1" x="20" y="54" width="350" height="96" />
+      <frame id="58:399" name="Gap" x="20" y="150" width="8" height="12" />
+      <text id="58:400" name="Lead line" x="20" y="162" width="350" height="28" />
+      <frame id="58:401" name="Gap" x="20" y="190" width="8" height="16" />
+      <frame id="58:402" name="Case file / photo stack" x="20" y="206" width="350" height="168">
+        <frame id="58:413" name="Print / gym-ruin" x="4" y="0" width="224.11292493343353" height="165.70410184562206">
+          <rounded-rectangle id="58:414" name="Index tab" x="24" y="-9" width="40.248062796890736" height="11.043651252985" />
+          <instance id="58:415" name="Photo slot" x="8" y="8" width="207.6995764374733" height="149.29075334966183" />
+        </frame>
+        <frame id="58:408" name="Print / stair-detail" x="216" y="6" width="133.50594687461853" height="164.3696699142456">
+          <rounded-rectangle id="58:409" name="Index tab" x="64" y="-9" width="40.324628576636314" height="11.389888226985931" />
+          <instance id="58:410" name="Photo slot" x="8" y="8" width="116.95730149745941" height="147.8210245370865" />
+        </frame>
+      </frame>
+      <frame id="58:418" name="Gap" x="20" y="374" width="8" height="16" />
+      <frame id="85:3175" name="Hero figure" x="20" y="390" width="350" height="97">
+        <text id="85:3176" name="Loss" x="0" y="0" width="85" height="16" />
+        <frame id="85:3177" name="Figures" x="0" y="20" width="219" height="37">
+          <text id="85:3178" name="Offer (struck)" x="0" y="11" width="66" height="26" />
+          <text id="85:3179" name="Settlement figure" x="78" y="0" width="141" height="36" />
+        </frame>
+        <text id="85:3180" name="Results disclaimer" x="0" y="61" width="350" height="36" />
+      </frame>
+      <frame id="85:3181" name="Gap" x="20" y="487" width="8" height="24" />
+      <frame id="58:419" name="CTAs" x="20" y="511" width="350" height="124">
+        <instance id="58:420" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+        <instance id="58:425" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+      </frame>
+    </frame>
+    <frame id="58:431" name="Section / Results ledger" x="0" y="807" width="390" height="1713">
+      <text id="58:430" name="Trust line" x="20" y="80" width="350" height="64" />
+      <frame id="74:2843" name="Ledger header" x="20" y="156" width="350" height="56">
+        <frame id="74:2844" name="Icon circle / document" x="0" y="8" width="40" height="40">
+          <instance id="74:2845" name="Icon/document" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="74:2848" name="H3 ledger" x="52" y="0" width="298" height="56" />
+      </frame>
+      <instance id="74:2849" name="Dimension line / Measured" x="20" y="224" width="350" height="16" />
+      <frame id="74:2855" name="Gap" x="20" y="252" width="8" height="4" />
+      <instance id="58:432" name="Ledger card / Palisades fire" x="20" y="268" width="350" height="290" />
+      <instance id="58:441" name="Ledger card / Smoke damage" x="20" y="570" width="350" height="317" />
+      <instance id="58:450" name="Ledger card / Estate fire" x="20" y="899" width="350" height="332" />
+      <frame id="58:459" name="Gap" x="20" y="1243" width="8" height="4" />
+      <text id="58:460" name="Results disclaimer" x="20" y="1259" width="350" height="32" />
+      <frame id="58:461" name="Gap" x="20" y="1303" width="8" height="24" />
+      <text id="58:462" name="Statement (V)" x="20" y="1339" width="350" height="140" />
+      <frame id="74:2856" name="Gap" x="20" y="1491" width="8" height="12" />
+      <frame id="74:2857" name="Fact chips" x="20" y="1515" width="350" height="142">
+        <frame id="74:2858" name="Fact chip / 7 offices" x="0" y="0" width="113" height="42">
+          <instance id="74:2859" name="Icon/map-pin" x="13" y="9" width="24" height="24" />
+          <text id="74:2862" name="Chip label" x="45" y="13" width="51" height="16" />
+        </frame>
+        <frame id="74:2863" name="Fact chip / 5 states: CA, NV, OR, WA, AZ" x="0" y="50" width="235" height="42">
+          <instance id="74:2864" name="Icon/building" x="13" y="9" width="24" height="24" />
+          <text id="74:2866" name="Chip label" x="45" y="13" width="173" height="16" />
+        </frame>
+        <frame id="74:2867" name="Fact chip / CA DOI License No. 2B60428" x="0" y="100" width="239" height="42">
+          <instance id="74:2868" name="Icon/shield" x="13" y="9" width="24" height="24" />
+          <text id="74:2871" name="Chip label" x="45" y="13" width="177" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="58:573" name="Section / Why early" x="0" y="2520" width="390" height="1792">
+      <rounded-rectangle id="74:2892" name="Connector line" x="40" y="344" width="1" height="562" />
+      <frame id="58:574" name="Section index" x="20" y="64" width="100" height="16">
+        <rounded-rectangle id="58:575" name="Index rule" x="0" y="7" width="24" height="2" />
+        <text id="58:576" name="Index label" x="36" y="0" width="64" height="16" />
+      </frame>
+      <frame id="58:577" name="Gap" x="20" y="80" width="8" height="16" />
+      <text id="58:578" name="H2 (V)" x="20" y="96" width="350" height="108" />
+      <frame id="58:579" name="Gap" x="20" y="204" width="8" height="16" />
+      <frame id="74:2893" name="Lead row (clock)" x="20" y="220" width="350" height="56">
+        <instance id="74:2894" name="Icon/clock" x="0" y="0" width="24" height="24" />
+        <text id="58:580" name="Lead (V)" x="36" y="0" width="314" height="56" />
+      </frame>
+      <frame id="58:581" name="Gap" x="20" y="276" width="8" height="32" />
+      <frame id="58:582" name="Step 01" x="20" y="308" width="350" height="134">
+        <frame id="74:2872" name="Icon circle / step 1" x="0" y="16" width="40" height="40">
+          <instance id="74:2873" name="Icon/search" x="8" y="8" width="24" height="24" />
+        </frame>
+        <frame id="58:584" name="Step text" x="56" y="16" width="294" height="102">
+          <text id="58:583" name="Step number" x="0" y="0" width="13" height="16" />
+          <text id="58:585" name="Step name" x="0" y="20" width="294" height="26" />
+          <text id="58:586" name="Step note" x="0" y="50" width="294" height="52" />
+        </frame>
+      </frame>
+      <frame id="58:587" name="Step 02" x="20" y="442" width="350" height="134">
+        <frame id="74:2876" name="Icon circle / step 2" x="0" y="16" width="40" height="40">
+          <instance id="74:2877" name="Icon/document" x="8" y="8" width="24" height="24" />
+        </frame>
+        <frame id="58:589" name="Step text" x="56" y="16" width="294" height="102">
+          <text id="58:588" name="Step number" x="0" y="0" width="16" height="16" />
+          <text id="58:590" name="Step name" x="0" y="20" width="294" height="26" />
+          <text id="58:591" name="Step note" x="0" y="50" width="294" height="52" />
+        </frame>
+      </frame>
+      <frame id="58:592" name="Step 03" x="20" y="576" width="350" height="134">
+        <frame id="74:2880" name="Icon circle / step 3" x="0" y="16" width="40" height="40">
+          <instance id="74:2881" name="Icon/ruler" x="8" y="8" width="24" height="24" />
+        </frame>
+        <frame id="58:594" name="Step text" x="56" y="16" width="294" height="102">
+          <text id="58:593" name="Step number" x="0" y="0" width="16" height="16" />
+          <text id="58:595" name="Step name" x="0" y="20" width="294" height="26" />
+          <text id="58:596" name="Step note" x="0" y="50" width="294" height="52" />
+        </frame>
+      </frame>
+      <frame id="58:597" name="Step 04" x="20" y="710" width="350" height="160">
+        <frame id="74:2884" name="Icon circle / step 4" x="0" y="16" width="40" height="40">
+          <instance id="74:2885" name="Icon/home" x="8" y="8" width="24" height="24" />
+        </frame>
+        <frame id="58:599" name="Step text" x="56" y="16" width="294" height="128">
+          <text id="58:598" name="Step number" x="0" y="0" width="17" height="16" />
+          <text id="58:600" name="Step name" x="0" y="20" width="294" height="26" />
+          <text id="58:601" name="Step note" x="0" y="50" width="294" height="78" />
+        </frame>
+      </frame>
+      <frame id="58:602" name="Step 05" x="20" y="870" width="350" height="134">
+        <frame id="74:2888" name="Icon circle / step 5" x="0" y="16" width="40" height="40">
+          <instance id="74:2889" name="Icon/shield" x="8" y="8" width="24" height="24" />
+        </frame>
+        <frame id="58:604" name="Step text" x="56" y="16" width="294" height="102">
+          <text id="58:603" name="Step number" x="0" y="0" width="16" height="16" />
+          <text id="58:605" name="Step name" x="0" y="20" width="294" height="26" />
+          <text id="58:606" name="Step note" x="0" y="50" width="294" height="52" />
+        </frame>
+      </frame>
+      <frame id="58:607" name="Gap" x="20" y="1004" width="8" height="8" />
+      <frame id="58:608" name="Tap/Link How It Works" x="20" y="1012" width="143" height="48">
+        <text id="58:609" name="Link label" x="0" y="11" width="111" height="26" />
+        <instance id="58:610" name="Icon / arrow-right" x="119" y="12" width="24" height="24" />
+      </frame>
+      <frame id="58:612" name="Gap" x="20" y="1060" width="8" height="48" />
+      <frame id="74:2897" name="Fact chip / signed date" x="20" y="1108" width="229" height="42">
+        <instance id="74:2898" name="Icon/document" x="13" y="9" width="24" height="24" />
+        <text id="74:2901" name="Chip label" x="45" y="13" width="167" height="16" />
+      </frame>
+      <frame id="74:2902" name="Gap" x="20" y="1150" width="8" height="16" />
+      <text id="58:613" name="H3" x="20" y="1166" width="350" height="56" />
+      <frame id="58:614" name="Gap" x="20" y="1222" width="8" height="12" />
+      <text id="58:615" name="Body / Act" x="20" y="1234" width="350" height="130" />
+      <frame id="58:616" name="Gap" x="20" y="1364" width="8" height="12" />
+      <text id="58:617" name="Body / First estimate" x="20" y="1376" width="350" height="104" />
+      <frame id="58:618" name="Gap" x="20" y="1480" width="8" height="32" />
+      <frame id="58:619" name="Pull line (V)" x="20" y="1512" width="350" height="224">
+        <text id="74:2903" name="Quote glyph" x="22" y="0" width="39" height="56" />
+        <text id="58:620" name="Pull line" x="22" y="56" width="328" height="168" />
+      </frame>
+    </frame>
+    <frame id="58:621" name="Section / Founder" x="0" y="4312" width="390" height="1440">
+      <instance id="74:2906" name="B-mark (faint)" x="44.070526123046875" y="860" width="345.9294738769531" height="420" />
+      <frame id="58:622" name="Section index" x="20" y="64" width="90" height="16">
+        <rounded-rectangle id="58:623" name="Index rule" x="0" y="7" width="24" height="2" />
+        <text id="58:624" name="Index label" x="36" y="0" width="54" height="16" />
+      </frame>
+      <frame id="58:625" name="Gap" x="20" y="80" width="8" height="24" />
+      <frame id="58:626" name="Print / mike" x="20" y="104" width="350" height="392">
+        <rounded-rectangle id="58:627" name="Index tab" x="24" y="-10" width="48" height="10" />
+        <instance id="58:628" name="Photo slot" x="10" y="10" width="330" height="372" />
+      </frame>
+      <frame id="58:631" name="Gap" x="20" y="496" width="8" height="32" />
+      <frame id="74:2915" name="Tagline rule" x="20" y="528" width="225" height="16">
+        <rounded-rectangle id="74:2916" name="Rule" x="0" y="7.5" width="32" height="1" />
+        <text id="74:2917" name="Tagline" x="44" y="0" width="137" height="16" />
+        <rounded-rectangle id="74:2918" name="Rule" x="193" y="7.5" width="32" height="1" />
+      </frame>
+      <frame id="74:2919" name="Gap" x="20" y="544" width="8" height="16" />
+      <text id="58:632" name="H2 (V)" x="20" y="560" width="350" height="72" />
+      <frame id="58:633" name="Gap" x="20" y="632" width="8" height="16" />
+      <text id="58:634" name="Body" x="20" y="648" width="350" height="182" />
+      <frame id="58:635" name="Gap" x="20" y="830" width="8" height="24" />
+      <text id="85:3255" name="Quote glyph" x="20" y="854" width="30" height="44" />
+      <frame id="74:2914" name="Gap" x="20" y="898" width="8" height="8" />
+      <text id="58:636" name="Quote (V)" x="20" y="906" width="350" height="196" />
+      <frame id="58:637" name="Gap" x="20" y="1102" width="8" height="16" />
+      <text id="58:638" name="Attribution name" x="20" y="1118" width="350" height="26" />
+      <text id="58:639" name="Attribution role" x="20" y="1144" width="350" height="52" />
+      <frame id="74:2920" name="Gap" x="20" y="1196" width="8" height="16" />
+      <frame id="74:2921" name="Fact chips" x="20" y="1212" width="350" height="92">
+        <frame id="74:2922" name="Fact chip / 25 years as a developer and builder" x="0" y="0" width="280" height="42">
+          <instance id="74:2923" name="Icon/ruler" x="13" y="9" width="24" height="24" />
+          <text id="74:2926" name="Chip label" x="45" y="13" width="218" height="16" />
+        </frame>
+        <frame id="74:2927" name="Fact chip / CA DOI License No. 2B60428" x="0" y="50" width="239" height="42">
+          <instance id="74:2928" name="Icon/shield" x="13" y="9" width="24" height="24" />
+          <text id="74:2931" name="Chip label" x="45" y="13" width="177" height="16" />
+        </frame>
+      </frame>
+      <frame id="58:640" name="Gap" x="20" y="1304" width="8" height="24" />
+      <frame id="58:641" name="CTAs" x="20" y="1328" width="350" height="56">
+        <instance id="58:642" name="Button / Meet Michael" x="0" y="0" width="350" height="56" />
+      </frame>
+      <instance id="74:2932" name="Crop marks / founder print" x="8" y="96" width="374" height="408" />
+    </frame>
+    <frame id="58:683" name="Section / Claims" x="0" y="5752" width="390" height="1678">
+      <frame id="58:684" name="Section index" x="20" y="64" width="79" height="16">
+        <rounded-rectangle id="58:685" name="Index rule" x="0" y="7" width="24" height="2" />
+        <text id="58:686" name="Index label" x="36" y="0" width="43" height="16" />
+      </frame>
+      <frame id="58:687" name="Gap" x="20" y="80" width="8" height="16" />
+      <text id="58:688" name="H2" x="20" y="96" width="350" height="108" />
+      <frame id="58:689" name="Gap" x="20" y="204" width="8" height="24" />
+      <frame id="58:690" name="Routing list" x="20" y="228" width="350" height="715">
+        <frame id="58:691" name="Tap/Route Code Upgrades" x="0" y="1" width="350" height="119">
+          <frame id="74:2941" name="Icon circle / Code Upgrades" x="0" y="39" width="40" height="40">
+            <instance id="74:2942" name="Icon/building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="58:692" name="Route text" x="56" y="16" width="254" height="86">
+            <text id="58:693" name="Situation" x="0" y="0" width="254" height="56" />
+            <text id="58:694" name="Claim page" x="0" y="60" width="254" height="26" />
+          </frame>
+          <instance id="58:695" name="Icon / arrow-right" x="326" y="47" width="24" height="24" />
+        </frame>
+        <frame id="58:697" name="Tap/Route Fire &amp; Smoke" x="0" y="120" width="350" height="119">
+          <frame id="74:2944" name="Icon circle / Fire &amp; Smoke" x="0" y="39" width="40" height="40">
+            <instance id="74:2945" name="Icon/flame" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="58:698" name="Route text" x="56" y="16" width="254" height="86">
+            <text id="58:699" name="Situation" x="0" y="0" width="254" height="56" />
+            <text id="58:700" name="Claim page" x="0" y="60" width="254" height="26" />
+          </frame>
+          <instance id="58:701" name="Icon / arrow-right" x="326" y="47" width="24" height="24" />
+        </frame>
+        <frame id="58:703" name="Tap/Route Water" x="0" y="239" width="350" height="119">
+          <frame id="74:2948" name="Icon circle / Water" x="0" y="39" width="40" height="40">
+            <instance id="74:2949" name="Icon/droplet" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="58:704" name="Route text" x="56" y="16" width="254" height="86">
+            <text id="58:705" name="Situation" x="0" y="0" width="254" height="56" />
+            <text id="58:706" name="Claim page" x="0" y="60" width="254" height="26" />
+          </frame>
+          <instance id="58:707" name="Icon / arrow-right" x="326" y="47" width="24" height="24" />
+        </frame>
+        <frame id="58:709" name="Tap/Route Denied or Underpaid" x="0" y="358" width="350" height="119">
+          <frame id="74:2951" name="Icon circle / Denied or Underpaid" x="0" y="39" width="40" height="40">
+            <instance id="74:2952" name="Icon/document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="58:710" name="Route text" x="56" y="16" width="254" height="86">
+            <text id="58:711" name="Situation" x="0" y="0" width="254" height="56" />
+            <text id="58:712" name="Claim page" x="0" y="60" width="254" height="26" />
+          </frame>
+          <instance id="58:713" name="Icon / arrow-right" x="326" y="47" width="24" height="24" />
+        </frame>
+        <frame id="58:715" name="Tap/Route Contents" x="0" y="477" width="350" height="119">
+          <frame id="74:2955" name="Icon circle / Contents" x="0" y="39" width="40" height="40">
+            <instance id="74:2956" name="Icon/search" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="58:716" name="Route text" x="56" y="16" width="254" height="86">
+            <text id="58:717" name="Situation" x="0" y="0" width="254" height="56" />
+            <text id="58:718" name="Claim page" x="0" y="60" width="254" height="26" />
+          </frame>
+          <instance id="58:719" name="Icon / arrow-right" x="326" y="47" width="24" height="24" />
+        </frame>
+        <frame id="58:721" name="Tap/Route Additional Living Expenses" x="0" y="596" width="350" height="119">
+          <frame id="74:2959" name="Icon circle / Additional Living Expenses" x="0" y="39" width="40" height="40">
+            <instance id="74:2960" name="Icon/home" x="8" y="8" width="24" height="24" />
+          </frame>
+          <frame id="58:722" name="Route text" x="56" y="16" width="254" height="86">
+            <text id="58:723" name="Situation" x="0" y="0" width="254" height="56" />
+            <text id="58:724" name="Claim page" x="0" y="60" width="254" height="26" />
+          </frame>
+          <instance id="58:725" name="Icon / arrow-right" x="326" y="47" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="58:727" name="Gap" x="20" y="943" width="8" height="24" />
+      <frame id="58:728" name="CTAs" x="20" y="967" width="350" height="56">
+        <instance id="58:729" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+      </frame>
+      <frame id="58:733" name="Gap" x="20" y="1023" width="8" height="40" />
+      <frame id="58:734" name="Photo row (horizontal scroll)" x="20" y="1063" width="370" height="324">
+        <frame id="58:735" name="Print holder / ai-commercial-fire" x="0" y="12" width="280" height="300">
+          <frame id="58:736" name="Print / ai-commercial-fire" x="8" y="10" width="268.84646908938885" height="284.56479395926">
+            <rounded-rectangle id="58:737" name="Index tab" x="24" y="-10" width="44.16782330349088" height="10.766382955014706" />
+            <instance id="58:738" name="Photo slot" x="10" y="10" width="248.50046677142382" height="264.21879164129496" />
+          </frame>
+        </frame>
+        <frame id="58:741" name="Print holder / ai-contents" x="296" y="12" width="74" height="300">
+          <frame id="58:742" name="Print / ai-contents" x="8" y="10" width="66" height="280">
+            <rounded-rectangle id="58:743" name="Index tab" x="12" y="-10" width="44" height="10" />
+            <instance id="58:744" name="Photo slot" x="10" y="10" width="56" height="260" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="58:747" name="Gap" x="20" y="1387" width="8" height="40" />
+      <frame id="58:748" name="Tap/Accordion Homeowner claims" x="20" y="1427" width="350" height="98">
+        <frame id="74:2963" name="Icon circle / accordion" x="0" y="29" width="40" height="40">
+          <instance id="74:2964" name="Icon/home" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="58:749" name="H3 (V)" x="56" y="21" width="254" height="56" />
+        <instance id="58:750" name="Icon / chevron-down" x="326" y="37" width="24" height="24" />
+      </frame>
+      <frame id="58:752" name="Tap/Accordion Business claims" x="20" y="1525" width="350" height="97">
+        <frame id="74:2967" name="Icon circle / accordion" x="0" y="28" width="40" height="40">
+          <instance id="74:2968" name="Icon/building" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="58:753" name="H3 (V)" x="56" y="20" width="254" height="56" />
+        <instance id="58:754" name="Icon / chevron-down" x="326" y="36" width="24" height="24" />
+      </frame>
+    </frame>
+    <frame id="62:508" name="Section / Compare" x="0" y="7430" width="390" height="1070">
+      <frame id="62:509" name="Section index" x="20" y="64" width="94" height="16">
+        <rounded-rectangle id="62:510" name="Index rule" x="0" y="7" width="24" height="2" />
+        <text id="62:511" name="Index label" x="36" y="0" width="58" height="16" />
+      </frame>
+      <frame id="62:512" name="Gap" x="20" y="80" width="8" height="16" />
+      <text id="62:513" name="H2 (V)" x="20" y="96" width="350" height="72" />
+      <frame id="62:514" name="Gap" x="20" y="168" width="8" height="24" />
+      <frame id="62:515" name="Tab switch" x="20" y="192" width="350" height="54">
+        <frame id="62:516" name="Tap/Switch Blue Star" x="5" y="5" width="168" height="44">
+          <text id="62:517" name="Switch label" x="46" y="9" width="76" height="26" />
+        </frame>
+        <frame id="62:518" name="Tap/Switch On your own" x="177" y="5" width="168" height="44">
+          <text id="62:519" name="Switch label" x="31" y="9" width="106" height="26" />
+        </frame>
+      </frame>
+      <frame id="62:520" name="Gap" x="20" y="246" width="8" height="8" />
+      <frame id="62:521" name="Rows (Blue Star selected)" x="20" y="254" width="350" height="414">
+        <frame id="62:522" name="Pair / Building Scope" x="20" y="0" width="310" height="147">
+          <frame id="74:2970" name="Label row" x="0" y="20" width="129" height="24">
+            <instance id="74:2971" name="Icon/ruler" x="0" y="0" width="24" height="24" />
+            <text id="62:523" name="Label" x="32" y="0" width="97" height="24" />
+          </frame>
+          <text id="62:524" name="Value" x="0" y="48" width="310" height="78" />
+        </frame>
+        <frame id="62:525" name="Pair / Control" x="20" y="147" width="310" height="147">
+          <frame id="74:2974" name="Label row" x="0" y="20" width="79" height="24">
+            <instance id="74:2975" name="Icon/document" x="0" y="0" width="24" height="24" />
+            <text id="62:526" name="Label" x="32" y="0" width="47" height="24" />
+          </frame>
+          <text id="62:527" name="Value" x="0" y="48" width="310" height="78" />
+        </frame>
+        <frame id="62:528" name="Pair / Final Say" x="20" y="294" width="310" height="120">
+          <frame id="74:2978" name="Label row" x="0" y="20" width="89" height="24">
+            <instance id="74:2979" name="Icon/shield" x="0" y="0" width="24" height="24" />
+            <text id="62:529" name="Label" x="32" y="0" width="57" height="24" />
+          </frame>
+          <text id="62:530" name="Value" x="0" y="48" width="310" height="52" />
+        </frame>
+      </frame>
+      <frame id="62:531" name="Gap" x="20" y="668" width="8" height="8" />
+      <frame id="62:532" name="Tap/Link See all seven" x="20" y="676" width="138" height="48">
+        <text id="62:533" name="Link label" x="0" y="11" width="106" height="26" />
+        <instance id="62:534" name="Icon / arrow-right" x="114" y="12" width="24" height="24" />
+      </frame>
+      <frame id="74:2982" name="Gap" x="20" y="724" width="8" height="32" />
+      <frame id="74:2983" name="Key facts panel" x="20" y="756" width="350" height="258">
+        <frame id="74:2984" name="Fact" x="20" y="24" width="310" height="52">
+          <frame id="74:2985" name="Icon circle / fact" x="0" y="6" width="40" height="40">
+            <instance id="74:2986" name="Icon/document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:2989" name="Fact text" x="56" y="0" width="254" height="52" />
+        </frame>
+        <rounded-rectangle id="74:2990" name="Divider" x="20" y="92" width="310" height="1" />
+        <frame id="74:2991" name="Fact" x="20" y="109" width="310" height="52">
+          <frame id="74:2992" name="Icon circle / fact" x="0" y="6" width="40" height="40">
+            <instance id="74:2993" name="Icon/check" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:2996" name="Fact text" x="56" y="0" width="254" height="52" />
+        </frame>
+        <rounded-rectangle id="74:2997" name="Divider" x="20" y="177" width="310" height="1" />
+        <frame id="74:2998" name="Fact" x="20" y="194" width="310" height="40">
+          <frame id="74:2999" name="Icon circle / fact" x="0" y="0" width="40" height="40">
+            <instance id="74:3000" name="Icon/shield" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="74:3003" name="Fact text" x="56" y="7" width="254" height="26" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="62:536" name="Section / Review" x="0" y="8500" width="390" height="1463">
+      <frame id="62:537" name="Section index" x="20" y="64" width="83" height="16">
+        <rounded-rectangle id="62:538" name="Index rule" x="0" y="7" width="24" height="2" />
+        <text id="62:539" name="Index label" x="36" y="0" width="47" height="16" />
+      </frame>
+      <frame id="62:540" name="Gap" x="20" y="80" width="8" height="16" />
+      <text id="62:541" name="H2 (V)" x="20" y="96" width="350" height="72" />
+      <frame id="62:542" name="Gap" x="20" y="168" width="8" height="16" />
+      <text id="62:543" name="Body (V)" x="20" y="184" width="350" height="130" />
+      <frame id="62:544" name="Gap" x="20" y="314" width="8" height="32" />
+      <frame id="62:545" name="Print / ai-rebuilt-home" x="20" y="346" width="350" height="240">
+        <rounded-rectangle id="62:546" name="Index tab" x="280" y="-10" width="44" height="10" />
+        <instance id="62:547" name="Photo slot" x="10" y="10" width="330" height="220" />
+      </frame>
+      <frame id="62:550" name="Gap" x="20" y="586" width="8" height="32" />
+      <frame id="62:551" name="CTAs" x="20" y="618" width="350" height="124">
+        <instance id="62:552" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+        <instance id="62:557" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+      </frame>
+      <frame id="62:561" name="Gap" x="20" y="742" width="8" height="16" />
+      <text id="62:562" name="Fee line" x="20" y="758" width="350" height="78" />
+      <frame id="62:563" name="Gap" x="20" y="836" width="8" height="48" />
+      <rounded-rectangle id="62:564" name="Rule" x="20" y="884" width="350" height="1" />
+      <frame id="62:565" name="Gap" x="20" y="885" width="8" height="32" />
+      <frame id="74:3016" name="Icon circle / practice" x="20" y="917" width="40" height="40">
+        <instance id="74:3017" name="Icon/shield" x="8" y="8" width="24" height="24" />
+      </frame>
+      <frame id="74:3020" name="Gap" x="20" y="957" width="8" height="12" />
+      <text id="62:566" name="H3 (V)" x="20" y="969" width="350" height="56" />
+      <frame id="62:567" name="Gap" x="20" y="1025" width="8" height="8" />
+      <text id="62:568" name="Body (V)" x="20" y="1033" width="350" height="104" />
+      <frame id="62:569" name="Gap" x="20" y="1137" width="8" height="32" />
+      <frame id="74:3021" name="Icon circle / practice" x="20" y="1169" width="40" height="40">
+        <instance id="74:3022" name="Icon/map-pin" x="8" y="8" width="24" height="24" />
+      </frame>
+      <frame id="74:3025" name="Gap" x="20" y="1209" width="8" height="12" />
+      <text id="62:570" name="H3" x="20" y="1221" width="350" height="56" />
+      <frame id="62:571" name="Gap" x="20" y="1277" width="8" height="8" />
+      <instance id="74:3010" name="Dimension line / 7 offices" x="20" y="1285" width="350" height="16" />
+      <frame id="85:3256" name="Gap" x="20" y="1301" width="8" height="12" />
+      <frame id="62:572" name="Office list" x="20" y="1313" width="350" height="94">
+        <text id="62:573" name="Office" x="0" y="0" width="109" height="26" />
+        <text id="62:574" name="Office" x="129" y="0" width="98" height="26" />
+        <text id="62:575" name="Office" x="0" y="34" width="111" height="26" />
+        <text id="62:576" name="Office" x="131" y="34" width="43" height="26" />
+        <text id="62:577" name="Office" x="194" y="34" width="70" height="26" />
+        <text id="62:578" name="Office" x="284" y="34" width="56" height="26" />
+        <text id="62:579" name="Office" x="0" y="68" width="84" height="26" />
+      </frame>
+      <instance id="74:3026" name="Crop marks / rebuilt print" x="8" y="338" width="374" height="256" />
+    </frame>
+    <instance id="62:580" name="Footer / Mobile" x="0" y="9963" width="390" height="853" />
+    <instance id="62:624" name="Mobile call bar (sticky)" x="0" y="756" width="390" height="89" />
+  </frame>
+</canvas>

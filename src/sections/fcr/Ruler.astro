@@ -1,0 +1,14 @@
+---
+// Detail / Ruler ticks (card top), e.g. 73:1441 / 74:3914: navy 1px ticks every 8px (6px tall),
+// every 40px 10px tall, every 80px 16px tall. Sits inside the card border (x 1, y 1), full inner width.
+---
+<div aria-hidden="true" class="fcr-ruler"></div>
+<style>
+  .fcr-ruler {
+    position: absolute; left: 0; top: 0; right: 0; height: 16px; pointer-events: none;
+    background:
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 80px 16px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 40px 10px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 8px 6px repeat-x;
+  }
+</style>

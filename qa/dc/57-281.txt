@@ -1,0 +1,5 @@
+57:281 offices (condensed). bg white col gap56 px80 py120.
+Blueprint grid detail abs left720 top504 560x280, opacity 12%, royal lines opacity 8%: V every 35px (16 cols), H every 28px.
+header flex gap80: H2 w640 "Local Codes.<br>Local Contractors."; side flex-1 col gap24: chips (gap12): pin "7 offices", document "5 states" (white bg, line border); body 17/28 ink "Seven offices from Santa Monica to Seattle. We know your community, your local codes and your local contractors."; outline button phone "Call (916) 507-1005".
+office names: border-t/b line py32 flex-wrap gap 8/48: item flex gap12 items-center: pin 28 (royal) + Schibsted SemiBold 48/54 -0.72 navy: Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, Scottsdale.
+states SemiBold 17/28 ink "California, Nevada, Oregon, Washington and Arizona".

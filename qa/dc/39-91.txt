@@ -1,0 +1,1 @@
+Section eyebrow 39:91: flex gap-12 items-center; Rule 24x2 (royal light / white dark); text Montserrat SemiBold 13/18 tracking .26px (royal light 39:85 / white dark 39:88), nowrap

@@ -1,0 +1,11 @@
+get_design_context 73:3031 (S6, desktop). Condensed:
+section bg paper flex gap-64 items-start px-80 py-120
+ CTA copy w-560 flex-col gap-32:
+  Dimension line w-full label ROYAL "Your Adjuster. Your Advocate."
+  Headline Schibsted Bold 64/68 -1.28 navy "Schedule a Free Review with Michael."
+  Terms flex-col gap-8 Montserrat 20/32 ink: "No upfront cost. We're paid a percentage of what we recover." / "You always have final say on any settlement."
+  CTAs gap-16: solid "Schedule a Free Review"; outline+phone "Call (916) 507-1005"
+ Panel 73:3046 bg navy p-40 w-496 flex-col:
+  head flex gap-12 items-center pb-24: rule white 24x1; Montserrat Medium 15/24 white "Blue Star Adjusters"
+  facts: border-t white, py-20, flex gap-16 items-start; icon 24 white; text Montserrat 17/28 white
+   shield "CA DOI License No. 2B60428"; check "We represent the insured only."; pin "Offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle and Scottsdale."; phone "(916) 507-1005"

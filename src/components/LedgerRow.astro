@@ -1,0 +1,34 @@
+---
+// LedgerRow: Figma Results ledger row 41:92. Desktop 41:73 (1120 wide row, top rule, py 32, items bottom-aligned)
+// and Mobile 41:83 (350 wide white card, radius 16, px 20 py 24). One responsive component: base = mobile card,
+// lg = desktop row. Stack the rows yourself; the desktop section adds its own closing bottom rule (e.g. 53:272).
+//
+// Props (all copy exactly as in Figma):
+//   loss            string  loss name, e.g. "Palisades fire"                      (41:75 / 41:84)
+//   note            string  what made the difference, one sentence               (41:76 / 41:91)
+//   offer           string  carrier's offer, shown struck through, e.g. "$38,000" (41:79 / 41:87)
+//   recovered       string  settlement figure, e.g. "$276,000"                    (41:82 / 41:90)
+//   offerLabel?     string  default "Carrier's offer"                              (41:78 / 41:86)
+//   recoveredLabel? string  default "Settlement"                                   (41:81 / 41:89)
+//   lossAs?         tag for the loss name, default 'h3' (use 'p' when the section has no h2 above it)
+//   node?           data-node id of the row/card instance in the page frame
+//   class?          extra classes on the root
+// Usage: <LedgerRow loss="Palisades fire" note="We measured..." offer="$38,000" recovered="$276,000" node="53:242" />
+interface Props { loss: string; note: string; offer: string; recovered: string; offerLabel?: string; recoveredLabel?: string; lossAs?: string; node?: string; class?: string }
+const { loss, note, offer, recovered, offerLabel = "Carrier's offer", recoveredLabel = 'Settlement', lossAs: LossTag = 'h3', node, class: cls = '' } = Astro.props;
+---
+<div class:list={['flex flex-col items-start gap-[12px] bg-white rounded-[16px] px-[20px] py-[24px]',
+  'lg:flex-row lg:items-end lg:gap-[40px] lg:bg-transparent lg:rounded-none lg:px-0 lg:py-[32px] lg:border-t lg:border-line', cls]} data-node={node}>
+  <div class="contents lg:flex lg:flex-col lg:gap-[8px] lg:w-[360px] lg:shrink-0">
+    <LossTag class="m-0 text-navy tm-body-strong lg:t-body-strong whitespace-nowrap">{loss}</LossTag>
+    <p class="m-0 text-ink tm-body lg:t-small order-last lg:order-none">{note}</p>
+  </div>
+  <p class="m-0 flex items-baseline gap-[8px] whitespace-nowrap lg:flex-col lg:items-start lg:gap-[6px] lg:w-[240px] lg:shrink-0">
+    <span class="t-caption text-ink">{offerLabel}</span>
+    <s class="t-h3 text-ink">{offer}</s>
+  </p>
+  <p class="m-0 flex flex-col items-start gap-[2px] whitespace-nowrap lg:gap-[6px] lg:flex-1 lg:min-w-0">
+    <span class="t-caption text-royal">{recoveredLabel}</span>
+    <span class="tm-figure lg:t-figure text-navy">{recovered}</span>
+  </p>
+</div>

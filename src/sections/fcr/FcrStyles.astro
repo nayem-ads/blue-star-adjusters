@@ -1,0 +1,95 @@
+---
+// Page-level styles shared by /free-claim-review/ and its thank-you page.
+---
+<style is:global>
+  @layer theme, base, components, utilities;
+  @layer components {
+  /* Detail / Blueprint grid 73:1404 (400×250, 25px pitch) and 74:3881 (160×120, 10 × 12px pitch), as rendered in Figma. */
+  .fcr-grid { width: 160px; height: 120px; pointer-events: none;
+    background:
+      repeating-linear-gradient(to right, rgb(19 63 170 / .009) 0 1px, transparent 1px 10px),
+      repeating-linear-gradient(to bottom, rgb(19 63 170 / .0045) 0 1px, transparent 1px 12px);
+  }
+  @media (min-width: 64rem) {
+    .fcr-grid { width: 400px; height: 250px; right: max(0px, calc(50% - 640px));
+      background:
+        repeating-linear-gradient(to right, rgb(19 63 170 / .018) 0 1px, transparent 1px 25px),
+        repeating-linear-gradient(to bottom, rgb(19 63 170 / .018) 0 1px, transparent 1px 25px);
+    }
+  }
+
+  /* Chrome sets Montserrat 16/26 and the Schibsted mobile headings 1px higher in their line box than Figma does
+     (measured against 74:3862); nudge the glyphs down so text sits on the designed baseline (relative offset, layout is unchanged). */
+  @media (max-width: 63.999rem) {
+    main .tm-body, main .tm-body-strong, main .tm-h2, main .tm-h3, main .tm-display { position: relative; top: 1px; }
+  }
+
+  .fcr-link { text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1px; text-underline-offset: 3px; transition: text-decoration-color .15s ease, color .15s ease; border-radius: 2px; }
+  .fcr-link:hover, .fcr-link:focus-visible { text-decoration-color: currentColor; color: var(--color-royal); }
+
+  /* Error summary (74:2361 / 74:4980): shown by forms.ts on an invalid submit. */
+  .fcr-summary:not([hidden]) { display: flex; }
+  .fcr-summary:focus { outline: none; }
+  .fcr-summary:focus-visible { outline: 2px solid var(--color-royal); outline-offset: 3px; }
+  .fcr-summary a { color: var(--color-error); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  .fcr-summary a:hover { text-decoration-thickness: 2px; }
+  .fcr-summary li a { font-family: var(--font-body); font-weight: 500; font-size: 15px; line-height: 24px; }
+
+  /* Where we work (85:3246): only while the error summary is visible. */
+  .fcr-where { display: none; }
+  .fcr-cols:has([data-form-error]:not([hidden])) .fcr-where { display: flex; }
+
+  /* Loss-type chips (73:1554, 74:3977): radio group styled as chips. */
+  .fcr-chip { position: relative; display: flex; align-items: center; gap: 8px; padding: 12px 16px 12px 12px; background: #fff; border: 1px solid var(--color-muted); border-radius: 8px; cursor: pointer; white-space: nowrap;
+    font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 26px; color: var(--color-ink); transition: border-color .15s ease, background-color .15s ease, box-shadow .15s ease; }
+  .fcr-chip svg { color: var(--color-navy); }
+  .fcr-chip span { min-width: var(--lwm); } /* Figma label box widths keep the chip rows exactly as designed */
+  @media (min-width: 64rem) { .fcr-chip span { min-width: var(--lw); } }
+  @media (min-width: 64rem) { .fcr-chip { padding: 12px 20px 12px 16px; font-size: 15px; line-height: 24px; } }
+  .fcr-chip:hover { border-color: var(--color-navy); background: var(--color-paper); }
+  .fcr-chip:has(input:checked) { border-color: var(--color-royal); background: var(--color-paper); box-shadow: inset 0 0 0 1px var(--color-royal); }
+  .fcr-chip:has(input:focus-visible) { outline: 2px solid var(--color-royal); outline-offset: 3px; }
+  .fcr-group__err { display: none; }
+  .fcr-group[data-state="error"] .fcr-chip:not(:has(input:checked)) { border-color: var(--color-error); }
+  .fcr-group[data-state="error"] .fcr-group__help { display: none; }
+  .fcr-group[data-state="error"] .fcr-group__err { display: block; }
+
+
+  /* State select chevron is 24px in this frame (73:1549 / 74:4016). */
+  .fcr-form .bs-field__chevron { width: 24px; height: 24px; }
+
+  /* Upload box (73:1592): whole box is the file picker label. */
+  .fcr-upload { transition: border-color .15s ease, background-color .15s ease; }
+  .fcr-upload:hover { border-color: var(--color-navy); }
+  .fcr-upload:has(input:focus-visible) { outline: 2px solid var(--color-royal); outline-offset: 3px; }
+
+  /* FAQ accordion */
+  .fcr-faq__q { list-style: none; border-radius: 2px; }
+  .fcr-faq__q::-webkit-details-marker { display: none; }
+  .fcr-faq__chev { transition: transform .2s ease; }
+  .fcr-faq[open] .fcr-faq__chev { transform: rotate(180deg); }
+  .fcr-faq__q:hover h3 { color: var(--color-royal); }
+
+  /* Thank-you receipt */
+  .fcr-receipt:not([hidden]) { display: flex; }
+  .fcr-receipt__row { border-bottom: 1px solid var(--color-line); }
+  .fcr-receipt__row:last-child { border-bottom: 0; }
+  @media (max-width: 63.999rem) { .fcr-receipt__row:nth-child(4) { border-bottom: 0; } }
+  .fcr-linkrow { transition: border-color .15s ease; }
+  .fcr-linkrow:hover { border-color: var(--color-navy); }
+  .fcr-linkrow:hover .fcr-linkrow__title { text-decoration: underline; text-underline-offset: 3px; }
+  .fcr-linkrow__arrow { transition: transform .15s ease; }
+  .fcr-linkrow:hover .fcr-linkrow__arrow, .fcr-linkrow:focus-visible .fcr-linkrow__arrow { transform: translateX(4px); }
+  }
+
+  /* Unlayered: these state rules must beat the Tailwind spacing utilities on the same elements. */
+  @media (max-width: 63.999rem) {
+    /* 74:4569: in the mobile error state the group spacing changes (pt 24 -> 8, gap 8 -> 12). */
+    .fcr-group[data-state="error"] { padding-top: 8px; gap: 12px; }
+    /* Mobile error copy is shorter (74:4568 "Enter a 10-digit number.", 74:4594 "Enter a full email address."). */
+    #f-phone-err, #f-email-err { font-size: 0; line-height: 0; }
+    #f-phone-err::after, #f-email-err::after { display: block; font-size: 14px; line-height: 20px; }
+    #f-phone-err::after { content: "Enter a 10-digit number."; }
+    #f-email-err::after { content: "Enter a full email address."; }
+  }
+</style>

@@ -1,0 +1,73 @@
+---
+// Home B "Section / Why early". Desktop 55:269 (1280×1288), Mobile 58:573 (390×1792).
+// Five-step process (horizontal on desktop with a connector line, vertical on mobile), How It Works link,
+// "The rules changed" block and the pull line.
+import Icon from '../../components/Icon.astro';
+import SectionIndex from './SectionIndex.astro';
+
+const steps = [
+  { n: '01', icon: 'search', name: 'Free review', note: 'Discuss your claim with our team at no cost or obligation.', d: ['55:279', '73:1344', '55:280', '55:281', '55:282'], m: ['58:582', '74:2872', '58:583', '58:585', '58:586'] },
+  { n: '02', icon: 'document', name: 'Policy review', note: 'We identify all avenues of recovery available under your policy.', d: ['55:283', '73:1349', '55:284', '55:285', '55:286'], m: ['58:587', '74:2876', '58:588', '58:590', '58:591'] },
+  { n: '03', icon: 'ruler', name: 'Scope the loss', note: 'We take part in determining the full scope of your loss from day one.', d: ['55:287', '73:1354', '55:288', '55:289', '55:290'], m: ['58:592', '74:2880', '58:593', '58:595', '58:596'] },
+  { n: '04', icon: 'home', name: 'Build your claim', note: 'We prepare and present a detailed, itemized claim package on your behalf.', d: ['55:291', '73:1359', '55:292', '55:293', '55:294'], m: ['58:597', '74:2884', '58:598', '58:600', '58:601'] },
+  { n: '05', icon: 'shield', name: 'Maximize settlement', note: 'We negotiate proactively to get you the most money as fast as possible.', d: ['55:295', '73:1364', '55:296', '55:297', '55:298'], m: ['58:602', '74:2888', '58:603', '58:605', '58:606'] },
+];
+---
+<section id="why-early" aria-labelledby="hb-why" class="bg-white scroll-mt-[52px] lg:scroll-mt-0" data-node-d="55:269" data-node-m="58:573">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[96px] lg:flex lg:items-start lg:gap-[24px]">
+    <SectionIndex label="Why early" nodeD="55:270" nodeM="58:574" />
+    <div class="flex flex-col items-start mt-[16px] lg:mt-0 lg:w-[928px] lg:shrink-0" data-node-d="55:273">
+      <h2 id="hb-why" class="m-0 w-full tm-h2 lg:t-h2 lg:w-[720px] text-navy" data-node-d="55:274" data-node-m="58:578">Why Starting Early Makes All the Difference</h2>
+      <div class="flex gap-[12px] items-start w-full mt-[16px] lg:items-center lg:w-auto lg:mt-[24px]" data-node-d="73:1369" data-node-m="74:2893">
+        <Icon name="clock" size={24} class="text-royal shrink-0" />
+        <p class="m-0 flex-1 min-w-0 tm-lead lg:t-lead lg:flex-none lg:w-[640px] text-ink" data-node-d="55:276" data-node-m="58:580">Our ability to affect your outcome diminishes with time.</p>
+      </div>
+
+      <div class="relative w-full mt-[32px] lg:mt-[56px]" data-node-d="55:278">
+        <span aria-hidden="true" class="absolute bg-navy left-[20px] top-[36px] w-px h-[562px] lg:top-[20px] lg:w-[768px] lg:h-px" data-node-d="73:1343"></span>
+        <ol class="relative m-0 p-0 list-none lg:flex lg:gap-[32px] lg:items-start">
+        {steps.map((s, i) => (
+          <li class="relative flex gap-[16px] items-start py-[16px] lg:flex-col lg:gap-[12px] lg:py-0 lg:w-[160px] lg:shrink-0" data-node-d={s.d[0]} data-node-m={s.m[0]}>
+            <span class:list={['flex items-center justify-center size-[40px] shrink-0 rounded-full border border-navy', i === 0 ? 'bg-navy text-white' : 'bg-white text-navy']} data-node-d={s.d[1]} data-node-m={s.m[1]}><Icon name={s.icon} size={24} /></span>
+            <span aria-hidden="true" class="hidden lg:block size-[8px] shrink-0"></span>
+            <div class="flex flex-col gap-[4px] items-start flex-1 min-w-0 lg:contents">
+              <p class="m-0 tm-label lg:t-label text-ink whitespace-nowrap" data-node-d={s.d[2]} data-node-m={s.m[2]}>{s.n}</p>
+              <h3 class="m-0 w-full tm-body-strong lg:t-body-strong lg:h-[56px] text-ink" data-node-d={s.d[3]} data-node-m={s.m[3]}>{s.name}</h3>
+              <p class="m-0 w-full tm-body lg:font-medium lg:text-[15px] lg:leading-[24px] text-ink" data-node-d={s.d[4]} data-node-m={s.m[4]}>{s.note}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+      </div>
+
+      <a href="/how-it-works/" class="hb-link flex gap-[8px] items-center h-[48px] mt-[8px] lg:h-[52px] lg:mt-[32px]" data-node-d="55:300" data-node-m="58:608">
+        <span class="tm-body-strong lg:t-body-strong underline text-ink" data-node-d="55:301" data-node-m="58:609">How It Works</span>
+        <Icon name="arrow-right" size={24} class="hb-link__arrow text-ink shrink-0" />
+      </a>
+
+      <div class="flex flex-col items-start w-full mt-[48px] lg:mt-[96px] lg:flex-row lg:gap-[32px]" data-node-d="55:305">
+        <div class="flex flex-col gap-[12px] items-start w-full lg:gap-[16px] lg:w-[448px] lg:shrink-0" data-node-d="55:306">
+          <p class="m-0 mb-[4px] lg:mb-0 flex gap-[8px] items-center bg-paper border border-line rounded-[4px] pl-[12px] pr-[16px] py-[8px]" data-node-d="73:1374" data-node-m="74:2897">
+            <Icon name="document" size={24} class="text-navy shrink-0" />
+            <span class="t-caption lg:font-medium lg:text-[15px] lg:leading-[24px] lg:tracking-[0px] text-ink whitespace-nowrap">Signed September 15, 2026</span>
+          </p>
+          <h3 class="m-0 w-full tm-h3 text-ink lg:t-h3 lg:text-navy" data-node-d="55:307" data-node-m="58:613">The Rules Changed. The First Estimate Didn't.</h3>
+          <p class="m-0 w-full tm-body lg:t-body text-ink" data-node-d="55:308" data-node-m="58:615">California's Smoke Damage Recovery Act, signed September 15, 2026, presumes smoke in a home inside a wildfire zone came from that fire, and makes insurers pay for the testing.</p>
+          <p class="m-0 w-full tm-body lg:t-body text-ink" data-node-d="55:309" data-node-m="58:617">But the carrier still writes the first estimate. We measure the loss forensically and push for what it takes to return your property to its pre-loss condition.</p>
+        </div>
+        <figure class="m-0 mt-[32px] lg:mt-0 flex flex-col items-start w-full border-l-2 border-navy pl-[20px] lg:pl-[32px] lg:w-[448px] lg:shrink-0" data-node-d="55:310" data-node-m="58:619">
+          <span aria-hidden="true" class="hb-nudge lg:[top:0] font-display font-bold text-[72px] leading-[56px] tracking-[-1.8px] lg:text-[96px] lg:leading-[72px] lg:tracking-[-1.92px] text-royal whitespace-nowrap">“</span>
+          <blockquote class="m-0 w-full tm-h3 text-ink lg:t-h3 lg:text-navy" data-node-d="55:311" data-node-m="58:620">Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas. That wealth came from somewhere.</blockquote>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .hb-link { text-decoration: none; }
+  .hb-link > span { text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color .15s ease; }
+  .hb-link__arrow { transition: transform .15s ease; }
+  .hb-link:hover > span, .hb-link:focus-visible > span { color: var(--color-royal); }
+  .hb-link:hover .hb-link__arrow, .hb-link:focus-visible .hb-link__arrow { transform: translateX(4px); color: var(--color-royal); }
+</style>

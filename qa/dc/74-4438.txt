@@ -1,0 +1,3 @@
+get_design_context 74:4438 (FAQ mobile): bg white col gap24 pt64 pb56 px20. H2 tm-h2 navy "Your Questions. Straight Answers." (wraps after Questions.)
+List: items border-t line py20 col gap8; row gap16 items-center: question 600 18/28 navy; chevron 24. Answer tm-body ink full width.
+Then "Still have a question?" tm-body-strong ink; Button solid full h56 "Schedule a Free Review". No dimension line/contact on mobile.

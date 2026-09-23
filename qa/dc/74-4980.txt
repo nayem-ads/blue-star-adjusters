@@ -1,0 +1,2 @@
+get_design_context 74:4980 (Error summary mobile): white, border 1 error + left 4, r4, px16 py12, col gap4, 16/26.
+"Check 3 fields." 600 ink; "Phone, email, what happened" 500 error underline (each field name links to its field).

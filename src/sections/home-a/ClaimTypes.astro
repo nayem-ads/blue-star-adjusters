@@ -1,0 +1,61 @@
+---
+// Claim types: Your Home / Your Business. Desktop 55:170 (two columns), mobile 63:584 (tab switch 85:3161, one panel visible).
+import Icon from '../../components/Icon.astro';
+import Pic from './Pic.astro';
+import { ROUTES } from '../../data/site';
+const cols = [
+  {
+    key: 'home', tab: 'Your home', icon: 'home', title: ['Your Home.', 'Fully Recovered.'],
+    intro: 'When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won’t let the carrier set the scope.',
+    img: { d: '55:172', m: '63:586', alt: 'Burned wood-frame house and a burned-out car after a fire.' },
+    items: ['Fire, wildfire & smoke losses', 'Water & plumbing failures', 'Trees & falling-object damage', 'Collapse: snow load & structural', 'Ordinance of law & code upgrades', 'Contents valuation & inventory', 'Additional living expenses (ALE)', 'Lead, asbestos & mold remediation analysis'],
+    link: 'Homeowner claims', href: ROUTES.whatWeDo,
+    n: { col: '55:171', copy: '55:173', h: '55:174', intro: '55:175', list: '55:176', link: '55:193' },
+    m: { col: '63:585', h: '63:587', intro: '63:588', list: '63:589', link: '63:606' },
+  },
+  {
+    key: 'business', tab: 'Your business', icon: 'building', title: ['Your Business.', 'Fully Recovered.'],
+    intro: 'Commercial claims are more complex: more code requirements, more stakeholders, more ways for carriers to undervalue the loss. Michael’s development background means nothing gets missed.',
+    img: { d: '55:198', m: '63:611', alt: 'Apartment building with fire and smoke damage on the upper floors.' },
+    items: ['Fire, water & structural losses', 'Business interruption & loss of income', 'Dependent-property / contingent BI', 'Equipment breakdown & failure claims', 'Ordinance of law & seismic code upgrades', 'Rebuild cost estimating & Xactimate', 'IH report interpretation & remediation', 'Litigation support & demand packaging'],
+    link: 'Business claims', href: '/commercial-claims/',
+    n: { col: '55:197', copy: '55:199', h: '55:200', intro: '55:201', list: '55:202', link: '55:219' },
+    m: { col: '', h: '', intro: '', list: '', link: '' },
+  },
+];
+---
+<section aria-labelledby="ct-title-home" class="bg-paper" data-node="55:170" data-node-m="63:584" data-tabs>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[40px]">
+    <div role="tablist" aria-label="Claim types" class="lg:hidden flex p-[4px] bg-white border border-line rounded-full" data-node-m="85:3161">
+      {cols.map((c, i) => (
+        <button type="button" role="tab" id={`ct-tab-${c.key}`} aria-controls={`ct-panel-${c.key}`} aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1}
+          class="tab flex-1 h-[48px] rounded-full tm-body-strong" data-node-m={i === 0 ? '85:3162' : '85:3164'}>{c.tab}</button>
+      ))}
+    </div>
+    {cols.map((c, i) => (
+      <div id={`ct-panel-${c.key}`} role="tabpanel" aria-labelledby={`ct-tab-${c.key}`} class:list={['panel flex-1 min-w-0 flex flex-col items-start gap-[20px] lg:gap-[32px]', i === 0 && 'is-active']} data-node={c.n.col} data-node-m={c.m.col || undefined}>
+        <div class="w-full h-[236px] lg:h-[360px]"><Pic d={c.img.d} m={c.img.m} alt={c.img.alt} tagM={i === 0} /></div>
+        <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[20px] lg:pr-[40px] lg:w-full" data-node={c.n.copy}>
+          <span class="flex items-center justify-center w-[48px] h-[48px] rounded-full bg-white text-navy shrink-0"><Icon name={c.icon} size={24} /></span>
+          <h2 id={`ct-title-${c.key}`} class="m-0 tm-h2 lg:t-h2 text-navy w-full" data-node={c.n.h} data-node-m={c.m.h || undefined}>{c.title[0]}<br />{c.title[1]}</h2>
+          <p class="m-0 tm-body lg:t-body text-ink w-full" data-node={c.n.intro} data-node-m={c.m.intro || undefined}>{c.intro}</p>
+        </div>
+        <ul class="m-0 p-0 list-none w-full" data-node={c.n.list} data-node-m={c.m.list || undefined}>
+          {c.items.map((t) => <li class="flex items-center gap-[12px] py-[12px] border-t border-line tm-body lg:t-body text-navy"><Icon name="check" size={20} class="text-royal shrink-0" /><span class="flex-1 min-w-0">{t}</span></li>)}
+        </ul>
+        <a href={c.href} class="ct-link flex items-center gap-[8px] h-[44px] lg:h-[28px] tm-body-strong lg:t-body-strong text-royal" data-node={c.n.link} data-node-m={c.m.link || undefined}><span>{c.link}</span><Icon name="arrow-right" size={24} /></a>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .tab { color: var(--color-navy); background: transparent; border: 0; transition: background-color .15s ease, color .15s ease; }
+  .tab[aria-selected='true'] { background: var(--color-navy); color: #fff; }
+  .tab:not([aria-selected='true']):hover { background: var(--color-paper); }
+  @media (max-width: 1023.98px) { .panel:not(.is-active) { display: none; } }
+  .ct-link { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color .15s ease; }
+  .ct-link:hover, .ct-link:focus-visible { text-decoration-color: currentColor; }
+</style>
+
+<script>import './tabs.ts';</script>

@@ -1,0 +1,10 @@
+get_design_context 74:3699 (Section / Loss index, mobile) — condensed
+Section bg paper flex-col gap24 pt64 pb56 pl20 (no right padding: scroller bleeds to edge).
+Head pr20 flex-col gap16: Eyebrow "Loss index"; H2 32/36 -0.48 navy "Your Home. Fully Recovered." (swaps to 'Your Business. Fully Recovered.' on Commercial);
+ intro 16/26 ink (same copy); segmented control full width (segments flex-1 h48, same styles as desktop; role=tablist; Commercial swaps the cards for the commercial set);
+ column label Montserrat SemiBold 12/16 .24 ink "What the first estimate usually misses".
+Scroller gap16 (ANNOTATION: horizontal scroll, snap to card; next card peeks at right edge. Six cards; cards 3-6 hidden in design (same template). Peek: in build a real 280px card; scroller overflow clipped. Whole card is the tap target.)
+ Card 280x622: bg white border 1 line r4 flex-col: IMG 278x200 ; body p20 flex-col gap12 flex-1: icon circle 40 paper ; H3 Schibsted SemiBold 22/28 -0.22 navy ; subtitle Montserrat Medium 16/26 ink ; hairline line ; miss texts Montserrat 16/26 ink ; spacer flex-1 ; link min-h44 gap8: Montserrat SemiBold 16/26 royal "See the claim page" + arrow.
+ Card1 Fire & Smoke: misses "Rooms the flames never reached, written up as undamaged." / "Warped vinyl windows, priced as paint." (img alt "Fire & Smoke loss, documented")
+Progress: gap4 pr20, 6 bars flex-1 h2: active navy, others line.
+Four buckets 350: bg white border line r4 px20 py24 flex-col gap20: H3 22/28 navy; buckets border-t line pt16 flex gap16: icon circle 40 paper + text gap4: name Montserrat SemiBold 16/26 navy, text Montserrat 16/26 ink ; CTA stack pt8: Solid h56 full "Schedule a Free Review".

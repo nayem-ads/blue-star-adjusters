@@ -1,0 +1,2 @@
+get_design_context 74:2193 (TY sidebar Step 1 desktop): icon circle bg white (icon navy). Step text col gap4 pt8 pb32: label row flex gap8 items-center: Next pill bg white r4 px8 py4, "Next" t-label navy; "Step 1" t-label white, box h-full (26) text top. Then "We call you." 600 17/28 white.
+Annotation: Post-submit state marks step 1 as the next step.

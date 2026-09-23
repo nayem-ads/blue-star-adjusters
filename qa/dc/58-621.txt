@@ -1,0 +1,9 @@
+58:621 Section / Founder MOBILE condensed. bg navy flex-col pt64 pb56 px20.
+B-mark faint absolute left44.07 top860 345.929x420.
+Index (rule 24x2 white, "Founder" SemiBold 12/16 .24 white) / gap24
+Print/mike w-full h392 bg white border line; tab navy 48x10 left23 top-11; photo left9 top9 330x372 I58:628;41:71 / gap32
+Tagline rule: rule 32x1, Montserrat Medium 12/16 .12 white "Your Claim. Our Fight.", rule / gap16
+H2 32/36 -0.48 white, explicit lines "Built From" / "the Ground Up." / gap16 / body 16/26 white / gap24
+glyph Schibsted Bold 56/44 white / gap8 / quote 18/28 white / gap16 / name SemiBold 16/26 / role Regular 16/26 2 lines / gap16
+chips flex-wrap gap8 border white; label Medium 12/16 .12 white / gap24 / CTA: Outline on-dark h56 w-full "Meet Michael" (no Schedule button on mobile).
+Crop marks absolute left8 top96 374x408 (white 16x1.5).

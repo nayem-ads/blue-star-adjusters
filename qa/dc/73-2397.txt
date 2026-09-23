@@ -1,0 +1,11 @@
+get_design_context 73:2397 (S4, desktop). Condensed:
+section bg paper flex gap-64 items-start px-80 py-120 relative (note: grid frame 85:3275 is abs inset-0 with bg INK)
+ Grid: bg ink; V lines royal w1 every 40px (x=0..1280) opacity 10% at every 4th (0,160,320...) else 5%; H lines every 40 (0..680) same opacity pattern
+ Statement 73:2427 flex-col gap-32 w-496: Dimension line w320 (label ink "Line by line"); text Schibsted SemiBold 48/54 -0.72 navy:
+   "On every claim, the job is the same: forensically measure the loss to return the property to its pre-loss condition."
+ Rows 73:2435 w-560 flex-col: each border-t navy, py-28, flex gap-24 items-start; last also border-b
+   badge 40 bg white border navy rounded-20 icon 24; text 20/32 ink
+   search "He reads a carrier's estimate the way a builder reads a bid, line by line, hunting for what's missing."
+   ruler "He knows where upgrade costs hide, from seismic bracing to fire sprinklers."
+   building "He has sat across from plan checkers and fire marshals. On a commercial loss, what the building department will require often decides the scope."
+Screenshot shows dark ink bg with navy text almost invisible.

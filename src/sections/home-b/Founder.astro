@@ -1,0 +1,84 @@
+---
+// Home B "Section / Founder". Desktop 56:277 (1280×1008), Mobile 58:621 (390×1440). Navy, faint B-mark, crop-marked print.
+// Desktop: index | [print, chips, 2 CTAs] [text]. Mobile: index, print, text, chips, Meet Michael only.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import Logo from '../../components/Logo.astro';
+import SectionIndex from './SectionIndex.astro';
+import CropMarks from './CropMarks.astro';
+import { ROUTES } from '../../data/site';
+
+const chipsD = [
+  { icon: 'ruler', label: '25 years as a developer and builder', node: '73:2281' },
+  { icon: 'shield', label: 'CA DOI License No. 2B60428', node: '73:2286' },
+];
+const chipsM = [
+  { icon: 'ruler', label: '25 years as a developer and builder', node: '74:2922' },
+  { icon: 'shield', label: 'CA DOI License No. 2B60428', node: '74:2927' },
+];
+const alt = 'Michael Rapport, Founding Principal of Blue Star Adjusters.';
+---
+<section id="founder" aria-labelledby="hb-founder" class="relative overflow-hidden bg-navy text-white scroll-mt-[52px] lg:scroll-mt-0" data-node-d="56:277" data-node-m="58:621">
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[96px] lg:flex lg:items-start lg:gap-[24px]">
+    <span aria-hidden="true" class="absolute right-0 top-[860px] lg:top-[340px] opacity-[.07] pointer-events-none">
+      <Logo variant="mark-white" bare width={593.022} height={722.05} class="hidden lg:block" label="" />
+      <Logo variant="mark-white" bare width={345.929} height={421.2} class="lg:hidden" label="" />
+    </span>
+    <SectionIndex label="Founder" theme="dark" nodeD="56:278" nodeM="58:622" />
+
+    <div class="relative flex flex-col items-start mt-[24px] lg:mt-0 lg:flex-row lg:gap-[64px] lg:w-[928px] lg:shrink-0" data-node-d="56:282">
+      <div class="flex flex-col items-start w-full lg:w-[416px] lg:shrink-0" data-node-d="85:3134">
+        <div class="relative w-full h-[392px] lg:w-[416px] lg:h-[500px]">
+          <CropMarks color="#fff" class="absolute -inset-x-[12px] -inset-y-[8px] lg:-inset-[16px]" nodeD="73:2291" nodeM="74:2932" />
+          <div class="relative size-full bg-white border border-line box-border" data-node-d="56:283" data-node-m="58:626">
+            <span aria-hidden="true" class="absolute left-[23px] top-[-11px] w-[48px] h-[10px] lg:left-[31px] lg:top-[-13px] lg:w-[56px] lg:h-[12px] rounded-t-[3px] bg-navy"></span>
+            <Img node="I56:285;41:71" alt={alt} class="hidden lg:block absolute left-[11px] top-[11px] w-[392px] h-[476px] object-cover max-w-none" dataNode="56:285" />
+            <Img node="I58:628;41:71" alt={alt} class="lg:hidden absolute left-[9px] top-[9px] w-[330px] h-[372px] object-cover max-w-none" dataNode="58:628" />
+          </div>
+        </div>
+        <ul class="hidden lg:flex flex-wrap gap-[12px] items-start w-full mt-[56px] p-0 list-none" data-node="73:2280">
+          {chipsD.map((c) => (
+            <li class="flex gap-[8px] items-center border border-white rounded-[4px] pl-[12px] pr-[16px] py-[8px]" data-node={c.node}>
+              <Icon name={c.icon} size={24} class="shrink-0" />
+              <span class="font-body font-medium text-[15px] leading-[24px] whitespace-nowrap">{c.label}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="hidden lg:flex flex-wrap gap-[12px] items-start w-full mt-[24px]" data-node="56:298">
+          <Button href={ROUTES.freeClaimReview} variant="on-dark" node="85:3137">Schedule a Free Review with Michael</Button>
+          <Button href={ROUTES.founder} variant="outline-on-dark" node="56:299">Meet Michael</Button>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-start w-full mt-[32px] lg:mt-0 lg:w-[448px] lg:shrink-0" data-node-d="56:288">
+        <p class="m-0 flex gap-[12px] items-center" data-node-d="73:2270" data-node-m="74:2915">
+          <span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>
+          <span class="t-caption lg:text-[13px] lg:leading-[18px] lg:tracking-[0.26px] whitespace-nowrap">Your Claim. Our Fight.</span>
+          <span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>
+        </p>
+        <h2 id="hb-founder" class="m-0 w-full mt-[16px] lg:mt-[24px] tm-h2 lg:t-h2 text-white" data-node-d="56:289" data-node-m="58:632">Built From <br class="lg:hidden" />the Ground Up.</h2>
+        <p class="m-0 w-full mt-[16px] lg:mt-[24px] tm-body lg:t-body" data-node-d="56:291" data-node-m="58:634">Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco's seismic retrofit ordinance, and he knows what a code-compliant rebuild costs because he's paid for plenty of them.</p>
+        <figure class="m-0 w-full mt-[24px] lg:mt-[40px]">
+          <span aria-hidden="true" class="block w-fit font-display font-bold text-[56px] leading-[44px] lg:text-[72px] lg:leading-[56px] whitespace-nowrap" data-node-d="85:3141" data-node-m="85:3255">“</span>
+          <blockquote class="m-0 w-full mt-[8px] tm-lead lg:t-lead" data-node-d="56:293" data-node-m="58:636">“I've stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”</blockquote>
+          <figcaption class="mt-[16px] lg:mt-[24px]">
+            <p class="m-0 w-full tm-body-strong lg:t-body-strong" data-node-d="56:295" data-node-m="58:638">Michael Rapport</p>
+            <p class="m-0 w-full tm-body lg:font-medium lg:text-[15px] lg:leading-[24px]" data-node-d="56:296" data-node-m="58:639">Founding Principal, Blue Star Adjusters.<br />Principal, MSR Properties.</p>
+          </figcaption>
+        </figure>
+        <ul class="lg:hidden flex flex-wrap gap-[8px] items-start w-full mt-[16px] p-0 list-none" data-node="74:2921">
+          {chipsM.map((c) => (
+            <li class="flex gap-[8px] items-center border border-white rounded-[4px] pl-[12px] pr-[16px] py-[8px]" data-node={c.node}>
+              <Icon name={c.icon} size={24} class="shrink-0" />
+              <span class="t-caption whitespace-nowrap">{c.label}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="lg:hidden w-full mt-[24px]" data-node="58:641">
+          <Button href={ROUTES.founder} variant="outline-on-dark" full class="h-[56px]" node="58:642">Meet Michael</Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

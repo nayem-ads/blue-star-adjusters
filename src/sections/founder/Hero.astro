@@ -1,0 +1,52 @@
+---
+// S1 Hero — Portrait. Desktop 73:1837 (y 88, 1280×1008); mobile M1 74:2714 + M1b 74:3859 (y 64 → 1176).
+// One section: on mobile the portrait moves to the top and the bio + trust rows drop below the CTAs
+// (M1b sits on the same paper background), on desktop the intro column is left of the portrait block.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import CropMarks from './CropMarks.astro';
+import DimLine from './DimLine.astro';
+import Pic from './Pic.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE } from '../../data/site';
+const trustText = 'bs-fnudge flex-1 min-w-0 m-0 font-body font-medium text-ink text-[16px] leading-[26px] lg:text-[15px] lg:leading-[24px]';
+---
+<section aria-labelledby="founder-h1" class="bg-paper" data-node="73:1837">
+  <div class="max-w-[1280px] mx-auto flex flex-col pb-[59px] lg:flex-row lg:items-center lg:gap-[24px] lg:pt-[96px] lg:pb-[112px] lg:px-[80px]">
+    <div class="flex flex-col items-start gap-[16px] px-[20px] pt-[24px] lg:flex-[0_1_504px] lg:min-w-[400px] lg:gap-[32px] lg:p-0" data-node="73:1838">
+      <div data-node="73:1839" data-node-m="74:2729"><Eyebrow class="text-ink!">Your Adjuster. Your Advocate.</Eyebrow></div>
+      <div class="flex flex-col gap-[12px] lg:gap-[20px] w-full" data-node="73:1842" data-node-m="74:2732">
+        <h1 id="founder-h1" class="m-0 text-navy tm-display lg:t-display-xl" data-node="73:1843" data-node-m="74:2733">Michael Rapport.</h1>
+        <p class="m-0 text-ink tm-lead lg:t-lead" data-node="73:1844" data-node-m="74:2734">Founding Principal, Blue Star Adjusters. Principal, MSR Properties.</p>
+      </div>
+      <p class="order-1 lg:order-none m-0 mt-[142px] lg:mt-0 text-ink tm-body lg:t-body w-full" data-node="73:1845" data-node-m="74:2746">25 years as a developer and merchant builder. Top producer at one of the nation's leading public adjusting firms. Licensed personally in 7 states, always working for the insured, never for the carrier.</p>
+      <div class="flex flex-col gap-[12px] pt-[8px] w-full lg:flex-row lg:flex-wrap lg:gap-[16px] lg:pt-0 lg:w-auto" data-node="73:1846" data-node-m="74:2735">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="73:1847" data-node-m="74:2736">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="73:1851" data-node-m="74:2741">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <ul class="order-2 lg:order-none m-0 mt-[4px] lg:mt-0 p-0 list-none flex flex-col gap-[12px] w-full border-t border-line pt-[20px] lg:pt-[24px]" data-node="73:1855" data-node-m="74:2747">
+        <li class="flex items-start lg:items-center gap-[12px]" data-node="73:1856" data-node-m="74:2748">
+          <Icon name="shield" size={20} class="shrink-0 text-navy" />
+          <span class={trustText}>{LICENSE}</span>
+        </li>
+        <li class="flex items-start lg:items-center gap-[12px]" data-node="73:1861" data-node-m="74:2753">
+          <Icon name="document" size={20} class="shrink-0 text-navy" />
+          <span class={trustText}>No upfront cost. We're paid a percentage of what we recover.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="order-first lg:order-none relative w-full h-[264px] overflow-hidden lg:overflow-visible lg:flex-[0_1_592px] lg:min-w-0 lg:h-auto lg:aspect-[592/800]" data-node="73:1866" data-node-m="74:2715">
+      <div class="hidden lg:block absolute left-[calc(100%*16/592)] top-[7%] w-[calc(100%*560/592)] h-[87.5%] bg-paper border border-line" data-node="85:3262"></div>
+      <div class="absolute inset-0 bg-paper lg:inset-auto lg:left-[calc(100%*32/592)] lg:top-[5%] lg:w-[calc(100%*560/592)] lg:h-[87.5%]" data-node="73:1896" data-node-m="74:2716">
+        <Pic node="I73:1896;41:71" nodeM="I74:2716;41:71" alt="Michael Rapport, Founding Principal of Blue Star Adjusters, portrait" priority class="block w-full h-full object-cover mix-blend-multiply" />
+      </div>
+      <CropMarks class="absolute inset-[12px] lg:inset-auto lg:left-[calc(100%*16/592)] lg:top-[3%] lg:w-full lg:h-[91.5%]" node="73:1899" nodeM="74:2719" />
+      <DimLine label="Founding Principal" class="hidden! lg:flex! absolute left-[calc(100%*32/592)] top-[96.5%] w-[calc(100%*560/592)]" node="73:1908" />
+      <div class="hidden lg:flex absolute left-0 bottom-[9.5%] w-[240px] flex-col gap-[8px] p-[24px] bg-navy text-white" data-node="73:1914">
+        <p class="m-0 t-figure">25</p>
+        <p class="m-0 font-body font-medium text-[15px] leading-[24px]">years as a developer and merchant builder</p>
+      </div>
+    </div>
+  </div>
+</section>

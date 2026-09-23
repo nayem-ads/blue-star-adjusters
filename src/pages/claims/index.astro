@@ -1,0 +1,36 @@
+---
+// What We Do: the claims hub (Figma desktop 70:574, mobile 70:575). Indexable.
+// data-node = desktop node id, data-node-m = mobile node id (QA swaps them for the 390 run).
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/what-we-do/Hero.astro';
+import Routing from '../../sections/what-we-do/Routing.astro';
+import LossIndex from '../../sections/what-we-do/LossIndex.astro';
+import Commercial from '../../sections/what-we-do/Commercial.astro';
+import Callouts from '../../sections/what-we-do/Callouts.astro';
+import Denied from '../../sections/what-we-do/Denied.astro';
+const title = 'Where Claims Go Wrong. Where We Start. | Blue Star';
+const description = "When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows what your rebuild costs. No upfront cost.";
+---
+<Base title={title} description={description}>
+  <div data-node="73:830" data-node-m="74:3456"><Header theme="light" /></div>
+  <main class="bs-wwd">
+    <Hero />
+    <Routing />
+    <LossIndex />
+    <Commercial />
+    <Callouts />
+    <Denied />
+  </main>
+  <div data-node="74:872" data-node-m="74:4275"><Footer /></div>
+  <CallBar />
+</Base>
+<style is:global>
+  /* Below lg, Chrome sets the mobile text styles one pixel higher than Figma (baseline rounding).
+     Nudge those glyphs down 1px so the 390 build matches Figma; boxes move 1px at most. */
+  @media (max-width: 1023.98px) {
+    .bs-wwd :where(.tm-body, .tm-body-strong, .tm-h2, .tm-h3, .tm-display, .wwd-n, [class*="leading-[26px]"]) { position: relative; top: 1px; }
+  }
+</style>

@@ -1,0 +1,17 @@
+---
+// Icon badge (40×40 circle, 24px icon) as used across the founder page.
+// variant: outline = white fill + navy stroke; solid = navy fill, white icon; paper = paper fill (+ line stroke with stroked);
+//          on-dark = white stroke, white icon (navy sections).
+import Icon from '../../components/Icon.astro';
+interface Props { icon: string; variant?: 'outline' | 'solid' | 'paper' | 'on-dark'; stroked?: boolean; class?: string; node?: string; nodeM?: string }
+const { icon, variant = 'outline', stroked = false, class: cls = '', node, nodeM } = Astro.props;
+const look = {
+  outline: 'bg-white border border-navy text-navy',
+  solid: 'bg-navy text-white',
+  paper: `bg-paper text-navy ${stroked ? 'border border-line' : ''}`,
+  'on-dark': 'border border-white text-white',
+}[variant];
+---
+<span aria-hidden="true" class:list={['relative z-[1] flex items-center justify-center shrink-0 size-[40px] rounded-full box-border', look, cls]} data-node={node} data-node-m={nodeM}>
+  <Icon name={icon} size={24} />
+</span>

@@ -1,0 +1,56 @@
+---
+// Thank-you state: left column 85:3235 (desktop card 74:2056 + First 48 Hours link row 85:3236), mobile card 74:4732.
+// The receipt is filled from what the visitor sent (sessionStorage, written by fcr-form.ts on a valid submit);
+// with nothing stored the receipt stays hidden and the title reads "Thank you."
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Ruler from './Ruler.astro';
+import IconCircle from './IconCircle.astro';
+import { PHONE_DISPLAY, PHONE_TEL, LICENSE } from '../../data/site';
+const rows = [
+  { key: 'Name', f: 'name', d: '74:2470', m: '74:5091' },
+  { key: 'Phone', f: 'phone', d: '74:2473', m: '74:5094' },
+  { key: 'Property state', f: 'state', d: '74:2476', m: '74:5097' },
+  { key: 'What happened', f: 'what', d: '74:2479', m: '74:5100' },
+  { key: 'Documents', f: 'docs', d: '74:2482', desktopOnly: true },
+];
+---
+<div class="flex flex-col gap-[32px] w-full lg:flex-1 lg:min-w-0 lg:max-w-[648px]" data-node="85:3235">
+  <div class="relative bg-white border border-line rounded-[4px] pt-[44px] pb-[24px] px-[20px] lg:p-[48px] flex flex-col gap-[20px] lg:gap-[24px] items-start" data-node="74:2056" data-node-m="74:4732">
+    <Ruler />
+    <div class="contents lg:flex lg:items-center lg:gap-[20px] lg:w-full" data-node="74:2458">
+      <IconCircle name="check" size={56} icon={28} tone="navy" node="74:2459" nodeM="74:5080" />
+      <h2 class="m-0 w-full lg:flex-1 lg:min-w-0 tm-h3 lg:t-h3 text-navy" data-thanks-title data-node="74:2462" data-node-m="74:5083">Thank you.</h2>
+    </div>
+    <p class="m-0 w-full flex gap-[12px] items-start" data-node="74:2463" data-node-m="74:5084">
+      <Icon name="clock" size={20} class="lg:hidden shrink-0 text-navy" />
+      <Icon name="clock" size={24} class="hidden lg:block shrink-0 text-navy" />
+      <span class="flex-1 min-w-0 tm-body lg:t-body text-ink">We call back the same day, Mon–Sun, 8 AM–6 PM Pacific. Every engagement is discreet.</span>
+    </p>
+    <div class="fcr-receipt w-full bg-paper rounded-[4px] p-[16px] lg:p-[24px] flex-col" data-receipt hidden data-node="74:2468" data-node-m="74:5089">
+      <h3 class="m-0 tf-label text-navy">What you sent us</h3>
+      <dl class="m-0">
+        {rows.map((r) => (
+          <div class:list={['fcr-receipt__row flex flex-col py-[12px] text-ink lg:flex-row lg:gap-[24px]', r.desktopOnly && 'hidden lg:flex']} data-node={r.d} data-node-m={r.m}>
+            <dt class="tf-helper lg:font-body lg:font-medium lg:text-[15px] lg:leading-[24px] lg:w-[160px] lg:shrink-0">{r.key}</dt>
+            <dd class="m-0 flex-1 min-w-0 tm-body-strong lg:t-body-strong" data-receipt-field={r.f}></dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+    <hr class="hidden lg:block w-full h-px m-0 border-0 bg-line" data-node="74:2485" />
+    <div class="contents lg:flex lg:items-center lg:gap-[24px] lg:w-full" data-node="74:2486">
+      <p class="m-0 w-full lg:flex-1 lg:min-w-0 tm-body-strong lg:t-body-strong text-ink" data-node="74:2487" data-node-m="74:5103">Need us sooner? Call and mention your request.</p>
+      <Button href={PHONE_TEL} variant="outline" icon="phone" class="w-full h-[56px] lg:w-auto lg:h-[52px]" data-node="74:2488" data-node-m="74:5104">Call {PHONE_DISPLAY}</Button>
+    </div>
+    <p class="m-0 w-full t-legal lg:font-medium lg:text-[15px] lg:leading-[24px] text-ink" data-node="74:2492" data-node-m="74:5108">Blue Star Adjusters. {LICENSE}. We represent the insured only.</p>
+  </div>
+  <a href="/first-48-hours/" class="fcr-linkrow hidden lg:flex items-center gap-[16px] p-[24px] bg-white border border-line" data-node="85:3236">
+    <IconCircle name="document" />
+    <span class="flex-1 min-w-0 flex flex-col gap-[4px] whitespace-nowrap">
+      <span class="t-body-strong text-navy fcr-linkrow__title">First 48 Hours</span>
+      <span class="font-body font-medium text-[15px] leading-[24px] text-ink">Checklist, downloadable</span>
+    </span>
+    <Icon name="arrow-right" size={24} class="shrink-0 text-navy fcr-linkrow__arrow" />
+  </a>
+</div>

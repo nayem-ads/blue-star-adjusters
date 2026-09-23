@@ -1,0 +1,6 @@
+get_design_context 74:4198 (Section / Denied or underpaid + CTA, mobile) — condensed
+Section bg paper flex-col gap24 px20 py64. (No blueprint grid on mobile.)
+Eyebrow "Second opinion"; H2 32/36 navy; Lead 18/28 ink; Questions: items gap16 py16 icon circle white, text 16/26 w/ SemiBold lead-in;
+Attorney note Montserrat Medium 16/26 w/ SemiBold lead-in.
+Key facts panel full width bg navy r4 px24 py32 gap20: H 22/28 SemiBold white; facts gap12 items-start py16 icon 24 + Montserrat Medium 16/26 white; white hairlines;
+ CTA stack gap12 (no pt) full width h56: On-dark "Schedule a Free Review"; Outline on-dark phone "Call (916) 507-1005".

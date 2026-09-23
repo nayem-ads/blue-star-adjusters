@@ -1,0 +1,15 @@
+---
+// Art-directed Figma image: desktop slot (≥1024px) and mobile slot, one <img> via <picture>.
+// Both crops come pre-cut from src/data/images.json (same data as components/Img.astro).
+import images from '../../data/images.json';
+interface Props { d: string; m: string; alt: string; class?: string; wrap?: string; priority?: boolean; tagM?: boolean }
+const { d, m, alt, class: cls = 'block w-full h-full object-cover', wrap = 'block w-full h-full', priority = false, tagM = true } = Astro.props;
+const all = images as Record<string, { src: string; width: number; height: number }>;
+const D = all[d], M = all[m];
+if (!D || !M) throw new Error(`Pic: missing image ${!D ? d : m}`);
+---
+<picture class={wrap}>
+  <source media="(min-width: 1024px)" srcset={D.src} width={D.width} height={D.height} />
+  <img src={M.src} width={M.width} height={M.height} alt={alt} class={cls} loading={priority ? 'eager' : 'lazy'}
+    decoding="async" fetchpriority={priority ? 'high' : 'auto'} data-node={d} data-node-m={tagM ? m : undefined} />
+</picture>

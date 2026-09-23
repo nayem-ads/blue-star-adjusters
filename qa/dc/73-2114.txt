@@ -1,0 +1,13 @@
+get_design_context 73:2114 (Index / Table, desktop) — condensed
+Column labels: flex gap 32 pb 16, Montserrat SemiBold 13/18 tracking .26 ink: "Loss type" (w552) | "What the first estimate usually misses" (flex-1)
+Rule / Heavy: 2px navy. Rows separated by 1px line hairlines, last hairline after last row.
+Row: flex gap 32 items-start py 32: IMG 200x144 | Name w320 flex-col gap 12: icon circle 40 bg white r20 (icon 24) ; H3 Schibsted SemiBold 28/34 tracking -.28 navy ; subtitle Montserrat 15/24 ink
+ | Misses flex-1 flex-col gap 12 pt 4: Miss = flex gap 16: dash wrap pt12 (16x2 royal) + text Montserrat 17/28 ink
+ | Tap/Open 48x48 border 1 navy radius 24, arrow 24. "Whole row is clickable."
+Rows:
+1 Fire & Smoke (flame) img wood-house alt "Fire-damaged wood-frame house, exterior, documented on site"; sub "Heat Is Fire Damage. Smoke Is Chemistry."; misses: "Rooms the flames never reached, written up as undamaged." / "Warped vinyl windows, priced as paint." / "Porous materials the carrier wants cleaned, when they can't be."
+2 Wildfire (home) malibu-frame alt "Charred timber frame of a house after a wildfire"; "Total Loss or Standing Home. Two Different Claims."; "Whether the foundation can be reused. Heat-damaged concrete and rebar often can't carry a new house." / "Code upgrades, extended replacement cost and debris removal, once the dwelling limit is reached."
+3 Water & Plumbing (droplet) ai-water-loss alt "Water-damaged interior with wet flooring"; "Water Dries. The Evidence Goes With It."; "If the water isn't measured, it dries, and mold begins to grow." / "Firefighting water: after a fire, the water damage is its own line on the claim."
+4 Wind, Hail & Falling Trees (wind) ai-hail-roof alt "Hail-damaged roof shingles, close view"; "Hail Shortens a Roof. A Tree Racks a House."; "Hail can take years off a roof's life. A patch doesn't give it back." / "Framing connections, racked walls, cracks in the foundation." / "Wind uplift, before it's called wear and tear. Snow-load collapse gets the same structural review."
+5 Contents & Valuables (search) ai-contents alt "Smoke-damaged household contents set out for inventory"; "Everything You Owned. Accounted For."; "Most people can't list one room from memory, and what isn't listed isn't paid." / "The depreciation the carrier held back, if your policy pays replacement cost."
+6 Additional Living Expenses (clock) modern-home alt "Modern home exterior after a fire, debris in the foreground"; "Same Size Home. Same School District."; "The rental ends before the rebuild does." / "Pet accommodations, extra mileage, meals above your normal budget, storage, utility set-up."

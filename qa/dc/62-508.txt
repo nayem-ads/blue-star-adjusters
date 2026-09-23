@@ -1,0 +1,6 @@
+62:508 Section / Compare MOBILE condensed. bg white flex-col pt64 pb56 px20. Index "Compare" / gap16
+H2 32/36 navy explicit lines "Blue Star Adjusters" / "vs. Going It Alone" / gap24
+Tab switch (annotation: two-tab switch; 'On your own' shows the Handling It Yourself values for the same three rows): bg white border line rounded8 p4 gap4 flex: tabs flex-1 h44 rounded6 SemiBold 16/26; selected bg navy white; other ink.
+gap8 / Rows bg paper px20 flex-col: pairs py20 gap4 border-b line (last none): label row gap8 icon 24 + SemiBold 12/16 .24 ink; value Regular 16/26 ink.
+gap8 / link h48 py12 gap8 "See all seven" SemiBold 16/26 underline + arrow 24 / gap32
+Key facts panel bg navy rounded2 px20 py24 flex-col gap16: facts flex gap16 items-center: circle 40 border white + icon; Regular 16/26 white; dividers h1 white full width.

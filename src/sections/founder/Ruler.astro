@@ -1,0 +1,14 @@
+---
+// Ruler ticks (73:1918 / 74:2759): navy 1px ticks every 8px from the top edge; 16px tall every 80px, 12px every 40px, else 6px.
+interface Props { class?: string; node?: string; nodeM?: string }
+const { class: cls = '', node, nodeM } = Astro.props;
+---
+<div aria-hidden="true" class:list={['bs-fruler h-[16px]', cls]} data-node={node} data-node-m={nodeM}></div>
+<style>
+  .bs-fruler {
+    background:
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) left top / 80px 16px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) left top / 40px 12px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) left top / 8px 6px repeat-x;
+  }
+</style>

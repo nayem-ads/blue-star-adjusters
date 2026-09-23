@@ -1,17 +1,17 @@
 ---
-// § 06 Fee questions. Desktop 128:4832 (y 3856, 1280×768); mobile 128:6599 (y 3942, 390×668).
+// 06 Fee questions. Desktop 128:4832 (y 3856, 1280×768); mobile 128:6599 (y 3942, 390×668).
 // Designed as two always-open Q/A rows (no accordion), so each row is a static h3 + answer: nothing to toggle.
 import SectionIndex from './SectionIndex.astro';
 import Chip from './Chip.astro';
 const qa = [
   { d: '128:4841', m: '128:6607', qd: '128:4843', qm: '128:6608', am: '128:6609', q: 'How are you paid?', a: 'A percentage of the settlement, set in writing before we start. No upfront cost.', td: '128:4845', tm: '128:6612', acd: '128:4844', acm: '128:6611', qcd: '128:4842' },
-  { d: '128:4847', m: '128:6614', qd: '128:4849', qm: '128:6615', am: '128:6616', q: 'I already have an offer. Is it too late?', a: 'Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.', td: '128:4851', tm: '128:6619', acd: '128:4850', acm: '128:6618', qcd: '128:4848', chip: '§15027(b)(7)', cd: '128:4852', cm: '128:6620', ctd: '128:4853', ctm: '128:6621' },
+  { d: '128:4847', m: '128:6614', qd: '128:4849', qm: '128:6615', am: '128:6616', q: 'I already have an offer. Is it too late?', a: 'Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.', td: '128:4851', tm: '128:6619', acd: '128:4850', acm: '128:6618', qcd: '128:4848', chip: '15027(b)(7)', cd: '128:4852', cm: '128:6620', ctd: '128:4853', ctm: '128:6621' },
 ];
 ---
 <section aria-labelledby="fees-faq" class="bg-paper" data-node="128:4832" data-node-m="128:6599">
   <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[124px]">
     <div class="flex flex-col items-start lg:w-[480px]" data-node="128:4834">
-      <SectionIndex label="§ 06" node="128:4835" nodeM="128:6600" textNode="128:4836" textNodeM="128:6601" />
+      <SectionIndex label="06" node="128:4835" nodeM="128:6600" textNode="128:4836" textNodeM="128:6601" />
       <h2 id="fees-faq" class="m-0 mt-[12px] lg:mt-[24px] text-navy tm-h2 lg:t-h2 whitespace-nowrap w-[208px] lg:w-[311px]" data-node="128:4838" data-node-m="128:6604">Fee questions</h2>
     </div>
     <div class="mt-[32px] lg:mt-[56px] border-t-2 border-navy">

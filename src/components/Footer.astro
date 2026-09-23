@@ -77,7 +77,6 @@ const item = 'bs-flink block tm-body lg:t-small';
       <div class="flex flex-col gap-[6px] lg:gap-[4px] lg:whitespace-nowrap">
         <p class="m-0">Blue Star Adjusters, {ADDRESS}, USA</p>
         <p class="m-0">{LICENSE}</p>
-        <p class="m-0">We represent the insured only.</p>
       </div>
       <p class="bs-flegal m-0 whitespace-pre lg:flex lg:gap-[24px]">{legal.map((l, i) => <>{i > 0 && <span class="lg:hidden">{'   '}</span>}<a href={l.href} class:list={['bs-flink', l.w]}>{l.label}</a></>)}</p>
     </div>

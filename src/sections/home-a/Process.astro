@@ -20,7 +20,7 @@ const steps = [
       {steps.map((s, i) => (
         <li class="step relative flex items-start gap-[16px] pt-[20px] pb-[20px] border-t border-white max-lg:last:border-b lg:border-0 lg:flex-1 lg:min-w-0 lg:flex-col lg:gap-[12px] lg:pt-[24px] lg:pb-0" data-node={s.d[0]} data-node-m={s.m[0]}>
           <span aria-hidden="true" class:list={['dot hidden lg:block absolute left-0 -top-[5px] w-[11px] h-[11px] rounded-full border border-white', i === 0 ? 'bg-white' : 'bg-navy']}></span>
-          <div class="contents lg:flex lg:items-center lg:justify-between lg:w-full">
+          <div class="contents lg:flex lg:items-center lg:gap-[12px] lg:w-full">
             <span class="tm-h3 lg:t-h3 w-[40px] shrink-0 lg:w-auto" data-node={s.d[1]} data-node-m={s.m[1]}>{s.n}</span>
             <Icon name={s.icon} size={24} class="order-last lg:order-none shrink-0" />
           </div>

@@ -16,11 +16,27 @@ const dark = theme === 'dark';
 const norm = (p: string) => (p.endsWith('/') ? p : p + '/');
 const here = norm(current);
 const nav = [
-  // w = Figma text box width (42:87-42:90); keeps the nav exactly 431px wide as in Figma.
-  { label: 'What We Do', href: ROUTES.whatWeDo, w: 98 },
-  { label: 'Our Founder', href: ROUTES.founder, w: 98 },
+  { 
+    label: 'What We Do', href: ROUTES.whatWeDo, w: 98,
+    sub: [
+      { label: 'Residential', href: ROUTES.whatWeDo },
+      { label: 'Commercial', href: '/commercial-claims/' },
+      { label: 'Fire & Smoke', href: '/claims/fire-smoke-damage/' },
+      { label: 'Water & Plumbing', href: '/claims/water-damage/' },
+      { label: 'Denied or Underpaid', href: '/claims/denied-or-underpaid/' }
+    ]
+  },
+  { 
+    label: 'Who We Are', href: ROUTES.whoWeAre, w: 98,
+    sub: [
+      { label: 'Our Founder', href: ROUTES.founder },
+      { label: 'Why Blue Star', href: ROUTES.whyBlueStar },
+      { label: 'Results', href: '/results/' }
+    ]
+  },
   { label: 'How It Works', href: '/how-it-works/', w: 103 },
   { label: 'Fees', href: '/fees/', w: 36 },
+  { label: 'Contact', href: ROUTES.contact, w: 60 }
 ];
 const menu = [{ label: 'Home', href: ROUTES.home }, ...nav];
 const menuId = `bs-menu-${Math.random().toString(36).slice(2, 8)}`;
@@ -41,8 +57,19 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
     </a>
 
     <nav class="bs-header__nav" aria-label="Main">
-      <ul>
-        {nav.map((l) => <li><a href={l.href} class="bs-navlink" style={`min-width:${l.w}px`} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a></li>)}
+      <ul class="bs-nav-list">
+        {nav.map((l) => (
+          <li class="bs-nav-item">
+            <a href={l.href} class="bs-navlink" style={`min-width:${l.w}px`} aria-current={isCurrent(l.href) ? 'page' : undefined}>{l.label}</a>
+            {l.sub && (
+              <ul class="bs-dropdown">
+                {l.sub.map((s) => (
+                  <li><a href={s.href} class="bs-dropdown-link" aria-current={isCurrent(s.href) ? 'page' : undefined}>{s.label}</a></li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
       </ul>
     </nav>
 
@@ -66,7 +93,18 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
     </div>
     <nav class="bs-menu__nav" aria-label="Mobile">
       <ul>
-        {menu.map((l) => <li><a href={l.href} class="bs-menu__item" aria-current={isCurrent(l.href) ? 'page' : undefined}><span>{l.label}</span><Icon name="arrow-right" size={24} /></a></li>)}
+        {menu.map((l) => (
+          <li class="bs-menu-item-container">
+            <a href={l.href} class="bs-menu__item" aria-current={isCurrent(l.href) ? 'page' : undefined}><span>{l.label}</span><Icon name="arrow-right" size={24} /></a>
+            {l.sub && (
+              <ul class="bs-menu-sub">
+                {l.sub.map(s => (
+                  <li><a href={s.href} class="bs-menu__subitem" aria-current={isCurrent(s.href) ? 'page' : undefined}>{s.label}</a></li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
       </ul>
     </nav>
     <div class="bs-menu__spacer" aria-hidden="true">
@@ -107,12 +145,21 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
   /* 1024–1279: the 1280 design doesn't fit, so tighten spacing and show the phone as an icon (lead fix for horizontal overflow). */
   @media (min-width: 64rem) and (max-width: 79.999rem) {
     .bs-header__row { padding: 0 40px; }
-    .bs-header__nav ul { gap: 20px !important; }
+    .bs-nav-list { gap: 20px !important; }
     .bs-header__actions { gap: 16px !important; }
     .bs-header__phone-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   }
-  .bs-header__nav ul { display: flex; gap: 32px; align-items: center; list-style: none; margin: 0; padding: 0; }
+  .bs-nav-list { display: flex; gap: 32px; align-items: center; list-style: none; margin: 0; padding: 0; }
+  .bs-nav-item { position: relative; padding: 16px 0; }
+  .bs-dropdown { display: none; position: absolute; top: 100%; left: 0; min-width: 220px; background: #fff; border: 1px solid var(--color-line); box-shadow: 0 10px 24px rgba(0,0,0,0.05); border-radius: 4px; padding: 12px 0; z-index: 100; flex-direction: column; list-style: none; margin: 0; }
+  .bs-header--dark .bs-dropdown { background: var(--color-navy); border-color: rgba(255,255,255,0.1); }
+  .bs-nav-item:hover .bs-dropdown { display: flex; }
+  .bs-dropdown-link { display: block; padding: 8px 16px; color: var(--color-ink); font-family: var(--font-body); font-weight: 500; font-size: 15px; text-decoration: none; transition: color 0.15s; }
+  .bs-header--dark .bs-dropdown-link { color: rgba(255,255,255,0.8); }
+  .bs-dropdown-link:hover, .bs-dropdown-link[aria-current="page"] { color: var(--color-royal); }
+  .bs-header--dark .bs-dropdown-link:hover, .bs-header--dark .bs-dropdown-link[aria-current="page"] { color: #fff; }
   .bs-navlink, .bs-header__phone { color: var(--color-navy); white-space: nowrap; text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1.5px; text-underline-offset: 6px; transition: color .15s ease, text-decoration-color .15s ease; border-radius: 2px; }
+
   .bs-navlink { display: block; font-family: var(--font-body); font-weight: 500; font-size: 15px; line-height: 20px; }
   .bs-header__phone { display: flex; align-items: center; gap: 8px; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 20px; }
   .bs-header__phone svg { flex-shrink: 0; }
@@ -135,6 +182,11 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
   .bs-menu__item { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #fff; font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 28px; letter-spacing: -0.22px; white-space: nowrap; color: #fff; }
   .bs-menu__item svg { transition: transform .15s ease; }
   .bs-menu__item:hover svg, .bs-menu__item:focus-visible svg { transform: translateX(4px); }
+  .bs-menu-item-container > .bs-menu__item { border-bottom: none; }
+  .bs-menu-item-container:not(:last-child) { border-bottom: 1px solid #fff; }
+  .bs-menu-sub { list-style: none; margin: 0; padding: 0 0 16px 16px; }
+  .bs-menu__subitem { display: block; padding: 12px 0; font-family: var(--font-body); font-weight: 500; font-size: 16px; color: rgba(255,255,255,0.8); text-decoration: none; }
+  .bs-menu__subitem:hover, .bs-menu__subitem[aria-current="page"] { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
   .bs-menu__spacer { position: relative; flex: 1 0 auto; min-height: 120px; }
   /* 85:3166 at (199,400) and 85:3171 at (20,600) in the 390×844 frame: anchored to the bottom of the spacer (spacer ends at y 660). */
   .bs-menu__mark { position: absolute; right: 0; bottom: 28px; opacity: .06; pointer-events: none; }

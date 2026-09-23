@@ -1,12 +1,12 @@
 ---
-// § 03 What protects you. Desktop 128:4254 (y 1968, 1280×632); mobile 128:6303 (y 1796, 390×736).
+// 03 What protects you. Desktop 128:4254 (y 1968, 1280×632); mobile 128:6303 (y 1796, 390×736).
 // Heading column (icon circle, index, H2) + a three-row ledger with citation chips.
 import Icon from '../../components/Icon.astro';
 import SectionIndex from './SectionIndex.astro';
 import Chip from './Chip.astro';
 const rows = [
-  { d: '128:4266', m: '128:6317', col: '128:4267', chip: '§15027(b)(7)', chipD: '128:4268', chipM: '128:6318', chipT: '128:4269', chipTM: '128:6319', text: 'In California, our fee can never leave you with less than your insurer had already paid before you hired us.', t: '128:4270', tm: '128:6320' },
-  { d: '128:4272', m: '128:6322', col: '128:4273', chip: '§15027', chipD: '128:4274', chipM: '128:6323', chipT: '128:4275', chipTM: '128:6324', text: 'You can cancel within three business days of signing. Five calendar days in a declared catastrophic disaster area.', t: '128:4276', tm: '128:6325' },
+  { d: '128:4266', m: '128:6317', col: '128:4267', chip: '15027(b)(7)', chipD: '128:4268', chipM: '128:6318', chipT: '128:4269', chipTM: '128:6319', text: 'In California, our fee can never leave you with less than your insurer had already paid before you hired us.', t: '128:4270', tm: '128:6320' },
+  { d: '128:4272', m: '128:6322', col: '128:4273', chip: '15027', chipD: '128:4274', chipM: '128:6323', chipT: '128:4275', chipTM: '128:6324', text: 'You can cancel within three business days of signing. Five calendar days in a declared catastrophic disaster area.', t: '128:4276', tm: '128:6325' },
   { d: '128:4278', m: '128:6327', col: '128:4279', chip: null, chipD: '128:4280', chipM: '128:6328', text: 'You have final say on every settlement.', t: '128:4283', tm: '128:6331' },
 ];
 ---
@@ -14,7 +14,7 @@ const rows = [
   <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:pl-[80px] lg:pr-[72px] lg:pt-[120px] lg:pb-[120px] flex flex-col lg:flex-row lg:justify-between lg:items-start lg:gap-[40px]">
     <div class="flex flex-col items-start lg:w-[312px] lg:shrink-0" data-node="128:4255">
       <span aria-hidden="true" class="flex items-center justify-center rounded-full border-[1.5px] border-navy text-navy w-[40px] h-[40px] lg:w-[56px] lg:h-[56px]" data-node="128:4256" data-node-m="128:6304"><Icon name="shield" size={24} /></span>
-      <SectionIndex label="§ 03" class="mt-[24px] lg:mt-[32px]" node="128:4260" nodeM="128:6309" textNode="128:4261" textNodeM="128:6310" />
+      <SectionIndex label="03" class="mt-[24px] lg:mt-[32px]" node="128:4260" nodeM="128:6309" textNode="128:4261" textNodeM="128:6310" />
       <h2 id="fees-protect" class="m-0 mt-[12px] lg:mt-[32px] text-navy tm-h2 lg:t-h2 w-fit lg:w-full" data-node="128:4263" data-node-m="128:6313">What protects you</h2>
     </div>
     <ul class="m-0 p-0 list-none mt-[32px] lg:mt-0 w-full lg:flex-[0_1_744px] lg:min-w-0 border-t border-navy" data-node="128:4264" data-node-m="128:6315">

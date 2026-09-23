@@ -43,6 +43,7 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
 <header class:list={['bs-header', dark ? 'bs-header--dark' : 'bs-header--light', overlay && 'bs-header--overlay', cls]} data-theme={theme} data-node={node}>
   <div class="bs-header__row">
     <a href={ROUTES.home} class="bs-header__logo" aria-label="Blue Star Adjusters home" aria-current={here === '/' ? 'page' : undefined}>
+      <Logo variant="horizontal-white" bare width={213} height={72} class="hidden bs-header__logo-white-override -m-[16px]" label="Blue Star Adjusters" />
       {dark
         ? <>
             <Logo variant="horizontal-white" bare width={213} height={72} class="hidden lg:block -m-[16px]" label="Blue Star Adjusters" />
@@ -127,11 +128,21 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
   @layer theme, base, components, utilities;
   @layer components {
   .bs-header { position: relative; z-index: 40; width: 100%; box-sizing: border-box; height: 64px; }
-  @media (min-width: 64rem) { .bs-header { height: 88px; } }
   .bs-header--overlay { position: absolute; top: 0; left: 0; right: 0; }
-  .bs-header--open { z-index: 100; } /* the menu lives in the header's stacking context: lift it over the call bar and page */
-  .bs-header--light { background: #fff; border-bottom: 1px solid var(--color-line); } /* Figma lays content out in 87px (y 23.5) above the 1px stroke */
+  .bs-header--open { z-index: 100; }
+  .bs-header--light { background: #fff; border-bottom: 1px solid var(--color-line); }
   .bs-header--dark { background: transparent; color: #fff; }
+
+  @media (min-width: 64rem) { 
+    .bs-header { height: 88px; position: sticky; top: 0; background: var(--color-navy) !important; color: #fff !important; } 
+    /* Remove absolute positioning when sticky */
+    .bs-header--overlay { position: sticky; }
+    /* Force links and phone to be white on desktop */
+    .bs-navlink, .bs-header__phone { color: #fff !important; }
+    /* Force white logo on desktop */
+    .bs-header__logo .hidden.lg\:block { display: none !important; }
+    .bs-header__logo-white-override { display: block !important; }
+  }
   .bs-header__row { box-sizing: border-box; max-width: 1280px; margin: 0 auto; height: 100%; padding: 0 8px 0 20px; display: flex; align-items: center; justify-content: space-between; }
   .bs-header__logo { display: flex; flex-shrink: 0; border-radius: 4px; }
   .bs-header__nav, .bs-header__actions { display: none; }

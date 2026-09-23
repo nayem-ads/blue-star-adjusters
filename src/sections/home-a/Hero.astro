@@ -13,11 +13,10 @@ const heroD = img['53:71'], heroM = img['58:465'];
 ---
 <div class="relative lg:bg-paper" data-node="53:70">
   <section aria-labelledby="hero-title" class="relative h-[844px] lg:h-[840px] overflow-hidden bg-ink text-white" data-node="53:220" data-node-m="58:464">
-    <picture>
-      <source media="(min-width: 1024px)" srcset={heroD.src} width={heroD.width} height={heroD.height} />
-      <img src={heroM.src} width={heroM.width} height={heroM.height} alt="A public adjuster measures a fire-damaged hillside home at dusk while the homeowner looks on."
-        class="absolute inset-0 w-full h-full object-cover" loading="eager" fetchpriority="high" decoding="async" data-node="53:71" data-node-m="58:465" />
-    </picture>
+    <video autoplay loop muted playsinline poster="/hero-poster.jpg" class="absolute inset-0 w-full h-full object-cover" data-node="53:71" data-node-m="58:465">
+      <source src="/hero-video.mp4" type="video/mp4" media="(min-width: 1024px)" />
+      <source src="/hero-video-mobile.mp4" type="video/mp4" />
+    </video>
     <div aria-hidden="true" class="absolute inset-0 bg-ink lg:bg-black opacity-[.36]"></div>
     <div aria-hidden="true" class="hero-soft absolute bg-ink lg:bg-black left-0 right-0 top-[284px] bottom-0 lg:right-auto lg:bottom-0 lg:top-0 lg:w-[880px]"></div>
     <div class="relative h-full max-w-[1280px] mx-auto px-[20px] lg:px-[80px] flex flex-col justify-end pb-[112px] lg:justify-start lg:pb-0 lg:pt-[168px]">

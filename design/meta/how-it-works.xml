@@ -1,0 +1,925 @@
+<canvas id="126:722" name="How It Works" x="0" y="0" width="0" height="0">
+  <frame id="128:3750" name="Desktop — How It Works (1280)" x="0" y="0" width="1280" height="7249">
+    <instance id="128:3751" name="Header / Desktop (Light)" x="0" y="0" width="1280" height="88" />
+    <frame id="128:3774" name="Section / Hero" x="0" y="88" width="1280" height="688">
+      <frame id="128:3815" name="Blueprint grid (full bleed, 40px)" x="0" y="0" width="1280" height="688">
+        <frame id="128:3816" name="Grid minor" x="0" y="0" width="1280" height="692">
+          <rounded-rectangle id="128:3818" name="Grid line v" x="40" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3819" name="Grid line v" x="80" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3820" name="Grid line v" x="120" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3822" name="Grid line v" x="200" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3823" name="Grid line v" x="240" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3824" name="Grid line v" x="280" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3826" name="Grid line v" x="360" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3827" name="Grid line v" x="400" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3828" name="Grid line v" x="440" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3830" name="Grid line v" x="520" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3831" name="Grid line v" x="560" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3832" name="Grid line v" x="600" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3834" name="Grid line v" x="680" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3835" name="Grid line v" x="720" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3836" name="Grid line v" x="760" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3838" name="Grid line v" x="840" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3839" name="Grid line v" x="880" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3840" name="Grid line v" x="920" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3842" name="Grid line v" x="1000" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3843" name="Grid line v" x="1040" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3844" name="Grid line v" x="1080" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3846" name="Grid line v" x="1160" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3847" name="Grid line v" x="1200" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3848" name="Grid line v" x="1240" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3849" name="Grid line h" x="0" y="40" width="1280" height="1" />
+          <rounded-rectangle id="128:3850" name="Grid line h" x="0" y="80" width="1280" height="1" />
+          <rounded-rectangle id="128:3851" name="Grid line h" x="0" y="120" width="1280" height="1" />
+          <rounded-rectangle id="128:3853" name="Grid line h" x="0" y="200" width="1280" height="1" />
+          <rounded-rectangle id="128:3854" name="Grid line h" x="0" y="240" width="1280" height="1" />
+          <rounded-rectangle id="128:3855" name="Grid line h" x="0" y="280" width="1280" height="1" />
+          <rounded-rectangle id="128:3857" name="Grid line h" x="0" y="360" width="1280" height="1" />
+          <rounded-rectangle id="128:3858" name="Grid line h" x="0" y="400" width="1280" height="1" />
+          <rounded-rectangle id="128:3859" name="Grid line h" x="0" y="440" width="1280" height="1" />
+          <rounded-rectangle id="128:3861" name="Grid line h" x="0" y="520" width="1280" height="1" />
+          <rounded-rectangle id="128:3862" name="Grid line h" x="0" y="560" width="1280" height="1" />
+          <rounded-rectangle id="128:3863" name="Grid line h" x="0" y="600" width="1280" height="1" />
+          <rounded-rectangle id="128:3865" name="Grid line h" x="0" y="680" width="1280" height="1" />
+        </frame>
+        <frame id="128:3817" name="Grid major" x="0" y="0" width="1280" height="692">
+          <rounded-rectangle id="128:3821" name="Grid line v" x="160" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3825" name="Grid line v" x="320" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3829" name="Grid line v" x="480" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3833" name="Grid line v" x="640" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3837" name="Grid line v" x="800" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3841" name="Grid line v" x="960" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3845" name="Grid line v" x="1120" y="0" width="1" height="692" />
+          <rounded-rectangle id="128:3852" name="Grid line h" x="0" y="160" width="1280" height="1" />
+          <rounded-rectangle id="128:3856" name="Grid line h" x="0" y="320" width="1280" height="1" />
+          <rounded-rectangle id="128:3860" name="Grid line h" x="0" y="480" width="1280" height="1" />
+          <rounded-rectangle id="128:3864" name="Grid line h" x="0" y="640" width="1280" height="1" />
+        </frame>
+      </frame>
+      <instance id="128:3775" name="Eyebrow / How It Works" x="80" y="96" width="130" height="18" />
+      <frame id="128:3778" name="Spacer 32" x="80" y="114" width="8" height="32" />
+      <text id="128:3779" name="H1" x="80" y="146" width="1120" height="192" />
+      <frame id="128:3780" name="Spacer 48" x="80" y="338" width="8" height="48" />
+      <frame id="128:3781" name="Lead + CTAs" x="80" y="386" width="1120" height="68">
+        <frame id="128:3782" name="Lead (V)" x="0" y="0" width="536" height="68">
+          <rounded-rectangle id="128:3783" name="Lead rule" x="0" y="0" width="2" height="68" />
+          <instance id="128:3784" name="Icon / clock" x="22" y="0" width="24" height="24" />
+          <text id="128:3787" name="Lead (V)" x="66" y="0" width="470" height="68" />
+        </frame>
+        <frame id="128:3788" name="CTAs" x="616" y="16" width="504" height="52">
+          <instance id="128:3789" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+          <instance id="128:3793" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+        </frame>
+      </frame>
+      <frame id="128:3797" name="Spacer 88" x="80" y="454" width="8" height="88" />
+      <frame id="128:3798" name="Mini timeline / 5 steps" x="80" y="542" width="1120" height="42">
+        <rounded-rectangle id="128:3814" name="Timeline line" x="0" y="23" width="1120" height="1" />
+        <frame id="128:3799" name="Chip / 01 Free Review" x="0" y="0" width="154" height="42">
+          <text id="128:3801" name="Chip label" x="17" y="9" width="116" height="24" />
+        </frame>
+        <frame id="128:3802" name="Chip / 02 Policy Review" x="203.75" y="0" width="169" height="42">
+          <text id="128:3804" name="Chip label" x="17" y="9" width="131" height="24" />
+        </frame>
+        <frame id="128:3805" name="Chip / 03 Scope the Loss" x="422.5" y="0" width="179" height="42">
+          <text id="128:3807" name="Chip label" x="17" y="9" width="141" height="24" />
+        </frame>
+        <frame id="128:3808" name="Chip / 04 Build Your Claim" x="651.25" y="0" width="192" height="42">
+          <text id="128:3810" name="Chip label" x="17" y="9" width="154" height="24" />
+        </frame>
+        <frame id="128:3811" name="Chip / 05 Maximize Settlement" x="893" y="0" width="227" height="42">
+          <text id="128:3813" name="Chip label" x="17" y="9" width="189" height="24" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="128:4402" name="Section / Five steps (zigzag spine)" x="0" y="776" width="1280" height="2978">
+      <frame id="128:4403" name="Step 01 / content" x="80" y="120" width="480" height="386">
+        <frame id="128:4404" name="Step head" x="0" y="0" width="480" height="154">
+          <text id="128:4405" name="Numeral 01" x="0" y="0" width="98" height="96" />
+          <text id="128:4406" name="Step name" x="0" y="100" width="480" height="54" />
+        </frame>
+        <frame id="128:4407" name="Step copy" x="0" y="178" width="480" height="132">
+          <text id="128:4408" name="Step lead (V)" x="0" y="0" width="480" height="64" />
+          <text id="128:4409" name="Step body" x="0" y="76" width="480" height="56" />
+        </frame>
+        <frame id="128:4410" name="Step CTA" x="0" y="334" width="253" height="52">
+          <instance id="128:4411" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+        </frame>
+      </frame>
+      <instance id="128:4415" name="Photo / hiw-hero" x="704" y="144" width="496" height="344" />
+      <frame id="128:4418" name="Step 02 / content" x="720" y="698" width="480" height="378">
+        <frame id="128:4419" name="Step head" x="0" y="0" width="480" height="154">
+          <text id="128:4420" name="Numeral 02" x="0" y="0" width="115" height="96" />
+          <text id="128:4421" name="Step name" x="0" y="100" width="480" height="54" />
+        </frame>
+        <frame id="128:4422" name="Step copy" x="0" y="178" width="480" height="200">
+          <text id="128:4423" name="Step lead (V)" x="0" y="0" width="480" height="64" />
+          <frame id="128:4424" name="Coverage buckets (chips)" x="0" y="80" width="480" height="76">
+            <frame id="128:4425" name="Chip / Dwelling" x="0" y="0" width="94" height="34">
+              <text id="128:4426" name="Dwelling" x="13" y="5" width="68" height="24" />
+            </frame>
+            <frame id="128:4427" name="Chip / Other structures" x="102" y="0" width="153" height="34">
+              <text id="128:4428" name="Other structures" x="13" y="5" width="127" height="24" />
+            </frame>
+            <frame id="128:4429" name="Chip / Contents" x="263" y="0" width="96" height="34">
+              <text id="128:4430" name="Contents" x="13" y="5" width="70" height="24" />
+            </frame>
+            <frame id="128:4431" name="Chip / Loss of use" x="367" y="0" width="110" height="34">
+              <text id="128:4432" name="Loss of use" x="13" y="5" width="84" height="24" />
+            </frame>
+            <frame id="128:4433" name="Chip / Code upgrades" x="0" y="42" width="142" height="34">
+              <text id="128:4434" name="Code upgrades" x="13" y="5" width="116" height="24" />
+            </frame>
+            <frame id="128:4435" name="Chip / Debris removal" x="150" y="42" width="142" height="34">
+              <text id="128:4436" name="Debris removal" x="13" y="5" width="116" height="24" />
+            </frame>
+          </frame>
+          <text id="128:4437" name="Step body" x="0" y="172" width="480" height="28" />
+        </frame>
+      </frame>
+      <instance id="128:4438" name="Photo / ai-claim-table" x="176" y="642" width="400" height="496" />
+      <frame id="128:4441" name="Step 03 / content" x="80" y="1410" width="480" height="310">
+        <frame id="128:4442" name="Step head" x="0" y="0" width="480" height="154">
+          <text id="128:4443" name="Numeral 03" x="0" y="0" width="116" height="96" />
+          <text id="128:4444" name="Step name" x="0" y="100" width="480" height="54" />
+        </frame>
+        <frame id="128:4445" name="Step copy" x="0" y="178" width="480" height="132">
+          <text id="128:4446" name="Step lead (V)" x="0" y="0" width="480" height="64" />
+          <text id="128:4447" name="Step body" x="0" y="76" width="480" height="56" />
+        </frame>
+      </frame>
+      <instance id="128:4448" name="Photo / hiw-structural" x="768" y="1274" width="432" height="536" />
+      <frame id="128:4451" name="Inset / ai-moisture" x="680" y="1602" width="208" height="256">
+        <instance id="128:4452" name="Photo / ai-moisture" x="8" y="8" width="192" height="240" />
+      </frame>
+      <instance id="128:4455" name="Detail / Dimension line" x="768" y="1242" width="432" height="16" />
+      <frame id="128:4615" name="Step 04 / content" x="720" y="2034" width="480" height="274">
+        <frame id="128:4616" name="Step head" x="0" y="0" width="480" height="154">
+          <text id="128:4617" name="Numeral 04" x="0" y="0" width="119" height="96" />
+          <text id="128:4618" name="Step name" x="0" y="100" width="480" height="54" />
+        </frame>
+        <frame id="128:4619" name="Step copy" x="0" y="178" width="480" height="96">
+          <text id="128:4620" name="Step lead (V)" x="0" y="0" width="480" height="96" />
+        </frame>
+      </frame>
+      <instance id="128:4621" name="Photo / hiw-package" x="80" y="2002" width="496" height="336" />
+      <instance id="128:4624" name="Detail / Crop marks" x="64" y="1986" width="528" height="368" />
+      <frame id="128:4633" name="Step 05 / content" x="80" y="2488" width="480" height="380">
+        <frame id="128:4634" name="Step head" x="0" y="0" width="480" height="208">
+          <text id="128:4635" name="Numeral 05" x="0" y="0" width="119" height="96" />
+          <text id="128:4636" name="Step name" x="0" y="100" width="480" height="108" />
+        </frame>
+        <frame id="128:4637" name="Step copy" x="0" y="232" width="480" height="148">
+          <text id="128:4638" name="Step lead (V)" x="0" y="0" width="480" height="64" />
+          <frame id="128:4639" name="Key fact / Final say" x="0" y="80" width="480" height="68">
+            <instance id="128:4640" name="Icon / shield" x="23" y="22" width="24" height="24" />
+            <text id="128:4643" name="Final say (V)" x="63" y="20" width="393" height="28" />
+          </frame>
+        </frame>
+      </frame>
+      <instance id="128:4644" name="Photo / hiw-negotiation" x="704" y="2490" width="496" height="368" />
+      <rounded-rectangle id="128:4647" name="Spine" x="640" y="168" width="1" height="2368" />
+      <rounded-rectangle id="128:4648" name="Spine connector 01" x="576" y="168" width="56" height="1" />
+      <ellipse id="128:4649" name="Spine dot 01" x="632.5" y="160.5" width="16" height="16" />
+      <rounded-rectangle id="128:4650" name="Spine connector 02" x="648" y="746" width="56" height="1" />
+      <ellipse id="128:4651" name="Spine dot 02" x="632.5" y="738.5" width="16" height="16" />
+      <rounded-rectangle id="128:4652" name="Spine connector 03" x="576" y="1458" width="56" height="1" />
+      <ellipse id="128:4653" name="Spine dot 03" x="632.5" y="1450.5" width="16" height="16" />
+      <rounded-rectangle id="128:4654" name="Spine connector 04" x="648" y="2082" width="56" height="1" />
+      <ellipse id="128:4655" name="Spine dot 04" x="632.5" y="2074.5" width="16" height="16" />
+      <rounded-rectangle id="128:4656" name="Spine connector 05" x="576" y="2536" width="56" height="1" />
+      <ellipse id="128:4657" name="Spine dot 05" x="632.5" y="2528.5" width="16" height="16" />
+    </frame>
+    <frame id="128:4959" name="Section / Who Does What (You | We)" x="0" y="3754" width="1280" height="880">
+      <rounded-rectangle id="128:4960" name="We panel (navy)" x="640" y="0" width="640" height="880" />
+      <instance id="128:4961" name="Logo mark (faint)" x="1042.4000244140625" y="-120" width="475.20001220703125" height="576.9500122070312" />
+      <text id="128:4966" name="H2 / Who Does What" x="80" y="120" width="480" height="54" />
+      <text id="128:4967" name="Column head / You" x="448" y="232" width="112" height="68" />
+      <text id="128:4968" name="Column head / We" x="720" y="232" width="100" height="68" />
+      <rounded-rectangle id="128:4969" name="Hairline (You)" x="80" y="344" width="560" height="1" />
+      <rounded-rectangle id="128:4970" name="Hairline (We)" x="640" y="344" width="560" height="1" />
+      <text id="128:4971" name="You / Approve the claim package" x="120" y="379" width="440" height="34" />
+      <text id="128:4972" name="We / Build it" x="720" y="379" width="480" height="34" />
+      <frame id="128:4973" name="Divider node / document" x="616" y="372" width="48" height="48">
+        <instance id="128:4974" name="Icon / document" x="12" y="12" width="24" height="24" />
+      </frame>
+      <rounded-rectangle id="128:4977" name="Hairline (You)" x="80" y="448" width="560" height="1" />
+      <rounded-rectangle id="128:4978" name="Hairline (We)" x="640" y="448" width="560" height="1" />
+      <text id="128:4979" name="You / Decide on every offer" x="120" y="483" width="440" height="34" />
+      <text id="128:4980" name="We / Negotiate it" x="720" y="483" width="480" height="34" />
+      <frame id="128:4981" name="Divider node / shield" x="616" y="476" width="48" height="48">
+        <instance id="128:4982" name="Icon / shield" x="12" y="12" width="24" height="24" />
+      </frame>
+      <rounded-rectangle id="128:4985" name="Hairline (You)" x="80" y="552" width="560" height="1" />
+      <rounded-rectangle id="128:4986" name="Hairline (We)" x="640" y="552" width="560" height="1" />
+      <text id="128:4987" name="You / Keep receipts for living costs" x="120" y="587" width="440" height="34" />
+      <text id="128:4988" name="We / Claim them" x="720" y="587" width="480" height="34" />
+      <frame id="128:4989" name="Divider node / home" x="616" y="580" width="48" height="48">
+        <instance id="128:4990" name="Icon / home" x="12" y="12" width="24" height="24" />
+      </frame>
+      <rounded-rectangle id="128:4993" name="Hairline (You)" x="80" y="656" width="560" height="1" />
+      <rounded-rectangle id="128:4994" name="Hairline (We)" x="640" y="656" width="560" height="1" />
+      <text id="128:4995" name="You / Get back to work and family" x="120" y="691" width="440" height="34" />
+      <text id="128:4996" name="We / Attend every inspection and meeting" x="720" y="691" width="480" height="34" />
+      <frame id="128:4997" name="Divider node / search" x="616" y="684" width="48" height="48">
+        <instance id="128:4998" name="Icon / search" x="12" y="12" width="24" height="24" />
+      </frame>
+      <rounded-rectangle id="128:5001" name="Hairline (You)" x="80" y="760" width="560" height="1" />
+      <rounded-rectangle id="128:5002" name="Hairline (We)" x="640" y="760" width="560" height="1" />
+    </frame>
+    <frame id="128:5046" name="Section / The contract, in plain terms (document excerpt)" x="0" y="4634" width="1280" height="688">
+      <frame id="128:5047" name="Icon circle / document" x="80" y="128" width="48" height="48">
+        <instance id="128:5048" name="Icon / document" x="12" y="12" width="24" height="24" />
+      </frame>
+      <text id="128:5051" name="H2 / The contract, in plain terms" x="80" y="200" width="400" height="108" />
+      <frame id="128:5052" name="§ chip / Cal. Ins. Code §15027" x="80" y="344" width="167" height="36">
+        <text id="128:5053" name="Citation" x="13" y="9" width="141" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5067" name="Leader line (chip to clause)" x="265" y="362" width="327" height="1" />
+      <frame id="128:5325" name="Excerpt assembly (rotated 1.5°)" x="568" y="144" width="672.9015205800533" height="445.81103663146496">
+        <instance id="128:5058" name="Detail / Crop marks" x="0" y="0" width="672.9015205800533" height="445.81103663146496" />
+        <frame id="128:5054" name="Document card (contract excerpt)" x="32" y="32" width="607.575239866972" height="380.4847559183836">
+          <rounded-rectangle id="128:5055" name="Margin rule" x="40" y="0" width="8.706591874361038" height="367.9402453619987" />
+          <text id="128:5056" name="Excerpt / fee + representation" x="73" y="57" width="472.03306282684207" height="111.82057104632258" />
+          <text id="128:5057" name="Excerpt / cancellation" x="73" y="183" width="472.5775657892227" height="137.81486962363124" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="128:5068" name="Section / Before you call (margin label)" x="0" y="5322" width="1280" height="730">
+      <frame id="128:5069" name="Ruler ticks (top edge)" x="80" y="0" width="1120" height="16">
+        <rounded-rectangle id="128:5070" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5071" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5072" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5073" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5074" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5075" name="Tick" x="40" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5076" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5077" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5078" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5079" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5080" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5081" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5082" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5083" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5084" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5085" name="Tick" x="120" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5086" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5087" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5088" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5089" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5090" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5091" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5092" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5093" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5094" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5095" name="Tick" x="200" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5096" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5097" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5098" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5099" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5100" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5101" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5102" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5103" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5104" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5105" name="Tick" x="280" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5106" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5107" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5108" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5109" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5110" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5111" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5112" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5113" name="Tick" x="344" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5114" name="Tick" x="352" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5115" name="Tick" x="360" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5116" name="Tick" x="368" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5117" name="Tick" x="376" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5118" name="Tick" x="384" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5119" name="Tick" x="392" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5120" name="Tick" x="400" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5121" name="Tick" x="408" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5122" name="Tick" x="416" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5123" name="Tick" x="424" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5124" name="Tick" x="432" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5125" name="Tick" x="440" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5126" name="Tick" x="448" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5127" name="Tick" x="456" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5128" name="Tick" x="464" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5129" name="Tick" x="472" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5130" name="Tick" x="480" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5131" name="Tick" x="488" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5132" name="Tick" x="496" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5133" name="Tick" x="504" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5134" name="Tick" x="512" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5135" name="Tick" x="520" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5136" name="Tick" x="528" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5137" name="Tick" x="536" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5138" name="Tick" x="544" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5139" name="Tick" x="552" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5140" name="Tick" x="560" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5141" name="Tick" x="568" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5142" name="Tick" x="576" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5143" name="Tick" x="584" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5144" name="Tick" x="592" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5145" name="Tick" x="600" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5146" name="Tick" x="608" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5147" name="Tick" x="616" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5148" name="Tick" x="624" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5149" name="Tick" x="632" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5150" name="Tick" x="640" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5151" name="Tick" x="648" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5152" name="Tick" x="656" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5153" name="Tick" x="664" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5154" name="Tick" x="672" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5155" name="Tick" x="680" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5156" name="Tick" x="688" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5157" name="Tick" x="696" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5158" name="Tick" x="704" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5159" name="Tick" x="712" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5160" name="Tick" x="720" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5161" name="Tick" x="728" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5162" name="Tick" x="736" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5163" name="Tick" x="744" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5164" name="Tick" x="752" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5165" name="Tick" x="760" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5166" name="Tick" x="768" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5167" name="Tick" x="776" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5168" name="Tick" x="784" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5169" name="Tick" x="792" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5170" name="Tick" x="800" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5171" name="Tick" x="808" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5172" name="Tick" x="816" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5173" name="Tick" x="824" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5174" name="Tick" x="832" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5175" name="Tick" x="840" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5176" name="Tick" x="848" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5177" name="Tick" x="856" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5178" name="Tick" x="864" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5179" name="Tick" x="872" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5180" name="Tick" x="880" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5181" name="Tick" x="888" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5182" name="Tick" x="896" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5183" name="Tick" x="904" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5184" name="Tick" x="912" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5185" name="Tick" x="920" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5186" name="Tick" x="928" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5187" name="Tick" x="936" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5188" name="Tick" x="944" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5189" name="Tick" x="952" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5190" name="Tick" x="960" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5191" name="Tick" x="968" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5192" name="Tick" x="976" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5193" name="Tick" x="984" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5194" name="Tick" x="992" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5195" name="Tick" x="1000" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5196" name="Tick" x="1008" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5197" name="Tick" x="1016" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5198" name="Tick" x="1024" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5199" name="Tick" x="1032" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5200" name="Tick" x="1040" y="0" width="1" height="16" />
+        <rounded-rectangle id="128:5201" name="Tick" x="1048" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5202" name="Tick" x="1056" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5203" name="Tick" x="1064" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5204" name="Tick" x="1072" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5205" name="Tick" x="1080" y="0" width="1" height="10" />
+        <rounded-rectangle id="128:5206" name="Tick" x="1088" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5207" name="Tick" x="1096" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5208" name="Tick" x="1104" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5209" name="Tick" x="1112" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5210" name="Tick" x="1120" y="0" width="1" height="16" />
+      </frame>
+      <frame id="128:5211" name="Margin rail" x="80" y="120" width="264" height="115">
+        <rounded-rectangle id="128:5212" name="Rail hairline" x="0" y="0" width="264" height="1" />
+        <frame id="128:5213" name="Icon circle / clock" x="0" y="21" width="40" height="40">
+          <instance id="128:5214" name="Icon / clock" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="128:5217" name="Margin label / Before you call" x="0" y="81" width="264" height="34" />
+      </frame>
+      <frame id="128:5218" name="Checklist column" x="464" y="120" width="736" height="490">
+        <frame id="128:5219" name="Check item 1" x="0" y="0" width="736" height="74">
+          <frame id="128:5220" name="Icon circle / check" x="0" y="21" width="32" height="32">
+            <instance id="128:5221" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="128:5223" name="Item 1" x="52" y="21" width="684" height="32" />
+        </frame>
+        <frame id="128:5224" name="Check item 2" x="0" y="74" width="736" height="105">
+          <frame id="128:5225" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="128:5226" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="128:5228" name="Item 2" x="52" y="20" width="684" height="64" />
+        </frame>
+        <frame id="128:5229" name="Check item 3" x="0" y="179" width="736" height="73">
+          <frame id="128:5230" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="128:5231" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="128:5233" name="Item 3" x="52" y="20" width="684" height="32" />
+        </frame>
+        <frame id="128:5234" name="Check item 4" x="0" y="252" width="736" height="73">
+          <frame id="128:5235" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="128:5236" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="128:5238" name="Item 4" x="52" y="20" width="684" height="32" />
+        </frame>
+        <frame id="128:5239" name="Check item 5" x="0" y="325" width="736" height="73">
+          <frame id="128:5240" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="128:5241" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="128:5243" name="Item 5" x="52" y="20" width="684" height="32" />
+        </frame>
+        <frame id="128:5244" name="Checklist actions" x="0" y="398" width="543" height="92">
+          <frame id="128:5245" name="Link / The First 48 Hours checklist" x="0" y="52" width="276" height="28">
+            <text id="128:5246" name="Link text" x="0" y="0" width="244" height="28" />
+            <instance id="128:5247" name="Icon / arrow" x="252" y="2" width="24" height="24" />
+          </frame>
+          <instance id="128:5249" name="Button / Call (916) 507-1005" x="308" y="40" width="235" height="52" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="128:5964" name="Section / Final CTA (real photo)" x="0" y="6052" width="1280" height="640">
+      <rounded-rectangle id="128:5965" name="IMG:onsite-adjuster" x="0" y="0" width="1280" height="640" />
+      <rounded-rectangle id="128:5966" name="Scrim (ink, layer opacity)" x="0" y="0" width="1280" height="640" />
+      <rounded-rectangle id="128:5967" name="Scrim gradient (ink, left to right)" x="0" y="0" width="1280" height="640" />
+      <frame id="128:5968" name="CTA content" x="80" y="152" width="720" height="343">
+        <rounded-rectangle id="128:5969" name="Rule" x="0" y="0" width="64" height="3" />
+        <text id="128:5970" name="H2 (V) / Final CTA" x="0" y="27" width="720" height="136" />
+        <text id="128:5971" name="Body (V) / Final CTA" x="0" y="187" width="560" height="64" />
+        <frame id="128:5972" name="CTAs" x="0" y="275" width="504" height="68">
+          <instance id="128:5973" name="Button / Schedule a Free Review" x="0" y="16" width="253" height="52" />
+          <instance id="128:5977" name="Button / Call (916) 507-1005" x="269" y="16" width="235" height="52" />
+        </frame>
+      </frame>
+      <text id="128:5981" name="Caption / Field photograph" x="1092" y="584" width="108" height="16" />
+    </frame>
+    <instance id="128:5982" name="Footer / Desktop" x="0" y="6692" width="1280" height="557" />
+  </frame>
+  <frame id="135:4640" name="Mobile — How It Works (390)" x="1400" y="0" width="390" height="8513.8125">
+    <instance id="135:4641" name="Header / Mobile (Light)" x="0" y="0" width="390" height="64" />
+    <frame id="135:4658" name="Section / Hero" x="0" y="64" width="390" height="722">
+      <frame id="147:1022" name="Blueprint grid (full bleed, 40px)" x="0" y="0" width="390" height="824">
+        <frame id="147:1023" name="Grid minor" x="0" y="0" width="390" height="824">
+          <rounded-rectangle id="147:1024" name="Grid line v" x="0" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1025" name="Grid line v" x="40" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1026" name="Grid line v" x="80" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1027" name="Grid line v" x="120" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1028" name="Grid line v" x="160" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1029" name="Grid line v" x="200" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1030" name="Grid line v" x="240" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1031" name="Grid line v" x="280" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1032" name="Grid line v" x="320" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1033" name="Grid line v" x="360" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1034" name="Grid line h" x="0" y="0" width="390" height="1" />
+          <rounded-rectangle id="147:1035" name="Grid line h" x="0" y="40" width="390" height="1" />
+          <rounded-rectangle id="147:1036" name="Grid line h" x="0" y="80" width="390" height="1" />
+          <rounded-rectangle id="147:1037" name="Grid line h" x="0" y="120" width="390" height="1" />
+          <rounded-rectangle id="147:1038" name="Grid line h" x="0" y="160" width="390" height="1" />
+          <rounded-rectangle id="147:1039" name="Grid line h" x="0" y="200" width="390" height="1" />
+          <rounded-rectangle id="147:1040" name="Grid line h" x="0" y="240" width="390" height="1" />
+          <rounded-rectangle id="147:1041" name="Grid line h" x="0" y="280" width="390" height="1" />
+          <rounded-rectangle id="147:1042" name="Grid line h" x="0" y="320" width="390" height="1" />
+          <rounded-rectangle id="147:1043" name="Grid line h" x="0" y="360" width="390" height="1" />
+          <rounded-rectangle id="147:1044" name="Grid line h" x="0" y="400" width="390" height="1" />
+          <rounded-rectangle id="147:1045" name="Grid line h" x="0" y="440" width="390" height="1" />
+          <rounded-rectangle id="147:1046" name="Grid line h" x="0" y="480" width="390" height="1" />
+          <rounded-rectangle id="147:1047" name="Grid line h" x="0" y="520" width="390" height="1" />
+          <rounded-rectangle id="147:1048" name="Grid line h" x="0" y="560" width="390" height="1" />
+          <rounded-rectangle id="147:1049" name="Grid line h" x="0" y="600" width="390" height="1" />
+          <rounded-rectangle id="147:1050" name="Grid line h" x="0" y="640" width="390" height="1" />
+          <rounded-rectangle id="147:1051" name="Grid line h" x="0" y="680" width="390" height="1" />
+          <rounded-rectangle id="147:1052" name="Grid line h" x="0" y="720" width="390" height="1" />
+          <rounded-rectangle id="147:1053" name="Grid line h" x="0" y="760" width="390" height="1" />
+          <rounded-rectangle id="147:1054" name="Grid line h" x="0" y="800" width="390" height="1" />
+        </frame>
+        <frame id="147:1055" name="Grid major" x="0" y="0" width="390" height="824">
+          <rounded-rectangle id="147:1056" name="Grid line v" x="0" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1057" name="Grid line v" x="160" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1058" name="Grid line v" x="320" y="0" width="1" height="824" />
+          <rounded-rectangle id="147:1059" name="Grid line h" x="0" y="0" width="390" height="1" />
+          <rounded-rectangle id="147:1060" name="Grid line h" x="0" y="160" width="390" height="1" />
+          <rounded-rectangle id="147:1061" name="Grid line h" x="0" y="320" width="390" height="1" />
+          <rounded-rectangle id="147:1062" name="Grid line h" x="0" y="480" width="390" height="1" />
+          <rounded-rectangle id="147:1063" name="Grid line h" x="0" y="640" width="390" height="1" />
+          <rounded-rectangle id="147:1064" name="Grid line h" x="0" y="800" width="390" height="1" />
+        </frame>
+      </frame>
+      <instance id="135:4659" name="Eyebrow / How It Works" x="20" y="32" width="130" height="18" />
+      <frame id="135:4662" name="Spacer 20" x="20" y="50" width="8" height="20" />
+      <text id="135:4663" name="H1" x="20" y="70" width="350" height="144" />
+      <frame id="135:4664" name="Spacer 24" x="20" y="214" width="8" height="24" />
+      <frame id="135:4665" name="Lead (V)" x="20" y="238" width="350" height="56">
+        <rounded-rectangle id="135:4666" name="Lead rule" x="0" y="0" width="2" height="56" />
+        <text id="135:4667" name="Lead (V)" x="18" y="0" width="332" height="56" />
+      </frame>
+      <frame id="135:4668" name="Spacer 24" x="20" y="294" width="8" height="24" />
+      <frame id="135:4669" name="CTAs" x="20" y="318" width="350" height="124">
+        <instance id="135:4670" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+        <instance id="135:4674" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+      </frame>
+      <frame id="135:4678" name="Spacer 24" x="20" y="442" width="8" height="24" />
+      <instance id="135:4679" name="Photo / onsite-adjuster" x="20" y="466" width="350" height="192" />
+    </frame>
+    <frame id="135:5320" name="Section / Five steps (left spine)" x="0" y="786" width="390" height="3826">
+      <frame id="147:1000" name="Mini timeline / 5 steps" x="20" y="64" width="350" height="84">
+        <rounded-rectangle id="147:1021" name="Timeline line" x="31" y="22" width="280" height="1" />
+        <frame id="147:1001" name="Timeline stop / 01" x="0" y="0" width="62" height="84">
+          <frame id="147:1002" name="Tap/Step 01" x="9" y="0" width="44" height="44">
+            <text id="147:1003" name="Numeral" x="14" y="12" width="16" height="20" />
+          </frame>
+          <text id="147:1004" name="Stop label" x="0" y="52" width="62" height="32" />
+        </frame>
+        <frame id="147:1005" name="Timeline stop / 02" x="62" y="0" width="66" height="84">
+          <frame id="147:1006" name="Tap/Step 02" x="11" y="0" width="44" height="44">
+            <text id="147:1007" name="Numeral" x="12.5" y="12" width="19" height="20" />
+          </frame>
+          <text id="147:1008" name="Stop label" x="0" y="52" width="66" height="32" />
+        </frame>
+        <frame id="147:1009" name="Timeline stop / 03" x="128" y="0" width="72" height="84">
+          <frame id="147:1010" name="Tap/Step 03" x="14" y="0" width="44" height="44">
+            <text id="147:1011" name="Numeral" x="12.5" y="12" width="19" height="20" />
+          </frame>
+          <text id="147:1012" name="Stop label" x="0" y="52" width="72" height="32" />
+        </frame>
+        <frame id="147:1013" name="Timeline stop / 04" x="200" y="0" width="72" height="84">
+          <frame id="147:1014" name="Tap/Step 04" x="14" y="0" width="44" height="44">
+            <text id="147:1015" name="Numeral" x="11.5" y="12" width="21" height="20" />
+          </frame>
+          <text id="147:1016" name="Stop label" x="0" y="52" width="72" height="32" />
+        </frame>
+        <frame id="147:1017" name="Timeline stop / 05" x="272" y="0" width="78" height="84">
+          <frame id="147:1018" name="Tap/Step 05" x="17" y="0" width="44" height="44">
+            <text id="147:1019" name="Numeral" x="12.5" y="12" width="19" height="20" />
+          </frame>
+          <text id="147:1020" name="Stop label" x="0" y="52" width="78" height="32" />
+        </frame>
+      </frame>
+      <frame id="149:1000" name="Spacer 56" x="20" y="148" width="8" height="56" />
+      <frame id="135:5321" name="Steps track" x="20" y="204" width="350" height="3566">
+        <rounded-rectangle id="135:5602" name="Spine" x="7.5" y="284" width="1" height="2966" />
+        <frame id="135:5322" name="Step 01" x="0" y="0" width="350" height="630">
+          <frame id="135:5323" name="Rail 01" x="0" y="0" width="16" height="292">
+            <ellipse id="135:5343" name="Spine dot 01" x="0" y="276" width="16" height="16" />
+          </frame>
+          <frame id="135:5324" name="Step 01 / content" x="32" y="0" width="318" height="630">
+            <instance id="135:5325" name="Photo / hiw-hero" x="0" y="0" width="318" height="224" />
+            <frame id="135:5328" name="Spacer 32" x="0" y="224" width="8" height="32" />
+            <frame id="135:5329" name="Step head" x="0" y="256" width="58" height="56">
+              <text id="135:5330" name="Numeral 01" x="0" y="0" width="58" height="56" />
+            </frame>
+            <frame id="135:5331" name="Spacer 12" x="0" y="312" width="8" height="12" />
+            <text id="135:5332" name="Step name" x="0" y="324" width="318" height="36" />
+            <frame id="135:5333" name="Spacer 16" x="0" y="360" width="8" height="16" />
+            <text id="135:5334" name="Step lead (V)" x="0" y="376" width="318" height="84" />
+            <frame id="135:5335" name="Spacer 12" x="0" y="460" width="8" height="12" />
+            <text id="135:5336" name="Step body" x="0" y="472" width="318" height="78" />
+            <frame id="135:5337" name="Spacer 24" x="0" y="550" width="8" height="24" />
+            <frame id="135:5338" name="Step CTA" x="0" y="574" width="318" height="56">
+              <instance id="135:5339" name="Button / Schedule a Free Review" x="0" y="0" width="318" height="56" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="135:5344" name="Step 02" x="0" y="694" width="350" height="798">
+          <frame id="135:5345" name="Rail 02" x="0" y="0" width="16" height="444">
+            <ellipse id="135:5373" name="Spine dot 02" x="0" y="428" width="16" height="16" />
+          </frame>
+          <frame id="135:5346" name="Step 02 / content" x="32" y="0" width="318" height="798">
+            <instance id="135:5347" name="Photo / ai-claim-table" x="0" y="0" width="318" height="376" />
+            <frame id="135:5350" name="Spacer 32" x="0" y="376" width="8" height="32" />
+            <frame id="135:5351" name="Step head" x="0" y="408" width="68" height="56">
+              <text id="135:5352" name="Numeral 02" x="0" y="0" width="68" height="56" />
+            </frame>
+            <frame id="135:5353" name="Spacer 12" x="0" y="464" width="8" height="12" />
+            <text id="135:5354" name="Step name" x="0" y="476" width="318" height="36" />
+            <frame id="135:5355" name="Spacer 16" x="0" y="512" width="8" height="16" />
+            <text id="135:5356" name="Step lead (V)" x="0" y="528" width="318" height="56" />
+            <frame id="135:5357" name="Spacer 16" x="0" y="584" width="8" height="16" />
+            <frame id="135:5358" name="Coverage buckets (chips)" x="0" y="600" width="318" height="130">
+              <frame id="135:5359" name="Chip / Dwelling" x="0" y="0" width="94" height="38">
+                <text id="135:5360" name="Dwelling" x="13" y="9" width="68" height="20" />
+              </frame>
+              <frame id="135:5361" name="Chip / Other structures" x="102" y="0" width="153" height="38">
+                <text id="135:5362" name="Other structures" x="13" y="9" width="127" height="20" />
+              </frame>
+              <frame id="135:5363" name="Chip / Contents" x="0" y="46" width="96" height="38">
+                <text id="135:5364" name="Contents" x="13" y="9" width="70" height="20" />
+              </frame>
+              <frame id="135:5365" name="Chip / Loss of use" x="104" y="46" width="110" height="38">
+                <text id="135:5366" name="Loss of use" x="13" y="9" width="84" height="20" />
+              </frame>
+              <frame id="135:5367" name="Chip / Code upgrades" x="0" y="92" width="142" height="38">
+                <text id="135:5368" name="Code upgrades" x="13" y="9" width="116" height="20" />
+              </frame>
+              <frame id="135:5369" name="Chip / Debris removal" x="150" y="92" width="142" height="38">
+                <text id="135:5370" name="Debris removal" x="13" y="9" width="116" height="20" />
+              </frame>
+            </frame>
+            <frame id="135:5371" name="Spacer 16" x="0" y="730" width="8" height="16" />
+            <text id="135:5372" name="Step body" x="0" y="746" width="318" height="52" />
+          </frame>
+        </frame>
+        <frame id="135:5374" name="Step 03" x="0" y="1556" width="350" height="798">
+          <frame id="135:5375" name="Rail 03" x="0" y="0" width="16" height="540">
+            <ellipse id="135:5400" name="Spine dot 03" x="0" y="524" width="16" height="16" />
+          </frame>
+          <frame id="135:5376" name="Step 03 / content" x="32" y="0" width="318" height="798">
+            <frame id="135:5377" name="Photo assembly / structural + moisture inset" x="0" y="0" width="318" height="472">
+              <instance id="135:5378" name="Detail / Dimension line" x="0" y="0" width="318" height="16" />
+              <instance id="135:5384" name="Photo / hiw-structural" x="0" y="24" width="318" height="400" />
+              <frame id="135:5387" name="Inset / ai-moisture" x="190" y="304" width="136" height="168">
+                <instance id="135:5388" name="Photo / ai-moisture" x="8" y="8" width="120" height="152" />
+              </frame>
+            </frame>
+            <frame id="135:5391" name="Spacer 32" x="0" y="472" width="8" height="32" />
+            <frame id="135:5392" name="Step head" x="0" y="504" width="69" height="56">
+              <text id="135:5393" name="Numeral 03" x="0" y="0" width="69" height="56" />
+            </frame>
+            <frame id="135:5394" name="Spacer 12" x="0" y="560" width="8" height="12" />
+            <text id="135:5395" name="Step name" x="0" y="572" width="318" height="36" />
+            <frame id="135:5396" name="Spacer 16" x="0" y="608" width="8" height="16" />
+            <text id="135:5397" name="Step lead (V)" x="0" y="624" width="318" height="84" />
+            <frame id="135:5398" name="Spacer 12" x="0" y="708" width="8" height="12" />
+            <text id="135:5399" name="Step body" x="0" y="720" width="318" height="78" />
+          </frame>
+        </frame>
+        <frame id="135:5558" name="Step 04" x="0" y="2418" width="350" height="476">
+          <frame id="135:5559" name="Rail 04" x="0" y="0" width="16" height="308">
+            <ellipse id="135:5581" name="Spine dot 04" x="0" y="292" width="16" height="16" />
+          </frame>
+          <frame id="135:5560" name="Step 04 / content" x="32" y="0" width="318" height="476">
+            <frame id="135:5561" name="Photo assembly / package + crop marks" x="0" y="0" width="318" height="240">
+              <instance id="135:5562" name="Detail / Crop marks" x="-16" y="-16" width="350" height="272" />
+              <instance id="135:5571" name="Photo / hiw-package" x="0" y="0" width="318" height="240" />
+            </frame>
+            <frame id="135:5574" name="Spacer 32" x="0" y="240" width="8" height="32" />
+            <frame id="135:5575" name="Step head" x="0" y="272" width="70" height="56">
+              <text id="135:5576" name="Numeral 04" x="0" y="0" width="70" height="56" />
+            </frame>
+            <frame id="135:5577" name="Spacer 12" x="0" y="328" width="8" height="12" />
+            <text id="135:5578" name="Step name" x="0" y="340" width="318" height="36" />
+            <frame id="135:5579" name="Spacer 16" x="0" y="376" width="8" height="16" />
+            <text id="135:5580" name="Step lead (V)" x="0" y="392" width="318" height="84" />
+          </frame>
+        </frame>
+        <frame id="135:5582" name="Step 05" x="0" y="2958" width="350" height="608">
+          <frame id="135:5583" name="Rail 05" x="0" y="0" width="16" height="300">
+            <ellipse id="135:5601" name="Spine dot 05" x="0" y="284" width="16" height="16" />
+          </frame>
+          <frame id="135:5584" name="Step 05 / content" x="32" y="0" width="318" height="608">
+            <instance id="135:5585" name="Photo / hiw-negotiation" x="0" y="0" width="318" height="232" />
+            <frame id="135:5588" name="Spacer 32" x="0" y="232" width="8" height="32" />
+            <frame id="135:5589" name="Step head" x="0" y="264" width="70" height="56">
+              <text id="135:5590" name="Numeral 05" x="0" y="0" width="70" height="56" />
+            </frame>
+            <frame id="135:5591" name="Spacer 12" x="0" y="320" width="8" height="12" />
+            <text id="135:5592" name="Step name" x="0" y="332" width="318" height="72" />
+            <frame id="135:5593" name="Spacer 16" x="0" y="404" width="8" height="16" />
+            <text id="135:5594" name="Step lead (V)" x="0" y="420" width="318" height="84" />
+            <frame id="135:5595" name="Spacer 20" x="0" y="504" width="8" height="20" />
+            <frame id="135:5596" name="Key fact / Final say" x="0" y="524" width="318" height="84">
+              <instance id="135:5597" name="Icon / shield" x="19" y="16" width="24" height="24" />
+              <text id="135:5600" name="Final say (V)" x="55" y="16" width="247" height="52" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="142:1164" name="Section / Who Does What (You | We)" x="0" y="4612" width="390" height="691">
+      <rounded-rectangle id="142:1218" name="We panel (navy)" x="195" y="140" width="195" height="551" />
+      <instance id="142:1219" name="Logo mark (faint)" x="250" y="451" width="247.09246826171875" height="300" />
+      <frame id="142:1165" name="Heading" x="0" y="64" width="390" height="36">
+        <text id="142:1166" name="H2 / Who Does What" x="20" y="0" width="350" height="36" />
+      </frame>
+      <frame id="142:1167" name="Spacer 40" x="0" y="100" width="8" height="40" />
+      <frame id="142:1168" name="Column heads" x="0" y="140" width="390" height="56">
+        <frame id="142:1169" name="You cell" x="0" y="0" width="195" height="56">
+          <text id="142:1170" name="Column head / You" x="20" y="14" width="135" height="36" />
+        </frame>
+        <frame id="142:1171" name="We cell" x="195" y="0" width="195" height="56">
+          <text id="142:1172" name="Column head / We" x="40" y="14" width="135" height="36" />
+        </frame>
+      </frame>
+      <frame id="142:1173" name="Hairlines" x="0" y="196" width="390" height="1">
+        <frame id="142:1174" name="Hairline wrap (You)" x="0" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1175" name="Hairline (You)" x="20" y="0" width="155" height="1" />
+        </frame>
+        <frame id="142:1176" name="Hairline wrap (We)" x="195" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1177" name="Hairline (We)" x="20" y="0" width="155" height="1" />
+        </frame>
+      </frame>
+      <frame id="142:1178" name="Row / Approve the claim package" x="0" y="197" width="390" height="100">
+        <frame id="142:1179" name="You cell" x="0" y="0" width="195" height="100">
+          <text id="142:1180" name="You / Approve the claim package" x="20" y="24" width="135" height="52" />
+        </frame>
+        <frame id="142:1181" name="We cell" x="195" y="0" width="195" height="100">
+          <text id="142:1182" name="We / Build it" x="40" y="37" width="135" height="26" />
+        </frame>
+      </frame>
+      <frame id="142:1183" name="Hairlines" x="0" y="297" width="390" height="1">
+        <frame id="142:1184" name="Hairline wrap (You)" x="0" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1185" name="Hairline (You)" x="20" y="0" width="155" height="1" />
+        </frame>
+        <frame id="142:1186" name="Hairline wrap (We)" x="195" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1187" name="Hairline (We)" x="20" y="0" width="155" height="1" />
+        </frame>
+      </frame>
+      <frame id="142:1188" name="Row / Decide on every offer" x="0" y="298" width="390" height="100">
+        <frame id="142:1189" name="You cell" x="0" y="0" width="195" height="100">
+          <text id="142:1190" name="You / Decide on every offer" x="20" y="24" width="135" height="52" />
+        </frame>
+        <frame id="142:1191" name="We cell" x="195" y="0" width="195" height="100">
+          <text id="142:1192" name="We / Negotiate it" x="40" y="37" width="135" height="26" />
+        </frame>
+      </frame>
+      <frame id="142:1193" name="Hairlines" x="0" y="398" width="390" height="1">
+        <frame id="142:1194" name="Hairline wrap (You)" x="0" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1195" name="Hairline (You)" x="20" y="0" width="155" height="1" />
+        </frame>
+        <frame id="142:1196" name="Hairline wrap (We)" x="195" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1197" name="Hairline (We)" x="20" y="0" width="155" height="1" />
+        </frame>
+      </frame>
+      <frame id="142:1198" name="Row / Keep receipts for living costs" x="0" y="399" width="390" height="100">
+        <frame id="142:1199" name="You cell" x="0" y="0" width="195" height="100">
+          <text id="142:1200" name="You / Keep receipts for living costs" x="20" y="24" width="135" height="52" />
+        </frame>
+        <frame id="142:1201" name="We cell" x="195" y="0" width="195" height="100">
+          <text id="142:1202" name="We / Claim them" x="40" y="37" width="135" height="26" />
+        </frame>
+      </frame>
+      <frame id="142:1203" name="Hairlines" x="0" y="499" width="390" height="1">
+        <frame id="142:1204" name="Hairline wrap (You)" x="0" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1205" name="Hairline (You)" x="20" y="0" width="155" height="1" />
+        </frame>
+        <frame id="142:1206" name="Hairline wrap (We)" x="195" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1207" name="Hairline (We)" x="20" y="0" width="155" height="1" />
+        </frame>
+      </frame>
+      <frame id="142:1208" name="Row / Get back to work and family" x="0" y="500" width="390" height="126">
+        <frame id="142:1209" name="You cell" x="0" y="0" width="195" height="126">
+          <text id="142:1210" name="You / Get back to work and family" x="20" y="37" width="135" height="52" />
+        </frame>
+        <frame id="142:1211" name="We cell" x="195" y="0" width="195" height="126">
+          <text id="142:1212" name="We / Attend every inspection and meeting" x="40" y="24" width="135" height="78" />
+        </frame>
+      </frame>
+      <frame id="142:1213" name="Hairlines" x="0" y="626" width="390" height="1">
+        <frame id="142:1214" name="Hairline wrap (You)" x="0" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1215" name="Hairline (You)" x="20" y="0" width="155" height="1" />
+        </frame>
+        <frame id="142:1216" name="Hairline wrap (We)" x="195" y="0" width="195" height="1">
+          <rounded-rectangle id="142:1217" name="Hairline (We)" x="20" y="0" width="155" height="1" />
+        </frame>
+      </frame>
+      <frame id="142:1224" name="Divider node / document" x="175" y="227" width="40" height="40">
+        <instance id="142:1225" name="Icon / document" x="8" y="8" width="24" height="24" />
+      </frame>
+      <frame id="142:1228" name="Divider node / shield" x="175" y="328" width="40" height="40">
+        <instance id="142:1229" name="Icon / shield" x="8" y="8" width="24" height="24" />
+      </frame>
+      <frame id="142:1232" name="Divider node / home" x="175" y="429" width="40" height="40">
+        <instance id="142:1233" name="Icon / home" x="8" y="8" width="24" height="24" />
+      </frame>
+      <frame id="142:1236" name="Divider node / search" x="175" y="543" width="40" height="40">
+        <instance id="142:1237" name="Icon / search" x="8" y="8" width="24" height="24" />
+      </frame>
+    </frame>
+    <frame id="142:1240" name="Section / The contract, in plain terms (document excerpt)" x="0" y="5303" width="390" height="822.8123168945312">
+      <frame id="142:1241" name="Icon circle / document" x="20" y="64" width="48" height="48">
+        <instance id="142:1242" name="Icon / document" x="12" y="12" width="24" height="24" />
+      </frame>
+      <frame id="142:1245" name="Spacer 20" x="20" y="112" width="8" height="20" />
+      <text id="142:1246" name="H2 / The contract, in plain terms" x="20" y="132" width="350" height="72" />
+      <frame id="142:1247" name="Spacer 20" x="20" y="204" width="8" height="20" />
+      <frame id="142:1248" name="§ chip + leader" x="20" y="224" width="350" height="38">
+        <frame id="142:1249" name="§ chip / Cal. Ins. Code §15027" x="0" y="0" width="183" height="38">
+          <text id="142:1250" name="Citation" x="13" y="9" width="157" height="20" />
+        </frame>
+        <rounded-rectangle id="142:1251" name="Leader line (chip to clause)" x="195" y="18.5" width="155" height="1" />
+      </frame>
+      <frame id="142:1252" name="Spacer 32" x="20" y="262" width="8" height="32" />
+      <frame id="142:1253" name="Excerpt assembly (rotated 1.2°)" x="19.9999942779541" y="300.9110107421875" width="339.35172552242875" height="456.8123206682503">
+        <instance id="142:1254" name="Detail / Crop marks" x="0" y="0" width="339.35172552242875" height="456.8123206682503" />
+        <frame id="142:1263" name="Document card (contract excerpt)" x="16" y="16" width="306.68858516588807" height="424.14918031170964">
+          <rounded-rectangle id="142:1266" name="Margin rule" x="14" y="0" width="9.753712955862284" height="417.92928108759224" />
+          <text id="142:1264" name="Excerpt / fee + representation" x="29" y="33" width="247.08785758540034" height="155.07705805450678" />
+          <text id="142:1265" name="Excerpt / cancellation" x="29" y="203" width="247.75801507756114" height="187.07004091888666" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="146:942" name="Section / Before you call (margin label)" x="0" y="6125.8125" width="390" height="834">
+      <frame id="146:943" name="Ruler ticks (top edge)" x="20" y="56" width="350" height="16">
+        <rounded-rectangle id="146:944" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="146:945" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:946" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:947" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:948" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:949" name="Tick" x="40" y="0" width="1" height="10" />
+        <rounded-rectangle id="146:950" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:951" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:952" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:953" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:954" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="146:955" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:956" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:957" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:958" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:959" name="Tick" x="120" y="0" width="1" height="10" />
+        <rounded-rectangle id="146:960" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:961" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:962" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:963" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:964" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="146:965" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:966" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:967" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:968" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:969" name="Tick" x="200" y="0" width="1" height="10" />
+        <rounded-rectangle id="146:970" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:971" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:972" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:973" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:974" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="146:975" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:976" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:977" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:978" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:979" name="Tick" x="280" y="0" width="1" height="10" />
+        <rounded-rectangle id="146:980" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:981" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:982" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:983" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:984" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="146:985" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:986" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="146:987" name="Tick" x="344" y="0" width="1" height="6" />
+      </frame>
+      <frame id="146:988" name="Spacer 32" x="20" y="72" width="8" height="32" />
+      <frame id="146:989" name="Margin label" x="20" y="104" width="350" height="40">
+        <frame id="146:990" name="Icon circle / clock" x="0" y="0" width="40" height="40">
+          <instance id="146:991" name="Icon / clock" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="146:994" name="Margin label / Before you call" x="56" y="2" width="294" height="36" />
+      </frame>
+      <frame id="146:995" name="Spacer 20" x="20" y="144" width="8" height="20" />
+      <rounded-rectangle id="146:996" name="Rail hairline" x="20" y="164" width="350" height="1" />
+      <frame id="146:997" name="Checklist" x="20" y="165" width="350" height="465">
+        <frame id="146:998" name="Check item 1" x="0" y="0" width="350" height="93">
+          <frame id="146:999" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="146:1000" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="146:1002" name="Item 1" x="48" y="20" width="302" height="52" />
+        </frame>
+        <frame id="146:1003" name="Check item 2" x="0" y="93" width="350" height="93">
+          <frame id="146:1004" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="146:1005" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="146:1007" name="Item 2" x="48" y="20" width="302" height="52" />
+        </frame>
+        <frame id="146:1008" name="Check item 3" x="0" y="186" width="350" height="93">
+          <frame id="146:1009" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="146:1010" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="146:1012" name="Item 3" x="48" y="20" width="302" height="52" />
+        </frame>
+        <frame id="146:1013" name="Check item 4" x="0" y="279" width="350" height="93">
+          <frame id="146:1014" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="146:1015" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="146:1017" name="Item 4" x="48" y="20" width="302" height="52" />
+        </frame>
+        <frame id="146:1018" name="Check item 5" x="0" y="372" width="350" height="93">
+          <frame id="146:1019" name="Icon circle / check" x="0" y="20" width="32" height="32">
+            <instance id="146:1020" name="Icon / check" x="8" y="8" width="16" height="16" />
+          </frame>
+          <text id="146:1022" name="Item 5" x="48" y="20" width="302" height="52" />
+        </frame>
+      </frame>
+      <frame id="146:1023" name="Spacer 24" x="20" y="630" width="8" height="24" />
+      <frame id="146:1024" name="Tap/Link / The First 48 Hours checklist" x="20" y="654" width="262" height="44">
+        <text id="146:1025" name="Link text" x="0" y="9" width="230" height="26" />
+        <instance id="146:1026" name="Icon / arrow" x="238" y="10" width="24" height="24" />
+      </frame>
+      <frame id="146:1028" name="Spacer 16" x="20" y="698" width="8" height="16" />
+      <frame id="146:1029" name="Checklist actions" x="20" y="714" width="350" height="56">
+        <instance id="146:1030" name="Button / Call (916) 507-1005" x="0" y="0" width="350" height="56" />
+      </frame>
+    </frame>
+    <frame id="146:1034" name="Section / Final CTA (real photo)" x="0" y="6959.8125" width="390" height="701">
+      <rounded-rectangle id="146:1035" name="IMG:stair-detail" x="0" y="0" width="390" height="704" />
+      <rounded-rectangle id="146:1036" name="Scrim (ink, layer opacity)" x="0" y="0" width="390" height="704" />
+      <frame id="146:1038" name="CTA content" x="20" y="296" width="350" height="349">
+        <rounded-rectangle id="146:1039" name="Rule" x="0" y="0" width="64" height="3" />
+        <frame id="146:1040" name="Spacer 24" x="0" y="3" width="8" height="24" />
+        <text id="146:1041" name="H2 (V) / Final CTA" x="0" y="27" width="350" height="72" />
+        <frame id="146:1042" name="Spacer 16" x="0" y="99" width="8" height="16" />
+        <text id="146:1043" name="Body (V) / Final CTA" x="0" y="115" width="350" height="78" />
+        <frame id="146:1044" name="Spacer 32" x="0" y="193" width="8" height="32" />
+        <frame id="146:1045" name="CTAs" x="0" y="225" width="350" height="124">
+          <instance id="146:1046" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+          <instance id="146:1051" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+        </frame>
+      </frame>
+      <text id="146:1055" name="Caption / Field photograph" x="262" y="24" width="108" height="16" />
+    </frame>
+    <instance id="146:1056" name="Footer / Mobile" x="0" y="7660.8125" width="390" height="853" />
+    <instance id="146:1092" name="Mobile call bar" x="0" y="755" width="390" height="89" />
+  </frame>
+</canvas>

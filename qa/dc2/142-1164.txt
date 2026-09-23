@@ -1,0 +1,148 @@
+const imgLogoMarkFaint = "https://www.figma.com/api/mcp/asset/e131988e-3a25-4877-9f3a-2442a530ff19.svg";
+const imgIconDocument = "https://www.figma.com/api/mcp/asset/f0f16e8f-47f9-4694-a3e2-1bea1e5618c9.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/fe446f94-151c-4007-89ed-bb6f03fae4a6.svg";
+const imgIconHome = "https://www.figma.com/api/mcp/asset/cfef5810-6e96-4196-906d-b97c79012383.svg";
+const imgIconSearch = "https://www.figma.com/api/mcp/asset/9abe05cd-5873-4ccb-9de8-933cd286502b.svg";
+
+export default function SectionWhoDoesWhatYouWe() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start py-[64px] relative size-full" data-node-id="142:1164" data-annotations="Who Does What (CD 268 to 273). Mobile keeps the You | We split: the paper/navy seam at x=195 carries the spine idea into the ledger. Phrases are 2 to 6 words, so two 16px columns stay readable; no table to restack." data-name="Section / Who Does What (You | We)">
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] bottom-0 left-[195px] top-[140px] w-[195px]" data-node-id="142:1218" data-name="We panel (navy)" />
+      <div className="absolute h-[300px] left-[250px] top-[451px] w-[247.092px]" data-node-id="142:1219" data-name="Logo mark (faint)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkFaint} />
+      </div>
+      <div className="content-stretch flex flex-col items-start overflow-clip px-[20px] relative shrink-0 w-full" data-node-id="142:1165" data-name="Heading">
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[36px] relative shrink-0 text-[32px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.48px] w-full" data-node-id="142:1166">
+          Who Does What.
+        </p>
+      </div>
+      <div className="h-[40px] relative shrink-0 w-[8px]" data-node-id="142:1167" data-name="Spacer 40" />
+      <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1168" data-name="Column heads">
+        <div className="content-stretch flex flex-col h-[56px] items-start justify-center overflow-clip pb-[24px] pl-[20px] pr-[40px] pt-[32px] relative shrink-0 w-[195px]" data-node-id="142:1169" data-name="You cell">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[36px] relative shrink-0 text-[32px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.48px] w-full" data-node-id="142:1170">
+            You
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col h-[56px] items-start justify-center overflow-clip pb-[24px] pl-[40px] pr-[20px] pt-[32px] relative shrink-0 w-[195px]" data-node-id="142:1171" data-name="We cell">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[36px] relative shrink-0 text-[32px] text-[color:var(--color\/white,white)] tracking-[-0.48px] w-full" data-node-id="142:1172">
+            We
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex h-px items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1173" data-name="Hairlines">
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1174" data-name="Hairline wrap (You)">
+          <div className="bg-[var(--color\/navy,#081d5e)] flex-[1_0_0] h-px min-w-px opacity-18 relative" data-node-id="142:1175" data-name="Hairline (You)" />
+        </div>
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1176" data-name="Hairline wrap (We)">
+          <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px opacity-24 relative" data-node-id="142:1177" data-name="Hairline (We)" />
+        </div>
+      </div>
+      <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1178" data-name="Row / Approve the claim package">
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[20px] pr-[40px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1179" data-name="You cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="142:1180">
+            Approve the claim package
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[40px] pr-[20px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1181" data-name="We cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] w-full" data-node-id="142:1182">
+            Build it
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex h-px items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1183" data-name="Hairlines">
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1184" data-name="Hairline wrap (You)">
+          <div className="bg-[var(--color\/navy,#081d5e)] flex-[1_0_0] h-px min-w-px opacity-18 relative" data-node-id="142:1185" data-name="Hairline (You)" />
+        </div>
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1186" data-name="Hairline wrap (We)">
+          <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px opacity-24 relative" data-node-id="142:1187" data-name="Hairline (We)" />
+        </div>
+      </div>
+      <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1188" data-name="Row / Decide on every offer">
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[20px] pr-[40px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1189" data-name="You cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="142:1190">
+            Decide on every offer
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[40px] pr-[20px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1191" data-name="We cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] w-full" data-node-id="142:1192">
+            Negotiate it
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex h-px items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1193" data-name="Hairlines">
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1194" data-name="Hairline wrap (You)">
+          <div className="bg-[var(--color\/navy,#081d5e)] flex-[1_0_0] h-px min-w-px opacity-18 relative" data-node-id="142:1195" data-name="Hairline (You)" />
+        </div>
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1196" data-name="Hairline wrap (We)">
+          <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px opacity-24 relative" data-node-id="142:1197" data-name="Hairline (We)" />
+        </div>
+      </div>
+      <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1198" data-name="Row / Keep receipts for living costs">
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[20px] pr-[40px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1199" data-name="You cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="142:1200">
+            Keep receipts for living costs
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[40px] pr-[20px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1201" data-name="We cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] w-full" data-node-id="142:1202">
+            Claim them
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex h-px items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1203" data-name="Hairlines">
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1204" data-name="Hairline wrap (You)">
+          <div className="bg-[var(--color\/navy,#081d5e)] flex-[1_0_0] h-px min-w-px opacity-18 relative" data-node-id="142:1205" data-name="Hairline (You)" />
+        </div>
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1206" data-name="Hairline wrap (We)">
+          <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px opacity-24 relative" data-node-id="142:1207" data-name="Hairline (We)" />
+        </div>
+      </div>
+      <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1208" data-name="Row / Get back to work and family">
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[20px] pr-[40px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1209" data-name="You cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="142:1210">
+            Get back to work and family
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col items-start justify-center overflow-clip pl-[40px] pr-[20px] py-[24px] relative self-stretch shrink-0 w-[195px]" data-node-id="142:1211" data-name="We cell">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] w-full" data-node-id="142:1212">
+            Attend every inspection and meeting
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex h-px items-start overflow-clip relative shrink-0 w-[390px]" data-node-id="142:1213" data-name="Hairlines">
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1214" data-name="Hairline wrap (You)">
+          <div className="bg-[var(--color\/navy,#081d5e)] flex-[1_0_0] h-px min-w-px opacity-18 relative" data-node-id="142:1215" data-name="Hairline (You)" />
+        </div>
+        <div className="content-stretch flex h-px items-start overflow-clip px-[20px] relative shrink-0 w-[195px]" data-node-id="142:1216" data-name="Hairline wrap (We)">
+          <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px opacity-24 relative" data-node-id="142:1217" data-name="Hairline (We)" />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[175px] overflow-clip rounded-[20px] size-[40px] top-[227px]" data-node-id="142:1224" data-name="Divider node / document">
+        <div className="relative shrink-0 size-[24px]" data-node-id="142:1225" data-name="Icon / document">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDocument} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[175px] overflow-clip rounded-[20px] size-[40px] top-[328px]" data-node-id="142:1228" data-name="Divider node / shield">
+        <div className="relative shrink-0 size-[24px]" data-node-id="142:1229" data-name="Icon / shield">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[175px] overflow-clip rounded-[20px] size-[40px] top-[429px]" data-node-id="142:1232" data-name="Divider node / home">
+        <div className="relative shrink-0 size-[24px]" data-node-id="142:1233" data-name="Icon / home">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[175px] overflow-clip rounded-[20px] size-[40px] top-[543px]" data-node-id="142:1236" data-name="Divider node / search">
+        <div className="relative shrink-0 size-[24px]" data-node-id="142:1237" data-name="Icon / search">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSearch} />
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 32, weight: 600, lineHeight: 36, letterSpacing: -1.5), Mobile/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 26, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

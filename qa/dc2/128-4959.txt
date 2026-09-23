@@ -1,0 +1,85 @@
+const imgLogoMarkFaint = "https://www.figma.com/api/mcp/asset/54745b55-3c18-466f-94ca-211c5830225e.svg";
+const imgIconDocument = "https://www.figma.com/api/mcp/asset/68996d97-5355-46ed-a0a7-a8430965fe82.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/3214f6c6-47c8-4f48-a285-1e954d842f32.svg";
+const imgIconHome = "https://www.figma.com/api/mcp/asset/babe0404-10a2-4625-9b1c-703d57cc2611.svg";
+const imgIconSearch = "https://www.figma.com/api/mcp/asset/039b254b-42f3-43a2-981b-b785d6cb2896.svg";
+
+export default function SectionWhoDoesWhatYouWe() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] relative size-full" data-node-id="128:4959" data-annotations="Who Does What (CD 268 to 273). The paper/navy split sits on x=640, continuing the steps spine." data-name="Section / Who Does What (You | We)">
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[880px] left-[640px] top-0 w-[640px]" data-node-id="128:4960" data-name="We panel (navy)" />
+      <div className="absolute h-[576.95px] left-[1042.4px] top-[-120px] w-[475.2px]" data-node-id="128:4961" data-name="Logo mark (faint)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkFaint} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] left-[80px] text-[48px] text-[color:var(--color\/navy,#081d5e)] top-[120px] tracking-[-0.72px] w-[480px]" data-node-id="128:4966">
+        Who Does What.
+      </p>
+      <p className="-translate-x-full [word-break:break-word] absolute font-['Schibsted_Grotesk:Bold'] font-bold leading-[68px] left-[560px] text-[64px] text-[color:var(--color\/navy,#081d5e)] text-right top-[232px] tracking-[-1.28px] whitespace-nowrap" data-node-id="128:4967">
+        You
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Bold'] font-bold leading-[68px] left-[720px] text-[64px] text-[color:var(--color\/white,white)] top-[232px] tracking-[-1.28px] whitespace-nowrap" data-node-id="128:4968">
+        We
+      </p>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-18 top-[344px] w-[560px]" data-node-id="128:4969" data-name="Hairline (You)" />
+      <div className="absolute bg-[var(--color\/white,white)] h-px left-[640px] opacity-22 top-[344px] w-[560px]" data-node-id="128:4970" data-name="Hairline (We)" />
+      <p className="-translate-x-full [word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[560px] text-[28px] text-[color:var(--color\/ink,#070f33)] text-right top-[379px] tracking-[-0.28px] w-[440px]" data-node-id="128:4971">
+        Approve the claim package
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[720px] text-[28px] text-[color:var(--color\/white,white)] top-[379px] tracking-[-0.28px] w-[480px]" data-node-id="128:4972">
+        Build it
+      </p>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[616px] overflow-clip rounded-[24px] size-[48px] top-[372px]" data-node-id="128:4973" data-name="Divider node / document">
+        <div className="relative shrink-0 size-[24px]" data-node-id="128:4974" data-name="Icon / document">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDocument} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-18 top-[448px] w-[560px]" data-node-id="128:4977" data-name="Hairline (You)" />
+      <div className="absolute bg-[var(--color\/white,white)] h-px left-[640px] opacity-22 top-[448px] w-[560px]" data-node-id="128:4978" data-name="Hairline (We)" />
+      <p className="-translate-x-full [word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[560px] text-[28px] text-[color:var(--color\/ink,#070f33)] text-right top-[483px] tracking-[-0.28px] w-[440px]" data-node-id="128:4979">
+        Decide on every offer
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[720px] text-[28px] text-[color:var(--color\/white,white)] top-[483px] tracking-[-0.28px] w-[480px]" data-node-id="128:4980">
+        Negotiate it
+      </p>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[616px] overflow-clip rounded-[24px] size-[48px] top-[476px]" data-node-id="128:4981" data-name="Divider node / shield">
+        <div className="relative shrink-0 size-[24px]" data-node-id="128:4982" data-name="Icon / shield">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-18 top-[552px] w-[560px]" data-node-id="128:4985" data-name="Hairline (You)" />
+      <div className="absolute bg-[var(--color\/white,white)] h-px left-[640px] opacity-22 top-[552px] w-[560px]" data-node-id="128:4986" data-name="Hairline (We)" />
+      <p className="-translate-x-full [word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[560px] text-[28px] text-[color:var(--color\/ink,#070f33)] text-right top-[587px] tracking-[-0.28px] w-[440px]" data-node-id="128:4987">
+        Keep receipts for living costs
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[720px] text-[28px] text-[color:var(--color\/white,white)] top-[587px] tracking-[-0.28px] w-[480px]" data-node-id="128:4988">
+        Claim them
+      </p>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[616px] overflow-clip rounded-[24px] size-[48px] top-[580px]" data-node-id="128:4989" data-name="Divider node / home">
+        <div className="relative shrink-0 size-[24px]" data-node-id="128:4990" data-name="Icon / home">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-18 top-[656px] w-[560px]" data-node-id="128:4993" data-name="Hairline (You)" />
+      <div className="absolute bg-[var(--color\/white,white)] h-px left-[640px] opacity-22 top-[656px] w-[560px]" data-node-id="128:4994" data-name="Hairline (We)" />
+      <p className="-translate-x-full [word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[560px] text-[28px] text-[color:var(--color\/ink,#070f33)] text-right top-[691px] tracking-[-0.28px] w-[440px]" data-node-id="128:4995">
+        Get back to work and family
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] left-[720px] text-[28px] text-[color:var(--color\/white,white)] top-[691px] tracking-[-0.28px] w-[480px]" data-node-id="128:4996">
+        Attend every inspection and meeting
+      </p>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center left-[616px] overflow-clip rounded-[24px] size-[48px] top-[684px]" data-node-id="128:4997" data-name="Divider node / search">
+        <div className="relative shrink-0 size-[24px]" data-node-id="128:4998" data-name="Icon / search">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSearch} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-18 top-[760px] w-[560px]" data-node-id="128:5001" data-name="Hairline (You)" />
+      <div className="absolute bg-[var(--color\/white,white)] h-px left-[640px] opacity-22 top-[760px] w-[560px]" data-node-id="128:5002" data-name="Hairline (We)" />
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Display L: Font(family: "Schibsted Grotesk", style: Bold, size: 64, weight: 700, lineHeight: 68, letterSpacing: -2).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

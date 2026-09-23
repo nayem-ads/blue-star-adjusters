@@ -1,5 +1,41 @@
 ---
-// Noindex stub (components agent). Replace with the real page when it is designed.
-import StubPage from '../../components/StubPage.astro';
+// Who We Are (Figma desktop 128:3436, mobile 128:6353). Indexable.
+// data-node = desktop node id, data-node-m = mobile node id (pixel-diff --mobile swaps them).
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/who-we-are/Hero.astro';
+import WhyNewFirm from '../../sections/who-we-are/WhyNewFirm.astro';
+import NewWay from '../../sections/who-we-are/NewWay.astro';
+import Bento from '../../sections/who-we-are/Bento.astro';
+import NoConflict from '../../sections/who-we-are/NoConflict.astro';
+import Founder from '../../sections/who-we-are/Founder.astro';
+import Boutique from '../../sections/who-we-are/Boutique.astro';
+import WhereWeWork from '../../sections/who-we-are/WhereWeWork.astro';
+import FinalCta from '../../sections/who-we-are/FinalCta.astro';
+const title = 'Who We Are: Same Experience. A New Way. | Blue Star';
+const description = 'We left a legacy firm to build something leaner, more responsive, and 100% focused on you, without the bureaucracy that slows claims down.';
 ---
-<StubPage name="Why Blue Star" eyebrow="The firm" />
+<Base title={title} description={description}>
+  <div data-node="128:3437" data-node-m="128:6354"><Header theme="light" /></div>
+  <main class="bs-wwa">
+    <Hero />
+    <WhyNewFirm />
+    <NewWay />
+    <Bento />
+    <NoConflict />
+    <Founder />
+    <Boutique />
+    <WhereWeWork />
+    <FinalCta />
+  </main>
+  <div data-node="128:5583" data-node-m="135:4596"><Footer /></div>
+  <CallBar />
+</Base>
+<style is:global>
+  /* Below lg, Chrome sets Montserrat/Schibsted text 1px higher than Figma (baseline rounding): nudge glyphs down 1px. */
+  @media (max-width: 1023.98px) {
+    .bs-wwa :where(.tm-body, .tm-body-strong, .tm-lead, .tm-h2, .tm-h3, .tm-display, .bs-wnudge):not(.bs-nonudge) { translate: 0 1px; }
+  }
+</style>

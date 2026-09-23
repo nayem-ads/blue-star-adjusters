@@ -1,0 +1,55 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/4ed684d0-3b9e-4725-ad55-b781298d92ae.svg";
+const imgLogoMarkWhiteFaint = "https://www.figma.com/api/mcp/asset/c331dc6f-8f19-4b4e-973e-7e41f3c43f7a.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:152">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionWhenNotToHireUs() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex flex-col items-start px-[20px] py-[64px] relative size-full" data-node-id="128:6333" data-name="Section/When not to hire us">
+      <div className="absolute h-[393.375px] left-[189.12px] top-[263.3px] w-[324px]" data-node-id="128:6334" data-name="Logo/Mark/White (faint)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkWhiteFaint} />
+      </div>
+      <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="128:6339" data-name="NotHire/Index">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/white,white)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6340">
+          § 04
+        </p>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-50 relative shrink-0 w-[40px]" data-node-id="128:6341" data-name="Index rule" />
+      </div>
+      <div className="h-[24px] relative shrink-0 w-[8px]" data-node-id="128:6342" data-name="Spacer" />
+      <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[44px] relative shrink-0 text-[40px] text-[color:var(--color\/white,white)] tracking-[-0.8px] w-[350px]" data-node-id="128:6343" data-annotations="Section title from CD 296. \[CLIENT: confirm\] Mike wants this promise.">{`When we'll tell you not to hire us.`}</p>
+      <div className="h-[32px] relative shrink-0 w-[8px]" data-node-id="128:6344" data-name="Spacer" />
+      <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[64px]" data-node-id="128:6345" data-name="Royal rule" />
+      <div className="h-[32px] relative shrink-0 w-[8px]" data-node-id="128:6346" data-name="Spacer" />
+      <p className="[word-break:break-word] font-['Schibsted_Grotesk:Regular'] font-normal leading-[32px] relative shrink-0 text-[22px] text-[color:var(--color\/white,white)] w-[350px]" data-node-id="128:6347" data-annotations="CD 296, word for word. \[CLIENT: confirm\] Mike wants this promise.">{`If the carrier's offer is already fair, or the loss is small enough that our fee would outweigh what we add, we'll say so at the free review.`}</p>
+      <div className="h-[40px] relative shrink-0 w-[8px]" data-node-id="128:6348" data-name="Spacer" />
+      <Button className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] h-[56px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-[350px]" />
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

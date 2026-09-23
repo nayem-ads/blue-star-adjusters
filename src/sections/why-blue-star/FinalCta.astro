@@ -1,0 +1,52 @@
+---
+// Why Blue Star / Final CTA (split). Desktop 128:6084 (1280×824), mobile 141:888 (390×1159).
+// Left/top: real field photograph (wood-house) with caption chip. Right/bottom: navy CTA panel with trust ledger.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import images from '../../data/images.json';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const img = images as Record<string, { src: string; width: number; height: number }>;
+const photoD = img['128:6086'], photoM = img['141:890'];
+const trust = [
+  { text: 'No upfront cost', d: ['128:6102', '128:6105'], m: ['141:915', '141:918'] },
+  { text: 'You always have final say on any settlement', d: ['128:6106', '128:6109'], m: ['141:920', '141:923'] },
+  { text: 'CA License No. 2B60428', d: ['128:6110', '128:6113'], m: ['141:925', '141:928'] },
+];
+---
+<section aria-labelledby="why-cta-title" class="relative flex flex-col lg:flex-row bg-navy text-white" data-node="128:6084" data-node-m="141:888">
+  <div class="relative h-[376px] lg:h-[824px] lg:w-1/2 overflow-hidden" data-node="128:6085" data-node-m="141:889">
+    <picture>
+      <source media="(min-width: 1024px)" srcset={photoD.src} width={photoD.width} height={photoD.height} />
+      <img src={photoM.src} width={photoM.width} height={photoM.height} alt="A burned wood-frame house and a fire-damaged car after a wildfire."
+        class="w-full h-full object-cover" loading="lazy" decoding="async" data-node="128:6086" data-node-m="141:890" />
+    </picture>
+    <p class="absolute left-[20px] bottom-[20px] lg:left-[24px] lg:bottom-[24px] m-0 h-[24px] px-[8px] lg:px-[12px] py-[4px] box-border bg-ink text-white t-caption whitespace-nowrap" data-node="128:6087" data-node-m="141:891">Field photograph</p>
+  </div>
+  <div class="relative overflow-hidden lg:w-1/2 px-[20px] pt-[56px] pb-[64px] lg:pl-[80px] lg:pr-[56px] lg:pt-[112px] lg:pb-0" data-node="128:6089" data-node-m="141:893">
+    <span aria-hidden="true" class="lg:hidden absolute left-[226.92px] top-[489px] opacity-[.07] pointer-events-none" data-node-m="141:894"><Logo variant="mark-white" bare width={296.511} height={360} label="" /></span>
+    <div class="relative lg:max-w-[504px]">
+      <span aria-hidden="true" class="lg:hidden block w-[48px] h-[2px] bg-royal mb-[24px]" data-node-m="141:899"></span>
+      <h2 id="why-cta-title" class="m-0 why-cta-h2 lg:t-h2" data-node="128:6090" data-node-m="141:901">Call Before the Carrier Sets the Narrative.</h2>
+      <p class="m-0 mt-[24px] tm-body lg:t-body" data-node="128:6091" data-node-m="141:902">Your insurance company has an adjuster protecting their interests. You have the right to one too. We level the playing field, and we fight to make sure you get every dollar you're owed.</p>
+      <div class="flex flex-col gap-[12px] mt-[24px] pt-[8px] lg:flex-row lg:flex-wrap lg:gap-[16px] lg:pt-[16px]" data-node="128:6092" data-node-m="141:903">
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" data-node="128:6093" data-node-m="141:904">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]" data-node="128:6097" data-node-m="141:909">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <ul class="m-0 mt-[24px] p-0 list-none pt-[8px] lg:pt-[24px]" data-node="128:6101" data-node-m="141:913">
+        {trust.map((t) => (
+          <li class="border-t border-white/20 lg:border-royal" data-node={t.d[0]}>
+            <div class="flex items-center gap-[12px] py-[12px] lg:py-[16px]" data-node-m={t.m[0]}>
+              <Icon name="check" size={20} class="shrink-0" />
+              <span class="flex-1 font-body font-medium text-[15px] leading-[22px] lg:leading-[24px]" data-node={t.d[1]} data-node-m={t.m[1]}>{t.text}</span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 1023.98px) { .why-cta-h2 { font-family: var(--font-display); font-weight: 700; font-size: 40px; line-height: 44px; letter-spacing: -0.01em; } }
+</style>

@@ -1,0 +1,46 @@
+---
+// Page-level styles for /contact/ (Figma 128:3899 desktop, 128:6470 mobile).
+---
+<style is:global>
+  /* Chrome sets Montserrat / Schibsted mobile text 1px higher than Figma: nudge glyphs (layout unchanged). */
+  @media (max-width: 1023.98px) {
+    .bs-contact :where(.tm-body, .tm-body-strong, .tm-h2, .tm-h3, .tm-display, .bs-btn__label) { position: relative; top: 1px; }
+  }
+
+  @layer theme, base, components, utilities;
+  @layer components {
+  /* Half-pixel 1px rules in Figma (y .5) render as 2 rows at 50%. */
+  .ct-index__rule { background: rgb(217 223 238 / .5); }
+  .ct-index--dark .ct-index__rule { background: rgb(255 255 255 / .15); }
+  @media (min-width: 64rem) { .ct-index--dark .ct-index__rule { background: rgb(255 255 255 / .2); } }
+  .ct-rule-navy { background: rgb(8 29 94 / .5); }
+
+  .ct-crop {
+    --c: var(--color-royal);
+    position: absolute; pointer-events: none;
+    background:
+      linear-gradient(var(--c), var(--c)) left top / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) left top / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) right top / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) right top / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) left bottom / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) left bottom / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) right bottom / 16px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) right bottom / 1.5px 16px no-repeat;
+  }
+  @media (min-width: 64rem) { .ct-crop { --c: var(--color-navy); } }
+
+  .ct-ruler {
+    --t: rgb(8 29 94 / .5);
+    height: 16px; pointer-events: none;
+    background:
+      linear-gradient(to right, var(--t) 1px, transparent 1px) 0 0 / 80px 16px repeat-x,
+      linear-gradient(to right, var(--t) 1px, transparent 1px) 0 0 / 40px 10px repeat-x,
+      linear-gradient(to right, var(--t) 1px, transparent 1px) 0 0 / 8px 6px repeat-x;
+  }
+  @media (min-width: 64rem) { .ct-ruler { --t: rgb(8 29 94 / .45); } }
+
+  .ct-link { text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1px; text-underline-offset: 3px; transition: text-decoration-color .15s ease, color .15s ease; border-radius: 2px; }
+  .ct-link:hover, .ct-link:focus-visible { text-decoration-color: currentColor; color: var(--color-royal); }
+  }
+</style>

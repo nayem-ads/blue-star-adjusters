@@ -1,0 +1,6 @@
+---
+// Ruler ticks (band foot 128:3957 / 128:6519): 1px ticks every 8px (6px), every 40px 10px, every 80px 16px.
+interface Props { class?: string; node?: string; nodeM?: string }
+const { class: cls = '', node, nodeM } = Astro.props;
+---
+<div aria-hidden="true" class:list={['ct-ruler', cls]} data-node={node} data-node-m={nodeM}></div>

@@ -1,0 +1,178 @@
+const imgIconPhone = "https://www.figma.com/api/mcp/asset/3fbe0d0d-7ee6-4989-8981-19d2d83d09f1.svg";
+const imgIconMail = "https://www.figma.com/api/mcp/asset/a4446d6d-8edb-48ed-b6b9-6140b941f515.svg";
+const imgIconPin = "https://www.figma.com/api/mcp/asset/1f467408-3cb6-4d29-89c6-1dae381cb431.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/93a4a3ce-5cc9-431d-8492-452228ee61f2.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/1383ff87-f76c-455e-af4a-7cabccc7b2f2.svg";
+
+export default function SectionCallContactLedger() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start px-[80px] py-[112px] relative size-full" data-node-id="128:4291" data-name="Section / Call + contact ledger">
+      <div className="absolute inset-0 overflow-clip" data-node-id="128:4347" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute h-[720px] left-0 opacity-5 overflow-clip top-0 w-[1280px]" data-node-id="128:4348" data-name="Minor lines">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[40px] top-0 w-px" data-node-id="128:4351" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[80px] top-0 w-px" data-node-id="128:4352" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[120px] top-0 w-px" data-node-id="128:4353" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[160px] top-0 w-px" data-node-id="128:4354" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[240px] top-0 w-px" data-node-id="128:4356" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[280px] top-0 w-px" data-node-id="128:4357" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[320px] top-0 w-px" data-node-id="128:4358" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[360px] top-0 w-px" data-node-id="128:4359" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[440px] top-0 w-px" data-node-id="128:4361" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[480px] top-0 w-px" data-node-id="128:4362" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[520px] top-0 w-px" data-node-id="128:4363" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[560px] top-0 w-px" data-node-id="128:4364" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[640px] top-0 w-px" data-node-id="128:4366" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[680px] top-0 w-px" data-node-id="128:4367" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[720px] top-0 w-px" data-node-id="128:4368" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[760px] top-0 w-px" data-node-id="128:4369" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[840px] top-0 w-px" data-node-id="128:4371" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[880px] top-0 w-px" data-node-id="128:4372" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[920px] top-0 w-px" data-node-id="128:4373" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[960px] top-0 w-px" data-node-id="128:4374" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1040px] top-0 w-px" data-node-id="128:4376" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1080px] top-0 w-px" data-node-id="128:4377" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1120px] top-0 w-px" data-node-id="128:4378" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1160px] top-0 w-px" data-node-id="128:4379" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1240px] top-0 w-px" data-node-id="128:4381" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1280px] top-0 w-px" data-node-id="128:4382" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[40px] w-[1280px]" data-node-id="128:4384" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[80px] w-[1280px]" data-node-id="128:4385" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[120px] w-[1280px]" data-node-id="128:4386" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[160px] w-[1280px]" data-node-id="128:4387" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[240px] w-[1280px]" data-node-id="128:4389" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[280px] w-[1280px]" data-node-id="128:4390" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[320px] w-[1280px]" data-node-id="128:4391" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[360px] w-[1280px]" data-node-id="128:4392" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[440px] w-[1280px]" data-node-id="128:4394" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[480px] w-[1280px]" data-node-id="128:4395" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[520px] w-[1280px]" data-node-id="128:4396" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[560px] w-[1280px]" data-node-id="128:4397" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[640px] w-[1280px]" data-node-id="128:4399" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[680px] w-[1280px]" data-node-id="128:4400" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[720px] w-[1280px]" data-node-id="128:4401" data-name="H" />
+        </div>
+        <div className="absolute h-[720px] left-0 opacity-10 overflow-clip top-0 w-[1280px]" data-node-id="128:4349" data-name="Major lines">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-0 top-0 w-px" data-node-id="128:4350" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[200px] top-0 w-px" data-node-id="128:4355" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[400px] top-0 w-px" data-node-id="128:4360" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[600px] top-0 w-px" data-node-id="128:4365" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[800px] top-0 w-px" data-node-id="128:4370" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1000px] top-0 w-px" data-node-id="128:4375" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-[1200px] top-0 w-px" data-node-id="128:4380" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-0 w-[1280px]" data-node-id="128:4383" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[200px] w-[1280px]" data-node-id="128:4388" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[400px] w-[1280px]" data-node-id="128:4393" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[600px] w-[1280px]" data-node-id="128:4398" data-name="H" />
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[64px] items-center overflow-clip relative shrink-0 w-full" data-node-id="128:4292" data-name="Call + ledger">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[600px]" data-node-id="128:4293" data-annotations="Whole block links to tel:+19165071005. Signature move for this page only: the phone number set as display type." data-name="Tap/Call (display number)">
+          <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="128:6032" data-name="Section index">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:6033">
+              § 02
+            </p>
+            <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-[120px]" data-node-id="128:6034" data-name="Index rule" />
+          </div>
+          <div className="h-[48px] relative shrink-0 w-[8px]" data-node-id="128:6035" data-name="Spacer" />
+          <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="128:4294" data-name="Call label">
+            <div className="relative shrink-0 size-[20px]" data-node-id="128:4295" data-name="Icon / phone">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPhone} />
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4297">
+              Call
+            </p>
+          </div>
+          <div className="h-[20px] relative shrink-0 w-[8px]" data-node-id="128:4298" data-name="Spacer" />
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-none relative shrink-0 text-[88px] text-[color:var(--color\/navy,#081d5e)] tracking-[-2.64px] whitespace-nowrap" data-node-id="128:4299">
+            (916) 507-1005
+          </p>
+          <div className="h-[12px] relative shrink-0 w-[8px]" data-node-id="128:4300" data-name="Spacer" />
+          <div className="bg-[var(--color\/royal,#133faa)] h-[4px] relative shrink-0 w-[579px]" data-node-id="128:4301" data-name="Underline (royal 4px)" />
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative" data-node-id="128:4302" data-name="Contact ledger">
+          <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4303" data-annotations="Links to tel:+19165071005" data-name="Ledger row / Call">
+            <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:4304" data-name="Icon circle / phone">
+              <div className="relative shrink-0 size-[20px]" data-node-id="128:4305" data-name="Icon / phone">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPhone} />
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4309" data-name="Value cell">
+              <p className="leading-[18px] relative shrink-0 text-[13px] tracking-[0.26px] w-full" data-node-id="128:4308">
+                Call
+              </p>
+              <p className="leading-[28px] relative shrink-0 text-[17px] w-full" data-node-id="128:4310">
+                (916) 507-1005
+              </p>
+            </div>
+          </div>
+          <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4311" data-annotations="Links to mailto:mike@bluestaradjusters.com" data-name="Ledger row / Email">
+            <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:4312" data-name="Icon circle / mail">
+              <div className="relative shrink-0 size-[20px]" data-node-id="128:4313" data-name="Icon / mail">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMail} />
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4318" data-name="Value cell">
+              <p className="leading-[18px] relative shrink-0 text-[13px] tracking-[0.26px] w-full" data-node-id="128:4317">
+                Email
+              </p>
+              <p className="leading-[28px] relative shrink-0 text-[17px] w-full" data-node-id="128:4319">
+                mike@bluestaradjusters.com
+              </p>
+            </div>
+          </div>
+          <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4320" data-name="Ledger row / Head office">
+            <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:4321" data-name="Icon circle / pin">
+              <div className="relative shrink-0 size-[20px]" data-node-id="128:4322" data-name="Icon / pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin} />
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4327" data-name="Value cell">
+              <p className="leading-[18px] relative shrink-0 text-[13px] tracking-[0.26px] w-full" data-node-id="128:4326">
+                Head office
+              </p>
+              <p className="leading-[28px] relative shrink-0 text-[17px] w-full" data-node-id="128:4328">
+                1610 R Street, Suite 300, Sacramento, California 95811
+              </p>
+            </div>
+          </div>
+          <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4329" data-name="Ledger row / Hours">
+            <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:4330" data-name="Icon circle / clock">
+              <div className="relative shrink-0 size-[20px]" data-node-id="128:4331" data-name="Icon / clock">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4336" data-name="Value cell">
+              <p className="leading-[18px] relative shrink-0 text-[13px] tracking-[0.26px] w-full" data-node-id="128:4335">
+                Hours
+              </p>
+              <p className="leading-[28px] relative shrink-0 text-[17px] w-full" data-node-id="128:4337" data-annotations="\[CLIENT: confirm\] the hours. The live site closes 12 to 2 PM; the content doc drops that.">
+                Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday.
+              </p>
+            </div>
+          </div>
+          <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4338" data-name="Ledger row / Licence">
+            <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:4339" data-name="Icon circle / shield">
+              <div className="relative shrink-0 size-[20px]" data-node-id="128:4340" data-name="Icon / shield">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4345" data-name="Value cell">
+              <p className="leading-[18px] relative shrink-0 text-[13px] tracking-[0.26px] w-full" data-node-id="128:4344">
+                Licence
+              </p>
+              <p className="leading-[28px] relative shrink-0 text-[17px] w-full" data-node-id="128:4346">
+                CA DOI License No. 2B60428
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 17, weight: 600, lineHeight: 28, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

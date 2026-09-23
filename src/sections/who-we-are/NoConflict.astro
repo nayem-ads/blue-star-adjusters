@@ -1,0 +1,43 @@
+---
+// S5 No Conflict of Interest, statement (navy). Desktop 128:4544, mobile 135:1237.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import DimLine from './DimLine.astro';
+import { ROUTES } from '../../data/site';
+---
+<section aria-labelledby="wwa-conflict" class="relative overflow-hidden bg-navy text-white min-h-[632px] lg:min-h-[656px]" data-node="128:4544" data-node-m="135:1237">
+  <div aria-hidden="true" class="wwa-grid absolute left-0 right-0 top-0 h-[632px] lg:h-[648px]"></div>
+  <div class="relative max-w-[1280px] mx-auto h-full px-[20px] lg:px-[80px] pt-[64px] pb-[64px] lg:pt-[112px] lg:pb-[96px]">
+    <span aria-hidden="true" class="absolute left-[210px] top-[120px] lg:left-[900px] lg:top-[180px] opacity-[.057] pointer-events-none">
+      <Logo variant="mark-white" bare width={345.93} height={420} class="lg:hidden" label="" />
+      <Logo variant="mark-white" bare width={461.24} height={560} class="hidden lg:block" label="" />
+    </span>
+    <div class="lg:hidden flex items-start gap-[17px]">
+      <p class="m-0 w-max tm-label text-white whitespace-nowrap" data-node-m="135:1243">§ 04</p>
+      <span aria-hidden="true" class="block flex-1 h-px bg-white/30 mt-[7px]" data-node-m="135:1244"></span>
+    </div>
+    <h2 id="wwa-conflict" class="relative m-0 mt-[24px] lg:mt-0 lg:-ml-[4px] w-[350px] max-w-full lg:max-w-none lg:w-[999px] font-display font-bold text-[48px] leading-[50px] tracking-[-1.2px] lg:text-[clamp(72px,7.5vw,96px)] lg:leading-[1em] lg:tracking-[-0.03em] lg:whitespace-nowrap" data-node="128:4600" data-node-m="135:1245">No Conflict of Interest.</h2>
+    <DimLine label="We represent the insured only." class="relative mt-[20px] lg:mt-[24px] w-full lg:w-[999px] lg:max-w-full" labelClass="text-white" lineClass="bg-white" node="128:4601" nodeM="135:1246" />
+    <div class="relative mt-[40px] lg:mt-[56px] lg:flex lg:items-start">
+      <div class="lg:flex-1 lg:min-w-0 lg:pt-[8px] flex items-start gap-[16px]">
+        <Icon name="shield" size={48} class="hidden lg:block text-white" />
+        <Icon name="shield" size={40} class="lg:hidden text-white" />
+        <p class="hidden lg:block m-0 mt-[14px] t-label text-[15px] tracking-[0.3px] text-white whitespace-nowrap" data-node="128:4922">§ 04</p>
+      </div>
+      <div class="mt-[20px] lg:mt-0 lg:w-[544px] lg:shrink-0">
+        <p class="bs-nonudge m-0 tm-lead lg:t-lead lg:w-[544px] lg:text-[22px] lg:leading-[34px]" data-node="128:4610" data-node-m="135:1255">We eliminate the fundamental problem with insurance company adjusters: one person representing two sides of a financial negotiation. Our sole allegiance is to you.</p>
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="mt-[32px] lg:mt-[40px] h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="128:4611" data-node-m="135:1256">Schedule a Free Review</Button>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .wwa-grid {
+    background:
+      linear-gradient(to right, rgba(255,255,255,.0526) 1px, transparent 1px) left top / 160px 160px,
+      linear-gradient(to bottom, rgba(255,255,255,.0526) 1px, transparent 1px) left top / 160px 160px,
+      linear-gradient(to right, rgba(255,255,255,.05) 1px, transparent 1px) left top / 40px 40px,
+      linear-gradient(to bottom, rgba(255,255,255,.05) 1px, transparent 1px) left top / 40px 40px;
+  }
+</style>

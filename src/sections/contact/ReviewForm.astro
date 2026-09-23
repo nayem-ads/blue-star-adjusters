@@ -1,0 +1,88 @@
+---
+// § 03 What happens next + review form (navy): desktop 128:4658 (1280×858), mobile 128:6889 (390×1345).
+// FormSubmit lead form: data-lead-form + FormSubmitFields + FormField, validated by src/scripts/forms.ts.
+import FormField from '../../components/FormField.astro';
+import FormSubmitFields from '../../components/FormSubmitFields.astro';
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import SectionIndex from './SectionIndex.astro';
+import { FORM_ACTION } from '../../data/site';
+const steps = [
+  { n: '01', t: 'We call you.', d: '128:4666', dn: '128:4671', dt: '128:4672', m: '128:6895', mn: '128:6900', mt: '128:6901' },
+  { n: '02', t: "We read your policy and the carrier's letters.", d: '128:4673', dn: '128:4678', dt: '128:4679', m: '128:6902', mn: '128:6907', mt: '128:6908' },
+  { n: '03', t: 'We tell you whether we can add value, and why.', d: '128:4680', dn: '128:4684', dt: '128:4685', m: '128:6909', mn: '128:6913', mt: '128:6914' },
+];
+const states = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona'];
+const happened = ['Fire or smoke', 'Wildfire', 'Water', 'Wind, hail or tree', 'Collapse', 'Commercial loss', 'Other'];
+---
+<section aria-labelledby="ct-next-h" class="ct-review relative overflow-hidden bg-navy text-white" data-node="128:4658" data-node-m="128:6889">
+  <span aria-hidden="true" class="ct-review__mark absolute pointer-events-none" data-node="128:4723" data-node-m="128:6959">
+    <Logo variant="mark-white" bare width={475.2} height={576.95} class="hidden lg:block" label="" />
+    <Logo variant="mark-white" bare width={296.51} height={360} class="lg:hidden" label="" />
+  </span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:pt-[120px] lg:pb-[120px] lg:flex ct-review__row lg:items-start">
+    <div class="lg:flex-1 lg:min-w-0 lg:pt-[48px]" data-node="128:4659">
+      <SectionIndex n="§ 03" tone="dark" node="128:4660" nodeM="128:6890" />
+      <h2 id="ct-next-h" class="m-0 mt-[32px] lg:mt-[24px] tm-h2 lg:t-h2 text-white" data-node="128:4664" data-node-m="128:6893">What happens next</h2>
+      <ol class="m-0 p-0 list-none mt-[32px] lg:mt-[56px]" data-node-m="128:6894">
+        {steps.map((s, i) => (
+          <li class:list={['ct-step relative flex gap-[20px] lg:gap-[24px]', i < steps.length - 1 && 'ct-step--line pb-[32px] lg:pb-[48px]']} data-node={s.d} data-node-m={s.m}>
+            <span aria-hidden="true" class:list={['ct-step__dot', i === 0 && 'ct-step__dot--first']}></span>
+            <div class="flex-1 min-w-0">
+              <p class="m-0 tm-label lg:t-label text-white opacity-85 w-fit" data-node={s.dn} data-node-m={s.mn}>{s.n}</p>
+              <p class="m-0 mt-[8px] tm-h3 lg:t-h3 text-white" data-node={s.dt} data-node-m={s.mt}>{s.t}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+
+    <div class="ct-card relative mt-[32px] lg:mt-0 bg-white text-ink lg:w-[552px] lg:min-w-0" data-node="128:4686" data-node-m="128:6915">
+      <form action={FORM_ACTION} method="POST" data-lead-form novalidate aria-labelledby="ct-form-title" class="ct-form">
+        <FormSubmitFields source="Contact page" />
+        <h2 id="ct-form-title" class="m-0 tm-h3 lg:t-h3 text-navy" data-node="128:4687" data-node-m="128:6916">Send Your Claim for Review</h2>
+        <div class="ct-fields mt-[16px] lg:mt-[24px]" data-node="128:4688">
+          <div data-node="128:4690" data-node-m="128:6917"><FormField label="Full name" name="Name" id="ct-name" required autocomplete="name" placeholder="First and last name" error="Enter your full name." /></div>
+          <div data-node="128:4695" data-node-m="128:6922"><FormField label="Phone" name="Phone" id="ct-phone" type="tel" required autocomplete="tel" placeholder="(916) 555-0123" error="Enter a 10-digit phone number." /></div>
+          <div data-node="128:4701" data-node-m="128:6927"><FormField label="Email" name="Email" id="ct-email" type="email" required autocomplete="email" placeholder="name@example.com" error="Enter a full email address." /></div>
+          <div data-node="128:4706" data-node-m="128:6932"><FormField label="Property state" name="Property state" id="ct-state" type="select" required autocomplete="address-level1" placeholder="Select a state" options={states} error="Choose the state the property is in." /></div>
+          <div class="ct-what lg:col-span-2" data-node="128:4711" data-node-m="128:6940"><FormField label="What happened?" name="Claim type" id="ct-what" type="select" options={happened} /></div>
+        </div>
+        <Button type="submit" variant="solid" class="w-full mt-[16px] lg:mt-[24px] max-lg:h-[56px]" node="128:4716" data-node-m="128:6948">Request My Review</Button>
+        <div class="mt-[16px] lg:mt-[24px]" data-node="128:4720">
+          <div class="flex gap-[12px] items-start lg:block" data-node-m="128:6952">
+            <Icon name="clock" size={20} class="lg:hidden shrink-0 text-navy mt-[3px]" />
+            <p class="m-0 flex-1 tm-body ct-under text-ink" data-node="128:4721" data-node-m="128:6956">We call back the same business day. Every engagement is discreet.</p>
+          </div>
+          <span aria-hidden="true" class="lg:hidden block h-px bg-line mt-[16px]" data-node-m="128:6957"></span>
+          <p class="m-0 mt-[16px] lg:mt-[8px] tm-body ct-under text-ink" data-node="128:4722" data-node-m="128:6958">There is no cost or obligation for the initial review.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ct-review__mark { left: 206.16px; top: 40px; opacity: .07; }
+  @media (min-width: 64rem) { .ct-review__mark { left: calc(50% - 340px); top: 474.29px; } }
+  @media (min-width: 64rem) { .ct-review__row { gap: 48px; } }
+  @media (min-width: 80rem) { .ct-review__row { gap: 112px; } }
+  .ct-step__dot { position: relative; z-index: 1; flex: 0 0 16px; width: 16px; height: 16px; box-sizing: border-box; }
+  .ct-step__dot::before { content: ""; position: absolute; left: 2px; top: 4px; width: 12px; height: 12px; box-sizing: border-box; border-radius: 50%; border: 1.5px solid #fff; }
+  .ct-step__dot--first::before { background: #fff; }
+  .ct-step--line::after { content: ""; position: absolute; left: 7px; top: 16px; bottom: 0; width: 2px; background: rgb(255 255 255 / .2); }
+  @media (min-width: 64rem) { .ct-step--line::after { background: rgb(255 255 255 / .175); } }
+  @media (min-width: 64rem) {
+    .ct-step__dot::before { left: 0; top: 0; width: 16px; height: 16px; border-width: 2px; }
+    .ct-step__dot--first::before { background: transparent; }
+  }
+  .ct-card { border-top: 4px solid var(--color-royal); padding: 28px 20px 28px; border-radius: 4px; box-shadow: 0 24px 48px -8px rgb(7 15 51 / .45); }
+  @media (min-width: 64rem) { .ct-under { font-weight: 500; font-size: 15px; line-height: 24px; } }
+  .ct-what :global(select:has(option:first-child:checked)) { color: var(--color-muted); }
+  @media (min-width: 64rem) { .ct-card { padding: 48px; box-shadow: 0 32px 64px rgb(7 15 51 / .45); } }
+  .ct-fields { display: flex; flex-direction: column; gap: 16px; }
+  @media (min-width: 64rem) { .ct-fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 16px; row-gap: 20px; } }
+  .ct-form :global(.bs-field__chevron) { width: 24px; height: 24px; }
+  @media (min-width: 64rem) { .ct-form :global(.bs-field__chevron) { display: none; } }
+</style>

@@ -10,3 +10,4 @@ qa/out/
 .env
 qa/ref/
 design/source-img/
+.figma-v2.tar

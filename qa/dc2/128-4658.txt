@@ -1,0 +1,170 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/7e972892-7e09-4abe-8299-d57e000faf85.svg";
+const imgLogoMarkWhiteFaint = "https://www.figma.com/api/mcp/asset/5fd4a488-495c-495f-8adc-a591ea303eb1.svg";
+const imgSpineDot = "https://www.figma.com/api/mcp/asset/4ed07a33-ef9f-43e2-aa52-d0e5452230df.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:128">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionReviewFormNavy() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex gap-[112px] items-start px-[80px] py-[120px] relative size-full" data-node-id="128:4658" data-name="Section / Review form (navy)">
+      <div className="absolute h-[576.95px] left-[300px] top-[474.29px] w-[475.2px]" data-node-id="128:4723" data-name="Logo / Mark / White (faint)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkWhiteFaint} />
+      </div>
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip pt-[48px] relative" data-node-id="128:4659" data-name="What happens next">
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="128:4660" data-name="Section index">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4661">
+            § 03
+          </p>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-40 relative shrink-0 w-[120px]" data-node-id="128:4662" data-name="Index rule" />
+        </div>
+        <div className="h-[24px] relative shrink-0 w-[8px]" data-node-id="128:4663" data-name="Spacer" />
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] min-w-full relative shrink-0 text-[48px] text-[color:var(--color\/white,white)] tracking-[-0.72px] w-[min-content]" data-node-id="128:4664">
+          What happens next
+        </p>
+        <div className="h-[56px] relative shrink-0 w-[8px]" data-node-id="128:4665" data-name="Spacer" />
+        <div className="content-stretch flex gap-[24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:4666" data-name="Step 01">
+          <div className="content-stretch flex flex-col items-center overflow-clip relative self-stretch shrink-0 w-[16px]" data-node-id="128:4667" data-name="Spine">
+            <div className="relative shrink-0 size-[16px]" data-node-id="128:4668" data-name="Spine dot">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSpineDot} />
+            </div>
+            <div className="bg-[var(--color\/white,white)] flex-[1_0_0] min-h-px opacity-35 relative w-px" data-node-id="128:4669" data-name="Spine line" />
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-semibold gap-[8px] items-start min-w-px overflow-clip pb-[48px] relative text-[color:var(--color\/white,white)]" data-node-id="128:4670" data-name="Step body">
+            <p className="font-['Montserrat:SemiBold'] leading-[18px] opacity-85 relative shrink-0 text-[13px] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4671">
+              01
+            </p>
+            <p className="font-['Schibsted_Grotesk:SemiBold'] leading-[34px] min-w-full relative shrink-0 text-[28px] tracking-[-0.28px] w-[min-content]" data-node-id="128:4672">
+              We call you.
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:4673" data-name="Step 02">
+          <div className="content-stretch flex flex-col items-center overflow-clip relative self-stretch shrink-0 w-[16px]" data-node-id="128:4674" data-name="Spine">
+            <div className="relative shrink-0 size-[16px]" data-node-id="128:4675" data-name="Spine dot">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSpineDot} />
+            </div>
+            <div className="bg-[var(--color\/white,white)] flex-[1_0_0] min-h-px opacity-35 relative w-px" data-node-id="128:4676" data-name="Spine line" />
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-semibold gap-[8px] items-start min-w-px overflow-clip pb-[48px] relative text-[color:var(--color\/white,white)]" data-node-id="128:4677" data-name="Step body">
+            <p className="font-['Montserrat:SemiBold'] leading-[18px] opacity-85 relative shrink-0 text-[13px] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4678">
+              02
+            </p>
+            <p className="font-['Schibsted_Grotesk:SemiBold'] leading-[34px] min-w-full relative shrink-0 text-[28px] tracking-[-0.28px] w-[min-content]" data-node-id="128:4679">{`We read your policy and the carrier's letters.`}</p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:4680" data-name="Step 03">
+          <div className="content-stretch flex flex-col items-center overflow-clip relative self-stretch shrink-0 w-[16px]" data-node-id="128:4681" data-name="Spine">
+            <div className="relative shrink-0 size-[16px]" data-node-id="128:4682" data-name="Spine dot">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSpineDot} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-semibold gap-[8px] items-start min-w-px overflow-clip relative text-[color:var(--color\/white,white)]" data-node-id="128:4683" data-name="Step body">
+            <p className="font-['Montserrat:SemiBold'] leading-[18px] opacity-85 relative shrink-0 text-[13px] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4684">
+              03
+            </p>
+            <p className="font-['Schibsted_Grotesk:SemiBold'] leading-[34px] min-w-full relative shrink-0 text-[28px] tracking-[-0.28px] w-[min-content]" data-node-id="128:4685">
+              We tell you whether we can add value, and why.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/white,white)] border-[var(--color\/royal,#133faa)] border-solid border-t-4 content-stretch flex flex-col gap-[24px] items-start overflow-clip p-[48px] relative rounded-[4px] shadow-[0px_32px_64px_0px_rgba(7,15,51,0.45)] shrink-0 w-[552px]" data-node-id="128:4686" data-name="Form card">
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px] w-full" data-node-id="128:4687">
+          Send Your Claim for Review
+        </p>
+        <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:4688" data-name="Fields">
+          <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:4689" data-name="Row / name + phone">
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-w-px relative" data-node-id="128:4690" data-annotations="Keyboard: text, autocomplete name" data-name="Field / Full name">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[15px] text-[color:var(--color\/navy,#081d5e)] w-full" data-node-id="I128:4690;39:93">
+                Full name
+              </p>
+              <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/muted,#5e6885)] border-solid content-stretch flex h-[52px] items-center overflow-clip px-[16px] relative rounded-[10px] shrink-0 w-full" data-node-id="I128:4690;39:94" data-name="Input">
+                <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[16px] text-[color:var(--color\/muted,#5e6885)]" data-node-id="I128:4690;39:95">
+                  First and last name
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-w-px relative" data-node-id="128:4695" data-annotations="Keyboard: tel" data-name="Field / Phone">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[15px] text-[color:var(--color\/navy,#081d5e)] w-full" data-node-id="I128:4695;39:93">
+                Phone
+              </p>
+              <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/muted,#5e6885)] border-solid content-stretch flex h-[52px] items-center overflow-clip px-[16px] relative rounded-[10px] shrink-0 w-full" data-node-id="I128:4695;39:94" data-name="Input">
+                <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[16px] text-[color:var(--color\/muted,#5e6885)]" data-node-id="I128:4695;39:95">
+                  (916) 555-0123
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:4700" data-name="Row / email + state">
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-w-px relative" data-node-id="128:4701" data-annotations="Keyboard: email" data-name="Field / Email">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[15px] text-[color:var(--color\/navy,#081d5e)] w-full" data-node-id="I128:4701;39:93">
+                Email
+              </p>
+              <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/muted,#5e6885)] border-solid content-stretch flex h-[52px] items-center overflow-clip px-[16px] relative rounded-[10px] shrink-0 w-full" data-node-id="I128:4701;39:94" data-name="Input">
+                <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[16px] text-[color:var(--color\/muted,#5e6885)]" data-node-id="I128:4701;39:95">
+                  name@example.com
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-w-px relative" data-node-id="128:4706" data-annotations="Select: California, Nevada, Oregon, Washington, Arizona" data-name="Field / Property state">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[15px] text-[color:var(--color\/navy,#081d5e)] w-full" data-node-id="I128:4706;39:93">
+                Property state
+              </p>
+              <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/muted,#5e6885)] border-solid content-stretch flex h-[52px] items-center overflow-clip px-[16px] relative rounded-[10px] shrink-0 w-full" data-node-id="I128:4706;39:94" data-name="Input">
+                <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[16px] text-[color:var(--color\/muted,#5e6885)]" data-node-id="I128:4706;39:95">
+                  Select a state
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="128:4711" data-annotations="Select. Options: Fire or smoke / Wildfire / Water / Wind, hail or tree / Collapse / Commercial loss / Other. Shown with the first option as placeholder." data-name="Field / What happened?">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[15px] text-[color:var(--color\/navy,#081d5e)] w-full" data-node-id="I128:4711;39:93">
+              What happened?
+            </p>
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/muted,#5e6885)] border-solid content-stretch flex h-[52px] items-center overflow-clip px-[16px] relative rounded-[10px] shrink-0 w-full" data-node-id="I128:4711;39:94" data-name="Input">
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[16px] text-[color:var(--color\/muted,#5e6885)]" data-node-id="I128:4711;39:95">
+                Fire or smoke
+              </p>
+            </div>
+          </div>
+        </div>
+        <Button className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-full" label="Request My Review" />
+        <div className="[word-break:break-word] content-stretch flex flex-col font-['Montserrat:Medium'] font-medium gap-[8px] items-start leading-[24px] overflow-clip relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="128:4720" data-name="Under button">
+          <p className="relative shrink-0 w-full" data-node-id="128:4721" data-annotations="\[CLIENT: confirm\] the callback promise.">
+            We call back the same business day. Every engagement is discreet.
+          </p>
+          <p className="relative shrink-0 w-full" data-node-id="128:4722">
+            There is no cost or obligation for the initial review.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Field/Label: Font(family: "Montserrat", style: SemiBold, size: 15, weight: 600, lineHeight: 20, letterSpacing: 0), Field/Input: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 24, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

@@ -1,0 +1,76 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/549f3435-bcc7-4e8d-b740-087c88cea3c6.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/56c0f73c-b163-4bec-bce9-9fffc9b6338f.svg";
+const imgImgOnsiteAdjuster = "https://www.figma.com/api/mcp/asset/7b312e24-954f-4b36-84c9-850c8e551c1c.png";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark" | "Outline on-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  const isOnDarkAndDefault = style === "On-dark" && state === "Default";
+  const isOutlineOnDarkAndDefault = style === "Outline on-dark" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] ${isOutlineOnDarkAndDefault ? String.raw`border-[1.5px] border-[var(--color\/white,white)] border-solid` : String.raw`bg-[var(--color\/white,white)]`}`} id={isOutlineOnDarkAndDefault ? "node-37_164" : "node-37_152"}>
+      {isOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      {isOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+          {label}
+        </p>
+      )}
+      {isOutlineOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:165" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+        </div>
+      )}
+      {isOutlineOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:167">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+export default function SectionFinalCtaRealPhoto() {
+  return (
+    <div className="bg-[var(--color\/ink,#070f33)] relative size-full" data-node-id="128:5964" data-name="Section / Final CTA (real photo)">
+      <div className="absolute h-[640px] left-0 top-0 w-[1280px]" data-node-id="128:5965" data-annotations="Alt text: A Blue Star adjuster and a homeowner stand in a fire-damaged living room during an on-site inspection.;Real field photograph. Not tied to any case or place." data-name="IMG:onsite-adjuster">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[266.67%] left-0 max-w-none top-[-100%] w-full" src={imgImgOnsiteAdjuster} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/ink,#070f33)] h-[640px] left-0 opacity-50 top-0 w-[1280px]" data-node-id="128:5966" data-name="Scrim (ink, layer opacity)" />
+      <div className="absolute bg-[#070f33] h-[640px] left-0 opacity-70 top-0 w-[1280px]" data-node-id="128:5967" data-name="Scrim gradient (ink, left to right)" />
+      <div className="absolute content-stretch flex flex-col gap-[24px] items-start left-[80px] overflow-clip top-[152px] w-[720px]" data-node-id="128:5968" data-name="CTA content">
+        <div className="bg-[var(--color\/white,white)] h-[3px] relative shrink-0 w-[64px]" data-node-id="128:5969" data-name="Rule" />
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[68px] min-w-full relative shrink-0 text-[64px] text-[color:var(--color\/white,white)] tracking-[-1.28px] w-[min-content]" data-node-id="128:5970">
+          Call Before the Carrier Sets the Narrative.
+        </p>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/white,white)] w-[560px]" data-node-id="128:5971">
+          Your insurance company has an adjuster protecting their interests. You have the right to one too.
+        </p>
+        <div className="content-stretch flex gap-[16px] items-start overflow-clip pt-[16px] relative shrink-0" data-node-id="128:5972" data-name="CTAs">
+          <Button className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+          <Button className="border-[1.5px] border-[var(--color\/white,white)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" label="Call (916) 507-1005" showIcon style="Outline on-dark" />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[16px] left-[1092px] text-[12px] text-[color:var(--color\/white,white)] top-[584px] tracking-[0.12px] whitespace-nowrap" data-node-id="128:5981">
+        Field photograph
+      </p>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Display L: Font(family: "Schibsted Grotesk", style: Bold, size: 64, weight: 700, lineHeight: 68, letterSpacing: -2), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0), Desktop/Caption: Font(family: "Montserrat", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 1).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

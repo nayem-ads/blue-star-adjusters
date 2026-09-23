@@ -1,0 +1,36 @@
+---
+// Contact (Figma page 126:721): desktop 128:3899 (1280), mobile 128:6470 (390).
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import ContactStyles from '../../sections/contact/ContactStyles.astro';
+import Hero from '../../sections/contact/Hero.astro';
+import PhotoBand from '../../sections/contact/PhotoBand.astro';
+import Ledger from '../../sections/contact/Ledger.astro';
+import ReviewForm from '../../sections/contact/ReviewForm.astro';
+import Offices from '../../sections/contact/Offices.astro';
+import TimingNote from '../../sections/contact/TimingNote.astro';
+import Closing from '../../sections/contact/Closing.astro';
+const title = 'Contact Blue Star Adjusters | One Call, a Straight Answer';
+const description = "Tell us what happened. We'll read your policy and the carrier's letters, and tell you whether we can add value, and why. Call (916) 507-1005.";
+---
+<Base title={title} description={description}>
+  <ContactStyles />
+  <div data-node="128:3900" data-node-m="128:6471"><Header theme="light" /></div>
+  <main class="bs-contact">
+    <Hero />
+    <PhotoBand />
+    <Ledger />
+    <ReviewForm />
+    <Offices />
+    <TimingNote />
+    <Closing />
+  </main>
+  <div data-node="128:5914" data-node-m="135:1735"><Footer /></div>
+  <CallBar />
+</Base>
+
+<script>
+  import '../../scripts/forms.ts';
+</script>

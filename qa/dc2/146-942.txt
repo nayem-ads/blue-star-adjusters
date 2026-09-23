@@ -1,0 +1,164 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/0e217a51-c53c-404f-a2a8-1a5fea40971a.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/f49e0d69-1ed0-468d-9d5e-ad87018e21cb.svg";
+const imgIconCheck = "https://www.figma.com/api/mcp/asset/6cd112fd-a1ec-44a4-a962-f848392ecb7a.svg";
+const imgIconArrow = "https://www.figma.com/api/mcp/asset/6336c2ff-6b79-4f04-b44f-0e353a756108.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Outline";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Outline" }: ButtonProps) {
+  return (
+    <div className={className || "border-[1.5px] border-[var(--color\\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:140">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:141" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:143">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionBeforeYouCallMarginLabel() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start pb-[64px] pt-[56px] px-[20px] relative size-full" data-node-id="146:942" data-name="Section / Before you call (margin label)">
+      <div className="h-[16px] opacity-45 overflow-clip relative shrink-0 w-[350px]" data-node-id="146:943" data-name="Ruler ticks (top edge)">
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-0 top-0 w-px" data-node-id="146:944" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[8px] top-0 w-px" data-node-id="146:945" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[16px] top-0 w-px" data-node-id="146:946" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[24px] top-0 w-px" data-node-id="146:947" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[32px] top-0 w-px" data-node-id="146:948" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[40px] top-0 w-px" data-node-id="146:949" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[48px] top-0 w-px" data-node-id="146:950" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[56px] top-0 w-px" data-node-id="146:951" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[64px] top-0 w-px" data-node-id="146:952" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[72px] top-0 w-px" data-node-id="146:953" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[80px] top-0 w-px" data-node-id="146:954" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[88px] top-0 w-px" data-node-id="146:955" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[96px] top-0 w-px" data-node-id="146:956" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[104px] top-0 w-px" data-node-id="146:957" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[112px] top-0 w-px" data-node-id="146:958" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[120px] top-0 w-px" data-node-id="146:959" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[128px] top-0 w-px" data-node-id="146:960" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[136px] top-0 w-px" data-node-id="146:961" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[144px] top-0 w-px" data-node-id="146:962" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[152px] top-0 w-px" data-node-id="146:963" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[160px] top-0 w-px" data-node-id="146:964" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[168px] top-0 w-px" data-node-id="146:965" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[176px] top-0 w-px" data-node-id="146:966" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[184px] top-0 w-px" data-node-id="146:967" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[192px] top-0 w-px" data-node-id="146:968" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[200px] top-0 w-px" data-node-id="146:969" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[208px] top-0 w-px" data-node-id="146:970" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[216px] top-0 w-px" data-node-id="146:971" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[224px] top-0 w-px" data-node-id="146:972" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[232px] top-0 w-px" data-node-id="146:973" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[240px] top-0 w-px" data-node-id="146:974" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[248px] top-0 w-px" data-node-id="146:975" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[256px] top-0 w-px" data-node-id="146:976" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[264px] top-0 w-px" data-node-id="146:977" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[272px] top-0 w-px" data-node-id="146:978" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[280px] top-0 w-px" data-node-id="146:979" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[288px] top-0 w-px" data-node-id="146:980" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[296px] top-0 w-px" data-node-id="146:981" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[304px] top-0 w-px" data-node-id="146:982" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[312px] top-0 w-px" data-node-id="146:983" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[320px] top-0 w-px" data-node-id="146:984" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[328px] top-0 w-px" data-node-id="146:985" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[336px] top-0 w-px" data-node-id="146:986" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[344px] top-0 w-px" data-node-id="146:987" data-name="Tick" />
+      </div>
+      <div className="h-[32px] relative shrink-0 w-[8px]" data-node-id="146:988" data-name="Spacer 32" />
+      <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0 w-full" data-node-id="146:989" data-name="Margin label">
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="146:990" data-name="Icon circle / clock">
+          <div className="relative shrink-0 size-[24px]" data-node-id="146:991" data-name="Icon / clock">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[36px] min-w-px relative text-[32px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.48px]" data-node-id="146:994" data-annotations="Checklist teaser: items 1, 3, 5, 6 and 10 from The First 48 Hours (CD 629 to 638).">
+          Before you call
+        </p>
+      </div>
+      <div className="h-[20px] relative shrink-0 w-[8px]" data-node-id="146:995" data-name="Spacer 20" />
+      <div className="bg-[var(--color\/navy,#081d5e)] h-px opacity-30 relative shrink-0 w-full" data-node-id="146:996" data-name="Rail hairline" />
+      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="146:997" data-name="Checklist">
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="146:998" data-name="Check item 1">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[16px] shrink-0 size-[32px]" data-node-id="146:999" data-name="Icon circle / check">
+            <div className="relative shrink-0 size-[16px]" data-node-id="146:1000" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[26px] min-w-px relative text-[16px] text-[color:var(--color\/ink,#070f33)]" data-node-id="146:1002" data-annotations="edited from: 're-enter'">
+            Get safe. Don’t go back in until officials clear the property.
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="146:1003" data-name="Check item 2">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[16px] shrink-0 size-[32px]" data-node-id="146:1004" data-name="Icon circle / check">
+            <div className="relative shrink-0 size-[16px]" data-node-id="146:1005" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[26px] min-w-px relative text-[16px] text-[color:var(--color\/ink,#070f33)]" data-node-id="146:1007">
+            Photograph and video everything before anything is moved or cleaned.
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="146:1008" data-name="Check item 3">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[16px] shrink-0 size-[32px]" data-node-id="146:1009" data-name="Icon circle / check">
+            <div className="relative shrink-0 size-[16px]" data-node-id="146:1010" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[26px] min-w-px relative text-[16px] text-[color:var(--color\/ink,#070f33)]" data-node-id="146:1012">
+            Don’t throw anything away until it’s documented, even if it’s ruined.
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="146:1013" data-name="Check item 4">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[16px] shrink-0 size-[32px]" data-node-id="146:1014" data-name="Icon circle / check">
+            <div className="relative shrink-0 size-[16px]" data-node-id="146:1015" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[26px] min-w-px relative text-[16px] text-[color:var(--color\/ink,#070f33)]" data-node-id="146:1017">
+            Don’t sign on the spot with anyone, including a public adjuster.
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="146:1018" data-name="Check item 5">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[16px] shrink-0 size-[32px]" data-node-id="146:1019" data-name="Icon circle / check">
+            <div className="relative shrink-0 size-[16px]" data-node-id="146:1020" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[26px] min-w-px relative text-[16px] text-[color:var(--color\/ink,#070f33)]" data-node-id="146:1022">
+            Get the loss measured before the first estimate is final.
+          </p>
+        </div>
+      </div>
+      <div className="h-[24px] relative shrink-0 w-[8px]" data-node-id="146:1023" data-name="Spacer 24" />
+      <div className="content-stretch flex gap-[8px] h-[44px] items-center overflow-clip relative shrink-0" data-node-id="146:1024" data-name="Tap/Link / The First 48 Hours checklist">
+        <p className="[text-underline-position:from-font] [word-break:break-word] decoration-from-font decoration-solid font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] underline whitespace-nowrap" data-node-id="146:1025">
+          The First 48 Hours checklist
+        </p>
+        <div className="relative shrink-0 size-[24px]" data-node-id="146:1026" data-name="Icon / arrow">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+        </div>
+      </div>
+      <div className="h-[16px] relative shrink-0 w-[8px]" data-node-id="146:1028" data-name="Spacer 16" />
+      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="146:1029" data-name="Checklist actions">
+        <Button className="border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] h-[56px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-full" label="Call (916) 507-1005" showIcon />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 32, weight: 600, lineHeight: 36, letterSpacing: -1.5), Mobile/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 26, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

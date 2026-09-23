@@ -474,5 +474,390 @@
     "height": 408,
     "frame": "74:4725",
     "name": "IMG:ai-claim-table"
+  },
+  "128:3475": {
+    "src": "/img/about-hero-128-3436-576x704.webp",
+    "width": 576,
+    "height": 704,
+    "frame": "128:3436",
+    "name": "IMG:about-hero"
+  },
+  "128:4516": {
+    "src": "/img/about-estimator-128-3436-360x464.webp",
+    "width": 360,
+    "height": 464,
+    "frame": "128:3436",
+    "name": "IMG:about-estimator"
+  },
+  "128:4517": {
+    "src": "/img/about-inventory-128-3436-736x400.webp",
+    "width": 736,
+    "height": 400,
+    "frame": "128:3436",
+    "name": "IMG:about-inventory"
+  },
+  "128:4924": {
+    "src": "/img/mike-128-3436-560x824.webp",
+    "width": 560,
+    "height": 824,
+    "frame": "128:3436",
+    "name": "IMG:mike"
+  },
+  "128:4950": {
+    "src": "/img/about-office-128-3436-1280x720.webp",
+    "width": 1280,
+    "height": 720,
+    "frame": "128:3436",
+    "name": "IMG:about-office"
+  },
+  "128:6372": {
+    "src": "/img/about-hero-128-6353-278x192.webp",
+    "width": 278,
+    "height": 192,
+    "frame": "128:6353",
+    "name": "IMG:about-hero"
+  },
+  "128:6815": {
+    "src": "/img/about-estimator-128-6353-171x360.webp",
+    "width": 171,
+    "height": 360,
+    "frame": "128:6353",
+    "name": "IMG:about-estimator"
+  },
+  "128:6835": {
+    "src": "/img/about-inventory-128-6353-350x208.webp",
+    "width": 350,
+    "height": 208,
+    "frame": "128:6353",
+    "name": "IMG:about-inventory"
+  },
+  "135:1289": {
+    "src": "/img/mike-128-6353-300x340.webp",
+    "width": 300,
+    "height": 340,
+    "frame": "128:6353",
+    "name": "IMG:mike"
+  },
+  "135:1311": {
+    "src": "/img/about-office-128-6353-390x640.webp",
+    "width": 390,
+    "height": 640,
+    "frame": "128:6353",
+    "name": "IMG:about-office"
+  },
+  "128:3947": {
+    "src": "/img/contact-hero-128-3899-1120x480.webp",
+    "width": 1120,
+    "height": 480,
+    "frame": "128:3899",
+    "name": "IMG:contact-hero"
+  },
+  "128:5030": {
+    "src": "/img/office-sacramento-128-3899-368x460.webp",
+    "width": 368,
+    "height": 460,
+    "frame": "128:3899",
+    "name": "IMG:office-sacramento"
+  },
+  "128:5257": {
+    "src": "/img/office-santa-monica-128-3899-224x280.webp",
+    "width": 224,
+    "height": 280,
+    "frame": "128:3899",
+    "name": "IMG:office-santa-monica"
+  },
+  "128:5268": {
+    "src": "/img/office-san-francisco-128-3899-224x280.webp",
+    "width": 224,
+    "height": 280,
+    "frame": "128:3899",
+    "name": "IMG:office-san-francisco"
+  },
+  "128:5279": {
+    "src": "/img/office-reno-128-3899-224x280.webp",
+    "width": 224,
+    "height": 280,
+    "frame": "128:3899",
+    "name": "IMG:office-reno"
+  },
+  "128:5291": {
+    "src": "/img/office-portland-128-3899-224x280.webp",
+    "width": 224,
+    "height": 280,
+    "frame": "128:3899",
+    "name": "IMG:office-portland"
+  },
+  "128:5302": {
+    "src": "/img/office-seattle-128-3899-224x280.webp",
+    "width": 224,
+    "height": 280,
+    "frame": "128:3899",
+    "name": "IMG:office-seattle"
+  },
+  "128:5313": {
+    "src": "/img/office-scottsdale-128-3899-224x280.webp",
+    "width": 224,
+    "height": 280,
+    "frame": "128:3899",
+    "name": "IMG:office-scottsdale"
+  },
+  "128:6508": {
+    "src": "/img/contact-hero-128-6470-350x440.webp",
+    "width": 350,
+    "height": 440,
+    "frame": "128:6470",
+    "name": "IMG:contact-hero"
+  },
+  "135:1552": {
+    "src": "/img/office-sacramento-128-6470-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "128:6470",
+    "name": "IMG:office-sacramento"
+  },
+  "135:1563": {
+    "src": "/img/office-santa-monica-128-6470-74x350.webp",
+    "width": 74,
+    "height": 350,
+    "frame": "128:6470",
+    "name": "IMG:office-santa-monica"
+  },
+  "135:4817": {
+    "src": "/img/office-sacramento-135-4814-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "135:4814",
+    "name": "IMG:office-sacramento"
+  },
+  "135:4831": {
+    "src": "/img/office-santa-monica-135-4814-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "135:4814",
+    "name": "IMG:office-santa-monica"
+  },
+  "135:4843": {
+    "src": "/img/office-san-francisco-135-4814-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "135:4814",
+    "name": "IMG:office-san-francisco"
+  },
+  "135:4855": {
+    "src": "/img/office-reno-135-4814-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "135:4814",
+    "name": "IMG:office-reno"
+  },
+  "135:4867": {
+    "src": "/img/office-portland-135-4814-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "135:4814",
+    "name": "IMG:office-portland"
+  },
+  "135:4879": {
+    "src": "/img/office-seattle-135-4814-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "135:4814",
+    "name": "IMG:office-seattle"
+  },
+  "135:4891": {
+    "src": "/img/office-scottsdale-135-4814-280x350.webp",
+    "width": 280,
+    "height": 350,
+    "frame": "135:4814",
+    "name": "IMG:office-scottsdale"
+  },
+  "I128:4415;41:71": {
+    "src": "/img/hiw-hero-128-3750-496x344.webp",
+    "width": 496,
+    "height": 344,
+    "frame": "128:3750",
+    "name": "IMG:hiw-hero"
+  },
+  "I128:4438;41:71": {
+    "src": "/img/ai-claim-table-128-3750-400x496.webp",
+    "width": 400,
+    "height": 496,
+    "frame": "128:3750",
+    "name": "IMG:ai-claim-table"
+  },
+  "I128:4448;41:71": {
+    "src": "/img/hiw-structural-128-3750-432x536.webp",
+    "width": 432,
+    "height": 536,
+    "frame": "128:3750",
+    "name": "IMG:hiw-structural"
+  },
+  "I128:4452;41:71": {
+    "src": "/img/ai-moisture-128-3750-192x240.webp",
+    "width": 192,
+    "height": 240,
+    "frame": "128:3750",
+    "name": "IMG:ai-moisture"
+  },
+  "I128:4621;41:71": {
+    "src": "/img/hiw-package-128-3750-496x336.webp",
+    "width": 496,
+    "height": 336,
+    "frame": "128:3750",
+    "name": "IMG:hiw-package"
+  },
+  "I128:4644;41:71": {
+    "src": "/img/hiw-negotiation-128-3750-496x368.webp",
+    "width": 496,
+    "height": 368,
+    "frame": "128:3750",
+    "name": "IMG:hiw-negotiation"
+  },
+  "128:5965": {
+    "src": "/img/onsite-adjuster-128-3750-1280x640.webp",
+    "width": 1280,
+    "height": 640,
+    "frame": "128:3750",
+    "name": "IMG:onsite-adjuster"
+  },
+  "I135:4679;41:71": {
+    "src": "/img/onsite-adjuster-135-4640-350x164.webp",
+    "width": 350,
+    "height": 164,
+    "frame": "135:4640",
+    "name": "IMG:onsite-adjuster"
+  },
+  "I135:5325;41:71": {
+    "src": "/img/hiw-hero-135-4640-318x224.webp",
+    "width": 318,
+    "height": 224,
+    "frame": "135:4640",
+    "name": "IMG:hiw-hero"
+  },
+  "I135:5347;41:71": {
+    "src": "/img/ai-claim-table-135-4640-318x376.webp",
+    "width": 318,
+    "height": 376,
+    "frame": "135:4640",
+    "name": "IMG:ai-claim-table"
+  },
+  "I135:5384;41:71": {
+    "src": "/img/hiw-structural-135-4640-318x400.webp",
+    "width": 318,
+    "height": 400,
+    "frame": "135:4640",
+    "name": "IMG:hiw-structural"
+  },
+  "I135:5388;41:71": {
+    "src": "/img/ai-moisture-135-4640-120x152.webp",
+    "width": 120,
+    "height": 152,
+    "frame": "135:4640",
+    "name": "IMG:ai-moisture"
+  },
+  "I135:5571;41:71": {
+    "src": "/img/hiw-package-135-4640-318x240.webp",
+    "width": 318,
+    "height": 240,
+    "frame": "135:4640",
+    "name": "IMG:hiw-package"
+  },
+  "I135:5585;41:71": {
+    "src": "/img/hiw-negotiation-135-4640-318x232.webp",
+    "width": 318,
+    "height": 232,
+    "frame": "135:4640",
+    "name": "IMG:hiw-negotiation"
+  },
+  "146:1035": {
+    "src": "/img/stair-detail-135-4640-390x704.webp",
+    "width": 390,
+    "height": 704,
+    "frame": "135:4640",
+    "name": "IMG:stair-detail"
+  },
+  "I128:3425;41:71": {
+    "src": "/img/fees-hero-128-3369-560x704.webp",
+    "width": 560,
+    "height": 704,
+    "frame": "128:3369",
+    "name": "IMG:fees-hero"
+  },
+  "I128:4480;41:71": {
+    "src": "/img/fees-hygienist-128-3369-600x720.webp",
+    "width": 600,
+    "height": 720,
+    "frame": "128:3369",
+    "name": "IMG:fees-hygienist"
+  },
+  "I128:6204;41:71": {
+    "src": "/img/fees-hero-128-6166-330x216.webp",
+    "width": 330,
+    "height": 216,
+    "frame": "128:6166",
+    "name": "IMG:fees-hero"
+  },
+  "I128:6565;41:71": {
+    "src": "/img/fees-hygienist-128-6166-390x480.webp",
+    "width": 390,
+    "height": 480,
+    "frame": "128:6166",
+    "name": "IMG:fees-hygienist"
+  },
+  "128:3868": {
+    "src": "/img/why-hero-128-3866-1280x800.webp",
+    "width": 1280,
+    "height": 800,
+    "frame": "128:3866",
+    "name": "IMG:why-hero"
+  },
+  "128:5848": {
+    "src": "/img/why-skyline-128-3866-400x760.webp",
+    "width": 400,
+    "height": 760,
+    "frame": "128:3866",
+    "name": "IMG:why-skyline"
+  },
+  "128:6039": {
+    "src": "/img/why-estimator-128-3866-616x408.webp",
+    "width": 616,
+    "height": 408,
+    "frame": "128:3866",
+    "name": "IMG:why-estimator"
+  },
+  "128:6086": {
+    "src": "/img/wood-house-128-3866-640x824.webp",
+    "width": 640,
+    "height": 824,
+    "frame": "128:3866",
+    "name": "IMG:wood-house"
+  },
+  "135:1581": {
+    "src": "/img/why-hero-135-1578-390x600.webp",
+    "width": 390,
+    "height": 600,
+    "frame": "135:1578",
+    "name": "IMG:why-hero"
+  },
+  "135:5463": {
+    "src": "/img/why-skyline-135-1578-350x560.webp",
+    "width": 350,
+    "height": 560,
+    "frame": "135:1578",
+    "name": "IMG:why-skyline"
+  },
+  "135:5615": {
+    "src": "/img/why-estimator-135-1578-348x232.webp",
+    "width": 348,
+    "height": 232,
+    "frame": "135:1578",
+    "name": "IMG:why-estimator"
+  },
+  "141:890": {
+    "src": "/img/wood-house-135-1578-390x376.webp",
+    "width": 390,
+    "height": 376,
+    "frame": "135:1578",
+    "name": "IMG:wood-house"
   }
 }

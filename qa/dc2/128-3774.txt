@@ -1,0 +1,181 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/9c56e316-fb88-4b3f-85b7-908ec50d98b2.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/d45f6a4e-368b-458f-bb09-155cf90ca2d9.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/c622f055-97d7-4980-9e94-dfb16dd7c2f1.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid" | "Outline";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  const isOutlineAndDefault = style === "Outline" && state === "Default";
+  const isSolidAndDefault = style === "Solid" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] ${isOutlineAndDefault ? String.raw`border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid` : String.raw`bg-[var(--color\/royal,#133faa)]`}`} id={isOutlineAndDefault ? "node-37_140" : "node-37_128"}>
+      {isSolidAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      {isSolidAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+          {label}
+        </p>
+      )}
+      {isOutlineAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:141" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+        </div>
+      )}
+      {isOutlineAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:143">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+type SectionEyebrowProps = {
+  className?: string;
+  text?: string;
+  theme?: "Light";
+};
+
+function SectionEyebrow({ className, text = "Results", theme = "Light" }: SectionEyebrowProps) {
+  return (
+    <div className={className || "content-stretch flex gap-[12px] items-center relative"} data-node-id="39:85">
+      <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[24px]" data-node-id="39:86" data-name="Rule" />
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/royal,#133faa)] tracking-[0.26px] whitespace-nowrap" data-node-id="39:87">
+        {text}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionHero() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start pb-[104px] pt-[96px] px-[80px] relative size-full" data-node-id="128:3774" data-name="Section / Hero">
+      <div className="absolute inset-0 overflow-clip" data-node-id="128:3815" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute h-[692px] left-0 opacity-5 overflow-clip top-0 w-[1280px]" data-node-id="128:3816" data-name="Grid minor">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[40px] top-0 w-px" data-node-id="128:3818" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[80px] top-0 w-px" data-node-id="128:3819" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[120px] top-0 w-px" data-node-id="128:3820" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[200px] top-0 w-px" data-node-id="128:3822" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[240px] top-0 w-px" data-node-id="128:3823" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[280px] top-0 w-px" data-node-id="128:3824" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[360px] top-0 w-px" data-node-id="128:3826" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[400px] top-0 w-px" data-node-id="128:3827" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[440px] top-0 w-px" data-node-id="128:3828" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[520px] top-0 w-px" data-node-id="128:3830" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[560px] top-0 w-px" data-node-id="128:3831" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[600px] top-0 w-px" data-node-id="128:3832" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[680px] top-0 w-px" data-node-id="128:3834" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[720px] top-0 w-px" data-node-id="128:3835" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[760px] top-0 w-px" data-node-id="128:3836" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[840px] top-0 w-px" data-node-id="128:3838" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[880px] top-0 w-px" data-node-id="128:3839" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[920px] top-0 w-px" data-node-id="128:3840" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[1000px] top-0 w-px" data-node-id="128:3842" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[1040px] top-0 w-px" data-node-id="128:3843" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[1080px] top-0 w-px" data-node-id="128:3844" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[1160px] top-0 w-px" data-node-id="128:3846" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[1200px] top-0 w-px" data-node-id="128:3847" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[1240px] top-0 w-px" data-node-id="128:3848" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[40px] w-[1280px]" data-node-id="128:3849" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[80px] w-[1280px]" data-node-id="128:3850" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[120px] w-[1280px]" data-node-id="128:3851" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[200px] w-[1280px]" data-node-id="128:3853" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[240px] w-[1280px]" data-node-id="128:3854" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[280px] w-[1280px]" data-node-id="128:3855" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[360px] w-[1280px]" data-node-id="128:3857" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[400px] w-[1280px]" data-node-id="128:3858" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[440px] w-[1280px]" data-node-id="128:3859" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[520px] w-[1280px]" data-node-id="128:3861" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[560px] w-[1280px]" data-node-id="128:3862" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[600px] w-[1280px]" data-node-id="128:3863" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[680px] w-[1280px]" data-node-id="128:3865" data-name="Grid line h" />
+        </div>
+        <div className="absolute h-[692px] left-0 opacity-10 overflow-clip top-0 w-[1280px]" data-node-id="128:3817" data-name="Grid major">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[160px] top-0 w-px" data-node-id="128:3821" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[320px] top-0 w-px" data-node-id="128:3825" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[480px] top-0 w-px" data-node-id="128:3829" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[640px] top-0 w-px" data-node-id="128:3833" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[800px] top-0 w-px" data-node-id="128:3837" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[960px] top-0 w-px" data-node-id="128:3841" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[692px] left-[1120px] top-0 w-px" data-node-id="128:3845" data-name="Grid line v" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[160px] w-[1280px]" data-node-id="128:3852" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[320px] w-[1280px]" data-node-id="128:3856" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[480px] w-[1280px]" data-node-id="128:3860" data-name="Grid line h" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[640px] w-[1280px]" data-node-id="128:3864" data-name="Grid line h" />
+        </div>
+      </div>
+      <SectionEyebrow className="content-stretch flex gap-[12px] items-center relative shrink-0" text="How It Works" />
+      <div className="h-[32px] relative shrink-0 w-[8px]" data-node-id="128:3778" data-name="Spacer 32" />
+      <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[96px] relative shrink-0 text-[96px] text-[color:var(--color\/navy,#081d5e)] tracking-[-2.88px] w-[1120px]" data-node-id="128:3779" data-annotations="H1. Line break after 'Five Steps.' is layout only.">
+        Five Steps.
+        <br aria-hidden />
+        You Have the Final Say.
+      </p>
+      <div className="h-[48px] relative shrink-0 w-[8px]" data-node-id="128:3780" data-name="Spacer 48" />
+      <div className="content-stretch flex items-end justify-between overflow-clip relative shrink-0 w-full" data-node-id="128:3781" data-name="Lead + CTAs">
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip relative shrink-0" data-node-id="128:3782" data-name="Lead (V)">
+          <div className="bg-[var(--color\/royal,#133faa)] h-[68px] relative shrink-0 w-[2px]" data-node-id="128:3783" data-name="Lead rule" />
+          <div className="relative shrink-0 size-[24px]" data-node-id="128:3784" data-name="Icon / clock">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:Medium'] font-medium leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] w-[470px]" data-node-id="128:3787" data-annotations="Lead (V), CD 640. Set in H3 size, Medium weight, as the hero's second voice.">
+            Our ability to affect your outcome diminishes with time.
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0" data-node-id="128:3788" data-name="CTAs">
+          <Button className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+          <Button className="border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" label="Call (916) 507-1005" showIcon style="Outline" />
+        </div>
+      </div>
+      <div className="h-[88px] relative shrink-0 w-[8px]" data-node-id="128:3797" data-name="Spacer 88" />
+      <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="128:3798" data-name="Mini timeline / 5 steps">
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[23px] w-[1120px]" data-node-id="128:3814" data-name="Timeline line" />
+        <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center overflow-clip pl-[16px] pr-[20px] py-[8px] relative rounded-[24px] shrink-0" data-node-id="128:3799" data-name="Chip / 01 Free Review">
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[0] relative shrink-0 text-[15px] text-[color:var(--color\/white,white)] whitespace-pre" data-node-id="128:3801">
+            <span className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[24px] text-white">01</span>
+            <span className="leading-[24px]">{`  Free Review`}</span>
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center overflow-clip pl-[16px] pr-[20px] py-[8px] relative rounded-[24px] shrink-0" data-node-id="128:3802" data-name="Chip / 02 Policy Review">
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[0] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] whitespace-pre" data-node-id="128:3804">
+            <span className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[24px] text-[#133faa]">02</span>
+            <span className="leading-[24px]">{`  Policy Review`}</span>
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center overflow-clip pl-[16px] pr-[20px] py-[8px] relative rounded-[24px] shrink-0" data-node-id="128:3805" data-name="Chip / 03 Scope the Loss">
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[0] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] whitespace-pre" data-node-id="128:3807">
+            <span className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[24px] text-[#133faa]">03</span>
+            <span className="leading-[24px]">{`  Scope the Loss`}</span>
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center overflow-clip pl-[16px] pr-[20px] py-[8px] relative rounded-[24px] shrink-0" data-node-id="128:3808" data-name="Chip / 04 Build Your Claim">
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[0] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] whitespace-pre" data-node-id="128:3810">
+            <span className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[24px] text-[#133faa]">04</span>
+            <span className="leading-[24px]">{`  Build Your Claim`}</span>
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center overflow-clip pl-[16px] pr-[20px] py-[8px] relative rounded-[24px] shrink-0" data-node-id="128:3811" data-name="Chip / 05 Maximize Settlement">
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[0] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] whitespace-pre" data-node-id="128:3813" data-annotations="\[LEGAL CHECK\] step name 'Maximize Settlement'. Suggest 'Negotiate the Settlement'.">
+            <span className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[24px] text-[#133faa]">05</span>
+            <span className="leading-[24px]">{`  Maximize Settlement`}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Display XL: Font(family: "Schibsted Grotesk", style: Bold, size: 96, weight: 700, lineHeight: 96, letterSpacing: -3), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

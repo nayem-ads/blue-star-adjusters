@@ -1,5 +1,41 @@
 ---
-// Noindex stub (components agent). Replace with the real page when it is designed.
-import StubPage from '../../components/StubPage.astro';
+// Fees (Figma desktop 128:3369, mobile 128:6166). Indexable.
+// data-node = desktop node id, data-node-m = mobile node id (pixel-diff --mobile swaps them in).
+// No fee percentage or rate anywhere on this page (Jay, 2026-09-23).
+import '@fontsource/schibsted-grotesk/latin-400.css'; // Schibsted Regular (Why lead, When-not body): only 500-700 are global
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/fees/Hero.astro';
+import Statement from '../../sections/fees/Statement.astro';
+import Why from '../../sections/fees/Why.astro';
+import Protect from '../../sections/fees/Protect.astro';
+import NotHire from '../../sections/fees/NotHire.astro';
+import Specialists from '../../sections/fees/Specialists.astro';
+import Faq from '../../sections/fees/Faq.astro';
+import Cta from '../../sections/fees/Cta.astro';
+const title = 'Public Adjuster Fees, Explained | Blue Star Adjusters';
+const description = 'No upfront cost. Blue Star is paid a percentage of your settlement, set in writing before we start.';
 ---
-<StubPage name="Fees" eyebrow="The firm" />
+<Base title={title} description={description}>
+  <div data-node="128:3370" data-node-m="128:6167"><Header theme="light" /></div>
+  <main class="bs-fees">
+    <Hero />
+    <Statement />
+    <Why />
+    <Protect />
+    <NotHire />
+    <Specialists />
+    <Faq />
+    <Cta />
+  </main>
+  <div data-node="128:4872" data-node-m="128:6736"><Footer /></div>
+  <CallBar />
+</Base>
+<style is:global>
+  /* Below lg, Chrome sets Montserrat/Schibsted mobile styles 1px higher than Figma (baseline rounding). */
+  @media (max-width: 1023.98px) {
+    .bs-fees :where(.tm-body, .tm-body-strong, .tm-lead, .tm-h2, .tm-h3, .tm-display, .bs-fnudge) { position: relative; top: 1px; }
+  }
+</style>

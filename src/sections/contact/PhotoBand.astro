@@ -1,0 +1,21 @@
+---
+// Hero photo band: desktop 128:3946 (1280×600), mobile 128:6506 (390×540). Crop marks + ruler foot.
+import images from '../../data/images.json';
+import CropMarks from './CropMarks.astro';
+import Ruler from './Ruler.astro';
+const img = images as Record<string, { src: string; width: number; height: number }>;
+const d = img['128:3947'], m = img['128:6508'];
+---
+<section aria-label="Photo" class="bg-white" data-node="128:3946" data-node-m="128:6506">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[16px] pb-[48px] lg:px-[80px] lg:pt-[40px] lg:pb-[32px]">
+    <div class="relative" data-node-m="128:6507">
+      <picture>
+        <source media="(min-width: 64rem)" srcset={d.src} width={d.width} height={d.height} />
+        <img src={m.src} width={m.width} height={m.height} alt="A kitchen table in morning light with an open policy binder, a carrier letter, a phone and a cup of coffee." loading="eager" fetchpriority="high" decoding="async"
+          class="block w-full h-[440px] lg:h-[480px] object-cover" data-node="128:3947" data-node-m="128:6508" />
+      </picture>
+      <CropMarks class="-inset-[8px] lg:-inset-[16px]" />
+    </div>
+    <Ruler class="mt-[20px] lg:mt-[32px]" node="128:3957" nodeM="128:6519" />
+  </div>
+</section>

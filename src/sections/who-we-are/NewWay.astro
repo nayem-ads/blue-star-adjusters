@@ -1,0 +1,35 @@
+---
+// S3 What "a new way" means, index rows. Desktop 128:3723, mobile 128:6785.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import { ROUTES } from '../../data/site';
+const rows = [
+  { idx: '§ 02.1', title: 'Senior led.', body: 'We take fewer claims, so the adjuster who walks your property is the one who negotiates it.', icon: 'search', bw: 'lg:w-[528px]',
+    d: ['128:3729', '128:3730', '128:3731', '128:3732', '128:3733'], m: ['128:6787', '128:6788', '128:6792', '128:6793', '128:6789'], mw: 'w-[310px]', ind: 'ml-0' },
+  { idx: '§ 02.2', title: 'A full team.', body: 'Building estimators, inventory specialists, accountants, and licensed public adjusters working in concert. Not a single generalist on their own.', icon: 'building', bw: 'lg:w-[520px]',
+    d: ['128:3736', '128:3737', '128:3738', '128:3739', '128:3740'], m: ['128:6794', '128:6795', '128:6798', '128:6799', '128:6796'], mw: 'w-full', ind: 'ml-[40px]' },
+  { idx: '§ 02.3', title: "Builder's scope.", body: 'We write it the way a general contractor bids a job. Trade by trade, to current code.', icon: 'ruler', bw: 'lg:w-[448px]',
+    d: ['128:3742', '128:3743', '128:3744', '128:3745', '128:3746'], m: ['128:6800', '128:6801', '128:6805', '128:6806', '128:6802'], mw: 'w-full', ind: 'ml-[80px]' },
+];
+---
+<section aria-labelledby="wwa-newway" class="relative bg-paper min-h-[1024px] lg:min-h-[888px]" data-node="128:3723" data-node-m="128:6785">
+  <div class="max-w-[1280px] mx-auto px-[20px] lg:px-[80px] pt-[64px] pb-[68px] lg:pt-[120px] lg:pb-[120px]">
+    <div class="lg:flex lg:items-end lg:justify-between">
+      <h2 id="wwa-newway" class="m-0 tm-h2 lg:t-h2 text-navy w-[330px] max-w-full lg:w-[600px]" data-node="128:3724" data-node-m="128:6786">What “a new way” means on your claim</h2>
+      <Button href={ROUTES.freeClaimReview} variant="outline" class="hidden lg:inline-flex lg:min-w-[253px]" data-node="128:3725">Schedule a Free Review</Button>
+    </div>
+    <ol class="m-0 p-0 list-none mt-[40px] lg:mt-[72px]">
+      {rows.map((r, i) => (
+        <li class:list={['relative lg:ml-0 lg:grid lg:grid-cols-[120px_408px_minmax(0,1fr)] lg:pr-[40px] xl:pr-0 lg:items-start lg:pt-[32px] lg:pb-[44px]', r.ind, 'pt-[20px] pb-[40px]']}>
+          <span aria-hidden="true" class:list={['absolute left-0 right-0 top-0 h-px bg-navy/90', i > 0 ? 'lg:bg-navy/35' : 'lg:bg-navy']} data-node={r.d[0]} data-node-m={r.m[0]}></span>
+          <p class="m-0 w-max tm-label lg:t-label lg:text-[15px] lg:tracking-[0.3px] text-navy lg:text-royal lg:mt-[8px]" data-node={r.d[1]} data-node-m={r.m[1]}>{r.idx}</p>
+          <h3 class:list={['m-0 mt-[16px] lg:mt-0 font-display font-semibold text-[36px] leading-[40px] tracking-[-0.9px] lg:text-[40px] lg:leading-[44px] lg:tracking-[-0.4px] lg:w-[360px] lg:text-navy', i === 1 ? 'text-navy' : 'text-ink']} data-node={r.d[2]} data-node-m={r.m[2]}>{r.title}</h3>
+          <p class:list={['m-0 mt-[12px] max-w-full tm-body text-ink lg:mt-[4px] lg:t-lead', r.mw, r.bw]} data-node={r.d[3]} data-node-m={r.m[3]}>{r.body}</p>
+          <Icon name={r.icon} size={24} class="absolute right-0 top-[16px] lg:top-[40px] text-navy lg:text-royal" />
+        </li>
+      ))}
+    </ol>
+    <div aria-hidden="true" class="h-px bg-navy/90 lg:bg-navy/35" data-node="128:3749" data-node-m="128:6807"></div>
+    <Button href={ROUTES.freeClaimReview} variant="outline" full class="lg:hidden mt-[31px] h-[56px]" data-node-m="128:6808">Schedule a Free Review</Button>
+  </div>
+</section>

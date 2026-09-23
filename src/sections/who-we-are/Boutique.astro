@@ -1,0 +1,28 @@
+---
+// S7 A Boutique Practice, pull quote over photo. Desktop 128:4949, mobile 135:1310.
+import Icon from '../../components/Icon.astro';
+import Pic from './Pic.astro';
+---
+<section aria-labelledby="wwa-boutique" class="relative overflow-hidden bg-ink lg:bg-navy text-white min-h-[640px] lg:min-h-[720px]" data-node="128:4949" data-node-m="135:1310">
+  <div class="absolute inset-0">
+    <Pic node="128:4950" nodeM="135:1311" alt="A boutique conference room with brick and a navy wall, rolled blueprints and a hard hat on the table." class="w-full h-full object-cover" dataNode="128:4950" dataNodeM="135:1311" />
+  </div>
+  <div aria-hidden="true" class="wwa-scrim absolute inset-0"></div>
+  <div aria-hidden="true" class="wwa-ramp hidden lg:block absolute inset-0"></div>
+  <div class="relative max-w-[1280px] mx-auto h-full px-[20px] lg:px-[176px] pt-[56px] pb-[56px] lg:pt-[120px] lg:pb-[96px]">
+    <p class="m-0 w-max tm-label lg:t-label lg:text-[15px] lg:tracking-[0.3px] text-white whitespace-nowrap" data-node="128:4952" data-node-m="135:1314">§ 06</p>
+    <div class="mt-[156px] lg:mt-[38px]">
+      <Icon name="quote" size={48} class="text-white" />
+      <h2 id="wwa-boutique" class="m-0 mt-[16px] lg:mt-[24px] font-display font-bold text-[42px] leading-[46px] tracking-[-1.05px] w-[350px] max-w-full lg:max-w-none lg:w-[720px] lg:t-display-l" data-node="128:4956" data-node-m="135:1317">A Boutique Practice.<br /> A Family Office.</h2>
+      <span aria-hidden="true" class="block mt-[24px] lg:mt-[32px] w-[48px] lg:w-[80px] h-[2px] bg-white lg:bg-royal" data-node="128:4957" data-node-m="135:1316"></span>
+      <p class="m-0 mt-[24px] lg:mt-[32px] tm-body lg:t-lead w-[350px] max-w-full lg:w-[520px]" data-node="128:4958" data-node-m="135:1315">Every engagement is discreet, senior led, and built around the client's privacy. References are held in confidence and available on request.</p>
+    </div>
+  </div>
+</section>
+<style>
+  .wwa-scrim { background: linear-gradient(to bottom, rgba(8,29,94,0.0000) 0px 200px, rgba(8,29,94,0.0700) 200px 232px, rgba(8,29,94,0.1351) 232px 264px, rgba(8,29,94,0.1956) 264px 296px, rgba(8,29,94,0.2519) 296px 328px, rgba(8,29,94,0.3043) 328px 360px, rgba(8,29,94,0.3530) 360px 392px, rgba(8,29,94,0.3983) 392px 424px, rgba(8,29,94,0.4404) 424px 456px, rgba(8,29,94,0.4796) 456px 488px, rgba(8,29,94,0.5160) 488px 520px, rgba(8,29,94,0.5499) 520px 552px, rgba(8,29,94,0.5814) 552px 640px), rgba(7,15,51,.4); }
+  .wwa-ramp { background: var(--color-navy); opacity: .85;
+    -webkit-mask-image: linear-gradient(to right, #000 0%, rgba(0,0,0,.94) 14%, rgba(0,0,0,.86) 26.5%, rgba(0,0,0,.78) 42%, rgba(0,0,0,.73) 51.5%, rgba(0,0,0,.45) 64%, rgba(0,0,0,.2) 76.5%, rgba(0,0,0,.06) 83%, transparent 86%);
+    mask-image: linear-gradient(to right, #000 0%, rgba(0,0,0,.94) 14%, rgba(0,0,0,.86) 26.5%, rgba(0,0,0,.78) 42%, rgba(0,0,0,.73) 51.5%, rgba(0,0,0,.45) 64%, rgba(0,0,0,.2) 76.5%, rgba(0,0,0,.06) 83%, transparent 86%); }
+  @media (min-width: 1024px) { .wwa-scrim { background: rgba(8,29,94,.4); } }
+</style>

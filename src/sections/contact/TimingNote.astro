@@ -1,0 +1,66 @@
+---
+// § 05 Timing note (document excerpt): desktop 128:5872 (1280×695.1), mobile 135:1701 (390×634).
+// The excerpt card and its crop marks are rotated -1.5deg inside a box sized to Figma's rotated bounds.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+---
+<section aria-labelledby="ct-timing-label" class="ct-timing bg-paper" data-node="128:5872" data-node-m="135:1701">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[120px] lg:flex lg:items-start">
+    <div class="ct-rail flex items-center gap-[12px] lg:w-[264px] lg:shrink-0 lg:flex-col lg:items-start lg:gap-[16px] lg:pt-[40px]" data-node="128:5873" data-node-m="135:1702">
+      <span aria-hidden="true" class="hidden lg:block w-[160px] h-px bg-navy" data-node="128:5874"></span>
+      <p class="m-0 flex items-center gap-[12px] w-fit shrink-0" data-node="128:5877">
+        <Icon name="clock" size={24} class="hidden lg:block text-navy" />
+        <Icon name="clock" size={20} class="lg:hidden text-navy" />
+        <span id="ct-timing-label" class="tm-label lg:t-label text-ink whitespace-nowrap" data-node="128:5881" data-node-m="135:1706">Timing note</span>
+      </p>
+      <span aria-hidden="true" class="lg:hidden flex-1 h-[2px] ct-index__rule" data-node-m="135:1707"></span>
+    </div>
+
+    <div class="ct-col mt-[32px] lg:mt-0 lg:ml-[120px] lg:flex-1 lg:min-w-0 flex flex-col gap-[32px] lg:gap-[56px] items-start" data-node="128:5883">
+      <div class="ct-excerpt relative" data-node-m="135:1708">
+        <div class="ct-excerpt__doc">
+          <div class="ct-excerpt__box">
+          <div class="ct-excerpt__card">
+            <p class="m-0 w-fit ct-excerpt__chip">§ 05</p>
+            <span aria-hidden="true" class="block h-px bg-line ct-excerpt__rule"></span>
+            <p class="m-0 ct-excerpt__text text-ink">In a declared disaster area, California bars public adjusters from soliciting you until seven days after the event ends. <strong class="ct-excerpt__hl">It doesn't apply if you call us first</strong>, and then we can look at your claim the same day.</p>
+          </div>
+          </div>
+          <span aria-hidden="true" class="ct-crop ct-excerpt__crop"></span>
+        </div>
+      </div>
+      <Button href={PHONE_TEL} variant="solid" icon="phone" class="max-lg:w-full max-lg:h-[56px] lg:w-[235px]" node="128:5901" data-node-m="135:1724">Call {PHONE_DISPLAY}</Button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ct-excerpt { width: 100%; height: 374px; }
+  .ct-excerpt__doc { position: absolute; inset: 0; }
+  .ct-excerpt__box { position: absolute; left: 15.5px; top: 16px; width: 318.611px; height: 341.001px; display: flex; align-items: center; justify-content: center; }
+  .ct-excerpt__card { flex: none; width: 310px; box-sizing: border-box; padding: 24px 24px 28px; background: #fff; border-radius: 2px;
+    box-shadow: 0 12px 32px rgb(7 15 51 / .12); transform: rotate(-1.5deg); }
+  .ct-excerpt__crop { inset: 0; }
+  .ct-excerpt__chip { background: var(--color-navy); color: #fff; border-radius: 2px; padding: 4px 8px; font-family: var(--font-body); font-weight: 600; font-size: 12px; line-height: 16px; letter-spacing: 0.02em; white-space: nowrap; }
+  .ct-excerpt__rule { margin-top: 16px; }
+  .ct-excerpt__text { margin-top: 16px; font-family: var(--font-body); font-weight: 400; font-size: 18px; line-height: 28px; }
+  .ct-excerpt__hl { font-weight: 600; text-decoration: underline; text-decoration-color: var(--color-royal); text-decoration-thickness: 3px; text-decoration-skip-ink: none; text-underline-offset: 6px; }
+  @media (min-width: 64rem) {
+    .ct-excerpt { width: 704.374px; height: 348px; }
+    .ct-excerpt__doc { inset: auto; left: 4.187px; top: 9.053px; width: 696px; height: 329px; transform: rotate(-1.5deg); }
+    .ct-excerpt__box { display: contents; }
+    .ct-excerpt__card { position: absolute; left: 16px; top: 16px; width: 664px; padding: 40px 48px 43px; transform: none; border-radius: 0; border: 1px solid var(--color-line); box-shadow: 0 12px 24px rgb(7 15 51 / .08); }
+    .ct-excerpt__chip { font-size: 13px; line-height: 18px; }
+    .ct-excerpt__rule { margin-top: 24px; }
+    .ct-excerpt__text { margin-top: 25px; font-size: 22px; line-height: 1.55; }
+  }
+  /* 1024-1279: the 1280 composition doesn't fit; keep the card upright-in-flow and narrower. */
+  @media (min-width: 64rem) and (max-width: 79.999rem) {
+    .ct-rail { width: 200px; }
+    .ct-col { margin-left: 40px; }
+    .ct-excerpt { width: 100%; height: auto; }
+    .ct-excerpt__doc { position: relative; left: auto; top: auto; width: 100%; height: auto; padding: 16px; box-sizing: border-box; }
+    .ct-excerpt__card { position: relative; left: auto; top: auto; width: auto; }
+  }
+</style>

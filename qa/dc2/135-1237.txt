@@ -1,0 +1,93 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/d439e075-3392-42f2-bc39-bd27eb37e97f.svg";
+const imgDetailBMarkFaint = "https://www.figma.com/api/mcp/asset/d0fa2518-6a52-4457-b9bb-586738540cc7.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/77fa37cc-1e30-4e3d-8e00-0e4afe816e36.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:152">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function S5NoConflictOfInterestStatementNavy() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] relative size-full" data-node-id="135:1237" data-name="S5 No Conflict of Interest — statement (navy)">
+      <div className="absolute contents left-0 top-0" data-node-id="135:1287" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-0 opacity-10 top-0 w-px" data-node-id="135:1261" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[40px] opacity-5 top-0 w-px" data-node-id="135:1262" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[80px] opacity-5 top-0 w-px" data-node-id="135:1263" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[120px] opacity-5 top-0 w-px" data-node-id="135:1264" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[160px] opacity-10 top-0 w-px" data-node-id="135:1265" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[200px] opacity-5 top-0 w-px" data-node-id="135:1266" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[240px] opacity-5 top-0 w-px" data-node-id="135:1267" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[280px] opacity-5 top-0 w-px" data-node-id="135:1268" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[320px] opacity-10 top-0 w-px" data-node-id="135:1269" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[632px] left-[360px] opacity-5 top-0 w-px" data-node-id="135:1270" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-0 w-[390px]" data-node-id="135:1271" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[40px] w-[390px]" data-node-id="135:1272" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[80px] w-[390px]" data-node-id="135:1273" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[120px] w-[390px]" data-node-id="135:1274" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-[160px] w-[390px]" data-node-id="135:1275" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[200px] w-[390px]" data-node-id="135:1276" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[240px] w-[390px]" data-node-id="135:1277" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[280px] w-[390px]" data-node-id="135:1278" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-[320px] w-[390px]" data-node-id="135:1279" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[360px] w-[390px]" data-node-id="135:1280" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[400px] w-[390px]" data-node-id="135:1281" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[440px] w-[390px]" data-node-id="135:1282" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-[480px] w-[390px]" data-node-id="135:1283" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[520px] w-[390px]" data-node-id="135:1284" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[560px] w-[390px]" data-node-id="135:1285" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[600px] w-[390px]" data-node-id="135:1286" data-name="Grid H" />
+      </div>
+      <div className="absolute h-[420px] left-[210px] top-[120px] w-[345.929px]" data-node-id="135:1238" data-name="Detail / B-mark (faint)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDetailBMarkFaint} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[16px] left-[20px] text-[12px] text-[color:var(--color\/white,white)] top-[64px] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1243">
+        § 04
+      </p>
+      <div className="absolute bg-[var(--color\/white,white)] h-px left-[64px] opacity-30 top-[71px] w-[306px]" data-node-id="135:1244" data-name="Hairline" />
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Bold'] font-bold leading-[50px] left-[20px] text-[48px] text-[color:var(--color\/white,white)] top-[104px] tracking-[-1.2px] w-[350px]" data-node-id="135:1245" data-annotations="(V) Mike's line, word for word.">
+        No Conflict of Interest.
+      </p>
+      <div className="absolute content-stretch flex gap-[8px] items-center left-[20px] top-[224px] w-[350px]" data-node-id="135:1246" data-name="Detail / Dimension line">
+        <div className="bg-[var(--color\/white,white)] h-[12px] relative shrink-0 w-px" data-node-id="I135:1246;71:528" data-name="Tick" />
+        <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px relative" data-node-id="I135:1246;71:529" data-name="Rule" />
+        <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/white,white)] tracking-[0.12px] whitespace-nowrap" data-node-id="I135:1246;71:530">
+          We represent the insured only.
+        </p>
+        <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px relative" data-node-id="I135:1246;71:531" data-name="Rule" />
+        <div className="bg-[var(--color\/white,white)] h-[12px] relative shrink-0 w-px" data-node-id="I135:1246;71:532" data-name="Tick" />
+      </div>
+      <div className="absolute left-[20px] size-[40px] top-[280px]" data-node-id="135:1252" data-name="Icon / shield">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[28px] left-[20px] text-[18px] text-[color:var(--color\/white,white)] top-[340px] w-[350px]" data-node-id="135:1255" data-annotations="(V) Mike's line, word for word.">
+        We eliminate the fundamental problem with insurance company adjusters: one person representing two sides of a financial negotiation. Our sole allegiance is to you.
+      </p>
+      <Button className="absolute bg-[var(--color\/white,white)] content-stretch flex gap-[10px] h-[56px] items-center justify-center left-[20px] px-[28px] py-[16px] rounded-[999px] top-[512px] w-[350px]" />
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Desktop/Caption: Font(family: "Montserrat", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 1), Mobile/Lead: Font(family: "Montserrat", style: Regular, size: 18, weight: 400, lineHeight: 28, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

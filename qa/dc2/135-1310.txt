@@ -1,0 +1,45 @@
+const imgImgAboutOffice = "https://www.figma.com/api/mcp/asset/1f074f29-30b8-499b-9e69-9148bcb83e90.png";
+const imgIconQuote = "https://www.figma.com/api/mcp/asset/07866c48-705f-4e0a-9b28-22b35140f106.svg";
+
+export default function S7ABoutiquePracticePullQuoteOverPhoto() {
+  return (
+    <div className="bg-[var(--color\/ink,#070f33)] relative size-full" data-node-id="135:1310" data-name="S7 A Boutique Practice — pull quote over photo">
+      <div className="absolute h-[640px] left-0 top-0 w-[390px]" data-node-id="135:1311" data-annotations="Alt: A boutique conference room with brick and a navy wall, rolled blueprints and a hard hat on the table.;AI illustrative. Replace with a real photo before launch." data-name="IMG:about-office">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-[-88.76%] max-w-none top-0 w-[247.12%]" src={imgImgAboutOffice} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/ink,#070f33)] h-[640px] left-0 opacity-40 top-0 w-[390px]" data-node-id="135:1312" data-name="Scrim (ink, layer opacity 0.40)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[440px] left-0 opacity-7 top-[200px] w-[390px]" data-node-id="135:1689" data-name="Scrim band 1 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[408px] left-0 opacity-7 top-[232px] w-[390px]" data-node-id="135:1690" data-name="Scrim band 2 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-0 opacity-7 top-[264px] w-[390px]" data-node-id="135:1691" data-name="Scrim band 3 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[344px] left-0 opacity-7 top-[296px] w-[390px]" data-node-id="135:1692" data-name="Scrim band 4 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[312px] left-0 opacity-7 top-[328px] w-[390px]" data-node-id="135:1693" data-name="Scrim band 5 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[280px] left-0 opacity-7 top-[360px] w-[390px]" data-node-id="135:1694" data-name="Scrim band 6 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[248px] left-0 opacity-7 top-[392px] w-[390px]" data-node-id="135:1695" data-name="Scrim band 7 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[216px] left-0 opacity-7 top-[424px] w-[390px]" data-node-id="135:1696" data-name="Scrim band 8 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[184px] left-0 opacity-7 top-[456px] w-[390px]" data-node-id="135:1697" data-name="Scrim band 9 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[152px] left-0 opacity-7 top-[488px] w-[390px]" data-node-id="135:1698" data-name="Scrim band 10 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[120px] left-0 opacity-7 top-[520px] w-[390px]" data-node-id="135:1699" data-name="Scrim band 11 (navy, layer opacity)" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[88px] left-0 opacity-7 top-[552px] w-[390px]" data-node-id="135:1700" data-name="Scrim band 12 (navy, layer opacity)" />
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[16px] left-[20px] text-[12px] text-[color:var(--color\/white,white)] top-[56px] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1314">
+        § 06
+      </p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[26px] left-[20px] text-[16px] text-[color:var(--color\/white,white)] top-[480px] w-[350px]" data-node-id="135:1315" data-annotations="edited from: 'senior-led' (CD 189)">{`Every engagement is discreet, senior led, and built around the client's privacy. References are held in confidence and available on request.`}</p>
+      <div className="absolute bg-[var(--color\/white,white)] h-[2px] left-[20px] top-[454px] w-[48px]" data-node-id="135:1316" data-name="Rule" />
+      <div className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] left-[20px] text-[42px] text-[color:var(--color\/white,white)] top-[292px] tracking-[-1.05px] w-[350px]" data-node-id="135:1317" data-annotations='Line break after "Practice." is typographic only; words unchanged.;(V) Mike&apos;s line, word for word.'>
+        <p className="leading-[46px] mb-0">A Boutique Practice.</p>
+        <p className="leading-[46px]">A Family Office.</p>
+      </div>
+      <div className="absolute left-[20px] size-[48px] top-[228px]" data-node-id="135:1318" data-name="Icon / quote">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconQuote} />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Mobile/Body: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

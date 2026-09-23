@@ -1,0 +1,6 @@
+---
+// Detail / Crop marks: 16 × 1.5 corner marks around a photo or document. Colour set by --c (navy desktop, royal mobile by default).
+interface Props { class?: string; style?: string }
+const { class: cls = '', style } = Astro.props;
+---
+<span aria-hidden="true" class:list={['ct-crop', cls]} style={style}></span>

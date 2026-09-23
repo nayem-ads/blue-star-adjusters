@@ -1,0 +1,42 @@
+---
+// S6 Built From the Ground Up, founder split. Desktop 128:4923, mobile 135:1288.
+import Icon from '../../components/Icon.astro';
+import Pic from './Pic.astro';
+import CropMarks from './CropMarks.astro';
+import { ROUTES } from '../../data/site';
+---
+<section aria-labelledby="wwa-founder" class="relative bg-white lg:bg-paper min-h-[1160px] lg:min-h-[984px]" data-node="128:4923" data-node-m="135:1288">
+  <div class="relative max-w-[1280px] mx-auto h-full px-[20px] lg:px-0">
+    <div class="absolute left-0 top-[56px] w-[300px] h-[340px] lg:top-[80px] lg:w-[43.75%] lg:h-[824px]">
+      <Pic node="128:4924" nodeM="135:1289" alt="Michael Rapport, Founding Principal of Blue Star Adjusters." class="w-full h-full object-cover" dataNode="128:4924" dataNodeM="135:1289" />
+    </div>
+    <CropMarks corners="tr br" class="absolute left-[292px] top-[48px] w-[16px] h-[356px] lg:left-[calc(43.75%-4px)] lg:top-[68px] lg:h-[848px]" node="128:4948" nodeM="135:1294" />
+    <p class="lg:hidden absolute left-[332px] top-[56px] m-0 tm-label text-navy whitespace-nowrap" data-node-m="135:1295">§ 05</p>
+
+    <div class="relative pt-[436px] pb-[60px] lg:pb-[80px] lg:pt-[120px] lg:ml-[51.25%] lg:mr-[80px]">
+      <div class="hidden lg:flex items-start gap-[24px]">
+        <p class="m-0 w-max t-label text-[15px] tracking-[0.3px] text-royal whitespace-nowrap" data-node="128:4930">§ 05</p>
+        <span aria-hidden="true" class="block flex-1 h-px bg-navy/35 mt-[9px]" data-node="128:4931"></span>
+      </div>
+      <h2 id="wwa-founder" class="m-0 tm-h2 lg:t-h2 text-navy w-[300px] max-w-full lg:w-[420px] lg:mt-[22px]" data-node="128:4932" data-node-m="135:1296">Built From the Ground Up.</h2>
+      <p class="m-0 mt-[16px] tm-body lg:t-body text-ink w-[340px] max-w-full lg:w-[520px] lg:mt-[24px]" data-node="128:4933" data-node-m="135:1297">Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco's seismic retrofit ordinance, and he knows what a code compliant rebuild costs because he's paid for plenty of them.</p>
+      <figure class="m-0 mt-[32px] lg:mt-[40px]">
+        <Icon name="quote" size={32} class="lg:hidden text-royal" />
+        <Icon name="quote" size={40} class="hidden lg:block text-royal" />
+        <blockquote class="relative m-0 mt-[12px] lg:mt-[16px] lg:pl-[24px]">
+          <span aria-hidden="true" class="hidden lg:block absolute left-0 top-0 w-[2px] h-full bg-royal" data-node="128:4937"></span>
+          <p class="m-0 font-display font-medium text-navy text-[20px] leading-[30px] lg:text-[22px] lg:leading-[34px] w-[350px] max-w-full lg:w-[496px]" data-node="128:4938" data-node-m="135:1302">“I've stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”</p>
+        </blockquote>
+        <figcaption class="m-0 mt-[16px] lg:ml-[24px] bs-wnudge text-[15px] leading-[26px] lg:leading-[24px] font-medium text-ink w-max" data-node="128:4939" data-node-m="135:1304">Michael Rapport, Founding Principal</figcaption>
+      </figure>
+      <a href={ROUTES.founder} class="wwa-link group relative inline-flex items-start gap-[8px] mt-[16px] pt-[12px] lg:mt-[40px] h-[50px] lg:h-[52px] text-royal" data-node="128:4940" data-node-m="135:1305">
+        <span class="relative tm-body-strong lg:t-body-strong lg:underline wwa-ul" data-node="128:4941" data-node-m="135:1306">Meet Michael Rapport<span aria-hidden="true" class="lg:hidden absolute left-0 right-0 top-[28px] h-[2px] bg-royal" data-node-m="135:1309"></span></span>
+        <Icon name="arrow-right" size={24} class="mt-[1px] lg:mt-[2px] transition-transform group-hover:translate-x-[3px]" />
+      </a>
+    </div>
+  </div>
+</section>
+<style>
+  .wwa-link:hover span { color: var(--color-navy); }
+  .wwa-ul { text-decoration-thickness: from-font; text-underline-position: from-font; }
+</style>

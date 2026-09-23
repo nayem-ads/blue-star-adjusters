@@ -1,0 +1,74 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/6564d1ad-c87c-4291-a095-e5aa6a802855.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/d2ac8ee3-8788-4660-8f93-8b431ce9f4e5.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:128">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionHero() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col items-start pb-[56px] pt-[88px] px-[80px] relative size-full" data-node-id="128:3923" data-name="Section / Hero">
+      <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="128:3924" data-name="Eyebrow">
+        <div className="bg-[var(--color\/navy,#081d5e)] h-px relative shrink-0 w-[40px]" data-node-id="128:3925" data-name="Eyebrow rule" />
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:3926">
+          Contact
+        </p>
+      </div>
+      <div className="h-[32px] relative shrink-0 w-[8px]" data-node-id="128:3927" data-name="Spacer" />
+      <div className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] relative shrink-0 text-[96px] text-[color:var(--color\/navy,#081d5e)] tracking-[-1.92px] whitespace-nowrap" data-node-id="128:3928" data-annotations="H1. Line break after 'One Call.' is typographic only.">
+        <p className="leading-[0.98] mb-0">One Call.</p>
+        <p className="leading-[0.98]">A Straight Answer.</p>
+      </div>
+      <div className="h-[40px] relative shrink-0 w-[8px]" data-node-id="128:3929" data-name="Spacer" />
+      <div className="content-stretch flex gap-[24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:3930" data-name="Lead row">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[552px]" data-node-id="128:3931" data-name="Index">
+          <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="128:3932" data-name="Section index">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:3933">
+              § 01
+            </p>
+            <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-[120px]" data-node-id="128:3934" data-name="Index rule" />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[32px] items-start min-w-px overflow-clip relative" data-node-id="128:3935" data-name="Lead + CTAs">
+          <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="128:3936">{`Tell us what happened. We'll read your policy and the carrier's letters, and tell you whether we can add value, and why.`}</p>
+          <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0" data-node-id="128:3937" data-name="CTAs">
+            <Button className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+            <div className="border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" data-node-id="128:3942" data-annotations="Links to tel:+19165071005" data-name="Button / Call (916) 507-1005">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I128:3942;37:141" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+              </div>
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="I128:3942;37:143">
+                Call (916) 507-1005
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

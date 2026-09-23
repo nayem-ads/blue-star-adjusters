@@ -1,0 +1,11 @@
+---
+// Section index ("§ 02" + rule). Desktop: Montserrat 13/18 + 12px gap + 120px rule. Mobile: 12/16 + 12px gap + hairline
+// filling the row. The rule sits at y 8.5 / 7.5 in Figma, so it renders as 2px at 50% (matches the 1x render).
+// tone: 'light' (navy text, line rule) | 'dark' (white text, white rule at 25%).
+interface Props { n: string; tone?: 'light'|'dark'; mobileFill?: boolean; node?: string; nodeM?: string; class?: string; textNode?: string; textNodeM?: string }
+const { n, tone = 'light', mobileFill = true, node, nodeM, class: cls = '', textNode, textNodeM } = Astro.props;
+---
+<div class:list={['ct-index flex items-center gap-[12px]', mobileFill ? 'w-full lg:w-fit' : 'w-fit', tone === 'dark' ? 'ct-index--dark text-white' : 'text-navy', cls]} data-node={node} data-node-m={nodeM}>
+  <span class="tm-label lg:t-label whitespace-nowrap" data-node={textNode} data-node-m={textNodeM}>{n}</span>
+  <span aria-hidden="true" class:list={['ct-index__rule block h-[2px] shrink-0 lg:w-[120px]', mobileFill ? 'flex-1 lg:flex-none' : 'w-[120px]']}></span>
+</div>

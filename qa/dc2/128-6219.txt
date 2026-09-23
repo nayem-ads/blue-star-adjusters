@@ -1,0 +1,55 @@
+export default function SectionFeeStatement() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start px-[20px] py-[64px] relative size-full" data-node-id="128:6219" data-name="Section/Fee statement">
+      <div className="absolute inset-0 overflow-clip" data-node-id="128:6232" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[20px] opacity-10 top-0 w-px" data-node-id="128:6233" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[60px] opacity-5 top-0 w-px" data-node-id="128:6234" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[100px] opacity-5 top-0 w-px" data-node-id="128:6235" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[140px] opacity-5 top-0 w-px" data-node-id="128:6236" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[180px] opacity-10 top-0 w-px" data-node-id="128:6237" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[220px] opacity-5 top-0 w-px" data-node-id="128:6238" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[260px] opacity-5 top-0 w-px" data-node-id="128:6239" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[300px] opacity-5 top-0 w-px" data-node-id="128:6240" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[340px] opacity-10 top-0 w-px" data-node-id="128:6241" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[376px] left-[380px] opacity-5 top-0 w-px" data-node-id="128:6242" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[24px] w-[390px]" data-node-id="128:6243" data-name="H major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[64px] w-[390px]" data-node-id="128:6244" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[104px] w-[390px]" data-node-id="128:6245" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[144px] w-[390px]" data-node-id="128:6246" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[184px] w-[390px]" data-node-id="128:6247" data-name="H major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[224px] w-[390px]" data-node-id="128:6248" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[264px] w-[390px]" data-node-id="128:6249" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[304px] w-[390px]" data-node-id="128:6250" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[344px] w-[390px]" data-node-id="128:6251" data-name="H major" />
+      </div>
+      <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="128:6220" data-name="Statement/Index">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/royal,#133faa)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6221">
+          § 01
+        </p>
+        <div className="bg-[var(--color\/royal,#133faa)] h-px relative shrink-0 w-[40px]" data-node-id="128:6222" data-name="Index rule" />
+      </div>
+      <div className="h-[24px] relative shrink-0 w-[8px]" data-node-id="128:6223" data-name="Spacer" />
+      <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[350px]" data-node-id="128:6224" data-name="Statement/Measured">
+        <div className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] relative shrink-0 text-[44px] text-[color:var(--color\/navy,#081d5e)] tracking-[-1.32px] w-[350px]" data-node-id="128:6225" data-annotations="Locked fee line, word for word. No percentage anywhere. Signature move for this page: statement as architecture. The line break after 'cost.' is layout only.">
+          <p className="leading-[44px] mb-0">No upfront cost.</p>
+          <p className="leading-[44px]">{`We're paid a percentage of what we recover.`}</p>
+        </div>
+        <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-[350px]" data-node-id="128:6226" data-annotations="Dimension label from the meta description (CD 278): 'set in writing before we start'." data-name="Detail/Dimension line (statement width)">
+          <div className="bg-[var(--color\/royal,#133faa)] h-[12px] relative shrink-0 w-px" data-node-id="I128:6226;71:528" data-name="Tick" />
+          <div className="bg-[var(--color\/royal,#133faa)] flex-[1_0_0] h-px min-w-px relative" data-node-id="I128:6226;71:529" data-name="Rule" />
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/royal,#133faa)] tracking-[0.12px] whitespace-nowrap" data-node-id="I128:6226;71:530">
+            Set in writing before we start
+          </p>
+          <div className="bg-[var(--color\/royal,#133faa)] flex-[1_0_0] h-px min-w-px relative" data-node-id="I128:6226;71:531" data-name="Rule" />
+          <div className="bg-[var(--color\/royal,#133faa)] h-[12px] relative shrink-0 w-px" data-node-id="I128:6226;71:532" data-name="Tick" />
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Desktop/Caption: Font(family: "Montserrat", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 1).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

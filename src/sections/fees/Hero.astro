@@ -1,0 +1,44 @@
+---
+// Fees hero. Desktop 128:3393 (y 88, 1280×704); mobile 128:6184 (y 64, 390×882).
+// Desktop: text column (560) + photo (560×704) flush right. Mobile: photo row (330×216, inset 40 from the text edge)
+// sits under the buttons, then 128px of room for the pinned call bar, then the two trust lines.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE } from '../../data/site';
+const alt = 'A signed agreement on a wooden desk beside a navy fountain pen and a brass lamp.';
+const fact = 'm-0 t-caption text-ink whitespace-nowrap';
+---
+<section aria-labelledby="fees-h1" class="bg-white" data-node="128:3393" data-node-m="128:6184">
+  <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:items-stretch lg:gap-[80px] lg:pl-[80px]">
+    <div class="flex flex-col items-start px-[20px] pt-[32px] pb-[40px] lg:px-0 lg:pt-[96px] lg:pb-[80px] lg:flex-[0_1_560px] lg:min-w-[440px]" data-node="128:3394">
+      <div data-node="128:3395" data-node-m="128:6185"><Eyebrow>Fees</Eyebrow></div>
+      <h1 id="fees-h1" class="m-0 mt-[16px] lg:mt-[28px] text-navy tm-display lg:t-display-l w-full" data-node="128:3399" data-node-m="128:6189">Paid From What We Recover. Nothing Before.</h1>
+      <p class="m-0 mt-[16px] lg:mt-[28px] text-ink tm-lead lg:t-lead w-[330px] lg:w-[440px]" data-node="128:3401" data-node-m="128:6191">No retainer, no hourly bill, and no cost for the initial review.</p>
+      <div class="flex flex-col gap-[12px] mt-[24px] w-full lg:flex-row lg:gap-[16px] lg:mt-[40px] lg:w-auto" data-node="128:3403" data-node-m="128:6193">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="128:3404" data-node-m="128:6194">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="128:3408" data-node-m="128:6198">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <div class="lg:hidden mt-[24px] w-[calc(100%+20px)] -mr-[20px] pl-[40px]" data-node-m="128:6203">
+        <div class="w-full h-[216px] overflow-hidden" data-node-m="128:6204">
+          <Img node="I128:6204;41:71" alt={alt} priority class="block w-full h-full object-cover" />
+        </div>
+      </div>
+      <div aria-hidden="true" class="hidden lg:block mt-[48px] w-full h-px bg-line" data-node="128:3413"></div>
+      <ul class="m-0 p-0 list-none flex flex-col items-start gap-[12px] w-full lg:w-auto mt-[128px] lg:mt-0 lg:flex-row lg:gap-[32px] lg:pt-[20px]" data-node="128:3414" data-node-m="128:6208">
+        <li class="flex items-center gap-[8px] lg:gap-[12px]" data-node="128:3415" data-node-m="128:6209">
+          <Icon name="shield" size={20} class="shrink-0 text-navy lg:text-royal w-[16px] h-[16px] lg:w-[20px] lg:h-[20px]" />
+          <p class={fact} data-node="128:3419" data-node-m="128:6213">You always have final say on any settlement</p>
+        </li>
+        <li class="flex items-center gap-[8px] lg:gap-[12px]" data-node="128:3420" data-node-m="128:6214">
+          <Icon name="document" size={20} class="shrink-0 text-navy lg:text-royal w-[16px] h-[16px] lg:w-[20px] lg:h-[20px]" />
+          <p class={fact} data-node="128:3424" data-node-m="128:6218">{LICENSE}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="hidden lg:block lg:flex-[0_1_560px] lg:min-w-0 h-[704px]" data-node="128:3425">
+      <Img node="I128:3425;41:71" alt={alt} priority class="block w-full h-full object-cover" />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,85 @@
+const imgImgContactHero = "https://www.figma.com/api/mcp/asset/2d0bad29-2e9d-427b-a26c-6438f98551e7.png";
+
+function DetailCropMarks({ className }: { className?: string }) {
+  return (
+    <div className={className || "h-[160px] relative w-[240px]"} data-node-id="71:533" data-name="Detail/Crop marks">
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] left-0 top-0 w-[16px]" data-node-id="71:534" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] left-0 top-0 w-[1.5px]" data-node-id="71:535" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] right-0 top-0 w-[16px]" data-node-id="71:536" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] right-0 top-0 w-[1.5px]" data-node-id="71:537" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] left-0 w-[16px]" data-node-id="71:538" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] left-0 w-[1.5px]" data-node-id="71:539" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] right-0 w-[16px]" data-node-id="71:540" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] right-0 w-[1.5px]" data-node-id="71:541" data-name="Mark" />
+    </div>
+  );
+}
+
+export default function SectionHeroPhotoBand() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[20px] items-start pb-[48px] pt-[16px] px-[20px] relative size-full" data-node-id="128:6506" data-name="Section / Hero photo band">
+      <div className="h-[440px] relative shrink-0 w-[350px]" data-node-id="128:6507" data-name="Photo + crop marks">
+        <div className="absolute h-[440px] left-0 top-0 w-[350px]" data-node-id="128:6508" data-annotations="Alt text: A kitchen table in morning light with a policy binder, the carrier's letter, a phone and a cup of coffee.;AI illustrative. Replace with a real photo before launch." data-name="IMG:contact-hero">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-full left-[-50.04%] max-w-none top-0 w-[222.32%]" src={imgImgContactHero} />
+          </div>
+        </div>
+        <DetailCropMarks className="absolute h-[456px] left-[-8px] top-[-8px] w-[366px]" />
+      </div>
+      <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="128:6518" data-name="Band foot">
+        <div className="flex-[1_0_0] h-[16px] min-w-px opacity-50 overflow-clip relative" data-node-id="128:6519" data-name="Ruler ticks (band foot)">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-0 top-0 w-px" data-node-id="128:6520" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[8px] top-0 w-px" data-node-id="128:6521" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[16px] top-0 w-px" data-node-id="128:6522" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[24px] top-0 w-px" data-node-id="128:6523" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[32px] top-0 w-px" data-node-id="128:6524" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[40px] top-0 w-px" data-node-id="128:6525" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[48px] top-0 w-px" data-node-id="128:6526" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[56px] top-0 w-px" data-node-id="128:6527" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[64px] top-0 w-px" data-node-id="128:6528" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[72px] top-0 w-px" data-node-id="128:6529" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[80px] top-0 w-px" data-node-id="128:6530" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[88px] top-0 w-px" data-node-id="128:6531" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[96px] top-0 w-px" data-node-id="128:6532" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[104px] top-0 w-px" data-node-id="128:6533" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[112px] top-0 w-px" data-node-id="128:6534" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[120px] top-0 w-px" data-node-id="128:6535" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[128px] top-0 w-px" data-node-id="128:6536" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[136px] top-0 w-px" data-node-id="128:6537" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[144px] top-0 w-px" data-node-id="128:6538" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[152px] top-0 w-px" data-node-id="128:6539" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[160px] top-0 w-px" data-node-id="128:6540" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[168px] top-0 w-px" data-node-id="128:6541" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[176px] top-0 w-px" data-node-id="128:6542" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[184px] top-0 w-px" data-node-id="128:6543" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[192px] top-0 w-px" data-node-id="128:6544" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[200px] top-0 w-px" data-node-id="128:6545" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[208px] top-0 w-px" data-node-id="128:6546" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[216px] top-0 w-px" data-node-id="128:6547" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[224px] top-0 w-px" data-node-id="128:6548" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[232px] top-0 w-px" data-node-id="128:6549" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[240px] top-0 w-px" data-node-id="128:6550" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[248px] top-0 w-px" data-node-id="128:6551" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[256px] top-0 w-px" data-node-id="128:6552" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[264px] top-0 w-px" data-node-id="128:6553" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[272px] top-0 w-px" data-node-id="128:6554" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[280px] top-0 w-px" data-node-id="128:6555" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[288px] top-0 w-px" data-node-id="128:6556" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[296px] top-0 w-px" data-node-id="128:6557" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[304px] top-0 w-px" data-node-id="128:6558" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[312px] top-0 w-px" data-node-id="128:6559" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[320px] top-0 w-px" data-node-id="128:6560" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[328px] top-0 w-px" data-node-id="128:6561" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[336px] top-0 w-px" data-node-id="128:6562" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[344px] top-0 w-px" data-node-id="128:6563" data-name="Tick" />
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

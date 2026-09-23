@@ -1,0 +1,38 @@
+---
+// § 01 Hero: desktop 128:3923 (1280×602), mobile 128:6488 (390×520).
+import Button from '../../components/Button.astro';
+import SectionIndex from './SectionIndex.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+---
+<section aria-labelledby="ct-h1" class="bg-white" data-node="128:3923" data-node-m="128:6488">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[32px] pb-[28px] lg:px-[80px] lg:pt-[88px] lg:pb-[56px]">
+    <div class="flex items-center justify-between h-[16px] lg:h-[18px]" data-node-m="128:6489">
+      <p class="m-0 flex items-center gap-[12px] lg:gap-[16px] w-fit" data-node="128:3924" data-node-m="128:6490">
+        <span aria-hidden="true" class="ct-rule-navy block w-[24px] lg:w-[40px] h-[2px]"></span>
+        <span class="tm-label lg:t-label text-ink whitespace-nowrap">Contact</span>
+      </p>
+      <span class="lg:hidden tm-label text-navy whitespace-nowrap" data-node-m="128:6493">§ 01</span>
+    </div>
+
+    <h1 id="ct-h1" class="ct-h1 m-0 mt-[24px] lg:mt-[32px] tm-display text-navy lg:w-[838px] lg:h-[188px]" data-node="128:3928" data-node-m="128:6495">One Call.<br />A Straight Answer.</h1>
+
+    <div class="mt-[16px] lg:mt-[40px] lg:flex lg:gap-[24px] lg:items-start" data-node="128:3930">
+      <div class="hidden lg:block lg:flex-1 lg:min-w-0" data-node="128:3931">
+        <SectionIndex n="§ 01" mobileFill={false} node="128:3932" />
+      </div>
+      <div class="flex flex-col gap-[24px] lg:gap-[32px] lg:w-[544px] lg:shrink-0" data-node="128:3935">
+        <p class="m-0 tm-lead lg:t-lead text-ink" data-node="128:3936" data-node-m="128:6496">Tell us what happened. We'll read your policy and the carrier's letters, and tell you whether we can add value, and why.</p>
+        <div class="flex flex-col gap-[12px] lg:flex-row lg:gap-[16px] lg:w-fit" data-node="128:3937" data-node-m="128:6497">
+          <Button href={ROUTES.freeClaimReview} variant="solid" class="max-lg:w-full max-lg:h-[56px] lg:w-[253px]" node="128:3938" data-node-m="128:6498">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="max-lg:w-full max-lg:h-[56px] lg:w-[235px]" node="128:3942" data-node-m="128:6502">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (min-width: 64rem) {
+    .ct-h1 { font-size: 96px; line-height: 94.08px; letter-spacing: -1.92px; white-space: nowrap; }
+  }
+</style>

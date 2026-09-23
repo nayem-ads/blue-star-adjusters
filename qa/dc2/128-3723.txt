@@ -1,0 +1,82 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/538e180e-86b7-4a7a-838e-d16f4f2fb2d7.svg";
+const imgIconSearch = "https://www.figma.com/api/mcp/asset/f0522337-3eb9-41e2-8663-99068bb105a0.svg";
+const imgIconBuilding = "https://www.figma.com/api/mcp/asset/7379f7f4-c119-44f5-ae0c-f6cffbab3119.svg";
+const imgIconRuler = "https://www.figma.com/api/mcp/asset/8586e612-08a9-4c5b-8fb4-3697c1e16c3f.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Outline";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Outline" }: ButtonProps) {
+  return (
+    <div className={className || "border-[1.5px] border-[var(--color\\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:140">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:141" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:143">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function S3WhatANewWayMeansIndexRows() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] relative size-full" data-node-id="128:3723" data-name="S3 What a new way means — index rows">
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] left-[80px] text-[48px] text-[color:var(--color\/navy,#081d5e)] top-[120px] tracking-[-0.72px] w-[600px]" data-node-id="128:3724" data-annotations="Section title per copy (CD 221); straight quotes set as typographic quotes.">
+        What “a new way” means on your claim
+      </p>
+      <Button className="absolute border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] items-center justify-center left-[947px] px-[28px] py-[16px] rounded-[999px] top-[176px]" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] top-[300px] w-[1120px]" data-node-id="128:3729" data-name="Row 1 hairline" />
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[18px] left-[80px] text-[15px] text-[color:var(--color\/royal,#133faa)] top-[340px] tracking-[0.3px] whitespace-nowrap" data-node-id="128:3730">
+        § 02.1
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[44px] left-[200px] text-[40px] text-[color:var(--color\/navy,#081d5e)] top-[332px] tracking-[-0.4px] w-[360px]" data-node-id="128:3731">
+        Senior led.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[32px] left-[608px] text-[20px] text-[color:var(--color\/ink,#070f33)] top-[336px] w-[528px]" data-node-id="128:3732" data-annotations='edited from: "Senior-led";\[CLIENT: confirm\]'>
+        We take fewer claims, so the adjuster who walks your property is the one who negotiates it.
+      </p>
+      <div className="absolute left-[1176px] size-[24px] top-[340px]" data-node-id="128:3733" data-name="Icon / search">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSearch} />
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-35 top-[444px] w-[1120px]" data-node-id="128:3736" data-name="Row 2 hairline" />
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[18px] left-[80px] text-[15px] text-[color:var(--color\/royal,#133faa)] top-[484px] tracking-[0.3px] whitespace-nowrap" data-node-id="128:3737">
+        § 02.2
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[44px] left-[200px] text-[40px] text-[color:var(--color\/navy,#081d5e)] top-[476px] tracking-[-0.4px] w-[360px]" data-node-id="128:3738">
+        A full team.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[32px] left-[608px] text-[20px] text-[color:var(--color\/ink,#070f33)] top-[480px] w-[520px]" data-node-id="128:3739" data-annotations="(V) Mike's line, word for word">
+        Building estimators, inventory specialists, accountants, and licensed public adjusters working in concert. Not a single generalist on their own.
+      </p>
+      <div className="absolute left-[1176px] size-[24px] top-[484px]" data-node-id="128:3740" data-name="Icon / building">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBuilding} />
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-35 top-[620px] w-[1120px]" data-node-id="128:3742" data-name="Row 3 hairline" />
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[18px] left-[80px] text-[15px] text-[color:var(--color\/royal,#133faa)] top-[660px] tracking-[0.3px] whitespace-nowrap" data-node-id="128:3743">
+        § 02.3
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[44px] left-[200px] text-[40px] text-[color:var(--color\/navy,#081d5e)] top-[652px] tracking-[-0.4px] w-[360px]" data-node-id="128:3744">{`Builder's scope.`}</p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[32px] left-[608px] text-[20px] text-[color:var(--color\/ink,#070f33)] top-[656px] w-[448px]" data-node-id="128:3745">
+        We write it the way a general contractor bids a job. Trade by trade, to current code.
+      </p>
+      <div className="absolute left-[1176px] size-[24px] top-[660px]" data-node-id="128:3746" data-name="Icon / ruler">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconRuler} />
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[80px] opacity-35 top-[764px] w-[1120px]" data-node-id="128:3749" data-name="Rows end hairline" />
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

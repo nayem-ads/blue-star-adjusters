@@ -1,0 +1,12 @@
+---
+// Detail / Ruler ticks: 1px base + 1px ticks every 8px (12px every 40px, else 6px).
+// dir: 'down' = base on top, ticks hang down; 'up' = base at bottom; 'v' = vertical base on the left, ticks to the right.
+interface Props { dir?: 'down'|'up'|'v'; class?: string; color?: string; node?: string; nodeM?: string }
+const { dir = 'down', class: cls = '', color = 'var(--color-royal)', node, nodeM } = Astro.props;
+const g = (d: string) => `linear-gradient(${d}, ${color} 1px, transparent 1px)`;
+let bg = '';
+if (dir === 'down') bg = `${g('to bottom')} left top / 100% 1px no-repeat, ${g('to right')} left top / 40px 12px repeat-x, ${g('to right')} left top / 8px 6px repeat-x`;
+if (dir === 'up') bg = `${g('to top')} left bottom / 100% 1px no-repeat, ${g('to right')} left bottom / 40px 12px repeat-x, ${g('to right')} left bottom / 8px 6px repeat-x`;
+if (dir === 'v') bg = `${g('to right')} left top / 1px 100% no-repeat, ${g('to bottom')} left top / 12px 40px repeat-y, ${g('to bottom')} left top / 6px 8px repeat-y`;
+---
+<div aria-hidden="true" class:list={['pointer-events-none', cls]} style={`background:${bg}`} data-node={node} data-node-m={nodeM}></div>

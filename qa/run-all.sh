@@ -21,10 +21,20 @@ run /about/michael-rapport/ 68:449 qa/home-a-prep-d.js
 run /about/michael-rapport/ 68:450 qa/founder-prep-m.js
 run /claims/     70:574 qa/home-a-prep-d.js
 run /claims/     70:575 qa/wwd-prep-mobile.js
+run /about/        128:3436 /dev/null
+run /about/        128:6353 /dev/null --mobile
+run /contact/      128:3899 /dev/null
+run /contact/      128:6470 /dev/null --mobile
+run /how-it-works/ 128:3750 /dev/null
+run /how-it-works/ 135:4640 /dev/null --mobile --callbar-y 755
+run /fees/         128:3369 /dev/null
+run /fees/         128:6166 /dev/null --mobile
+run /why-blue-star/ 128:3866 /dev/null
+run /why-blue-star/ 135:1578 /dev/null --mobile
 for f in 73:1379 74:1785 74:2047 74:3862 74:4514 74:4725; do bash qa/fcr/run.sh $f >/dev/null 2>&1 || echo "FAILED $f"; done
 node -e '
 const fs=require("fs");const rows=[];
-for (const f of ["22-62","58-463","63-780","53-148","53-149","68-449","68-450","70-574","70-575","73-1379","74-1785","74-2047","74-3862","74-4514","74-4725"]) {
+for (const f of ["22-62","58-463","63-780","53-148","53-149","68-449","68-450","70-574","70-575","73-1379","74-1785","74-2047","74-3862","74-4514","74-4725","128-3436","128-6353","128-3899","128-6470","128-3750","135-4640","128-3369","128-6166","128-3866","135-1578"]) {
   const p="qa/out/"+f+"/report.json"; if(!fs.existsSync(p)){rows.push({frame:f,error:"no report"});continue;}
   const r=JSON.parse(fs.readFileSync(p));
   const secs=r.sections.filter(s=>s.mismatchPct!=null);

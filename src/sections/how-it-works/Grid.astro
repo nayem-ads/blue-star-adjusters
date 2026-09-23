@@ -1,0 +1,22 @@
+---
+// Blueprint grid (full bleed, 40px): navy 1px lines, minor layer at 5%, major (every 160px) at 10%.
+// Drawn as SVG groups so each layer's opacity applies once, as in Figma (no double tint where lines cross).
+interface Props { w: number; h: number; skipMajorInMinor?: boolean; class?: string }
+const { w, h, skipMajorInMinor = false, class: cls = '' } = Astro.props;
+const start = skipMajorInMinor ? 40 : 0;
+const range = (max: number, step: number, from: number) => { const a: number[] = []; for (let v = from; v < max; v += step) a.push(v); return a; };
+const minV = range(w, 40, start).filter((v) => !(skipMajorInMinor && v % 160 === 0));
+const minH = range(h - 4, 40, start).filter((v) => !(skipMajorInMinor && v % 160 === 0));
+const majV = range(w, 160, skipMajorInMinor ? 160 : 0);
+const majH = range(h - 4, 160, skipMajorInMinor ? 160 : 0);
+---
+<svg aria-hidden="true" class:list={['absolute left-0 top-0 pointer-events-none', cls]} width={w} height={h} viewBox={`0 0 ${w} ${h}`}>
+  <g fill="#081d5e" opacity="0.05">
+    {minV.map((x) => <rect x={x} y="0" width="1" height={h} />)}
+    {minH.map((y) => <rect x="0" y={y} width={w} height="1" />)}
+  </g>
+  <g fill="#081d5e" opacity="0.1">
+    {majV.map((x) => <rect x={x} y="0" width="1" height={h} />)}
+    {majH.map((y) => <rect x="0" y={y} width={w} height="1" />)}
+  </g>
+</svg>

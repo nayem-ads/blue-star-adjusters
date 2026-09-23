@@ -1,0 +1,43 @@
+---
+// S9 Final CTA. Desktop 128:5393, mobile 135:4566.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import WaveCorner from '../../components/WaveCorner.astro';
+import Ruler from './Ruler.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const trust = [
+  { label: 'No upfront cost', d: ['128:5571', '128:5574'], m: ['135:4584', '135:4587'] },
+  { label: 'You always have final say on any settlement', d: ['128:5575', '128:5578'], m: ['135:4588', '135:4591'] },
+  { label: 'CA License No. 2B60428', d: ['128:5579', '128:5582'], m: ['135:4592', '135:4595'] },
+];
+---
+<section aria-labelledby="wwa-cta" class="relative overflow-hidden bg-white lg:bg-paper min-h-[776px] lg:min-h-[600px]" data-node="128:5393" data-node-m="135:4566">
+  <Ruler dir="down" color="rgba(8,29,94,.35)" class="hidden lg:block absolute left-0 top-0 w-full h-[12px]" node="128:5555" />
+  <WaveCorner position="bottom-right" width={216} height={120} class="lg:hidden absolute right-0 bottom-0" />
+  <WaveCorner position="bottom-right" class="hidden lg:block absolute right-0 bottom-0" node="128:5556" />
+  <div class="relative max-w-[1280px] mx-auto px-[20px] lg:px-[80px] pt-[64px] pb-[96px] lg:pt-[120px] lg:pb-[96px]">
+    <div class="lg:hidden flex items-start gap-[17px]">
+      <p class="m-0 w-max tm-label text-navy whitespace-nowrap" data-node-m="135:4570">§ 08</p>
+      <span aria-hidden="true" class="block flex-1 h-px bg-line mt-[7px]" data-node-m="135:4571"></span>
+    </div>
+    <div class="lg:flex lg:items-start lg:gap-[40px]">
+      <h2 id="wwa-cta" class="m-0 mt-[24px] lg:mt-0 font-display font-bold text-navy text-[40px] leading-[44px] tracking-[-1px] w-[350px] max-w-full lg:max-w-[680px] lg:w-auto lg:flex-1 lg:min-w-0 lg:t-display-l" data-node="128:5559" data-node-m="135:4572">Call Before the Carrier Sets the Narrative.</h2>
+      <div class="lg:pt-[8px] lg:w-[400px] lg:shrink-0">
+        <p class="m-0 mt-[16px] lg:mt-0 tm-body lg:t-lead text-ink w-[330px] max-w-full lg:w-[400px]" data-node="128:5560" data-node-m="135:4573">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+        <div class="mt-[32px] flex flex-col items-stretch gap-[12px] lg:items-start lg:w-max" data-node="128:5561">
+          <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="128:5562" data-node-m="135:4574">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="128:5566" data-node-m="135:4578">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+    </div>
+    <span aria-hidden="true" class="lg:hidden block mt-[40px] h-px bg-line" data-node-m="135:4582"></span>
+    <ul class="m-0 p-0 list-none mt-[23px] lg:mt-[64px] flex flex-col gap-[12px] lg:flex-row lg:w-max" data-node="128:5570" data-node-m="135:4583">
+      {trust.map((t) => (
+        <li class="flex items-center gap-[12px] lg:gap-[8px] lg:h-[42px] lg:pl-[12px] lg:pr-[16px] lg:border lg:border-line lg:rounded-[2px] lg:bg-white" data-node={t.d[0]} data-node-m={t.m[0]}>
+          <Icon name="check" size={20} class="shrink-0 text-royal" />
+          <span class="bs-wnudge flex-1 lg:flex-none text-[15px] leading-[26px] font-medium lg:leading-[24px] lg:font-semibold text-ink lg:whitespace-nowrap" data-node={t.d[1]} data-node-m={t.m[1]}>{t.label}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

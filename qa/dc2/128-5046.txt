@@ -1,0 +1,64 @@
+const imgIconDocument = "https://www.figma.com/api/mcp/asset/2c8ec7fb-e13e-47d4-afbd-d3ad14d97afc.svg";
+
+function DetailCropMarks({ className }: { className?: string }) {
+  return (
+    <div className={className || "h-[160px] relative w-[240px]"} data-node-id="71:533" data-name="Detail/Crop marks">
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] left-0 top-0 w-[16px]" data-node-id="71:534" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] left-0 top-0 w-[1.5px]" data-node-id="71:535" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] right-0 top-0 w-[16px]" data-node-id="71:536" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] right-0 top-0 w-[1.5px]" data-node-id="71:537" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] left-0 w-[16px]" data-node-id="71:538" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] left-0 w-[1.5px]" data-node-id="71:539" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] right-0 w-[16px]" data-node-id="71:540" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] right-0 w-[1.5px]" data-node-id="71:541" data-name="Mark" />
+    </div>
+  );
+}
+
+export default function SectionTheContractInPlainTermsDocumentExcerpt() {
+  return (
+    <div className="bg-[var(--color\/white,white)] relative size-full" data-node-id="128:5046" data-name="Section / The contract, in plain terms (document excerpt)">
+      <div className="absolute bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center left-[80px] overflow-clip rounded-[24px] size-[48px] top-[128px]" data-node-id="128:5047" data-name="Icon circle / document">
+        <div className="relative shrink-0 size-[24px]" data-node-id="128:5048" data-name="Icon / document">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDocument} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] left-[80px] text-[48px] text-[color:var(--color\/navy,#081d5e)] top-[200px] tracking-[-0.72px] w-[400px]" data-node-id="128:5051">
+        The contract, in plain terms.
+      </p>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center left-[80px] overflow-clip px-[12px] py-[8px] rounded-[4px] top-[344px]" data-node-id="128:5052" data-name="§ chip / Cal. Ins. Code §15027">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5053">
+          Cal. Ins. Code §15027
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[265px] opacity-30 top-[362px] w-[327px]" data-node-id="128:5067" data-name="Leader line (chip to clause)" />
+      <div className="absolute flex h-[445.811px] items-center justify-center left-[568px] top-[130.09px] w-[672.902px]" data-node-id="128:5325">
+        <div className="flex-none rotate-[-1.2deg]">
+          <div className="h-[432px] relative w-[664px]" data-name="Excerpt assembly (rotated 1.5°)">
+            <DetailCropMarks className="absolute h-[432px] left-0 top-0 w-[664px]" />
+            <div className="absolute bg-[var(--color\/paper,#f4f6fb)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex flex-col gap-[24px] items-start left-[32px] overflow-clip pl-[72px] pr-[56px] py-[56px] rounded-[2px] shadow-[0px_16px_40px_0px_rgba(8,15,51,0.1)] top-[32px] w-[600px]" data-node-id="128:5054" data-name="Document card (contract excerpt)">
+              <div className="absolute bg-[var(--color\/royal,#133faa)] h-[368px] left-[39px] opacity-35 top-[-1px] w-px" data-node-id="128:5055" data-name="Margin rule" />
+              <p className="[word-break:break-word] font-['Schibsted_Grotesk:Medium'] font-medium leading-[0] min-w-full relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] w-[min-content]" data-node-id="128:5056">
+                <span className="leading-[34px]">
+                  Your fee is written into it. So is the line California requires:
+                  <br aria-hidden />“
+                </span>
+                <span className="[text-decoration-skip-ink:none] decoration-[#133faa] decoration-[3px] decoration-solid font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] text-[#081d5e] underline">We represent the insured only.</span>
+                <span className="leading-[34px]">”</span>
+              </p>
+              <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="128:5057" data-annotations="edited from: 'catastrophic-disaster'. \[LEGAL CHECK\] NV, OR, WA, AZ equivalents. (CD 274)">
+                In California you may cancel within three business days of signing and receiving the contract, or five calendar days if your property is in a declared catastrophic disaster area.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

@@ -1,0 +1,149 @@
+---
+// § 04 Seven Offices: desktop 128:5008 (1280×1252), mobile 135:1531 (390×912).
+// Desktop: head-office column (Sacramento + intro) and two rows of three. Mobile: intro in the head, then a
+// horizontal scroller with all 7 cards (spec 135:4814) and a position indicator (CSS scroll-driven, no JS).
+import images from '../../data/images.json';
+import SectionIndex from './SectionIndex.astro';
+const img = images as Record<string, { src: string; width: number; height: number }>;
+type Office = { city: string; state: string; href: string; note: string; alt: string; head?: boolean;
+  d: { card: string; photo: string; img: string; tags: string; city: string; note: string; area: string }; m: string;
+  mm?: { card: string; photo: string; img: string; tags: string; city: string; note: string } };
+const offices: Office[] = [
+  { city: 'Sacramento', state: 'CA', head: true, href: '/locations/california/sacramento/', note: '1610 R Street, Suite 300',
+    alt: 'Sacramento neighbourhood home, exterior.',
+    d: { card: '128:5028', photo: '128:5029', img: '128:5030', tags: '128:5032', city: '128:5037', note: '128:5038', area: 'ct-a-sac' }, m: '135:4817',
+    mm: { card: '135:1550', photo: '135:1551', img: '135:1552', tags: '135:1556', city: '135:1555', note: '135:1561' } },
+  { city: 'Santa Monica', state: 'CA', href: '/locations/california/santa-monica/', note: 'Minutes from Pacific Palisades.',
+    alt: 'A Spanish revival home with a palm tree in Santa Monica.',
+    d: { card: '128:5255', photo: '128:5256', img: '128:5257', tags: '128:5261', city: '128:5264', note: '128:5265', area: 'ct-a-1' }, m: '135:4831' },
+  { city: 'San Francisco', state: 'CA', href: '/locations/california/san-francisco/', note: 'In San Francisco, the code sets the rebuild scope, not what burned.',
+    alt: 'Victorian houses on a San Francisco hill in fog.',
+    d: { card: '128:5266', photo: '128:5267', img: '128:5268', tags: '128:5272', city: '128:5275', note: '128:5276', area: 'ct-a-2' }, m: '135:4843' },
+  { city: 'Reno', state: 'NV', href: '/locations/nevada/reno/', note: 'When your claim needs counsel, we bring counsel in.',
+    alt: 'A mountain modern home among sagebrush near Reno.',
+    d: { card: '128:5277', photo: '128:5278', img: '128:5279', tags: '128:5283', city: '128:5286', note: '128:5287', area: 'ct-a-3' }, m: '135:4855' },
+  { city: 'Portland', state: 'OR', href: '/locations/oregon/portland/', note: 'Oregon created a separate public adjuster license on August 1, 2025.',
+    alt: 'A cedar shingle Craftsman home in the Portland rain.',
+    d: { card: '128:5289', photo: '128:5290', img: '128:5291', tags: '128:5295', city: '128:5298', note: '128:5299', area: 'ct-a-4' }, m: '135:4867' },
+  { city: 'Seattle', state: 'WA', href: '/locations/washington/seattle/', note: 'Underinsurance is common here.',
+    alt: 'A cedar modern home among firs under an overcast Seattle sky.',
+    d: { card: '128:5300', photo: '128:5301', img: '128:5302', tags: '128:5306', city: '128:5309', note: '128:5310', area: 'ct-a-5' }, m: '135:4879' },
+  { city: 'Scottsdale', state: 'AZ', href: '/locations/arizona/scottsdale/', note: 'We measure and negotiate. Your contractor builds.',
+    alt: 'A desert modern home with a saguaro at sunset in Scottsdale.',
+    d: { card: '128:5311', photo: '128:5312', img: '128:5313', tags: '128:5317', city: '128:5320', note: '128:5321', area: 'ct-a-6' }, m: '135:4891' },
+];
+const states = [
+  { s: 'CA', d: '128:5016', m: '135:1538', w: 38, wm: 36 }, { s: 'NV', d: '128:5018', m: '135:1540', w: 39, wm: 37 }, { s: 'OR', d: '128:5020', m: '135:1542', w: 39, wm: 38 },
+  { s: 'WA', d: '128:5022', m: '135:1544', w: 43, wm: 41 }, { s: 'AZ', d: '128:5024', m: '135:1546', w: 37, wm: 36 },
+];
+const chipW: Record<string, [number, number]> = { CA: [36, 34], NV: [37, 35], OR: [37, 36], WA: [41, 39], AZ: [35, 34], 'Head office': [95, 89] };
+const cw = (k: string) => `--w:${chipW[k][0]}px;--wm:${chipW[k][1]}px`;
+const intro = 'With offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, and Scottsdale, we understand your community, your local codes, and your local contractors.';
+---
+<section aria-labelledby="ct-offices-h" class="ct-offices bg-white" data-node="128:5008" data-node-m="135:1531">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[120px]">
+    <div class="lg:flex lg:justify-between lg:items-end" data-node="128:5009">
+      <div class="lg:w-[560px]" data-node="128:5010">
+        <SectionIndex n="§ 04" node="128:5011" nodeM="135:1533" />
+        <h2 id="ct-offices-h" class="ct-offices__h m-0 mt-[20px] lg:mt-[24px] tm-display text-navy" data-node="128:5014" data-node-m="135:1536">Seven Offices.<br />One Standard.</h2>
+      </div>
+      <ul class="m-0 p-0 list-none flex gap-[8px] mt-[20px] lg:mt-0 w-fit" aria-label="States we serve" data-node="128:5015" data-node-m="135:1537">
+        {states.map((t) => <li class="ct-tag" style={`--w:${t.w}px;--wm:${t.wm}px`} data-node={t.d} data-node-m={t.m}>{t.s}</li>)}
+      </ul>
+    </div>
+
+    <div class="ct-offgrid mt-[20px] lg:mt-[64px]" data-node="128:5026">
+      <div class="ct-intro" data-node="128:5322">
+        <span aria-hidden="true" class="hidden lg:block w-[48px] h-[2px] bg-navy"></span>
+        <p class="m-0 lg:mt-[16px] tm-lead lg:t-lead text-ink" data-node="128:5324" data-node-m="135:1548">{intro}</p>
+      </div>
+      <ul class="ct-scroller m-0 list-none" aria-label="Our offices">
+        {offices.map((o) => (
+          <li class:list={['ct-office', o.head ? 'ct-office--head' : 'ct-office--sm', o.d.area]}>
+            <a href={o.href} class="ct-office__link block" data-node={o.d.card} data-node-m={o.mm?.card}>
+              <div class="ct-office__photo relative overflow-hidden" data-node={o.d.photo} data-node-m={o.mm?.photo}>
+                <picture>
+                  <source media="(min-width: 64rem)" srcset={img[o.d.img].src} width={img[o.d.img].width} height={img[o.d.img].height} />
+                  <img src={img[o.m].src} width={img[o.m].width} height={img[o.m].height} alt={o.alt} loading="lazy" decoding="async"
+                    class="ct-office__img block w-full h-full object-cover" data-node={o.d.img} data-node-m={o.mm?.img} />
+                </picture>
+                <span aria-hidden="true" class="ct-office__fade"></span>
+                <span aria-hidden="true" class="ct-office__band"></span>
+                <span class="ct-office__tags" data-node={o.d.tags} data-node-m={o.mm?.tags}>
+                  <span class="ct-chip" style={cw(o.state)}>{o.state}</span>
+                  {o.head && <span class="ct-chip ct-chip--navy" style={cw('Head office')}>Head office</span>}
+                </span>
+                <h3 class="ct-office__city m-0 tm-h3 lg:t-h3 text-white" data-node={o.d.city} data-node-m={o.mm?.city}>{o.city}</h3>
+              </div>
+              <p class="ct-office__note m-0 tm-body text-ink" data-node={o.d.note} data-node-m={o.mm?.note}>{o.note}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="lg:hidden mt-[6px] h-[2px] bg-line relative overflow-hidden" aria-hidden="true" data-node-m="135:1570">
+      <span class="ct-thumb block w-[50px] h-[2px] bg-navy" data-node-m="135:1571"></span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ct-offices { timeline-scope: --ct-off; }
+  .ct-tag { min-width: var(--wm); box-sizing: border-box; height: 26px; padding: 4px 8px; border: 1px solid var(--color-navy); color: var(--color-navy); background: #fff;
+    font-family: var(--font-body); font-weight: 600; font-size: 12px; line-height: 16px; letter-spacing: 0.02em; white-space: nowrap; }
+  .ct-chip { min-width: var(--wm); display: block; box-sizing: border-box; height: 24px; padding: 4px 8px; background: #fff; color: var(--color-navy);
+    font-family: var(--font-body); font-weight: 600; font-size: 12px; line-height: 16px; letter-spacing: 0.02em; white-space: nowrap; }
+  .ct-chip--navy { background: var(--color-navy); color: #fff; }
+  .ct-office__tags { position: absolute; left: 12px; top: 12px; display: flex; gap: 8px; }
+  .ct-office__fade { position: absolute; left: 0; right: 0; top: 166px; height: 112px; background: linear-gradient(to bottom, rgb(8 29 94 / 0), rgb(8 29 94 / .9)); }
+  .ct-office__band { position: absolute; left: 0; right: 0; top: 278px; bottom: 0; background: rgb(8 29 94 / .9); }
+  .ct-office__city { position: absolute; left: 16px; top: 300px; width: fit-content; white-space: nowrap; }
+  .ct-office__note { margin-top: 12px; }
+  .ct-tag, .ct-chip { border-radius: 2px; }
+  .ct-offices__h { white-space: nowrap; }
+  .ct-office__link { border-radius: 2px; }
+  .ct-office__img { transition: transform .4s ease; }
+  .ct-office__link:hover .ct-office__img, .ct-office__link:focus-visible .ct-office__img { transform: scale(1.03); }
+  .ct-office__link:hover .ct-office__city, .ct-office__link:focus-visible .ct-office__city { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+
+  /* Mobile: intro, then horizontal scroller (cards 280 wide, 16 gap, 20 side padding). */
+  .ct-scroller { display: flex; gap: 16px; margin: 32px -20px 0; padding: 0 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 20px;
+    scrollbar-width: none; overscroll-behavior-x: contain; scroll-timeline: --ct-off x; align-items: flex-start; }
+  .ct-scroller::-webkit-scrollbar { display: none; }
+  .ct-office { flex: 0 0 280px; scroll-snap-align: start; }
+  .ct-office__photo { height: 350px; }
+  .ct-thumb { animation: ct-thumb linear both; animation-timeline: --ct-off; }
+  @keyframes ct-thumb { from { transform: translateX(0); } to { transform: translateX(300px); } }
+
+  @media (min-width: 64rem) {
+    .ct-tag, .ct-chip { min-width: var(--w); }
+    .ct-tag { height: 28px; font-size: 13px; line-height: 18px; }
+    .ct-chip { height: 26px; font-size: 13px; line-height: 18px; }
+    .ct-offgrid { display: grid; grid-template-columns: 368px 24px 224px 28px 224px 28px 224px; grid-template-rows: 368px 368px; row-gap: 40px; }
+    .ct-scroller { display: contents; }
+    .ct-office { flex: none; }
+    .ct-intro { grid-column: 1; grid-row: 2; margin-top: 124px; align-self: start; }
+    .ct-a-sac { grid-column: 1; grid-row: 1; }
+    .ct-a-1 { grid-column: 3; grid-row: 1; } .ct-a-2 { grid-column: 5; grid-row: 1; } .ct-a-3 { grid-column: 7; grid-row: 1; }
+    .ct-a-4 { grid-column: 3; grid-row: 2; } .ct-a-5 { grid-column: 5; grid-row: 2; } .ct-a-6 { grid-column: 7; grid-row: 2; }
+    .ct-office__fade { background: linear-gradient(to bottom, rgb(8 29 94 / .08), var(--color-navy)); }
+    .ct-office__band { background: var(--color-navy); }
+    .ct-office__note { margin-top: 16px; font-weight: 500; font-size: 15px; line-height: 24px; }
+    .ct-offices__h { font-size: 64px; line-height: 65.28px; letter-spacing: -0.96px; height: 130px; }
+    .ct-office__city { right: 16px; width: auto; }
+    .ct-office--sm .ct-office__photo { height: 280px; }
+    .ct-office--sm .ct-office__fade { top: 93px; height: 118px; }
+    .ct-office--sm .ct-office__band { top: 210px; }
+    .ct-office--sm .ct-office__city { top: 228px; }
+    .ct-office--head .ct-office__photo { height: 460px; }
+    .ct-office--head .ct-office__tags { left: 16px; top: 16px; }
+    .ct-office--head .ct-office__fade { top: 198px; height: 193px; }
+    .ct-office--head .ct-office__band { top: 390px; }
+    .ct-office--head .ct-office__city { top: 408px; }
+  }
+  @media (min-width: 64rem) and (max-width: 1279.98px) {
+    .ct-offgrid { grid-template-columns: 1fr 24px 1fr 28px 1fr 28px 1fr; }
+    .ct-office__city { font-size: 22px; line-height: 28px; white-space: normal; }
+  }
+</style>

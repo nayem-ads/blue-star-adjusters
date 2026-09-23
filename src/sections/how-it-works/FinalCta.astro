@@ -1,0 +1,32 @@
+---
+// How It Works / Final CTA (real photo). Desktop 128:5964 (1280×640), mobile 146:1034 (390×701).
+import Button from '../../components/Button.astro';
+import Pic from './Pic.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+---
+<section aria-labelledby="hiw-cta-title" class="relative overflow-hidden bg-ink text-white h-[701px] lg:h-[640px]" data-node="128:5964" data-node-m="146:1034">
+  <div class="absolute left-0 top-0 w-full h-[704px] lg:h-full">
+    <!-- Different photos per breakpoint (desktop: on-site inspection, mobile: burned stairs), so the alt covers both. -->
+    <Pic d="128:5965" m="146:1035" alt="Fire damage photographed during a Blue Star field inspection." />
+  </div>
+  <div aria-hidden="true" class="hiw-scrim absolute left-0 top-0 w-full h-[704px] lg:h-full"></div>
+  <div aria-hidden="true" class="hiw-scrim-2 hidden lg:block absolute inset-0"></div>
+  <div class="relative h-full max-w-[1280px] mx-auto px-[20px] pt-[296px] lg:px-[80px] lg:pt-[152px]">
+    <div class="flex flex-col items-start w-full lg:w-[720px]" data-node="128:5968" data-node-m="146:1038">
+      <span aria-hidden="true" class="block w-[64px] h-[3px] bg-royal lg:bg-white"></span>
+      <h2 id="hiw-cta-title" class="m-0 mt-[24px] tm-h2 lg:t-display-l w-full" data-node="128:5970" data-node-m="146:1041">Call Before the Carrier Sets the Narrative.</h2>
+      <p class="m-0 mt-[16px] lg:mt-[24px] tm-body lg:t-lead w-full lg:w-[560px]" data-node="128:5971" data-node-m="146:1043">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+      <div class="flex flex-col gap-[12px] w-full mt-[32px] lg:mt-[24px] lg:pt-[16px] lg:flex-row lg:gap-[16px] lg:w-auto" data-node="128:5972" data-node-m="146:1045">
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] lg:h-[52px] lg:w-[253px]" data-node="128:5973" data-node-m="146:1046">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] lg:h-[52px] lg:w-[235px]" data-node="128:5977" data-node-m="146:1051">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+    <p class="absolute m-0 t-caption text-white whitespace-nowrap right-[20px] top-[24px] lg:right-auto lg:left-[1092px] lg:top-[584px]" data-node="128:5981" data-node-m="146:1055">Field photograph</p>
+  </div>
+</section>
+<style>
+  .hiw-scrim { background: var(--color-ink); opacity: .64; }
+  /* Desktop: Figma stacks two ink layers, 50% then 70%. */
+  @media (min-width: 1024px) { .hiw-scrim { opacity: .5; } }
+  .hiw-scrim-2 { background: var(--color-ink); opacity: .7; }
+</style>

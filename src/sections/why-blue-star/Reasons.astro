@@ -1,0 +1,224 @@
+---
+// Why Blue Star / Six Strong Reasons. Desktop 128:5778 (bento, 1280×1776), mobile 135:5401 (mosaic, 390×3083).
+// The two layouts differ in order, tiles and icons, so each has its own block (the hidden one is display:none,
+// so assistive tech only ever sees one copy of the headings).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import Img from '../../components/Img.astro';
+import { ROUTES } from '../../data/site';
+const circle = {
+  outline: 'bg-white border border-navy text-navy',
+  paper: 'bg-paper text-navy',
+  ghost: 'border border-white text-white',
+};
+const r1 = { t: 'We Work for You Alone.', b: "Unlike the adjuster sent by your insurance company, our sole obligation is to you. There is no conflict of interest, and no divided loyalty between you and the insurer's balance sheet." };
+const quote = 'Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas. That wealth came from somewhere.';
+const r2 = { t: 'We Start Early, Finish Strong.', b: 'Our ability to affect your outcome diminishes with time. Bringing us in at the start, before any missteps are made, gives us the most room to work.' };
+const r3 = { t: 'Expert Team, Every Claim.', b: 'Your claim is handled by a full team: building estimators, inventory specialists, accountants, and licensed public adjusters working in concert. Not a single generalist on their own.' };
+const r4 = { t: 'Free Initial Review.', b: "Schedule a free review to discuss the details of your claim at no cost. We'll explain what we can do, and you decide whether to proceed, with no pressure." };
+const r5 = { t: 'Experience You Can Trust.', b: "Blue Star Adjusters is a new firm, built intentionally by a veteran of one of the nation's leading public adjusting firms. You get the benefit of deep industry experience without the outdated methods that come with it." };
+const r6 = { t: 'Paid by Percentage.', strong: "No upfront cost. We're paid a percentage of what we recover.", b: 'Our incentive is aligned with yours: the higher your recovery, the better for both of us.' };
+const skylineAlt = 'Looking straight up at glass office towers at dusk.';
+const estimatorAltM = 'A contractor reviews plans on a truck tailgate beside a home being rebuilt after a wildfire.';
+const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailgate beside new framing on a burned hillside.';
+---
+<section aria-labelledby="why-reasons-title" class="relative bg-white" data-node="128:5778" data-node-m="135:5401">
+  <!-- Desktop bento -->
+  <div class="hidden lg:block max-w-[1280px] mx-auto px-[80px] pt-[120px] pb-[120px]">
+    <div class="grid grid-cols-[minmax(0,400fr)_minmax(0,400fr)_minmax(0,272fr)] gap-[24px] min-h-[760px]" data-node="128:5779">
+      <div class="flex flex-col gap-[32px]" data-node="128:5780">
+        <div class="flex flex-col gap-[24px]" data-node="128:5781">
+          <h2 id="why-reasons-title" class="m-0 t-display-l text-navy" data-node="128:5782">Six Strong<br /> Reasons.</h2>
+          <div aria-hidden="true" class="why-hticks h-[16px] w-[400px] opacity-50" data-node="128:5783"></div>
+        </div>
+        <article class="rounded-[2px] relative overflow-hidden flex-1 bg-navy text-white px-[40px] pb-[40px] flex flex-col justify-end" data-node="128:5835">
+          <span aria-hidden="true" class="absolute left-[215.5px] top-[-57.6px] opacity-[.07] pointer-events-none" data-node="128:5836"><Logo variant="mark-white" bare width={263.565} height={320} label="" /></span>
+          <span aria-hidden="true" class:list={['relative flex items-center justify-center w-[44px] h-[44px] rounded-full box-border', circle.ghost]} data-node="128:5841"><Icon name="shield" size={24} /></span>
+          <h3 class="relative m-0 mt-[20px] t-h3" data-node="128:5845">{r1.t}</h3>
+          <p class="relative m-0 mt-[20px] t-body" data-node="128:5846">{r1.b}</p>
+        </article>
+      </div>
+
+      <figure class="rounded-[2px] relative m-0 overflow-hidden bg-navy text-white" data-node="128:5847">
+        <Img node="128:5848" alt={skylineAlt} class="absolute inset-0 w-full h-full object-cover" dataNode="128:5848" />
+        <span aria-hidden="true" class="absolute inset-0 bg-navy opacity-[.36]" data-node="128:6165"></span>
+        <span aria-hidden="true" class="why-qscrim absolute inset-0" data-node="128:5849"></span>
+        <blockquote class="absolute left-[32px] right-[32px] top-[400px] m-0" data-node="128:5852">
+          <Icon name="quote" size={40} class="text-white" />
+          <p class="m-0 mt-[20px] t-h3" data-node="128:5856">{quote}</p>
+          <span aria-hidden="true" class="block mt-[20px] w-[48px] h-[2px] bg-royal" data-node="128:5857"></span>
+        </blockquote>
+      </figure>
+
+      <div class="flex flex-col gap-[24px]" data-node="128:5858">
+        <article class="rounded-[2px] min-h-[367px] bg-paper p-[28px] box-border" data-node="128:5859">
+          <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.outline]} data-node="128:5860"><Icon name="clock" size={24} /></span>
+          <h3 class="m-0 mt-[16px] t-h3 text-navy" data-node="128:5864">{r2.t}</h3>
+          <p class="m-0 mt-[16px] t-small font-medium text-ink" data-node="128:5865">{r2.b}</p>
+        </article>
+        <article class="rounded-[2px] flex-1 min-h-0 bg-white border border-line px-[28px] pt-[28px] box-border" data-node="128:5866">
+          <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.paper]} data-node="128:5867"><Icon name="building" size={24} /></span>
+          <h3 class="m-0 mt-[16px] t-h3 text-navy" data-node="128:5870">{r3.t}</h3>
+          <p class="m-0 mt-[16px] t-small font-medium text-ink" data-node="128:5871">{r3.b}</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-[minmax(0,648fr)_minmax(0,448fr)] gap-[24px] mt-[24px] min-h-[752px]" data-node="128:6036">
+      <div class="flex flex-col gap-[24px]" data-node="128:6037">
+        <div class="relative h-[440px] shrink-0" data-node="128:6038">
+          <Img node="128:6039" alt={estimatorAlt} class="absolute left-[16px] top-[16px] w-[calc(100%-32px)] h-[408px] object-cover" dataNode="128:6039" />
+          <span aria-hidden="true" class="why-crop absolute inset-0" data-node="128:6040"></span>
+        </div>
+        <article class="rounded-[2px] flex-1 bg-white border border-line p-[32px] box-border flex items-start gap-[32px]" data-node="128:6049">
+          <div class="w-[216px] shrink-0" data-node="128:6050">
+            <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.paper]} data-node="128:6051"><Icon name="search" size={24} /></span>
+            <h3 class="m-0 mt-[16px] t-h3 text-navy" data-node="128:6055">{r5.t}</h3>
+          </div>
+          <p class="m-0 flex-1 min-w-0 max-w-[334px] t-body text-ink" data-node="128:6056">{r5.b}</p>
+        </article>
+      </div>
+      <div class="flex flex-col gap-[24px]" data-node="128:6057">
+        <article class="rounded-[2px] min-h-[440px] bg-paper p-[32px] box-border flex flex-col items-start" data-node="128:6058">
+          <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.outline]} data-node="128:6059"><Icon name="document" size={24} /></span>
+          <h3 class="m-0 mt-[16px] self-stretch t-h3 text-navy" data-node="128:6063">{r4.t}</h3>
+          <p class="m-0 mt-[16px] self-stretch t-small font-medium text-ink" data-node="128:6064">{r4.b}</p>
+          <Button href={ROUTES.freeClaimReview} variant="solid" class="mt-auto w-[253px]" data-node="128:6065">Schedule a Free Review</Button>
+        </article>
+        <article class="rounded-[2px] flex-1 bg-navy text-white p-[32px] box-border" data-node="128:6069">
+          <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.ghost]} data-node="128:6070"><Icon name="shield" size={24} /></span>
+          <h3 class="m-0 mt-[16px] t-h3" data-node="128:6074">{r6.t}</h3>
+          <p class="m-0 mt-[16px] t-body" data-node="128:6075"><strong class="font-semibold">{r6.strong}</strong> {r6.b}</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile mosaic -->
+  <div class="lg:hidden px-[20px] pt-[64px] pb-[64px] flex flex-col gap-[12px]">
+    <div class="h-[144px]" data-node-m="135:5402">
+      <h2 class="m-0 why-m-h2 text-navy" data-node-m="135:5403">Six Strong<br /> Reasons.</h2>
+      <div aria-hidden="true" class="why-hticks-m mt-[20px] h-[12px] opacity-[.45]" data-node-m="135:5404"></div>
+    </div>
+    <article class="relative overflow-hidden h-[318px] bg-navy text-white rounded-[4px] px-[24px] pt-[28px] box-border" data-node-m="135:5450">
+      <span aria-hidden="true" class="absolute left-[196.8px] top-[78px] opacity-[.07] pointer-events-none" data-node-m="135:5451"><Logo variant="mark-white" bare width={247.092} height={300} label="" /></span>
+      <span aria-hidden="true" class:list={['relative flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.ghost]} data-node-m="135:5456"><Icon name="shield" size={24} /></span>
+      <h3 class="relative m-0 mt-[16px] why-m-h3" data-node-m="135:5460">{r1.t}</h3>
+      <p class="relative m-0 mt-[16px] tm-body" data-node-m="135:5461">{r1.b}</p>
+    </article>
+
+    <figure class="relative m-0 overflow-hidden h-[560px] rounded-[4px] bg-navy text-white" data-node-m="135:5462">
+      <div class="absolute inset-0" data-node-m="135:5463"><Img node="135:5463" alt={skylineAlt} class="w-full h-full object-cover" /></div>
+      <span aria-hidden="true" class="why-qscrim-m absolute inset-0" data-node-m="135:5464"></span>
+      <span aria-hidden="true" class="absolute left-0 right-0 top-[216px] h-[344px] bg-navy opacity-[.35]" data-node-m="142:1268"></span>
+      <blockquote class="absolute left-[24px] top-[233px] w-[302px] m-0" data-node-m="135:5535">
+        <Icon name="quote" size={36} class="text-white" />
+        <p class="m-0 mt-[20px] why-m-quote" data-node-m="135:5539">{quote}</p>
+        <span aria-hidden="true" class="block mt-[20px] w-[48px] h-[2px] bg-royal" data-node-m="135:5540"></span>
+      </blockquote>
+      <span aria-hidden="true" class="why-crop-m absolute inset-[12px]" data-node-m="135:5541"></span>
+    </figure>
+
+    <article class="h-[262px] bg-paper rounded-[4px] px-[24px] pt-[28px] box-border" data-node-m="135:5550">
+      <div class="flex gap-[16px] items-center" data-node-m="135:5551">
+        <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border shrink-0', circle.outline]} data-node-m="135:5552"><Icon name="clock" size={24} /></span>
+        <h3 class="m-0 tm-h3 text-navy" data-node-m="135:5556">{r2.t}</h3>
+      </div>
+      <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5557">{r2.b}</p>
+    </article>
+
+    <ul class="m-0 p-0 list-none grid grid-cols-[minmax(0,168fr)_minmax(0,170fr)] gap-[12px] min-h-[184px]" data-node-m="135:5603">
+      <li class="bg-navy text-white rounded-[4px] p-[20px] pb-[24px] box-border flex flex-col justify-between" data-node-m="135:5604">
+        <Icon name="home" size={28} />
+        <span class="why-fact" data-node-m="135:5608">We represent the insured only.</span>
+      </li>
+      <li class="bg-white border border-line text-navy rounded-[4px] p-[20px] pb-[24px] box-border flex flex-col justify-between" data-node-m="135:5609">
+        <Icon name="shield" size={28} />
+        <span class="why-fact" data-node-m="135:5613">CA License No. 2B60428</span>
+      </li>
+    </ul>
+
+    <article class="border border-line rounded-[4px] overflow-hidden" data-node-m="135:5614">
+      <div class="h-[232px]" data-node-m="135:5615"><Img node="135:5615" alt={estimatorAltM} class="w-full h-full object-cover" /></div>
+      <div class="px-[24px] pt-[24px] pb-[32px]" data-node-m="135:5616">
+        <div class="flex gap-[16px] items-center" data-node-m="135:5617">
+          <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border shrink-0', circle.paper]} data-node-m="135:5618"><Icon name="search" size={24} /></span>
+          <h3 class="m-0 tm-h3 text-navy" data-node-m="135:5622">{r3.t}</h3>
+        </div>
+        <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5623">{r3.b}</p>
+      </div>
+    </article>
+
+    <article class="bg-paper rounded-[4px] px-[24px] pt-[28px] pb-[24px] box-border" data-node-m="135:5624">
+      <div class="flex gap-[16px] items-center" data-node-m="135:5625">
+        <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border shrink-0', circle.outline]} data-node-m="135:5626"><Icon name="phone" size={24} /></span>
+        <h3 class="m-0 flex-1 tm-h3 text-navy" data-node-m="135:5629">{r4.t}</h3>
+      </div>
+      <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5630">{r4.b}</p>
+      <Button href={ROUTES.freeClaimReview} variant="solid" full class="mt-[40px] h-[56px]" data-node-m="135:5632">Schedule a Free Review</Button>
+    </article>
+
+    <article class="bg-white border border-line rounded-[4px] px-[24px] pt-[28px] pb-[32px]" data-node-m="135:5636">
+      <div class="flex gap-[16px] items-center" data-node-m="135:5637">
+        <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border shrink-0', circle.paper]} data-node-m="135:5638"><Icon name="building" size={24} /></span>
+        <h3 class="m-0 tm-h3 text-navy" data-node-m="135:5641">{r5.t}</h3>
+      </div>
+      <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5642">{r5.b}</p>
+    </article>
+
+    <article class="why-fee bg-paper rounded-[4px] px-[25.5px] pt-[29.5px] pb-[33.5px]" data-node-m="135:5643">
+      <div class="flex gap-[16px] items-center" data-node-m="135:5644">
+        <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border shrink-0', circle.outline]} data-node-m="135:5645"><Icon name="ruler" size={24} /></span>
+        <h3 class="m-0 flex-1 tm-h3 text-navy" data-node-m="135:5649">{r6.t}</h3>
+      </div>
+      <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5650"><strong class="font-semibold">{r6.strong}</strong> {r6.b}</p>
+    </article>
+  </div>
+</section>
+
+<style>
+  .why-hticks, .why-hticks-m {
+    background:
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 80px 16px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 40px 10px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 8px 6px repeat-x;
+  }
+  .why-hticks-m {
+    background:
+      linear-gradient(var(--color-navy), var(--color-navy)) 0 11px / 100% 1px no-repeat,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 40px 12px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 6px / 8px 6px repeat-x;
+  }
+  .why-qscrim { background: linear-gradient(to bottom, rgb(8 29 94 / .084) 0, rgb(8 29 94 / .084) 154px, rgb(8 29 94 / .92) 469px, rgb(8 29 94 / .92) 100%); }
+  .why-qscrim-m { background: linear-gradient(to bottom, rgb(8 29 94 / .15) 0px 8px, rgb(8 29 94 / .15) 8px 16px, rgb(8 29 94 / .15) 16px 24px, rgb(8 29 94 / .15) 24px 32px, rgb(8 29 94 / .15) 32px 40px, rgb(8 29 94 / .15) 40px 48px, rgb(8 29 94 / .15) 48px 56px, rgb(8 29 94 / .15) 56px 64px, rgb(8 29 94 / .15) 64px 72px, rgb(8 29 94 / .15) 72px 80px, rgb(8 29 94 / .15) 80px 88px, rgb(8 29 94 / .15) 88px 96px, rgb(8 29 94 / .15) 96px 104px, rgb(8 29 94 / .15) 104px 112px, rgb(8 29 94 / .17) 112px 120px, rgb(8 29 94 / .20) 120px 128px, rgb(8 29 94 / .23) 128px 136px, rgb(8 29 94 / .27) 136px 144px, rgb(8 29 94 / .30) 144px 152px, rgb(8 29 94 / .33) 152px 160px, rgb(8 29 94 / .37) 160px 168px, rgb(8 29 94 / .40) 168px 176px, rgb(8 29 94 / .43) 176px 184px, rgb(8 29 94 / .47) 184px 192px, rgb(8 29 94 / .50) 192px 200px, rgb(8 29 94 / .53) 200px 208px, rgb(8 29 94 / .57) 208px 216px, rgb(8 29 94 / .39) 216px 224px, rgb(8 29 94 / .44) 224px 232px, rgb(8 29 94 / .49) 232px 240px, rgb(8 29 94 / .54) 240px 248px, rgb(8 29 94 / .59) 248px 256px, rgb(8 29 94 / .64) 256px 264px, rgb(8 29 94 / .69) 264px 272px, rgb(8 29 94 / .74) 272px 280px, rgb(8 29 94 / .77) 280px 288px, rgb(8 29 94 / .78) 288px 296px, rgb(8 29 94 / .78) 296px 304px, rgb(8 29 94 / .79) 304px 312px, rgb(8 29 94 / .79) 312px 320px, rgb(8 29 94 / .80) 320px 328px, rgb(8 29 94 / .80) 328px 336px, rgb(8 29 94 / .81) 336px 344px, rgb(8 29 94 / .81) 344px 352px, rgb(8 29 94 / .82) 352px 360px, rgb(8 29 94 / .83) 360px 368px, rgb(8 29 94 / .83) 368px 376px, rgb(8 29 94 / .84) 376px 384px, rgb(8 29 94 / .84) 384px 392px, rgb(8 29 94 / .85) 392px 400px, rgb(8 29 94 / .85) 400px 408px, rgb(8 29 94 / .86) 408px 416px, rgb(8 29 94 / .86) 416px 424px, rgb(8 29 94 / .87) 424px 432px, rgb(8 29 94 / .87) 432px 440px, rgb(8 29 94 / .88) 440px 448px, rgb(8 29 94 / .88) 448px 456px, rgb(8 29 94 / .89) 456px 464px, rgb(8 29 94 / .89) 464px 472px, rgb(8 29 94 / .90) 472px 480px, rgb(8 29 94 / .90) 480px 488px, rgb(8 29 94 / .91) 488px 496px, rgb(8 29 94 / .91) 496px 504px, rgb(8 29 94 / .92) 504px 512px, rgb(8 29 94 / .93) 512px 520px, rgb(8 29 94 / .93) 520px 528px, rgb(8 29 94 / .94) 528px 536px, rgb(8 29 94 / .94) 536px 544px, rgb(8 29 94 / .95) 544px 552px, rgb(8 29 94 / .95) 552px 560px); }
+  .why-crop {
+    --c: var(--color-navy);
+    background:
+      linear-gradient(var(--c), var(--c)) 0 15px / 12px 1px no-repeat,
+      linear-gradient(var(--c), var(--c)) 15px 0 / 1px 12px no-repeat,
+      linear-gradient(var(--c), var(--c)) right 0 top 15px / 12px 1px no-repeat,
+      linear-gradient(var(--c), var(--c)) right 15px top 0 / 1px 12px no-repeat,
+      linear-gradient(var(--c), var(--c)) left 0 bottom 15px / 12px 1px no-repeat,
+      linear-gradient(var(--c), var(--c)) left 15px bottom 0 / 1px 12px no-repeat,
+      linear-gradient(var(--c), var(--c)) right 0 bottom 15px / 12px 1px no-repeat,
+      linear-gradient(var(--c), var(--c)) right 15px bottom 0 / 1px 12px no-repeat;
+  }
+  .why-crop-m {
+    --c: #fff;
+    background:
+      linear-gradient(var(--c), var(--c)) left top / 14px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) left top / 1.5px 14px no-repeat,
+      linear-gradient(var(--c), var(--c)) right top / 14px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) right top / 1.5px 14px no-repeat,
+      linear-gradient(var(--c), var(--c)) left bottom / 14px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) left bottom / 1.5px 14px no-repeat,
+      linear-gradient(var(--c), var(--c)) right bottom / 14px 1.5px no-repeat,
+      linear-gradient(var(--c), var(--c)) right bottom / 1.5px 14px no-repeat;
+  }
+  .why-fee { box-shadow: inset 0 0 0 1.5px var(--color-navy); }
+  .why-m-h2 { font-family: var(--font-display); font-weight: 700; font-size: 44px; line-height: 46px; letter-spacing: -0.01em; }
+  .why-m-h3 { font-family: var(--font-display); font-weight: 600; font-size: 26px; line-height: 30px; letter-spacing: -0.01em; }
+  .why-m-quote { font-family: var(--font-display); font-weight: 600; font-size: 25px; line-height: 31px; letter-spacing: -0.01em; }
+  .why-fact { font-family: var(--font-display); font-weight: 600; font-size: 20px; line-height: 24px; letter-spacing: -0.01em; }
+</style>

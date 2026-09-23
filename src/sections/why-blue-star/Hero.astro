@@ -1,0 +1,146 @@
+---
+// Why Blue Star / Hero + comparison. Desktop 128:3867 (1280×2232), mobile 135:1579 (390×3336).
+// The dark header (128:3871 / 135:1584) is embedded in this section, over the hero photo.
+// Desktop: semantic <table> with a lifted navy "Blue Star" column panel. Mobile: sticky key + stacked answer cards
+// (a list with visually hidden column names so screen readers get the same pairing as the table).
+import Header from '../../components/Header.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import images from '../../data/images.json';
+import { rows } from './rows';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const img = images as Record<string, { src: string; width: number; height: number }>;
+const heroD = img['128:3868'], heroM = img['135:1581'];
+---
+<section aria-labelledby="why-title" class="why-hero relative bg-paper overflow-hidden pb-[76px] lg:pb-[126px]" data-node="128:3867" data-node-m="135:1579">
+  <div aria-hidden="true" class="absolute top-0 left-0 right-0 h-[880px] lg:h-[960px] bg-navy" data-node="128:4728" data-node-m="135:1580"></div>
+  <div class="absolute top-0 left-0 right-0 h-[600px] lg:h-[800px] overflow-hidden" data-node="128:3868" data-node-m="135:1581">
+    <picture>
+      <source media="(min-width: 1024px)" srcset={heroD.src} width={heroD.width} height={heroD.height} />
+      <img src={heroM.src} width={heroM.width} height={heroM.height} alt="A tape measure held across a charred wall stud beside new lumber."
+        class="w-full h-full object-cover" loading="eager" fetchpriority="high" decoding="async" />
+    </picture>
+  </div>
+  <div aria-hidden="true" class="why-scrim-base absolute top-0 left-0 right-0 hidden lg:block h-[800px] bg-navy opacity-[.36]" data-node="128:6164"></div>
+  <div aria-hidden="true" class="why-scrim-top absolute top-0 left-0 right-0 h-[160px] lg:h-[220px]" data-node="128:4285" data-node-m="135:4737"></div>
+  <div aria-hidden="true" class="lg:hidden absolute left-0 right-0 top-[264px] h-[336px] bg-navy opacity-[.45]" data-node-m="142:1267"></div>
+  <div aria-hidden="true" class="why-scrim-bottom absolute left-0 right-0 top-[160px] h-[440px] lg:top-0 lg:h-[960px]" data-node="128:4288" data-node-m="135:4758"></div>
+
+  <div class="absolute top-0 left-0 right-0 z-20" data-node="128:3871" data-node-m="135:1584"><Header theme="dark" overlay={false} /></div>
+
+  <div class="relative max-w-[1280px] mx-auto px-[20px] lg:px-[80px]">
+    <div class="flex flex-col pt-[276px] lg:grid lg:grid-cols-[1fr_448px] lg:pt-[448px]">
+      <h1 id="why-title" class="order-2 m-0 mt-[16px] text-white why-h1 lg:col-span-2 lg:w-[856px] lg:mt-0 lg:t-display-xl lg:whitespace-nowrap" data-node="128:3894" data-node-m="135:1610">
+        Blue Star Adjusters<br class="hidden lg:inline" /> vs. Going It Alone.
+      </h1>
+      <div class="order-1 lg:row-start-2 lg:col-start-1 lg:mt-[45px] lg:self-start w-fit" data-node="128:3896" data-node-m="135:1611"><Eyebrow theme="dark">Why Blue Star</Eyebrow></div>
+      <p class="order-3 m-0 mt-[20px] text-white tm-lead lg:t-lead lg:row-start-2 lg:col-start-2 lg:mt-[40px]" data-node="128:3895" data-node-m="135:1609">Most homeowners don't realize they have the right to hire their own adjuster, someone who works for them, not the insurance company.</p>
+      <div class="order-4 flex flex-col gap-[12px] mt-[32px] lg:hidden">
+        <Button href={ROUTES.freeClaimReview} variant="solid" full class="h-[56px]" data-node-m="135:1605">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" full class="h-[56px]" data-node-m="135:1601">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+
+    <!-- Desktop: comparison table -->
+    <div class="hidden lg:block relative mt-[72px] bg-white border border-line box-border" data-node="128:4729">
+      <div aria-hidden="true" class="absolute left-[calc(23.5714%-0.53px)] top-[-25px] w-[calc(40.7143%+0.81px)] h-[calc(100%+50px)] bg-navy rounded-[4px] shadow-[0_4px_12px_0_rgba(7,15,51,0.16),0_24px_56px_0_rgba(7,15,51,0.28)]" data-node="128:4730"></div>
+      <table class="why-table relative -m-px w-[calc(100%+2px)]" data-node="128:4731">
+        <caption class="sr-only">Blue Star Adjusters compared with handling a claim yourself</caption>
+        <colgroup><col class="w-[23.5714%]" /><col class="w-[40.7143%]" /><col class="w-[35.7143%]" /></colgroup>
+        <thead>
+          <tr data-node="128:4732">
+            <td class="pl-[32px] pr-[24px] py-[32px]" data-node="128:4733"></td>
+            <th scope="col" class="px-[40px] py-[32px] t-h3 text-white" data-node="128:4734"><span class="block" data-node="128:4735">Blue Star Adjusters</span></th>
+            <th scope="col" class="px-[40px] py-[32px] t-h3 text-ink" data-node="128:4736"><span class="block" data-node="128:4737">Handling It Yourself</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr data-node={r.d[0]}>
+              <th scope="row" class="border-t border-line pl-[32px] pr-[24px] py-[32px]" data-node={r.d[1]}>
+                <span class="flex items-start gap-[12px]">
+                  <Icon name={r.icon} size={20} class="shrink-0 text-navy" />
+                  <span class="flex-1 min-w-0 font-body font-semibold text-[13px] leading-[18px] tracking-[1px] uppercase text-ink" data-node={r.d[2]}>{r.label}</span>
+                </span>
+              </th>
+              <td class="border-t border-royal px-[40px] py-[28px]" data-node={r.d[3]}>
+                <span class="flex items-start gap-[16px]">
+                  <Icon name="check" size={24} class="shrink-0 text-white" />
+                  <span class="flex-1 min-w-0 t-body text-white" data-node={r.d[4]}>{r.us}</span>
+                </span>
+              </td>
+              <td class="border-t border-line px-[40px] py-[28px] t-body text-ink" data-node={r.d[5]}><span class="block" data-node={r.d[6]}>{r.you}</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Mobile: sticky key + stacked cards -->
+    <div class="lg:hidden relative mt-[104px]">
+      <div aria-hidden="true" class="why-key sticky top-[8px] z-10 h-[80px] bg-white rounded-[4px] px-[20px] py-[20px] box-border" data-node-m="135:4901">
+        <div class="flex gap-[16px]" data-node-m="135:4902">
+          <div class="flex gap-[8px] w-[147px]" data-node-m="135:4903">
+            <span class="mt-[6px] w-[28px] h-[28px] shrink-0 bg-navy rounded-[2px] flex items-center justify-center text-white" data-node-m="135:4904"><Icon name="check" size={16} /></span>
+            <span class="why-keytext text-navy" data-node-m="135:4907">Blue Star Adjusters</span>
+          </div>
+          <div class="flex gap-[8px] w-[147px]" data-node-m="135:4908">
+            <span class="mt-[6px] w-[28px] h-[28px] shrink-0 bg-white border border-line rounded-[2px] box-border flex items-center justify-center" data-node-m="135:4909"><span class="block w-[10px] h-[1.5px] bg-ink"></span></span>
+            <span class="why-keytext text-ink" data-node-m="135:4911">Handling It Yourself</span>
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="true" class="why-vruler absolute left-[-20px] top-[128px] w-[12px] h-[2292px]" data-node-m="135:5319"></div>
+      <ul class="relative m-0 mt-[48px] p-0 list-none flex flex-col gap-[32px]" data-node-m="135:4912">
+        {rows.map((r) => (
+          <li class="overflow-hidden" data-node-m={r.m[0]}>
+            <div class="flex items-start h-[32px]" data-node-m={r.m[1]}>
+              <Icon name={r.icon} size={20} class="shrink-0 text-navy" />
+              <p class="m-0 ml-[8px] mt-[2px] tm-label uppercase text-ink whitespace-nowrap" data-node-m={r.m[2]}>{r.label}</p>
+              <span aria-hidden="true" class="flex-1 ml-[8px] mt-[9.5px] h-px bg-line" data-node-m={r.m[7]}></span>
+            </div>
+            <div class="why-us relative z-[1] flex items-start gap-[12px] bg-navy text-white rounded-t-[4px] px-[16px] pt-[20px] pb-[20px] pr-[20px]" data-node-m={r.m[3]}>
+              <Icon name="check" size={20} class="shrink-0" />
+              <p class="m-0 flex-1 tm-body" data-node-m={r.m[4]}><span class="sr-only">Blue Star Adjusters: </span>{r.us}</p>
+            </div>
+            <div class="flex items-start gap-[12px] bg-white border border-t-0 border-line rounded-b-[4px] pl-[16px] pt-[16px] pb-[20px] pr-[20px]" data-node-m={r.m[5]}>
+              <span aria-hidden="true" class="w-[20px] h-[26px] shrink-0 flex items-center justify-center"><span class="block w-[12px] h-[1.5px] bg-ink"></span></span>
+              <p class="m-0 flex-1 tm-body text-ink" data-node-m={r.m[6]}><span class="sr-only">Handling it yourself: </span>{r.you}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <div aria-hidden="true" class="why-ruler hidden lg:block absolute left-[40px] top-[960px] w-[16px] h-[1144px] opacity-50" data-node="128:5633"></div>
+</section>
+
+<style>
+  @media (max-width: 1023.98px) { .why-h1 { font-family: var(--font-display); font-weight: 700; font-size: 44px; line-height: 46px; letter-spacing: -0.01em; } }
+  .why-keytext { font-family: var(--font-display); font-weight: 600; font-size: 17px; line-height: 20px; }
+  .why-key, .why-us { box-shadow: 0 3px 8px 0 rgba(7, 15, 51, .14), 0 14px 32px 0 rgba(7, 15, 51, .24); }
+  /* Mobile scrims (banded in Figma, smooth here). */
+  .why-scrim-top { background: linear-gradient(to bottom, rgb(7 15 51 / .60) 0px 8px, rgb(7 15 51 / .57) 8px 16px, rgb(7 15 51 / .54) 16px 24px, rgb(7 15 51 / .51) 24px 32px, rgb(7 15 51 / .48) 32px 40px, rgb(7 15 51 / .45) 40px 48px, rgb(7 15 51 / .42) 48px 56px, rgb(7 15 51 / .39) 56px 64px, rgb(7 15 51 / .36) 64px 72px, rgb(7 15 51 / .33) 72px 80px, rgb(7 15 51 / .29) 80px 88px, rgb(7 15 51 / .26) 88px 96px, rgb(7 15 51 / .23) 96px 104px, rgb(7 15 51 / .20) 104px 112px, rgb(7 15 51 / .17) 112px 120px, rgb(7 15 51 / .14) 120px 128px, rgb(7 15 51 / .11) 128px 136px, rgb(7 15 51 / .08) 136px 144px, rgb(7 15 51 / .05) 144px 152px, rgb(7 15 51 / .02) 152px 160px); }
+  .why-scrim-bottom { background: linear-gradient(to bottom, rgb(8 29 94 / .02) 0px 8px, rgb(8 29 94 / .07) 8px 16px, rgb(8 29 94 / .11) 16px 24px, rgb(8 29 94 / .15) 24px 32px, rgb(8 29 94 / .19) 32px 40px, rgb(8 29 94 / .24) 40px 48px, rgb(8 29 94 / .28) 48px 56px, rgb(8 29 94 / .32) 56px 64px, rgb(8 29 94 / .37) 64px 72px, rgb(8 29 94 / .41) 72px 80px, rgb(8 29 94 / .45) 80px 88px, rgb(8 29 94 / .50) 88px 96px, rgb(8 29 94 / .54) 96px 104px, rgb(8 29 94 / .24) 104px 112px, rgb(8 29 94 / .32) 112px 120px, rgb(8 29 94 / .40) 120px 128px, rgb(8 29 94 / .46) 128px 136px, rgb(8 29 94 / .48) 136px 144px, rgb(8 29 94 / .49) 144px 152px, rgb(8 29 94 / .51) 152px 160px, rgb(8 29 94 / .53) 160px 168px, rgb(8 29 94 / .55) 168px 176px, rgb(8 29 94 / .56) 176px 184px, rgb(8 29 94 / .58) 184px 192px, rgb(8 29 94 / .60) 192px 200px, rgb(8 29 94 / .62) 200px 208px, rgb(8 29 94 / .63) 208px 216px, rgb(8 29 94 / .65) 216px 224px, rgb(8 29 94 / .67) 224px 232px, rgb(8 29 94 / .69) 232px 240px, rgb(8 29 94 / .70) 240px 248px, rgb(8 29 94 / .72) 248px 256px, rgb(8 29 94 / .74) 256px 264px, rgb(8 29 94 / .76) 264px 272px, rgb(8 29 94 / .77) 272px 280px, rgb(8 29 94 / .79) 280px 288px, rgb(8 29 94 / .80) 288px 296px, rgb(8 29 94 / .81) 296px 304px, rgb(8 29 94 / .82) 304px 312px, rgb(8 29 94 / .83) 312px 320px, rgb(8 29 94 / .85) 320px 328px, rgb(8 29 94 / .86) 328px 336px, rgb(8 29 94 / .87) 336px 344px, rgb(8 29 94 / .88) 344px 352px, rgb(8 29 94 / .89) 352px 360px, rgb(8 29 94 / .90) 360px 368px, rgb(8 29 94 / .92) 368px 376px, rgb(8 29 94 / .93) 376px 384px, rgb(8 29 94 / .94) 384px 392px, rgb(8 29 94 / .95) 392px 400px, rgb(8 29 94 / .96) 400px 408px, rgb(8 29 94 / .97) 408px 416px, rgb(8 29 94 / .99) 416px 424px, rgb(8 29 94) 424px 432px, rgb(8 29 94) 432px 440px); }
+  .why-vruler {
+    background:
+      linear-gradient(#7e8aac, #7e8aac) 0 0 / 1px 100% no-repeat,
+      linear-gradient(to bottom, #7e8aac 1px, transparent 1px) 0 0 / 12px 40px repeat-y,
+      linear-gradient(to bottom, #7e8aac 1px, transparent 1px) 0 0 / 6px 8px repeat-y;
+  }
+  @media (min-width: 1024px) {
+    .why-scrim-top { background: linear-gradient(to bottom, rgb(7 15 51 / .5) 0, rgb(7 15 51 / 0) 220px); }
+    .why-scrim-bottom { background: linear-gradient(to bottom, rgb(8 29 94 / .088) 0, rgb(8 29 94 / .088) 291px, rgb(8 29 94 / .94) 596px, rgb(8 29 94 / .94) 960px); }
+  }
+  .why-table { border-collapse: separate; border-spacing: 0; table-layout: fixed; }
+  .why-table th, .why-table td { vertical-align: top; text-align: left; font-weight: inherit; box-sizing: border-box; }
+  .why-table thead th { font-weight: 600; }
+  .why-ruler {
+    background:
+      linear-gradient(to bottom, var(--color-navy) 1px, transparent 1px) 0 0 / 16px 80px repeat-y,
+      linear-gradient(to bottom, var(--color-navy) 1px, transparent 1px) 0 0 / 10px 40px repeat-y,
+      linear-gradient(to bottom, var(--color-navy) 1px, transparent 1px) 0 0 / 6px 8px repeat-y;
+  }
+</style>

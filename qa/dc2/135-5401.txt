@@ -1,0 +1,313 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/aff7d4c1-1c27-46e2-b004-e11d2a64e035.svg";
+const imgImgWhySkyline = "https://www.figma.com/api/mcp/asset/5f42c002-d055-40fa-ab94-05d8defdd2c5.png";
+const imgImgWhyEstimator = "https://www.figma.com/api/mcp/asset/a0e31720-7e8b-4fe9-b95f-7407418ac796.png";
+const imgDetailBMarkFaint = "https://www.figma.com/api/mcp/asset/bc62d8ca-b4c3-4c80-ac76-d28cf52ec4a6.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/e3e34351-c715-46b4-884d-9e4c4b18e87f.svg";
+const imgIconQuote = "https://www.figma.com/api/mcp/asset/8bc38728-6e2f-4f2c-8625-bb0ae4dc397d.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/2eca6e32-d458-4b2b-a395-1faa41a6617f.svg";
+const imgIconHome = "https://www.figma.com/api/mcp/asset/ecd66982-df44-4511-a8a1-d374b951c04d.svg";
+const imgIconShield1 = "https://www.figma.com/api/mcp/asset/3e4c3240-adc6-4fc0-bf83-334166264e1f.svg";
+const imgIconSearch = "https://www.figma.com/api/mcp/asset/0e49a81f-8e35-4203-91bc-3966725e10ee.svg";
+const imgIconPhone = "https://www.figma.com/api/mcp/asset/34ffafaa-84ae-410c-948a-ca7a962663a0.svg";
+const imgIconBuilding = "https://www.figma.com/api/mcp/asset/057d0d0e-8c17-4619-9653-54976682e84b.svg";
+const imgIconRuler = "https://www.figma.com/api/mcp/asset/0d82fb89-6a12-4ff4-ac31-af0751b8cfd3.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:128">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionSixStrongReasonsMosaic() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[12px] items-start px-[20px] py-[64px] relative size-full" data-node-id="135:5401" data-name="Section / Six Strong Reasons (mosaic)">
+      <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip pb-[20px] relative shrink-0 w-full" data-node-id="135:5402" data-name="Header">
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[46px] relative shrink-0 text-[44px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.44px] w-full" data-node-id="135:5403">
+          Six Strong Reasons.
+        </p>
+        <div className="h-[12px] opacity-45 overflow-clip relative shrink-0 w-full" data-node-id="135:5404" data-name="Detail / Ruler ticks">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[11px] w-[350px]" data-node-id="135:5405" data-name="Base" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-0 top-0 w-px" data-node-id="135:5406" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[8px] top-[6px] w-px" data-node-id="135:5407" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[16px] top-[6px] w-px" data-node-id="135:5408" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[24px] top-[6px] w-px" data-node-id="135:5409" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[32px] top-[6px] w-px" data-node-id="135:5410" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[40px] top-0 w-px" data-node-id="135:5411" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[48px] top-[6px] w-px" data-node-id="135:5412" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[56px] top-[6px] w-px" data-node-id="135:5413" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[64px] top-[6px] w-px" data-node-id="135:5414" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[72px] top-[6px] w-px" data-node-id="135:5415" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[80px] top-0 w-px" data-node-id="135:5416" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[88px] top-[6px] w-px" data-node-id="135:5417" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[96px] top-[6px] w-px" data-node-id="135:5418" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[104px] top-[6px] w-px" data-node-id="135:5419" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[112px] top-[6px] w-px" data-node-id="135:5420" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[120px] top-0 w-px" data-node-id="135:5421" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[128px] top-[6px] w-px" data-node-id="135:5422" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[136px] top-[6px] w-px" data-node-id="135:5423" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[144px] top-[6px] w-px" data-node-id="135:5424" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[152px] top-[6px] w-px" data-node-id="135:5425" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[160px] top-0 w-px" data-node-id="135:5426" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[168px] top-[6px] w-px" data-node-id="135:5427" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[176px] top-[6px] w-px" data-node-id="135:5428" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[184px] top-[6px] w-px" data-node-id="135:5429" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[192px] top-[6px] w-px" data-node-id="135:5430" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[200px] top-0 w-px" data-node-id="135:5431" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[208px] top-[6px] w-px" data-node-id="135:5432" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[216px] top-[6px] w-px" data-node-id="135:5433" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[224px] top-[6px] w-px" data-node-id="135:5434" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[232px] top-[6px] w-px" data-node-id="135:5435" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[240px] top-0 w-px" data-node-id="135:5436" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[248px] top-[6px] w-px" data-node-id="135:5437" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[256px] top-[6px] w-px" data-node-id="135:5438" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[264px] top-[6px] w-px" data-node-id="135:5439" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[272px] top-[6px] w-px" data-node-id="135:5440" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[280px] top-0 w-px" data-node-id="135:5441" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[288px] top-[6px] w-px" data-node-id="135:5442" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[296px] top-[6px] w-px" data-node-id="135:5443" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[304px] top-[6px] w-px" data-node-id="135:5444" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[312px] top-[6px] w-px" data-node-id="135:5445" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[12px] left-[320px] top-0 w-px" data-node-id="135:5446" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[328px] top-[6px] w-px" data-node-id="135:5447" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[336px] top-[6px] w-px" data-node-id="135:5448" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[344px] top-[6px] w-px" data-node-id="135:5449" data-name="Tick" />
+        </div>
+      </div>
+      <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex flex-col gap-[16px] items-start overflow-clip pb-[32px] pt-[28px] px-[24px] relative rounded-[4px] shrink-0 w-full" data-node-id="135:5450" data-name="Tile / Reason 1 (navy)">
+        <div className="absolute h-[300px] left-[196.8px] top-[78px] w-[247.092px]" data-node-id="135:5451" data-name="Detail / B-mark (faint)">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDetailBMarkFaint} />
+        </div>
+        <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="135:5456" data-name="Icon circle / shield">
+          <div className="relative shrink-0 size-[24px]" data-node-id="135:5457" data-name="Icon / shield">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[30px] min-w-full relative shrink-0 text-[26px] text-[color:var(--color\/white,white)] tracking-[-0.26px] w-[min-content]" data-node-id="135:5460">
+          We Work for You Alone.
+        </p>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] min-w-full relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="135:5461" data-annotations="edited from: a colon.">{`Unlike the adjuster sent by your insurance company, our sole obligation is to you. There is no conflict of interest, and no divided loyalty between you and the insurer's balance sheet.`}</p>
+      </div>
+      <div className="bg-[var(--color\/navy,#081d5e)] h-[560px] overflow-clip relative rounded-[4px] shrink-0 w-full" data-node-id="135:5462" data-name="Tile / Pull quote over why-skyline (tall)">
+        <div className="absolute h-[560px] left-0 top-0 w-[350px]" data-node-id="135:5463" data-annotations="Alt text: Looking straight up at glass office towers at dusk.;AI illustrative. Replace with a real photo before launch." data-name="IMG:why-skyline">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-full left-[-9.73%] max-w-none top-0 w-[119.45%]" src={imgImgWhySkyline} />
+          </div>
+        </div>
+        <div className="absolute h-[560px] left-0 overflow-clip top-0 w-[350px]" data-node-id="135:5464" data-name="Scrim / navy (banded)">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-0 w-[350px]" data-node-id="135:5465" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[8px] w-[350px]" data-node-id="135:5466" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[16px] w-[350px]" data-node-id="135:5467" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[24px] w-[350px]" data-node-id="135:5468" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[32px] w-[350px]" data-node-id="135:5469" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[40px] w-[350px]" data-node-id="135:5470" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[48px] w-[350px]" data-node-id="135:5471" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[56px] w-[350px]" data-node-id="135:5472" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[64px] w-[350px]" data-node-id="135:5473" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[72px] w-[350px]" data-node-id="135:5474" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[80px] w-[350px]" data-node-id="135:5475" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[88px] w-[350px]" data-node-id="135:5476" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[96px] w-[350px]" data-node-id="135:5477" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-15 top-[104px] w-[350px]" data-node-id="135:5478" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-17 top-[112px] w-[350px]" data-node-id="135:5479" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-20 top-[120px] w-[350px]" data-node-id="135:5480" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-23 top-[128px] w-[350px]" data-node-id="135:5481" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-27 top-[136px] w-[350px]" data-node-id="135:5482" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-30 top-[144px] w-[350px]" data-node-id="135:5483" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-33 top-[152px] w-[350px]" data-node-id="135:5484" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-37 top-[160px] w-[350px]" data-node-id="135:5485" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-40 top-[168px] w-[350px]" data-node-id="135:5486" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-43 top-[176px] w-[350px]" data-node-id="135:5487" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-47 top-[184px] w-[350px]" data-node-id="135:5488" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-50 top-[192px] w-[350px]" data-node-id="135:5489" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-53 top-[200px] w-[350px]" data-node-id="135:5490" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-57 top-[208px] w-[350px]" data-node-id="135:5491" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-39 top-[216px] w-[350px]" data-node-id="135:5492" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-44 top-[224px] w-[350px]" data-node-id="135:5493" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-49 top-[232px] w-[350px]" data-node-id="135:5494" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-54 top-[240px] w-[350px]" data-node-id="135:5495" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-59 top-[248px] w-[350px]" data-node-id="135:5496" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-64 top-[256px] w-[350px]" data-node-id="135:5497" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-69 top-[264px] w-[350px]" data-node-id="135:5498" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-74 top-[272px] w-[350px]" data-node-id="135:5499" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-77 top-[280px] w-[350px]" data-node-id="135:5500" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-78 top-[288px] w-[350px]" data-node-id="135:5501" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-78 top-[296px] w-[350px]" data-node-id="135:5502" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-79 top-[304px] w-[350px]" data-node-id="135:5503" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-79 top-[312px] w-[350px]" data-node-id="135:5504" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-80 top-[320px] w-[350px]" data-node-id="135:5505" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-80 top-[328px] w-[350px]" data-node-id="135:5506" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-81 top-[336px] w-[350px]" data-node-id="135:5507" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-81 top-[344px] w-[350px]" data-node-id="135:5508" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-82 top-[352px] w-[350px]" data-node-id="135:5509" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-83 top-[360px] w-[350px]" data-node-id="135:5510" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-83 top-[368px] w-[350px]" data-node-id="135:5511" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-84 top-[376px] w-[350px]" data-node-id="135:5512" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-84 top-[384px] w-[350px]" data-node-id="135:5513" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-85 top-[392px] w-[350px]" data-node-id="135:5514" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-85 top-[400px] w-[350px]" data-node-id="135:5515" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-86 top-[408px] w-[350px]" data-node-id="135:5516" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-86 top-[416px] w-[350px]" data-node-id="135:5517" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-87 top-[424px] w-[350px]" data-node-id="135:5518" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-87 top-[432px] w-[350px]" data-node-id="135:5519" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-88 top-[440px] w-[350px]" data-node-id="135:5520" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-88 top-[448px] w-[350px]" data-node-id="135:5521" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-89 top-[456px] w-[350px]" data-node-id="135:5522" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-89 top-[464px] w-[350px]" data-node-id="135:5523" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-90 top-[472px] w-[350px]" data-node-id="135:5524" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-90 top-[480px] w-[350px]" data-node-id="135:5525" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-91 top-[488px] w-[350px]" data-node-id="135:5526" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-91 top-[496px] w-[350px]" data-node-id="135:5527" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-92 top-[504px] w-[350px]" data-node-id="135:5528" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-93 top-[512px] w-[350px]" data-node-id="135:5529" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-93 top-[520px] w-[350px]" data-node-id="135:5530" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-94 top-[528px] w-[350px]" data-node-id="135:5531" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-94 top-[536px] w-[350px]" data-node-id="135:5532" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-95 top-[544px] w-[350px]" data-node-id="135:5533" data-name="Band" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[8px] left-0 opacity-95 top-[552px] w-[350px]" data-node-id="135:5534" data-name="Band" />
+        </div>
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[344px] left-0 opacity-35 top-[216px] w-[350px]" data-node-id="142:1268" data-name="Scrim / text tint (navy)" />
+        <div className="absolute content-stretch flex flex-col gap-[20px] items-start left-[24px] overflow-clip top-[233px] w-[302px]" data-node-id="135:5535" data-name="Pull quote">
+          <div className="relative shrink-0 size-[36px]" data-node-id="135:5536" data-name="Icon / quote">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconQuote} />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[31px] min-w-full relative shrink-0 text-[25px] text-[color:var(--color\/white,white)] tracking-[-0.25px] w-[min-content]" data-node-id="135:5539" data-annotations="Pull line under reason 1, (V, CD 154), word for word.">
+            Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas. That wealth came from somewhere.
+          </p>
+          <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[48px]" data-node-id="135:5540" data-name="Rule / royal" />
+        </div>
+        <div className="absolute h-[536px] left-[12px] overflow-clip top-[12px] w-[326px]" data-node-id="135:5541" data-name="Detail / Crop marks">
+          <div className="absolute bg-[var(--color\/white,white)] h-[1.5px] left-0 top-0 w-[14px]" data-node-id="135:5542" data-name="Mark" />
+          <div className="absolute bg-[var(--color\/white,white)] h-[14px] left-0 top-0 w-[1.5px]" data-node-id="135:5543" data-name="Mark" />
+          <div className="absolute bg-[var(--color\/white,white)] h-[1.5px] left-[312px] top-0 w-[14px]" data-node-id="135:5544" data-name="Mark" />
+          <div className="absolute bg-[var(--color\/white,white)] h-[14px] left-[324.5px] top-0 w-[1.5px]" data-node-id="135:5545" data-name="Mark" />
+          <div className="absolute bg-[var(--color\/white,white)] h-[1.5px] left-0 top-[534.5px] w-[14px]" data-node-id="135:5546" data-name="Mark" />
+          <div className="absolute bg-[var(--color\/white,white)] h-[14px] left-0 top-[522px] w-[1.5px]" data-node-id="135:5547" data-name="Mark" />
+          <div className="absolute bg-[var(--color\/white,white)] h-[1.5px] left-[312px] top-[534.5px] w-[14px]" data-node-id="135:5548" data-name="Mark" />
+          <div className="absolute bg-[var(--color\/white,white)] h-[14px] left-[324.5px] top-[522px] w-[1.5px]" data-node-id="135:5549" data-name="Mark" />
+        </div>
+      </div>
+      <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col gap-[16px] items-start overflow-clip pb-[32px] pt-[28px] px-[24px] relative rounded-[4px] shrink-0 w-full" data-node-id="135:5550" data-name="Tile / Reason 2 (paper)">
+        <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0 w-full" data-node-id="135:5551" data-name="Tile head">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="135:5552" data-name="Icon circle / clock">
+            <div className="relative shrink-0 size-[24px]" data-node-id="135:5553" data-name="Icon / clock">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] min-w-px relative text-[22px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.22px]" data-node-id="135:5556">
+            We Start Early, Finish Strong.
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="135:5557" data-annotations="edited from: 'consistently produces the best results', which is outcome language.">
+          Our ability to affect your outcome diminishes with time. Bringing us in at the start, before any missteps are made, gives us the most room to work.
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[12px] items-start overflow-clip relative shrink-0 w-full" data-node-id="135:5603" data-name="Pair / fact tiles">
+        <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex flex-[1_0_0] flex-col h-[184px] items-start justify-between min-w-px overflow-clip pb-[24px] pt-[20px] px-[20px] relative rounded-[4px]" data-node-id="135:5604" data-name="Fact tile / Representation">
+          <div className="relative shrink-0 size-[28px]" data-node-id="135:5605" data-name="Icon / home">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[24px] min-w-full relative shrink-0 text-[20px] text-[color:var(--color\/white,white)] tracking-[-0.2px] w-[min-content]" data-node-id="135:5608" data-annotations="Global representation line, word for word.">
+            We represent the insured only.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex flex-[1_0_0] flex-col h-[184px] items-start justify-between min-w-px overflow-clip pb-[24px] pt-[20px] px-[20px] relative rounded-[4px]" data-node-id="135:5609" data-name="Fact tile / Licence">
+          <div className="relative shrink-0 size-[28px]" data-node-id="135:5610" data-name="Icon / shield">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield1} />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[24px] min-w-full relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.2px] w-[min-content]" data-node-id="135:5613" data-annotations="Global trust line fact, word for word.">
+            CA License No. 2B60428
+          </p>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/white,white)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[4px] shrink-0 w-full" data-node-id="135:5614" data-name="Tile / why-estimator photo + Reason 3">
+        <div className="h-[232px] relative shrink-0 w-full" data-node-id="135:5615" data-annotations="Alt text: A contractor reviews plans on a truck tailgate beside a home being rebuilt after a wildfire.;AI illustrative. Replace with a real photo before launch." data-name="IMG:why-estimator">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[100.18%] left-0 max-w-none top-[-0.09%] w-full" src={imgImgWhyEstimator} />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip pb-[32px] pt-[24px] px-[24px] relative shrink-0 w-full" data-node-id="135:5616" data-name="Reason 3">
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0 w-full" data-node-id="135:5617" data-name="Tile head">
+            <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="135:5618" data-name="Icon circle / search">
+              <div className="relative shrink-0 size-[24px]" data-node-id="135:5619" data-name="Icon / search">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSearch} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] min-w-px relative text-[22px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.22px]" data-node-id="135:5622">
+              Expert Team, Every Claim.
+            </p>
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="135:5623">
+            Your claim is handled by a full team: building estimators, inventory specialists, accountants, and licensed public adjusters working in concert. Not a single generalist on their own.
+          </p>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col gap-[16px] items-start overflow-clip pb-[24px] pt-[28px] px-[24px] relative rounded-[4px] shrink-0 w-full" data-node-id="135:5624" data-name="Tile / Reason 4 (paper, CTA)">
+        <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0 w-full" data-node-id="135:5625" data-name="Tile head">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="135:5626" data-name="Icon circle / phone">
+            <div className="relative shrink-0 size-[24px]" data-node-id="135:5627" data-name="Icon / phone">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPhone} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] min-w-px relative text-[22px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.22px]" data-node-id="135:5629">
+            Free Initial Review.
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] min-w-full relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="135:5630" data-annotations="edited from: 'absolutely'.">{`Schedule a free review to discuss the details of your claim at no cost. We'll explain what we can do, and you decide whether to proceed, with no pressure.`}</p>
+        <div className="relative shrink-0 size-[8px]" data-node-id="135:5631" data-name="Spacer" />
+        <Button className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] h-[56px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-full" />
+      </div>
+      <div className="bg-[var(--color\/white,white)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex flex-col gap-[16px] items-start overflow-clip pb-[32px] pt-[28px] px-[24px] relative rounded-[4px] shrink-0 w-full" data-node-id="135:5636" data-name="Tile / Reason 5 (white)">
+        <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0 w-full" data-node-id="135:5637" data-name="Tile head">
+          <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="135:5638" data-name="Icon circle / building">
+            <div className="relative shrink-0 size-[24px]" data-node-id="135:5639" data-name="Icon / building">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBuilding} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] min-w-px relative text-[22px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.22px]" data-node-id="135:5641">
+            Experience You Can Trust.
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="135:5642">{`Blue Star Adjusters is a new firm, built intentionally by a veteran of one of the nation's leading public adjusting firms. You get the benefit of deep industry experience without the outdated methods that come with it.`}</p>
+      </div>
+      <div className="bg-[var(--color\/paper,#f4f6fb)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex flex-col gap-[16px] items-start overflow-clip pb-[32px] pt-[28px] px-[24px] relative rounded-[4px] shrink-0 w-full" data-node-id="135:5643" data-name="Tile / Reason 6 (fee)">
+        <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0 w-full" data-node-id="135:5644" data-name="Tile head">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="135:5645" data-name="Icon circle / ruler">
+            <div className="relative shrink-0 size-[24px]" data-node-id="135:5646" data-name="Icon / ruler">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconRuler} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] min-w-px relative text-[22px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.22px]" data-node-id="135:5649">
+            Paid by Percentage.
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[0] relative shrink-0 text-[0px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="135:5650" data-annotations="Locked fee line, word for word. edited from: the title 'Percentage-Based Fees' and 'typically 10–20%'. No percentage anywhere.">
+          <span className="font-['Montserrat:SemiBold'] font-semibold leading-[26px] text-[16px]">{`No upfront cost. We're paid a percentage of what we recover.`}</span>
+          <span className="leading-[26px] text-[16px]">{` Our incentive is aligned with yours: the higher your recovery, the better for both of us.`}</span>
+        </p>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Body: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 0), Mobile/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 22, weight: 600, lineHeight: 28, letterSpacing: -1), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

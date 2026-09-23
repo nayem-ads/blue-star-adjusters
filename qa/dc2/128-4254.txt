@@ -1,0 +1,73 @@
+const imgIconShield = "https://www.figma.com/api/mcp/asset/520aa721-177c-4c96-b1f1-8794b97adbdd.svg";
+const imgIconCheck = "https://www.figma.com/api/mcp/asset/5adddaa0-6c88-4fcb-8be6-fc4b101f7dab.svg";
+
+export default function SectionWhatProtectsYou() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex gap-[72px] items-start px-[80px] py-[120px] relative size-full" data-node-id="128:4254" data-name="Section/What protects you">
+      <div className="content-stretch flex flex-col gap-[32px] items-start overflow-clip relative shrink-0 w-[312px]" data-node-id="128:4255" data-name="Protect/Heading">
+        <div className="border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[28px] shrink-0 size-[56px]" data-node-id="128:4256" data-name="Icon circle">
+          <div className="relative shrink-0 size-[24px]" data-node-id="128:4257" data-name="Icon/shield">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="128:4260" data-name="Protect/Index">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/royal,#133faa)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4261">
+            § 03
+          </p>
+          <div className="bg-[var(--color\/royal,#133faa)] h-px relative shrink-0 w-[48px]" data-node-id="128:4262" data-name="Index rule" />
+        </div>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] min-w-full relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.72px] w-[min-content]" data-node-id="128:4263" data-annotations="Section: What protects you (CD 286 to 290).">
+          What protects you
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[744px]" data-node-id="128:4264" data-name="Protect/Ledger">
+        <div className="bg-[var(--color\/navy,#081d5e)] h-px relative shrink-0 w-full" data-node-id="128:4265" data-name="Hairline" />
+        <div className="content-stretch flex gap-[24px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="128:4266" data-name="Ledger row">
+          <div className="content-stretch flex flex-col items-start overflow-clip pt-[4px] relative shrink-0 w-[168px]" data-node-id="128:4267" data-name="Chip column">
+            <div className="border border-[var(--color\/royal,#133faa)] border-solid content-stretch flex items-start overflow-clip px-[12px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="128:4268" data-name="Chip/§15027(b)(7)">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/royal,#133faa)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4269">
+                §15027(b)(7)
+              </p>
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4270">
+            In California, our fee can never leave you with less than your insurer had already paid before you hired us.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:4271" data-name="Hairline" />
+        <div className="content-stretch flex gap-[24px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="128:4272" data-name="Ledger row">
+          <div className="content-stretch flex flex-col items-start overflow-clip pt-[4px] relative shrink-0 w-[168px]" data-node-id="128:4273" data-name="Chip column">
+            <div className="border border-[var(--color\/royal,#133faa)] border-solid content-stretch flex items-start overflow-clip px-[12px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="128:4274" data-name="Chip/§15027">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/royal,#133faa)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4275">
+                §15027
+              </p>
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4276">
+            You can cancel within three business days of signing. Five calendar days in a declared catastrophic disaster area.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:4277" data-name="Hairline" />
+        <div className="content-stretch flex gap-[24px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="128:4278" data-name="Ledger row">
+          <div className="content-stretch flex flex-col items-start overflow-clip pt-[4px] relative shrink-0 w-[168px]" data-node-id="128:4279" data-name="Chip column">
+            <div className="content-stretch flex items-start overflow-clip py-[4px] relative shrink-0" data-node-id="128:4280" data-name="Chip/check">
+              <div className="relative shrink-0 size-[24px]" data-node-id="128:4281" data-name="Icon/check">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+              </div>
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="128:4283">
+            You have final say on every settlement.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:4284" data-name="Hairline" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

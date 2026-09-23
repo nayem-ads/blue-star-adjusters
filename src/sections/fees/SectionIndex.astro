@@ -1,0 +1,11 @@
+---
+// "§ 0N" section index: label + 1px rule, gap 16. Desktop label 13/18 + 48px rule; mobile 12/16 + 40px rule.
+// theme dark = white label and rule (navy sections).
+interface Props { label: string; theme?: 'light' | 'dark'; node?: string; nodeM?: string; textNode?: string; textNodeM?: string; class?: string }
+const { label, theme = 'light', node, nodeM, textNode, textNodeM, class: cls = '' } = Astro.props;
+const dark = theme === 'dark';
+---
+<p class:list={['m-0 flex items-center gap-[16px] w-fit', dark ? 'text-white' : 'text-royal', cls]} data-node={node} data-node-m={nodeM}>
+  <span class:list={['tm-label lg:t-label whitespace-nowrap', dark && 'opacity-85']} data-node={textNode} data-node-m={textNodeM}>{label}</span>
+  <span aria-hidden="true" class:list={['block h-px w-[40px] lg:w-[48px] shrink-0', dark ? 'bg-white/50' : 'bg-royal']}></span>
+</p>

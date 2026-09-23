@@ -1,0 +1,86 @@
+---
+// How It Works / Who Does What (You | We). Desktop 128:4959 (1280×880), mobile 142:1164 (390×691).
+// A two-column table: the "You" column on paper, the "We" column on a navy panel, an icon node on the seam.
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+const rows = [
+  { you: 'Approve the claim package', we: 'Build it', icon: 'document',
+    d: { you: '128:4971', we: '128:4972', node: '128:4973', hy: '128:4969', hw: '128:4970' },
+    m: { row: '142:1178', you: '142:1180', we: '142:1182', node: '142:1224' } },
+  { you: 'Decide on every offer', we: 'Negotiate it', icon: 'shield',
+    d: { you: '128:4979', we: '128:4980', node: '128:4981', hy: '128:4977', hw: '128:4978' },
+    m: { row: '142:1188', you: '142:1190', we: '142:1192', node: '142:1228' } },
+  { you: 'Keep receipts for living costs', we: 'Claim them', icon: 'home',
+    d: { you: '128:4987', we: '128:4988', node: '128:4989', hy: '128:4985', hw: '128:4986' },
+    m: { row: '142:1198', you: '142:1200', we: '142:1202', node: '142:1232' } },
+  { you: 'Get back to work and family', we: 'Attend every inspection and meeting', icon: 'search',
+    d: { you: '128:4995', we: '128:4996', node: '128:4997', hy: '128:4993', hw: '128:4994' },
+    m: { row: '142:1208', you: '142:1210', we: '142:1212', node: '142:1236' } },
+];
+---
+<section aria-labelledby="hiw-wdw-title" class="relative overflow-hidden bg-paper h-[691px] lg:h-[880px]" data-node="128:4959" data-node-m="142:1164">
+  <div aria-hidden="true" class="absolute left-1/2 right-0 top-[140px] bottom-0 lg:top-0 bg-navy" data-node="128:4960" data-node-m="142:1218"></div>
+  <div class="relative h-full max-w-[1280px] mx-auto">
+    <span aria-hidden="true" class="hiw-mark absolute left-[250px] top-[451px] w-[247.09px] h-[300px] lg:left-[1042.4px] lg:top-[-120px] lg:w-[475.2px] lg:h-[576.95px]" data-node="128:4961" data-node-m="142:1219">
+      <Logo variant="mark-white" bare class="w-full h-full" label="" />
+    </span>
+    <div class="absolute left-[20px] right-[20px] top-[64px] lg:right-auto lg:left-[80px] lg:top-[120px] lg:w-[480px]"><h2 id="hiw-wdw-title" class="m-0 tm-h2 lg:t-h2 text-navy" data-node="128:4966" data-node-m="142:1166">Who Does What.</h2></div>
+
+    <table class="hiw-table absolute left-0 top-[140px] w-full lg:top-[232px]">
+      <caption class="sr-only">What you do, and what we do</caption>
+      <thead>
+        <tr class="h-[56px] lg:h-[112px] align-top">
+          <th scope="col" class="hiw-you-cell text-left lg:text-right"><span class="hiw-colhead block lg:inline-block lg:w-[112px] text-navy mt-[14px] lg:mt-0" data-node="128:4967" data-node-m="142:1170">You</span></th>
+          <th scope="col" class="hiw-we-cell text-left"><span class="hiw-colhead block lg:inline-block lg:w-[100px] text-white mt-[14px] lg:mt-0" data-node="128:4968" data-node-m="142:1172">We</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r, i) => (
+          <tr class:list={['relative', i === 3 ? 'h-[127px] lg:h-[104px]' : 'h-[101px] lg:h-[104px]']} data-node-m={r.m.row}>
+            <td class="hiw-you-cell relative align-middle">
+              <span aria-hidden="true" class="hiw-hair hiw-hair--you" data-node={r.d.hy}></span>
+              <span class="hiw-row-text block text-ink lg:text-right" data-node={r.d.you} data-node-m={r.m.you}>{r.you}</span>
+            </td>
+            <td class="hiw-we-cell relative align-middle">
+              <span aria-hidden="true" class="hiw-hair hiw-hair--we" data-node={r.d.hw}></span>
+              <span class="hiw-row-text block text-white" data-node={r.d.we} data-node-m={r.m.we}>{r.we}</span>
+              <span aria-hidden="true" class="hiw-node" data-node={r.d.node} data-node-m={r.m.node}><Icon name={r.icon} size={24} /></span>
+            </td>
+          </tr>
+        ))}
+        <tr aria-hidden="true" class="h-px">
+          <td class="hiw-you-cell relative p-0"><span class="hiw-hair hiw-hair--you" data-node="128:5001"></span></td>
+          <td class="hiw-we-cell relative p-0"><span class="hiw-hair hiw-hair--we" data-node="128:5002"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<style>
+  .hiw-mark { opacity: .06; pointer-events: none; }
+  .hiw-table { border-collapse: collapse; table-layout: fixed; }
+  .hiw-table th, .hiw-table td { padding: 0; font-weight: inherit; }
+  .hiw-you-cell { width: 50%; padding-left: 20px !important; padding-right: 40px !important; }
+  .hiw-we-cell { width: 50%; padding-left: 40px !important; padding-right: 20px !important; }
+  .hiw-colhead { font-family: var(--font-display); font-weight: 600; font-size: 32px; line-height: 36px; letter-spacing: -0.015em; }
+  .hiw-row-text { font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 26px; }
+  /* Mobile baseline nudge (Chrome sets text 1px above Figma). */
+  @media (max-width: 1023.98px) { .hiw-row-text, .hiw-colhead { position: relative; top: 1px; } }
+  .hiw-table tbody td { padding-top: 1px !important; }
+  .hiw-hair { position: absolute; top: 0; left: 20px; right: 20px; height: 1px; }
+  .hiw-hair--you { background: rgb(8 29 94 / .18); }
+  .hiw-hair--we { background: rgb(255 255 255 / .24); }
+  .hiw-node { position: absolute; left: -20px; top: 50%; margin-top: -20px; width: 40px; height: 40px; border-radius: 50%; box-sizing: border-box;
+    border: 1px solid var(--color-navy); background: #fff; color: var(--color-navy); display: flex; align-items: center; justify-content: center; }
+  @media (min-width: 1024px) {
+    .hiw-you-cell { padding-left: 120px !important; padding-right: 80px !important; }
+    .hiw-we-cell { padding-left: 80px !important; padding-right: 80px !important; }
+    .hiw-colhead { font-weight: 700; font-size: 64px; line-height: 68px; letter-spacing: -0.02em; }
+    .hiw-row-text { font-family: var(--font-display); font-weight: 500; font-size: 28px; line-height: 34px; letter-spacing: -0.01em; }
+    .hiw-table tbody td { padding-top: 0 !important; }
+    .hiw-hair { left: 0; right: 0; }
+    .hiw-hair--you { left: 80px; }
+    .hiw-hair--we { right: 80px; background: rgb(255 255 255 / .22); }
+    .hiw-node { left: -24px; margin-top: -24px; width: 48px; height: 48px; }
+  }
+</style>

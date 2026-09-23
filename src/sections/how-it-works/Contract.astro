@@ -1,0 +1,50 @@
+---
+// How It Works / The contract, in plain terms (document excerpt). Desktop 128:5046 (1280×688), mobile 142:1240 (390×822.8).
+// Left: icon, H2, the § citation chip with a leader line. Right (below on mobile): a contract excerpt card inside
+// crop marks, rotated -1.2° as one assembly (desktop 664×432, mobile 330×450 before rotation).
+// The data-node box is Figma's frame box (x/y = the rotated frame's top-left corner, w/h = its rotated bounds);
+// the rotated assembly is centred on the rotated bounds, which sit higher by W·sin(1.2°).
+import Icon from '../../components/Icon.astro';
+import CropMarks from './CropMarks.astro';
+---
+<section aria-labelledby="hiw-contract-title" class="relative bg-white h-[822.8125px] lg:h-[688px]" data-node="128:5046" data-node-m="142:1240">
+  <div class="relative h-full max-w-[1280px] mx-auto px-[20px] pt-[64px] lg:px-[80px] lg:pt-[128px]">
+    <span aria-hidden="true" class="flex items-center justify-center size-[48px] rounded-full box-border border border-navy bg-white lg:border-0 lg:bg-paper text-navy" data-node="128:5047" data-node-m="142:1241"><Icon name="document" size={24} /></span>
+    <h2 id="hiw-contract-title" class="m-0 mt-[20px] lg:mt-[24px] w-full lg:w-[400px] tm-h2 lg:t-h2 text-navy" data-node="128:5051" data-node-m="142:1246">The contract, in plain terms.</h2>
+    <div class="flex items-center gap-[12px] lg:gap-[18px] mt-[20px] lg:mt-[36px] w-full lg:w-[512px]" data-node-m="142:1248">
+      <p class="m-0 shrink-0 px-[12px] py-[8px] rounded-[4px] border border-navy bg-white text-navy font-body font-semibold text-[15px] leading-[20px] lg:text-[13px] lg:leading-[18px] lg:tracking-[0.02em]" data-node="128:5052" data-node-m="142:1249">Cal. Ins. Code §15027</p>
+      <span aria-hidden="true" class="flex-1 h-px bg-navy/30" data-node="128:5067" data-node-m="142:1251"></span>
+    </div>
+
+    <div class="hiw-excerpt relative mt-[38.91px] w-[339.35px] h-[456.81px] lg:absolute lg:mt-0 lg:left-[568px] lg:top-[144px] lg:w-[672.9px] lg:h-[445.81px]" data-node="128:5325" data-node-m="142:1253">
+      <div class="hiw-excerpt__rot absolute">
+        <CropMarks class="absolute inset-0" />
+        <figure class="hiw-card absolute m-0 bg-paper border border-line">
+          <span aria-hidden="true" class="hiw-card__rule absolute"></span>
+          <blockquote class="m-0 flex flex-col">
+            <p class="hiw-card__lead m-0 text-ink">Your fee is written into it. So is the line California requires:<br /> “<span class="hiw-card__em">We represent the insured only.</span>”</p>
+            <p class="hiw-card__body m-0 text-ink">In California you may cancel within three business days of signing and receiving the contract, or five calendar days if your property is in a declared catastrophic disaster area.</p>
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .hiw-excerpt__rot { left: 50%; top: calc(50% - 6.91px); width: 330px; height: 450px; transform: translate(-50%, -50%) rotate(-1.2deg); }
+  .hiw-card { left: 16px; top: 16px; width: 298px; box-sizing: border-box; border-radius: 2px; overflow: hidden;
+    box-shadow: 0 16px 40px 0 rgba(8, 15, 51, .1); padding: 33px 24px 31px 28px; }
+  .hiw-card__rule { left: 13px; top: -1px; width: 1px; height: 418px; background: var(--color-royal); opacity: .35; }
+  .hiw-card blockquote { gap: 20px; }
+  .hiw-card__lead { font-family: var(--font-display); font-weight: 500; font-size: 22px; line-height: 30px; }
+  .hiw-card__em { font-weight: 600; color: var(--color-navy); text-decoration: underline 3px solid var(--color-royal); text-decoration-skip-ink: none; }
+  .hiw-card__body { font-family: var(--font-body); font-size: 16px; line-height: 26px; }
+  @media (min-width: 1024px) {
+    .hiw-excerpt__rot { top: calc(50% - 13.91px); width: 664px; height: 432px; }
+    .hiw-card { left: 32px; top: 32px; width: 600px; padding: 56px 56px 56px 72px; }
+    .hiw-card__rule { left: 39px; height: 368px; }
+    .hiw-card blockquote { gap: 24px; }
+    .hiw-card__lead { font-size: 28px; line-height: 34px; letter-spacing: -0.01em; }
+    .hiw-card__body { font-size: 20px; line-height: 32px; }
+  }
+</style>

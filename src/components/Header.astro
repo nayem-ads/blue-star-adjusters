@@ -117,6 +117,8 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
   .bs-header__phone { display: flex; align-items: center; gap: 8px; font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: 20px; }
   .bs-header__phone svg { flex-shrink: 0; }
   .bs-navlink:hover, .bs-navlink:focus-visible, .bs-header__phone:hover, .bs-header__phone:focus-visible { color: var(--color-royal); text-decoration-color: currentColor; }
+  /* Current page (v3 Figma frames: How It Works shows semibold + underline, Fees semibold). One consistent style site-wide. */
+  .bs-navlink[aria-current="page"] { font-weight: 600; text-decoration-color: currentColor; text-underline-offset: 1px; }
   .bs-header--dark .bs-navlink, .bs-header--dark .bs-header__phone { color: #fff; }
   .bs-header--dark .bs-navlink:hover, .bs-header--dark .bs-navlink:focus-visible, .bs-header--dark .bs-header__phone:hover, .bs-header--dark .bs-header__phone:focus-visible { color: #fff; text-decoration-color: currentColor; }
   .bs-header--dark :focus-visible { outline-color: #fff; }

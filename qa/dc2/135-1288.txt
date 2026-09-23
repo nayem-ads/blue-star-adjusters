@@ -1,0 +1,50 @@
+const imgImgMike = "https://www.figma.com/api/mcp/asset/08b61c7b-1b3e-4702-a3c4-cc5cfe436d16.png";
+const imgIconQuote = "https://www.figma.com/api/mcp/asset/cb0b4a74-98e7-412a-ae09-002c6beedb2b.svg";
+const imgIconArrow = "https://www.figma.com/api/mcp/asset/decfbc07-db40-4caa-8008-3126e6b9f391.svg";
+
+export default function S6BuiltFromTheGroundUpFounderSplit() {
+  return (
+    <div className="bg-[var(--color\/white,white)] relative size-full" data-node-id="135:1288" data-name="S6 Built From the Ground Up — founder split">
+      <div className="absolute h-[340px] left-0 top-[56px] w-[300px]" data-node-id="135:1289" data-annotations="Alt: Michael Rapport, Founding Principal of Blue Star Adjusters.;Privacy crop: safe box x 20..1100, y 70..1168 (grey band and right edge removed). Real photo: no caption shown." data-name="IMG:mike">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[106.38%] left-[-11.93%] max-w-none top-[-6.38%] w-[120.77%]" src={imgImgMike} />
+        </div>
+      </div>
+      <div className="absolute contents left-[292px] top-[48px]" data-node-id="135:1294" data-name="Detail / Crop marks">
+        <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] left-[292px] top-[48px] w-[16px]" data-node-id="135:1290" data-name="Mark" />
+        <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] left-[306.5px] top-[48px] w-[1.5px]" data-node-id="135:1291" data-name="Mark" />
+        <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] left-[292px] top-[402.5px] w-[16px]" data-node-id="135:1292" data-name="Mark" />
+        <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] left-[306.5px] top-[388px] w-[1.5px]" data-node-id="135:1293" data-name="Mark" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[16px] left-[332px] text-[12px] text-[color:var(--color\/navy,#081d5e)] top-[56px] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1295">
+        § 05
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[36px] left-[20px] text-[32px] text-[color:var(--color\/navy,#081d5e)] top-[436px] tracking-[-0.48px] w-[300px]" data-node-id="135:1296" data-annotations="(V) Mike's line, word for word.">
+        Built From the Ground Up.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[26px] left-[20px] text-[16px] text-[color:var(--color\/ink,#070f33)] top-[524px] w-[340px]" data-node-id="135:1297" data-annotations='edited from: "code-compliant";Source: copy/founder.md, Home founder block (CD 169-175).'>{`Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco's seismic retrofit ordinance, and he knows what a code compliant rebuild costs because he's paid for plenty of them.`}</p>
+      <div className="absolute left-[20px] size-[32px] top-[738px]" data-node-id="135:1299" data-name="Icon / quote">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconQuote} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[30px] left-[20px] text-[20px] text-[color:var(--color\/navy,#081d5e)] top-[782px] w-[350px]" data-node-id="135:1302" data-annotations="(V) Mike's line, word for word.">{`“I've stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”`}</p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[26px] left-[20px] text-[15px] text-[color:var(--color\/ink,#070f33)] top-[1008px] whitespace-nowrap" data-node-id="135:1304">
+        Michael Rapport, Founding Principal
+      </p>
+      <div className="absolute content-stretch flex gap-[8px] items-center left-[20px] overflow-clip py-[12px] top-[1050px]" data-node-id="135:1305" data-annotations="Link: /michael-rapport" data-name="Tap/Meet Michael Rapport">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/royal,#133faa)] whitespace-nowrap" data-node-id="135:1306">
+          Meet Michael Rapport
+        </p>
+        <div className="relative shrink-0 size-[24px]" data-node-id="135:1307" data-name="Icon / arrow">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[2px] left-[20px] top-[1090px] w-[183px]" data-node-id="135:1309" data-name="Link underline" />
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Mobile/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 32, weight: 600, lineHeight: 36, letterSpacing: -1.5), Mobile/Body: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 0), Mobile/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 26, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

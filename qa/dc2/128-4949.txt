@@ -1,0 +1,37 @@
+const imgImgAboutOffice = "https://www.figma.com/api/mcp/asset/04b3dae6-d69f-4c09-b370-b7893deea2d8.png";
+const imgScrimNavyRamp = "https://www.figma.com/api/mcp/asset/b4a86df7-fb08-49de-8864-f3e5ab994b72.svg";
+const imgIconQuote = "https://www.figma.com/api/mcp/asset/1ed72c2b-2c56-468f-a745-e3b537172a88.svg";
+
+export default function S7ABoutiquePracticePullQuoteOverPhoto() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] relative size-full" data-node-id="128:4949" data-name="S7 A Boutique Practice — pull quote over photo">
+      <div className="absolute h-[720px] left-0 top-0 w-[1280px]" data-node-id="128:4950" data-annotations="Alt: A boutique conference room with brick and a navy wall, rolled blueprints and a hard hat on the table.;AI illustrative. Replace with a real photo before launch." data-name="IMG:about-office">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[118.06%] left-0 max-w-none top-[-9.03%] w-full" src={imgImgAboutOffice} />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-0 opacity-40 top-0 w-[1280px]" data-node-id="128:5042" data-name="Scrim / navy tint" />
+      <div className="absolute contents left-0 top-0" data-node-id="128:5045" data-name="Scrim / left ramp (masked)">
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[720px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[1280px_720px] opacity-85 top-0 w-[1280px]" data-node-id="128:5044" style={{ maskImage: `url("${imgScrimNavyRamp}")` }} data-name="Scrim / navy ramp" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[18px] left-[176px] text-[15px] text-[color:var(--color\/white,white)] top-[120px] tracking-[0.3px] whitespace-nowrap" data-node-id="128:4952">
+        § 06
+      </p>
+      <div className="absolute left-[176px] size-[48px] top-[176px]" data-node-id="128:4953" data-name="Icon / quote">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconQuote} />
+      </div>
+      <div className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] left-[176px] text-[64px] text-[color:var(--color\/white,white)] top-[248px] tracking-[-1.28px] w-[720px]" data-node-id="128:4956" data-annotations="Line break after 'Practice.' is typographic only; words unchanged.">
+        <p className="leading-[68px] mb-0">A Boutique Practice.</p>
+        <p className="leading-[68px]">A Family Office.</p>
+      </div>
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[2px] left-[176px] top-[416px] w-[80px]" data-node-id="128:4957" data-name="Royal rule" />
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[32px] left-[176px] text-[20px] text-[color:var(--color\/white,white)] top-[450px] w-[520px]" data-node-id="128:4958" data-annotations="edited from: 'senior-led' (CD 189)">{`Every engagement is discreet, senior led, and built around the client's privacy. References are held in confidence and available on request.`}</p>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

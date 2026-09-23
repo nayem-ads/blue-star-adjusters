@@ -1,0 +1,115 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/67320025-1b84-4fe6-93a6-50b7a1872770.svg";
+const imgDetailBMarkFaint = "https://www.figma.com/api/mcp/asset/25c6e3de-99fc-4058-9040-785005c8100f.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/e68d816f-ab32-4261-baec-3d2c725d58d3.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:152">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function S5NoConflictOfInterestStatementNavy() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] relative size-full" data-node-id="128:4544" data-name="S5 No Conflict of Interest — statement (navy)">
+      <div className="absolute contents left-0 top-0" data-node-id="128:4594" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-0 opacity-10 top-0 w-px" data-node-id="128:4545" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[40px] opacity-5 top-0 w-px" data-node-id="128:4546" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[80px] opacity-5 top-0 w-px" data-node-id="128:4547" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[120px] opacity-5 top-0 w-px" data-node-id="128:4548" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[160px] opacity-10 top-0 w-px" data-node-id="128:4549" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[200px] opacity-5 top-0 w-px" data-node-id="128:4550" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[240px] opacity-5 top-0 w-px" data-node-id="128:4551" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[280px] opacity-5 top-0 w-px" data-node-id="128:4552" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[320px] opacity-10 top-0 w-px" data-node-id="128:4553" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[360px] opacity-5 top-0 w-px" data-node-id="128:4554" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[400px] opacity-5 top-0 w-px" data-node-id="128:4555" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[440px] opacity-5 top-0 w-px" data-node-id="128:4556" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[480px] opacity-10 top-0 w-px" data-node-id="128:4557" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[520px] opacity-5 top-0 w-px" data-node-id="128:4558" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[560px] opacity-5 top-0 w-px" data-node-id="128:4559" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[600px] opacity-5 top-0 w-px" data-node-id="128:4560" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[640px] opacity-10 top-0 w-px" data-node-id="128:4561" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[680px] opacity-5 top-0 w-px" data-node-id="128:4562" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[720px] opacity-5 top-0 w-px" data-node-id="128:4563" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[760px] opacity-5 top-0 w-px" data-node-id="128:4564" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[800px] opacity-10 top-0 w-px" data-node-id="128:4565" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[840px] opacity-5 top-0 w-px" data-node-id="128:4566" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[880px] opacity-5 top-0 w-px" data-node-id="128:4567" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[920px] opacity-5 top-0 w-px" data-node-id="128:4568" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[960px] opacity-10 top-0 w-px" data-node-id="128:4569" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[1000px] opacity-5 top-0 w-px" data-node-id="128:4570" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[1040px] opacity-5 top-0 w-px" data-node-id="128:4571" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[1080px] opacity-5 top-0 w-px" data-node-id="128:4572" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[1120px] opacity-10 top-0 w-px" data-node-id="128:4573" data-name="Grid V major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[1160px] opacity-5 top-0 w-px" data-node-id="128:4574" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[1200px] opacity-5 top-0 w-px" data-node-id="128:4575" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[648px] left-[1240px] opacity-5 top-0 w-px" data-node-id="128:4576" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-0 w-[1280px]" data-node-id="128:4577" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[40px] w-[1280px]" data-node-id="128:4578" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[80px] w-[1280px]" data-node-id="128:4579" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[120px] w-[1280px]" data-node-id="128:4580" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-[160px] w-[1280px]" data-node-id="128:4581" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[200px] w-[1280px]" data-node-id="128:4582" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[240px] w-[1280px]" data-node-id="128:4583" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[280px] w-[1280px]" data-node-id="128:4584" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-[320px] w-[1280px]" data-node-id="128:4585" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[360px] w-[1280px]" data-node-id="128:4586" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[400px] w-[1280px]" data-node-id="128:4587" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[440px] w-[1280px]" data-node-id="128:4588" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-[480px] w-[1280px]" data-node-id="128:4589" data-name="Grid H major" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[520px] w-[1280px]" data-node-id="128:4590" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[560px] w-[1280px]" data-node-id="128:4591" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-5 top-[600px] w-[1280px]" data-node-id="128:4592" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/white,white)] h-px left-0 opacity-10 top-[640px] w-[1280px]" data-node-id="128:4593" data-name="Grid H major" />
+      </div>
+      <div className="absolute h-[560px] left-[900px] top-[180px] w-[461.239px]" data-node-id="128:4595" data-name="Detail / B-mark (faint)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDetailBMarkFaint} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Bold'] font-bold leading-[96px] left-[76px] text-[96px] text-[color:var(--color\/white,white)] top-[112px] tracking-[-2.88px] whitespace-nowrap" data-node-id="128:4600">
+        No Conflict of Interest.
+      </p>
+      <div className="absolute content-stretch flex gap-[8px] items-center left-[80px] top-[232px] w-[999px]" data-node-id="128:4601" data-name="Detail / Dimension line">
+        <div className="bg-[var(--color\/white,white)] h-[12px] relative shrink-0 w-px" data-node-id="I128:4601;71:528" data-name="Tick" />
+        <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px relative" data-node-id="I128:4601;71:529" data-name="Rule" />
+        <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/white,white)] tracking-[0.12px] whitespace-nowrap" data-node-id="I128:4601;71:530">
+          We represent the insured only.
+        </p>
+        <div className="bg-[var(--color\/white,white)] flex-[1_0_0] h-px min-w-px relative" data-node-id="I128:4601;71:531" data-name="Rule" />
+        <div className="bg-[var(--color\/white,white)] h-[12px] relative shrink-0 w-px" data-node-id="I128:4601;71:532" data-name="Tick" />
+      </div>
+      <div className="absolute left-[80px] size-[48px] top-[312px]" data-node-id="128:4607" data-name="Icon / shield">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[34px] left-[656px] text-[22px] text-[color:var(--color\/white,white)] top-[304px] w-[544px]" data-node-id="128:4610">
+        We eliminate the fundamental problem with insurance company adjusters: one person representing two sides of a financial negotiation. Our sole allegiance is to you.
+      </p>
+      <Button className="absolute bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center justify-center left-[656px] px-[28px] py-[16px] rounded-[999px] top-[480px]" />
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[18px] left-[144px] text-[15px] text-[color:var(--color\/white,white)] top-[326px] tracking-[0.3px] whitespace-nowrap" data-node-id="128:4922">
+        § 04
+      </p>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Caption: Font(family: "Montserrat", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 1), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

@@ -1,0 +1,115 @@
+const imgImgOfficeSacramento = "https://www.figma.com/api/mcp/asset/1bf4ceb5-f9b6-46a5-90b7-d063b3a16c6f.png";
+const imgImgOfficeSantaMonica = "https://www.figma.com/api/mcp/asset/d15aef23-f75b-4336-9597-a84a649c0dc6.png";
+const imgNavy = "https://www.figma.com/api/mcp/asset/90c59d0f-9d0a-4784-a794-f610c132ae52.svg";
+const imgNavy1 = "https://www.figma.com/api/mcp/asset/100847de-0530-4402-bafa-d89e27b231e9.svg";
+
+export default function SectionOffices() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[32px] items-start pb-[56px] pt-[64px] relative size-full" data-node-id="135:1531" data-name="Section / Offices">
+      <div className="content-stretch flex flex-col gap-[20px] items-start overflow-clip px-[20px] relative shrink-0 w-full" data-node-id="135:1532" data-name="Offices head">
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0 w-full" data-node-id="135:1533" data-name="Section index">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1534">
+            § 04
+          </p>
+          <div className="bg-[var(--color\/line,#d9dfee)] flex-[1_0_0] h-px min-w-px relative" data-node-id="135:1535" data-name="Index hairline" />
+        </div>
+        <div className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] min-w-full relative shrink-0 text-[46px] text-[color:var(--color\/navy,#081d5e)] tracking-[-1.15px] w-[min-content]" data-node-id="135:1536">
+          <p className="leading-[48px] mb-0">Seven Offices.</p>
+          <p className="leading-[48px]">One Standard.</p>
+        </div>
+        <div className="content-stretch flex gap-[8px] items-start overflow-clip relative shrink-0" data-node-id="135:1537" data-name="State tags">
+          <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1538" data-name="Chip / CA">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1539">
+              CA
+            </p>
+          </div>
+          <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1540" data-name="Chip / NV">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1541">
+              NV
+            </p>
+          </div>
+          <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1542" data-name="Chip / OR">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1543">
+              OR
+            </p>
+          </div>
+          <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1544" data-name="Chip / WA">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1545">
+              WA
+            </p>
+          </div>
+          <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1546" data-name="Chip / AZ">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1547">
+              AZ
+            </p>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-full relative shrink-0 text-[18px] text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="135:1548" data-annotations="edited from: the CD 549 line, which ends ': knowledge that translates to bigger settlements'. That ending is cut because CD itself flags it \[LEGAL\].">
+          With offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, and Scottsdale, we understand your community, your local codes, and your local contractors.
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[16px] items-start overflow-clip pl-[20px] relative shrink-0 w-full" data-node-id="135:1549" data-annotations="Horizontal scroll with snap per card (280 wide, 16 gap, 1.2 cards visible). Card order: Sacramento, Santa Monica, San Francisco, Reno, Portland, Seattle, Scottsdale. All 7 cards are laid out in the spec frame 'Spec / Mobile offices scroll row (all 7 cards)' to the right of this frame." data-name="Offices scroller (horizontal scroll)">
+        <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[280px]" data-node-id="135:1550" data-name="Office card / Sacramento">
+          <div className="bg-[var(--color\/navy,#081d5e)] h-[350px] overflow-clip relative rounded-[2px] shrink-0 w-[280px]" data-node-id="135:1551" data-name="Photo 4:5">
+            <div className="absolute h-[350px] left-0 top-0 w-[280px]" data-node-id="135:1552" data-annotations="Alt text: A Craftsman bungalow under elm trees.;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-sacramento">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgImgOfficeSacramento} />
+              </div>
+            </div>
+            <div className="absolute h-[112px] left-0 overflow-clip top-[166px] w-[280px]" data-node-id="135:1572" data-name="Scrim fade (masked navy)">
+              <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[112px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[280px_112px] opacity-90 top-0 w-[280px]" data-node-id="135:1574" style={{ maskImage: `url("${imgNavy}")` }} data-name="Navy" />
+            </div>
+            <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[72px] left-0 opacity-90 top-[278px] w-[280px]" data-node-id="135:1554" data-name="Scrim band (navy)" />
+            <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] left-[16px] text-[22px] text-[color:var(--color\/white,white)] top-[300px] tracking-[-0.22px] whitespace-nowrap" data-node-id="135:1555">
+              Sacramento
+            </p>
+            <div className="absolute content-stretch flex gap-[8px] items-start left-[12px] overflow-clip top-[12px]" data-node-id="135:1556" data-name="Chips">
+              <div className="bg-[var(--color\/white,white)] content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1557" data-name="Chip / CA">
+                <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1558">
+                  CA
+                </p>
+              </div>
+              <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1559" data-name="Chip / Head office">
+                <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/white,white)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1560">
+                  Head office
+                </p>
+              </div>
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] min-w-full relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="135:1561">
+            1610 R Street, Suite 300
+          </p>
+        </div>
+        <div className="bg-[var(--color\/navy,#081d5e)] h-[350px] overflow-clip relative rounded-bl-[2px] rounded-tl-[2px] shrink-0 w-[74px]" data-node-id="135:1562" data-name="Card peek / Santa Monica (next card, clipped at viewport)">
+          <div className="absolute h-[350px] left-0 top-0 w-[74px]" data-node-id="135:1563" data-annotations="Alt text: A Spanish revival home with a palm tree.;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-santa-monica">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[378.38%]" src={imgImgOfficeSantaMonica} />
+            </div>
+          </div>
+          <div className="absolute h-[112px] left-0 overflow-clip top-[166px] w-[74px]" data-node-id="135:1575" data-name="Scrim fade (masked navy)">
+            <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[112px] left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[74px_112px] opacity-90 top-0 w-[74px]" data-node-id="135:1577" style={{ maskImage: `url("${imgNavy1}")` }} data-name="Navy" />
+          </div>
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[72px] left-0 opacity-90 top-[278px] w-[74px]" data-node-id="135:1565" data-name="Scrim band (navy)" />
+          <div className="absolute content-stretch flex items-start left-[12px] overflow-clip top-[12px]" data-node-id="135:1566" data-name="Chips">
+            <div className="bg-[var(--color\/white,white)] content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="135:1567" data-name="Chip / CA">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="135:1568">
+                CA
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex items-center overflow-clip px-[20px] relative shrink-0 w-full" data-node-id="135:1569" data-name="Scroll indicator">
+        <div className="bg-[var(--color\/line,#d9dfee)] flex-[1_0_0] h-[2px] min-w-px overflow-clip relative" data-node-id="135:1570" data-name="Track (1 of 7)">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[2px] left-0 top-0 w-[50px]" data-node-id="135:1571" data-name="Position (1 of 7)" />
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Mobile/Display: Font(family: "Schibsted Grotesk", style: Bold, size: 46, weight: 700, lineHeight: 48, letterSpacing: -2.5), Mobile/Lead: Font(family: "Montserrat", style: Regular, size: 18, weight: 400, lineHeight: 28, letterSpacing: 0), Mobile/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 22, weight: 600, lineHeight: 28, letterSpacing: -1), Mobile/Body: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

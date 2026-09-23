@@ -5,7 +5,7 @@ const BASE = process.env.BASE || 'http://127.0.0.1:4400';
 const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
 const ctx = await browser.newContext();
 const page = await ctx.newPage();
-const seen = new Set(['/']); const queue = ['/']; const issues = []; const pages = [];
+const START = ['/', '/about/', '/contact/', '/home-b/', '/free-claim-review/thank-you/']; const seen = new Set(START); const queue = [...START]; const issues = []; const pages = [];
 const status = {};
 while (queue.length) {
   const path = queue.shift();
@@ -40,7 +40,7 @@ for (const [p, s] of Object.entries(status)) if (s !== 200) issues.push(`${p}: H
 // horizontal overflow at in-between widths
 for (const w of [360, 390, 768, 1024, 1100, 1280, 1440]) {
   await page.setViewportSize({ width: w, height: 900 });
-  for (const p of ['/', '/home-b/', '/about/michael-rapport/', '/claims/', '/free-claim-review/', '/free-claim-review/thank-you/']) {
+  for (const p of ['/', '/home-b/', '/about/michael-rapport/', '/claims/', '/free-claim-review/', '/free-claim-review/thank-you/', '/about/', '/contact/', '/how-it-works/', '/fees/', '/why-blue-star/']) {
     await page.goto(BASE + p, { waitUntil: 'load' });
     const sw = await page.evaluate(() => document.documentElement.scrollWidth);
     if (sw > w) issues.push(`${p} @${w}: horizontal overflow ${sw}px`);

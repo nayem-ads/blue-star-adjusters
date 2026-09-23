@@ -1,0 +1,40 @@
+---
+// § 02 Why a percentage. Desktop 128:4099 (y 1400, 1280×568); mobile 128:6252 (y 1322, 390×474).
+// Hanging royal quote glyph in its own column, oversized lead, royal rule, ruler tick strip at the bottom.
+import SectionIndex from './SectionIndex.astro';
+---
+<section aria-labelledby="fees-why" class="bg-white" data-node="128:4099" data-node-m="128:6252">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[48px] lg:px-[80px] lg:pt-[120px] lg:pb-0">
+    <div class="flex flex-col lg:flex-row lg:max-w-[1056px]" data-node="128:4100">
+      <div aria-hidden="true" class="hidden lg:block w-[96px] h-[240px] shrink-0" data-node="128:4101">
+        <span class="bs-fees-glyph block mt-[80px] w-[86px] h-[160px]" data-node="128:4112">“</span>
+      </div>
+      <div class="flex flex-col items-start w-full lg:flex-1 lg:min-w-0 lg:max-w-[960px]" data-node="128:4102">
+        <SectionIndex label="§ 02" node="128:4103" nodeM="128:6253" textNode="128:4104" textNodeM="128:6254" />
+        <h2 id="fees-why" class="m-0 mt-[16px] lg:mt-[24px] text-navy tm-h3 lg:t-h3 whitespace-nowrap w-[194px] lg:w-[246px]" data-node="128:4107" data-node-m="128:6257">Why a percentage.</h2>
+        <div class="flex gap-[4px] mt-[24px] lg:mt-[32px] lg:block w-full" data-node-m="128:6259">
+          <div aria-hidden="true" class="lg:hidden w-[32px] h-[72px] shrink-0" data-node-m="128:6260">
+            <span class="bs-fees-glyph block w-[39px] h-[72px]" data-node-m="128:6261">“</span>
+          </div>
+          <p class="bs-fees-why m-0 text-navy flex-1 min-w-0" data-node="128:4109" data-node-m="128:6262">Our incentive is perfectly aligned with yours: the higher your recovery, the better for both of us.</p>
+        </div>
+        <div class="mt-[32px] lg:mt-[40px] pl-[36px] lg:pl-0" data-node-m="128:6264">
+          <span aria-hidden="true" class="block w-[64px] h-[2px] bg-royal" data-node="128:4111" data-node-m="128:6265"></span>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" class="bs-fees-ruler mt-[48px] lg:mt-[102px] h-[16px] w-full lg:max-w-[1120px]" data-node="128:4113" data-node-m="128:6267"></div>
+  </div>
+</section>
+<style>
+  .bs-fees-glyph { font-family: var(--font-display); font-weight: 700; color: var(--color-royal); font-size: 72px; line-height: 72px; letter-spacing: -0.03em; white-space: nowrap; }
+  .bs-fees-why { font-family: var(--font-display); font-weight: 400; font-size: 28px; line-height: 36px; letter-spacing: -0.015em; }
+  /* Ruler tick strip: navy 1px ticks every 8px, 8px tall at 18%; every 80px a 16px major at 35%. */
+  /* Ruler tick strip: navy ticks, 8px tall at 18%, majors 16px at 35%. Mobile: every 10, major every 50. Desktop: every 8, major every 80. */
+  .bs-fees-ruler { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='16'><rect width='1' height='16' fill='%23081d5e' fill-opacity='.35'/><rect x='10' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='20' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='30' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='40' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/></svg>") left top / 50px 16px repeat-x; }
+  @media (min-width: 1024px) {
+    .bs-fees-ruler { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='16'><rect width='1' height='16' fill='%23081d5e' fill-opacity='.35'/><rect x='8' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='16' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='24' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='32' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='40' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='48' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='56' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='64' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/><rect x='72' y='8' width='1' height='8' fill='%23081d5e' fill-opacity='.18'/></svg>") left top / 80px 16px repeat-x; }
+    .bs-fees-glyph { font-size: 160px; line-height: 160px; }
+    .bs-fees-why { font-size: 52px; line-height: 60px; letter-spacing: -0.78px; }
+  }
+</style>

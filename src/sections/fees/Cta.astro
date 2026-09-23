@@ -1,0 +1,29 @@
+---
+// Final CTA: Call Before the Carrier Sets the Narrative. Desktop 128:4855 (y 4624, 1280×464); mobile 128:6714 (y 4610, 390×586).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+---
+<section aria-labelledby="fees-cta" class="bg-white" data-node="128:4855" data-node-m="128:6714">
+  <div class="max-w-[1280px] mx-auto flex flex-col px-[20px] pt-[64px] pb-[64px] lg:flex-row lg:items-end lg:justify-between lg:px-[80px] lg:pt-[132px] lg:pb-[128px]">
+    <div class="flex flex-col items-start lg:w-[520px]" data-node="128:4859">
+      <span aria-hidden="true" class="lg:hidden block w-[64px] h-[2px] bg-royal" data-node-m="128:6715"></span>
+      <h2 id="fees-cta" class="bs-fees-cta bs-fnudge m-0 mt-[24px] lg:mt-0 text-navy w-full" data-node="128:4860" data-node-m="128:6717">Call Before the Carrier Sets the Narrative.</h2>
+    </div>
+    <div class="flex flex-col items-start mt-[20px] lg:mt-0 lg:w-[520px]" data-node="128:4861">
+      <p class="m-0 text-ink tm-lead lg:t-lead w-full" data-node="128:4862" data-node-m="128:6719">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+      <div class="flex flex-col gap-[12px] mt-[32px] w-full lg:flex-row lg:gap-[16px] lg:mt-[28px] lg:w-auto" data-node="128:4863" data-node-m="128:6721">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="128:4864" data-node-m="128:6722">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="128:4868" data-node-m="128:6726">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <p class="m-0 mt-[24px] lg:mt-[28px] flex items-center gap-[8px] lg:gap-[12px] t-caption text-ink whitespace-nowrap" data-node="128:5003" data-node-m="128:6731">
+        <Icon name="shield" size={20} class="shrink-0 text-navy lg:text-royal w-[16px] h-[16px] lg:w-[20px] lg:h-[20px]" />
+        <span data-node="128:5007" data-node-m="128:6735">We represent the insured only.</span>
+      </p>
+    </div>
+  </div>
+</section>
+<style>
+  .bs-fees-cta { font-family: var(--font-display); font-weight: 700; font-size: 40px; line-height: 44px; letter-spacing: -0.02em; }
+  @media (min-width: 1024px) { .bs-fees-cta { font-size: 64px; line-height: 68px; letter-spacing: -0.02em; } }
+</style>

@@ -1,5 +1,6 @@
 // Pixel + geometry diff of a built page against its Figma frame render.
 // Usage: node scripts/pixel-diff.mjs <route> <frameId> [--base http://localhost:4321] [--hide ".sel,.sel2"] [--click ".sel"] [--prep "js"]
+// Conventions: data-node = desktop Figma id, data-node-m = mobile Figma id; pass --mobile for 390 frames.
 // Per-page prep scripts (node-id swaps for mobile frames, call-bar placement, form states) live in qa/ and are driven by qa/run-all.sh.
 // Needs: qa/ref/<frame-id-with-dash>.png (Figma 1x render) and design/meta/*.xml (Figma metadata).
 // Viewport width = Figma frame width (1280 or 390). DPR 1 to match 1x renders.
@@ -17,6 +18,8 @@ const base = opt('base', process.env.BASE_URL || 'http://localhost:4321');
 const hide = opt('hide', '');
 const click = opt('click', '');
 const prep = opt('prep', '');
+const mobile = args.includes('--mobile'); // 390 frames: data-node-m -> data-node, drop desktop-only ids, pin call bar at Figma y
+const callbarY = opt('callbar-y', '756');
 const key = frameId.replace(':', '-');
 const refPath = `qa/ref/${key}.png`;
 const outDir = `qa/out/${key}`;
@@ -61,6 +64,10 @@ await page.goto(base + route, { waitUntil: 'networkidle' });
 await page.evaluate(() => document.querySelectorAll('astro-dev-toolbar,vite-error-overlay').forEach((e) => e.remove()));
 await page.addStyleTag({ content: `*,*::before,*::after{transition:none!important;animation:none!important;caret-color:transparent!important} html{scroll-behavior:auto!important}` + (hide ? `${hide}{visibility:hidden!important}` : '') });
 if (click) for (const s of click.split('|')) { await page.click(s); await page.waitForTimeout(150); }
+if (mobile) await page.evaluate((y) => {
+  document.querySelectorAll('[data-node],[data-node-m]').forEach((e) => { if (e.dataset.nodeM) e.dataset.node = e.dataset.nodeM; else delete e.dataset.node; });
+  const cb = document.querySelector('.bs-callbar'); if (cb) cb.style.cssText += `;position:absolute;top:${y}px;bottom:auto`;
+}, callbarY);
 if (prep) await page.evaluate(prep);
 // Load every image (lazy ones inside display:none blocks never fire otherwise), then decode before the shot.
 await page.evaluate(async () => {

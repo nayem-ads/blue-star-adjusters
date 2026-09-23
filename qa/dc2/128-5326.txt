@@ -1,0 +1,150 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/9b6baddb-bcda-4dd2-8d28-437e1dce6868.svg";
+const imgIconPin = "https://www.figma.com/api/mcp/asset/1d0fd953-0434-4b87-99a1-353c7a2e475c.svg";
+const imgIconPin1 = "https://www.figma.com/api/mcp/asset/6215e288-f18e-4f83-a768-4f841e670265.svg";
+const imgIconPin2 = "https://www.figma.com/api/mcp/asset/083cd5ef-b473-42af-b15e-7441cc90252b.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Outline";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Outline" }: ButtonProps) {
+  return (
+    <div className={className || "border-[1.5px] border-[var(--color\\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:140">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:141" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:143">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function S8WhereWeWorkTypographicCityIndex() {
+  return (
+    <div className="bg-[var(--color\/white,white)] relative size-full" data-node-id="128:5326" data-name="S8 Where we work — typographic city index">
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[18px] left-[80px] text-[15px] text-[color:var(--color\/royal,#133faa)] top-[128px] tracking-[0.3px] whitespace-nowrap" data-node-id="128:5327">
+        § 07
+      </p>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] left-[80px] text-[48px] text-[color:var(--color\/navy,#081d5e)] top-[160px] tracking-[-0.72px] w-[367px]" data-node-id="128:5328">
+        Where we work.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[28px] left-[80px] text-[17px] text-[color:var(--color\/ink,#070f33)] top-[238px] w-[328px]" data-node-id="128:5329" data-annotations="\[CLIENT: confirm\] the licensed states and licence numbers. Do not print 'Licensed in…' until confirmed.">
+        Offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle and Scottsdale.
+      </p>
+      <div className="absolute content-stretch flex gap-[8px] items-start left-[80px] overflow-clip top-[354px]" data-node-id="128:5330" data-name="Fact chips">
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex gap-[8px] items-center overflow-clip pl-[12px] pr-[16px] py-[8px] relative rounded-[2px] shrink-0" data-node-id="128:5331" data-name="Fact chip / 7 offices">
+          <div className="relative shrink-0 size-[20px]" data-node-id="128:5332" data-name="Icon / pin">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin} />
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="128:5335">
+            7 offices
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex items-center overflow-clip pl-[12px] pr-[16px] py-[8px] relative rounded-[2px] shrink-0" data-node-id="128:5336" data-name="Fact chip / 5 states">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="128:5337">
+            5 states
+          </p>
+        </div>
+      </div>
+      <Button className="absolute border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] items-center justify-center left-[80px] px-[28px] py-[16px] rounded-[999px] top-[444px]" />
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] top-[120px] w-[736px]" data-node-id="128:5342" data-name="Index top rule" />
+      <div className="absolute left-[464px] size-[24px] top-[148px]" data-node-id="128:5343" data-name="Icon / pin">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin1} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[48px] left-[512px] text-[40px] text-[color:var(--color\/ink,#070f33)] top-[136px] tracking-[-0.4px] whitespace-nowrap" data-node-id="128:5346">
+        Santa Monica
+      </p>
+      <div className="absolute border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start left-[1162px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[148px]" data-node-id="128:5347" data-name="State tag / CA">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5348">
+          CA
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] opacity-30 top-[200px] w-[736px]" data-node-id="128:5349" data-name="Row rule" />
+      <div className="absolute left-[464px] size-[24px] top-[228px]" data-node-id="128:5350" data-name="Icon / pin">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin2} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[48px] left-[512px] text-[40px] text-[color:var(--color\/navy,#081d5e)] top-[216px] tracking-[-0.4px] whitespace-nowrap" data-node-id="128:5353">
+        Sacramento
+      </p>
+      <div className="absolute border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start left-[1162px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[228px]" data-node-id="128:5354" data-name="State tag / CA">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5355">
+          CA
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] opacity-30 top-[280px] w-[736px]" data-node-id="128:5357" data-name="Row rule" />
+      <div className="absolute left-[464px] size-[24px] top-[308px]" data-node-id="128:5358" data-name="Icon / pin">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin1} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[48px] left-[512px] text-[40px] text-[color:var(--color\/ink,#070f33)] top-[296px] tracking-[-0.4px] whitespace-nowrap" data-node-id="128:5361">
+        San Francisco
+      </p>
+      <div className="absolute border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start left-[1162px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[308px]" data-node-id="128:5362" data-name="State tag / CA">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5363">
+          CA
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] opacity-30 top-[360px] w-[736px]" data-node-id="128:5364" data-name="Row rule" />
+      <div className="absolute left-[464px] size-[24px] top-[388px]" data-node-id="128:5365" data-name="Icon / pin">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin2} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[48px] left-[512px] text-[40px] text-[color:var(--color\/navy,#081d5e)] top-[376px] tracking-[-0.4px] whitespace-nowrap" data-node-id="128:5368">
+        Reno
+      </p>
+      <div className="absolute border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start left-[1161px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[388px]" data-node-id="128:5369" data-name="State tag / NV">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5370">
+          NV
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] opacity-30 top-[440px] w-[736px]" data-node-id="128:5371" data-name="Row rule" />
+      <div className="absolute left-[464px] size-[24px] top-[468px]" data-node-id="128:5372" data-name="Icon / pin">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin1} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[48px] left-[512px] text-[40px] text-[color:var(--color\/ink,#070f33)] top-[456px] tracking-[-0.4px] whitespace-nowrap" data-node-id="128:5375">
+        Portland
+      </p>
+      <div className="absolute border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start left-[1161px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[468px]" data-node-id="128:5376" data-name="State tag / OR">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5377">
+          OR
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] opacity-30 top-[520px] w-[736px]" data-node-id="128:5378" data-name="Row rule" />
+      <div className="absolute left-[464px] size-[24px] top-[548px]" data-node-id="128:5379" data-name="Icon / pin">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin2} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Medium'] font-medium leading-[48px] left-[512px] text-[40px] text-[color:var(--color\/navy,#081d5e)] top-[536px] tracking-[-0.4px] whitespace-nowrap" data-node-id="128:5382">
+        Seattle
+      </p>
+      <div className="absolute border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start left-[1157px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[548px]" data-node-id="128:5383" data-name="State tag / WA">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5384">
+          WA
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] opacity-30 top-[600px] w-[736px]" data-node-id="128:5385" data-name="Row rule" />
+      <div className="absolute left-[464px] size-[24px] top-[628px]" data-node-id="128:5386" data-name="Icon / pin">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin1} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[48px] left-[512px] text-[40px] text-[color:var(--color\/ink,#070f33)] top-[616px] tracking-[-0.4px] whitespace-nowrap" data-node-id="128:5389">
+        Scottsdale
+      </p>
+      <div className="absolute border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start left-[1163px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[628px]" data-node-id="128:5390" data-name="State tag / AZ">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5391">
+          AZ
+        </p>
+      </div>
+      <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-[464px] opacity-30 top-[680px] w-[736px]" data-node-id="128:5392" data-name="Row rule" />
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Body: Font(family: "Montserrat", style: Regular, size: 17, weight: 400, lineHeight: 28, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

@@ -1,0 +1,939 @@
+<canvas id="126:720" name="Who We Are" x="0" y="0" width="0" height="0">
+  <frame id="128:3436" name="Desktop — Who We Are (1280)" x="0" y="0" width="1280" height="7461">
+    <instance id="128:3437" name="Header / Desktop (Light)" x="0" y="0" width="1280" height="88" />
+    <frame id="128:3460" name="S1 Hero — split screen" x="0" y="88" width="1280" height="800">
+      <frame id="128:3461" name="Eyebrow / Who We Are" x="80" y="88" width="143" height="18">
+        <rounded-rectangle id="128:3462" name="Rule" x="0" y="8.25" width="40" height="1.5" />
+        <text id="128:3463" name="Eyebrow text" x="56" y="0" width="87" height="18" />
+      </frame>
+      <text id="128:3464" name="H1" x="76" y="128" width="600" height="276" />
+      <text id="128:3465" name="Lead (V)" x="80" y="444" width="520" height="144" />
+      <frame id="128:3466" name="Hero CTAs" x="80" y="636" width="504" height="52">
+        <instance id="128:3467" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+        <instance id="128:3471" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+      </frame>
+      <rounded-rectangle id="128:3475" name="IMG:about-hero" x="704" y="40" width="576" height="704" />
+      <frame id="128:3480" name="Detail / Crop marks" x="692" y="28" width="16" height="728">
+        <rounded-rectangle id="128:3476" name="Mark" x="692" y="28" width="16" height="1.5" />
+        <rounded-rectangle id="128:3477" name="Mark" x="692" y="28" width="1.5" height="16" />
+        <rounded-rectangle id="128:3478" name="Mark" x="692" y="754.5" width="16" height="1.5" />
+        <rounded-rectangle id="128:3479" name="Mark" x="692" y="740" width="1.5" height="16" />
+      </frame>
+      <instance id="128:3481" name="Detail / Dimension line" x="704" y="760" width="536" height="16" />
+    </frame>
+    <frame id="128:3555" name="S2 Why a new firm — margin label" x="0" y="888" width="1280" height="424">
+      <frame id="128:3717" name="Detail / Ruler ticks" x="0" y="0" width="1280" height="12">
+        <rounded-rectangle id="128:3556" name="Base" x="0" y="0" width="1280" height="1" />
+        <rounded-rectangle id="128:3557" name="Tick" x="0" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3558" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3559" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3560" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3561" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3562" name="Tick" x="40" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3563" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3564" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3565" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3566" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3567" name="Tick" x="80" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3568" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3569" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3570" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3571" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3572" name="Tick" x="120" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3573" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3574" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3575" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3576" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3577" name="Tick" x="160" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3578" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3579" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3580" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3581" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3582" name="Tick" x="200" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3583" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3584" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3585" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3586" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3587" name="Tick" x="240" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3588" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3589" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3590" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3591" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3592" name="Tick" x="280" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3593" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3594" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3595" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3596" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3597" name="Tick" x="320" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3598" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3599" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3600" name="Tick" x="344" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3601" name="Tick" x="352" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3602" name="Tick" x="360" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3603" name="Tick" x="368" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3604" name="Tick" x="376" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3605" name="Tick" x="384" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3606" name="Tick" x="392" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3607" name="Tick" x="400" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3608" name="Tick" x="408" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3609" name="Tick" x="416" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3610" name="Tick" x="424" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3611" name="Tick" x="432" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3612" name="Tick" x="440" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3613" name="Tick" x="448" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3614" name="Tick" x="456" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3615" name="Tick" x="464" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3616" name="Tick" x="472" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3617" name="Tick" x="480" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3618" name="Tick" x="488" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3619" name="Tick" x="496" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3620" name="Tick" x="504" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3621" name="Tick" x="512" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3622" name="Tick" x="520" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3623" name="Tick" x="528" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3624" name="Tick" x="536" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3625" name="Tick" x="544" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3626" name="Tick" x="552" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3627" name="Tick" x="560" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3628" name="Tick" x="568" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3629" name="Tick" x="576" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3630" name="Tick" x="584" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3631" name="Tick" x="592" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3632" name="Tick" x="600" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3633" name="Tick" x="608" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3634" name="Tick" x="616" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3635" name="Tick" x="624" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3636" name="Tick" x="632" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3637" name="Tick" x="640" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3638" name="Tick" x="648" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3639" name="Tick" x="656" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3640" name="Tick" x="664" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3641" name="Tick" x="672" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3642" name="Tick" x="680" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3643" name="Tick" x="688" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3644" name="Tick" x="696" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3645" name="Tick" x="704" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3646" name="Tick" x="712" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3647" name="Tick" x="720" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3648" name="Tick" x="728" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3649" name="Tick" x="736" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3650" name="Tick" x="744" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3651" name="Tick" x="752" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3652" name="Tick" x="760" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3653" name="Tick" x="768" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3654" name="Tick" x="776" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3655" name="Tick" x="784" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3656" name="Tick" x="792" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3657" name="Tick" x="800" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3658" name="Tick" x="808" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3659" name="Tick" x="816" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3660" name="Tick" x="824" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3661" name="Tick" x="832" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3662" name="Tick" x="840" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3663" name="Tick" x="848" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3664" name="Tick" x="856" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3665" name="Tick" x="864" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3666" name="Tick" x="872" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3667" name="Tick" x="880" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3668" name="Tick" x="888" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3669" name="Tick" x="896" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3670" name="Tick" x="904" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3671" name="Tick" x="912" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3672" name="Tick" x="920" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3673" name="Tick" x="928" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3674" name="Tick" x="936" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3675" name="Tick" x="944" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3676" name="Tick" x="952" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3677" name="Tick" x="960" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3678" name="Tick" x="968" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3679" name="Tick" x="976" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3680" name="Tick" x="984" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3681" name="Tick" x="992" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3682" name="Tick" x="1000" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3683" name="Tick" x="1008" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3684" name="Tick" x="1016" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3685" name="Tick" x="1024" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3686" name="Tick" x="1032" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3687" name="Tick" x="1040" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3688" name="Tick" x="1048" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3689" name="Tick" x="1056" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3690" name="Tick" x="1064" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3691" name="Tick" x="1072" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3692" name="Tick" x="1080" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3693" name="Tick" x="1088" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3694" name="Tick" x="1096" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3695" name="Tick" x="1104" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3696" name="Tick" x="1112" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3697" name="Tick" x="1120" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3698" name="Tick" x="1128" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3699" name="Tick" x="1136" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3700" name="Tick" x="1144" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3701" name="Tick" x="1152" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3702" name="Tick" x="1160" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3703" name="Tick" x="1168" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3704" name="Tick" x="1176" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3705" name="Tick" x="1184" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3706" name="Tick" x="1192" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3707" name="Tick" x="1200" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3708" name="Tick" x="1208" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3709" name="Tick" x="1216" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3710" name="Tick" x="1224" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3711" name="Tick" x="1232" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3712" name="Tick" x="1240" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:3713" name="Tick" x="1248" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3714" name="Tick" x="1256" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3715" name="Tick" x="1264" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:3716" name="Tick" x="1272" y="0" width="1" height="6" />
+      </frame>
+      <text id="128:3718" name="Index § 01" x="80" y="120" width="25" height="18" />
+      <text id="128:3719" name="Margin label" x="80" y="148" width="264" height="28" />
+      <rounded-rectangle id="128:3720" name="Rail hairline" x="80" y="192" width="264" height="1" />
+      <rounded-rectangle id="128:3721" name="Rail divider" x="416" y="120" width="1" height="218" />
+      <text id="128:3722" name="Body (V)" x="464" y="112" width="752" height="210" />
+    </frame>
+    <frame id="128:3723" name="S3 What a new way means — index rows" x="0" y="1312" width="1280" height="888">
+      <text id="128:3724" name="H2" x="80" y="120" width="600" height="108" />
+      <instance id="128:3725" name="Button / Schedule a Free Review" x="947" y="176" width="253" height="52" />
+      <rounded-rectangle id="128:3729" name="Row 1 hairline" x="80" y="300" width="1120" height="1" />
+      <text id="128:3730" name="Row 1 index" x="80" y="340" width="42" height="18" />
+      <text id="128:3731" name="Row 1 title" x="200" y="332" width="360" height="44" />
+      <text id="128:3732" name="Row 1 body" x="608" y="336" width="528" height="64" />
+      <instance id="128:3733" name="Icon / search" x="1176" y="340" width="24" height="24" />
+      <rounded-rectangle id="128:3736" name="Row 2 hairline" x="80" y="444" width="1120" height="1" />
+      <text id="128:3737" name="Row 2 index" x="80" y="484" width="45" height="18" />
+      <text id="128:3738" name="Row 2 title" x="200" y="476" width="360" height="44" />
+      <text id="128:3739" name="Row 2 body" x="608" y="480" width="520" height="96" />
+      <instance id="128:3740" name="Icon / building" x="1176" y="484" width="24" height="24" />
+      <rounded-rectangle id="128:3742" name="Row 3 hairline" x="80" y="620" width="1120" height="1" />
+      <text id="128:3743" name="Row 3 index" x="80" y="660" width="45" height="18" />
+      <text id="128:3744" name="Row 3 title" x="200" y="652" width="360" height="44" />
+      <text id="128:3745" name="Row 3 body" x="608" y="656" width="448" height="64" />
+      <instance id="128:3746" name="Icon / ruler" x="1176" y="660" width="24" height="24" />
+      <rounded-rectangle id="128:3749" name="Rows end hairline" x="80" y="764" width="1120" height="1" />
+    </frame>
+    <frame id="128:4513" name="S4 The firm, as a team — bento (signature)" x="0" y="2200" width="1280" height="944">
+      <text id="128:4514" name="Index § 03" x="80" y="96" width="32" height="18" />
+      <rounded-rectangle id="128:4515" name="Index hairline" x="136" y="105" width="1064" height="1" />
+      <rounded-rectangle id="128:4516" name="IMG:about-estimator" x="80" y="144" width="360" height="464" />
+      <rounded-rectangle id="128:4517" name="IMG:about-inventory" x="464" y="144" width="736" height="400" />
+      <frame id="128:4522" name="Detail / Crop marks" x="68" y="132" width="16" height="488">
+        <rounded-rectangle id="128:4518" name="Mark" x="68" y="132" width="16" height="1.5" />
+        <rounded-rectangle id="128:4519" name="Mark" x="68" y="132" width="1.5" height="16" />
+        <rounded-rectangle id="128:4520" name="Mark" x="68" y="618.5" width="16" height="1.5" />
+        <rounded-rectangle id="128:4521" name="Mark" x="68" y="604" width="1.5" height="16" />
+      </frame>
+      <frame id="128:4523" name="Tile / No Conflict of Interest" x="80" y="632" width="360" height="192">
+        <instance id="128:4524" name="Icon / shield" x="32" y="32" width="32" height="32" />
+        <text id="128:4527" name="Tile index" x="296" y="36" width="33" height="18" />
+        <text id="128:4528" name="Tile heading (V)" x="32" y="112" width="296" height="68" />
+      </frame>
+      <frame id="128:4529" name="Tile / A full team" x="464" y="568" width="448" height="256">
+        <instance id="128:4530" name="Detail / B-mark (faint)" x="248" y="-40" width="247.09246826171875" height="300" />
+        <text id="128:4535" name="Tile index" x="32" y="36" width="45" height="18" />
+        <text id="128:4536" name="Tile heading (V)" x="32" y="156" width="384" height="68" />
+      </frame>
+      <frame id="128:4537" name="Tile / Builder&#39;s scope" x="936" y="568" width="264" height="256">
+        <frame id="128:4538" name="Icon circle / ruler" x="24" y="24" width="48" height="48">
+          <instance id="128:4539" name="Icon / ruler" x="12" y="12" width="24" height="24" />
+        </frame>
+        <text id="128:4542" name="Tile heading" x="24" y="134" width="216" height="34" />
+        <text id="128:4543" name="Tile line" x="24" y="176" width="192" height="56" />
+      </frame>
+    </frame>
+    <frame id="128:4544" name="S5 No Conflict of Interest — statement (navy)" x="0" y="3144" width="1280" height="656">
+      <frame id="128:4594" name="Blueprint grid (full bleed, 40px)" x="0" y="0" width="1280" height="648">
+        <rounded-rectangle id="128:4545" name="Grid V major" x="0" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4546" name="Grid V" x="40" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4547" name="Grid V" x="80" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4548" name="Grid V" x="120" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4549" name="Grid V major" x="160" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4550" name="Grid V" x="200" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4551" name="Grid V" x="240" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4552" name="Grid V" x="280" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4553" name="Grid V major" x="320" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4554" name="Grid V" x="360" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4555" name="Grid V" x="400" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4556" name="Grid V" x="440" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4557" name="Grid V major" x="480" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4558" name="Grid V" x="520" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4559" name="Grid V" x="560" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4560" name="Grid V" x="600" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4561" name="Grid V major" x="640" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4562" name="Grid V" x="680" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4563" name="Grid V" x="720" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4564" name="Grid V" x="760" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4565" name="Grid V major" x="800" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4566" name="Grid V" x="840" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4567" name="Grid V" x="880" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4568" name="Grid V" x="920" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4569" name="Grid V major" x="960" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4570" name="Grid V" x="1000" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4571" name="Grid V" x="1040" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4572" name="Grid V" x="1080" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4573" name="Grid V major" x="1120" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4574" name="Grid V" x="1160" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4575" name="Grid V" x="1200" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4576" name="Grid V" x="1240" y="0" width="1" height="648" />
+        <rounded-rectangle id="128:4577" name="Grid H major" x="0" y="0" width="1280" height="1" />
+        <rounded-rectangle id="128:4578" name="Grid H" x="0" y="40" width="1280" height="1" />
+        <rounded-rectangle id="128:4579" name="Grid H" x="0" y="80" width="1280" height="1" />
+        <rounded-rectangle id="128:4580" name="Grid H" x="0" y="120" width="1280" height="1" />
+        <rounded-rectangle id="128:4581" name="Grid H major" x="0" y="160" width="1280" height="1" />
+        <rounded-rectangle id="128:4582" name="Grid H" x="0" y="200" width="1280" height="1" />
+        <rounded-rectangle id="128:4583" name="Grid H" x="0" y="240" width="1280" height="1" />
+        <rounded-rectangle id="128:4584" name="Grid H" x="0" y="280" width="1280" height="1" />
+        <rounded-rectangle id="128:4585" name="Grid H major" x="0" y="320" width="1280" height="1" />
+        <rounded-rectangle id="128:4586" name="Grid H" x="0" y="360" width="1280" height="1" />
+        <rounded-rectangle id="128:4587" name="Grid H" x="0" y="400" width="1280" height="1" />
+        <rounded-rectangle id="128:4588" name="Grid H" x="0" y="440" width="1280" height="1" />
+        <rounded-rectangle id="128:4589" name="Grid H major" x="0" y="480" width="1280" height="1" />
+        <rounded-rectangle id="128:4590" name="Grid H" x="0" y="520" width="1280" height="1" />
+        <rounded-rectangle id="128:4591" name="Grid H" x="0" y="560" width="1280" height="1" />
+        <rounded-rectangle id="128:4592" name="Grid H" x="0" y="600" width="1280" height="1" />
+        <rounded-rectangle id="128:4593" name="Grid H major" x="0" y="640" width="1280" height="1" />
+      </frame>
+      <instance id="128:4595" name="Detail / B-mark (faint)" x="900" y="180" width="461.23931884765625" height="560.0000610351562" />
+      <text id="128:4600" name="Statement (V)" x="76" y="112" width="999" height="96" />
+      <instance id="128:4601" name="Detail / Dimension line" x="80" y="232" width="999" height="16" />
+      <instance id="128:4607" name="Icon / shield" x="80" y="312" width="48" height="48" />
+      <text id="128:4610" name="Statement body (V)" x="656" y="304" width="544" height="136" />
+      <instance id="128:4611" name="Button / Schedule a Free Review" x="656" y="480" width="253" height="52" />
+      <text id="128:4922" name="Index § 04" x="144" y="326" width="33" height="18" />
+    </frame>
+    <frame id="128:4923" name="S6 Built From the Ground Up — founder split" x="0" y="3800" width="1280" height="984">
+      <rounded-rectangle id="128:4924" name="IMG:mike" x="0" y="80" width="560" height="824" />
+      <text id="128:4930" name="Index § 05" x="656" y="120" width="32" height="18" />
+      <rounded-rectangle id="128:4931" name="Index hairline" x="712" y="129" width="488" height="1" />
+      <text id="128:4932" name="H2 (V)" x="656" y="160" width="420" height="108" />
+      <text id="128:4933" name="Founder body" x="656" y="292" width="520" height="140" />
+      <instance id="128:4934" name="Icon / quote" x="656" y="472" width="40" height="40" />
+      <rounded-rectangle id="128:4937" name="Quote rule" x="656" y="528" width="2" height="204" />
+      <text id="128:4938" name="Founder quote (V)" x="680" y="528" width="496" height="204" />
+      <text id="128:4939" name="Attribution" x="680" y="748" width="279" height="24" />
+      <frame id="128:4940" name="Link / Meet Michael Rapport" x="656" y="812" width="226" height="52">
+        <text id="128:4941" name="Link text" x="0" y="12" width="194" height="28" />
+        <instance id="128:4942" name="Icon / arrow" x="202" y="14" width="24" height="24" />
+      </frame>
+      <frame id="128:4948" name="Detail / Crop marks" x="556" y="68" width="16" height="848">
+        <rounded-rectangle id="128:4944" name="Mark" x="556" y="68" width="16" height="1.5" />
+        <rounded-rectangle id="128:4945" name="Mark" x="570.5" y="68" width="1.5" height="16" />
+        <rounded-rectangle id="128:4946" name="Mark" x="556" y="914.5" width="16" height="1.5" />
+        <rounded-rectangle id="128:4947" name="Mark" x="570.5" y="900" width="1.5" height="16" />
+      </frame>
+    </frame>
+    <frame id="128:4949" name="S7 A Boutique Practice — pull quote over photo" x="0" y="4784" width="1280" height="720">
+      <rounded-rectangle id="128:4950" name="IMG:about-office" x="0" y="0" width="1280" height="720" />
+      <rounded-rectangle id="128:5042" name="Scrim / navy tint" x="0" y="0" width="1280" height="720" />
+      <frame id="128:5045" name="Scrim / left ramp (masked)" x="0" y="0" width="1280" height="720">
+        <rounded-rectangle id="128:5043" name="Scrim mask (alpha ramp)" x="0" y="0" width="1280" height="720" />
+        <rounded-rectangle id="128:5044" name="Scrim / navy ramp" x="0" y="0" width="1280" height="720" />
+      </frame>
+      <text id="128:4952" name="Index § 06" x="176" y="120" width="33" height="18" />
+      <instance id="128:4953" name="Icon / quote" x="176" y="176" width="48" height="48" />
+      <text id="128:4956" name="Pull quote (V)" x="176" y="248" width="720" height="136" />
+      <rounded-rectangle id="128:4957" name="Royal rule" x="176" y="416" width="80" height="2" />
+      <text id="128:4958" name="Pull quote body (V)" x="176" y="450" width="520" height="96" />
+    </frame>
+    <frame id="128:5326" name="S8 Where we work — typographic city index" x="0" y="5504" width="1280" height="800">
+      <text id="128:5327" name="Index § 07" x="80" y="128" width="32" height="18" />
+      <text id="128:5328" name="H2" x="80" y="160" width="367" height="54" />
+      <text id="128:5329" name="Intro (CD 229)" x="80" y="238" width="328" height="84" />
+      <frame id="128:5330" name="Fact chips" x="80" y="354" width="220" height="42">
+        <frame id="128:5331" name="Fact chip / 7 offices" x="0" y="0" width="123" height="42">
+          <instance id="128:5332" name="Icon / pin" x="13" y="11" width="20" height="20" />
+          <text id="128:5335" name="Chip text" x="41" y="9" width="65" height="24" />
+        </frame>
+        <frame id="128:5336" name="Fact chip / 5 states" x="131" y="0" width="89" height="42">
+          <text id="128:5337" name="Chip text" x="13" y="9" width="59" height="24" />
+        </frame>
+      </frame>
+      <instance id="128:5338" name="Button / Schedule a Free Review" x="80" y="444" width="253" height="52" />
+      <rounded-rectangle id="128:5342" name="Index top rule" x="464" y="120" width="736" height="1" />
+      <instance id="128:5343" name="Icon / pin" x="464" y="148" width="24" height="24" />
+      <text id="128:5346" name="City / Santa Monica" x="512" y="136" width="257" height="48" />
+      <frame id="128:5347" name="State tag / CA" x="1162" y="148" width="38" height="28">
+        <text id="128:5348" name="Tag text" x="9" y="5" width="20" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5349" name="Row rule" x="464" y="200" width="736" height="1" />
+      <instance id="128:5350" name="Icon / pin" x="464" y="228" width="24" height="24" />
+      <text id="128:5353" name="City / Sacramento" x="512" y="216" width="224" height="48" />
+      <frame id="128:5354" name="State tag / CA" x="1162" y="228" width="38" height="28">
+        <text id="128:5355" name="Tag text" x="9" y="5" width="20" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5357" name="Row rule" x="464" y="280" width="736" height="1" />
+      <instance id="128:5358" name="Icon / pin" x="464" y="308" width="24" height="24" />
+      <text id="128:5361" name="City / San Francisco" x="512" y="296" width="265" height="48" />
+      <frame id="128:5362" name="State tag / CA" x="1162" y="308" width="38" height="28">
+        <text id="128:5363" name="Tag text" x="9" y="5" width="20" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5364" name="Row rule" x="464" y="360" width="736" height="1" />
+      <instance id="128:5365" name="Icon / pin" x="464" y="388" width="24" height="24" />
+      <text id="128:5368" name="City / Reno" x="512" y="376" width="96" height="48" />
+      <frame id="128:5369" name="State tag / NV" x="1161" y="388" width="39" height="28">
+        <text id="128:5370" name="Tag text" x="9" y="5" width="21" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5371" name="Row rule" x="464" y="440" width="736" height="1" />
+      <instance id="128:5372" name="Icon / pin" x="464" y="468" width="24" height="24" />
+      <text id="128:5375" name="City / Portland" x="512" y="456" width="163" height="48" />
+      <frame id="128:5376" name="State tag / OR" x="1161" y="468" width="39" height="28">
+        <text id="128:5377" name="Tag text" x="9" y="5" width="21" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5378" name="Row rule" x="464" y="520" width="736" height="1" />
+      <instance id="128:5379" name="Icon / pin" x="464" y="548" width="24" height="24" />
+      <text id="128:5382" name="City / Seattle" x="512" y="536" width="131" height="48" />
+      <frame id="128:5383" name="State tag / WA" x="1157" y="548" width="43" height="28">
+        <text id="128:5384" name="Tag text" x="9" y="5" width="25" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5385" name="Row rule" x="464" y="600" width="736" height="1" />
+      <instance id="128:5386" name="Icon / pin" x="464" y="628" width="24" height="24" />
+      <text id="128:5389" name="City / Scottsdale" x="512" y="616" width="203" height="48" />
+      <frame id="128:5390" name="State tag / AZ" x="1163" y="628" width="37" height="28">
+        <text id="128:5391" name="Tag text" x="9" y="5" width="19" height="18" />
+      </frame>
+      <rounded-rectangle id="128:5392" name="Row rule" x="464" y="680" width="736" height="1" />
+    </frame>
+    <frame id="128:5393" name="S9 Final CTA" x="0" y="6304" width="1280" height="600">
+      <frame id="128:5555" name="Detail / Ruler ticks" x="0" y="0" width="1280" height="12">
+        <rounded-rectangle id="128:5394" name="Base" x="0" y="0" width="1280" height="1" />
+        <rounded-rectangle id="128:5395" name="Tick" x="0" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5396" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5397" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5398" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5399" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5400" name="Tick" x="40" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5401" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5402" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5403" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5404" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5405" name="Tick" x="80" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5406" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5407" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5408" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5409" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5410" name="Tick" x="120" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5411" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5412" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5413" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5414" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5415" name="Tick" x="160" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5416" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5417" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5418" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5419" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5420" name="Tick" x="200" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5421" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5422" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5423" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5424" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5425" name="Tick" x="240" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5426" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5427" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5428" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5429" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5430" name="Tick" x="280" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5431" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5432" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5433" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5434" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5435" name="Tick" x="320" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5436" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5437" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5438" name="Tick" x="344" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5439" name="Tick" x="352" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5440" name="Tick" x="360" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5441" name="Tick" x="368" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5442" name="Tick" x="376" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5443" name="Tick" x="384" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5444" name="Tick" x="392" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5445" name="Tick" x="400" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5446" name="Tick" x="408" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5447" name="Tick" x="416" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5448" name="Tick" x="424" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5449" name="Tick" x="432" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5450" name="Tick" x="440" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5451" name="Tick" x="448" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5452" name="Tick" x="456" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5453" name="Tick" x="464" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5454" name="Tick" x="472" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5455" name="Tick" x="480" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5456" name="Tick" x="488" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5457" name="Tick" x="496" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5458" name="Tick" x="504" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5459" name="Tick" x="512" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5460" name="Tick" x="520" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5461" name="Tick" x="528" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5462" name="Tick" x="536" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5463" name="Tick" x="544" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5464" name="Tick" x="552" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5465" name="Tick" x="560" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5466" name="Tick" x="568" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5467" name="Tick" x="576" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5468" name="Tick" x="584" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5469" name="Tick" x="592" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5470" name="Tick" x="600" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5471" name="Tick" x="608" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5472" name="Tick" x="616" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5473" name="Tick" x="624" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5474" name="Tick" x="632" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5475" name="Tick" x="640" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5476" name="Tick" x="648" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5477" name="Tick" x="656" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5478" name="Tick" x="664" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5479" name="Tick" x="672" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5480" name="Tick" x="680" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5481" name="Tick" x="688" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5482" name="Tick" x="696" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5483" name="Tick" x="704" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5484" name="Tick" x="712" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5485" name="Tick" x="720" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5486" name="Tick" x="728" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5487" name="Tick" x="736" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5488" name="Tick" x="744" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5489" name="Tick" x="752" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5490" name="Tick" x="760" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5491" name="Tick" x="768" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5492" name="Tick" x="776" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5493" name="Tick" x="784" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5494" name="Tick" x="792" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5495" name="Tick" x="800" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5496" name="Tick" x="808" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5497" name="Tick" x="816" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5498" name="Tick" x="824" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5499" name="Tick" x="832" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5500" name="Tick" x="840" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5501" name="Tick" x="848" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5502" name="Tick" x="856" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5503" name="Tick" x="864" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5504" name="Tick" x="872" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5505" name="Tick" x="880" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5506" name="Tick" x="888" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5507" name="Tick" x="896" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5508" name="Tick" x="904" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5509" name="Tick" x="912" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5510" name="Tick" x="920" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5511" name="Tick" x="928" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5512" name="Tick" x="936" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5513" name="Tick" x="944" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5514" name="Tick" x="952" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5515" name="Tick" x="960" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5516" name="Tick" x="968" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5517" name="Tick" x="976" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5518" name="Tick" x="984" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5519" name="Tick" x="992" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5520" name="Tick" x="1000" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5521" name="Tick" x="1008" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5522" name="Tick" x="1016" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5523" name="Tick" x="1024" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5524" name="Tick" x="1032" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5525" name="Tick" x="1040" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5526" name="Tick" x="1048" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5527" name="Tick" x="1056" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5528" name="Tick" x="1064" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5529" name="Tick" x="1072" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5530" name="Tick" x="1080" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5531" name="Tick" x="1088" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5532" name="Tick" x="1096" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5533" name="Tick" x="1104" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5534" name="Tick" x="1112" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5535" name="Tick" x="1120" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5536" name="Tick" x="1128" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5537" name="Tick" x="1136" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5538" name="Tick" x="1144" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5539" name="Tick" x="1152" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5540" name="Tick" x="1160" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5541" name="Tick" x="1168" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5542" name="Tick" x="1176" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5543" name="Tick" x="1184" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5544" name="Tick" x="1192" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5545" name="Tick" x="1200" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5546" name="Tick" x="1208" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5547" name="Tick" x="1216" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5548" name="Tick" x="1224" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5549" name="Tick" x="1232" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5550" name="Tick" x="1240" y="0" width="1" height="12" />
+        <rounded-rectangle id="128:5551" name="Tick" x="1248" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5552" name="Tick" x="1256" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5553" name="Tick" x="1264" y="0" width="1" height="6" />
+        <rounded-rectangle id="128:5554" name="Tick" x="1272" y="0" width="1" height="6" />
+      </frame>
+      <instance id="128:5556" name="Brand wave corner (Bottom-right)" x="920" y="400" width="360" height="200" />
+      <text id="128:5559" name="H2 (V)" x="80" y="120" width="680" height="136" />
+      <text id="128:5560" name="Body (V)" x="800" y="128" width="400" height="96" />
+      <frame id="128:5561" name="CTA buttons" x="800" y="256" width="253" height="116">
+        <instance id="128:5562" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+        <instance id="128:5566" name="Button / Call (916) 507-1005" x="0" y="64" width="235" height="52" />
+      </frame>
+      <frame id="128:5570" name="Trust line" x="80" y="436" width="845" height="42">
+        <frame id="128:5571" name="Fact chip / No upfront cost" x="0" y="0" width="179" height="42">
+          <instance id="128:5572" name="Icon / check" x="13" y="11" width="20" height="20" />
+          <text id="128:5574" name="Chip text" x="41" y="9" width="121" height="24" />
+        </frame>
+        <frame id="128:5575" name="Fact chip / You always have final sa" x="191" y="0" width="397" height="42">
+          <instance id="128:5576" name="Icon / check" x="13" y="11" width="20" height="20" />
+          <text id="128:5578" name="Chip text" x="41" y="9" width="339" height="24" />
+        </frame>
+        <frame id="128:5579" name="Fact chip / CA License No. 2B60428" x="600" y="0" width="245" height="42">
+          <instance id="128:5580" name="Icon / check" x="13" y="11" width="20" height="20" />
+          <text id="128:5582" name="Chip text" x="41" y="9" width="187" height="24" />
+        </frame>
+      </frame>
+    </frame>
+    <instance id="128:5583" name="Footer / Desktop" x="0" y="6904" width="1280" height="557" />
+  </frame>
+  <frame id="128:6353" name="Mobile — Who We Are (390)" x="1400" y="0" width="390" height="8333">
+    <instance id="128:6354" name="Header / Mobile (Light)" x="0" y="0" width="390" height="64" />
+    <frame id="128:6371" name="S1 Hero — split screen" x="0" y="64" width="390" height="720">
+      <rounded-rectangle id="128:6372" name="IMG:about-hero" x="112" y="16" width="278" height="192" />
+      <rounded-rectangle id="128:6378" name="Hairline" x="20" y="24" width="40" height="1" />
+      <text id="128:6379" name="Eyebrow / Who We Are" x="20" y="36" width="81" height="16" />
+      <frame id="128:6396" name="Detail / Ruler ticks (vertical)" x="20" y="88" width="12" height="120" />
+      <instance id="128:6397" name="Detail / Dimension line" x="112" y="220" width="258" height="16" />
+      <text id="128:6403" name="H1" x="20" y="252" width="350" height="144" />
+      <text id="128:6404" name="Lead (V)" x="20" y="412" width="350" height="112" />
+      <instance id="128:6405" name="Button / Schedule a Free Review" x="20" y="548" width="350" height="56" />
+      <instance id="128:6409" name="Button / Call (916) 507-1005" x="20" y="616" width="350" height="56" />
+      <frame id="128:6784" name="Detail / Crop marks" x="104" y="8" width="16" height="208" />
+    </frame>
+    <frame id="128:6413" name="S2 Why a new firm — margin label" x="0" y="784" width="390" height="488">
+      <text id="128:6414" name="Index / § 01" x="20" y="64" width="23" height="16" />
+      <text id="128:6415" name="Margin label / Why a new firm" x="72" y="60" width="131" height="26" />
+      <rounded-rectangle id="128:6416" name="Hairline" x="20" y="96" width="350" height="1" />
+      <text id="128:6417" name="Body (V)" x="52" y="128" width="318" height="288" />
+      <rounded-rectangle id="128:6418" name="Margin rule" x="20" y="128" width="2" height="288" />
+      <frame id="128:6469" name="Detail / Ruler ticks" x="0" y="472" width="390" height="12">
+        <rounded-rectangle id="128:6419" name="Base" x="0" y="483" width="390" height="1" />
+        <rounded-rectangle id="128:6420" name="Tick" x="0" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6421" name="Tick" x="8" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6422" name="Tick" x="16" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6423" name="Tick" x="24" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6424" name="Tick" x="32" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6425" name="Tick" x="40" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6426" name="Tick" x="48" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6427" name="Tick" x="56" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6428" name="Tick" x="64" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6429" name="Tick" x="72" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6430" name="Tick" x="80" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6431" name="Tick" x="88" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6432" name="Tick" x="96" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6433" name="Tick" x="104" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6434" name="Tick" x="112" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6435" name="Tick" x="120" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6436" name="Tick" x="128" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6437" name="Tick" x="136" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6438" name="Tick" x="144" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6439" name="Tick" x="152" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6440" name="Tick" x="160" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6441" name="Tick" x="168" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6442" name="Tick" x="176" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6443" name="Tick" x="184" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6444" name="Tick" x="192" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6445" name="Tick" x="200" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6446" name="Tick" x="208" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6447" name="Tick" x="216" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6448" name="Tick" x="224" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6449" name="Tick" x="232" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6450" name="Tick" x="240" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6451" name="Tick" x="248" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6452" name="Tick" x="256" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6453" name="Tick" x="264" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6454" name="Tick" x="272" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6455" name="Tick" x="280" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6456" name="Tick" x="288" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6457" name="Tick" x="296" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6458" name="Tick" x="304" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6459" name="Tick" x="312" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6460" name="Tick" x="320" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6461" name="Tick" x="328" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6462" name="Tick" x="336" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6463" name="Tick" x="344" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6464" name="Tick" x="352" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6465" name="Tick" x="360" y="472" width="1" height="12" />
+        <rounded-rectangle id="128:6466" name="Tick" x="368" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6467" name="Tick" x="376" y="478" width="1" height="6" />
+        <rounded-rectangle id="128:6468" name="Tick" x="384" y="478" width="1" height="6" />
+      </frame>
+    </frame>
+    <frame id="128:6785" name="S3 What a new way means — index rows" x="0" y="1272" width="390" height="1024">
+      <text id="128:6786" name="H2" x="20" y="64" width="330" height="72" />
+      <rounded-rectangle id="128:6787" name="Hairline" x="20" y="176" width="350" height="1" />
+      <text id="128:6788" name="Index / § 02.1" x="20" y="196" width="34" height="16" />
+      <instance id="128:6789" name="Icon / search" x="346" y="192" width="24" height="24" />
+      <text id="128:6792" name="Row title / Senior led." x="20" y="228" width="350" height="40" />
+      <text id="128:6793" name="Row text / Senior led." x="20" y="280" width="310" height="78" />
+      <rounded-rectangle id="128:6794" name="Hairline" x="60" y="398" width="310" height="1" />
+      <text id="128:6795" name="Index / § 02.2" x="60" y="418" width="36" height="16" />
+      <instance id="128:6796" name="Icon / building" x="346" y="414" width="24" height="24" />
+      <text id="128:6798" name="Row title / A full team." x="60" y="450" width="310" height="40" />
+      <text id="128:6799" name="Row text / A full team." x="60" y="502" width="310" height="104" />
+      <rounded-rectangle id="128:6800" name="Hairline" x="100" y="646" width="270" height="1" />
+      <text id="128:6801" name="Index / § 02.3" x="100" y="666" width="36" height="16" />
+      <instance id="128:6802" name="Icon / ruler" x="346" y="662" width="24" height="24" />
+      <text id="128:6805" name="Row title / Builder&#39;s scope." x="100" y="698" width="270" height="40" />
+      <text id="128:6806" name="Row text / Builder&#39;s scope." x="100" y="750" width="270" height="78" />
+      <rounded-rectangle id="128:6807" name="Hairline" x="20" y="868" width="350" height="1" />
+      <instance id="128:6808" name="Button / Schedule a Free Review" x="20" y="900" width="350" height="56" />
+    </frame>
+    <frame id="128:6812" name="S4 The firm, as a team — bento (signature)" x="0" y="2296" width="390" height="872">
+      <text id="128:6813" name="Index / § 03" x="20" y="56" width="26" height="16" />
+      <rounded-rectangle id="128:6814" name="Hairline" x="64" y="63" width="306" height="1" />
+      <rounded-rectangle id="128:6815" name="IMG:about-estimator" x="20" y="96" width="171" height="360" />
+      <frame id="128:6820" name="Detail / Crop marks" x="12" y="88" width="16" height="376">
+        <rounded-rectangle id="128:6816" name="Mark" x="12" y="88" width="16" height="1.5" />
+        <rounded-rectangle id="128:6817" name="Mark" x="12" y="88" width="1.5" height="16" />
+        <rounded-rectangle id="128:6818" name="Mark" x="12" y="462.5" width="16" height="1.5" />
+        <rounded-rectangle id="128:6819" name="Mark" x="12" y="448" width="1.5" height="16" />
+      </frame>
+      <frame id="128:6821" name="Tile / A full team (navy)" x="199" y="96" width="171" height="208">
+        <instance id="128:6822" name="Detail / B-mark (faint)" x="80" y="-10" width="181.20114135742188" height="220" />
+        <text id="128:6827" name="Index / § 02.2" x="16" y="16" width="36" height="16" />
+        <text id="128:6828" name="A full team (V)" x="16" y="120" width="139" height="72" />
+      </frame>
+      <frame id="128:6829" name="Tile / No Conflict of Interest" x="199" y="312" width="171" height="144">
+        <instance id="128:6830" name="Icon / shield" x="16" y="16" width="32" height="32" />
+        <text id="128:6833" name="Index / § 04" x="127" y="20" width="27" height="16" />
+        <text id="128:6834" name="No Conflict of Interest (V)" x="16" y="72" width="139" height="56" />
+      </frame>
+      <rounded-rectangle id="128:6835" name="IMG:about-inventory" x="20" y="464" width="350" height="208" />
+      <frame id="128:6836" name="Tile / Builder&#39;s scope (paper)" x="20" y="680" width="350" height="136">
+        <ellipse id="128:6837" name="Icon circle" x="20" y="24" width="48" height="48" />
+        <instance id="128:6838" name="Icon / ruler" x="32" y="36" width="24" height="24" />
+        <text id="128:6841" name="Builder&#39;s scope" x="84" y="24" width="250" height="28" />
+        <text id="128:6842" name="Builder&#39;s scope line" x="84" y="56" width="250" height="26" />
+        <frame id="128:6888" name="Detail / Ruler ticks" x="0" y="124" width="350" height="12">
+          <rounded-rectangle id="128:6843" name="Base" x="0" y="135" width="350" height="1" />
+          <rounded-rectangle id="128:6844" name="Tick" x="0" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6845" name="Tick" x="8" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6846" name="Tick" x="16" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6847" name="Tick" x="24" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6848" name="Tick" x="32" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6849" name="Tick" x="40" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6850" name="Tick" x="48" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6851" name="Tick" x="56" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6852" name="Tick" x="64" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6853" name="Tick" x="72" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6854" name="Tick" x="80" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6855" name="Tick" x="88" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6856" name="Tick" x="96" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6857" name="Tick" x="104" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6858" name="Tick" x="112" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6859" name="Tick" x="120" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6860" name="Tick" x="128" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6861" name="Tick" x="136" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6862" name="Tick" x="144" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6863" name="Tick" x="152" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6864" name="Tick" x="160" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6865" name="Tick" x="168" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6866" name="Tick" x="176" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6867" name="Tick" x="184" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6868" name="Tick" x="192" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6869" name="Tick" x="200" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6870" name="Tick" x="208" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6871" name="Tick" x="216" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6872" name="Tick" x="224" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6873" name="Tick" x="232" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6874" name="Tick" x="240" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6875" name="Tick" x="248" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6876" name="Tick" x="256" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6877" name="Tick" x="264" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6878" name="Tick" x="272" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6879" name="Tick" x="280" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6880" name="Tick" x="288" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6881" name="Tick" x="296" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6882" name="Tick" x="304" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6883" name="Tick" x="312" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6884" name="Tick" x="320" y="124" width="1" height="12" />
+          <rounded-rectangle id="128:6885" name="Tick" x="328" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6886" name="Tick" x="336" y="130" width="1" height="6" />
+          <rounded-rectangle id="128:6887" name="Tick" x="344" y="130" width="1" height="6" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="135:1237" name="S5 No Conflict of Interest — statement (navy)" x="0" y="3168" width="390" height="632">
+      <frame id="135:1287" name="Blueprint grid (full bleed, 40px)" x="0" y="0" width="390" height="632">
+        <rounded-rectangle id="135:1261" name="Grid V major" x="0" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1262" name="Grid V" x="40" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1263" name="Grid V" x="80" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1264" name="Grid V" x="120" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1265" name="Grid V major" x="160" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1266" name="Grid V" x="200" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1267" name="Grid V" x="240" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1268" name="Grid V" x="280" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1269" name="Grid V major" x="320" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1270" name="Grid V" x="360" y="0" width="1" height="632" />
+        <rounded-rectangle id="135:1271" name="Grid H major" x="0" y="0" width="390" height="1" />
+        <rounded-rectangle id="135:1272" name="Grid H" x="0" y="40" width="390" height="1" />
+        <rounded-rectangle id="135:1273" name="Grid H" x="0" y="80" width="390" height="1" />
+        <rounded-rectangle id="135:1274" name="Grid H" x="0" y="120" width="390" height="1" />
+        <rounded-rectangle id="135:1275" name="Grid H major" x="0" y="160" width="390" height="1" />
+        <rounded-rectangle id="135:1276" name="Grid H" x="0" y="200" width="390" height="1" />
+        <rounded-rectangle id="135:1277" name="Grid H" x="0" y="240" width="390" height="1" />
+        <rounded-rectangle id="135:1278" name="Grid H" x="0" y="280" width="390" height="1" />
+        <rounded-rectangle id="135:1279" name="Grid H major" x="0" y="320" width="390" height="1" />
+        <rounded-rectangle id="135:1280" name="Grid H" x="0" y="360" width="390" height="1" />
+        <rounded-rectangle id="135:1281" name="Grid H" x="0" y="400" width="390" height="1" />
+        <rounded-rectangle id="135:1282" name="Grid H" x="0" y="440" width="390" height="1" />
+        <rounded-rectangle id="135:1283" name="Grid H major" x="0" y="480" width="390" height="1" />
+        <rounded-rectangle id="135:1284" name="Grid H" x="0" y="520" width="390" height="1" />
+        <rounded-rectangle id="135:1285" name="Grid H" x="0" y="560" width="390" height="1" />
+        <rounded-rectangle id="135:1286" name="Grid H" x="0" y="600" width="390" height="1" />
+      </frame>
+      <instance id="135:1238" name="Detail / B-mark (faint)" x="210" y="120" width="345.9294738769531" height="420" />
+      <text id="135:1243" name="Index / § 04" x="20" y="64" width="27" height="16" />
+      <rounded-rectangle id="135:1244" name="Hairline" x="64" y="71" width="306" height="1" />
+      <text id="135:1245" name="Statement (V)" x="20" y="104" width="350" height="100" />
+      <instance id="135:1246" name="Detail / Dimension line" x="20" y="224" width="350" height="16" />
+      <instance id="135:1252" name="Icon / shield" x="20" y="280" width="40" height="40" />
+      <text id="135:1255" name="Statement body (V)" x="20" y="340" width="350" height="140" />
+      <instance id="135:1256" name="Button / Schedule a Free Review" x="20" y="512" width="350" height="56" />
+    </frame>
+    <frame id="135:1288" name="S6 Built From the Ground Up — founder split" x="0" y="3800" width="390" height="1160">
+      <rounded-rectangle id="135:1289" name="IMG:mike" x="0" y="56" width="300" height="340" />
+      <frame id="135:1294" name="Detail / Crop marks" x="292" y="48" width="16" height="356">
+        <rounded-rectangle id="135:1290" name="Mark" x="292" y="48" width="16" height="1.5" />
+        <rounded-rectangle id="135:1291" name="Mark" x="306.5" y="48" width="1.5" height="16" />
+        <rounded-rectangle id="135:1292" name="Mark" x="292" y="402.5" width="16" height="1.5" />
+        <rounded-rectangle id="135:1293" name="Mark" x="306.5" y="388" width="1.5" height="16" />
+      </frame>
+      <text id="135:1295" name="Index / § 05" x="332" y="56" width="26" height="16" />
+      <text id="135:1296" name="H2 (V)" x="20" y="436" width="300" height="72" />
+      <text id="135:1297" name="Founder body" x="20" y="524" width="340" height="182" />
+      <instance id="135:1299" name="Icon / quote" x="20" y="738" width="32" height="32" />
+      <text id="135:1302" name="Founder quote (V)" x="20" y="782" width="350" height="210" />
+      <text id="135:1304" name="Attribution" x="20" y="1008" width="279" height="26" />
+      <frame id="135:1305" name="Tap/Meet Michael Rapport" x="20" y="1050" width="215" height="50">
+        <text id="135:1306" name="Link text" x="0" y="12" width="183" height="26" />
+        <instance id="135:1307" name="Icon / arrow" x="191" y="13" width="24" height="24" />
+      </frame>
+      <rounded-rectangle id="135:1309" name="Link underline" x="20" y="1090" width="183" height="2" />
+    </frame>
+    <frame id="135:1310" name="S7 A Boutique Practice — pull quote over photo" x="0" y="4960" width="390" height="640">
+      <rounded-rectangle id="135:1311" name="IMG:about-office" x="0" y="0" width="390" height="640" />
+      <rounded-rectangle id="135:1312" name="Scrim (ink, layer opacity 0.40)" x="0" y="0" width="390" height="640" />
+      <rounded-rectangle id="135:1689" name="Scrim band 1 (navy, layer opacity)" x="0" y="200" width="390" height="440" />
+      <rounded-rectangle id="135:1690" name="Scrim band 2 (navy, layer opacity)" x="0" y="232" width="390" height="408" />
+      <rounded-rectangle id="135:1691" name="Scrim band 3 (navy, layer opacity)" x="0" y="264" width="390" height="376" />
+      <rounded-rectangle id="135:1692" name="Scrim band 4 (navy, layer opacity)" x="0" y="296" width="390" height="344" />
+      <rounded-rectangle id="135:1693" name="Scrim band 5 (navy, layer opacity)" x="0" y="328" width="390" height="312" />
+      <rounded-rectangle id="135:1694" name="Scrim band 6 (navy, layer opacity)" x="0" y="360" width="390" height="280" />
+      <rounded-rectangle id="135:1695" name="Scrim band 7 (navy, layer opacity)" x="0" y="392" width="390" height="248" />
+      <rounded-rectangle id="135:1696" name="Scrim band 8 (navy, layer opacity)" x="0" y="424" width="390" height="216" />
+      <rounded-rectangle id="135:1697" name="Scrim band 9 (navy, layer opacity)" x="0" y="456" width="390" height="184" />
+      <rounded-rectangle id="135:1698" name="Scrim band 10 (navy, layer opacity)" x="0" y="488" width="390" height="152" />
+      <rounded-rectangle id="135:1699" name="Scrim band 11 (navy, layer opacity)" x="0" y="520" width="390" height="120" />
+      <rounded-rectangle id="135:1700" name="Scrim band 12 (navy, layer opacity)" x="0" y="552" width="390" height="88" />
+      <text id="135:1314" name="Index / § 06" x="20" y="56" width="26" height="16" />
+      <text id="135:1315" name="Pull quote body (V)" x="20" y="480" width="350" height="104" />
+      <rounded-rectangle id="135:1316" name="Rule" x="20" y="454" width="48" height="2" />
+      <text id="135:1317" name="Pull quote (V)" x="20" y="292" width="350" height="138" />
+      <instance id="135:1318" name="Icon / quote" x="20" y="228" width="48" height="48" />
+    </frame>
+    <frame id="135:1614" name="S8 Where we work — typographic city index" x="0" y="5600" width="390" height="1104">
+      <text id="135:1615" name="Index / § 07" x="20" y="64" width="26" height="16" />
+      <rounded-rectangle id="135:1616" name="Hairline" x="64" y="71" width="306" height="1" />
+      <text id="135:1617" name="H2" x="20" y="104" width="350" height="36" />
+      <text id="135:1618" name="Intro" x="20" y="156" width="330" height="78" />
+      <frame id="135:1619" name="Fact chips" x="20" y="254" width="208" height="44">
+        <frame id="135:1620" name="Chip / 7 offices" x="0" y="0" width="115" height="44">
+          <instance id="135:1621" name="Icon / pin" x="13" y="14" width="16" height="16" />
+          <text id="135:1624" name="Chip text" x="37" y="9" width="65" height="26" />
+        </frame>
+        <frame id="135:1625" name="Chip / 5 states" x="123" y="0" width="85" height="44">
+          <text id="135:1626" name="Chip text" x="13" y="9" width="59" height="26" />
+        </frame>
+      </frame>
+      <frame id="135:1627" name="City index" x="20" y="330" width="350" height="582">
+        <frame id="135:1628" name="City / Santa Monica" x="0" y="1" width="350" height="83">
+          <text id="135:1629" name="City" x="0" y="19" width="302" height="44" />
+          <frame id="135:1630" name="Pin + state tag" x="314" y="16" width="36" height="50">
+            <instance id="135:1631" name="Icon / pin" x="8" y="0" width="20" height="20" />
+            <frame id="135:1634" name="State tag / CA" x="0" y="24" width="36" height="26">
+              <text id="135:1635" name="State" x="9" y="5" width="18" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="135:1636" name="City / Sacramento" x="0" y="84" width="350" height="83">
+          <text id="135:1637" name="City" x="0" y="19" width="302" height="44" />
+          <frame id="135:1638" name="Pin + state tag" x="314" y="16" width="36" height="50">
+            <instance id="135:1639" name="Icon / pin" x="8" y="0" width="20" height="20" />
+            <frame id="135:1642" name="State tag / CA" x="0" y="24" width="36" height="26">
+              <text id="135:1643" name="State" x="9" y="5" width="18" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="135:1644" name="City / San Francisco" x="0" y="167" width="350" height="83">
+          <text id="135:1645" name="City" x="0" y="19" width="302" height="44" />
+          <frame id="135:1646" name="Pin + state tag" x="314" y="16" width="36" height="50">
+            <instance id="135:1647" name="Icon / pin" x="8" y="0" width="20" height="20" />
+            <frame id="135:1650" name="State tag / CA" x="0" y="24" width="36" height="26">
+              <text id="135:1651" name="State" x="9" y="5" width="18" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="135:1652" name="City / Reno" x="0" y="250" width="350" height="83">
+          <text id="135:1653" name="City" x="0" y="19" width="301" height="44" />
+          <frame id="135:1654" name="Pin + state tag" x="313" y="16" width="37" height="50">
+            <instance id="135:1655" name="Icon / pin" x="8.5" y="0" width="20" height="20" />
+            <frame id="135:1658" name="State tag / NV" x="0" y="24" width="37" height="26">
+              <text id="135:1659" name="State" x="9" y="5" width="19" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="135:1660" name="City / Portland" x="0" y="333" width="350" height="83">
+          <text id="135:1661" name="City" x="0" y="19" width="300" height="44" />
+          <frame id="135:1662" name="Pin + state tag" x="312" y="16" width="38" height="50">
+            <instance id="135:1663" name="Icon / pin" x="9" y="0" width="20" height="20" />
+            <frame id="135:1666" name="State tag / OR" x="0" y="24" width="38" height="26">
+              <text id="135:1667" name="State" x="9" y="5" width="20" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="135:1668" name="City / Seattle" x="0" y="416" width="350" height="83">
+          <text id="135:1669" name="City" x="0" y="19" width="297" height="44" />
+          <frame id="135:1670" name="Pin + state tag" x="309" y="16" width="41" height="50">
+            <instance id="135:1671" name="Icon / pin" x="10.5" y="0" width="20" height="20" />
+            <frame id="135:1674" name="State tag / WA" x="0" y="24" width="41" height="26">
+              <text id="135:1675" name="State" x="9" y="5" width="23" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="135:1676" name="City / Scottsdale" x="0" y="499" width="350" height="83">
+          <text id="135:1677" name="City" x="0" y="19" width="302" height="44" />
+          <frame id="135:1678" name="Pin + state tag" x="314" y="16" width="36" height="50">
+            <instance id="135:1679" name="Icon / pin" x="8" y="0" width="20" height="20" />
+            <frame id="135:1682" name="State tag / AZ" x="0" y="24" width="36" height="26">
+              <text id="135:1683" name="State" x="9" y="5" width="18" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <text id="135:1684" name="Licence line" x="20" y="936" width="183" height="16" />
+      <instance id="135:1685" name="Button / Schedule a Free Review" x="20" y="984" width="350" height="56" />
+    </frame>
+    <frame id="135:4566" name="S9 Final CTA" x="0" y="6704" width="390" height="776">
+      <instance id="135:4567" name="Brand wave corner (Bottom-right)" x="173.99998474121094" y="656" width="216.00001525878906" height="120.00000762939453" />
+      <text id="135:4570" name="Index / § 08" x="20" y="64" width="27" height="16" />
+      <rounded-rectangle id="135:4571" name="Hairline" x="64" y="71" width="306" height="1" />
+      <text id="135:4572" name="H2 (V)" x="20" y="104" width="350" height="132" />
+      <text id="135:4573" name="Body (V)" x="20" y="252" width="330" height="78" />
+      <instance id="135:4574" name="Button / Schedule a Free Review" x="20" y="362" width="350" height="56" />
+      <instance id="135:4578" name="Button / Call (916) 507-1005" x="20" y="430" width="350" height="56" />
+      <rounded-rectangle id="135:4582" name="Hairline" x="20" y="526" width="350" height="1" />
+      <frame id="135:4583" name="Trust line" x="20" y="550" width="350" height="128">
+        <frame id="135:4584" name="Trust / No upfront cost" x="0" y="0" width="350" height="26">
+          <instance id="135:4585" name="Icon / check" x="0" y="3" width="20" height="20" />
+          <text id="135:4587" name="Trust text" x="32" y="0" width="318" height="26" />
+        </frame>
+        <frame id="135:4588" name="Trust / You always have final say on any settlement" x="0" y="38" width="350" height="52">
+          <instance id="135:4589" name="Icon / check" x="0" y="16" width="20" height="20" />
+          <text id="135:4591" name="Trust text" x="32" y="0" width="318" height="52" />
+        </frame>
+        <frame id="135:4592" name="Trust / CA License No. 2B60428" x="0" y="102" width="350" height="26">
+          <instance id="135:4593" name="Icon / check" x="0" y="3" width="20" height="20" />
+          <text id="135:4595" name="Trust text" x="32" y="0" width="318" height="26" />
+        </frame>
+      </frame>
+    </frame>
+    <instance id="135:4596" name="Footer / Mobile" x="0" y="7480" width="390" height="853" />
+    <instance id="135:4632" name="Mobile call bar (sticky)" x="0" y="756" width="390" height="89" />
+  </frame>
+</canvas>

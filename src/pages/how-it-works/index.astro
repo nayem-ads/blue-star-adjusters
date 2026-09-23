@@ -1,5 +1,40 @@
 ---
-// Noindex stub (components agent). Replace with the real page when it is designed.
-import StubPage from '../../components/StubPage.astro';
+// How It Works (Figma desktop 128:3750, mobile 135:4640). Indexable.
+// data-node = desktop node id, data-node-m = mobile node id (QA swaps them for the 390 run).
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/how-it-works/Hero.astro';
+import Steps from '../../sections/how-it-works/Steps.astro';
+import WhoDoesWhat from '../../sections/how-it-works/WhoDoesWhat.astro';
+import Contract from '../../sections/how-it-works/Contract.astro';
+import BeforeYouCall from '../../sections/how-it-works/BeforeYouCall.astro';
+import FinalCta from '../../sections/how-it-works/FinalCta.astro';
+const title = 'How a Public Adjuster Works on Your Claim | Blue Star';
+const description = 'Five steps from first call to settlement. What we do, and what you decide.';
 ---
-<StubPage name="How It Works" eyebrow="The firm" />
+<Base title={title} description={description}>
+  <div class="hiw-hdr" data-node="128:3751" data-node-m="135:4641"><Header theme="light" /></div>
+  <main class="bs-hiw">
+    <Hero />
+    <Steps />
+    <WhoDoesWhat />
+    <Contract />
+    <BeforeYouCall />
+    <FinalCta />
+  </main>
+  <div data-node="128:5982" data-node-m="146:1056"><Footer /></div>
+  <CallBar />
+</Base>
+<style is:global>
+  /* Figma v2 header instance shows the current page underlined (Header has the underline, transparent until hover). */
+  /* 1024–1279: the layered 1280 layout (zigzag steps, rotated excerpt, hero row) doesn't fit, so scale the page body
+     down in two steps instead of letting it overflow. Header and footer handle these widths themselves. */
+  @media (min-width: 1024px) and (max-width: 1151.98px) { .bs-hiw { zoom: .8; } }
+  @media (min-width: 1152px) and (max-width: 1279.98px) { .bs-hiw { zoom: .9; } }
+  /* Below lg, Chrome sets the mobile text one pixel higher than Figma (baseline rounding). Nudge glyphs down 1px. */
+  @media (max-width: 1023.98px) {
+    .bs-hiw :where(.tm-body, .tm-body-strong, .tm-lead, .tm-h2, .tm-h3, .tm-display) { position: relative; top: 1px; }
+  }
+</style>

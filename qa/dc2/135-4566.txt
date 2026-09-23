@@ -1,0 +1,96 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/a506afed-f585-4ca9-b36c-b31850ec615e.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/f3f62c9d-13da-44c7-babb-11dc2ca8af98.svg";
+const imgBrandWaveCornerBottomRight = "https://www.figma.com/api/mcp/asset/6eaae9fe-af88-428b-89a4-91cd62929f05.svg";
+const imgIconCheck = "https://www.figma.com/api/mcp/asset/32f5bc89-9de6-44f9-8175-be0dfc8c1863.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid" | "Outline";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  const isOutlineAndDefault = style === "Outline" && state === "Default";
+  const isSolidAndDefault = style === "Solid" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] ${isOutlineAndDefault ? String.raw`border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid` : String.raw`bg-[var(--color\/royal,#133faa)]`}`} id={isOutlineAndDefault ? "node-37_140" : "node-37_128"}>
+      {isSolidAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      {isSolidAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+          {label}
+        </p>
+      )}
+      {isOutlineAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:141" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+        </div>
+      )}
+      {isOutlineAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:143">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+export default function S9FinalCta() {
+  return (
+    <div className="bg-[var(--color\/white,white)] relative size-full" data-node-id="135:4566" data-name="S9 Final CTA">
+      <div className="absolute h-[120px] left-[174px] top-[656px] w-[216px]" data-node-id="135:4567" data-name="Brand wave corner (Bottom-right)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBrandWaveCornerBottomRight} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[16px] left-[20px] text-[12px] text-[color:var(--color\/navy,#081d5e)] top-[64px] tracking-[0.24px] whitespace-nowrap" data-node-id="135:4570">
+        § 08
+      </p>
+      <div className="absolute bg-[var(--color\/line,#d9dfee)] h-px left-[64px] top-[71px] w-[306px]" data-node-id="135:4571" data-name="Hairline" />
+      <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:Bold'] font-bold leading-[44px] left-[20px] text-[40px] text-[color:var(--color\/navy,#081d5e)] top-[104px] tracking-[-1px] w-[350px]" data-node-id="135:4572" data-annotations="(V) Mike's line, word for word.">
+        Call Before the Carrier Sets the Narrative.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[26px] left-[20px] text-[16px] text-[color:var(--color\/ink,#070f33)] top-[252px] w-[330px]" data-node-id="135:4573" data-annotations="(V) Mike's line, word for word.">
+        Your insurance company has an adjuster protecting their interests. You have the right to one too.
+      </p>
+      <Button className="absolute bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] h-[56px] items-center justify-center left-[20px] px-[28px] py-[16px] rounded-[999px] top-[362px] w-[350px]" />
+      <Button className="absolute border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] h-[56px] items-center justify-center left-[20px] px-[28px] py-[16px] rounded-[999px] top-[430px] w-[350px]" label="Call (916) 507-1005" showIcon style="Outline" />
+      <div className="absolute bg-[var(--color\/line,#d9dfee)] h-px left-[20px] top-[526px] w-[350px]" data-node-id="135:4582" data-name="Hairline" />
+      <div className="absolute content-stretch flex flex-col gap-[12px] items-start left-[20px] overflow-clip top-[550px]" data-node-id="135:4583" data-annotations="Trust line per copy (CD 136), stacked for mobile." data-name="Trust line">
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="135:4584" data-name="Trust / No upfront cost">
+          <div className="relative shrink-0 size-[20px]" data-node-id="135:4585" data-name="Icon / check">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[26px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-[318px]" data-node-id="135:4587">
+            No upfront cost
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="135:4588" data-name="Trust / You always have final say on any settlement">
+          <div className="relative shrink-0 size-[20px]" data-node-id="135:4589" data-name="Icon / check">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[26px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-[318px]" data-node-id="135:4591">
+            You always have final say on any settlement
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="135:4592" data-name="Trust / CA License No. 2B60428">
+          <div className="relative shrink-0 size-[20px]" data-node-id="135:4593" data-name="Icon / check">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[26px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-[318px]" data-node-id="135:4595">
+            CA License No. 2B60428
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Mobile/Body: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

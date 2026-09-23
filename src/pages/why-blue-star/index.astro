@@ -1,0 +1,28 @@
+---
+// Why Blue Star (Figma desktop 128:3866, mobile 135:1578). Indexable.
+// data-node = desktop node id, data-node-m = mobile node id (QA swaps them for the 390 run).
+// The dark header sits inside the hero section (Figma embeds it in "Section / Hero + comparison").
+import Base from '../../layouts/Base.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/why-blue-star/Hero.astro';
+import Reasons from '../../sections/why-blue-star/Reasons.astro';
+import FinalCta from '../../sections/why-blue-star/FinalCta.astro';
+const title = 'Do You Need a Public Adjuster? Blue Star vs. Going It Alone';
+const description = 'Scope, inventory, control, cost, speed and final say. Handling a claim yourself vs. hiring a builder led public adjuster.';
+---
+<Base title={title} description={description}>
+  <main class="bs-why">
+    <Hero />
+    <Reasons />
+    <FinalCta />
+  </main>
+  <div data-node="128:6114" data-node-m="141:929"><Footer /></div>
+  <CallBar />
+</Base>
+<style is:global>
+  /* Below lg, Chrome sets the mobile text styles one pixel higher than Figma (baseline rounding). */
+  @media (max-width: 1023.98px) {
+    .bs-why :where(.tm-body, .tm-body-strong, .tm-h2, .tm-h3, .tm-display) { position: relative; top: 1px; }
+  }
+</style>

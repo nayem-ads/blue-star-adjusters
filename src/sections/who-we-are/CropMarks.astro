@@ -1,0 +1,13 @@
+---
+// Detail / Crop marks: royal 16px corner marks, 1.5px thick, on the chosen corners of the box (position/size via class).
+interface Props { class?: string; corners?: string; node?: string; nodeM?: string }
+const { class: cls = '', corners = 'tl tr bl br', node, nodeM } = Astro.props;
+const c = corners.split(/\s+/);
+const m = 'absolute bg-royal';
+---
+<div aria-hidden="true" class:list={['pointer-events-none', cls]} data-node={node} data-node-m={nodeM}>
+  {c.includes('tl') && <><span class={`${m} left-0 top-0 w-[16px] h-[1.5px]`}></span><span class={`${m} left-0 top-0 w-[1.5px] h-[16px]`}></span></>}
+  {c.includes('tr') && <><span class={`${m} right-0 top-0 w-[16px] h-[1.5px]`}></span><span class={`${m} right-0 top-0 w-[1.5px] h-[16px]`}></span></>}
+  {c.includes('bl') && <><span class={`${m} left-0 bottom-0 w-[16px] h-[1.5px]`}></span><span class={`${m} left-0 bottom-0 w-[1.5px] h-[16px]`}></span></>}
+  {c.includes('br') && <><span class={`${m} right-0 bottom-0 w-[16px] h-[1.5px]`}></span><span class={`${m} right-0 bottom-0 w-[1.5px] h-[16px]`}></span></>}
+</div>

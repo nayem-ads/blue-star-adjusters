@@ -1,0 +1,74 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/f826994c-a660-4c59-8cf0-fdfb83f20ac5.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/5e59c93d-72fc-454c-8830-892a204536c1.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid" | "Outline";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  const isOutlineAndDefault = style === "Outline" && state === "Default";
+  const isSolidAndDefault = style === "Solid" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] ${isOutlineAndDefault ? String.raw`border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid` : String.raw`bg-[var(--color\/royal,#133faa)]`}`} id={isOutlineAndDefault ? "node-37_140" : "node-37_128"}>
+      {isSolidAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      {isSolidAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+          {label}
+        </p>
+      )}
+      {isOutlineAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:141" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+        </div>
+      )}
+      {isOutlineAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:143">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+export default function SectionHero() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[24px] items-start pb-[28px] pt-[32px] px-[20px] relative size-full" data-node-id="128:6488" data-name="Section / Hero">
+      <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="128:6489" data-name="Eyebrow row">
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="128:6490" data-name="Eyebrow">
+          <div className="bg-[var(--color\/navy,#081d5e)] h-px relative shrink-0 w-[24px]" data-node-id="128:6491" data-name="Eyebrow rule" />
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6492">
+            Contact
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6493">
+          § 01
+        </p>
+      </div>
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:6494" data-name="Hero text">
+        <div className="font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] relative shrink-0 text-[46px] text-[color:var(--color\/navy,#081d5e)] tracking-[-1.15px] w-full" data-node-id="128:6495">
+          <p className="leading-[48px] mb-0">One Call.</p>
+          <p className="leading-[48px]">A Straight Answer.</p>
+        </div>
+        <p className="font-['Montserrat:Regular'] font-normal leading-[28px] relative shrink-0 text-[18px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="128:6496">{`Tell us what happened. We'll read your policy and the carrier's letters, and tell you whether we can add value, and why.`}</p>
+      </div>
+      <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-full" data-node-id="128:6497" data-name="CTA stack">
+        <Button className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] h-[56px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-full" />
+        <Button className="border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex gap-[10px] h-[56px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-full" label="Call (916) 507-1005" showIcon style="Outline" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Mobile/Display: Font(family: "Schibsted Grotesk", style: Bold, size: 46, weight: 700, lineHeight: 48, letterSpacing: -2.5), Mobile/Lead: Font(family: "Montserrat", style: Regular, size: 18, weight: 400, lineHeight: 28, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

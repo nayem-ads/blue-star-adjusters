@@ -1,0 +1,57 @@
+export default function SectionFeeQuestions() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start pb-[56px] pt-[64px] px-[20px] relative size-full" data-node-id="128:6599" data-name="Section/Fee questions">
+      <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="128:6600" data-name="FAQ/Index">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/royal,#133faa)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6601">
+          § 06
+        </p>
+        <div className="bg-[var(--color\/royal,#133faa)] h-px relative shrink-0 w-[40px]" data-node-id="128:6602" data-name="Index rule" />
+      </div>
+      <div className="h-[12px] relative shrink-0 w-[8px]" data-node-id="128:6603" data-name="Spacer" />
+      <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[36px] relative shrink-0 text-[32px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.48px] whitespace-nowrap" data-node-id="128:6604" data-annotations="Section: Fee questions (CD FAQ 2 and 3). Worked example slot pending fee confirmation (not on canvas: the doc has \[X\]% and \[$Y\] placeholders).">
+        Fee questions
+      </p>
+      <div className="h-[32px] relative shrink-0 w-[8px]" data-node-id="128:6605" data-name="Spacer" />
+      <div className="bg-[var(--color\/navy,#081d5e)] h-[2px] relative shrink-0 w-[350px]" data-node-id="128:6606" data-name="Rule navy" />
+      <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip py-[28px] relative shrink-0 w-[350px]" data-node-id="128:6607" data-name="QA row">
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[22px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.22px] w-[350px]" data-node-id="128:6608">
+          How are you paid?
+        </p>
+        <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0 w-[350px]" data-node-id="128:6609" data-name="Answer">
+          <div className="bg-[var(--color\/royal,#133faa)] relative self-stretch shrink-0 w-[2px]" data-node-id="128:6610" data-name="Margin rule" />
+          <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[332px]" data-node-id="128:6611" data-name="Answer column">
+            <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-[332px]" data-node-id="128:6612">
+              A percentage of the settlement, set in writing before we start. No upfront cost.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-[350px]" data-node-id="128:6613" data-name="Hairline" />
+      <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip py-[28px] relative shrink-0 w-[350px]" data-node-id="128:6614" data-name="QA row">
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[22px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.22px] w-[350px]" data-node-id="128:6615">
+          I already have an offer. Is it too late?
+        </p>
+        <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0 w-[350px]" data-node-id="128:6616" data-name="Answer">
+          <div className="bg-[var(--color\/royal,#133faa)] relative self-stretch shrink-0 w-[2px]" data-node-id="128:6617" data-name="Margin rule" />
+          <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[332px]" data-node-id="128:6618" data-name="Answer column">
+            <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] relative shrink-0 text-[16px] text-[color:var(--color\/ink,#070f33)] w-[332px]" data-node-id="128:6619" data-annotations="edited from: a semicolon (CD FAQ 3).">
+              Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.
+            </p>
+            <div className="border border-[var(--color\/royal,#133faa)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="128:6620" data-name="Chip/§15027(b)(7)">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/royal,#133faa)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6621">
+                §15027(b)(7)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-[350px]" data-node-id="128:6622" data-name="Hairline" />
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Mobile/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 32, weight: 600, lineHeight: 36, letterSpacing: -1.5), Mobile/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 22, weight: 600, lineHeight: 28, letterSpacing: -1), Mobile/Body: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

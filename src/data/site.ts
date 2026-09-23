@@ -11,6 +11,11 @@ export const ROUTES = {
   whatWeDo: '/claims/',
   freeClaimReview: '/free-claim-review/',
   thankYou: '/free-claim-review/thank-you/',
+  whoWeAre: '/about/',
+  contact: '/contact/',
+  howItWorks: '/how-it-works/',
+  fees: '/fees/',
+  whyBlueStar: '/why-blue-star/',
 } as const;
 
 // FormSubmit (https://formsubmit.co). First submission sends an activation email to FORM_TO.

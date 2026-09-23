@@ -1,0 +1,12 @@
+---
+// Detail / Dimension line (71:527): royal tick, rule, caption, rule, tick. Fills its container. Decorative.
+interface Props { label: string; class?: string; node?: string; nodeM?: string }
+const { label, class: cls = '', node, nodeM } = Astro.props;
+---
+<div aria-hidden="true" class:list={['flex items-center gap-[8px] h-[16px] w-full text-royal', cls]} data-node={node} data-node-m={nodeM}>
+  <span class="block w-px h-[12px] bg-royal shrink-0"></span>
+  <span class="block h-px flex-1 min-w-px bg-royal"></span>
+  <span class="t-caption whitespace-nowrap">{label}</span>
+  <span class="block h-px flex-1 min-w-px bg-royal"></span>
+  <span class="block w-px h-[12px] bg-royal shrink-0"></span>
+</div>

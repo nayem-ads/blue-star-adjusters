@@ -1,0 +1,70 @@
+const imgIconClock = "https://www.figma.com/api/mcp/asset/daea4089-a1f5-496d-9fab-3738860d0228.svg";
+const imgIcon = "https://www.figma.com/api/mcp/asset/609dffc1-e83a-40b7-9492-85f37f25eff3.svg";
+
+export default function SectionTimingNoteDocumentExcerpt() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex gap-[24px] items-start px-[80px] py-[120px] relative size-full" data-node-id="128:5872" data-name="Section / Timing note (document excerpt)">
+      <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip pt-[40px] relative shrink-0 w-[264px]" data-node-id="128:5873" data-name="Margin rail">
+        <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="128:5874" data-name="Rail rule row">
+          <div className="bg-[var(--color\/navy,#081d5e)] h-px relative shrink-0 w-[160px]" data-node-id="128:5876" data-name="Rail rule" />
+        </div>
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="128:5877" data-name="Rail label">
+          <div className="relative shrink-0 size-[24px]" data-node-id="128:5878" data-name="Icon / clock">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5881">
+            Timing note
+          </p>
+        </div>
+      </div>
+      <div className="h-[8px] relative shrink-0 w-[72px]" data-node-id="128:5882" data-name="Gutter" />
+      <div className="content-stretch flex flex-[1_0_0] flex-col gap-[56px] items-start min-w-px overflow-clip relative" data-node-id="128:5883" data-name="Excerpt column">
+        <div className="flex h-[347.106px] items-center justify-center relative shrink-0 w-[704.374px]" data-node-id="128:5884">
+          <div className="flex-none rotate-[-1.5deg]">
+            <div className="h-[329px] relative w-[696px]" data-name="Document excerpt (rotated)">
+              <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex flex-col gap-[24px] items-start left-[16px] overflow-clip pb-[44px] pt-[40px] px-[48px] shadow-[0px_12px_24px_0px_rgba(7,15,51,0.08)] top-[16px] w-[664px]" data-node-id="128:5885" data-name="Excerpt card">
+                <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="128:5886" data-name="Card head">
+                  <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="128:5888" data-name="Chip / § 05">
+                    <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:5889">
+                      § 05
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:5890" data-name="Card rule" />
+                <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[0] relative shrink-0 text-[22px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="128:5891" data-annotations="\[LEGAL CHECK\] wording (CD 398).;Highlighted clause: royal underline, 3px.">
+                  <span className="leading-[1.55]">{`In a declared disaster area, California bars public adjusters from soliciting you until seven days after the event ends. `}</span>
+                  <span className="[text-decoration-skip-ink:none] decoration-[#133faa] decoration-[3px] decoration-solid font-['Montserrat:SemiBold'] font-semibold leading-[1.55] underline">{`It doesn't apply if you call us first`}</span>
+                  <span className="leading-[1.55]">, and then we can look at your claim the same day.</span>
+                </p>
+              </div>
+              <div className="absolute h-[329px] left-0 top-0 w-[696px]" data-node-id="128:5892" data-name="Detail / Crop marks">
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1.5px] left-0 top-0 w-[16px]" data-node-id="I128:5892;71:534" data-name="Mark" />
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-0 top-0 w-[1.5px]" data-node-id="I128:5892;71:535" data-name="Mark" />
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1.5px] right-0 top-0 w-[16px]" data-node-id="I128:5892;71:536" data-name="Mark" />
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] right-0 top-0 w-[1.5px]" data-node-id="I128:5892;71:537" data-name="Mark" />
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] bottom-0 h-[1.5px] left-0 w-[16px]" data-node-id="I128:5892;71:538" data-name="Mark" />
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] bottom-0 h-[16px] left-0 w-[1.5px]" data-node-id="I128:5892;71:539" data-name="Mark" />
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] bottom-0 h-[1.5px] right-0 w-[16px]" data-node-id="I128:5892;71:540" data-name="Mark" />
+                <div className="absolute bg-[var(--color\/navy,#081d5e)] bottom-0 h-[16px] right-0 w-[1.5px]" data-node-id="I128:5892;71:541" data-name="Mark" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" data-node-id="128:5901" data-annotations="Links to tel:+19165071005" data-name="Button / Call (916) 507-1005">
+          <div className="relative shrink-0 size-[20px]" data-node-id="I128:5901;37:129" data-name="Icon">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="I128:5901;37:131">
+            Call (916) 507-1005
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

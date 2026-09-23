@@ -1,0 +1,73 @@
+const imgImgFeesHygienist = "https://www.figma.com/api/mcp/asset/87309101-7272-416f-88d4-4ba43c9e92e2.png";
+const imgIcon = "https://www.figma.com/api/mcp/asset/f014b469-82a9-4c2d-b691-b649e619b3f6.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/37a661ac-6489-430d-89bc-7eaa3e27cd93.svg";
+const imgIcon2 = "https://www.figma.com/api/mcp/asset/4b0eef39-3423-4f3c-b08a-841ad02a5bce.svg";
+
+export default function SectionSpecialists() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex gap-[96px] items-center pr-[80px] relative size-full" data-node-id="128:4479" data-name="Section/Specialists">
+      <div className="content-stretch flex flex-col gap-[12px] h-[720px] items-start relative shrink-0 w-[600px]" data-node-id="128:4480" data-name="Photo/fees-hygienist">
+        <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="I128:4480;41:71" data-annotations="Alt: An industrial hygienist in a white protective suit takes air samples in a smoke-damaged living room. AI illustrative. Replace with a real photo before launch." data-name="IMG:fees-hygienist">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[104.17%] left-0 max-w-none top-[-3.48%] w-full" src={imgImgFeesHygienist} />
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col items-start overflow-clip py-[96px] relative shrink-0 w-[504px]" data-node-id="128:4483" data-name="Specialists/Text">
+        <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="128:4484" data-name="Specialists/Index">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/royal,#133faa)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:4485">
+            § 05
+          </p>
+          <div className="bg-[var(--color\/royal,#133faa)] h-px relative shrink-0 w-[48px]" data-node-id="128:4486" data-name="Index rule" />
+        </div>
+        <div className="h-[24px] relative shrink-0 w-[8px]" data-node-id="128:4487" data-name="Spacer" />
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] min-w-full relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.72px] w-[min-content]" data-node-id="128:4488" data-annotations="Section: Specialists, when the claim needs them (CD 292). \[CLIENT: confirm\] whether specialists are included in the fee or billed at cost. If clients pay any costs, 'no upfront cost' must go.">
+          Specialists, when the claim needs them.
+        </p>
+        <div className="h-[40px] relative shrink-0 w-[8px]" data-node-id="128:4489" data-name="Spacer" />
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="128:4490" data-annotations="edited from: 'Industrial hygienists, engineers and accountants when the claim needs them.' Split into a list; the heading carries 'when the claim needs them'." data-name="Specialists/Roles">
+          <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:4491" data-name="Hairline" />
+          <div className="content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4492" data-name="Role/Industrial hygienists">
+            <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="128:4493" data-name="Icon circle">
+              <div className="relative shrink-0 size-[24px]" data-node-id="128:4494" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] whitespace-nowrap" data-node-id="128:4497">
+              Industrial hygienists
+            </p>
+          </div>
+          <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:4498" data-name="Hairline" />
+          <div className="content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4499" data-name="Role/Engineers">
+            <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="128:4500" data-name="Icon circle">
+              <div className="relative shrink-0 size-[24px]" data-node-id="128:4501" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] whitespace-nowrap" data-node-id="128:4504">
+              Engineers
+            </p>
+          </div>
+          <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:4505" data-name="Hairline" />
+          <div className="content-stretch flex gap-[20px] items-center overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="128:4506" data-name="Role/Accountants">
+            <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="128:4507" data-name="Icon circle">
+              <div className="relative shrink-0 size-[24px]" data-node-id="128:4508" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon2} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] whitespace-nowrap" data-node-id="128:4511">
+              Accountants
+            </p>
+          </div>
+          <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="128:4512" data-name="Hairline" />
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

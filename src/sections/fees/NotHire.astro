@@ -1,0 +1,37 @@
+---
+// § 04 When we'll tell you not to hire us. Desktop 128:4461 (y 2600, 1280×536); mobile 128:6333 (y 2532, 390×578).
+// Navy, faint white B-mark bottom right, heading left / royal rule + body + on-dark CTA right (desktop).
+import Button from '../../components/Button.astro';
+import SectionIndex from './SectionIndex.astro';
+import { ROUTES } from '../../data/site';
+---
+<section aria-labelledby="fees-nothire" class="relative bg-navy text-white overflow-hidden" data-node="128:4461" data-node-m="128:6333">
+  <div class="relative max-w-[1280px] mx-auto h-full">
+    <svg aria-hidden="true" class="bs-fees-mark absolute left-[189px] top-[263px] w-[324px] h-[393.375px] lg:left-[760px] lg:top-[120px] lg:w-[475.2px] lg:h-[576.95px]" viewBox="0 0 216 262.25" fill="none" data-node="128:4462" data-node-m="128:6334">
+      <path d="M0.25 28.25L59 0.25V259.75L0.25 232.25V28.25Z" fill="white"/>
+      <path d="M75.75 195L157.25 162.55L216 188.75V211.25L75.75 262.25V195Z" fill="white"/>
+      <path d="M75.75 0L182.75 50.75V113.25L75.75 62V0Z" fill="white" fill-opacity="0.7"/>
+      <path d="M75.75 85L216 153.25V188.75L75.75 126.25V85Z" fill="white" fill-opacity="0.7"/>
+    </svg>
+    <div class="relative flex flex-col px-[20px] pt-[64px] pb-[64px] lg:flex-row lg:items-end lg:justify-between lg:px-[80px] lg:pt-[130px] lg:pb-[128px]">
+      <div class="flex flex-col items-start lg:w-[544px]" data-node="128:4467">
+        <SectionIndex label="§ 04" theme="dark" node="128:4468" nodeM="128:6339" textNode="128:4469" textNodeM="128:6340" />
+        <h2 id="fees-nothire" class="bs-fees-nothire bs-fnudge m-0 mt-[24px] lg:mt-[28px] w-full" data-node="128:4471" data-node-m="128:6343">When we'll tell you not to hire us.</h2>
+      </div>
+      <div class="flex flex-col items-start mt-[32px] lg:mt-0 lg:w-[480px]" data-node="128:4472">
+        <span aria-hidden="true" class="block h-[2px] bg-royal w-[64px] lg:w-full" data-node="128:4473" data-node-m="128:6345"></span>
+        <p class="bs-fees-nothire-body bs-fnudge m-0 mt-[32px] w-full" data-node="128:4474" data-node-m="128:6347">If the carrier's offer is already fair, or the loss is small enough that our fee would outweigh what we add, we'll say so at the free review.</p>
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="mt-[40px] h-[56px] w-full lg:mt-[32px] lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="128:4475" data-node-m="128:6349">Schedule a Free Review</Button>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .bs-fees-mark { opacity: .07; }
+  .bs-fees-nothire { font-family: var(--font-display); font-weight: 700; font-size: 40px; line-height: 44px; letter-spacing: -0.02em; }
+  .bs-fees-nothire-body { font-family: var(--font-display); font-weight: 400; font-size: 22px; line-height: 32px; letter-spacing: 0; }
+  @media (min-width: 1024px) {
+    .bs-fees-nothire { font-size: 64px; line-height: 68px; letter-spacing: -0.02em; }
+    .bs-fees-nothire-body { font-size: 28px; line-height: 40px; letter-spacing: -0.28px; }
+  }
+</style>

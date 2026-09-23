@@ -78,3 +78,21 @@ Report the real numbers. Never claim a pass you haven't measured.
 - Figma calls used.
 - Open issues you couldn't fix, with the reason.
 - Any shared-component changes you need from the lead.
+
+---
+## v2 pages (Who We Are, Contact, How It Works, Fees, Why Blue Star): what's different from v1
+- **Don't call Figma yourself.** A fetcher agent is saving every section's `get_design_context` to `qa/dc2/<nodeId with : replaced by ->.txt`, working through `qa/dc2/QUEUE.tsv` (desktop sections first, then mobile). When it finishes, it writes `qa/dc2/DONE`.
+  - While you wait for a file, build from `design/meta/<page>.xml` and the reference PNG. Poll with `sleep 30`.
+  - Only when `DONE` exists and a file you need is still missing may you make **at most 4** paced Figma calls yourself (1 every 45s).
+- **Shared components are done.** Reuse them: Header (light), Footer, CallBar, Button, Eyebrow, FormField, FormSubmitFields + `src/scripts/forms.ts`, WaveCorner, Img, Icon, Logo. Read each file's header comment. Look at similar v1 sections (e.g. `src/sections/home-a/FinalCta.astro`, `src/sections/fcr/*`) for patterns, but don't edit files you don't own.
+- **Mobile QA:** put `data-node` (desktop id) and `data-node-m` (mobile id) on elements, then run:
+  `node scripts/pixel-diff.mjs <route> <frame> --base http://127.0.0.1:4321 --mobile [--callbar-y 755]`
+  It swaps the ids and pins the call bar at Figma's y. You need no prep script for this.
+- **Mobile baseline fix:** Chrome sets text 1px higher than Figma. Wrap your page in `<main class="bs-<page>">` and add a scoped rule like:
+  `@media (max-width:1023.98px){ .bs-<page> :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }`
+- **Copy:** use Figma's text exactly. `claude/bluestar-pages-v3-copy.md` is the copy source Figma was built from. Read it with the Projects tool (`project_read`) if you need to check a line.
+- **Routes:** use `ROUTES` in `src/data/site.ts` (`whoWeAre /about/`, `contact /contact/`, `howItWorks /how-it-works/`, `fees /fees/`, `whyBlueStar /why-blue-star/`). Every CTA and link must be real.
+  - "The First 48 Hours" links to `/first-48-hours/` (stub exists).
+  - "Meet Michael Rapport" links to `ROUTES.founder`.
+  - Office cards link to the existing `/locations/...` stubs.
+- **Pass bar:** same as v1. The pixel diff must stay ≤3% per section; above that, write down why. Geometry within 1px. Height delta 0.

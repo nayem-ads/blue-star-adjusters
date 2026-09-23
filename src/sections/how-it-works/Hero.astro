@@ -1,0 +1,59 @@
+---
+// How It Works / Hero. Desktop 128:3774 (1280×688), mobile 135:4658 (390×722).
+// Desktop: eyebrow, H1, lead + CTAs row, mini timeline (chips jump to each step).
+// Mobile: eyebrow, H1, lead, stacked CTAs, field photograph. The mobile timeline lives in the Steps section.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import Grid from './Grid.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const chips = [
+  { n: '01', label: 'Free Review', d: '128:3799', t: '128:3801' },
+  { n: '02', label: 'Policy Review', d: '128:3802', t: '128:3804' },
+  { n: '03', label: 'Scope the Loss', d: '128:3805', t: '128:3807' },
+  { n: '04', label: 'Build Your Claim', d: '128:3808', t: '128:3810' },
+  { n: '05', label: 'Maximize Settlement', d: '128:3811', t: '128:3813' },
+];
+---
+<section aria-labelledby="hiw-title" class="relative overflow-hidden bg-paper h-[722px] lg:h-[688px]" data-node="128:3774" data-node-m="135:4658">
+  <Grid w={1280} h={692} skipMajorInMinor class="hidden lg:block lg:left-1/2 lg:-translate-x-1/2" />
+  <Grid w={390} h={824} class="lg:hidden" />
+  <div class="relative max-w-[1280px] mx-auto flex flex-col items-start px-[20px] pt-[32px] lg:px-[80px] lg:pt-[96px]">
+    <div class="w-fit" data-node="128:3775" data-node-m="135:4659"><Eyebrow>How It Works</Eyebrow></div>
+    <h1 id="hiw-title" class="m-0 mt-[20px] lg:mt-[32px] text-navy tm-display lg:t-display-xl w-full" data-node="128:3779" data-node-m="135:4663">Five Steps.<br /> You Have the Final Say.</h1>
+
+    <div class="w-full mt-[24px] lg:mt-[48px] flex flex-col lg:flex-row lg:items-end lg:justify-between" data-node="128:3781">
+      <div class="flex items-start gap-[16px] lg:gap-[20px]" data-node="128:3782" data-node-m="135:4665">
+        <span aria-hidden="true" class="block w-[2px] h-[56px] lg:h-[68px] bg-royal shrink-0" data-node="128:3783" data-node-m="135:4666"></span>
+        <Icon name="clock" size={24} class="hidden lg:block shrink-0 text-royal" />
+        <p class="hiw-lead m-0 w-[332px] lg:w-[470px] text-ink font-display font-medium text-[22px] leading-[28px] tracking-[-0.01em] lg:text-[28px] lg:leading-[34px]" data-node="128:3787" data-node-m="135:4667">Our ability to affect your outcome diminishes with time.</p>
+      </div>
+      <div class="flex flex-col gap-[12px] mt-[24px] w-full lg:mt-0 lg:flex-row lg:gap-[16px] lg:w-auto" data-node="128:3788" data-node-m="135:4669">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] lg:h-[52px] lg:w-[253px]" data-node="128:3789" data-node-m="135:4670">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] lg:h-[52px] lg:w-[235px]" data-node="128:3793" data-node-m="135:4674">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+
+    <nav aria-label="Jump to a step" class="hidden lg:flex relative w-full mt-[88px] items-center justify-between" data-node="128:3798">
+      <span aria-hidden="true" class="absolute left-0 top-[23px] w-full h-px bg-navy"></span>
+      {chips.map((c, i) => (
+        <a href={`#step-${c.n}`} class:list={['hiw-chip relative flex items-center h-[42px] pl-[16px] pr-[20px] rounded-[24px] border border-navy box-border whitespace-pre font-body font-medium text-[15px] leading-[24px]', i === 0 ? 'bg-navy text-white' : 'bg-white text-ink']} data-node={c.d}>
+          <span class:list={['font-display font-semibold', i === 0 ? 'text-white' : 'text-royal']}>{c.n}</span><span>{`  ${c.label}`}</span>
+        </a>
+      ))}
+    </nav>
+
+    <figure class="lg:hidden m-0 mt-[24px] w-full" data-node-m="135:4679">
+      <div class="w-full h-[164px] overflow-hidden">
+        <Img node="I135:4679;41:71" alt="A Blue Star adjuster and a homeowner stand in a fire-damaged living room during an on-site inspection." class="w-full h-full object-cover" priority />
+      </div>
+      <figcaption class="mt-[12px] t-caption text-ink">Field photograph</figcaption>
+    </figure>
+  </div>
+</section>
+<style>
+  @media (max-width: 1023.98px) { .hiw-lead { position: relative; top: 1px; } }
+  .hiw-chip { transition: background-color .15s ease, color .15s ease; }
+  .hiw-chip:not(.bg-navy):hover { background: var(--color-paper); }
+</style>

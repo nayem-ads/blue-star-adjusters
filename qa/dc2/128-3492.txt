@@ -1,0 +1,96 @@
+type DetailDimensionLineProps = {
+  className?: string;
+  label?: string;
+};
+
+function DetailDimensionLine({ className, label = "Measured, not estimated" }: DetailDimensionLineProps) {
+  return (
+    <div className={className || "content-stretch flex gap-[8px] items-center relative w-[320px]"} data-node-id="71:527" data-name="Detail/Dimension line">
+      <div className="bg-[var(--color\/royal,#133faa)] h-[12px] relative shrink-0 w-px" data-node-id="71:528" data-name="Tick" />
+      <div className="bg-[var(--color\/royal,#133faa)] flex-[1_0_0] h-px min-w-px relative" data-node-id="71:529" data-name="Rule" />
+      <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/royal,#133faa)] tracking-[0.12px] whitespace-nowrap" data-node-id="71:530">
+        {label}
+      </p>
+      <div className="bg-[var(--color\/royal,#133faa)] flex-[1_0_0] h-px min-w-px relative" data-node-id="71:531" data-name="Rule" />
+      <div className="bg-[var(--color\/royal,#133faa)] h-[12px] relative shrink-0 w-px" data-node-id="71:532" data-name="Tick" />
+    </div>
+  );
+}
+
+export default function SectionFeeStatement() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start pb-[116px] pt-[112px] px-[80px] relative size-full" data-node-id="128:3492" data-name="Section/Fee statement">
+      <div className="absolute inset-0 overflow-clip" data-node-id="128:3505" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-0 opacity-5 top-0 w-px" data-node-id="128:3506" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[40px] opacity-5 top-0 w-px" data-node-id="128:3507" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[80px] opacity-10 top-0 w-px" data-node-id="128:3508" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[120px] opacity-5 top-0 w-px" data-node-id="128:3509" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[160px] opacity-5 top-0 w-px" data-node-id="128:3510" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[200px] opacity-5 top-0 w-px" data-node-id="128:3511" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[240px] opacity-10 top-0 w-px" data-node-id="128:3512" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[280px] opacity-5 top-0 w-px" data-node-id="128:3513" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[320px] opacity-5 top-0 w-px" data-node-id="128:3514" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[360px] opacity-5 top-0 w-px" data-node-id="128:3515" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[400px] opacity-10 top-0 w-px" data-node-id="128:3516" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[440px] opacity-5 top-0 w-px" data-node-id="128:3517" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[480px] opacity-5 top-0 w-px" data-node-id="128:3518" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[520px] opacity-5 top-0 w-px" data-node-id="128:3519" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[560px] opacity-10 top-0 w-px" data-node-id="128:3520" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[600px] opacity-5 top-0 w-px" data-node-id="128:3521" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[640px] opacity-5 top-0 w-px" data-node-id="128:3522" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[680px] opacity-5 top-0 w-px" data-node-id="128:3523" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[720px] opacity-10 top-0 w-px" data-node-id="128:3524" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[760px] opacity-5 top-0 w-px" data-node-id="128:3525" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[800px] opacity-5 top-0 w-px" data-node-id="128:3526" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[840px] opacity-5 top-0 w-px" data-node-id="128:3527" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[880px] opacity-10 top-0 w-px" data-node-id="128:3528" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[920px] opacity-5 top-0 w-px" data-node-id="128:3529" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[960px] opacity-5 top-0 w-px" data-node-id="128:3530" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[1000px] opacity-5 top-0 w-px" data-node-id="128:3531" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[1040px] opacity-10 top-0 w-px" data-node-id="128:3532" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[1080px] opacity-5 top-0 w-px" data-node-id="128:3533" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[1120px] opacity-5 top-0 w-px" data-node-id="128:3534" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[1160px] opacity-5 top-0 w-px" data-node-id="128:3535" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[1200px] opacity-10 top-0 w-px" data-node-id="128:3536" data-name="V major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[608px] left-[1240px] opacity-5 top-0 w-px" data-node-id="128:3537" data-name="V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-0 w-[1280px]" data-node-id="128:3538" data-name="H major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[40px] w-[1280px]" data-node-id="128:3539" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[80px] w-[1280px]" data-node-id="128:3540" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[120px] w-[1280px]" data-node-id="128:3541" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[160px] w-[1280px]" data-node-id="128:3542" data-name="H major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[200px] w-[1280px]" data-node-id="128:3543" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[240px] w-[1280px]" data-node-id="128:3544" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[280px] w-[1280px]" data-node-id="128:3545" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[320px] w-[1280px]" data-node-id="128:3546" data-name="H major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[360px] w-[1280px]" data-node-id="128:3547" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[400px] w-[1280px]" data-node-id="128:3548" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[440px] w-[1280px]" data-node-id="128:3549" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[480px] w-[1280px]" data-node-id="128:3550" data-name="H major" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[520px] w-[1280px]" data-node-id="128:3551" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[560px] w-[1280px]" data-node-id="128:3552" data-name="H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[600px] w-[1280px]" data-node-id="128:3553" data-name="H" />
+      </div>
+      <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="128:3493" data-name="Statement/Index">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/royal,#133faa)] tracking-[0.26px] whitespace-nowrap" data-node-id="128:3494">
+          § 01
+        </p>
+        <div className="bg-[var(--color\/royal,#133faa)] h-px relative shrink-0 w-[48px]" data-node-id="128:3495" data-name="Index rule" />
+      </div>
+      <div className="h-[40px] relative shrink-0 w-[8px]" data-node-id="128:3496" data-name="Spacer" />
+      <div className="content-stretch flex flex-col gap-[36px] items-start overflow-clip relative shrink-0" data-node-id="128:3554" data-name="Statement/Measured">
+        <div className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] relative shrink-0 text-[96px] text-[color:var(--color\/navy,#081d5e)] tracking-[-2.88px] whitespace-nowrap" data-node-id="128:3497" data-annotations="Locked fee line, word for word. No percentage anywhere. Signature move for this page: statement as architecture.">
+          <p className="leading-[90px] mb-0">No upfront cost.</p>
+          <p className="leading-[90px] mb-0">{`We're paid a percentage`}</p>
+          <p className="leading-[90px]">of what we recover.</p>
+        </div>
+        <DetailDimensionLine className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" label="Set in writing before we start" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Caption: Font(family: "Montserrat", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 1).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

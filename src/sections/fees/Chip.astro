@@ -1,0 +1,8 @@
+---
+// Citation chip: 1px royal stroke, royal label. Desktop 13/18 with 12px sides (28 tall); mobile 12/16 with 8px sides (26 tall).
+interface Props { class?: string; node?: string; nodeM?: string; textNode?: string; textNodeM?: string }
+const { class: cls = '', node, nodeM, textNode, textNodeM } = Astro.props;
+---
+<span class:list={['inline-flex items-start w-fit rounded-[2px] border border-royal text-royal px-[8px] py-[4px] lg:px-[12px] lg:py-[4px]', cls]} data-node={node} data-node-m={nodeM}>
+  <span class="tm-label lg:t-label whitespace-nowrap" data-node={textNode} data-node-m={textNodeM}><slot /></span>
+</span>

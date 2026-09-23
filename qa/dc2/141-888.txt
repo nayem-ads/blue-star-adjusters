@@ -1,0 +1,112 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/b5b2b36e-3ff2-438e-ba7a-e75499091b9e.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/894e272c-607d-4b73-9d04-e7d890c64be7.svg";
+const imgImgWoodHouse = "https://www.figma.com/api/mcp/asset/a7892b96-e423-4f58-98ec-51eeb96b3d54.png";
+const imgDetailBMarkFaint = "https://www.figma.com/api/mcp/asset/32b8234f-6104-4e57-ad8c-1eb8fb5a8ad4.svg";
+const imgIconCheck = "https://www.figma.com/api/mcp/asset/88cb1cab-717d-4691-aa00-e02a303435af.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark" | "Outline on-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  const isOnDarkAndDefault = style === "On-dark" && state === "Default";
+  const isOutlineOnDarkAndDefault = style === "Outline on-dark" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] ${isOutlineOnDarkAndDefault ? String.raw`border-[1.5px] border-[var(--color\/white,white)] border-solid` : String.raw`bg-[var(--color\/white,white)]`}`} id={isOutlineOnDarkAndDefault ? "node-37_164" : "node-37_152"}>
+      {isOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      {isOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+          {label}
+        </p>
+      )}
+      {isOutlineOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:165" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+        </div>
+      )}
+      {isOutlineOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:167">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+export default function SectionFinalCtaSplit() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex flex-col items-start relative size-full" data-node-id="141:888" data-name="Section / Final CTA (split)">
+      <div className="h-[376px] overflow-clip relative shrink-0 w-full" data-node-id="141:889" data-name="Split / photo">
+        <div className="absolute h-[376px] left-0 top-0 w-[390px]" data-node-id="141:890" data-annotations="Alt text: A burned wood-frame house and a fire-damaged car after a wildfire.;Real field photograph (client supplied). Mobile re-crop." data-name="IMG:wood-house">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-full left-[-6.24%] max-w-none top-0 w-[128.55%]" src={imgImgWoodHouse} />
+          </div>
+        </div>
+        <div className="absolute bg-[var(--color\/ink,#070f33)] content-stretch flex items-start left-[20px] overflow-clip px-[8px] py-[4px] top-[332px]" data-node-id="141:891" data-name="Caption chip">
+          <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/white,white)] tracking-[0.12px] whitespace-nowrap" data-node-id="141:892">
+            Field photograph
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip pb-[64px] pt-[56px] px-[20px] relative shrink-0 w-full" data-node-id="141:893" data-name="Split / navy panel">
+        <div className="absolute h-[360px] left-[226.92px] top-[489px] w-[296.511px]" data-node-id="141:894" data-name="Detail / B-mark (faint)">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDetailBMarkFaint} />
+        </div>
+        <div className="content-stretch flex items-start overflow-clip relative shrink-0" data-node-id="141:899" data-name="Rule motif">
+          <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[48px]" data-node-id="141:900" data-name="Rule / royal" />
+        </div>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[44px] min-w-full relative shrink-0 text-[40px] text-[color:var(--color\/white,white)] tracking-[-0.4px] w-[min-content]" data-node-id="141:901" data-annotations="H2 (V), word for word.">
+          Call Before the Carrier Sets the Narrative.
+        </p>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[26px] min-w-full relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="141:902" data-annotations="Body (V), word for word.">{`Your insurance company has an adjuster protecting their interests. You have the right to one too. We level the playing field, and we fight to make sure you get every dollar you're owed.`}</p>
+        <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip pt-[8px] relative shrink-0 w-full" data-node-id="141:903" data-name="Buttons">
+          <Button className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] h-[56px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-full" />
+          <Button className="border-[1.5px] border-[var(--color\/white,white)] border-solid content-stretch flex gap-[10px] h-[56px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0 w-full" label="Call (916) 507-1005" showIcon style="Outline on-dark" />
+        </div>
+        <div className="content-stretch flex flex-col items-start overflow-clip pt-[8px] relative shrink-0 w-full" data-node-id="141:913" data-annotations="Global trust line split into three rows, word for word." data-name="Trust line">
+          <div className="bg-[var(--color\/white,white)] h-px opacity-20 relative shrink-0 w-full" data-node-id="141:914" data-name="Hairline" />
+          <div className="content-stretch flex gap-[12px] items-center overflow-clip py-[12px] relative shrink-0 w-full" data-node-id="141:915" data-name="Trust / No upfront cost">
+            <div className="relative shrink-0 size-[20px]" data-node-id="141:916" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[22px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="141:918">
+              No upfront cost
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-20 relative shrink-0 w-full" data-node-id="141:919" data-name="Hairline" />
+          <div className="content-stretch flex gap-[12px] items-center overflow-clip py-[12px] relative shrink-0 w-full" data-node-id="141:920" data-name="Trust / You always have final say on any settlement">
+            <div className="relative shrink-0 size-[20px]" data-node-id="141:921" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[22px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="141:923">
+              You always have final say on any settlement
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-20 relative shrink-0 w-full" data-node-id="141:924" data-name="Hairline" />
+          <div className="content-stretch flex gap-[12px] items-center overflow-clip py-[12px] relative shrink-0 w-full" data-node-id="141:925" data-name="Trust / CA License No. 2B60428">
+            <div className="relative shrink-0 size-[20px]" data-node-id="141:926" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[22px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="141:928">
+              CA License No. 2B60428
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Caption: Font(family: "Montserrat", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 1), Mobile/Body: Font(family: "Montserrat", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

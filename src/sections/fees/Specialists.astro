@@ -1,0 +1,36 @@
+---
+// § 05 Specialists, when the claim needs them. Desktop 128:4479 (y 3136, 1280×720); mobile 128:6564 (y 3110, 390×832).
+// Desktop: photo 600×720 flush left, text column at x 696. Mobile: photo 390×480, white text panel (370 wide,
+// flush right) overlapping the photo's last 56px.
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import SectionIndex from './SectionIndex.astro';
+const alt = 'An industrial hygienist in a white protective suit takes air samples in a smoke-damaged living room.';
+const roles = [
+  { d: '128:4492', m: '128:6578', cd: '128:4493', cm: '128:6579', icon: 'search', label: 'Industrial hygienists', w: 'w-[211px] lg:w-[268px]', td: '128:4497', tm: '128:6583' },
+  { d: '128:4499', m: '128:6585', cd: '128:4500', cm: '128:6586', icon: 'ruler', label: 'Engineers', w: 'w-[103px] lg:w-[132px]', td: '128:4504', tm: '128:6590' },
+  { d: '128:4506', m: '128:6592', cd: '128:4507', cm: '128:6593', icon: 'document', label: 'Accountants', w: 'w-[132px] lg:w-[168px]', td: '128:4511', tm: '128:6597' },
+];
+---
+<section aria-labelledby="fees-specialists" class="bg-white" data-node="128:4479" data-node-m="128:6564">
+  <div class="max-w-[1280px] mx-auto flex flex-col pb-[56px] lg:pb-0 lg:flex-row lg:gap-[96px] lg:pr-[80px] lg:h-[720px]">
+    <div class="w-full h-[480px] shrink-0 lg:flex-[0_1_600px] lg:min-w-0 lg:h-[720px]" data-node="128:4480" data-node-m="128:6565">
+      <Img node="I128:4480;41:71" alt={alt} class="hidden lg:block w-full h-full object-cover" />
+      <Img node="I128:6565;41:71" alt={alt} class="lg:hidden block w-full h-full object-cover" />
+    </div>
+    <div class="relative -mt-[56px] pl-[20px] lg:m-0 lg:p-0 lg:flex-[0_1_504px] lg:min-w-[360px]" data-node-m="128:6568">
+      <div class="bg-white px-[20px] pt-[32px] lg:p-0 lg:pt-[131px]" data-node-m="128:6569">
+        <SectionIndex label="§ 05" node="128:4484" nodeM="128:6570" textNode="128:4485" textNodeM="128:6571" />
+        <h2 id="fees-specialists" class="m-0 mt-[12px] lg:mt-[24px] text-navy tm-h2 lg:t-h2" data-node="128:4488" data-node-m="128:6574">Specialists, when the claim needs them.</h2>
+        <ul class="m-0 p-0 list-none mt-[24px] lg:mt-[40px] border-t border-line" data-node="128:4490" data-node-m="128:6576">
+          {roles.map((r) => (
+            <li class="flex items-center gap-[16px] lg:gap-[20px] h-[65px] lg:h-[89px] border-b border-line" data-node={r.d} data-node-m={r.m}>
+              <span aria-hidden="true" class="flex items-center justify-center rounded-full shrink-0 w-[40px] h-[40px] border border-navy text-navy lg:w-[48px] lg:h-[48px] lg:border-0 lg:bg-paper" data-node={r.cd} data-node-m={r.cm}><Icon name={r.icon} size={24} /></span>
+              <p class:list={['m-0 text-navy lg:text-ink tm-h3 lg:t-h3 whitespace-nowrap', r.w]} data-node={r.td} data-node-m={r.tm}>{r.label}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

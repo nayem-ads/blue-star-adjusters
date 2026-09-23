@@ -1,0 +1,162 @@
+const imgIconPhone = "https://www.figma.com/api/mcp/asset/b71e8038-8e6f-461c-bce4-943f37c2ea2c.svg";
+const imgIconArrowTapAffordance = "https://www.figma.com/api/mcp/asset/a85ac633-1267-4729-9c5f-6254a08ee00a.svg";
+const imgIconMail = "https://www.figma.com/api/mcp/asset/72d92845-515b-4b00-938d-87b96628d570.svg";
+const imgIconPin = "https://www.figma.com/api/mcp/asset/64a253be-d369-4243-85c2-82babbf78a32.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/200bd324-a4aa-416e-8c5a-376782113cf8.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/c62e6de7-9515-4147-ae2d-fba509d11452.svg";
+
+export default function SectionCallContactLedger() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col gap-[40px] items-start pb-[56px] pt-[64px] px-[20px] relative size-full" data-node-id="128:6623" data-name="Section / Call + contact ledger">
+      <div className="absolute inset-0 overflow-clip" data-node-id="128:6680" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute h-[802px] left-0 opacity-5 overflow-clip top-0 w-[390px]" data-node-id="128:6681" data-name="Minor lines">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[40px] top-0 w-px" data-node-id="128:6684" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[80px] top-0 w-px" data-node-id="128:6685" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[120px] top-0 w-px" data-node-id="128:6686" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[160px] top-0 w-px" data-node-id="128:6687" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[240px] top-0 w-px" data-node-id="128:6689" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[280px] top-0 w-px" data-node-id="128:6690" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[320px] top-0 w-px" data-node-id="128:6691" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[360px] top-0 w-px" data-node-id="128:6692" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[40px] w-[390px]" data-node-id="128:6694" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[80px] w-[390px]" data-node-id="128:6695" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[120px] w-[390px]" data-node-id="128:6696" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[160px] w-[390px]" data-node-id="128:6697" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[240px] w-[390px]" data-node-id="128:6699" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[280px] w-[390px]" data-node-id="128:6700" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[320px] w-[390px]" data-node-id="128:6701" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[360px] w-[390px]" data-node-id="128:6702" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[440px] w-[390px]" data-node-id="128:6704" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[480px] w-[390px]" data-node-id="128:6705" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[520px] w-[390px]" data-node-id="128:6706" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[560px] w-[390px]" data-node-id="128:6707" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[640px] w-[390px]" data-node-id="128:6709" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[680px] w-[390px]" data-node-id="128:6710" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[720px] w-[390px]" data-node-id="128:6711" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[760px] w-[390px]" data-node-id="128:6712" data-name="H" />
+        </div>
+        <div className="absolute h-[802px] left-0 opacity-10 overflow-clip top-0 w-[390px]" data-node-id="128:6682" data-name="Major lines">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-0 top-0 w-px" data-node-id="128:6683" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[802px] left-[200px] top-0 w-px" data-node-id="128:6688" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-0 w-[390px]" data-node-id="128:6693" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[200px] w-[390px]" data-node-id="128:6698" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[400px] w-[390px]" data-node-id="128:6703" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[600px] w-[390px]" data-node-id="128:6708" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[800px] w-[390px]" data-node-id="128:6713" data-name="H" />
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0 w-full" data-node-id="128:6624" data-name="Section index">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6625">
+          § 02
+        </p>
+        <div className="bg-[var(--color\/line,#d9dfee)] flex-[1_0_0] h-px min-w-px relative" data-node-id="128:6626" data-name="Index hairline" />
+      </div>
+      <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip py-[4px] relative shrink-0 w-full" data-node-id="128:6627" data-annotations="Tap target: the whole block dials tel:+19165071005 (full width, min 44px tall)." data-name="Tap/Call (916) 507-1005">
+        <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0" data-node-id="128:6628" data-name="Call label">
+          <div className="relative shrink-0 size-[20px]" data-node-id="128:6629" data-name="Icon / phone">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPhone} />
+          </div>
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[16px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6631">
+            Call
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-none relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-1.44px] whitespace-nowrap" data-node-id="128:6632">
+          (916) 507-1005
+        </p>
+        <div className="bg-[var(--color\/royal,#133faa)] h-[4px] relative shrink-0 w-[316px]" data-node-id="128:6633" data-name="Underline (royal 4px)" />
+      </div>
+      <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="128:6634" data-name="Contact ledger">
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="128:6635" data-name="Tap/Call">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:6636" data-name="Icon circle">
+            <div className="relative shrink-0 size-[20px]" data-node-id="128:6637" data-name="Icon / phone">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPhone} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip pt-[4px] relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:6639" data-name="Label + value">
+            <p className="leading-[16px] relative shrink-0 text-[12px] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6640">
+              Call
+            </p>
+            <p className="leading-[26px] min-w-full relative shrink-0 text-[16px] w-[min-content]" data-node-id="128:6641">
+              (916) 507-1005
+            </p>
+          </div>
+          <div className="relative shrink-0 size-[20px]" data-node-id="128:6642" data-name="Icon / arrow (tap affordance)">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrowTapAffordance} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="128:6644" data-name="Tap/Email">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:6645" data-name="Icon circle">
+            <div className="relative shrink-0 size-[20px]" data-node-id="128:6646" data-name="Icon / mail">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMail} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip pt-[4px] relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:6649" data-name="Label + value">
+            <p className="leading-[16px] relative shrink-0 text-[12px] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6650">
+              Email
+            </p>
+            <p className="leading-[26px] min-w-full relative shrink-0 text-[16px] w-[min-content]" data-node-id="128:6651">
+              mike@bluestaradjusters.com
+            </p>
+          </div>
+          <div className="relative shrink-0 size-[20px]" data-node-id="128:6652" data-name="Icon / arrow (tap affordance)">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrowTapAffordance} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="128:6654" data-name="Tap/Head office (map)">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:6655" data-name="Icon circle">
+            <div className="relative shrink-0 size-[20px]" data-node-id="128:6656" data-name="Icon / pin">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip pt-[4px] relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:6659" data-name="Label + value">
+            <p className="leading-[16px] relative shrink-0 text-[12px] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6660">
+              Head office
+            </p>
+            <p className="leading-[26px] min-w-full relative shrink-0 text-[16px] w-[min-content]" data-node-id="128:6661">
+              1610 R Street, Suite 300, Sacramento, California 95811
+            </p>
+          </div>
+          <div className="relative shrink-0 size-[20px]" data-node-id="128:6662" data-name="Icon / arrow (tap affordance)">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrowTapAffordance} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="128:6664" data-name="Row / Hours">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:6665" data-name="Icon circle">
+            <div className="relative shrink-0 size-[20px]" data-node-id="128:6666" data-name="Icon / clock">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip pt-[4px] relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:6669" data-name="Label + value">
+            <p className="leading-[16px] relative shrink-0 text-[12px] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6670">
+              Hours
+            </p>
+            <p className="leading-[26px] min-w-full relative shrink-0 text-[16px] w-[min-content]" data-node-id="128:6671">
+              Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday.
+            </p>
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[16px] items-start overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="128:6672" data-name="Row / Licence">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="128:6673" data-name="Icon circle">
+            <div className="relative shrink-0 size-[20px]" data-node-id="128:6674" data-name="Icon / shield">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col font-['Montserrat:SemiBold'] font-semibold gap-[4px] items-start min-w-px overflow-clip pt-[4px] relative text-[color:var(--color\/ink,#070f33)]" data-node-id="128:6677" data-name="Label + value">
+            <p className="leading-[16px] relative shrink-0 text-[12px] tracking-[0.24px] whitespace-nowrap" data-node-id="128:6678">
+              Licence
+            </p>
+            <p className="leading-[26px] min-w-full relative shrink-0 text-[16px] w-[min-content]" data-node-id="128:6679">
+              CA DOI License No. 2B60428
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Mobile/Label: Font(family: "Montserrat", style: SemiBold, size: 12, weight: 600, lineHeight: 16, letterSpacing: 2), Mobile/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 26, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

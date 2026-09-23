@@ -17,15 +17,15 @@ const heroD = img['53:71'], heroM = img['58:465'];
       <source src="/hero-video.mp4" type="video/mp4" media="(min-width: 1024px)" />
       <source src="/hero-video-mobile.mp4" type="video/mp4" />
     </video>
-    <div aria-hidden="true" class="absolute inset-0 bg-ink lg:bg-black opacity-[.36]"></div>
+    <div aria-hidden="true" class="absolute inset-0 bg-ink lg:bg-black opacity-[.10]"></div>
     <div aria-hidden="true" class="hero-soft absolute bg-ink lg:bg-black left-0 right-0 top-[284px] bottom-0 lg:right-auto lg:bottom-0 lg:top-0 lg:w-[880px]"></div>
     <div class="relative h-full max-w-[1280px] mx-auto px-[20px] lg:px-[80px] flex flex-col justify-end pb-[112px] lg:justify-start lg:pb-0 lg:pt-[168px]">
       <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[720px]" data-node="53:108" data-node-m="58:495">
         <Eyebrow theme="dark" node="53:109">Your Claim. Our Fight.</Eyebrow>
-        <h1 id="hero-title" class="m-0 w-full tm-display lg:t-display-xl" data-node="53:112" data-node-m="58:499">The New Way to Settle Claims.</h1>
+        <h1 id="hero-title" class="m-0 w-full tm-display lg:t-display" data-node="53:112" data-node-m="58:499">The New Way to Settle Claims.</h1>
         <div class="flex flex-col gap-[12px] w-full" data-node="53:113">
-          <p class="m-0 tm-lead lg:t-h3 lg:w-[560px]" data-node="53:114" data-node-m="58:500">We level the playing field.</p>
-          <p class="m-0 hidden lg:block t-lead w-[560px]" data-node="53:115">Blue Star Adjusters exists because the old way wasn’t good enough. Our experience isn’t new. We bring years at the top of the industry and the conviction to finally do it right.</p>
+          <p class="m-0 tm-lead lg:t-lead lg:font-semibold lg:w-[560px]" data-node="53:114" data-node-m="58:500">We level the playing field.</p>
+          <p class="m-0 hidden lg:block t-body-strong w-[560px]" data-node="53:115">Blue Star Adjusters exists because the old way wasn’t good enough. Our experience isn’t new. We bring years at the top of the industry and the conviction to finally do it right.</p>
         </div>
         <div class="flex flex-col gap-[12px] w-full pt-[8px] lg:pt-0 lg:w-auto" data-node-m="58:501">
           <Button href={ROUTES.freeClaimReview} variant="on-dark" full class="h-[56px] lg:hidden" data-node-m="58:502">Schedule a Free Review</Button>
@@ -67,8 +67,8 @@ const heroD = img['53:71'], heroM = img['58:465'];
 
 <style>
   /* Measured against the Figma renders: mobile overlays are ink, desktop ones render as black. */
-  .hero-soft { filter: blur(40px); opacity: .67; }
-  @media (min-width: 1024px) { .hero-soft { opacity: .8; } }
+  .hero-soft { filter: blur(40px); opacity: .25; }
+  @media (min-width: 1024px) { .hero-soft { opacity: .35; } }
   .hero-what :global(textarea) { height: 128px; }
   @media (min-width: 1024px) {
     .hero-what :global(textarea) { height: 52px; overflow: hidden; }

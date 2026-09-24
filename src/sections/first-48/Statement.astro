@@ -1,0 +1,57 @@
+---
+// First 48 Hours Statement. Desktop 217:7490 (1280×784), mobile 217:10565 (390×644). Navy band: clock rule,
+// Mike's line (display), white dimension line, "Download the checklist (PDF)" + Schedule buttons, faint white B-mark (7 %).
+// No checklist PDF exists yet (Figma: "separate deliverable"), so the download button opens the print dialog with a
+// print stylesheet that prints only the checklist sheet (Save as PDF). Swap in the PDF link when it is supplied.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import { ROUTES } from '../../data/site';
+---
+<section aria-labelledby="f48-statement" class="relative overflow-hidden bg-navy text-white" data-node="217:7490" data-node-m="217:10565">
+  <span aria-hidden="true" class="absolute pointer-events-none opacity-[.07] left-[133.6px] top-[318.4px] lg:left-[877.6px] lg:top-[344px]" data-node="217:7491" data-node-m="217:10566">
+    <Logo variant="mark-white" bare width={362.402} height={440} label="" class="hidden lg:block" />
+    <Logo variant="mark-white" bare width={248.4} height={301.6} label="" class="lg:hidden" />
+  </span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:pt-[120px] lg:pb-[124px]">
+  <div class="flex flex-col items-start gap-[32px] lg:gap-[48px]" data-node="217:7496">
+    <div class="w-full flex items-center gap-[16px]" data-node="217:7497" data-node-m="217:10571">
+      <span class="flex items-center justify-center shrink-0 w-[40px] h-[40px] rounded-full border border-white opacity-85" data-node="217:7498" data-node-m="217:10572">
+        <Icon name="clock" size={24} class="block" />
+      </span>
+      <span aria-hidden="true" class="block flex-1 h-px bg-white opacity-30" data-node="217:7502" data-node-m="217:10576"></span>
+    </div>
+    <h2 id="f48-statement" class="m-0 tm-display lg:t-display-xl text-white w-[330px] max-w-full lg:w-[1064px]" data-node="217:7503" data-node-m="217:10577">Our ability to affect your outcome diminishes with time.</h2>
+    <div aria-hidden="true" class="w-full flex items-center gap-[8px] opacity-85" data-node="217:7504" data-node-m="217:10578">
+      <span class="block w-px h-[12px] bg-white shrink-0"></span>
+      <span class="block flex-1 min-w-px h-px bg-white"></span>
+      <span class="t-caption whitespace-nowrap">First 48 Hours</span>
+      <span class="block flex-1 min-w-px h-px bg-white"></span>
+      <span class="block w-px h-[12px] bg-white shrink-0"></span>
+    </div>
+    <div class="w-full flex flex-col gap-[12px] lg:w-auto lg:flex-row lg:gap-[16px]" data-node="217:7510" data-node-m="217:10584">
+      <Button variant="outline-on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-[302px]" node="217:7511" data-node-m="217:10585" data-print-checklist>Download the checklist (PDF)</Button>
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" node="217:7515" data-node-m="217:10589">Schedule a Free Review</Button>
+    </div>
+  </div>
+  </div>
+</section>
+
+<style is:global>
+  @media print {
+    body.bs-print-checklist * { visibility: hidden !important; }
+    body.bs-print-checklist #f48-sheet, body.bs-print-checklist #f48-sheet * { visibility: visible !important; }
+    body.bs-print-checklist #f48-sheet { position: absolute; left: 0; top: 0; width: 100%; border: 0; }
+    body.bs-print-checklist .bs-callbar { display: none !important; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-print-checklist]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.body.classList.add('bs-print-checklist');
+      window.print();
+    });
+  });
+  window.addEventListener('afterprint', () => document.body.classList.remove('bs-print-checklist'));
+</script>

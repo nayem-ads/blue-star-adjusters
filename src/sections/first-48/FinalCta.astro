@@ -1,0 +1,42 @@
+---
+// First 48 Hours Final CTA. Desktop 217:7519 (1280×536), mobile 217:10593 (390×659). White band: H2, lead, Schedule button
+// (left); phone as a display tel: link with royal underline, then hours and "insured only" facts in a hairline ledger (right).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const facts = [
+  { icon: 'clock', t: 'Monday to Friday, 9 AM to 5 PM Pacific', d: ['217:7534', '217:7535', '217:7539'], m: ['217:10608', '217:10609', '217:10613'] },
+  { icon: 'shield', t: 'We represent the insured only.', d: ['217:7541', '217:7542', '217:7546'], m: ['217:10614', '217:10615', '217:10619'] },
+];
+---
+<section aria-labelledby="f48-cta" class="bg-white" data-node="217:7519" data-node-m="217:10593">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[123px] lg:flex lg:items-start lg:gap-[72px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[552px] lg:shrink-0" data-node="217:7520" data-node-m="217:10594">
+      <h2 id="f48-cta" class="m-0 tm-h2 lg:t-h2 text-navy w-full" data-node="217:7521" data-node-m="217:10595">Call Before the Carrier Sets the Narrative.</h2>
+      <p class="m-0 tm-body lg:t-lead text-ink w-full" data-node="217:7522" data-node-m="217:10596">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+      <div class="w-full pt-[8px] pb-0 lg:w-auto lg:pt-[16px]" data-node="217:7523" data-node-m="217:10597">
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" node="217:7524" data-node-m="217:10598">Schedule a Free Review</Button>
+      </div>
+    </div>
+    <div class="mt-[40px] lg:mt-0 flex flex-col items-start lg:w-[496px] lg:shrink-0" data-node="217:7528" data-node-m="217:10602">
+      <a href={PHONE_TEL} class="w-full lg:w-auto flex flex-col items-start gap-[8px] lg:gap-[16px]" data-node-m="217:10603" aria-label={`Call ${PHONE_DISPLAY}`}>
+        <span class="tm-label lg:t-label text-ink" data-node="217:7529" data-node-m="217:10604">Call</span>
+        <span class="bs-f48-phone block w-[315px] lg:w-[429px] text-navy whitespace-nowrap" data-node="217:7530" data-node-m="217:10605">{PHONE_DISPLAY}</span>
+        <span aria-hidden="true" class="block w-[315px] lg:w-[429px] h-[4px] bg-royal" data-node="217:7531" data-node-m="217:10606"></span>
+      </a>
+      <ul class="m-0 p-0 list-none w-full mt-[24px] lg:mt-[40px] border-b border-line" data-node-m="217:10607">
+        {facts.map((f) => (
+          <li class="flex items-center gap-[16px] py-[12px] min-h-[65px] border-t border-line" data-node={f.d[0]} data-node-m={f.m[0]}>
+            <span class="flex items-center justify-center shrink-0 w-[40px] h-[40px] rounded-full bg-paper text-navy" data-node={f.d[1]} data-node-m={f.m[1]}><Icon name={f.icon} size={24} class="block" /></span>
+            <span class="flex-1 min-w-0 text-[16px] leading-[26px] font-medium text-ink lg:flex-none lg:text-[17px] lg:leading-[28px] lg:whitespace-nowrap" data-node={f.d[2]} data-node-m={f.m[2]}>{f.t}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .bs-f48-phone { font-family: var(--font-display); font-weight: 700; font-size: 48px; line-height: 50px; letter-spacing: -0.03em; }
+  @media (min-width: 1024px) { .bs-f48-phone { font-size: 64px; line-height: 68px; letter-spacing: -0.02em; } }
+</style>

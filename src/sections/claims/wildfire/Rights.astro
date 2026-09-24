@@ -1,0 +1,57 @@
+---
+// Wildfire / Rights (desktop 234:1198 1280×1184, mobile 234:1443 390×1191). White band over a 40px blueprint grid
+// (minor lines navy 5%, every 200px major 10%); § 04, heading, intro, rules ledger (rule / what it says / source chip).
+import Chip from '../commercial/Chip.astro';
+
+const rows = [
+  { rule: 'Loss of use', says: 'At least 24 months. Up to 12 more if rebuilding is delayed by things beyond your control and you act in good faith.', src: '§2060',
+    d: ['234:9947', '234:9948', '234:9949', '234:9950', '234:9951', '234:9952'], m: ['234:9979', '234:9981', '234:9985', '234:9982', '234:9983', '234:9984', '234:9980'] },
+  { rule: 'Replacement cost', says: 'At least 36 months from the first actual cash value payment to collect it, with extensions of 6 months for good cause.', src: '§2051.5',
+    d: ['234:9953', '234:9954', '234:9955', '234:9956', '234:9957', '234:9958'], m: ['234:9986', '234:9988', '234:9992', '234:9989', '234:9990', '234:9991', '234:9987'] },
+  { rule: 'Contents', says: 'On a total loss of a furnished primary residence, the insurer must offer at least 60% of the contents limit, up to $350,000, without an itemized inventory (policies issued or renewed from July 1, 2026).', src: 'SB 495',
+    d: ['234:9959', '234:9960', '234:9961', '234:9962', '234:9963', '234:9964'], m: ['234:9993', '234:9995', '234:9999', '234:9996', '234:9997', '234:9998', '234:9994'] },
+  { rule: 'Proof of loss', says: "The insurer can't require it sooner than 100 days.", src: 'SB 495',
+    d: ['234:9965', '234:9966', '234:9967', '234:9968', '234:9969', '234:9970'], m: ['234:10000', '234:10002', '234:10006', '234:10003', '234:10004', '234:10005', '234:10001'] },
+  { rule: 'Time to sue', says: '24 months from the start of the loss.', src: '§2071',
+    d: ['234:9971', '234:9972', '234:9973', '234:9974', '234:9975', '234:9976'], m: ['234:10007', '234:10009', '234:10013', '234:10010', '234:10011', '234:10012', '234:10008'] },
+];
+const minor = [40, 80, 120, 160];
+---
+<section aria-labelledby="wf-rights-title" class="relative overflow-hidden bg-white" data-node="234:1198" data-node-m="234:1443">
+  <div aria-hidden="true" class="absolute left-0 top-0 w-full h-full overflow-hidden pointer-events-none lg:h-[959px]" data-node="234:1199" data-node-m="234:1444">
+  <svg class="block w-full h-[986px] lg:h-full">
+    <defs>
+      <pattern id="wf-grid" width="200" height="200" patternUnits="userSpaceOnUse">
+        <rect width="1" height="200" fill="#081d5e" opacity=".1" /><rect width="200" height="1" fill="#081d5e" opacity=".1" />
+        {minor.map((x) => <><rect x={x} width="1" height="200" fill="#081d5e" opacity=".05" /><rect y={x} width="200" height="1" fill="#081d5e" opacity=".05" /></>)}
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#wf-grid)" />
+  </svg>
+  </div>
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[32px] px-[20px] pt-[64px] pb-[56px] lg:gap-[48px] lg:px-[80px] lg:py-[120px]">
+    <div class="flex flex-col items-start gap-[16px] lg:w-[960px] lg:gap-[24px]" data-node="234:1266" data-node-m="234:1482">
+      <Chip node="234:1267" nodeM="234:1483" textNode="234:1268" textNodeM="234:1484">§ 04</Chip>
+      <h2 id="wf-rights-title" class="relative top-[1px] lg:top-0 m-0 w-full font-display font-bold text-[32px] leading-[36px] tracking-[-0.02em] text-navy lg:w-[960px] lg:t-display-l" data-node="234:1269" data-node-m="234:1485">What California policyholders are owed after a declared state of emergency</h2>
+      <p class="m-0 tm-lead lg:t-lead text-ink" data-node="234:9941" data-node-m="234:9977">Policy terms and limits still apply.</p>
+    </div>
+    <div class="w-full" data-node="234:9942" data-node-m="234:9978" role="table" aria-label="Rules after a declared state of emergency">
+      <div role="row" class="hidden lg:flex gap-[32px] pb-[16px] border-b border-navy t-label text-ink" data-node="234:9943">
+        <span role="columnheader" class="w-[280px] shrink-0" data-node="234:9944">Rule</span>
+        <span role="columnheader" class="flex-1 min-w-0" data-node="234:9945">What it says</span>
+        <span role="columnheader" class="w-[120px] shrink-0 text-right" data-node="234:9946">Source</span>
+      </div>
+      {rows.map((r) => (
+        <div role="row" class="flex flex-col gap-[12px] pt-[24px] pb-[24px] border-b border-line lg:flex-row lg:items-start lg:gap-[32px] lg:py-[28px]" data-node={r.d[0]} data-node-m={r.m[0]}>
+          <div class="flex items-start justify-between gap-[16px] lg:contents" data-node-m={r.m[6]}>
+            <span role="rowheader" class="flex-1 min-w-0 tm-h3 lg:t-h3 text-navy lg:flex-none lg:w-[280px] lg:shrink-0" data-node={r.d[1]} data-node-m={r.m[1]}>{r.rule}</span>
+            <span role="cell" class="flex justify-end shrink-0 mt-[1px] lg:order-3 lg:mt-0 lg:w-[120px]" data-node={r.d[3]} data-node-m={r.m[3]}>
+              <span class="inline-flex px-[8px] py-[4px] border border-navy rounded-[2px] tm-label lg:t-label text-ink whitespace-nowrap" data-node={r.d[4]} data-node-m={r.m[4]}><span data-node={r.d[5]} data-node-m={r.m[5]}>{r.src}</span></span>
+            </span>
+          </div>
+          <p role="cell" class="m-0 tm-body lg:t-body text-ink lg:flex-1 lg:min-w-0 lg:order-2" data-node={r.d[2]} data-node-m={r.m[2]}>{r.says}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

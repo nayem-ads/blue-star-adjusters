@@ -1,0 +1,32 @@
+---
+// Wildfire / Market (desktop 234:1182 1280×691, mobile 234:1428 390×765). Navy band, faint B mark: rail (§ 05, H2, button)
+// + a paper "document" card rotated 1.5° inside royal crop marks. Rotated nodes are left untagged (their metadata x/y lie).
+import Button from '../../../components/Button.astro';
+import Logo from '../../../components/Logo.astro';
+import CropMarks from '../../what-we-do/CropMarks.astro';
+import { ROUTES } from '../../../data/site';
+import Chip from '../commercial/Chip.astro';
+---
+<section aria-labelledby="wf-market-title" class="relative overflow-hidden bg-navy text-white" data-node="234:1182" data-node-m="234:1428">
+  <div class="relative max-w-[1280px] mx-auto">
+    <span aria-hidden="true" class="absolute left-[109.2px] top-0 opacity-[.06] pointer-events-none lg:hidden" data-node-m="234:1429"><Logo variant="mark-white" bare width={280.8} height={340.9} label="" /></span>
+    <span aria-hidden="true" class="hidden lg:block absolute left-[818.76px] top-0 opacity-[.06] pointer-events-none" data-node="234:1183"><Logo variant="mark-white" bare width={461.239} height={560} label="" /></span>
+    <div class="relative flex flex-col gap-[32px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[112px] lg:px-[80px] lg:pt-[120px] lg:pb-[136px]">
+      <div class="flex flex-col items-start gap-[16px] lg:w-[360px] lg:shrink-0 lg:gap-[32px]" data-node="234:1184" data-node-m="234:1430">
+        <Chip dark node="234:1185" nodeM="234:1431" textNode="234:1186" textNodeM="234:1432">§ 05</Chip>
+        <h2 id="wf-market-title" class="m-0 w-full tm-display lg:t-h2" data-node="234:1187" data-node-m="234:1433">Where the market stands.</h2>
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="hidden lg:inline-flex" node="234:1188">Schedule a Free Review</Button>
+      </div>
+      <div class="relative w-full h-[387px] lg:w-[648px] lg:h-[435px] lg:shrink-0" data-node="234:1189" data-node-m="234:1434">
+        <div class="wf-doc absolute left-[22.58px] top-[24.03px] w-[310px] p-[24px] bg-white lg:bg-paper rounded-[2px] lg:left-[17.33px] lg:top-[31.82px] lg:w-[600px] lg:p-[48px]">
+          <p class="m-0 tm-body text-ink lg:t-lead">In May 2026 the California Department of Insurance alleged 398 violations in 114 of 220 State Farm wildfire claims its examiners reviewed. <span class="underline decoration-from-font underline-offset-auto">These are allegations, not findings.</span></p>
+        </div>
+        <CropMarks class="absolute left-0 top-0 w-[350px] h-[387px] lg:left-[8px] lg:w-[632px] lg:h-[395px]" node="234:1197" nodeM="234:1435" />
+      </div>
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="lg:hidden h-[56px] w-full" data-node-m="234:1442">Schedule a Free Review</Button>
+    </div>
+  </div>
+</section>
+<style>
+  .wf-doc { transform: rotate(1.5deg); box-shadow: 0 24px 48px rgba(7, 15, 51, 0.35); }
+</style>

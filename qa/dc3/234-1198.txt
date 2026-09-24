@@ -1,0 +1,181 @@
+export default function SectionRights() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[48px] items-start px-[80px] py-[120px] relative size-full" data-node-id="234:1198" data-annotations="\[CLIENT: confirm\] written client consent for each result (CD 510).;\[LEGAL CHECK\] results disclaimer sits directly under the figures." data-name="Section / Rights">
+      <div className="absolute h-[959px] left-0 overflow-clip top-0 w-[1280px]" data-node-id="234:1199" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute h-[1200px] left-0 opacity-5 overflow-clip top-0 w-[1280px]" data-node-id="234:1200" data-name="Minor lines">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[40px] top-0 w-px" data-node-id="234:1201" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[80px] top-0 w-px" data-node-id="234:1202" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[120px] top-0 w-px" data-node-id="234:1203" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[160px] top-0 w-px" data-node-id="234:1204" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[240px] top-0 w-px" data-node-id="234:1205" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[280px] top-0 w-px" data-node-id="234:1206" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[320px] top-0 w-px" data-node-id="234:1207" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[360px] top-0 w-px" data-node-id="234:1208" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[440px] top-0 w-px" data-node-id="234:1209" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[480px] top-0 w-px" data-node-id="234:1210" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[520px] top-0 w-px" data-node-id="234:1211" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[560px] top-0 w-px" data-node-id="234:1212" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[640px] top-0 w-px" data-node-id="234:1213" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[680px] top-0 w-px" data-node-id="234:1214" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[720px] top-0 w-px" data-node-id="234:1215" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[760px] top-0 w-px" data-node-id="234:1216" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[840px] top-0 w-px" data-node-id="234:1217" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[880px] top-0 w-px" data-node-id="234:1218" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[920px] top-0 w-px" data-node-id="234:1219" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[960px] top-0 w-px" data-node-id="234:1220" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1040px] top-0 w-px" data-node-id="234:1221" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1080px] top-0 w-px" data-node-id="234:1222" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1120px] top-0 w-px" data-node-id="234:1223" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1160px] top-0 w-px" data-node-id="234:1224" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1240px] top-0 w-px" data-node-id="234:1225" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1280px] top-0 w-px" data-node-id="234:1226" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[40px] w-[1280px]" data-node-id="234:1227" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[80px] w-[1280px]" data-node-id="234:1228" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[120px] w-[1280px]" data-node-id="234:1229" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[160px] w-[1280px]" data-node-id="234:1230" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[240px] w-[1280px]" data-node-id="234:1231" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[280px] w-[1280px]" data-node-id="234:1232" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[320px] w-[1280px]" data-node-id="234:1233" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[360px] w-[1280px]" data-node-id="234:1234" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[440px] w-[1280px]" data-node-id="234:1235" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[480px] w-[1280px]" data-node-id="234:1236" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[520px] w-[1280px]" data-node-id="234:1237" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[560px] w-[1280px]" data-node-id="234:1238" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[640px] w-[1280px]" data-node-id="234:1239" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[680px] w-[1280px]" data-node-id="234:1240" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[720px] w-[1280px]" data-node-id="234:1241" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[760px] w-[1280px]" data-node-id="234:1242" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[840px] w-[1280px]" data-node-id="234:1243" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[880px] w-[1280px]" data-node-id="234:1244" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[920px] w-[1280px]" data-node-id="234:1245" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[960px] w-[1280px]" data-node-id="234:1246" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[1040px] w-[1280px]" data-node-id="234:1247" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[1080px] w-[1280px]" data-node-id="234:1248" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[1120px] w-[1280px]" data-node-id="234:1249" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[1160px] w-[1280px]" data-node-id="234:1250" data-name="H" />
+        </div>
+        <div className="absolute h-[1200px] left-0 opacity-10 overflow-clip top-0 w-[1280px]" data-node-id="234:1251" data-name="Major lines">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-0 top-0 w-px" data-node-id="234:1252" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[200px] top-0 w-px" data-node-id="234:1253" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[400px] top-0 w-px" data-node-id="234:1254" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[600px] top-0 w-px" data-node-id="234:1255" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[800px] top-0 w-px" data-node-id="234:1256" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1000px] top-0 w-px" data-node-id="234:1257" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1200px] left-[1200px] top-0 w-px" data-node-id="234:1258" data-name="V" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-0 w-[1280px]" data-node-id="234:1259" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[200px] w-[1280px]" data-node-id="234:1260" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[400px] w-[1280px]" data-node-id="234:1261" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[600px] w-[1280px]" data-node-id="234:1262" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[800px] w-[1280px]" data-node-id="234:1263" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[1000px] w-[1280px]" data-node-id="234:1264" data-name="H" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[1200px] w-[1280px]" data-node-id="234:1265" data-name="H" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip relative shrink-0" data-node-id="234:1266" data-name="Heading">
+        <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="234:1267" data-name="Index chip">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="234:1268">
+            § 04
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[68px] relative shrink-0 text-[64px] text-[color:var(--color\/navy,#081d5e)] tracking-[-1.28px] w-[960px]" data-node-id="234:1269">
+          What California policyholders are owed after a declared state of emergency
+        </p>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="234:9941" data-annotations="Intro edited from the heading's bracket '(policy terms and limits still apply)'. CD 384.">
+          Policy terms and limits still apply.
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="234:9942" data-annotations="CD 384 to 392, word for word. Edited from: 'At least 24 months; up to 12 more', 'actual-cash-value', 'with 6-month extensions'. Layout move 4 (ledger rows), re-skinned from the Results ledger.;\[CLIENT: confirm\] '60%' here is the SB 495 contents figure, not a fee; kept word for word. Verify statute citations before launch." data-name="Table / Rights (ledger rows)">
+        <div className="[word-break:break-word] border-[var(--color\/navy,#081d5e)] border-b border-solid content-stretch flex font-['Montserrat:SemiBold'] font-semibold gap-[32px] items-start leading-[18px] overflow-clip pb-[16px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] w-full" data-node-id="234:9943" data-name="Row / header">
+          <p className="relative shrink-0 w-[280px]" data-node-id="234:9944">
+            Rule
+          </p>
+          <p className="flex-[1_0_0] min-w-px relative" data-node-id="234:9945">
+            What it says
+          </p>
+          <p className="relative shrink-0 text-right w-[120px]" data-node-id="234:9946">
+            Source
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[32px] items-start overflow-clip py-[28px] relative shrink-0 w-full" data-node-id="234:9947" data-name="Row / Loss of use">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px] w-[280px]" data-node-id="234:9948">
+            Loss of use
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/ink,#070f33)]" data-node-id="234:9949">
+            At least 24 months. Up to 12 more if rebuilding is delayed by things beyond your control and you act in good faith.
+          </p>
+          <div className="content-stretch flex items-start justify-end overflow-clip relative shrink-0 w-[120px]" data-node-id="234:9950" data-name="Source">
+            <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="234:9951" data-name="Chip / source">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="234:9952">
+                §2060
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[32px] items-start overflow-clip py-[28px] relative shrink-0 w-full" data-node-id="234:9953" data-name="Row / Replacement cost">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px] w-[280px]" data-node-id="234:9954">
+            Replacement cost
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/ink,#070f33)]" data-node-id="234:9955">
+            At least 36 months from the first actual cash value payment to collect it, with extensions of 6 months for good cause.
+          </p>
+          <div className="content-stretch flex items-start justify-end overflow-clip relative shrink-0 w-[120px]" data-node-id="234:9956" data-name="Source">
+            <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="234:9957" data-name="Chip / source">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="234:9958">
+                §2051.5
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[32px] items-start overflow-clip py-[28px] relative shrink-0 w-full" data-node-id="234:9959" data-name="Row / Contents">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px] w-[280px]" data-node-id="234:9960">
+            Contents
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/ink,#070f33)]" data-node-id="234:9961">
+            On a total loss of a furnished primary residence, the insurer must offer at least 60% of the contents limit, up to $350,000, without an itemized inventory (policies issued or renewed from July 1, 2026).
+          </p>
+          <div className="content-stretch flex items-start justify-end overflow-clip relative shrink-0 w-[120px]" data-node-id="234:9962" data-name="Source">
+            <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="234:9963" data-name="Chip / source">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="234:9964">
+                SB 495
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[32px] items-start overflow-clip py-[28px] relative shrink-0 w-full" data-node-id="234:9965" data-name="Row / Proof of loss">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px] w-[280px]" data-node-id="234:9966">
+            Proof of loss
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/ink,#070f33)]" data-node-id="234:9967">{`The insurer can't require it sooner than 100 days.`}</p>
+          <div className="content-stretch flex items-start justify-end overflow-clip relative shrink-0 w-[120px]" data-node-id="234:9968" data-name="Source">
+            <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="234:9969" data-name="Chip / source">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="234:9970">
+                SB 495
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex gap-[32px] items-start overflow-clip py-[28px] relative shrink-0 w-full" data-node-id="234:9971" data-name="Row / Time to sue">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px] w-[280px]" data-node-id="234:9972">
+            Time to sue
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/ink,#070f33)]" data-node-id="234:9973">
+            24 months from the start of the loss.
+          </p>
+          <div className="content-stretch flex items-start justify-end overflow-clip relative shrink-0 w-[120px]" data-node-id="234:9974" data-name="Source">
+            <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="234:9975" data-name="Chip / source">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="234:9976">
+                §2071
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Display L: Font(family: "Schibsted Grotesk", style: Bold, size: 64, weight: 700, lineHeight: 68, letterSpacing: -2), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Desktop/Body: Font(family: "Montserrat", style: Regular, size: 17, weight: 400, lineHeight: 28, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

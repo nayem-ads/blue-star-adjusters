@@ -1,0 +1,104 @@
+const imgIconHome = "https://www.figma.com/api/mcp/asset/b1a22b78-e6ca-4a7e-b776-23f8b0ee97dd.svg";
+const imgIconRuler = "https://www.figma.com/api/mcp/asset/46e5078e-75c2-4b8c-833b-dc551935e753.svg";
+const imgIconSearch = "https://www.figma.com/api/mcp/asset/3dd62ab1-ca82-426b-9d9f-35e2a3d78205.svg";
+
+export default function SectionMisses() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex gap-[112px] items-start px-[80px] py-[120px] relative size-full" data-node-id="217:5947" data-name="Section / Misses">
+      <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip relative shrink-0 w-[360px]" data-node-id="217:5948" data-name="Rail">
+        <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:5949" data-name="Index chip">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:5950">
+            § 01
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] min-w-full relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.72px] w-[min-content]" data-node-id="217:5951">
+          What the first estimate usually misses
+        </p>
+        <div className="h-[16px] opacity-40 overflow-clip relative shrink-0 w-[360px]" data-node-id="217:5952" data-name="Ruler ticks">
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-0 top-0 w-px" data-node-id="217:5953" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[8px] top-0 w-px" data-node-id="217:5954" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[16px] top-0 w-px" data-node-id="217:5955" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[24px] top-0 w-px" data-node-id="217:5956" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[32px] top-0 w-px" data-node-id="217:5957" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[40px] top-0 w-px" data-node-id="217:5958" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[48px] top-0 w-px" data-node-id="217:5959" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[56px] top-0 w-px" data-node-id="217:5960" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[64px] top-0 w-px" data-node-id="217:5961" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[72px] top-0 w-px" data-node-id="217:5962" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[80px] top-0 w-px" data-node-id="217:5963" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[88px] top-0 w-px" data-node-id="217:5964" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[96px] top-0 w-px" data-node-id="217:5965" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[104px] top-0 w-px" data-node-id="217:5966" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[112px] top-0 w-px" data-node-id="217:5967" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[120px] top-0 w-px" data-node-id="217:5968" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[128px] top-0 w-px" data-node-id="217:5969" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[136px] top-0 w-px" data-node-id="217:5970" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[144px] top-0 w-px" data-node-id="217:5971" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[152px] top-0 w-px" data-node-id="217:5972" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[160px] top-0 w-px" data-node-id="217:5973" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[168px] top-0 w-px" data-node-id="217:5974" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[176px] top-0 w-px" data-node-id="217:5975" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[184px] top-0 w-px" data-node-id="217:5976" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[192px] top-0 w-px" data-node-id="217:5977" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[200px] top-0 w-px" data-node-id="217:5978" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[208px] top-0 w-px" data-node-id="217:5979" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[216px] top-0 w-px" data-node-id="217:5980" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[224px] top-0 w-px" data-node-id="217:5981" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[232px] top-0 w-px" data-node-id="217:5982" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[240px] top-0 w-px" data-node-id="217:5983" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[248px] top-0 w-px" data-node-id="217:5984" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[256px] top-0 w-px" data-node-id="217:5985" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[264px] top-0 w-px" data-node-id="217:5986" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[272px] top-0 w-px" data-node-id="217:5987" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[280px] top-0 w-px" data-node-id="217:5988" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[288px] top-0 w-px" data-node-id="217:5989" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[296px] top-0 w-px" data-node-id="217:5990" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[304px] top-0 w-px" data-node-id="217:5991" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[312px] top-0 w-px" data-node-id="217:5992" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[16px] left-[320px] top-0 w-px" data-node-id="217:5993" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[328px] top-0 w-px" data-node-id="217:5994" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[336px] top-0 w-px" data-node-id="217:5995" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[344px] top-0 w-px" data-node-id="217:5996" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[6px] left-[352px] top-0 w-px" data-node-id="217:5997" data-name="Tick" />
+          <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[10px] left-[360px] top-0 w-px" data-node-id="217:5998" data-name="Tick" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative" data-node-id="217:5999" data-name="List / Misses">
+        <div className="border-[var(--color\/line,#d9dfee)] border-solid border-t content-stretch flex gap-[24px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:6000" data-name="Item / Miss 1">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:6001" data-name="Icon circle / home">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:6002" data-name="Icon / home">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px]" data-node-id="217:6005">
+            Rooms the flames never reached, written up as undamaged.
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-solid border-t content-stretch flex gap-[24px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:6006" data-name="Item / Miss 2">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:6007" data-name="Icon circle / ruler">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:6008" data-name="Icon / ruler">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconRuler} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px]" data-node-id="217:6011">
+            Warped vinyl windows, priced as paint.
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid border-t content-stretch flex gap-[24px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:6012" data-name="Item / Miss 3">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:6013" data-name="Icon circle / search">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:6014" data-name="Icon / search">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSearch} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px]" data-node-id="217:6017">{`Porous materials the carrier wants cleaned, when they can't be.`}</p>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

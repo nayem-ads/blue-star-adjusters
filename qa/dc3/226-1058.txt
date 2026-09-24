@@ -1,0 +1,135 @@
+const imgIconFlame = "https://www.figma.com/api/mcp/asset/abe04910-f72e-4d21-9da2-d5942c0cd746.svg";
+const imgIconArrow = "https://www.figma.com/api/mcp/asset/9138c342-80dc-413e-aa7c-0d4b85d47470.svg";
+const imgIconPin = "https://www.figma.com/api/mcp/asset/862ce930-d3f3-4f87-a7d9-b4db75b79ae0.svg";
+const imgIconDroplet = "https://www.figma.com/api/mcp/asset/f3e8305f-5e70-4015-8e34-de1818977f29.svg";
+const imgIconWind = "https://www.figma.com/api/mcp/asset/8a140d36-f9a5-4ad5-b866-a176c5f830fb.svg";
+const imgIconDocument = "https://www.figma.com/api/mcp/asset/c52314ce-1fd8-4844-bf83-7b7e96ca3db6.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/5d969e2b-f809-4b07-9c2e-697400f18cbf.svg";
+const imgIconRuler = "https://www.figma.com/api/mcp/asset/f4db289b-b5ae-4f55-97e6-918c7bab7a73.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/f60e0f03-a9df-4457-a60c-c8babdfc8e4a.svg";
+
+export default function SectionIndex() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col gap-[40px] items-start px-[80px] py-[96px] relative size-full" data-node-id="226:1058" data-annotations="Hub index: the main index of loss types for homeowners (nav labels from the sitemap, CD 104 to 129). '&' is allowed in nav labels." data-name="Section / Index">
+      <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="226:1059" data-name="Index chip">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="226:1060">
+          § 02
+        </p>
+      </div>
+      <div className="content-start flex flex-wrap gap-[0px_24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="228:968" data-name="Index / Loss types">
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:969" data-name="Index link / Fire & Smoke">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:972" data-name="Icon circle / flame">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:973" data-name="Icon / flame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconFlame} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:970">{`Fire & Smoke`}</p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:971" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:976" data-name="Index link / Wildfire">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:979" data-name="Icon circle / pin">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:980" data-name="Icon / pin">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:977">
+            Wildfire
+          </p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:978" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:983" data-name="Index link / Water & Plumbing">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:986" data-name="Icon circle / droplet">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:987" data-name="Icon / droplet">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDroplet} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:984">{`Water & Plumbing`}</p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:985" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:989" data-name="Index link / Wind, Hail & Falling Trees">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:992" data-name="Icon circle / wind">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:993" data-name="Icon / wind">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconWind} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:990">{`Wind, Hail & Falling Trees`}</p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:991" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:995" data-name="Index link / Contents & Valuables">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:998" data-name="Icon circle / document">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:999" data-name="Icon / document">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDocument} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:996">{`Contents & Valuables`}</p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:997" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:1002" data-name="Index link / Additional Living Expenses">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:1005" data-name="Icon circle / clock">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:1006" data-name="Icon / clock">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:1003">
+            Additional Living Expenses
+          </p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:1004" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:1009" data-name="Index link / Code Upgrades">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:1012" data-name="Icon circle / ruler">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:1013" data-name="Icon / ruler">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconRuler} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:1010">
+            Code Upgrades
+          </p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:1011" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+        <div className="border-[var(--color\/navy,#081d5e)] border-solid border-t-2 content-stretch flex gap-[16px] items-center overflow-clip py-[24px] relative shrink-0 w-[548px]" data-node-id="228:1016" data-name="Index link / Denied or Underpaid">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="228:1019" data-name="Icon circle / shield">
+            <div className="relative shrink-0 size-[24px]" data-node-id="228:1020" data-name="Icon / shield">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-px relative text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px]" data-node-id="228:1017">
+            Denied or Underpaid
+          </p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="228:1018" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+      </div>
+      <div className="content-start flex flex-wrap items-start overflow-clip relative shrink-0 w-full" data-node-id="226:1068" data-name="Hub link">
+        <div className="border-[var(--color\/line,#d9dfee)] border-solid border-t content-stretch flex items-center justify-between overflow-clip py-[20px] relative shrink-0 w-[262px]" data-node-id="226:1069" data-name="Index link / Commercial Claims">
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:SemiBold'] font-semibold leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/ink,#070f33)]" data-node-id="226:1070">
+            Commercial Claims
+          </p>
+          <div className="relative shrink-0 size-[24px]" data-node-id="226:1071" data-name="Icon / arrow">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Desktop/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 17, weight: 600, lineHeight: 28, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

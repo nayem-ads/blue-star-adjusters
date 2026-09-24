@@ -1,0 +1,9 @@
+---
+// Claims-A shared part: "Icon circle" 40px, 1px ring, 24px icon. light = white fill + navy ring; dark = navy fill + white ring.
+import Icon from '../../../components/Icon.astro';
+interface Props { icon: string; dark?: boolean; class?: string; node?: string; nodeM?: string }
+const { icon, dark = false, class: cls = '', node, nodeM } = Astro.props;
+---
+<span aria-hidden="true" class:list={['flex items-center justify-center shrink-0 size-[40px] rounded-full border box-border', dark ? 'bg-navy border-white text-white' : 'bg-white border-navy text-navy', cls]} data-node={node} data-node-m={nodeM}>
+  <Icon name={icon} size={24} />
+</span>

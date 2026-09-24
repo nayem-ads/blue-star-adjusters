@@ -1,0 +1,44 @@
+---
+// Commercial / Scope (desktop 230:10391 1280×1010, mobile 230:10657 390×1188). Paper band: rail (§ 01, statement, ruler,
+// field photo) + five scope items. Mobile opens with the hero lead (moved out of the hero) and drops the photo.
+import Img from '../../../components/Img.astro';
+import Chip from './Chip.astro';
+import Ruler from './Ruler.astro';
+import Circle from './Circle.astro';
+
+interface Props { lead: string }
+const { lead } = Astro.props;
+const items = [
+  { icon: 'clock', b: 'Loss of income and extra expense,', t: ' built from your books by a forensic accountant.', d: ['230:10444', '230:10445', '230:10447'], m: ['230:10690', '230:10691', '230:10693'] },
+  { icon: 'building', b: 'Tenant improvements vs. building:', t: ' who owns what, and whose policy pays.', d: ['230:10448', '230:10449', '230:10451'], m: ['230:10694', '230:10695', '230:10697'] },
+  { icon: 'document', b: 'Inventory and equipment,', t: ' at replacement cost where the policy allows.', d: ['230:10452', '230:10453', '230:10455'], m: ['230:10698', '230:10699', '230:10701'] },
+  { icon: 'ruler', b: 'Code:', t: ' we meet building officials early, so the rebuild scope reflects what the city will actually require.', d: ['230:10911', '230:10912', '230:10914'], m: ['230:11133', '230:11134', '230:11136'] },
+  { icon: 'search', b: 'Xactimate and IH reports:', t: " we rebuild the carrier's estimate line by line, and read the industrial hygienist's report before the carrier does.", d: ['230:10915', '230:10916', '230:10918'], m: ['230:11137', '230:11138', '230:11140'] },
+];
+---
+<section aria-label="What a commercial claim needs" class="bg-paper" data-node="230:10391" data-node-m="230:10657">
+  <div class="max-w-[1280px] mx-auto flex flex-col gap-[32px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[112px] lg:px-[80px] lg:py-[120px]">
+    <div class="lg:hidden flex gap-[16px]" data-node-m="230:11158">
+      <span aria-hidden="true" class="w-[3px] shrink-0 bg-royal" data-node-m="230:11159"></span>
+      <p class="m-0 flex-1 tm-lead text-ink" data-node-m="230:11160">{lead}</p>
+    </div>
+    <div class="flex flex-col items-start gap-[16px] lg:w-[360px] lg:shrink-0 lg:gap-[24px]" data-node="230:10392" data-node-m="230:10658">
+      <Chip node="230:10393" nodeM="230:10659" textNode="230:10394" textNodeM="230:10660">§ 01</Chip>
+      <p class="m-0 w-full tm-h3 lg:t-h3 text-navy" data-node="230:10395" data-node-m="230:10661">When a business burns, payroll, customers, suppliers and the landlord all wait on the same scope. We write that scope first.</p>
+      <Ruler count={46} class="w-[200px] lg:w-[360px]" node="230:10396" nodeM="230:10662" />
+      <div class="hidden lg:block w-[360px] h-[248px]" data-node="230:10936"><Img node="230:10936" alt="Apartment building with fire damage to the upper units." class="w-full h-full object-cover" /></div>
+      <div class="hidden lg:flex items-center gap-[8px]" data-node="230:10937">
+        <span aria-hidden="true" class="w-[32px] h-px bg-ink" data-node="230:10938"></span>
+        <span class="t-caption text-ink whitespace-nowrap" data-node="230:10939">Field photograph</span>
+      </div>
+    </div>
+    <ul class="m-0 p-0 list-none flex flex-col lg:flex-1 lg:min-w-0" data-node="230:10443" data-node-m="230:10689">
+      {items.map((it, i) => (
+        <li class:list={['flex items-center gap-[16px] py-[20px] border-t border-line lg:items-start lg:gap-[24px] lg:py-[32px]', i >= 2 && 'border-b']} data-node={it.d[0]} data-node-m={it.m[0]}>
+          <Circle icon={it.icon} node={it.d[1]} nodeM={it.m[1]} />
+          <p class="m-0 flex-1 min-w-0 tm-body text-ink lg:font-display lg:text-[28px] lg:leading-[34px] lg:tracking-[-0.01em]" data-node={it.d[2]} data-node-m={it.m[2]}><strong class="font-semibold lg:font-bold">{it.b}</strong>{it.t}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

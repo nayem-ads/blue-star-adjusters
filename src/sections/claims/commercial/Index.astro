@@ -1,0 +1,47 @@
+---
+// Commercial / Index (desktop 230:10568 1280×729, mobile 230:10784 390×822). Paper band: § 03, the eight loss-type links
+// (2 columns on desktop with 2px navy rules, one column on mobile with line rules) and the Residential hub link.
+import Icon from '../../../components/Icon.astro';
+import { ROUTES } from '../../../data/site';
+import Chip from './Chip.astro';
+import Circle from './Circle.astro';
+
+const links = [
+  { label: 'Fire & Smoke', icon: 'flame', href: ROUTES.fireSmoke, d: ['230:11014', '230:11017', '230:11015', '230:11016'], m: ['230:11233', '230:11257', '230:11234', '230:11235'] },
+  { label: 'Wildfire', icon: 'map-pin', href: ROUTES.wildfire, d: ['230:11021', '230:11024', '230:11022', '230:11023'], m: ['230:11236', '230:11261', '230:11237', '230:11238'] },
+  { label: 'Water & Plumbing', icon: 'droplet', href: ROUTES.waterDamage, d: ['230:11028', '230:11031', '230:11029', '230:11030'], m: ['230:11239', '230:11265', '230:11240', '230:11241'] },
+  { label: 'Wind, Hail & Falling Trees', icon: 'wind', href: ROUTES.windHailTrees, d: ['230:11034', '230:11037', '230:11035', '230:11036'], m: ['230:11242', '230:11268', '230:11243', '230:11244'] },
+  { label: 'Contents & Valuables', icon: 'document', href: ROUTES.contentsValuables, d: ['230:11040', '230:11043', '230:11041', '230:11042'], m: ['230:11245', '230:11271', '230:11246', '230:11247'] },
+  { label: 'Additional Living Expenses', icon: 'clock', href: ROUTES.additionalLiving, d: ['230:11047', '230:11050', '230:11048', '230:11049'], m: ['230:11248', '230:11275', '230:11249', '230:11250'] },
+  { label: 'Code Upgrades', icon: 'ruler', href: ROUTES.codeUpgrades, d: ['230:11054', '230:11057', '230:11055', '230:11056'], m: ['230:11251', '230:11279', '230:11252', '230:11253'] },
+  { label: 'Denied or Underpaid', icon: 'shield', href: ROUTES.deniedOrUnderpaid, d: ['230:11061', '230:11064', '230:11062', '230:11063'], m: ['230:11254', '230:11283', '230:11255', '230:11256'] },
+];
+---
+<nav aria-label="Claim types" class="bg-paper" data-node="230:10568" data-node-m="230:10784">
+  <div class="max-w-[1280px] mx-auto flex flex-col items-start gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:gap-[40px] lg:px-[80px] lg:py-[96px]">
+    <Chip node="230:10569" nodeM="230:10785" textNode="230:10570" textNodeM="230:10786">§ 03</Chip>
+    <div class="w-full" data-node-m="230:10787">
+      <ul class="m-0 p-0 list-none flex flex-col lg:flex-row lg:flex-wrap lg:gap-x-[24px]" data-node="230:11013">
+        {links.map((l) => (
+          <li class="lg:w-[548px]">
+            <a href={l.href} class="cm-idx group flex items-center py-[16px] border-b border-line text-navy lg:gap-[16px] lg:py-[24px] lg:border-b-0 lg:border-t-2 lg:border-navy" data-node={l.d[0]} data-node-m={l.m[0]}>
+              <Circle icon={l.icon} node={l.d[1]} nodeM={l.m[1]} />
+              <span class="flex-1 min-w-0 tm-h3 lg:t-h3 group-hover:underline group-focus-visible:underline underline-offset-[4px]" data-node={l.d[2]} data-node-m={l.m[2]}>{l.label}</span>
+              <span class="flex lg:hidden shrink-0" data-node-m={l.m[3]}><Icon name="arrow-right" size={20} /></span>
+              <span class="hidden lg:flex shrink-0" data-node={l.d[3]}><Icon name="arrow-right" size={24} /></span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="lg:mt-[40px]" data-node="230:10578">
+        <a href={ROUTES.residential} class="cm-idx group flex items-center justify-between py-[20px] border-y border-navy text-navy lg:w-[262px] lg:border-b-0 lg:border-line lg:text-ink" data-node="230:10579" data-node-m="230:10788">
+          <span class="flex-1 min-w-0 tm-body-strong lg:t-body-strong group-hover:underline group-focus-visible:underline underline-offset-[4px]" data-node="230:10580" data-node-m="230:10789">Residential Claims</span>
+          <span class="flex shrink-0" data-node="230:10581" data-node-m="230:10790"><Icon name="arrow-right" size={24} /></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<style>
+  .cm-idx:focus-visible { outline: 2px solid var(--color-royal); outline-offset: 2px; }
+</style>

@@ -1,0 +1,39 @@
+---
+// Code Upgrades § 01 What the city requires (ledger). Desktop 238:1799, mobile 238:2065.
+// Index row (chip + ruler ticks), then a three-row ledger: icon circle, bold label, value. On mobile the hero's
+// lead paragraph (slot/hero/6, 242:952) opens this section, and each row stacks label row over value.
+import Icon from '../../../components/Icon.astro';
+import Ticks from '../contents/Ticks.astro';
+interface Row { icon: string; label: string; text: string }
+interface Props { heroLead: string; chip: string; title: string; rows: Row[] }
+const { heroLead, chip, title, rows } = Astro.props;
+const ids = [
+  { r: ['241:993', '242:953'], lr: '242:954', c: ['241:994', '242:955'], l: ['241:997', '242:958'], t: ['241:998', '242:959'] },
+  { r: ['241:999', '242:960'], lr: '242:961', c: ['241:1000', '242:962'], l: ['241:1004', '242:966'], t: ['241:1005', '242:967'] },
+  { r: ['241:1006', '242:968'], lr: '242:969', c: ['241:1007', '242:970'], l: ['241:1011', '242:974'], t: ['241:1012', '242:975'] },
+];
+---
+<section aria-label={title} class="bg-paper" data-node="238:1799" data-node-m="238:2065">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px]">
+    <p class="lg:hidden m-0 mb-[32px] tm-lead text-ink" data-node-m="242:952">{heroLead}</p>
+    <div class="flex items-center w-fit gap-[16px] h-[58px] lg:gap-[24px] lg:h-[68px]" data-node="238:1800" data-node-m="238:2066">
+      <div class="inline-flex px-[8px] py-[4px] border border-navy rounded-[2px]" data-node="238:1801" data-node-m="238:2067">
+        <span class="tm-label lg:t-label text-navy" data-node="238:1802" data-node-m="238:2068">{chip}</span>
+      </div>
+      <Ticks class="w-[200px] lg:w-[360px]" node="238:1804" nodeM="238:2070" />
+    </div>
+    <ul class="m-0 p-0 list-none mt-[32px] lg:mt-[40px] flex flex-col" data-node="238:1851" data-node-m="238:2097">
+      {rows.map((row, i) => (
+        <li class="flex flex-col gap-[12px] py-[24px] border-b border-line first:border-t lg:flex-row lg:items-start lg:gap-[32px] lg:py-[32px]" data-node={ids[i].r[0]} data-node-m={ids[i].r[1]}>
+          <div class="flex items-center gap-[16px] lg:contents" data-node-m={ids[i].lr}>
+            <span aria-hidden="true" class="flex items-center justify-center shrink-0 size-[40px] rounded-full border border-navy bg-white text-navy" data-node={ids[i].c[0]} data-node-m={ids[i].c[1]}>
+              <Icon name={row.icon} size={24} />
+            </span>
+            <p class="m-0 flex-1 tm-h3 lg:t-h3 text-navy lg:flex-none lg:w-[328px] lg:shrink-0" data-node={ids[i].l[0]} data-node-m={ids[i].l[1]}>{row.label}</p>
+          </div>
+          <p class="m-0 tm-body lg:t-lead text-ink lg:flex-1" data-node={ids[i].t[0]} data-node-m={ids[i].t[1]}>{row.text}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

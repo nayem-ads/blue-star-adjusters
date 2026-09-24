@@ -1,64 +1,66 @@
 ---
-// S2 Buckets. Desktop 226:881, mobile 226:1147.
+// Residential "Section / Buckets". Desktop 226:881 (1280×808), mobile 226:1147 (390×922).
+// Mobile opens with the hero lead (moved out of the hero on this page), then heading group, then the four items.
+import '@fontsource/schibsted-grotesk/latin-400.css'; // item text is Schibsted Regular; only 500-700 are global
 import Img from '../../components/Img.astro';
 import Icon from '../../components/Icon.astro';
+
+const items = [
+  { icon: 'home', term: 'Dwelling:', text: ' the structure, returned to its condition before the loss and to current code.',
+    d: ['226:934', '226:935', '226:937'], m: ['226:1180', '226:1181', '226:1183'] },
+  { icon: 'building', term: 'Other structures:', text: ' fences, decks, garages, barns, guest houses.',
+    d: ['226:938', '226:939', '226:941'], m: ['226:1184', '226:1185', '226:1187'] },
+  { icon: 'document', term: 'Contents:', text: ' everything inside, from furniture to fine art.', bottom: true,
+    d: ['226:942', '226:943', '226:945'], m: ['226:1188', '226:1189', '226:1191'] },
+  { icon: 'clock', term: 'Loss of use:', text: " comparable living while you're displaced, including pet accommodations where your policy allows.", bottom: true,
+    d: ['226:1401', '226:1402', '226:1404'], m: ['226:1487', '226:1488', '226:1490'] },
+];
 ---
-<section aria-labelledby="buckets-title" class="bg-paper" data-node="226:881" data-node-m="226:1147">
-  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col lg:flex-row lg:items-start gap-[32px] lg:gap-[112px]">
-    
-    <div class="flex flex-col gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0" data-node="226:882" data-node-m="226:1504">
-      <div class="flex flex-col gap-[16px] lg:gap-[24px]" data-node-m="226:1148">
-        <div class="inline-flex items-center self-start px-[8px] py-[4px] border border-navy rounded-[2px]" data-node="226:883" data-node-m="226:1149">
-          <span class="tm-label lg:t-label text-navy" data-node="226:884" data-node-m="226:1150">§ 01</span>
+<section aria-labelledby="res-buckets-title" class="bg-paper" data-node="226:881" data-node-m="226:1147">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col lg:flex-row lg:items-start lg:gap-[112px]">
+
+    <div class="flex lg:hidden mb-[32px]" data-node-m="226:1504">
+      <span aria-hidden="true" class="block w-[3px] shrink-0 bg-royal" data-node-m="226:1505"></span>
+      <p class="m-0 ml-[16px] tm-lead text-ink" data-node-m="226:1506">When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won't let the carrier set the scope.</p>
+    </div>
+
+    <div class="flex flex-col lg:items-start lg:gap-[24px] lg:w-[360px] lg:shrink-0" data-node="226:882">
+      <div class="flex flex-col items-start gap-[16px] lg:contents" data-node-m="226:1148">
+        <div class="inline-flex border border-navy rounded-[2px] px-[8px] py-[4px]" data-node="226:883" data-node-m="226:1149">
+          <span class="tm-label lg:t-label text-navy whitespace-nowrap" data-node="226:884" data-node-m="226:1150">§ 01</span>
         </div>
-        <h2 id="buckets-title" class="m-0 tm-h2 lg:t-h2 text-navy" data-node="226:885" data-node-m="226:1151">Four buckets. We measure each one.</h2>
+        <h2 id="res-buckets-title" class="m-0 w-full tm-h2 lg:t-h2 text-navy" data-node="226:885" data-node-m="226:1151">Four buckets. We measure each one.</h2>
+        <div aria-hidden="true" class="res-ruler w-[200px] lg:w-[360px]" data-node="226:886" data-node-m="226:1152"></div>
       </div>
-
-      <div class="hidden lg:block w-[360px] h-[16px] opacity-40 bg-[url('/svg/detail-crop-marks.svg')] bg-repeat-x" data-node="226:886"></div>
-
-      <div class="hidden lg:block w-[360px] h-[248px]" data-node="226:1418">
-        <Img node="226:1418" alt="Modern home" class="w-full h-full object-cover" />
+      <div class="hidden lg:block w-[360px] h-[248px] overflow-hidden" data-node="226:1418">
+        <Img node="226:1418" alt="Modern home exterior after a fire." class="w-full h-full object-cover" />
       </div>
-
       <div class="hidden lg:flex items-center gap-[8px]" data-node="226:1419">
-        <span aria-hidden="true" class="block w-[32px] h-[1px] bg-ink" data-node="226:1420"></span>
-        <span class="t-caption text-ink" data-node="226:1421">Field photograph</span>
+        <span aria-hidden="true" class="block w-[32px] h-px bg-ink" data-node="226:1420"></span>
+        <span class="t-caption text-ink whitespace-nowrap" data-node="226:1421">Field photograph</span>
       </div>
     </div>
 
-    <ul class="m-0 p-0 list-none flex flex-col w-full" data-node="226:933" data-node-m="226:1179">
-      <!-- Dwelling -->
-      <li class="flex flex-col gap-[16px] py-[24px] border-t border-line lg:flex-row lg:gap-[24px] lg:items-start lg:py-[32px] lg:first:border-t-0 lg:first:pt-0" data-node="226:934" data-node-m="226:1180">
-        <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-line lg:w-[64px] lg:h-[64px]" data-node="226:935" data-node-m="226:1181">
-          <Icon name="home" size={24} class="lg:scale-[1.333]" data-node="226:936" data-node-m="226:1182" />
-        </div>
-        <p class="m-0 tm-body lg:t-body text-ink lg:flex-1 lg:mt-[16px]" data-node="226:937" data-node-m="226:1183"><strong>Dwelling:</strong> the structure, returned to its condition before the loss and to current code.</p>
-      </li>
-
-      <!-- Other structures -->
-      <li class="flex flex-col gap-[16px] py-[24px] border-t border-line lg:flex-row lg:gap-[24px] lg:items-start lg:py-[32px]" data-node="226:938" data-node-m="226:1184">
-        <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-line lg:w-[64px] lg:h-[64px]" data-node="226:939" data-node-m="226:1185">
-          <Icon name="building" size={24} class="lg:scale-[1.333]" data-node="226:940" data-node-m="226:1186" />
-        </div>
-        <p class="m-0 tm-body lg:t-body text-ink lg:flex-1 lg:mt-[16px]" data-node="226:941" data-node-m="226:1187"><strong>Other structures:</strong> fences, decks, garages, barns, guest houses.</p>
-      </li>
-
-      <!-- Contents -->
-      <li class="flex flex-col gap-[16px] py-[24px] border-t border-line lg:flex-row lg:gap-[24px] lg:items-start lg:py-[32px]" data-node="226:942" data-node-m="226:1188">
-        <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-line lg:w-[64px] lg:h-[64px]" data-node="226:943" data-node-m="226:1189">
-          <Icon name="document" size={24} class="lg:scale-[1.333]" data-node="226:944" data-node-m="226:1190" />
-        </div>
-        <p class="m-0 tm-body lg:t-body text-ink lg:flex-1 lg:mt-[16px]" data-node="226:945" data-node-m="226:1191"><strong>Contents:</strong> everything inside, from furniture to fine art.</p>
-      </li>
-
-      <!-- Loss of use -->
-      <li class="flex flex-col gap-[16px] pt-[24px] pb-0 border-t border-line lg:flex-row lg:gap-[24px] lg:items-start lg:pt-[32px] lg:pb-0" data-node="226:1401" data-node-m="226:1192">
-        <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-line lg:w-[64px] lg:h-[64px]" data-node="226:1402" data-node-m="226:1193">
-          <Icon name="clock" size={24} class="lg:scale-[1.333]" data-node="226:1403" data-node-m="226:1194" />
-        </div>
-        <p class="m-0 tm-body lg:t-body text-ink lg:flex-1 lg:mt-[16px]" data-node="226:1404" data-node-m="226:1195"><strong>Loss of use:</strong> comparable living while you're displaced, including pet accommodations where your policy allows.</p>
-      </li>
+    <ul class="m-0 mt-[32px] lg:mt-0 p-0 list-none flex flex-col flex-1 min-w-0" data-node="226:933" data-node-m="226:1179">
+      {items.map((it) => (
+        <li class:list={['flex items-center lg:items-start gap-[16px] lg:gap-[24px] py-[20px] lg:py-[32px] border-t border-line', it.bottom && 'border-b']} data-node={it.d[0]} data-node-m={it.m[0]}>
+          <span class="flex items-center justify-center shrink-0 size-[40px] rounded-full bg-white border border-navy text-navy" data-node={it.d[1]} data-node-m={it.m[1]}>
+            <Icon name={it.icon} size={24} />
+          </span>
+          <p class="m-0 flex-1 min-w-0 tm-body lg:text-[28px] lg:leading-[34px] lg:tracking-[-0.01em] lg:font-display lg:font-normal text-ink" data-node={it.d[2]} data-node-m={it.m[2]}><strong class="font-bold">{it.term}</strong>{it.text}</p>
+        </li>
+      ))}
     </ul>
 
   </div>
 </section>
+<style>
+  /* Ruler ticks: navy 1px every 8px (6 tall), every 40px 10 tall, every 80px 16 tall; 40% opacity. */
+  .res-ruler {
+    height: 16px; opacity: .4;
+    background:
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 80px 16px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 40px 10px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 8px 6px repeat-x;
+  }
+</style>

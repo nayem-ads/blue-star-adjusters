@@ -1,58 +1,51 @@
 ---
-// S3 Index. Desktop 226:1058, mobile 226:1274.
+// Residential "Section / Index" (hub index of loss types). Desktop 226:1058 (1280×729), mobile 226:1274 (390×821).
 import Icon from '../../components/Icon.astro';
 import { ROUTES } from '../../data/site';
 
 const links = [
-  { label: 'Fire & Smoke', icon: 'flame', href: ROUTES.fireSmoke,
-    d: { link: '228:969', circle: '228:972', text: '228:970' },
-    m: { link: '228:971', circle: '228:974', text: '228:972' } },
-  { label: 'Wildfire', icon: 'map-pin', href: ROUTES.wildfire,
-    d: { link: '228:976', circle: '228:979', text: '228:977' } },
-  { label: 'Water & Plumbing', icon: 'droplet', href: ROUTES.waterDamage,
-    d: { link: '228:983', circle: '228:986', text: '228:984' } },
-  { label: 'Wind, Hail & Falling Trees', icon: 'wind', href: ROUTES.windHailTrees,
-    d: { link: '228:989', circle: '228:992', text: '228:990' } },
-  { label: 'Contents & Valuables', icon: 'document', href: ROUTES.contentsValuables,
-    d: { link: '228:995', circle: '228:998', text: '228:996' } },
-  { label: 'Additional Living Expenses', icon: 'clock', href: ROUTES.additionalLiving,
-    d: { link: '228:1002', circle: '228:1005', text: '228:1003' } },
-  { label: 'Code Upgrades', icon: 'ruler', href: ROUTES.codeUpgrades,
-    d: { link: '228:1009', circle: '228:1012', text: '228:1010' } },
-  { label: 'Denied or Underpaid', icon: 'shield', href: ROUTES.deniedOrUnderpaid,
-    d: { link: '228:1016', circle: '228:1019', text: '228:1017' } },
+  { label: 'Fire & Smoke', icon: 'flame', href: ROUTES.fireSmoke, d: ['228:969', '228:972', '228:970', '228:971'], m: ['228:1096', '228:1120', '228:1097', '228:1098'] },
+  { label: 'Wildfire', icon: 'map-pin', href: ROUTES.wildfire, d: ['228:976', '228:979', '228:977', '228:978'], m: ['228:1099', '228:1124', '228:1100', '228:1101'] },
+  { label: 'Water & Plumbing', icon: 'droplet', href: ROUTES.waterDamage, d: ['228:983', '228:986', '228:984', '228:985'], m: ['228:1102', '228:1128', '228:1103', '228:1104'] },
+  { label: 'Wind, Hail & Falling Trees', icon: 'wind', href: ROUTES.windHailTrees, d: ['228:989', '228:992', '228:990', '228:991'], m: ['228:1105', '228:1131', '228:1106', '228:1107'] },
+  { label: 'Contents & Valuables', icon: 'document', href: ROUTES.contentsValuables, d: ['228:995', '228:998', '228:996', '228:997'], m: ['228:1108', '228:1134', '228:1109', '228:1110'] },
+  { label: 'Additional Living Expenses', icon: 'clock', href: ROUTES.additionalLiving, d: ['228:1002', '228:1005', '228:1003', '228:1004'], m: ['228:1111', '228:1138', '228:1112', '228:1113'] },
+  { label: 'Code Upgrades', icon: 'ruler', href: ROUTES.codeUpgrades, d: ['228:1009', '228:1012', '228:1010', '228:1011'], m: ['228:1114', '228:1142', '228:1115', '228:1116'] },
+  { label: 'Denied or Underpaid', icon: 'shield', href: ROUTES.deniedOrUnderpaid, d: ['228:1016', '228:1019', '228:1017', '228:1018'], m: ['228:1117', '228:1146', '228:1118', '228:1119'] },
 ];
 ---
-<section class="bg-paper" data-node="226:1058" data-node-m="226:1274">
-  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[96px] flex flex-col gap-[24px] lg:gap-[40px]">
-    
-    <div class="inline-flex items-center self-start px-[8px] py-[4px] border border-navy rounded-[2px]" data-node="226:1059" data-node-m="226:1275">
-      <span class="tm-label lg:t-label text-navy" data-node="226:1060" data-node-m="226:1276">§ 02</span>
+<section aria-label="Residential loss types" class="bg-paper" data-node="226:1058" data-node-m="226:1274">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[96px] flex flex-col items-start gap-[24px] lg:gap-[40px]">
+
+    <div class="inline-flex border border-navy rounded-[2px] px-[8px] py-[4px]" data-node="226:1059" data-node-m="226:1275">
+      <span class="tm-label lg:t-label text-navy whitespace-nowrap" data-node="226:1060" data-node-m="226:1276">§ 02</span>
     </div>
 
-    <div class="flex flex-col lg:flex-row lg:flex-wrap lg:gap-x-[24px] lg:gap-y-0" data-node="228:968" data-node-m="226:1277">
-      {links.map((l, i) => (
-        <a href={l.href} class="res-idx-link flex items-center gap-[16px] py-[16px] border-b border-line lg:w-[calc(50%-12px)]" data-node={l.d?.link}>
-          <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-line" data-node={l.d?.circle}>
-            <Icon name={l.icon} size={24} />
-          </div>
-          <span class="tm-h3 lg:t-h3 text-navy" data-node={l.d?.text}>{l.label}</span>
+    <div class="flex flex-col w-full lg:contents" data-node-m="226:1277">
+      <ul class="m-0 p-0 list-none flex flex-col w-full lg:flex-row lg:flex-wrap lg:gap-x-[24px]" data-node="228:968">
+        {links.map((l) => (
+          <li class="lg:w-[548px]">
+            <a href={l.href} class="res-idx flex items-center gap-0 lg:gap-[16px] py-[16px] lg:py-[24px] border-b border-line lg:border-b-0 lg:border-t-2 lg:border-navy text-navy" data-node={l.d[0]} data-node-m={l.m[0]}>
+              <span class="flex items-center justify-center shrink-0 size-[40px] rounded-full bg-white border border-navy" data-node={l.d[1]} data-node-m={l.m[1]}>
+                <Icon name={l.icon} size={24} />
+              </span>
+              <span class="flex-1 min-w-0 tm-h3 lg:t-h3 text-ink lg:text-navy" data-node={l.d[2]} data-node-m={l.m[2]}>{l.label}</span>
+              <span class="flex shrink-0 size-[20px] lg:size-[24px]" data-node={l.d[3]} data-node-m={l.m[3]}><Icon name="arrow-right" size={24} class="w-full h-full" /></span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="w-full" data-node="226:1068">
+        <a href={ROUTES.commercial} class="res-idx flex items-center justify-between py-[20px] border-b border-navy lg:border-b-0 lg:border-t lg:border-line lg:w-[262px] text-navy lg:text-ink" data-node="226:1069" data-node-m="226:1281">
+          <span class="flex-1 min-w-0 tm-body-strong lg:t-body-strong" data-node="226:1070" data-node-m="226:1282">Commercial Claims</span>
+          <span class="flex shrink-0 size-[24px]" data-node="226:1071" data-node-m="226:1283"><Icon name="arrow-right" size={24} /></span>
         </a>
-      ))}
-    </div>
-
-    <div class="pt-[16px] lg:pt-0" data-node="226:1068" data-node-m="226:1301">
-      <a href={ROUTES.commercial} class="flex items-center justify-between py-[20px] border-t border-line lg:w-[262px]" data-node="226:1069" data-node-m="226:1302">
-        <span class="tm-body-strong lg:t-body-strong text-ink" data-node="226:1070" data-node-m="226:1303">Commercial Claims</span>
-        <Icon name="arrow-right" size={24} class="text-ink" data-node="226:1071" data-node-m="226:1304" />
-      </a>
+      </div>
     </div>
 
   </div>
 </section>
 <style>
-  @media (min-width: 1024px) {
-    /* Top border for first two items, no bottom border for last two (if even count) */
-    .res-idx-link { border-bottom: 0; border-top: 1px solid var(--color-line); padding: 24px 0; }
-  }
+  .res-idx:focus-visible { outline: 2px solid var(--color-royal); outline-offset: 2px; }
 </style>

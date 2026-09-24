@@ -1,0 +1,280 @@
+const imgImgOfficeSacramento = "https://www.figma.com/api/mcp/asset/771c8cf3-80f4-4495-bf56-042ea7bf5d75.png";
+const imgImgOfficeSantaMonica = "https://www.figma.com/api/mcp/asset/b00eae47-b059-4013-9f0f-873049a0d015.png";
+const imgImgOfficeSanFrancisco = "https://www.figma.com/api/mcp/asset/a693e58a-bb32-46c6-9c3c-69d9f59b619b.png";
+const imgImgOfficeReno = "https://www.figma.com/api/mcp/asset/517c5615-8927-4898-a5db-98e973b79f09.png";
+const imgImgOfficePortland = "https://www.figma.com/api/mcp/asset/b9001c39-e8ab-44e2-bb4f-c4a1b2d93c4c.png";
+const imgImgOfficeSeattle = "https://www.figma.com/api/mcp/asset/33285223-da72-4cf8-9e09-8a08faa8f4c6.png";
+const imgImgOfficeScottsdale = "https://www.figma.com/api/mcp/asset/1b46323f-d12d-47ba-a14f-31615f2458c6.png";
+const imgScrimTintNavy = "https://www.figma.com/api/mcp/asset/4dad43e3-c401-4ac1-84f6-d9d81f9cb73d.svg";
+const imgIconArrow = "https://www.figma.com/api/mcp/asset/1569bb2b-174c-4d89-b3f8-d011c7578bad.svg";
+const imgScrimTintNavy1 = "https://www.figma.com/api/mcp/asset/c177a447-3766-43f6-bd68-67b84bb17490.svg";
+const imgScrimTintNavy2 = "https://www.figma.com/api/mcp/asset/5d6db8b5-17c3-46b4-9fc6-0a33ee6efef3.svg";
+const imgScrimTintNavy3 = "https://www.figma.com/api/mcp/asset/57eb6945-2c1a-4747-9745-bd83a2a37efe.svg";
+const imgLogoMarkWhiteFaint = "https://www.figma.com/api/mcp/asset/e3e0ffc5-2ce1-4260-b799-ff3d2124c269.svg";
+
+export default function OfficesSevenCards() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col gap-[40px] items-start pb-[120px] pt-[96px] px-[80px] relative size-full" data-node-id="217:6473" data-name="Offices — seven cards">
+      <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:6474" data-name="Section index">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6475">
+          § 01
+        </p>
+        <div className="bg-[var(--color\/navy,#081d5e)] flex-[1_0_0] h-px min-w-px opacity-30 relative" data-node-id="217:6476" data-name="Hairline" />
+        <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:6477" data-name="Chip / 7 offices">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6478">
+            7 offices
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[32px] items-start overflow-clip relative shrink-0 w-full" data-node-id="217:6479" data-name="Cards row 1">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[544px]" data-node-id="217:6480" data-name="Office card / Sacramento">
+          <div className="bg-[var(--color\/navy,#081d5e)] h-[576px] overflow-clip relative rounded-[2px] shrink-0 w-[544px]" data-node-id="217:6481" data-name="Photo / Sacramento">
+            <div className="absolute h-[576px] left-0 top-0 w-[544px]" data-node-id="217:6482" data-annotations="Alt text: Craftsman bungalow under elm trees;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-sacramento">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-[118.06%] left-0 max-w-none top-[-14.93%] w-full" src={imgImgOfficeSacramento} />
+              </div>
+            </div>
+            <div className="absolute h-[288px] left-0 overflow-clip top-[288px] w-[544px]" data-node-id="217:7989" data-name="Scrim (navy, luminance-masked gradient)">
+              <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[288px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[544px_288px] opacity-90 top-0 w-[544px]" data-node-id="217:7991" style={{ maskImage: `url("${imgScrimTintNavy}")` }} data-name="Scrim tint (navy)" />
+              <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] left-[20px] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-20px_-234px] mask-size-[544px_288px] text-[28px] text-[color:var(--color\/white,white)] top-[234px] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6486" style={{ maskImage: `url("${imgScrimTintNavy}")` }}>
+                Sacramento
+              </p>
+            </div>
+            <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[16px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[16px]" data-node-id="217:6484" data-name="Chip / CA">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6485">
+                CA
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start overflow-clip pb-[4px] pt-[20px] relative shrink-0 w-full" data-node-id="217:6487" data-annotations="\[CLIENT: confirm\] named adjuster for Sacramento. Address and phone confirmed by Jay." data-name="Head office details">
+            <p className="font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6488">
+              Head office
+            </p>
+            <p className="font-['Montserrat:Regular'] font-normal leading-[28px] min-w-full relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="217:6489">
+              1610 R Street, Suite 300, Sacramento, California 95811
+            </p>
+            <p className="font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6490">
+              (916) 507-1005
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[8px] h-[48px] items-center overflow-clip relative shrink-0 w-[544px]" data-node-id="217:6491" data-annotations="Links to the Sacramento office page (/locations/\[city\]). Link label 'View office' from the job brief; copy says 'link to the office page' (CD 553)." data-name="Link / View office — Sacramento">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6492">
+              View office
+            </p>
+            <div className="relative shrink-0 size-[20px]" data-node-id="217:6493" data-name="Icon / arrow">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+            </div>
+          </div>
+          <div className="absolute h-[600px] left-[-12px] top-[-12px] w-[568px]" data-node-id="217:6542" data-name="Detail / Crop marks (Sacramento)">
+            <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] left-0 top-0 w-[16px]" data-node-id="I217:6542;71:534" data-name="Mark" />
+            <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] left-0 top-0 w-[1.5px]" data-node-id="I217:6542;71:535" data-name="Mark" />
+            <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] right-0 top-0 w-[16px]" data-node-id="I217:6542;71:536" data-name="Mark" />
+            <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] right-0 top-0 w-[1.5px]" data-node-id="I217:6542;71:537" data-name="Mark" />
+            <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] left-0 w-[16px]" data-node-id="I217:6542;71:538" data-name="Mark" />
+            <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] left-0 w-[1.5px]" data-node-id="I217:6542;71:539" data-name="Mark" />
+            <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] right-0 w-[16px]" data-node-id="I217:6542;71:540" data-name="Mark" />
+            <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] right-0 w-[1.5px]" data-node-id="I217:6542;71:541" data-name="Mark" />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip relative shrink-0 w-[512px]" data-node-id="217:6495" data-name="Cards column">
+          <div className="content-stretch flex gap-[24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="217:6496" data-name="Pair A">
+            <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6497" data-name="Office card / Santa Monica">
+              <div className="bg-[var(--color\/navy,#081d5e)] h-[305px] overflow-clip relative rounded-[2px] shrink-0 w-[244px]" data-node-id="217:6498" data-name="Photo / Santa Monica">
+                <div className="absolute h-[305px] left-0 top-0 w-[244px]" data-node-id="217:6499" data-annotations="Alt text: Spanish revival home with a palm tree;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-santa-monica">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgImgOfficeSantaMonica} />
+                  </div>
+                </div>
+                <div className="absolute h-[153px] left-0 overflow-clip top-[152px] w-[244px]" data-node-id="217:7992" data-name="Scrim (navy, luminance-masked gradient)">
+                  <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[153px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[244px_153px] opacity-90 top-0 w-[244px]" data-node-id="217:7994" style={{ maskImage: `url("${imgScrimTintNavy1}")` }} data-name="Scrim tint (navy)" />
+                  <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] left-[20px] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-20px_-99px] mask-size-[244px_153px] text-[28px] text-[color:var(--color\/white,white)] top-[99px] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6503" style={{ maskImage: `url("${imgScrimTintNavy1}")` }}>
+                    Santa Monica
+                  </p>
+                </div>
+                <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[16px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[16px]" data-node-id="217:6501" data-name="Chip / CA">
+                  <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6502">
+                    CA
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[8px] h-[48px] items-center overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6504" data-annotations="Links to the Santa Monica office page (/locations/\[city\]). Link label 'View office' from the job brief; copy says 'link to the office page' (CD 553)." data-name="Link / View office — Santa Monica">
+                <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6505">
+                  View office
+                </p>
+                <div className="relative shrink-0 size-[20px]" data-node-id="217:6506" data-name="Icon / arrow">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6508" data-name="Office card / San Francisco">
+              <div className="bg-[var(--color\/navy,#081d5e)] h-[305px] overflow-clip relative rounded-[2px] shrink-0 w-[244px]" data-node-id="217:6509" data-name="Photo / San Francisco">
+                <div className="absolute h-[305px] left-0 top-0 w-[244px]" data-node-id="217:6510" data-annotations="Alt text: Victorian houses on a hill in fog;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-san-francisco">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgImgOfficeSanFrancisco} />
+                  </div>
+                </div>
+                <div className="absolute h-[153px] left-0 overflow-clip top-[152px] w-[244px]" data-node-id="217:7995" data-name="Scrim (navy, luminance-masked gradient)">
+                  <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[153px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[244px_153px] opacity-90 top-0 w-[244px]" data-node-id="217:7997" style={{ maskImage: `url("${imgScrimTintNavy1}")` }} data-name="Scrim tint (navy)" />
+                  <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] left-[20px] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-20px_-99px] mask-size-[244px_153px] text-[28px] text-[color:var(--color\/white,white)] top-[99px] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6514" style={{ maskImage: `url("${imgScrimTintNavy1}")` }}>
+                    San Francisco
+                  </p>
+                </div>
+                <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[16px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[16px]" data-node-id="217:6512" data-name="Chip / CA">
+                  <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6513">
+                    CA
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[8px] h-[48px] items-center overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6515" data-annotations="Links to the San Francisco office page (/locations/\[city\]). Link label 'View office' from the job brief; copy says 'link to the office page' (CD 553)." data-name="Link / View office — San Francisco">
+                <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6516">
+                  View office
+                </p>
+                <div className="relative shrink-0 size-[20px]" data-node-id="217:6517" data-name="Icon / arrow">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="217:6519" data-name="Pair B">
+            <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6520" data-name="Office card / Reno">
+              <div className="bg-[var(--color\/navy,#081d5e)] h-[305px] overflow-clip relative rounded-[2px] shrink-0 w-[244px]" data-node-id="217:6521" data-name="Photo / Reno">
+                <div className="absolute h-[305px] left-0 top-0 w-[244px]" data-node-id="217:6522" data-annotations="Alt text: Mountain modern home with sagebrush;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-reno">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgImgOfficeReno} />
+                  </div>
+                </div>
+                <div className="absolute h-[153px] left-0 overflow-clip top-[152px] w-[244px]" data-node-id="217:7998" data-name="Scrim (navy, luminance-masked gradient)">
+                  <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[153px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[244px_153px] opacity-90 top-0 w-[244px]" data-node-id="217:8000" style={{ maskImage: `url("${imgScrimTintNavy1}")` }} data-name="Scrim tint (navy)" />
+                  <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] left-[20px] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-20px_-99px] mask-size-[244px_153px] text-[28px] text-[color:var(--color\/white,white)] top-[99px] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6526" style={{ maskImage: `url("${imgScrimTintNavy1}")` }}>
+                    Reno
+                  </p>
+                </div>
+                <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[16px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[16px]" data-node-id="217:6524" data-name="Chip / NV">
+                  <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6525">
+                    NV
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[8px] h-[48px] items-center overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6527" data-annotations="Links to the Reno office page (/locations/\[city\]). Link label 'View office' from the job brief; copy says 'link to the office page' (CD 553)." data-name="Link / View office — Reno">
+                <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6528">
+                  View office
+                </p>
+                <div className="relative shrink-0 size-[20px]" data-node-id="217:6529" data-name="Icon / arrow">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6531" data-name="Office card / Portland">
+              <div className="bg-[var(--color\/navy,#081d5e)] h-[305px] overflow-clip relative rounded-[2px] shrink-0 w-[244px]" data-node-id="217:6532" data-name="Photo / Portland">
+                <div className="absolute h-[305px] left-0 top-0 w-[244px]" data-node-id="217:6533" data-annotations="Alt text: Cedar shingle Craftsman home in the rain;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-portland">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgImgOfficePortland} />
+                  </div>
+                </div>
+                <div className="absolute h-[153px] left-0 overflow-clip top-[152px] w-[244px]" data-node-id="217:8001" data-name="Scrim (navy, luminance-masked gradient)">
+                  <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[153px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[244px_153px] opacity-90 top-0 w-[244px]" data-node-id="217:8003" style={{ maskImage: `url("${imgScrimTintNavy1}")` }} data-name="Scrim tint (navy)" />
+                  <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] left-[20px] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-20px_-99px] mask-size-[244px_153px] text-[28px] text-[color:var(--color\/white,white)] top-[99px] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6537" style={{ maskImage: `url("${imgScrimTintNavy1}")` }}>
+                    Portland
+                  </p>
+                </div>
+                <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[16px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[16px]" data-node-id="217:6535" data-name="Chip / OR">
+                  <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6536">
+                    OR
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[8px] h-[48px] items-center overflow-clip relative shrink-0 w-[244px]" data-node-id="217:6538" data-annotations="Links to the Portland office page (/locations/\[city\]). Link label 'View office' from the job brief; copy says 'link to the office page' (CD 553)." data-name="Link / View office — Portland">
+                <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6539">
+                  View office
+                </p>
+                <div className="relative shrink-0 size-[20px]" data-node-id="217:6540" data-name="Icon / arrow">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[24px] items-start overflow-clip relative shrink-0 w-full" data-node-id="217:6551" data-name="Cards row 2">
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[448px]" data-node-id="217:6552" data-name="Office card / Seattle">
+          <div className="bg-[var(--color\/navy,#081d5e)] h-[400px] overflow-clip relative rounded-[2px] shrink-0 w-[448px]" data-node-id="217:6553" data-name="Photo / Seattle">
+            <div className="absolute h-[400px] left-0 top-0 w-[448px]" data-node-id="217:6554" data-annotations="Alt text: Cedar modern home among fir trees, overcast sky;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-seattle">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-[140%] left-0 max-w-none top-[-27%] w-full" src={imgImgOfficeSeattle} />
+              </div>
+            </div>
+            <div className="absolute h-[200px] left-0 overflow-clip top-[200px] w-[448px]" data-node-id="217:8004" data-name="Scrim (navy, luminance-masked gradient)">
+              <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[200px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[448px_200px] opacity-90 top-0 w-[448px]" data-node-id="217:8006" style={{ maskImage: `url("${imgScrimTintNavy2}")` }} data-name="Scrim tint (navy)" />
+              <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] left-[20px] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-20px_-146px] mask-size-[448px_200px] text-[28px] text-[color:var(--color\/white,white)] top-[146px] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6558" style={{ maskImage: `url("${imgScrimTintNavy2}")` }}>
+                Seattle
+              </p>
+            </div>
+            <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[16px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[16px]" data-node-id="217:6556" data-name="Chip / WA">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6557">
+                WA
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[8px] h-[48px] items-center overflow-clip relative shrink-0 w-[448px]" data-node-id="217:6559" data-annotations="Links to the Seattle office page (/locations/\[city\]). Link label 'View office' from the job brief; copy says 'link to the office page' (CD 553)." data-name="Link / View office — Seattle">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6560">
+              View office
+            </p>
+            <div className="relative shrink-0 size-[20px]" data-node-id="217:6561" data-name="Icon / arrow">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[296px]" data-node-id="217:6563" data-name="Office card / Scottsdale">
+          <div className="bg-[var(--color\/navy,#081d5e)] h-[400px] overflow-clip relative rounded-[2px] shrink-0 w-[296px]" data-node-id="217:6564" data-name="Photo / Scottsdale">
+            <div className="absolute h-[400px] left-0 top-0 w-[296px]" data-node-id="217:6565" data-annotations="Alt text: Desert modern home with a saguaro at sunset;AI illustrative. Replace with a real photo before launch." data-name="IMG:office-scottsdale">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-[-8.11%] max-w-none top-0 w-[108.11%]" src={imgImgOfficeScottsdale} />
+              </div>
+            </div>
+            <div className="absolute h-[200px] left-0 overflow-clip top-[200px] w-[296px]" data-node-id="217:8007" data-name="Scrim (navy, luminance-masked gradient)">
+              <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[200px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[296px_200px] opacity-90 top-0 w-[296px]" data-node-id="217:8009" style={{ maskImage: `url("${imgScrimTintNavy3}")` }} data-name="Scrim tint (navy)" />
+              <p className="[word-break:break-word] absolute font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] left-[20px] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-20px_-146px] mask-size-[296px_200px] text-[28px] text-[color:var(--color\/white,white)] top-[146px] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6569" style={{ maskImage: `url("${imgScrimTintNavy3}")` }}>
+                Scottsdale
+              </p>
+            </div>
+            <div className="absolute bg-[var(--color\/white,white)] content-stretch flex items-start left-[16px] overflow-clip px-[8px] py-[4px] rounded-[2px] top-[16px]" data-node-id="217:6567" data-name="Chip / AZ">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6568">
+                AZ
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[8px] h-[48px] items-center overflow-clip relative shrink-0 w-[296px]" data-node-id="217:6570" data-annotations="Links to the Scottsdale office page (/locations/\[city\]). Link label 'View office' from the job brief; copy says 'link to the office page' (CD 553)." data-name="Link / View office — Scottsdale">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:6571">
+              View office
+            </p>
+            <div className="relative shrink-0 size-[20px]" data-node-id="217:6572" data-name="Icon / arrow">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArrow} />
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex flex-col h-[448px] items-start justify-between overflow-clip p-[32px] relative rounded-[2px] shrink-0 w-[352px]" data-node-id="217:6574" data-name="CTA tile (navy)">
+          <div className="absolute h-[320px] left-[140px] top-[180px] w-[263.565px]" data-node-id="217:6575" data-name="Logo / Mark / White (faint)">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkWhiteFaint} />
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 text-[color:var(--color\/white,white)] w-full" data-node-id="217:6580" data-name="Tile text">
+            <p className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] tracking-[-0.28px] w-full" data-node-id="217:6581">
+              We represent the insured only.
+            </p>
+            <p className="font-['Montserrat:Regular'] font-normal leading-[28px] opacity-90 relative shrink-0 text-[17px] w-full" data-node-id="217:6582">{`No upfront cost. We're paid a percentage of what we recover.`}</p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" data-node-id="217:6583" data-annotations="CTA after the office cards (CD 553)." data-name="Button / Schedule a Free Review">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="I217:6583;37:155">
+              Schedule a Free Review
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Desktop/Body: Font(family: "Montserrat", style: Regular, size: 17, weight: 400, lineHeight: 28, letterSpacing: 0), Desktop/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 17, weight: 600, lineHeight: 28, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

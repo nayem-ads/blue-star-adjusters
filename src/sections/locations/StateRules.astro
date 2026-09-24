@@ -1,0 +1,71 @@
+---
+// State rules — ledger. Desktop 217:8010 (1280×1154), mobile 217:11855 (390×1338).
+// Desktop: margin rail + ledger rows (state + source chip | rule | offices). Mobile: index row, then one card per state.
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+const rows = [
+  { state: 'California', mw: 'w-[101px]', src: '§ 15027', offices: ['Santa Monica', 'Sacramento', 'San Francisco'],
+    rule: 'Cancel within 3 business days of signing (5 calendar days in a declared catastrophic disaster area). Our fee can never leave you with less than your insurer already paid before you hired us.',
+    d: ['217:8018', '217:8020', '217:8022', '217:8023', '217:8024', ['217:8025', '217:8030', '217:8035'], '217:8017'],
+    m: ['217:11867', '217:11870', '217:11869', '217:11872', '217:11873', ['217:11874', '217:11879', '217:11884'], '217:11866'] },
+  { state: 'Nevada', mw: 'w-[80px]', src: 'NRS 684A.165', offices: ['Reno'],
+    rule: 'Nevada law bars adjusters from giving legal advice. When your claim needs counsel, we bring counsel in.',
+    d: ['217:8041', '217:8043', '217:8045', '217:8046', '217:8047', ['217:8048'], '217:8040'],
+    m: ['217:11890', '217:11893', '217:11892', '217:11895', '217:11896', ['217:11897'], '217:11889'] },
+  { state: 'Oregon', mw: 'w-[77px]', src: 'Oregon DFR', offices: ['Portland'],
+    rule: 'Oregon created a separate public adjuster license on August 1, 2025. On July 31, 2026 it temporarily paused cancellations and nonrenewals in wildfire evacuation ZIP codes.',
+    d: ['217:8054', '217:8056', '217:8058', '217:8059', '217:8060', ['217:8061'], '217:8053'],
+    m: ['217:11903', '217:11906', '217:11905', '217:11908', '217:11909', ['217:11910'], '217:11902'] },
+  { state: 'Washington', mw: 'w-[123px]', src: 'WA OIC', offices: ['Seattle'],
+    rule: 'After the August 2023 Gray and Oregon Road fires, 244 of 355 significant dwelling claims paid out their full limits. Underinsurance is common here.',
+    d: ['217:8067', '217:8069', '217:8071', '217:8072', '217:8073', ['217:8074'], '217:8066'],
+    m: ['217:11916', '217:11919', '217:11918', '217:11921', '217:11922', ['217:11923'], '217:11915'] },
+  { state: 'Arizona', mw: 'w-[81px]', src: 'ARS 20-321.02', offices: ['Scottsdale'],
+    rule: 'Arizona bars public adjusters from taking any part in repairs on a claim they adjust. We measure and negotiate. Your contractor builds.',
+    d: ['217:8080', '217:8082', '217:8084', '217:8085', '217:8086', ['217:8087'], '217:8079'],
+    m: ['217:11929', '217:11932', '217:11931', '217:11934', '217:11935', ['217:11936'], '217:11928'] },
+];
+---
+<section aria-labelledby="loc-rules-title" class="lc-rules relative overflow-hidden bg-navy text-white" data-node="217:8010" data-node-m="217:11855">
+  <h2 id="loc-rules-title" class="sr-only">State rules by office</h2>
+  <span aria-hidden="true" class="hidden lg:block absolute left-[calc(50%-760px)] top-[754px] opacity-[.07] pointer-events-none" data-node="217:8974"><Logo variant="mark-white" bare width={428.294} height={520} label="" /></span>
+  <span aria-hidden="true" class="lg:hidden absolute left-[199.7px] top-[520px] opacity-[.06] pointer-events-none" data-node-m="217:11856"><Logo variant="mark-white" bare width={345.9} height={420} label="" /></span>
+
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[56px] pb-[56px] lg:px-[80px] lg:py-[120px] lg:flex lg:items-start lg:gap-[64px]">
+    <!-- Desktop margin rail / mobile index row -->
+    <div class="hidden lg:flex flex-col items-start gap-[16px] w-[256px] shrink-0" data-node="217:8011">
+      <p class="m-0 t-label whitespace-nowrap" data-node="217:8012">§ 02</p>
+      <span aria-hidden="true" class="block w-[256px] h-px bg-white opacity-40"></span>
+      <p class="m-0 border border-white rounded-[2px] px-[8px] py-[4px] t-label whitespace-nowrap" data-node="217:8014">5 states</p>
+    </div>
+    <div class="lg:hidden flex items-start gap-[12px] h-[50px]" data-node-m="217:11861">
+      <p class="m-0 mt-[5px] tm-label whitespace-nowrap" data-node-m="217:11862">§ 02</p>
+      <span aria-hidden="true" class="flex-1 h-[2px] mt-[12px] bg-white opacity-[.174]"></span>
+      <p class="m-0 border border-white rounded-[2px] px-[8px] py-[4px] tm-label whitespace-nowrap" data-node-m="217:11864">5 states</p>
+    </div>
+
+    <div class="lg:flex-1 lg:min-w-0" data-node="217:8016">
+      {rows.map((r) => (
+        <>
+          <span aria-hidden="true" class="block h-px bg-white/25" data-node={r.d[6] as string} data-node-m={r.m[6] as string}></span>
+          <article class="pt-[24px] pb-[28px] lg:py-[32px] lg:flex lg:items-start lg:gap-[32px]" data-node={r.d[0] as string} data-node-m={r.m[0] as string}>
+            <div class="flex items-center gap-[12px] lg:flex-col-reverse lg:items-start lg:w-[200px] lg:shrink-0">
+              <h3 class:list={['m-0 tm-h3 lg:t-h3 whitespace-nowrap lg:w-full', r.mw]} data-node={r.d[2] as string} data-node-m={r.m[2] as string}>{r.state}</h3>
+              <p class="m-0 border border-white rounded-[2px] px-[8px] py-[4px] tm-label lg:t-label whitespace-nowrap" data-node={r.d[1] as string} data-node-m={r.m[1] as string}>{r.src}</p>
+            </div>
+            <p class="m-0 mt-[12px] lg:mt-0 tm-body lg:t-body lg:flex-1 lg:min-w-0" data-node={r.d[3] as string} data-node-m={r.m[3] as string}>{r.rule}</p>
+            <ul class="m-0 mt-[12px] lg:mt-0 p-0 list-none flex flex-wrap gap-x-[16px] gap-y-[8px] lg:flex-col lg:w-[160px] lg:shrink-0" data-node={r.d[4] as string} data-node-m={r.m[4] as string}>
+              {r.offices.map((o, i) => (
+                <li class="flex items-center gap-[8px] lg:w-full" data-node={(r.d[5] as string[])[i]} data-node-m={(r.m[5] as string[])[i]}>
+                  <Icon name="map-pin" size={16} class="shrink-0" />
+                  <span class="tm-label lg:t-small lg:font-normal lg:tracking-normal">{o}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </>
+      ))}
+      <span aria-hidden="true" class="block h-px bg-white/25" data-node="217:8092" data-node-m="217:11941"></span>
+    </div>
+  </div>
+</section>

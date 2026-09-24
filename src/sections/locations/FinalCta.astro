@@ -1,0 +1,28 @@
+---
+// Final CTA — statement. Desktop 217:8093 (1280×688), mobile 217:11942 (390×566).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import WaveCorner from '../../components/WaveCorner.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+---
+<section aria-labelledby="loc-cta-title" class="relative overflow-hidden bg-white" data-node="217:8093" data-node-m="217:11942">
+  <div aria-hidden="true" class="lc-ruler lg:hidden absolute left-0 top-0 w-full opacity-[.55]" data-node-m="217:11943"></div>
+  <WaveCorner position="bottom-right" class="hidden lg:block absolute bottom-0 left-[calc(50%+280px)]" node="217:8254" />
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[56px] pb-[64px] lg:px-[80px] lg:pt-[120px] lg:pb-[168px]">
+    <div aria-hidden="true" class="lc-ruler hidden lg:block w-[1121px] opacity-[.35]" data-node="217:8094"></div>
+    <h2 id="loc-cta-title" class="m-0 lg:mt-[48px] text-navy tm-display lg:t-display-xl" data-node="217:8236" data-node-m="217:11995">Call Before the Carrier Sets the Narrative.</h2>
+    <div class="lg:mt-[48px] lg:flex lg:items-start lg:gap-[80px]" data-node="217:8237">
+      <p class="m-0 mt-[20px] lg:mt-0 tm-lead lg:t-lead text-ink lg:w-[520px] lg:shrink-0" data-node="217:8238" data-node-m="217:11996">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+      <div class="contents lg:flex lg:flex-col lg:gap-[20px] lg:flex-1 lg:min-w-0" data-node="217:8239">
+        <div class="mt-[20px] pt-[8px] lg:mt-0 lg:pt-0 lg:w-fit flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]" data-node="217:8240" data-node-m="217:11997">
+          <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" data-node="217:8241" data-node-m="217:11998">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]" data-node="217:8245" data-node-m="217:12002">Call {PHONE_DISPLAY}</Button>
+        </div>
+        <p class="m-0 mt-[20px] lg:mt-0 w-fit flex items-center gap-[8px] text-ink" data-node="217:8249" data-node-m="217:12006">
+          <Icon name="clock" size={20} class="shrink-0 text-navy" />
+          <span class="tm-body lg:t-small" data-node="217:8253" data-node-m="217:12010">Monday to Friday, 9 AM to 5 PM Pacific.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

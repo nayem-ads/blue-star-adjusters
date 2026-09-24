@@ -1,0 +1,30 @@
+---
+// Office card (photo with state chip, navy scrim and city name, then a "View office" link).
+// size: 'd' desktop (chip 16, city t-h3, link 48) · 'mbig' mobile head office (chip 20, city tm-h2, link 44) · 'msm' mobile mosaic (chip 12, city tm-h3, link 44).
+// n = node ids [card, photo, img, scrim, city, chip, link]; tagged as data-node (desktop) or data-node-m (mobile).
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+interface Props { city: string; st: string; href: string; img: string; alt: string; photoH: number; scrimH: number; size: 'd'|'mbig'|'msm'; n: string[]; cityW?: number; class?: string; mobile?: boolean }
+const { city, st, href, img, alt, photoH, scrimH, size, n, cityW, class: cls = '', mobile = false } = Astro.props;
+const attr = (id?: string) => (id ? (mobile ? { 'data-node-m': id } : { 'data-node': id }) : {});
+const S = {
+  d: { chip: 'left-[16px] top-[16px]', city: 't-h3', pos: 'left-[20px]', cityTop: photoH - 54, link: 'h-[48px] t-body-strong' },
+  mbig: { chip: 'left-[20px] top-[20px]', city: 'tm-h2', pos: 'left-[20px]', cityTop: photoH - 56, link: 'h-[44px] tm-body-strong' },
+  msm: { chip: 'left-[12px] top-[12px]', city: 'tm-h3', pos: 'left-[12px]', cityTop: photoH - 40, link: 'h-[44px] tm-body-strong' },
+}[size];
+---
+<article class:list={['lc-card relative flex flex-col', cls]} {...attr(n[0])}>
+  <a href={href} tabindex="-1" aria-hidden="true" class="block relative overflow-hidden rounded-[2px] bg-navy shrink-0" style={`height:${photoH}px`} {...attr(n[1])}>
+    <span class="absolute inset-0 block" {...attr(n[2])}><Img node={img} alt={alt} class="lc-card__img w-full h-full object-cover" /></span>
+    <span class="lc-scrim absolute left-0 right-0 bottom-0" style={`height:${scrimH}px`} {...attr(n[3])}></span>
+    <span class:list={['absolute bg-white rounded-[2px] px-[8px] py-[4px] t-label text-navy whitespace-nowrap', S.chip]} {...attr(n[5])}>{st}</span>
+  </a>
+  <div class:list={['absolute pointer-events-none', S.pos]} style={`top:${S.cityTop}px`}>
+    <h3 class:list={['m-0 text-white whitespace-nowrap', S.city]} style={cityW ? `width:${cityW}px` : undefined} {...attr(n[4])}>{city}</h3>
+  </div>
+  <slot />
+  <a href={href} class:list={['lc-link flex w-full items-center gap-[8px] text-navy', S.link]} {...attr(n[6])}>
+    <span>View office<span class="sr-only"> in {city}</span></span>
+    <Icon name="arrow-right" size={20} class="shrink-0" />
+  </a>
+</article>

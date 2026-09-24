@@ -1,0 +1,53 @@
+---
+// Hero — Local codes. Desktop 217:985 (1280×646), mobile 217:10682 (390×550).
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE } from '../../data/site';
+const facts = [
+  { icon: 'map-pin', text: '7 offices', d: ['217:1010', '217:1015'] },
+  { icon: 'building', text: 'Head office, Sacramento', d: ['217:1016', '217:1020'] },
+  { icon: 'shield', text: LICENSE, d: ['217:1021', '217:1026'] },
+  { icon: 'clock', text: 'Monday to Friday, 9 AM to 5 PM Pacific', d: ['217:1027', '217:1032'] },
+];
+---
+<section aria-labelledby="loc-hero-title" class="relative overflow-hidden bg-white" data-node="217:985" data-node-m="217:10682">
+  <!-- Mobile: the 640×400 blueprint grid component stretched to 390×550 (217:10683). -->
+  <svg aria-hidden="true" class="lg:hidden absolute left-0 top-0 w-[390px] h-[550px] pointer-events-none" viewBox="0 0 640 400" preserveAspectRatio="none" data-node-m="217:10683">
+    <image href="/svg/detail-blueprint-grid.svg" width="640" height="400" preserveAspectRatio="none" />
+  </svg>
+  <!-- Desktop: full-bleed 40px grid (217:1033), anchored to the 1280 frame's left edge. -->
+  <div aria-hidden="true" class="lc-grid hidden lg:block absolute top-0 h-[646px] left-[calc(50%-2640px)] w-[5280px] pointer-events-none"></div>
+  <div aria-hidden="true" class="lc-ruler lc-ruler--up hidden lg:block absolute top-[630px] left-[calc(50%-2640px)] w-[5281px] opacity-[.35]"></div>
+
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[32px] pb-[32px] lg:px-[80px] lg:pt-[96px] lg:pb-[112px]">
+    <div class="w-fit" data-node="217:986" data-node-m="217:10712"><Eyebrow>Locations</Eyebrow></div>
+    <div class="mt-[16px] lg:mt-[40px] lg:flex lg:items-start lg:gap-[80px]" data-node="217:989">
+      <div class="lg:w-[680px] lg:shrink-0" data-node="217:990">
+        <h1 id="loc-hero-title" class="m-0 text-navy font-display font-bold text-[40px] leading-[48px] tracking-[-1px] lg:t-display-l" data-node="217:991" data-node-m="217:10715">Local Codes.<br /> Local Contractors.</h1>
+        <p class="m-0 mt-[16px] lg:mt-[32px] tm-lead lg:t-lead text-ink lg:w-[600px]" data-node="217:992" data-node-m="217:10717">With offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle, and Scottsdale, we know your community, your local codes, and your local contractors: knowledge that translates to bigger settlements.</p>
+        <div class="mt-[16px] pt-[4px] lg:mt-[32px] lg:pt-0 lg:w-fit flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]" data-node="217:993" data-node-m="217:10718">
+          <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" data-node="217:994" data-node-m="217:10719">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]" data-node="217:998" data-node-m="217:10723">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+      <div class="hidden lg:block w-[360px] shrink-0 pt-[8px]" data-node="217:1002">
+        <div aria-hidden="true" class="flex items-center gap-[8px] h-[16px] text-royal" data-node="217:1003">
+          <span class="w-px h-[12px] bg-royal shrink-0"></span>
+          <span class="flex-1 h-px bg-royal"></span>
+          <span class="t-caption whitespace-nowrap">5 states</span>
+          <span class="flex-1 h-px bg-royal"></span>
+          <span class="w-px h-[12px] bg-royal shrink-0"></span>
+        </div>
+        <ul class="m-0 mt-[24px] p-0 list-none border-b border-line">
+          {facts.map((f) => (
+            <li class="flex items-center gap-[16px] py-[16px] border-t border-line" data-node={f.d[0]}>
+              <span class="flex items-center justify-center w-[40px] h-[40px] shrink-0 rounded-full border border-navy text-navy"><Icon name={f.icon} size={24} /></span>
+              <span class="flex-1 min-w-0 t-body-strong text-ink" data-node={f.d[1]}>{f.text}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

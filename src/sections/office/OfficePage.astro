@@ -1,0 +1,32 @@
+---
+// Office page template: light header, Hero, Office, [Local line], State rule, Claim types, CTA, footer, mobile call bar.
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from './Hero.astro';
+import Office from './Office.astro';
+import LocalLine from './LocalLine.astro';
+import StateRule from './StateRule.astro';
+import ClaimTypes from './ClaimTypes.astro';
+import Cta from './Cta.astro';
+import { nodes, type OfficeData } from './types';
+interface Props { data: OfficeData }
+const { data: d } = Astro.props;
+---
+<Base title={d.title} description={d.description}>
+  <div {...nodes(d, 'header')}><Header theme="light" /></div>
+  <main class="bs-office">
+    <Hero data={d} />
+    <Office data={d} />
+    {d.local && <LocalLine data={d} />}
+    <StateRule data={d} />
+    <ClaimTypes data={d} />
+    <Cta data={d} />
+  </main>
+  <div {...nodes(d, 'footer')}><Footer /></div>
+  <CallBar node={d.n.callbar?.[1] ?? undefined} />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-office :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

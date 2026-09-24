@@ -1,0 +1,29 @@
+---
+// Final CTA (same on all offices): ruler + H2 | lead + buttons, paper, brand wave bottom right.
+import Button from '../../components/Button.astro';
+import Ticks from './Ticks.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+import { nodes, type OfficeData } from './types';
+interface Props { data: OfficeData }
+const { data: d } = Astro.props;
+const n = (k: string) => nodes(d, k);
+const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
+---
+<section aria-labelledby="office-cta" class="relative bg-paper overflow-hidden" {...n('cta')}>
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[20px] px-[20px] pt-[64px] pb-[112px] lg:flex-row lg:items-start lg:gap-[64px] lg:px-[80px] lg:pt-[120px] lg:pb-[172px]">
+    <div class="flex flex-col gap-[20px] lg:gap-[24px] lg:w-[544px] lg:shrink-0" {...n('cta.statement')}>
+      <Ticks count={31} class="w-[160px] lg:w-[240px] text-navy opacity-45" node={id('cta.ruler', 0)} nodeM={id('cta.ruler', 1)} />
+      <h2 id="office-cta" class="m-0 tm-h2 lg:t-h2 text-navy" {...n('cta.h2')}>Call Before the Carrier Sets the Narrative.</h2>
+    </div>
+    <div class="flex flex-col gap-[20px] lg:flex-1 lg:min-w-0 lg:gap-[32px] lg:pt-[40px]" {...n('cta.action')}>
+      <p class="m-0 tm-body lg:t-lead text-ink" {...n('cta.body')}>Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+      <div class="flex flex-col w-full gap-[12px] pt-[8px] lg:flex-row lg:w-auto lg:self-start lg:gap-[16px] lg:pt-0" {...n('cta.buttons')}>
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" {...n('cta.btn1')}>Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" {...n('cta.btn2')}>Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+  <span aria-hidden="true" class="absolute right-0 bottom-0 w-[144px] h-[80px] lg:w-[216px] lg:h-[120px] pointer-events-none" {...n('cta.wave')}>
+    <img src="/svg/wave-bottom-right.svg" alt="" width="216" height="120" class="block w-full h-full" loading="lazy" decoding="async" />
+  </span>
+</section>

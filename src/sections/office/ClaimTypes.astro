@@ -1,0 +1,40 @@
+---
+// Claim types index: ruler + navy rule, six links (2 per row on desktop, a single list on mobile). Same on all offices.
+import Icon from '../../components/Icon.astro';
+import Ticks from './Ticks.astro';
+import { ROUTES } from '../../data/site';
+import { nodes, type OfficeData } from './types';
+interface Props { data: OfficeData }
+const { data: d } = Astro.props;
+const n = (k: string) => nodes(d, k);
+const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
+const links = [
+  { label: 'Residential Claims', href: ROUTES.residential, icon: 'home' },
+  { label: 'Commercial Claims', href: ROUTES.commercial, icon: 'building' },
+  { label: 'Fire & Smoke', href: ROUTES.fireSmoke, icon: 'flame' },
+  { label: 'Water & Plumbing', href: ROUTES.waterDamage, icon: 'droplet' },
+  { label: 'Wind, Hail & Falling Trees', href: ROUTES.windHailTrees, icon: 'wind' },
+  { label: 'Denied or Underpaid', href: ROUTES.deniedOrUnderpaid, icon: 'search' },
+];
+const rows = [0, 1, 2].map((r) => links.slice(r * 2, r * 2 + 2).map((l, j) => ({ ...l, i: r * 2 + j })));
+---
+<section aria-label="Claim types" class="bg-white" {...n('claims')}>
+  <div class="max-w-[1280px] mx-auto flex flex-col px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[112px]">
+    <Ticks count={141} class="w-full text-navy opacity-35" node={id('claims.ruler', 0)} nodeM={id('claims.ruler', 1)} />
+    <span aria-hidden="true" class="block h-[2px] w-full bg-navy mt-[12px] lg:mt-0" {...n('claims.rule')}></span>
+      {rows.map((row, r) => (
+        <div class="contents lg:flex lg:gap-[48px]" data-node={id(`claims.row${r + 1}`, 0)}>
+          {row.map((l) => (
+              <a href={l.href} class="bs-office-claim flex items-center gap-[16px] py-[20px] border-b border-line no-underline lg:flex-1 lg:min-w-0 lg:gap-[24px] lg:py-[32px]" {...n(`claims.${l.i}`)}>
+                <span aria-hidden="true" class="flex items-center justify-center shrink-0 size-[42px] lg:size-[48px] rounded-full border border-navy text-navy" {...n(`claims.${l.i}.icon`)}><Icon name={l.icon} size={24} /></span>
+                <span class="flex-1 min-w-0 tm-h3 lg:t-h3 text-navy" {...n(`claims.${l.i}.text`)}>{l.label}</span>
+                <span class="shrink-0 text-royal" {...n(`claims.${l.i}.arrow`)}><Icon name="arrow-right" size={24} class="block" /></span>
+              </a>
+          ))}
+        </div>
+      ))}
+  </div>
+</section>
+<style>
+  .bs-office-claim:hover .tm-h3 { text-decoration: underline; text-underline-offset: 4px; }
+</style>

@@ -1,0 +1,9 @@
+---
+// "Blueprint grid (full bleed, 40px)": navy 1px lines every 40 (minor layer 5 %), every 200 (major layer 10 %), from 0,0.
+// One 200×200 SVG tile, each layer drawn as a group so crossings inside a layer don't double up (as in Figma).
+interface Props { class?: string; node?: string; nodeM?: string }
+const { class: cls = '', node, nodeM } = Astro.props;
+const minor = [40, 80, 120, 160].map((v) => `<rect x='${v}' y='0' width='1' height='200'/><rect x='0' y='${v}' width='200' height='1'/>`).join('');
+const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><g fill='%23081d5e' opacity='.05'>${minor}</g><g fill='%23081d5e' opacity='.1'><rect x='0' y='0' width='1' height='200'/><rect x='0' y='0' width='200' height='1'/></g></svg>`;
+---
+<div aria-hidden="true" class:list={['absolute inset-0 pointer-events-none', cls]} style={`background-image:url("data:image/svg+xml,${svg}");background-size:200px 200px;background-position:0 0`} data-node={node} data-node-m={nodeM}></div>

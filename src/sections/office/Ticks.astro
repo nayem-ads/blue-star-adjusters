@@ -1,0 +1,9 @@
+---
+// Figma "Ruler ticks": 1px ticks every 8px from x 0; 16 tall every 10th, 10 tall every 5th, else 6 (top-aligned on mobile frames, bottom-aligned on desktop).
+// Box width = class; tick colour/opacity via class (e.g. "text-navy opacity-45"). Ticks drawn to `count`, clipped to the box.
+interface Props { count?: number; class?: string; node?: string; nodeM?: string }
+const { count = 161, class: cls = '', node, nodeM } = Astro.props;
+---
+<div aria-hidden="true" class:list={[/\babsolute\b/.test(cls) ? '' : 'relative', 'h-[16px] overflow-hidden pointer-events-none', cls]} data-node={node} data-node-m={nodeM}>
+  {Array.from({ length: count }, (_, i) => <span class="absolute top-0 lg:top-auto lg:bottom-0 w-px bg-current" style={`left:${i * 8}px;height:${i % 10 === 0 ? 16 : i % 5 === 0 ? 10 : 6}px`}></span>)}
+</div>

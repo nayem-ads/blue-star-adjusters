@@ -1,0 +1,28 @@
+---
+// ALE § 01 Includes. Desktop 238:881, mobile 238:1147.
+// Rail (chip, heading, ruler ticks) + oversized lead under a royal rule. On mobile the hero's lead paragraph
+// (slot/hero/6, 240:947) opens this section instead of sitting in the hero. The heading renders #000 in Figma (not navy).
+import Ticks from '../contents/Ticks.astro';
+interface Props { heroLead: string; chip: string; heading: string; lead: string }
+const { heroLead, chip, heading, lead } = Astro.props;
+---
+<section aria-labelledby="includes-title" class="bg-paper" data-node="238:881" data-node-m="238:1147">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <p class="lg:hidden m-0 tm-lead text-ink" data-node-m="240:947">{heroLead}</p>
+    <div class="flex flex-col gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0" data-node="238:882" data-node-m="238:1148">
+      <div class="inline-flex self-start px-[8px] py-[4px] border border-navy rounded-[2px]" data-node="238:883" data-node-m="238:1149">
+        <span class="tm-label lg:t-label text-navy" data-node="238:884" data-node-m="238:1150">{chip}</span>
+      </div>
+      <h2 id="includes-title" class="m-0 tm-h3 lg:t-h3 text-black" data-node="238:885" data-node-m="238:1151">{heading}</h2>
+      <Ticks class="w-[200px] lg:w-[360px]" node="238:886" nodeM="238:1152" />
+    </div>
+    <div class="flex flex-col lg:flex-1" data-node="238:933" data-node-m="238:1179">
+      <span aria-hidden="true" class="block w-[40px] h-[4px] bg-royal lg:w-[48px]" data-node="239:993" data-node-m="240:948"></span>
+      <p class="bs-ale-lead m-0 text-ink" data-node="239:994" data-node-m="240:949">{lead}</p>
+    </div>
+  </div>
+</section>
+<style>
+  .bs-ale-lead { font-family: var(--font-display); font-weight: 500; font-size: 28px; line-height: 36px; letter-spacing: -0.015em; }
+  @media (min-width: 1024px) { .bs-ale-lead { font-size: 40px; line-height: 52px; } }
+</style>

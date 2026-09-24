@@ -1,0 +1,58 @@
+---
+// S3 Index. Desktop 226:1058, mobile 226:1274.
+import Icon from '../../components/Icon.astro';
+import { ROUTES } from '../../data/site';
+
+const links = [
+  { label: 'Fire & Smoke', icon: 'flame', href: ROUTES.fireSmoke,
+    d: { link: '228:969', circle: '228:972', text: '228:970' },
+    m: { link: '228:971', circle: '228:974', text: '228:972' } },
+  { label: 'Wildfire', icon: 'map-pin', href: ROUTES.wildfire,
+    d: { link: '228:976', circle: '228:979', text: '228:977' } },
+  { label: 'Water & Plumbing', icon: 'droplet', href: ROUTES.waterDamage,
+    d: { link: '228:983', circle: '228:986', text: '228:984' } },
+  { label: 'Wind, Hail & Falling Trees', icon: 'wind', href: ROUTES.windHailTrees,
+    d: { link: '228:989', circle: '228:992', text: '228:990' } },
+  { label: 'Contents & Valuables', icon: 'document', href: ROUTES.contentsValuables,
+    d: { link: '228:995', circle: '228:998', text: '228:996' } },
+  { label: 'Additional Living Expenses', icon: 'clock', href: ROUTES.additionalLiving,
+    d: { link: '228:1002', circle: '228:1005', text: '228:1003' } },
+  { label: 'Code Upgrades', icon: 'ruler', href: ROUTES.codeUpgrades,
+    d: { link: '228:1009', circle: '228:1012', text: '228:1010' } },
+  { label: 'Denied or Underpaid', icon: 'shield', href: ROUTES.deniedOrUnderpaid,
+    d: { link: '228:1016', circle: '228:1019', text: '228:1017' } },
+];
+---
+<section class="bg-paper" data-node="226:1058" data-node-m="226:1274">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[96px] flex flex-col gap-[24px] lg:gap-[40px]">
+    
+    <div class="inline-flex items-center self-start px-[8px] py-[4px] border border-navy rounded-[2px]" data-node="226:1059" data-node-m="226:1275">
+      <span class="tm-label lg:t-label text-navy" data-node="226:1060" data-node-m="226:1276">§ 02</span>
+    </div>
+
+    <div class="flex flex-col lg:flex-row lg:flex-wrap lg:gap-x-[24px] lg:gap-y-0" data-node="228:968" data-node-m="226:1277">
+      {links.map((l, i) => (
+        <a href={l.href} class="res-idx-link flex items-center gap-[16px] py-[16px] border-b border-line lg:w-[calc(50%-12px)]" data-node={l.d?.link}>
+          <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-line" data-node={l.d?.circle}>
+            <Icon name={l.icon} size={24} />
+          </div>
+          <span class="tm-h3 lg:t-h3 text-navy" data-node={l.d?.text}>{l.label}</span>
+        </a>
+      ))}
+    </div>
+
+    <div class="pt-[16px] lg:pt-0" data-node="226:1068" data-node-m="226:1301">
+      <a href={ROUTES.commercial} class="flex items-center justify-between py-[20px] border-t border-line lg:w-[262px]" data-node="226:1069" data-node-m="226:1302">
+        <span class="tm-body-strong lg:t-body-strong text-ink" data-node="226:1070" data-node-m="226:1303">Commercial Claims</span>
+        <Icon name="arrow-right" size={24} class="text-ink" data-node="226:1071" data-node-m="226:1304" />
+      </a>
+    </div>
+
+  </div>
+</section>
+<style>
+  @media (min-width: 1024px) {
+    /* Top border for first two items, no bottom border for last two (if even count) */
+    .res-idx-link { border-bottom: 0; border-top: 1px solid var(--color-line); padding: 24px 0; }
+  }
+</style>

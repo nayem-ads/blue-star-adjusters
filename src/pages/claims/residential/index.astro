@@ -1,0 +1,33 @@
+---
+// Residential Claims (Figma desktop 226:698, mobile 226:1106). Indexable.
+// data-node = desktop node id, data-node-m = mobile node id
+import Base from '../../../layouts/Base.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CallBar from '../../../components/CallBar.astro';
+import Hero from '../../../sections/residential/Hero.astro';
+import Buckets from '../../../sections/residential/Buckets.astro';
+import Index from '../../../sections/residential/Index.astro';
+import Estimate from '../../../sections/residential/Estimate.astro';
+import Cta from '../../../sections/residential/Cta.astro';
+
+const title = 'Residential Claims | Blue Star Adjusters';
+const description = 'When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won\'t let the carrier set the scope.';
+---
+<Base title={title} description={description}>
+  <div class="absolute left-0 right-0 top-0 z-40" data-node="226:703" data-node-m="226:1133"><Header theme="dark" overlay /></div>
+  <main class="bs-residential">
+    <Hero />
+    <Buckets />
+    <Index />
+    <Estimate />
+    <Cta />
+  </main>
+  <div data-node="226:1105" data-node-m="226:1320"><Footer /></div>
+  <CallBar node="226:1321" />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) {
+    .bs-residential :where(.tm-body, .tm-body-strong, .tm-lead, .tm-h2, .tm-h3, .tm-display) { position: relative; top: 1px; }
+  }
+</style>

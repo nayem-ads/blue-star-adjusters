@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes>
+  <node id="226:698" name="Desktop — Residential (1280)" x="0" y="0" width="1280" height="0">
+    <node id="226:699" name="Section / Hero" x="0" y="0" width="0" height="820">
+      <node id="226:700" name="IMG:wood-house" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="226:701" name="Overlay / ink" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="226:702" name="Overlay / left soft scrim" x="0" y="0" width="760" height="820">
+      </node>
+      <node id="226:703" name="Header / Desktop (Dark)" x="0" y="0" width="1280" height="88">
+      </node>
+      <node id="226:704" name="Hero content" x="80" y="206" width="1040" height="0">
+      </node>
+      <node id="226:716" name="Ruler ticks (bottom edge)" x="0" y="804" width="1280" height="16">
+      </node>
+      <node id="226:878" name="Photo caption" x="1048" y="708" width="0" height="0">
+      </node>
+    </node>
+    <node id="226:881" name="Section / Buckets" x="0" y="0" width="0" height="0">
+      <node id="226:882" name="Rail" x="0" y="0" width="360" height="0">
+      </node>
+      <node id="226:933" name="List / Misses" x="0" y="0" width="0" height="0">
+      </node>
+    </node>
+    <node id="226:1058" name="Section / Index" x="0" y="0" width="0" height="0">
+      <node id="226:1059" name="Index chip" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="228:968" name="Index / Loss types" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="226:1068" name="Hub link" x="0" y="0" width="0" height="0">
+      </node>
+    </node>
+    <node id="228:891" name="Section / Estimate" x="0" y="0" width="0" height="0">
+      <node id="228:896" name="Mark / faint B (6%)" x="911.01" y="80" width="461.24" height="560">
+      </node>
+      <node id="228:901" name="Index chip" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="228:904" name="List / Eight items" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="228:963" name="Button / Schedule a Free Review" x="0" y="0" width="0" height="0">
+      </node>
+    </node>
+    <node id="226:1090" name="Section / CTA" x="0" y="0" width="0" height="0">
+      <node id="226:1091" name="Brand wave corner" x="920" y="562" width="360" height="200">
+      </node>
+      <node id="226:1094" name="Phone block" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="226:1102" name="CTA buttons" x="0" y="0" width="0" height="0">
+      </node>
+    </node>
+    <node id="226:1105" name="Footer / Desktop" x="0" y="0" width="0" height="0">
+      <node id="I226:1105" name="Top" x="0" y="0" width="0" height="0">
+      </node>
+      <node id="I226:1105" name="Legal" x="0" y="0" width="0" height="0">
+      </node>
+    </node>
+  </node>
+</nodes>

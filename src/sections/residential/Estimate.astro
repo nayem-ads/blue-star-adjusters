@@ -1,0 +1,66 @@
+---
+// S4 Estimate. Desktop 228:891, mobile 228:1023.
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import Logo from '../../components/Logo.astro';
+import { ROUTES } from '../../data/site';
+
+const col1 = [
+  { text: 'Fire, wildfire and smoke losses', icon: 'flame', d: { item: '228:908', circle: '228:909', text: '228:913' }, m: { item: '228:1037', circle: '228:1038', text: '228:1042' } },
+  { text: 'Water and plumbing failures', icon: 'droplet', d: { item: '228:915', circle: '228:916', text: '228:919' } },
+  { text: 'Trees and falling object damage', icon: 'wind', d: { item: '228:921', circle: '228:922', text: '228:925' } },
+  { text: 'Collapse: snow load and structural', icon: 'home', d: { item: '228:927', circle: '228:928', text: '228:932' } },
+];
+const col2 = [
+  { text: 'Ordinance or law and code upgrades', icon: 'ruler', d: { item: '228:934', circle: '228:935', text: '228:939' } },
+  { text: 'Contents valuation and inventory', icon: 'document', d: { item: '228:941', circle: '228:942', text: '228:946' } },
+  { text: 'Additional living expenses (ALE)', icon: 'clock', d: { item: '228:948', circle: '228:949', text: '228:953' } },
+  { text: 'Lead, asbestos and mold remediation analysis', icon: 'search', d: { item: '228:955', circle: '228:956', text: '228:960' } },
+];
+const allItems = [...col1, ...col2];
+---
+<section class="relative bg-navy overflow-hidden" data-node="228:891" data-node-m="228:1023">
+  <!-- Faint B mark -->
+  <div class="absolute right-[-100px] top-[80px] lg:right-[80px]" data-node="228:896" data-node-m="228:1028">
+    <Logo variant="mark-white" bare class="opacity-[0.06] w-[280.8px] h-[340.9px] lg:w-[461.2px] lg:h-[560px]" label="" />
+  </div>
+
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:gap-[56px]">
+    
+    <div class="flex flex-col gap-[16px] lg:gap-[24px]">
+      <div class="inline-flex items-center self-start px-[8px] py-[4px] border border-white rounded-[2px]" data-node="228:901" data-node-m="228:1033">
+        <span class="tm-label lg:t-label text-white" data-node="228:902" data-node-m="228:1034">§ 03</span>
+      </div>
+      <h2 class="m-0 tm-h2 lg:t-h2 text-white lg:w-[864px]" data-node="228:903" data-node-m="228:1035">Your insurer's adjuster already came out? Good. We start from their estimate and measure what it left out.</h2>
+    </div>
+
+    <!-- Desktop: Two columns. Mobile: One column. -->
+    <div class="flex flex-col gap-[24px] lg:flex-row lg:gap-[48px]" data-node="228:904" data-node-m="228:1036">
+      <div class="flex flex-col gap-[24px] lg:flex-1" data-node="228:905">
+        {col1.map(item => (
+          <div class="flex items-center gap-[16px] lg:gap-[24px]" data-node={item.d.item}>
+            <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-white lg:w-[64px] lg:h-[64px]" data-node={item.d.circle}>
+              <Icon name={item.icon} size={24} class="text-white lg:scale-[1.333]" />
+            </div>
+            <p class="m-0 tm-body-strong lg:t-lead text-white flex-1" data-node={item.d.text}>{item.text}</p>
+          </div>
+        ))}
+      </div>
+      <div class="flex flex-col gap-[24px] lg:flex-1" data-node="228:906">
+        {col2.map(item => (
+          <div class="flex items-center gap-[16px] lg:gap-[24px]" data-node={item.d.item}>
+            <div class="flex items-center justify-center w-[48px] h-[48px] rounded-full border border-white lg:w-[64px] lg:h-[64px]" data-node={item.d.circle}>
+              <Icon name={item.icon} size={24} class="text-white lg:scale-[1.333]" />
+            </div>
+            <p class="m-0 tm-body-strong lg:t-lead text-white flex-1" data-node={item.d.text}>{item.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="pt-[8px] lg:pt-0">
+      <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="228:963" data-node-m="228:1092">Schedule a Free Review</Button>
+    </div>
+
+  </div>
+</section>

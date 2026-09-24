@@ -859,5 +859,26 @@
     "height": 376,
     "frame": "135:1578",
     "name": "IMG:wood-house"
+  },
+  "226:700": {
+    "src": "/img/wood-house-226-698-1280x820.png",
+    "width": 1280,
+    "height": 820,
+    "frame": "226:698",
+    "name": "IMG:wood-house"
+  },
+  "226:1108": {
+    "src": "/img/wood-house-226-1106-780x1688.png",
+    "width": 780,
+    "height": 1040,
+    "frame": "226:1106",
+    "name": "IMG:wood-house"
+  },
+  "226:1418": {
+    "src": "/img/modern-home-226-698-720x496.png",
+    "width": 720,
+    "height": 496,
+    "frame": "226:698",
+    "name": "IMG:modern-home"
   }
 }

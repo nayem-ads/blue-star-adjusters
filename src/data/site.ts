@@ -16,6 +16,23 @@ export const ROUTES = {
   howItWorks: '/how-it-works/',
   fees: '/fees/',
   whyBlueStar: '/why-blue-star/',
+  
+  // New Pages
+  residential: '/claims/residential/',
+  commercial: '/claims/commercial/',
+  fireSmoke: '/claims/fire-smoke-damage/',
+  wildfire: '/claims/wildfire/',
+  waterDamage: '/claims/water-damage/',
+  windHailTrees: '/claims/wind-hail-trees/',
+  contentsValuables: '/claims/contents-valuables/',
+  additionalLiving: '/claims/additional-living-expenses/',
+  codeUpgrades: '/claims/code-upgrades/',
+  deniedOrUnderpaid: '/claims/denied-or-underpaid/',
+  results: '/results/',
+  whoWeServe: '/who-we-serve/',
+  locations: '/locations/',
+  faq: '/faq/',
+  first48Hours: '/first-48-hours/',
 } as const;
 
 // FormSubmit (https://formsubmit.co). First submission sends an activation email to FORM_TO.

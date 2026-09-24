@@ -1,0 +1,45 @@
+---
+// S1 Hero. Desktop 226:699, mobile 226:1107.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+import Img from '../../components/Img.astro';
+---
+<section aria-labelledby="hero-title" class="relative bg-navy overflow-hidden" data-node="226:699" data-node-m="226:1107">
+  <div class="absolute inset-0 w-full h-full" data-node="226:700">
+     <Img node="226:700" alt="Wood house" class="w-full h-full object-cover" priority />
+  </div>
+  <div aria-hidden="true" class="absolute inset-0 bg-navy opacity-50" data-node="226:701"></div>
+  <div aria-hidden="true" class="absolute left-0 top-0 bottom-0 w-[760px] bg-navy opacity-60 blur-[60px]" data-node="226:702"></div>
+  
+  <div class="relative max-w-[1280px] mx-auto min-h-[844px] lg:min-h-[820px] px-[20px] lg:px-[80px] pt-[334px] pb-[48px] lg:pt-[206px] lg:pb-[96px] flex flex-col justify-start">
+    <div class="flex flex-col items-start gap-[24px] lg:gap-[32px] lg:w-[1040px]" data-node="226:704" data-node-m="226:1135">
+      <Eyebrow theme="dark" node="226:705">Residential Claims</Eyebrow>
+      <h1 id="hero-title" class="m-0 tm-display lg:t-display-xl text-white whitespace-pre-wrap" data-node="226:706" data-node-m="226:1140">Your Home.
+Fully Recovered.</h1>
+      <p class="m-0 tm-lead lg:t-lead text-white lg:w-[640px]" data-node="226:1395" data-node-m="226:1141">When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won't let the carrier set the scope.</p>
+      
+      <div class="mt-[8px] flex flex-col gap-[12px] lg:mt-0 lg:flex-row lg:gap-[16px]" data-node="226:707" data-node-m="226:1142">
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="226:708" data-node-m="226:1143">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="226:709" data-node-m="226:1145">Call {PHONE_DISPLAY}</Button>
+      </div>
+
+      <ul class="m-0 p-0 list-none pt-[8px] hidden lg:flex lg:items-center lg:gap-[20px]" data-node="226:710">
+        <li class="tm-body lg:t-legal text-white" data-node="226:711">No upfront cost</li>
+        <li aria-hidden="true" class="w-[1px] h-[16px] bg-white" data-node="226:712"></li>
+        <li class="tm-body lg:t-legal text-white" data-node="226:713">You always have final say on any settlement</li>
+        <li aria-hidden="true" class="w-[1px] h-[16px] bg-white" data-node="226:714"></li>
+        <li class="tm-body lg:t-legal text-white" data-node="226:715">CA License No. 2B60428</li>
+      </ul>
+    </div>
+    
+    <div class="hidden lg:flex absolute right-[20px] bottom-[28px] lg:right-[80px] lg:bottom-[32px] items-center gap-[12px]" data-node="226:878" data-node-m="226:1134">
+      <span aria-hidden="true" class="block w-[32px] h-[1px] bg-white opacity-85" data-node="226:879"></span>
+      <span class="t-caption text-white opacity-85" data-node="226:880">Field photograph</span>
+    </div>
+    <!-- Mobile caption -->
+    <span class="lg:hidden absolute right-[20px] top-[84px] text-[12px] font-medium leading-[16px] text-white" data-node-m="226:1134">Field photograph</span>
+  </div>
+  <!-- Bottom Ruler -->
+  <div class="absolute bottom-0 left-0 w-full h-[16px] opacity-35 bg-[url('/svg/detail-crop-marks.svg')] bg-repeat-x" data-node="226:716"></div>
+</section>

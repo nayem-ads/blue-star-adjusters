@@ -1,0 +1,39 @@
+---
+// S5 CTA. Desktop 226:1090, mobile 226:1305.
+import WaveCorner from '../../components/WaveCorner.astro';
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+---
+<section class="relative bg-white overflow-hidden" data-node="226:1090" data-node-m="226:1305">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[112px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px]">
+    
+    <div class="flex flex-col gap-[16px] lg:gap-[24px]" data-node-m="226:1306">
+      <h2 class="m-0 tm-h2 lg:t-display-l text-navy lg:w-[860px]" data-node="226:1092" data-node-m="226:1307">Call Before the Carrier Sets the Narrative.</h2>
+      <p class="m-0 tm-body lg:t-lead text-ink lg:w-[560px]" data-node="226:1093" data-node-m="226:1308">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+    </div>
+
+    <div class="flex flex-col gap-[12px] pt-[24px] lg:flex-row lg:items-end lg:gap-[64px]" data-node="226:1094">
+      <div class="flex flex-col gap-[8px]" data-node="226:1095" data-node-m="226:1309">
+        <span class="font-montserrat font-semibold text-[13px] leading-[18px] tracking-[0.02em] text-ink uppercase" data-node="226:1096" data-node-m="226:1310">Call</span>
+        <a href={PHONE_TEL} class="m-0 tm-h1 lg:t-display-xl text-navy hover:opacity-80 transition-opacity" data-node="226:1097" data-node-m="226:1311">{PHONE_DISPLAY}</a>
+      </div>
+      
+      <div class="flex items-center gap-[12px] pb-[12px]" data-node="226:1099" data-node-m="226:1313">
+        <Icon name="clock" size={24} class="text-ink" data-node="226:1100" data-node-m="226:1314" />
+        <p class="m-0 font-montserrat font-medium text-[15px] leading-[24px] text-ink" data-node="226:1101" data-node-m="226:1315">Monday to Friday, 9 AM to 5 PM Pacific</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-[12px] pt-[16px] lg:flex-row lg:gap-[16px]" data-node="226:1102" data-node-m="226:1316">
+      <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="226:1103" data-node-m="226:1317">Schedule a Free Review</Button>
+      <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="226:1104" data-node-m="226:1318">Call {PHONE_DISPLAY}</Button>
+    </div>
+
+  </div>
+  
+  <div class="absolute right-0 bottom-0" data-node="226:1091" data-node-m="226:1319">
+    <!-- Brand wave corner -->
+    <WaveCorner class="w-[180px] h-[100px] lg:w-[360px] lg:h-[200px]" />
+  </div>
+</section>

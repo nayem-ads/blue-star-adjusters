@@ -1,0 +1,60 @@
+---
+// Fire & Smoke / Results (desktop 217:9165, mobile 219:910). Blueprint grid, § 05 heading, 3 ledger rows, disclaimer.
+// Built here rather than with components/LedgerRow: these rows have no note on rows 1–2, a hidden offer on row 3,
+// "about"/"nearly" figure prefixes and navy desktop labels, none of which LedgerRow expresses.
+import Chip from '../Chip.astro';
+import { dn, type N } from '../nodes';
+
+interface Row { loss: string; note?: string; offer?: string; prefix?: string; figure: string; node: N; lossNode?: N; noteNode?: N; figureNode?: N }
+interface Props { rows: Row[]; nodes: Partial<Record<'section' | 'heading' | 'chip' | 'chipText' | 'title' | 'ledger' | 'disclaimer' | 'disclaimerText', N>> }
+const { rows, nodes: n } = Astro.props;
+---
+<section aria-labelledby="results-title" class="bs-fresults relative overflow-hidden bg-white" {...dn(n.section)}>
+  <div aria-hidden="true" class="bs-fresults__grid absolute inset-0"></div>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:gap-[48px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:self-start" {...dn(n.heading)}>
+      <Chip node={n.chip} text={n.chipText}>§ 05</Chip>
+      <h2 id="results-title" class="m-0 w-full lg:w-auto lg:min-w-[244px] tm-display lg:t-display-l text-navy whitespace-nowrap" {...dn(n.title)}>Results.</h2>
+    </div>
+    <ul class="m-0 p-0 list-none flex flex-col gap-[16px] lg:gap-0" {...dn(n.ledger)}>
+      {rows.map((r) => (
+        <li class="flex flex-col items-start gap-[12px] bg-white rounded-[16px] px-[20px] py-[24px] lg:flex-row lg:items-end lg:gap-[40px] lg:rounded-none lg:bg-transparent lg:px-0 lg:py-[32px] lg:border-t lg:border-line" {...dn(r.node)}>
+          <div class="contents lg:flex lg:flex-col lg:gap-[8px] lg:w-[360px] lg:shrink-0">
+            <h3 class="m-0 tm-body-strong lg:t-body-strong text-navy" {...dn(r.lossNode)}>{r.loss}</h3>
+            {r.note && <p class="m-0 order-last lg:order-none tm-body lg:t-small text-ink" {...dn(r.noteNode)}>{r.note}</p>}
+          </div>
+          <p class:list={['m-0 flex items-baseline gap-[8px] whitespace-nowrap lg:flex-col lg:items-start lg:gap-[6px] lg:w-[240px] lg:shrink-0', !r.offer && 'hidden lg:flex lg:invisible']} aria-hidden={r.offer ? undefined : 'true'}>
+            <span class="t-caption text-ink lg:text-navy">Carrier's offer</span>
+            <s class="t-h3 text-ink">{r.offer ?? '-'}</s>
+          </p>
+          <p class="m-0 flex flex-col items-start gap-[2px] whitespace-nowrap lg:gap-[6px] lg:flex-1 lg:min-w-0 text-navy">
+            <span class="t-caption text-royal lg:text-navy">Settlement</span>
+            <span class="bs-fresults__fig" {...dn(r.figureNode)}>{r.prefix && <span class="bs-fresults__pre">{r.prefix} </span>}{r.figure}</span>
+          </p>
+        </li>
+      ))}
+    </ul>
+    <p class="m-0 flex items-start gap-[12px] lg:self-start lg:items-center lg:gap-[16px]" {...dn(n.disclaimer)}>
+      <span aria-hidden="true" class="block w-[24px] h-px bg-navy shrink-0"></span>
+      <span class="bs-fresults__disc text-ink" {...dn(n.disclaimerText)}>Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</span>
+    </p>
+  </div>
+</section>
+
+<style is:global>
+  .bs-fresults__grid {
+    background:
+      linear-gradient(to right, rgb(8 29 94 / .0526) 1px, transparent 1px) left top / 200px 200px,
+      linear-gradient(to bottom, rgb(8 29 94 / .0526) 1px, transparent 1px) left top / 200px 200px,
+      linear-gradient(to right, rgb(8 29 94 / .05) 1px, transparent 1px) left top / 40px 40px,
+      linear-gradient(to bottom, rgb(8 29 94 / .05) 1px, transparent 1px) left top / 40px 40px;
+  }
+  .bs-fresults__fig { font-family: var(--font-display); font-weight: 500; font-size: 48px; line-height: 50px; letter-spacing: -0.02em; }
+  .bs-fresults__pre { font-size: 22px; line-height: 1; letter-spacing: -0.02em; }
+  .bs-fresults__disc { font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; }
+  @media (min-width: 1024px) {
+    .bs-fresults__fig { font-size: 64px; line-height: 64px; }
+    .bs-fresults__pre { font-size: 24px; }
+    .bs-fresults__disc { font-weight: 500; font-size: 15px; line-height: 24px; white-space: nowrap; }
+  }
+</style>

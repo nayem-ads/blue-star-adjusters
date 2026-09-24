@@ -20,6 +20,12 @@ const click = opt('click', '');
 const prep = opt('prep', '');
 const mobile = args.includes('--mobile'); // 390 frames: data-node-m -> data-node, drop desktop-only ids, pin call bar at Figma y
 const callbarY = opt('callbar-y', '756');
+// --approved: Jay-approved deviations from the Figma frames (Sep 2026) are excluded from the score, not hidden:
+//   desktop sticky navy header (masked: ref pixels copied into its box), navy mobile call bar (masked),
+//   footer without the "We represent the insured only." line (footer section reported but excluded from the
+//   overall %, and its height change is removed from heightDelta; heightDeltaRaw keeps the raw number),
+//   Header/Footer/call-bar instance boxes are excluded from geometry.
+const approved = args.includes('--approved');
 const key = frameId.replace(':', '-');
 const refPath = `qa/ref/${key}.png`;
 const outDir = `qa/out/${key}`;
@@ -79,6 +85,12 @@ await page.evaluate(async () => {
 });
 await page.waitForTimeout(300);
 
+const masks = approved ? await page.evaluate((W) => {
+  const out = []; const box = (e) => { const r = e.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; };
+  const h = document.querySelector('header.bs-header'); if (h && W >= 1024) out.push(box(h));
+  const cb = document.querySelector('.bs-callbar'); if (cb && W < 1024 && cb.getBoundingClientRect().height) out.push(box(cb));
+  return out; }, W) : [];
+const footerH = await page.evaluate(() => { const f = document.querySelector('footer'); return f ? f.getBoundingClientRect().height : null; });
 const geo = await page.evaluate(() => [...document.querySelectorAll('[data-node]')].map((el) => { const r = el.getBoundingClientRect(); return { id: el.dataset.node, x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }));
 const shot = await page.screenshot({ fullPage: true });
 await browser.close();
@@ -89,7 +101,9 @@ const act = PNG.sync.read(shot);
 const w = Math.min(ref.width, act.width), h = Math.min(ref.height, act.height);
 const crop = (img) => { const o = new PNG({ width: w, height: h }); PNG.bitblt(img, o, 0, 0, w, h, 0, 0); return o; };
 const R = crop(ref), A = crop(act), D = new PNG({ width: w, height: h });
-const total = pixelmatch(R.data, A.data, D.data, w, h, { threshold: 0.1, includeAA: false, alpha: 0.2 });
+for (const m of masks) { const x0 = Math.max(0, Math.floor(m.x)), y0 = Math.max(0, Math.floor(m.y)), x1 = Math.min(w, Math.ceil(m.x + m.w)), y1 = Math.min(h, Math.ceil(m.y + m.h));
+  for (let y = y0; y < y1; y++) for (let x = x0; x < x1; x++) { const i = (y * w + x) * 4; for (let k = 0; k < 4; k++) A.data[i + k] = R.data[i + k]; } }
+let total = pixelmatch(R.data, A.data, D.data, w, h, { threshold: 0.1, includeAA: false, alpha: 0.2 });
 fs.writeFileSync(`${outDir}/diff.png`, PNG.sync.write(D));
 
 // per-section mismatch
@@ -98,16 +112,25 @@ const secReport = sections.map((s) => {
   if (y1 <= y0) return { section: s.name, id: s.id, mismatchPct: null, note: 'outside compared height' };
   let bad = 0;
   for (let y = y0; y < y1; y++) for (let x = 0; x < w; x++) { const i = (y * w + x) * 4; if (D.data[i] === 255 && D.data[i + 1] === 0 && D.data[i + 2] === 0) bad++; }
-  return { section: s.name, id: s.id, y: y0, h: y1 - y0, mismatchPct: +(100 * bad / ((y1 - y0) * w)).toFixed(2) };
+  return { section: s.name, id: s.id, y: y0, h: y1 - y0, mismatchPct: +(100 * bad / ((y1 - y0) * w)).toFixed(2), ...(approved && /^(Footer|Header|Mobile call bar)/.test(s.name) ? { approvedExcluded: true } : {}) };
 });
 
 // geometry
+const isApprovedNode = (b) => approved && /^(Header|Footer|Mobile call bar)/.test(b.name || '');
 const geoRep = geo.map((g) => { const b = boxes[g.id]; if (!b) return { id: g.id, error: 'node id not in frame' };
+  if (isApprovedNode(b)) return { id: g.id, name: b.name, approved: true, ok: true };
   const d = { dx: +(g.x - b.x).toFixed(1), dy: +(g.y - b.y).toFixed(1), dw: +(g.w - b.w).toFixed(1), dh: +(g.h - b.h).toFixed(1) };
   return { id: g.id, name: b.name, ...d, ok: Math.max(Math.abs(d.dx), Math.abs(d.dy), Math.abs(d.dw), Math.abs(d.dh)) <= 1 }; });
+const footSec = approved ? sections.find((s) => /^Footer/.test(s.name)) : null;
+if (footSec) { const fy = Math.min(h, Math.round(footSec.y)); let bad = 0;
+  for (let y = fy; y < h; y++) for (let x = 0; x < w; x++) { const i = (y * w + x) * 4; if (D.data[i] === 255 && D.data[i + 1] === 0 && D.data[i + 2] === 0) bad++; }
+  total -= bad; }
+const cmpH = footSec ? Math.min(h, Math.round(footSec.y)) : h;
+const rawDelta = act.height - ref.height;
 const report = {
-  route, frameId, viewport: W, refHeight: ref.height, actualHeight: act.height, heightDelta: act.height - ref.height,
-  mismatchPct: +(100 * total / (w * h)).toFixed(2),
+  route, frameId, viewport: W, refHeight: ref.height, actualHeight: act.height,
+  heightDelta: footSec && footerH != null ? +(rawDelta - (footerH - footSec.h)).toFixed(1) : rawDelta, heightDeltaRaw: rawDelta, approved,
+  mismatchPct: +(100 * total / (w * cmpH)).toFixed(2),
   geometry: { checked: geoRep.length, within1px: geoRep.filter((g) => g.ok).length, failures: geoRep.filter((g) => !g.ok) },
   sections: secReport,
 };

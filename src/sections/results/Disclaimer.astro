@@ -1,0 +1,39 @@
+---
+// Results / Disclaimer and CTA. Desktop 217:8789 (1280×455): margin rail (§ mark) + full disclaimer + "Offered too little?".
+// Mobile 217:12082 (390×668) adds the trust ledger (desktop shows it in the hero).
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import IconCircle from './IconCircle.astro';
+import { ROUTES } from '../../data/site';
+const facts = [
+  { icon: 'check', text: 'No upfront cost', node: '217:12098', t: '217:12101' },
+  { icon: 'shield', text: 'You always have final say on any settlement', node: '217:12102', t: '217:12106' },
+  { icon: 'document', text: 'CA License No. 2B60428', node: '217:12107', t: '217:12111' },
+];
+---
+<section aria-labelledby="offered-title" class="bg-white" data-node="217:8789" data-node-m="217:12082">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[56px] pb-[64px] lg:px-[80px] lg:py-[120px] flex flex-col lg:flex-row lg:items-start lg:gap-[96px]">
+    <div class="lg:w-[264px] lg:shrink-0 flex flex-col gap-[16px]" data-node="217:8790">
+      <span aria-hidden="true" class="hidden lg:block h-px bg-navy"></span>
+      <div class="flex items-center gap-[12px] lg:gap-[16px] self-start" data-node="217:8792" data-node-m="217:12083">
+        <IconCircle name="document" />
+        <span aria-hidden="true" class="font-display font-semibold text-navy text-[32px] leading-[36px] lg:text-[48px] lg:leading-[54px] tracking-[-0.015em] pr-[1.4px] lg:pr-[1.6px]" data-node="217:8797" data-node-m="217:12088">§</span>
+      </div>
+    </div>
+    <div class="flex-1 min-w-0 mt-[24px] lg:mt-0 flex flex-col" data-node="217:8798">
+      <p class="m-0 tm-lead lg:t-lead text-ink" data-node="217:8799" data-node-m="217:12089">Results reflect specific losses and policies. “Offer” is the insurer’s offer, not a payment. Past results don’t guarantee a similar outcome.</p>
+      <span aria-hidden="true" class="block mt-[24px] lg:mt-[48px] h-px bg-ink opacity-[.18]"></span>
+      <div class="mt-[24px] lg:mt-[48px] flex flex-col gap-[20px] lg:flex-row lg:items-center lg:justify-between" data-node="217:8801" data-node-m="217:12091">
+        <h2 id="offered-title" class="m-0 tm-h2 lg:t-h2 text-navy whitespace-nowrap lg:pr-[2px]" data-node="217:8802" data-node-m="217:12092">Offered too little?</h2>
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" node="217:8803" data-node-m="217:12093">Schedule a Free Review</Button>
+      </div>
+      <ul class="lg:hidden m-0 mt-[24px] p-0 pt-[7px] pb-[1px] list-none flex flex-col" data-node-m="217:12097">
+        {facts.map((f) => (
+          <li class="flex items-center gap-[12px] pt-[13px] pb-[11px] border-t border-line tm-body text-ink" data-node-m={f.node}>
+            <Icon name={f.icon} size={24} class="shrink-0 text-navy" /><span class="flex-1 min-w-0" data-node-m={f.t}>{f.text}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

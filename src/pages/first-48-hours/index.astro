@@ -1,6 +1,25 @@
 ---
-// Noindex stub (fcr agent): target of the "First 48 Hours" link on /free-claim-review/thank-you/ (85:3236).
-// Replace with the real checklist page when it is designed.
-import StubPage from '../../components/StubPage.astro';
+// First 48 Hours (Figma desktop 217:5602, mobile 217:9387). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/first-48/Hero.astro';
+import Checklist from '../../sections/first-48/Checklist.astro';
+import Statement from '../../sections/first-48/Statement.astro';
+import FinalCta from '../../sections/first-48/FinalCta.astro';
 ---
-<StubPage name="First 48 Hours" eyebrow="Checklist" />
+<Base title="The First 48 Hours After a Loss | Blue Star Adjusters" description="What to do in the first 48 hours after a fire, water or storm loss, in order: a 10-step checklist from a licensed public adjuster.">
+  <div data-node="217:5603" data-node-m="217:9388"><Header theme="light" /></div>
+  <main class="bs-f48 bs-fit">
+    <Hero />
+    <Checklist />
+    <Statement />
+    <FinalCta />
+  </main>
+  <div data-node="217:7548" data-node-m="217:10620"><Footer /></div>
+  <CallBar node="217:10656" />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-f48 :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

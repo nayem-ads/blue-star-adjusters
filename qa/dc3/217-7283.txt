@@ -1,0 +1,260 @@
+const imgImgAiRebuiltHome = "https://www.figma.com/api/mcp/asset/e1597c3b-6749-4a00-ab6e-60773a84061d.png";
+const imgImgSmokeCorner = "https://www.figma.com/api/mcp/asset/5e9bc6a6-13b8-4098-8a82-5e71d874d752.png";
+const imgImgPrivateLibraryWine = "https://www.figma.com/api/mcp/asset/13bb750e-6422-4134-9317-4051b71782fc.png";
+const imgImgGymRuin = "https://www.figma.com/api/mcp/asset/e1430e06-f685-49d7-9383-6fb04119cc69.png";
+const imgIconFlame = "https://www.figma.com/api/mcp/asset/e87ba35b-eed1-40eb-83a3-6f2f6c63fcf2.svg";
+const imgIconHome = "https://www.figma.com/api/mcp/asset/dc5ac1e6-a765-4ab7-b08e-d88918cb5d4a.svg";
+const imgIconBuilding = "https://www.figma.com/api/mcp/asset/c7326aa3-2826-4239-bbf7-9858263ddf4a.svg";
+
+export default function ResultsLedger() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col items-start px-[80px] py-[96px] relative size-full" data-node-id="217:7283" data-name="Results ledger">
+      <div className="content-stretch flex gap-[48px] items-start overflow-clip pb-[56px] relative shrink-0 w-full" data-node-id="217:7284" data-annotations="Edited from: “measured; full strip-out”." data-name="Result / Palisades fire, home.">
+        <div className="content-stretch flex flex-col gap-[12px] h-[272px] items-start relative shrink-0 w-[216px]" data-node-id="217:7285" data-annotations="Illustrative image only. Not the property in this result; never tie a photo to a case.;AI illustrative. Replace with a real photo before launch." data-name="Photo / ai-rebuilt-home">
+          <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="I217:7285;41:71" data-annotations="Alt text: A rebuilt single-family home, finished exterior in daylight." data-name="IMG:ai-rebuilt-home">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-[-43.85%] max-w-none top-0 w-[187.7%]" src={imgImgAiRebuiltHome} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px overflow-clip relative" data-node-id="217:7288" data-name="Result body">
+          <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="217:7289" data-name="Loss strip">
+            <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="217:7290" data-name="Loss">
+              <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:7291" data-name="Icon circle / flame">
+                <div className="relative shrink-0 size-[24px]" data-node-id="217:7292" data-name="Icon / flame">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconFlame} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="217:7295">
+                Palisades fire, home.
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col font-medium gap-[8px] items-start overflow-clip relative shrink-0 w-full" data-node-id="217:7299" data-name="Settlement">
+            <div className="content-stretch flex gap-[16px] items-baseline overflow-clip relative shrink-0 text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="217:7598" data-name="Offer line">
+              <p className="font-['Montserrat:Medium'] leading-[24px] relative shrink-0 text-[15px] w-[112px]" data-node-id="217:7599">
+                Offer
+              </p>
+              <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Schibsted_Grotesk:Medium'] leading-[54px] line-through relative shrink-0 text-[48px] tracking-[-0.72px] whitespace-nowrap" data-node-id="217:7600">
+                $38,000
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[16px] items-baseline overflow-clip relative shrink-0 w-full" data-node-id="217:7301" data-name="Figure line">
+              <p className="font-['Montserrat:Medium'] leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-[112px]" data-node-id="217:7601">
+                Settlement
+              </p>
+              <p className="font-['Schibsted_Grotesk:Medium'] leading-[112px] relative shrink-0 text-[120px] text-[color:var(--color\/navy,#081d5e)] tracking-[-4.8px] whitespace-nowrap" data-node-id="217:7302">
+                $276,000
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[48px] items-start overflow-clip pl-[128px] relative shrink-0 w-full" data-node-id="217:7303" data-name="Result base">
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start leading-[28px] min-w-px overflow-clip relative text-[17px]" data-node-id="217:7304" data-name="What made the difference">
+              <p className="font-['Montserrat:SemiBold'] font-semibold relative shrink-0 text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:7305">
+                What made the difference:
+              </p>
+              <p className="font-['Montserrat:Regular'] font-normal min-w-full relative shrink-0 text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="217:7306">
+                structural damage properly measured, full strip out of subfloor and electrical.
+              </p>
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[264px]" data-node-id="217:7307" data-name="Disclaimer">
+              <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[24px]" data-node-id="217:7308" data-name="Disclaimer rule" />
+              <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] w-[264px]" data-node-id="217:7309" data-annotations="\[LEGAL CHECK\] results disclaimer, set beside every figure.">
+                Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/ink,#070f33)] h-px opacity-18 relative shrink-0 w-full" data-node-id="217:7310" data-name="Ledger hairline" />
+      <div className="content-stretch flex gap-[48px] items-start overflow-clip py-[56px] relative shrink-0 w-full" data-node-id="217:7311" data-name="Result / Smoke, home.">
+        <div className="content-stretch flex flex-col gap-[12px] h-[272px] items-start relative shrink-0 w-[216px]" data-node-id="217:7312" data-annotations="Illustrative image only. Not the property in this result; never tie a photo to a case." data-name="Photo / smoke-corner">
+          <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="I217:7312;41:71" data-annotations="Alt text: Smoke staining along the corner of a room, field photograph." data-name="IMG:smoke-corner">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[105.88%] left-0 max-w-none top-[-2.94%] w-full" src={imgImgSmokeCorner} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px overflow-clip relative" data-node-id="217:7315" data-name="Result body">
+          <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="217:7316" data-name="Loss strip">
+            <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="217:7317" data-name="Loss">
+              <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:7318" data-name="Icon circle / home">
+                <div className="relative shrink-0 size-[24px]" data-node-id="217:7319" data-name="Icon / home">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="217:7322">
+                Smoke, home.
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start overflow-clip relative shrink-0 w-full" data-node-id="217:7326" data-name="Settlement">
+            <div className="content-stretch flex font-medium gap-[16px] items-baseline overflow-clip relative shrink-0 text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="217:7602" data-name="Offer line">
+              <p className="font-['Montserrat:Medium'] leading-[24px] relative shrink-0 text-[15px] w-[112px]" data-node-id="217:7603">
+                Offer
+              </p>
+              <p className="[text-decoration-skip-ink:none] [text-underline-position:from-font] decoration-from-font decoration-solid font-['Schibsted_Grotesk:Medium'] leading-[54px] line-through relative shrink-0 text-[48px] tracking-[-0.72px] whitespace-nowrap" data-node-id="217:7604">
+                $17,000
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[16px] items-baseline overflow-clip relative shrink-0 w-full" data-node-id="217:7328" data-name="Figure line">
+              <p className="font-['Montserrat:Medium'] font-medium leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-[112px]" data-node-id="217:7605">
+                Settlement
+              </p>
+              <p className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:7329">
+                about
+              </p>
+              <p className="font-['Schibsted_Grotesk:Medium'] font-medium leading-[112px] relative shrink-0 text-[120px] text-[color:var(--color\/navy,#081d5e)] tracking-[-4.8px] whitespace-nowrap" data-node-id="217:7330">
+                $1.1 million
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[48px] items-start overflow-clip pl-[128px] relative shrink-0 w-full" data-node-id="217:7331" data-name="Result base">
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start leading-[28px] min-w-px overflow-clip relative text-[17px]" data-node-id="217:7332" data-name="What made the difference">
+              <p className="font-['Montserrat:SemiBold'] font-semibold relative shrink-0 text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:7333">
+                What made the difference:
+              </p>
+              <p className="font-['Montserrat:Regular'] font-normal min-w-full relative shrink-0 text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="217:7334">
+                industrial hygienist proved combustion byproducts in porous materials and doors.
+              </p>
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[264px]" data-node-id="217:7335" data-name="Disclaimer">
+              <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[24px]" data-node-id="217:7336" data-name="Disclaimer rule" />
+              <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] w-[264px]" data-node-id="217:7337" data-annotations="\[LEGAL CHECK\] results disclaimer, set beside every figure.">
+                Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/ink,#070f33)] h-px opacity-18 relative shrink-0 w-full" data-node-id="217:7338" data-name="Ledger hairline" />
+      <div className="content-stretch flex gap-[48px] items-start overflow-clip py-[56px] relative shrink-0 w-full" data-node-id="217:7339" data-annotations="Edited from: “$11M structure + $5.2M contents”.;\[CLIENT: confirm\] is the $6M inside the $11M?" data-name="Result / Fire, estate.">
+        <div className="content-stretch flex flex-col gap-[12px] h-[272px] items-start relative shrink-0 w-[216px]" data-node-id="217:7340" data-annotations="Illustrative image only. Not the property in this result; never tie a photo to a case.;AI illustrative. Replace with a real photo before launch." data-name="Photo / private-library-wine">
+          <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="I217:7340;41:71" data-annotations="Alt text: A private library with oil paintings and a wine rack under a film of soot, inventory tags attached." data-name="IMG:private-library-wine">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-[-0.37%] max-w-none top-0 w-[100.74%]" src={imgImgPrivateLibraryWine} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px overflow-clip relative" data-node-id="217:7343" data-name="Result body">
+          <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="217:7344" data-name="Loss strip">
+            <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="217:7345" data-name="Loss">
+              <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:7346" data-name="Icon circle / building">
+                <div className="relative shrink-0 size-[24px]" data-node-id="217:7347" data-name="Icon / building">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBuilding} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="217:7349">
+                Fire, estate.
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="217:7353" data-name="Settlement">
+            <div className="content-stretch flex gap-[16px] items-baseline overflow-clip pb-[8px] relative shrink-0 text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="217:7606" data-name="Offer line">
+              <p className="font-['Montserrat:Medium'] font-medium leading-[24px] relative shrink-0 text-[15px] w-[112px]" data-node-id="217:7607">
+                Offer
+              </p>
+              <p className="font-['Montserrat:Regular'] font-normal leading-[32px] relative shrink-0 text-[20px] whitespace-nowrap" data-node-id="217:7608">
+                owner recovered $6M alone, then stalled.
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[16px] items-baseline overflow-clip relative shrink-0 w-full" data-node-id="217:7355" data-name="Figure line">
+              <p className="font-['Montserrat:Medium'] font-medium leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-[112px]" data-node-id="217:7609">
+                Settlement
+              </p>
+              <p className="font-['Schibsted_Grotesk:Medium'] font-medium leading-[112px] relative shrink-0 text-[120px] text-[color:var(--color\/navy,#081d5e)] tracking-[-4.8px] whitespace-nowrap" data-node-id="217:7356">
+                $11M
+              </p>
+              <p className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:7357">
+                structure and
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[16px] items-baseline overflow-clip pl-[128px] relative shrink-0 w-full whitespace-nowrap" data-node-id="217:7610" data-name="Figure line 2">
+              <p className="font-['Schibsted_Grotesk:Medium'] font-medium leading-[112px] relative shrink-0 text-[120px] text-[color:var(--color\/navy,#081d5e)] tracking-[-4.8px]" data-node-id="217:7358">
+                $5.2M
+              </p>
+              <p className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px]" data-node-id="217:7359">
+                contents
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[48px] items-start overflow-clip pl-[128px] relative shrink-0 w-full" data-node-id="217:7360" data-name="Result base">
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start leading-[28px] min-w-px overflow-clip relative text-[17px]" data-node-id="217:7361" data-name="What made the difference">
+              <p className="font-['Montserrat:SemiBold'] font-semibold relative shrink-0 text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:7362">
+                What made the difference:
+              </p>
+              <p className="font-['Montserrat:Regular'] font-normal min-w-full relative shrink-0 text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="217:7363">
+                specialist valuation of fine wine and art.
+              </p>
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[264px]" data-node-id="217:7364" data-name="Disclaimer">
+              <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[24px]" data-node-id="217:7365" data-name="Disclaimer rule" />
+              <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] w-[264px]" data-node-id="217:7366" data-annotations="\[LEGAL CHECK\] results disclaimer, set beside every figure.">
+                Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color\/ink,#070f33)] h-px opacity-18 relative shrink-0 w-full" data-node-id="217:7367" data-name="Ledger hairline" />
+      <div className="content-stretch flex gap-[48px] items-start overflow-clip py-[56px] relative shrink-0 w-full" data-node-id="217:7368" data-annotations="Edited from: “Tongue-and-groove”. The doc’s offer cell is blank (“—”), so the offer line is left out." data-name="Result / Apartment fire, 800 sq ft.">
+        <div className="content-stretch flex flex-col gap-[12px] h-[272px] items-start relative shrink-0 w-[216px]" data-node-id="217:7369" data-annotations="Illustrative image only. Not the property in this result; never tie a photo to a case." data-name="Photo / gym-ruin">
+          <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="I217:7369;41:71" data-annotations="Alt text: Fire-gutted interior with charred framing, field photograph." data-name="IMG:gym-ruin">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[105.88%] left-0 max-w-none top-[-4.26%] w-full" src={imgImgGymRuin} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px overflow-clip relative" data-node-id="217:7372" data-name="Result body">
+          <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="217:7373" data-name="Loss strip">
+            <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="217:7374" data-name="Loss">
+              <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:7375" data-name="Icon circle / building">
+                <div className="relative shrink-0 size-[24px]" data-node-id="217:7376" data-name="Icon / building">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBuilding} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="217:7378">
+                Apartment fire, 800 sq ft.
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="217:7379" data-name="Settlement">
+            <div className="[word-break:break-word] content-stretch flex gap-[16px] items-baseline overflow-clip relative shrink-0 w-full" data-node-id="217:7381" data-name="Figure line">
+              <p className="font-['Montserrat:Medium'] font-medium leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-[112px]" data-node-id="217:7611">
+                Settlement
+              </p>
+              <p className="font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:7382">
+                nearly
+              </p>
+              <p className="font-['Schibsted_Grotesk:Medium'] font-medium leading-[112px] relative shrink-0 text-[120px] text-[color:var(--color\/navy,#081d5e)] tracking-[-4.8px] whitespace-nowrap" data-node-id="217:7383">
+                $200,000
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[48px] items-start overflow-clip pl-[128px] relative shrink-0 w-full" data-node-id="217:7384" data-name="Result base">
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start leading-[28px] min-w-px overflow-clip relative text-[17px]" data-node-id="217:7385" data-name="What made the difference">
+              <p className="font-['Montserrat:SemiBold'] font-semibold relative shrink-0 text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="217:7386">
+                What made the difference:
+              </p>
+              <p className="font-['Montserrat:Regular'] font-normal min-w-full relative shrink-0 text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="217:7387">
+                tongue and groove ceiling, structural repair, smoke mitigation for the neighboring unit.
+              </p>
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[264px]" data-node-id="217:7388" data-name="Disclaimer">
+              <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[24px]" data-node-id="217:7389" data-name="Disclaimer rule" />
+              <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--color\/ink,#070f33)] w-[264px]" data-node-id="217:7390" data-annotations="\[LEGAL CHECK\] results disclaimer, set beside every figure.">
+                Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Body Strong: Font(family: "Montserrat", style: SemiBold, size: 17, weight: 600, lineHeight: 28, letterSpacing: 0), Desktop/Figure XL: Font(family: "Schibsted Grotesk", style: Medium, size: 120, weight: 500, lineHeight: 112, letterSpacing: -4), Desktop/Body: Font(family: "Montserrat", style: Regular, size: 17, weight: 400, lineHeight: 28, letterSpacing: 0), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

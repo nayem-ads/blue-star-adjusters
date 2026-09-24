@@ -1,0 +1,32 @@
+---
+// Water & Plumbing / Mold cap (split) (desktop 229:963, mobile 229:1209). Photo left 640 × 722 (mobile 390 × 440 on top),
+// navy panel right with faint B mark, § 02 chip, H2, lead, white ruler (desktop only), Schedule button.
+import Button from '../../../components/Button.astro';
+import Img from '../../../components/Img.astro';
+import Logo from '../../../components/Logo.astro';
+import Chip from '../Chip.astro';
+import Ticks from '../Ticks.astro';
+import { ROUTES } from '../../../data/site';
+---
+<section aria-labelledby="mold-title" class="relative overflow-hidden bg-navy lg:flex" data-node="229:963" data-node-m="229:1209">
+  <div class="relative h-[440px] lg:h-auto lg:w-[640px] lg:shrink-0" data-node="229:1500" data-node-m="229:1519">
+    <Img node="229:1519" alt="Moisture being measured on a water-damaged wall" class="w-full h-full object-cover lg:hidden" />
+    <Img node="229:1500" alt="Moisture being measured on a water-damaged wall" class="absolute inset-0 w-full h-full object-cover hidden lg:block" />
+  </div>
+  <div class="relative flex-1 min-w-0">
+    <span aria-hidden="true" class="bs-mold__mark absolute top-0 right-0 opacity-[.06] pointer-events-none" data-node="229:964" data-node-m="229:1210"><Logo variant="mark-white" bare label="" class="block w-full h-full" /></span>
+    <div class="relative flex flex-col items-start gap-[32px] px-[20px] pt-[32px] pb-[56px] lg:w-[640px] lg:px-[80px] lg:py-[120px]" data-node="229:965">
+      <div class="flex flex-col items-start gap-[16px] lg:contents" data-node-m="229:1211">
+        <Chip theme="dark" node={['229:966', '229:1212']} text={['229:967', '229:1213']}>§ 02</Chip>
+        <h2 id="mold-title" class="m-0 w-full tm-h2 lg:t-h2 text-white" data-node="229:968" data-node-m="229:1214">Many policies cap mold remediation at a low amount.</h2>
+      </div>
+      <p class="m-0 w-full tm-lead lg:t-lead text-white" data-node="229:1437" data-node-m="229:1518">One we reviewed capped it at $7,500. That's why a delayed water claim so often becomes a mold claim.</p>
+      <Ticks node="229:1438" class="hidden lg:block w-[480px] opacity-50 text-white" />
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="229:969" data-node-m="229:1223">Schedule a Free Review</Button>
+    </div>
+  </div>
+</section>
+<style is:global>
+  .bs-mold__mark { width: 280.8px; height: 340.9px; }
+  @media (min-width: 1024px) { .bs-mold__mark { width: 461.24px; height: 560px; } }
+</style>

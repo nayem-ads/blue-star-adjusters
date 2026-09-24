@@ -1,0 +1,21 @@
+---
+// Wildfire / Timing (desktop 234:1570 1280×465, mobile 234:1734 390×527). Paper band: rail (§ 06, H2, ruler) + one clock item.
+import Chip from '../commercial/Chip.astro';
+import Ruler from '../commercial/Ruler.astro';
+import Circle from '../commercial/Circle.astro';
+---
+<section aria-labelledby="wf-timing-title" class="bg-paper" data-node="234:1570" data-node-m="234:1734">
+  <div class="max-w-[1280px] mx-auto flex flex-col gap-[32px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[112px] lg:px-[80px] lg:py-[120px]">
+    <div class="flex flex-col items-start gap-[16px] lg:w-[360px] lg:shrink-0 lg:gap-[24px]" data-node="234:1571" data-node-m="234:1735">
+      <Chip node="234:1572" nodeM="234:1736" textNode="234:1573" textNodeM="234:1737">§ 06</Chip>
+      <h2 id="wf-timing-title" class="m-0 w-full tm-h2 lg:t-h2 text-navy" data-node="234:1574" data-node-m="234:1738">Timing.</h2>
+      <Ruler count={46} class="w-[200px] lg:w-[360px]" node="234:1575" nodeM="234:1739" />
+    </div>
+    <div class="lg:flex-1 lg:min-w-0" data-node="234:1622" data-node-m="234:1766">
+      <div class="flex items-center gap-[16px] py-[20px] border-t border-line lg:items-start lg:gap-[24px] lg:py-[32px]" data-node="234:1623" data-node-m="234:1767">
+        <Circle icon="clock" node="234:1624" nodeM="234:1768" />
+        <p class="m-0 flex-1 min-w-0 tm-lead lg:t-lead text-ink" data-node="234:1626" data-node-m="234:1770">For homes in a declared catastrophic disaster area, California bars public adjusters from soliciting you until seven days after the event ends. It doesn't apply if you call us first, and then we can look at your claim the same business day.</p>
+      </div>
+    </div>
+  </div>
+</section>

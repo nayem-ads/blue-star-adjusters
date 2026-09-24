@@ -1,0 +1,519 @@
+<canvas id="212:706" name="Code Upgrades" x="0" y="0" width="0" height="0">
+  <frame id="238:1616" name="Desktop — Code Upgrades (1280)" x="0" y="0" width="1280" height="4097">
+    <frame id="238:1617" name="Section / Hero" x="0" y="0" width="1280" height="820">
+      <rounded-rectangle id="238:1618" name="IMG:code-sprinkler-holddown" x="0" y="0" width="1280" height="820" />
+      <rounded-rectangle id="238:1619" name="Overlay / ink" x="0" y="0" width="1280" height="820" />
+      <rounded-rectangle id="238:1620" name="Overlay / left soft scrim" x="0" y="0" width="760" height="820" />
+      <instance id="238:1621" name="Header / Desktop (Dark)" x="0" y="0" width="1280" height="88" />
+      <frame id="238:1622" name="Hero content" x="80" y="246" width="1040" height="494">
+        <instance id="238:1623" name="Eyebrow" x="0" y="0" width="142" height="18" />
+        <text id="238:1624" name="slot/hero/2" x="0" y="50" width="900" height="136" />
+        <text id="241:992" name="slot/hero/6" x="0" y="218" width="640" height="128" />
+        <frame id="238:1625" name="Hero CTAs" x="0" y="378" width="504" height="52">
+          <instance id="238:1626" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+          <instance id="238:1627" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+        </frame>
+        <frame id="238:1628" name="Trust line" x="0" y="462" width="719" height="32">
+          <text id="238:1629" name="slot/hero/3" x="0" y="8" width="120" height="24" />
+          <rounded-rectangle id="238:1630" name="Divider" x="140" y="12" width="1" height="16" />
+          <text id="238:1631" name="slot/hero/4" x="161" y="8" width="333" height="24" />
+          <rounded-rectangle id="238:1632" name="Divider" x="514" y="12" width="1" height="16" />
+          <text id="238:1633" name="slot/hero/5" x="535" y="8" width="184" height="24" />
+        </frame>
+      </frame>
+      <frame id="238:1634" name="Ruler ticks (bottom edge)" x="0" y="804" width="1280" height="16">
+        <rounded-rectangle id="238:1635" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1636" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1637" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1638" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1639" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1640" name="Tick" x="40" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1641" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1642" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1643" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1644" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1645" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1646" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1647" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1648" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1649" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1650" name="Tick" x="120" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1651" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1652" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1653" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1654" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1655" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1656" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1657" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1658" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1659" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1660" name="Tick" x="200" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1661" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1662" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1663" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1664" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1665" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1666" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1667" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1668" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1669" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1670" name="Tick" x="280" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1671" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1672" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1673" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1674" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1675" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1676" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1677" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1678" name="Tick" x="344" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1679" name="Tick" x="352" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1680" name="Tick" x="360" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1681" name="Tick" x="368" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1682" name="Tick" x="376" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1683" name="Tick" x="384" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1684" name="Tick" x="392" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1685" name="Tick" x="400" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1686" name="Tick" x="408" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1687" name="Tick" x="416" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1688" name="Tick" x="424" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1689" name="Tick" x="432" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1690" name="Tick" x="440" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1691" name="Tick" x="448" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1692" name="Tick" x="456" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1693" name="Tick" x="464" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1694" name="Tick" x="472" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1695" name="Tick" x="480" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1696" name="Tick" x="488" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1697" name="Tick" x="496" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1698" name="Tick" x="504" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1699" name="Tick" x="512" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1700" name="Tick" x="520" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1701" name="Tick" x="528" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1702" name="Tick" x="536" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1703" name="Tick" x="544" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1704" name="Tick" x="552" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1705" name="Tick" x="560" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1706" name="Tick" x="568" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1707" name="Tick" x="576" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1708" name="Tick" x="584" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1709" name="Tick" x="592" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1710" name="Tick" x="600" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1711" name="Tick" x="608" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1712" name="Tick" x="616" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1713" name="Tick" x="624" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1714" name="Tick" x="632" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1715" name="Tick" x="640" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1716" name="Tick" x="648" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1717" name="Tick" x="656" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1718" name="Tick" x="664" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1719" name="Tick" x="672" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1720" name="Tick" x="680" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1721" name="Tick" x="688" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1722" name="Tick" x="696" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1723" name="Tick" x="704" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1724" name="Tick" x="712" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1725" name="Tick" x="720" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1726" name="Tick" x="728" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1727" name="Tick" x="736" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1728" name="Tick" x="744" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1729" name="Tick" x="752" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1730" name="Tick" x="760" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1731" name="Tick" x="768" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1732" name="Tick" x="776" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1733" name="Tick" x="784" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1734" name="Tick" x="792" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1735" name="Tick" x="800" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1736" name="Tick" x="808" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1737" name="Tick" x="816" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1738" name="Tick" x="824" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1739" name="Tick" x="832" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1740" name="Tick" x="840" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1741" name="Tick" x="848" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1742" name="Tick" x="856" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1743" name="Tick" x="864" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1744" name="Tick" x="872" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1745" name="Tick" x="880" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1746" name="Tick" x="888" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1747" name="Tick" x="896" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1748" name="Tick" x="904" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1749" name="Tick" x="912" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1750" name="Tick" x="920" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1751" name="Tick" x="928" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1752" name="Tick" x="936" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1753" name="Tick" x="944" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1754" name="Tick" x="952" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1755" name="Tick" x="960" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1756" name="Tick" x="968" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1757" name="Tick" x="976" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1758" name="Tick" x="984" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1759" name="Tick" x="992" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1760" name="Tick" x="1000" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1761" name="Tick" x="1008" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1762" name="Tick" x="1016" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1763" name="Tick" x="1024" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1764" name="Tick" x="1032" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1765" name="Tick" x="1040" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1766" name="Tick" x="1048" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1767" name="Tick" x="1056" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1768" name="Tick" x="1064" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1769" name="Tick" x="1072" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1770" name="Tick" x="1080" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1771" name="Tick" x="1088" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1772" name="Tick" x="1096" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1773" name="Tick" x="1104" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1774" name="Tick" x="1112" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1775" name="Tick" x="1120" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1776" name="Tick" x="1128" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1777" name="Tick" x="1136" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1778" name="Tick" x="1144" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1779" name="Tick" x="1152" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1780" name="Tick" x="1160" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1781" name="Tick" x="1168" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1782" name="Tick" x="1176" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1783" name="Tick" x="1184" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1784" name="Tick" x="1192" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1785" name="Tick" x="1200" y="0" width="1" height="16" />
+        <rounded-rectangle id="238:1786" name="Tick" x="1208" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1787" name="Tick" x="1216" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1788" name="Tick" x="1224" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1789" name="Tick" x="1232" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1790" name="Tick" x="1240" y="0" width="1" height="10" />
+        <rounded-rectangle id="238:1791" name="Tick" x="1248" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1792" name="Tick" x="1256" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1793" name="Tick" x="1264" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1794" name="Tick" x="1272" y="0" width="1" height="6" />
+        <rounded-rectangle id="238:1795" name="Tick" x="1280" y="0" width="1" height="16" />
+      </frame>
+    </frame>
+    <frame id="238:1799" name="Section / What the city requires" x="0" y="820" width="1280" height="716">
+      <frame id="238:1800" name="Index row" x="80" y="120" width="427" height="68">
+        <frame id="238:1801" name="Index chip" x="0" y="20" width="43" height="28">
+          <text id="238:1802" name="Index / § 01" x="9" y="5" width="25" height="18" />
+        </frame>
+        <frame id="238:1804" name="Ruler ticks" x="67" y="26" width="360" height="16">
+          <rounded-rectangle id="238:1805" name="Tick" x="0" y="0" width="1" height="16" />
+          <rounded-rectangle id="238:1806" name="Tick" x="8" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1807" name="Tick" x="16" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1808" name="Tick" x="24" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1809" name="Tick" x="32" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1810" name="Tick" x="40" y="0" width="1" height="10" />
+          <rounded-rectangle id="238:1811" name="Tick" x="48" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1812" name="Tick" x="56" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1813" name="Tick" x="64" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1814" name="Tick" x="72" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1815" name="Tick" x="80" y="0" width="1" height="16" />
+          <rounded-rectangle id="238:1816" name="Tick" x="88" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1817" name="Tick" x="96" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1818" name="Tick" x="104" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1819" name="Tick" x="112" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1820" name="Tick" x="120" y="0" width="1" height="10" />
+          <rounded-rectangle id="238:1821" name="Tick" x="128" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1822" name="Tick" x="136" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1823" name="Tick" x="144" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1824" name="Tick" x="152" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1825" name="Tick" x="160" y="0" width="1" height="16" />
+          <rounded-rectangle id="238:1826" name="Tick" x="168" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1827" name="Tick" x="176" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1828" name="Tick" x="184" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1829" name="Tick" x="192" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1830" name="Tick" x="200" y="0" width="1" height="10" />
+          <rounded-rectangle id="238:1831" name="Tick" x="208" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1832" name="Tick" x="216" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1833" name="Tick" x="224" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1834" name="Tick" x="232" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1835" name="Tick" x="240" y="0" width="1" height="16" />
+          <rounded-rectangle id="238:1836" name="Tick" x="248" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1837" name="Tick" x="256" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1838" name="Tick" x="264" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1839" name="Tick" x="272" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1840" name="Tick" x="280" y="0" width="1" height="10" />
+          <rounded-rectangle id="238:1841" name="Tick" x="288" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1842" name="Tick" x="296" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1843" name="Tick" x="304" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1844" name="Tick" x="312" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1845" name="Tick" x="320" y="0" width="1" height="16" />
+          <rounded-rectangle id="238:1846" name="Tick" x="328" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1847" name="Tick" x="336" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1848" name="Tick" x="344" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1849" name="Tick" x="352" y="0" width="1" height="6" />
+          <rounded-rectangle id="238:1850" name="Tick" x="360" y="0" width="1" height="10" />
+        </frame>
+      </frame>
+      <frame id="238:1851" name="Ledger / Code" x="80" y="228" width="1120" height="368">
+        <frame id="241:993" name="Ledger row / 1" x="0" y="0" width="1120" height="134">
+          <frame id="241:994" name="Icon circle / building" x="0" y="33" width="40" height="40">
+            <instance id="241:995" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="241:997" name="slot/misses/2" x="72" y="33" width="328" height="68" />
+          <text id="241:998" name="slot/misses/3" x="432" y="33" width="688" height="32" />
+        </frame>
+        <frame id="241:999" name="Ledger row / 2" x="0" y="134" width="1120" height="105">
+          <frame id="241:1000" name="Icon circle / home" x="0" y="32" width="40" height="40">
+            <instance id="241:1001" name="Icon / home" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="241:1004" name="slot/misses/4" x="72" y="32" width="328" height="34" />
+          <text id="241:1005" name="slot/misses/5" x="432" y="32" width="688" height="32" />
+        </frame>
+        <frame id="241:1006" name="Ledger row / 3" x="0" y="239" width="1120" height="129">
+          <frame id="241:1007" name="Icon circle / document" x="0" y="32" width="40" height="40">
+            <instance id="241:1008" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="241:1011" name="slot/misses/6" x="72" y="32" width="328" height="34" />
+          <text id="241:1012" name="slot/misses/7" x="432" y="32" width="688" height="64" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="238:1864" name="Section / Founder" x="0" y="1536" width="1280" height="720">
+      <rounded-rectangle id="238:1865" name="IMG:code-seismic-retrofit" x="0" y="0" width="600" height="720" />
+      <frame id="238:1866" name="Inset / macro" x="360" y="168" width="320" height="256">
+        <rounded-rectangle id="238:1867" name="IMG:ai-plans" x="0" y="0" width="320" height="212" />
+        <instance id="238:1868" name="Detail / Dimension line" x="0" y="224" width="320" height="16" />
+      </frame>
+      <instance id="238:1869" name="Detail / Crop marks" x="344" y="152" width="352" height="288" />
+      <frame id="238:1870" name="Details" x="704" y="184" width="496" height="348">
+        <frame id="238:1871" name="Detail / Founder line" x="0" y="0" width="496" height="348">
+          <frame id="238:1872" name="Index chip" x="0" y="0" width="46" height="28">
+            <text id="238:1873" name="Index / § 02" x="9" y="5" width="28" height="18" />
+          </frame>
+          <rounded-rectangle id="241:1013" name="Rule / white" x="0" y="52" width="48" height="4" />
+          <text id="238:1875" name="slot/detail/2" x="0" y="80" width="496" height="136" />
+          <instance id="241:1014" name="Button / Schedule a Free Review" x="0" y="240" width="253" height="52" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="238:1976" name="Section / Related" x="0" y="2256" width="1280" height="522">
+      <frame id="238:1977" name="Index chip / § 03" x="80" y="96" width="46" height="28">
+        <text id="238:1978" name="Index / § 03" x="9" y="5" width="28" height="18" />
+      </frame>
+      <frame id="238:1979" name="Hubs" x="80" y="164" width="1120" height="84">
+        <frame id="238:1980" name="Index link / Residential Claims" x="0" y="0" width="548" height="84">
+          <text id="238:1981" name="slot/related/1" x="0" y="26" width="243" height="34" />
+          <instance id="238:1982" name="Icon / arrow" x="524" y="31" width="24" height="24" />
+        </frame>
+        <frame id="238:1983" name="Index link / Commercial Claims" x="572" y="0" width="548" height="84">
+          <text id="238:1984" name="slot/related/2" x="0" y="26" width="257" height="34" />
+          <instance id="238:1985" name="Icon / arrow" x="524" y="31" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="238:1986" name="Index" x="80" y="288" width="1120" height="138">
+        <frame id="238:2002" name="Index link / Fire &amp; Smoke" x="0" y="0" width="262" height="69">
+          <text id="238:2003" name="slot/related/3" x="0" y="21" width="238" height="28" />
+          <instance id="238:2004" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+        <frame id="238:1987" name="Index link / Wildfire" x="286" y="0" width="262" height="69">
+          <text id="238:1988" name="slot/related/4" x="0" y="21" width="238" height="28" />
+          <instance id="238:1989" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+        <frame id="238:1990" name="Index link / Water &amp; Plumbing" x="572" y="0" width="262" height="69">
+          <text id="238:1991" name="slot/related/5" x="0" y="21" width="238" height="28" />
+          <instance id="238:1992" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+        <frame id="238:1993" name="Index link / Wind, Hail &amp; Falling Trees" x="858" y="0" width="262" height="69">
+          <text id="238:1994" name="slot/related/6" x="0" y="21" width="238" height="28" />
+          <instance id="238:1995" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+        <frame id="238:1996" name="Index link / Contents &amp; Valuables" x="0" y="69" width="262" height="69">
+          <text id="238:1997" name="slot/related/7" x="0" y="21" width="238" height="28" />
+          <instance id="238:1998" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+        <frame id="238:1999" name="Index link / Additional Living Expenses" x="286" y="69" width="262" height="69">
+          <text id="238:2000" name="slot/related/8" x="0" y="21" width="238" height="28" />
+          <instance id="238:2001" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+        <frame id="238:2005" name="Index link / Denied or Underpaid" x="572" y="69" width="262" height="69">
+          <text id="238:2006" name="slot/related/9" x="0" y="21" width="238" height="28" />
+          <instance id="238:2007" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="238:2008" name="Section / CTA" x="0" y="2778" width="1280" height="762">
+      <instance id="238:2009" name="Brand wave corner" x="920" y="562" width="360" height="200" />
+      <text id="238:2010" name="slot/cta/1" x="80" y="120" width="860" height="136" />
+      <text id="238:2011" name="slot/cta/2" x="80" y="288" width="560" height="64" />
+      <frame id="238:2012" name="Phone block" x="80" y="384" width="1024" height="158">
+        <frame id="238:2013" name="Phone as display" x="0" y="24" width="631" height="134">
+          <text id="238:2014" name="Label / Call" x="0" y="0" width="26" height="18" />
+          <text id="238:2015" name="Phone / display" x="0" y="26" width="631" height="96" />
+          <rounded-rectangle id="238:2016" name="Royal rule" x="0" y="130" width="631" height="4" />
+        </frame>
+        <frame id="238:2017" name="Hours" x="695" y="122" width="329" height="36">
+          <instance id="238:2018" name="Icon / clock" x="0" y="0" width="24" height="24" />
+          <text id="238:2019" name="Hours" x="36" y="0" width="293" height="24" />
+        </frame>
+      </frame>
+      <frame id="238:2020" name="CTA buttons" x="80" y="574" width="504" height="68">
+        <instance id="238:2021" name="Button / Schedule a Free Review" x="0" y="16" width="253" height="52" />
+        <instance id="238:2022" name="Button / Call (916) 507-1005" x="269" y="16" width="235" height="52" />
+      </frame>
+    </frame>
+    <instance id="238:2023" name="Footer / Desktop" x="0" y="3540" width="1280" height="557" />
+  </frame>
+  <frame id="238:2024" name="Mobile — Code Upgrades (390)" x="1400" y="0" width="390" height="4893">
+    <frame id="238:2025" name="Section / Hero" x="0" y="0" width="390" height="844">
+      <rounded-rectangle id="238:2026" name="IMG:code-sprinkler-holddown" x="0" y="0" width="390" height="520" />
+      <rounded-rectangle id="238:2027" name="Scrim / ink (photo)" x="0" y="0" width="390" height="520" />
+      <frame id="238:2028" name="Scrim / ink ramp (photo edge)" x="0" y="264" width="390" height="264">
+        <rounded-rectangle id="238:2029" name="Ramp step" x="0" y="0" width="390" height="12" />
+        <rounded-rectangle id="238:2030" name="Ramp step" x="0" y="12" width="390" height="12" />
+        <rounded-rectangle id="238:2031" name="Ramp step" x="0" y="24" width="390" height="12" />
+        <rounded-rectangle id="238:2032" name="Ramp step" x="0" y="36" width="390" height="12" />
+        <rounded-rectangle id="238:2033" name="Ramp step" x="0" y="48" width="390" height="12" />
+        <rounded-rectangle id="238:2034" name="Ramp step" x="0" y="60" width="390" height="12" />
+        <rounded-rectangle id="238:2035" name="Ramp step" x="0" y="72" width="390" height="12" />
+        <rounded-rectangle id="238:2036" name="Ramp step" x="0" y="84" width="390" height="12" />
+        <rounded-rectangle id="238:2037" name="Ramp step" x="0" y="96" width="390" height="12" />
+        <rounded-rectangle id="238:2038" name="Ramp step" x="0" y="108" width="390" height="12" />
+        <rounded-rectangle id="238:2039" name="Ramp step" x="0" y="120" width="390" height="12" />
+        <rounded-rectangle id="238:2040" name="Ramp step" x="0" y="132" width="390" height="12" />
+        <rounded-rectangle id="238:2041" name="Ramp step" x="0" y="144" width="390" height="12" />
+        <rounded-rectangle id="238:2042" name="Ramp step" x="0" y="156" width="390" height="12" />
+        <rounded-rectangle id="238:2043" name="Ramp step" x="0" y="168" width="390" height="12" />
+        <rounded-rectangle id="238:2044" name="Ramp step" x="0" y="180" width="390" height="12" />
+        <rounded-rectangle id="238:2045" name="Ramp step" x="0" y="192" width="390" height="12" />
+        <rounded-rectangle id="238:2046" name="Ramp step" x="0" y="204" width="390" height="12" />
+        <rounded-rectangle id="238:2047" name="Ramp step" x="0" y="216" width="390" height="12" />
+        <rounded-rectangle id="238:2048" name="Ramp step" x="0" y="228" width="390" height="12" />
+        <rounded-rectangle id="238:2049" name="Ramp step" x="0" y="240" width="390" height="12" />
+        <rounded-rectangle id="238:2050" name="Ramp step" x="0" y="252" width="390" height="12" />
+      </frame>
+      <instance id="238:2051" name="Header / Mobile (Dark)" x="0" y="0" width="390" height="64" />
+      <frame id="238:2053" name="Hero content" x="20" y="302" width="350" height="430">
+        <instance id="238:2054" name="Eyebrow" x="0" y="0" width="142" height="18" />
+        <text id="238:2055" name="slot/hero/2" x="0" y="42" width="350" height="176" />
+        <frame id="238:2056" name="Trust line" x="0" y="242" width="350" height="40">
+          <frame id="238:2057" name="Trust row" x="0" y="0" width="281" height="16">
+            <text id="238:2058" name="slot/hero/3" x="0" y="0" width="101" height="16" />
+            <rounded-rectangle id="238:2059" name="Divider" x="113" y="1" width="1" height="14" />
+            <text id="238:2060" name="slot/hero/5" x="126" y="0" width="155" height="16" />
+          </frame>
+          <text id="238:2061" name="slot/hero/4" x="0" y="24" width="281" height="16" />
+        </frame>
+        <frame id="238:2062" name="CTAs" x="0" y="306" width="350" height="124">
+          <instance id="238:2063" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+          <instance id="238:2064" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="238:2065" name="Section / What the city requires" x="0" y="844" width="390" height="896">
+      <text id="242:952" name="slot/hero/6" x="20" y="64" width="350" height="168" />
+      <frame id="238:2066" name="Index row" x="20" y="264" width="257" height="58">
+        <frame id="238:2067" name="Index chip / § 01" x="0" y="16" width="41" height="26">
+          <text id="238:2068" name="Index / § 01" x="9" y="5" width="23" height="16" />
+        </frame>
+        <frame id="238:2070" name="Ruler ticks" x="57" y="21" width="200" height="16" />
+      </frame>
+      <frame id="238:2097" name="Ledger / Code" x="20" y="354" width="350" height="486">
+        <frame id="242:953" name="Ledger row / 1" x="0" y="0" width="350" height="154">
+          <frame id="242:954" name="Label row" x="0" y="25" width="350" height="40">
+            <frame id="242:955" name="Icon circle / building" x="0" y="0" width="40" height="40">
+              <instance id="242:956" name="Icon / building" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="242:958" name="slot/misses/2" x="56" y="6" width="294" height="28" />
+          </frame>
+          <text id="242:959" name="slot/misses/3" x="0" y="77" width="350" height="52" />
+        </frame>
+        <frame id="242:960" name="Ledger row / 2" x="0" y="154" width="350" height="153">
+          <frame id="242:961" name="Label row" x="0" y="24" width="350" height="40">
+            <frame id="242:962" name="Icon circle / home" x="0" y="0" width="40" height="40">
+              <instance id="242:963" name="Icon / home" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="242:966" name="slot/misses/4" x="56" y="6" width="294" height="28" />
+          </frame>
+          <text id="242:967" name="slot/misses/5" x="0" y="76" width="350" height="52" />
+        </frame>
+        <frame id="242:968" name="Ledger row / 3" x="0" y="307" width="350" height="179">
+          <frame id="242:969" name="Label row" x="0" y="24" width="350" height="40">
+            <frame id="242:970" name="Icon circle / document" x="0" y="0" width="40" height="40">
+              <instance id="242:971" name="Icon / document" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="242:974" name="slot/misses/6" x="56" y="6" width="294" height="28" />
+          </frame>
+          <text id="242:975" name="slot/misses/7" x="0" y="76" width="350" height="78" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="238:2110" name="Section / Founder" x="0" y="1740" width="390" height="906">
+      <frame id="238:2111" name="Photo stack" x="0" y="0" width="390" height="496">
+        <rounded-rectangle id="238:2112" name="IMG:code-seismic-retrofit" x="0" y="0" width="390" height="420" />
+        <instance id="238:2113" name="Detail / Crop marks" x="142" y="292" width="240" height="170" />
+        <rounded-rectangle id="238:2114" name="IMG:ai-plans" x="158" y="308" width="208" height="138" />
+        <instance id="238:2115" name="Detail / Dimension line" x="158" y="472" width="208" height="16" />
+      </frame>
+      <frame id="238:2116" name="Details" x="0" y="536" width="390" height="314">
+        <frame id="238:2117" name="Detail / Founder line" x="20" y="0" width="350" height="314">
+          <frame id="238:2118" name="Index chip / § 02" x="0" y="0" width="44" height="26">
+            <text id="238:2119" name="Index / § 02" x="9" y="5" width="26" height="16" />
+          </frame>
+          <rounded-rectangle id="242:976" name="Rule / white" x="0" y="42" width="40" height="4" />
+          <text id="238:2121" name="slot/detail/2" x="0" y="62" width="350" height="140" />
+          <instance id="242:977" name="Button / Schedule a Free Review" x="0" y="218" width="350" height="56" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="238:2192" name="Section / Related" x="0" y="2646" width="390" height="722">
+      <frame id="238:2193" name="Index chip / § 03" x="20" y="64" width="44" height="26">
+        <text id="238:2194" name="Index / § 03" x="9" y="5" width="26" height="16" />
+      </frame>
+      <frame id="238:2195" name="Index" x="20" y="114" width="350" height="552">
+        <frame id="238:2196" name="Index link / Residential Claims" x="0" y="0" width="350" height="70">
+          <text id="238:2197" name="slot/related/1" x="0" y="21" width="326" height="28" />
+          <instance id="238:2198" name="Icon / arrow" x="326" y="23" width="24" height="24" />
+        </frame>
+        <frame id="238:2199" name="Index link / Commercial Claims" x="0" y="70" width="350" height="69">
+          <text id="238:2200" name="slot/related/2" x="0" y="20" width="326" height="28" />
+          <instance id="238:2201" name="Icon / arrow" x="326" y="22" width="24" height="24" />
+        </frame>
+        <frame id="238:2217" name="Index link / Fire &amp; Smoke" x="0" y="139" width="350" height="59">
+          <text id="238:2218" name="slot/related/3" x="0" y="16" width="330" height="26" />
+          <instance id="238:2219" name="Icon / arrow" x="330" y="19" width="20" height="20" />
+        </frame>
+        <frame id="238:2202" name="Index link / Wildfire" x="0" y="198" width="350" height="59">
+          <text id="238:2203" name="slot/related/4" x="0" y="16" width="330" height="26" />
+          <instance id="238:2204" name="Icon / arrow" x="330" y="19" width="20" height="20" />
+        </frame>
+        <frame id="238:2205" name="Index link / Water &amp; Plumbing" x="0" y="257" width="350" height="59">
+          <text id="238:2206" name="slot/related/5" x="0" y="16" width="330" height="26" />
+          <instance id="238:2207" name="Icon / arrow" x="330" y="19" width="20" height="20" />
+        </frame>
+        <frame id="238:2208" name="Index link / Wind, Hail &amp; Falling Trees" x="0" y="316" width="350" height="59">
+          <text id="238:2209" name="slot/related/6" x="0" y="16" width="330" height="26" />
+          <instance id="238:2210" name="Icon / arrow" x="330" y="19" width="20" height="20" />
+        </frame>
+        <frame id="238:2211" name="Index link / Contents &amp; Valuables" x="0" y="375" width="350" height="59">
+          <text id="238:2212" name="slot/related/7" x="0" y="16" width="330" height="26" />
+          <instance id="238:2213" name="Icon / arrow" x="330" y="19" width="20" height="20" />
+        </frame>
+        <frame id="238:2214" name="Index link / Additional Living Expenses" x="0" y="434" width="350" height="59">
+          <text id="238:2215" name="slot/related/8" x="0" y="16" width="330" height="26" />
+          <instance id="238:2216" name="Icon / arrow" x="330" y="19" width="20" height="20" />
+        </frame>
+        <frame id="238:2220" name="Index link / Denied or Underpaid" x="0" y="493" width="350" height="59">
+          <text id="238:2221" name="slot/related/9" x="0" y="16" width="330" height="26" />
+          <instance id="238:2222" name="Icon / arrow" x="330" y="19" width="20" height="20" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="238:2223" name="Section / CTA" x="0" y="3368" width="390" height="672">
+      <frame id="238:2224" name="Heading group" x="20" y="64" width="350" height="166">
+        <text id="238:2225" name="slot/cta/1" x="0" y="0" width="350" height="72" />
+        <text id="238:2226" name="slot/cta/2" x="0" y="88" width="350" height="78" />
+      </frame>
+      <frame id="238:2227" name="Tap/Call (916) 507-1005" x="20" y="262" width="306" height="84">
+        <text id="238:2228" name="Label / Call" x="0" y="0" width="24" height="16" />
+        <text id="238:2229" name="Phone / display" x="0" y="24" width="306" height="48" />
+        <rounded-rectangle id="238:2230" name="Rule / royal 4px" x="0" y="80" width="306" height="4" />
+      </frame>
+      <frame id="238:2231" name="Hours" x="20" y="378" width="350" height="26">
+        <instance id="238:2232" name="Icon / clock" x="0" y="1" width="24" height="24" />
+        <text id="238:2233" name="Hours" x="36" y="0" width="314" height="26" />
+      </frame>
+      <frame id="238:2234" name="CTAs" x="20" y="436" width="350" height="124">
+        <instance id="238:2235" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+        <instance id="238:2236" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+      </frame>
+      <instance id="238:2237" name="Brand wave corner" x="210" y="572" width="180" height="100" />
+    </frame>
+    <instance id="238:2238" name="Footer / Mobile" x="0" y="4040" width="390" height="853" />
+    <instance id="238:2239" name="Mobile call bar" x="0" y="756" width="390" height="89" />
+  </frame>
+</canvas>

@@ -1,0 +1,178 @@
+const imgIconMapPin = "https://www.figma.com/api/mcp/asset/c77a11cf-0ad9-4f45-ab82-2f4d066bbb02.svg";
+const imgLogoMarkWhiteFaintCropped = "https://www.figma.com/api/mcp/asset/85d7a465-425f-48ee-acfd-5be500e87575.svg";
+
+export default function StateRulesLedger() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex gap-[64px] items-start px-[80px] py-[120px] relative size-full" data-node-id="217:8010" data-annotations="State rule lines from the office template table (CD 568 to 577). Chips show each line's source from the copy file.;\[LEGAL CHECK\] cancellation and disclosure rules for NV, OR, WA and AZ (CD 699)." data-name="State rules — ledger">
+      <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[256px]" data-node-id="217:8011" data-name="Margin rail">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:8012">
+          § 02
+        </p>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-40 relative shrink-0 w-[256px]" data-node-id="217:8013" data-name="Rail hairline" />
+        <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:8014" data-name="Chip / 5 states">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:8015">
+            5 states
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative" data-node-id="217:8016" data-name="Ledger">
+        <div className="bg-[var(--color\/white,white)] h-px opacity-25 relative shrink-0 w-full" data-node-id="217:8017" data-name="Row rule" />
+        <div className="content-stretch flex gap-[32px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:8018" data-name="Row / California">
+          <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[200px]" data-node-id="217:8019" data-name="State">
+            <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:8020" data-name="Chip / § 15027">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:8021">
+                § 15027
+              </p>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-full relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[-0.28px] w-[min-content]" data-node-id="217:8022">
+              California
+            </p>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/white,white)]" data-node-id="217:8023" data-annotations="Edited from: 'California: cancel within 3 business days of signing (5 calendar days in a declared catastrophic-disaster area); our fee can never...' The state name moved to the row label. Source: §15027.">
+            Cancel within 3 business days of signing (5 calendar days in a declared catastrophic disaster area). Our fee can never leave you with less than your insurer already paid before you hired us.
+          </p>
+          <div className="content-stretch flex flex-col gap-[8px] items-start overflow-clip relative shrink-0 w-[160px]" data-node-id="217:8024" data-name="Offices">
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:8025" data-name="Office / Santa Monica">
+              <div className="relative shrink-0 size-[16px]" data-node-id="217:8026" data-name="Icon / map-pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMapPin} />
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:8029">
+                Santa Monica
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:8030" data-name="Office / Sacramento">
+              <div className="relative shrink-0 size-[16px]" data-node-id="217:8031" data-name="Icon / map-pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMapPin} />
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:8034">
+                Sacramento
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:8035" data-name="Office / San Francisco">
+              <div className="relative shrink-0 size-[16px]" data-node-id="217:8036" data-name="Icon / map-pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMapPin} />
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:8039">
+                San Francisco
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-25 relative shrink-0 w-full" data-node-id="217:8040" data-name="Row rule" />
+        <div className="content-stretch flex gap-[32px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:8041" data-name="Row / Nevada">
+          <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[200px]" data-node-id="217:8042" data-name="State">
+            <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:8043" data-name="Chip / NRS 684A.165">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:8044">
+                NRS 684A.165
+              </p>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-full relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[-0.28px] w-[min-content]" data-node-id="217:8045">
+              Nevada
+            </p>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/white,white)]" data-node-id="217:8046" data-annotations="Source: NRS 684A.165.">
+            Nevada law bars adjusters from giving legal advice. When your claim needs counsel, we bring counsel in.
+          </p>
+          <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[160px]" data-node-id="217:8047" data-name="Offices">
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:8048" data-name="Office / Reno">
+              <div className="relative shrink-0 size-[16px]" data-node-id="217:8049" data-name="Icon / map-pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMapPin} />
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:8052">
+                Reno
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-25 relative shrink-0 w-full" data-node-id="217:8053" data-name="Row rule" />
+        <div className="content-stretch flex gap-[32px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:8054" data-name="Row / Oregon">
+          <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[200px]" data-node-id="217:8055" data-name="State">
+            <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:8056" data-name="Chip / Oregon DFR">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:8057">
+                Oregon DFR
+              </p>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-full relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[-0.28px] w-[min-content]" data-node-id="217:8058">
+              Oregon
+            </p>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/white,white)]" data-node-id="217:8059" data-annotations="Edited from: 'non-renewals'. Source: Oregon DFR.">
+            Oregon created a separate public adjuster license on August 1, 2025. On July 31, 2026 it temporarily paused cancellations and nonrenewals in wildfire evacuation ZIP codes.
+          </p>
+          <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[160px]" data-node-id="217:8060" data-name="Offices">
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:8061" data-name="Office / Portland">
+              <div className="relative shrink-0 size-[16px]" data-node-id="217:8062" data-name="Icon / map-pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMapPin} />
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:8065">
+                Portland
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-25 relative shrink-0 w-full" data-node-id="217:8066" data-name="Row rule" />
+        <div className="content-stretch flex gap-[32px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:8067" data-name="Row / Washington">
+          <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[200px]" data-node-id="217:8068" data-name="State">
+            <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:8069" data-name="Chip / WA OIC">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:8070">
+                WA OIC
+              </p>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-full relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[-0.28px] w-[min-content]" data-node-id="217:8071">
+              Washington
+            </p>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/white,white)]" data-node-id="217:8072" data-annotations="Source: WA OIC.">
+            After the August 2023 Gray and Oregon Road fires, 244 of 355 significant dwelling claims paid out their full limits. Underinsurance is common here.
+          </p>
+          <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[160px]" data-node-id="217:8073" data-name="Offices">
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:8074" data-name="Office / Seattle">
+              <div className="relative shrink-0 size-[16px]" data-node-id="217:8075" data-name="Icon / map-pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMapPin} />
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:8078">
+                Seattle
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-25 relative shrink-0 w-full" data-node-id="217:8079" data-name="Row rule" />
+        <div className="content-stretch flex gap-[32px] items-start overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:8080" data-name="Row / Arizona">
+          <div className="content-stretch flex flex-col gap-[12px] items-start overflow-clip relative shrink-0 w-[200px]" data-node-id="217:8081" data-name="State">
+            <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:8082" data-name="Chip / ARS 20-321.02">
+              <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:8083">
+                ARS 20-321.02
+              </p>
+            </div>
+            <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-full relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[-0.28px] w-[min-content]" data-node-id="217:8084">
+              Arizona
+            </p>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[28px] min-w-px relative text-[17px] text-[color:var(--color\/white,white)]" data-node-id="217:8085" data-annotations="Edited from: 'We measure and negotiate; your contractor builds'. Source: ARS 20-321.02.">
+            Arizona bars public adjusters from taking any part in repairs on a claim they adjust. We measure and negotiate. Your contractor builds.
+          </p>
+          <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[160px]" data-node-id="217:8086" data-name="Offices">
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0 w-full" data-node-id="217:8087" data-name="Office / Scottsdale">
+              <div className="relative shrink-0 size-[16px]" data-node-id="217:8088" data-name="Icon / map-pin">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMapPin} />
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:8091">
+                Scottsdale
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-25 relative shrink-0 w-full" data-node-id="217:8092" data-name="Row rule" />
+      </div>
+      <div className="absolute h-[520px] left-[-120px] top-[754px] w-[428.294px]" data-node-id="217:8974" data-name="Logo / Mark / White (faint, cropped)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkWhiteFaintCropped} />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Desktop/Body: Font(family: "Montserrat", style: Regular, size: 17, weight: 400, lineHeight: 28, letterSpacing: 0), Desktop/Small: Font(family: "Montserrat", style: Regular, size: 15, weight: 400, lineHeight: 24, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

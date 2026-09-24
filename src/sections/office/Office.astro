@@ -1,0 +1,49 @@
+---
+// Office details. Desktop: rail (label, 264 rule, state chip) + 744 ledger; mobile: head then ledger. White + blueprint grid.
+// 3 variants by row list: Sacramento (address, phone, email, hours, license), Santa Monica / San Francisco (phone, hours,
+// license), Reno / Portland / Seattle / Scottsdale (phone, hours). The ledger closes up when rows are left out.
+import Icon from '../../components/Icon.astro';
+import Chip from './Chip.astro';
+import Grid from './Grid.astro';
+import { PHONE_TEL } from '../../data/site';
+import { nodes, type OfficeData } from './types';
+interface Props { data: OfficeData }
+const { data: d } = Astro.props;
+const n = (k: string) => nodes(d, k);
+const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
+const meta = {
+  address: { label: 'Address', icon: 'map-pin' },
+  phone: { label: 'Phone', icon: 'phone' },
+  email: { label: 'Email', icon: 'mail' },
+  hours: { label: 'Hours', icon: 'clock' },
+  license: { label: 'License', icon: 'shield' },
+} as const;
+const href = (k: string, v: string) => (k === 'phone' ? PHONE_TEL : k === 'email' ? `mailto:${v}` : undefined);
+---
+<section aria-labelledby="office-label" class="relative bg-white overflow-hidden" {...n('office')}>
+  <Grid node={id('office.grid', 0)} nodeM={id('office.grid', 1)} />
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[32px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[112px] lg:px-[80px] lg:py-[120px]">
+    <div class="flex flex-col items-start self-start gap-[12px] lg:self-auto lg:gap-[16px] lg:w-[264px] lg:shrink-0" {...n('office.rail')}>
+      <h2 id="office-label" class="m-0 tm-h3 lg:t-h3 text-navy lg:w-full lg:min-w-0" style={d.office.labelWidthM ? `min-width:${d.office.labelWidthM}px` : undefined} {...n('office.label')}>{d.office.label}</h2>
+      <span aria-hidden="true" class="block h-[2px] w-[120px] lg:w-full bg-navy" {...n('office.rule')}></span>
+      <Chip class="border border-navy text-navy" node={id('office.chip', 0)} nodeM={id('office.chip', 1)} textNode={id('office.chipt', 0)} textNodeM={id('office.chipt', 1)}>{d.state}</Chip>
+    </div>
+    <div class="flex flex-col border-t-2 border-navy lg:w-[744px] lg:shrink-0" {...n('office.ledger')}>
+      {d.office.rows.map((r) => {
+        const m = meta[r.kind]; const k = `office.${r.kind}`; const h = href(r.kind, r.value);
+        const big = r.kind === 'phone';
+        return (
+          <div class="flex items-start gap-[16px] py-[20px] border-b border-line lg:items-center lg:gap-[24px] lg:py-[24px]" {...n(k)}>
+            <span aria-hidden="true" class="flex items-center justify-center shrink-0 size-[42px] rounded-full border border-navy text-navy lg:size-[48px] lg:border-0 lg:bg-paper" {...n(k + '.icon')}><Icon name={m.icon} size={24} /></span>
+            <div class="flex flex-col gap-[4px] flex-1 min-w-0 lg:contents" {...n(k + '.pair')}>
+              <p class="m-0 tm-label lg:t-label text-ink lg:w-[120px] lg:shrink-0" {...n(k + '.label')}>{m.label}</p>
+              <p class:list={['m-0 lg:flex-1 lg:min-w-0', big ? 'tm-h3 lg:t-h3 text-navy' : 'tm-body lg:t-lead text-ink']} {...n(k + '.value')}>
+                {h ? <a href={h} class="text-inherit no-underline hover:underline">{r.value}</a> : r.value}
+              </p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+---
+// Commercial / Commercial list (desktop 230:10940 1280×985, mobile 230:11161 390×1143). Photo (left / top) + navy panel:
+// § 02, eight-item ledger between white 24% hairlines, faint B mark, "Schedule a Free Review".
+import Button from '../../../components/Button.astro';
+import Img from '../../../components/Img.astro';
+import Logo from '../../../components/Logo.astro';
+import { ROUTES } from '../../../data/site';
+import Chip from './Chip.astro';
+import Circle from './Circle.astro';
+
+const rows = [
+  { icon: 'flame', label: 'Fire, water and structural losses', d: ['230:10952', '230:10953', '230:10957'], m: ['230:11173', '230:11174', '230:11178'] },
+  { icon: 'clock', label: 'Business interruption and loss of income', d: ['230:10959', '230:10960', '230:10964'], m: ['230:11180', '230:11181', '230:11185'] },
+  { icon: 'building', label: 'Dependent property and contingent BI', d: ['230:10966', '230:10967', '230:10970'], m: ['230:11187', '230:11188', '230:11191'] },
+  { icon: 'search', label: 'Equipment breakdown and failure claims', d: ['230:10972', '230:10973', '230:10977'], m: ['230:11193', '230:11194', '230:11198'] },
+  { icon: 'ruler', label: 'Ordinance or law and seismic code upgrades', d: ['230:10979', '230:10980', '230:10984'], m: ['230:11200', '230:11201', '230:11205'] },
+  { icon: 'home', label: 'Rebuild cost estimating and Xactimate', d: ['230:10986', '230:10987', '230:10991'], m: ['230:11207', '230:11208', '230:11212'] },
+  { icon: 'shield', label: 'IH report interpretation and remediation', d: ['230:10993', '230:10994', '230:10998'], m: ['230:11214', '230:11215', '230:11219'] },
+  { icon: 'document', label: 'Litigation support and demand packaging', d: ['230:11000', '230:11001', '230:11005'], m: ['230:11221', '230:11222', '230:11226'] },
+];
+---
+<section aria-label="Commercial claims we handle" class="bg-navy" data-node="230:10940" data-node-m="230:11161">
+  <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row">
+    <div class="w-full h-[280px] lg:hidden" data-node-m="230:11162"><Img node="230:11162" alt="Closed storefront with papered windows and a notice on the door." class="w-full h-full object-cover" /></div>
+    <div class="hidden lg:block w-[544px] shrink-0 self-stretch" data-node="230:10941"><Img node="230:10941" alt="Closed storefront with papered windows and a notice on the door." class="w-full h-full object-cover" /></div>
+    <div class="relative overflow-hidden flex flex-col items-start gap-[24px] px-[20px] pt-[64px] pb-[64px] text-white lg:flex-1 lg:min-w-0 lg:gap-[40px] lg:px-[80px] lg:py-[120px]" data-node="230:10942" data-node-m="230:11163">
+      <span aria-hidden="true" class="absolute left-[179.4px] top-[24px] opacity-[.06] pointer-events-none lg:hidden" data-node-m="230:11164"><Logo variant="mark-white" bare width={280.8} height={340.9} label="" /></span>
+      <span aria-hidden="true" class="hidden lg:block absolute left-[390.07px] top-[64px] opacity-[.06] pointer-events-none" data-node="230:10943"><Logo variant="mark-white" bare width={461.239} height={560} label="" /></span>
+      <Chip dark class="relative" node="230:10948" nodeM="230:11169" textNode="230:10949" textNodeM="230:11170">§ 02</Chip>
+      <ul class="relative m-0 p-0 list-none w-full border-t border-white/24 lg:w-[576px]" data-node="230:10950" data-node-m="230:11171">
+        {rows.map((r) => (
+          <li class="flex items-center gap-[16px] py-[12px] border-b border-white/24 lg:py-[16px]" data-node={r.d[0]} data-node-m={r.m[0]}>
+            <Circle dark icon={r.icon} node={r.d[1]} nodeM={r.m[1]} />
+            <span class="flex-1 min-w-0 tm-body-strong lg:t-lead" data-node={r.d[2]} data-node-m={r.m[2]}>{r.label}</span>
+          </li>
+        ))}
+      </ul>
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="relative h-[56px] w-full lg:h-[52px] lg:w-auto" node="230:11007" data-node-m="230:11228">Schedule a Free Review</Button>
+    </div>
+  </div>
+</section>

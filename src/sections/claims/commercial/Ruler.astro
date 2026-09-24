@@ -1,0 +1,10 @@
+---
+// Claims-A shared part: "Ruler ticks" (1px ticks every 8px; 16px at every 10th, 10px at every 5th, else 6px; 40% opacity).
+// Width comes from the class; ticks are clipped to the box.
+interface Props { dark?: boolean; count?: number; class?: string; node?: string; nodeM?: string }
+const { dark = false, count = 141, class: cls = '', node, nodeM } = Astro.props;
+const ticks = Array.from({ length: count }, (_, i) => i);
+---
+<div aria-hidden="true" class:list={['relative h-[16px] shrink-0 overflow-hidden opacity-40', cls]} data-node={node} data-node-m={nodeM}>
+  {ticks.map((i) => <span class:list={['absolute top-0 w-px', dark ? 'bg-white' : 'bg-navy', i % 10 === 0 ? 'h-[16px]' : i % 5 === 0 ? 'h-[10px]' : 'h-[6px]']} style={`left:${i * 8}px`}></span>)}
+</div>

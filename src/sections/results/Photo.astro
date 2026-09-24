@@ -1,0 +1,10 @@
+---
+// Results photo slot. The Results frames' photos are "Photo /" component instances that Phase 0 didn't export,
+// so their crops live in ./photos.json (2x WebP + a 1x WebP served to DPR-1 screens via srcset; lead can merge into images.json).
+import photos from './photos.json';
+interface Props { node: string; alt: string; class?: string }
+const { node, alt, class: cls = '' } = Astro.props;
+const p = (photos as Record<string, { src: string; src1x: string; width: number; height: number }>)[node];
+if (!p) throw new Error(`Photo: no crop for ${node}`);
+---
+<img src={p.src} srcset={`${p.src1x} 1x, ${p.src} 2x`} width={p.width} height={p.height} alt={alt} class={cls} loading="lazy" decoding="async" />

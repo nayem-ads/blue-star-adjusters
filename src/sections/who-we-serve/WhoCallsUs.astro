@@ -1,0 +1,38 @@
+---
+// Who We Serve / Who calls us (typographic list). Desktop 217:7265 (1280×944), mobile 217:9705 (390×984).
+// Rows alternate: flush-left SemiBold ink / indented Medium navy (desktop indent 288, mobile 40).
+import Ticks from '../results/Ticks.astro';
+const rows = [
+  { t: 'Technology executives', d: ['217:7270', '217:7271'], m: ['217:9749', '217:9750'] },
+  { t: 'Private equity and finance partners', d: ['217:7272', '217:7273'], m: ['217:9751', '217:9752'] },
+  { t: 'Entertainment principals', d: ['217:7274', '217:7275'], m: ['217:9753', '217:9754'] },
+  { t: 'Law firm partners', aside: '“the professionals hired to fix problems, who come to us to fix their own”', d: ['217:7276', '217:7277', '217:7278'], m: ['217:9755', '217:9756', '217:9757'] },
+  { t: 'Luxury home builders', d: ['217:7279', '217:7280'], m: ['217:9758', '217:9759'] },
+  { t: 'High net worth homeowners', d: ['217:7281', '217:7282'], m: ['217:9760', '217:9761'] },
+];
+---
+<section aria-labelledby="calls-title" class="bg-white" data-node="217:7265" data-node-m="217:9705">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[123px]">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:gap-[24px]" data-node="217:7266">
+      <div class="flex items-center gap-[12px] lg:w-[264px] lg:shrink-0" data-node-m="217:9706">
+        <p class="m-0 tm-label lg:t-label text-ink whitespace-nowrap lg:w-full" data-node="217:7267" data-node-m="217:9707">§ 01</p>
+        <Ticks class="lg:hidden flex-1 min-w-0 text-navy opacity-50 [clip-path:inset(0_34px_0_0)]" nodeM="217:9708" />
+      </div>
+      <h2 id="calls-title" class="m-0 mt-[24px] lg:mt-0 tm-h2 lg:t-h2 text-navy whitespace-nowrap lg:pr-[1.6px]" data-node="217:7268" data-node-m="217:9746">Who calls us</h2>
+    </div>
+    <ul class="m-0 mt-[32px] lg:mt-[56px] p-0 list-none border-b lg:border-b-0 lg:border-t border-line" data-node="217:7269" data-node-m="217:9748">
+      {rows.map((r, i) => (
+        <li class:list={['flex flex-col items-start lg:flex-row lg:items-center lg:justify-between py-[20px] lg:py-[24px] border-t lg:border-t-0 lg:border-b border-line', i % 2 && 'pl-[40px] lg:pl-[288px]']} data-node={r.d[0]} data-node-m={r.m[0]}>
+          <p class:list={['bs-calls__t m-0 font-display font-medium', i % 2 ? 'text-navy' : 'text-ink lg:font-semibold']} data-node={r.d[1]} data-node-m={r.m[1]}>{r.t}</p>
+          {r.aside && <p class="m-0 mt-[8px] lg:mt-0 lg:w-[392px] -indent-[7.2px] lg:indent-0 font-body font-medium italic text-[16px] leading-[24px] lg:text-[17px] lg:leading-[28px] text-ink" data-node={r.d[2]} data-node-m={r.m[2]}>{r.aside}</p>}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  .bs-calls__t { font-size: 36px; line-height: 39px; letter-spacing: -0.015em; width: 100%; }
+  @media (min-width: 1024px) {
+    .bs-calls__t { font-size: 40px; line-height: 48px; white-space: nowrap; padding-right: 1.2px; width: auto; }
+  }
+</style>

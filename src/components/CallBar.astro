@@ -2,13 +2,13 @@
 // CallBar: Figma Mobile call bar 41:93 (390×89). Fixed to the viewport bottom on mobile, hidden at lg.
 // The mobile footer (43:191) already ends with 120px of bottom padding, which is the room the design
 // leaves for this bar, so the footer content is never covered and page height stays equal to Figma.
-// Props: node = data-node id of the bar instance in the page frame; static = render in flow (QA/previews).
+// Props: node = mobile Figma id of the bar instance (emitted as data-node-m: the bar only exists in 390 frames); static = render in flow (QA/previews).
 import Button from './Button.astro';
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../data/site';
 interface Props { node?: string; static?: boolean; class?: string }
 const { node, static: inFlow = false, class: cls = '' } = Astro.props;
 ---
-<div class:list={['bs-callbar lg:hidden', inFlow && 'bs-callbar--static', cls]} data-node={node} role="region" aria-label="Call or request a free claim review">
+<div class:list={['bs-callbar lg:hidden', inFlow && 'bs-callbar--static', cls]} data-node-m={node} role="region" aria-label="Call or request a free claim review">
   <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] px-[12px] flex-1 min-w-0"><span class="bs-callbar__call-word">Call </span>{PHONE_DISPLAY}</Button>
   <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] px-[16px]">Free Review</Button>
 </div>

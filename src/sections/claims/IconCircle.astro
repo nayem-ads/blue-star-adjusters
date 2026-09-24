@@ -1,0 +1,8 @@
+---
+// Claims kit / Icon circle: 40px white circle, 1px navy ring, 24px navy icon. Decorative.
+import Icon from '../../components/Icon.astro';
+import { dn, type N } from './nodes';
+interface Props { icon: string; node?: N; class?: string }
+const { icon, node, class: cls = '' } = Astro.props;
+---
+<span aria-hidden="true" class:list={['flex items-center justify-center shrink-0 size-[40px] rounded-full border border-navy bg-white text-navy box-border', cls]} {...dn(node)}><Icon name={icon} size={24} /></span>

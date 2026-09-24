@@ -1,0 +1,41 @@
+---
+// Office Hero. Desktop 1280×720 (paper text panel 680 | photo 600), mobile 390 (text panel, then 390×420 photo).
+// Varies per office: eyebrow, H1, chips ("Head office" solid chip on Sacramento only + state chip), photo.
+import Button from '../../components/Button.astro';
+import Img from '../../components/Img.astro';
+import CropMarks from '../what-we-do/CropMarks.astro';
+import Chip from './Chip.astro';
+import Ticks from './Ticks.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+import { nodes, type OfficeData } from './types';
+interface Props { data: OfficeData }
+const { data: d } = Astro.props;
+const n = (k: string) => nodes(d, k);
+const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
+---
+<section aria-labelledby="office-h1" class="bg-paper" {...n('hero')}>
+  <div class="relative max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:h-[720px]">
+    <div class="flex flex-col items-start gap-[16px] px-[20px] py-[32px] lg:w-[680px] lg:shrink-0 lg:justify-center lg:gap-[40px] lg:pl-[80px] lg:pr-[64px] lg:pt-[88px] lg:pb-[96px]" {...n('hero.panel')}>
+      <p class="m-0 flex items-center gap-[12px] lg:gap-[16px] whitespace-nowrap" {...n('hero.eyebrow')}>
+        <span aria-hidden="true" class="block shrink-0 h-[2px] w-[24px] lg:w-[40px] bg-royal" {...n('hero.eyebrowRule')}></span>
+        <span class="tm-label lg:t-label text-ink" {...n('hero.eyebrowText')}>{d.hero.eyebrow}</span>
+      </p>
+      <h1 id="office-h1" class="m-0 tm-display lg:t-display-l text-navy w-full" {...n('hero.h1')}>{d.hero.h1}</h1>
+      <div class="flex items-center lg:items-start gap-[8px]" {...n('hero.chips')}>
+        {d.hero.headOffice && <Chip class="bg-navy text-white" node={id('hero.chip1', 0)} nodeM={id('hero.chip1', 1)} textNode={id('hero.chip1t', 0)} textNodeM={id('hero.chip1t', 1)}>Head office</Chip>}
+        <Chip class="border border-navy text-navy" node={id('hero.chip2', 0)} nodeM={id('hero.chip2', 1)} textNode={id('hero.chip2t', 0)} textNodeM={id('hero.chip2t', 1)}>{d.state}</Chip>
+      </div>
+      <div class="flex flex-col w-full gap-[12px] pt-[8px] lg:flex-row lg:w-auto lg:gap-[16px] lg:pt-0" {...n('hero.buttons')}>
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" {...n('hero.btn1')}>Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" {...n('hero.btn2')}>Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+    <div class="relative h-[420px] lg:h-[720px] lg:w-[600px] lg:shrink-0 overflow-hidden" data-node-m={id('hero.photo', 1)}>
+      <Img node={id('hero.img', 0)!} alt={d.hero.alt} priority class="hidden lg:block w-full h-full object-cover" dataNode={id('hero.img', 0)} />
+      <Img node={id('hero.img', 1)!} alt={d.hero.alt} priority class="lg:hidden w-full h-full object-cover" />
+      <CropMarks class="absolute inset-[16px] lg:inset-[24px]" node={id('hero.crop', 0)} nodeM={id('hero.crop', 1)} />
+      <Ticks count={49} class="lg:hidden absolute left-0 bottom-0 w-[390px] text-navy opacity-45" nodeM={id('hero.ruler', 1)} />
+    </div>
+    <Ticks count={66} class="hidden lg:block absolute left-[80px] top-[704px] w-[520px] text-navy opacity-45" node={id('hero.ruler', 0)} />
+  </div>
+</section>

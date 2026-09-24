@@ -1,0 +1,13 @@
+---
+// Ruler ticks (Figma "Ruler ticks" frames): 1px ticks every 8px (6 long), every 40px 10 long, every 80px 16 long.
+// dir 'h' = horizontal strip (16 tall), ticks hang from `anchor` 'top' | 'bottom'; dir 'v' = vertical strip (16 wide), ticks from the left.
+// Colour = currentColor (set text-* class); strip opacity via class (e.g. opacity-50). Position/size via class.
+interface Props { dir?: 'h' | 'v'; anchor?: 'top' | 'bottom'; class?: string; node?: string; nodeM?: string }
+const { dir = 'h', anchor = 'top', class: cls = '', node, nodeM } = Astro.props;
+const y = anchor === 'bottom' ? '100%' : '0';
+const c = 'currentColor';
+const bg = dir === 'h'
+  ? `linear-gradient(to right, ${c} 1px, transparent 1px) 0 ${y} / 80px 16px repeat-x, linear-gradient(to right, ${c} 1px, transparent 1px) 0 ${y} / 40px 10px repeat-x, linear-gradient(to right, ${c} 1px, transparent 1px) 0 ${y} / 8px 6px repeat-x`
+  : `linear-gradient(to bottom, ${c} 1px, transparent 1px) 0 0 / 16px 80px repeat-y, linear-gradient(to bottom, ${c} 1px, transparent 1px) 0 0 / 10px 40px repeat-y, linear-gradient(to bottom, ${c} 1px, transparent 1px) 0 0 / 6px 8px repeat-y`;
+---
+<div aria-hidden="true" class:list={['pointer-events-none', dir === 'h' ? 'h-[16px]' : 'w-[16px]', cls]} style={`background:${bg}`} data-node={node} data-node-m={nodeM}></div>

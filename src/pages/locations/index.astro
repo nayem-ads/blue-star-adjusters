@@ -1,0 +1,24 @@
+---
+// Locations hub (Figma desktop 217:961, mobile 217:10664). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import LocStyles from '../../sections/locations/LocStyles.astro';
+import Hero from '../../sections/locations/Hero.astro';
+import Offices from '../../sections/locations/Offices.astro';
+import StateRules from '../../sections/locations/StateRules.astro';
+import FinalCta from '../../sections/locations/FinalCta.astro';
+---
+<Base title="Public Adjuster Offices in CA, NV, OR, WA and AZ | Blue Star Adjusters" description="Seven offices in Sacramento, Santa Monica, San Francisco, Reno, Portland, Seattle and Scottsdale. Local codes, local contractors, and the rules of each state.">
+  <LocStyles />
+  <div data-node="217:962" data-node-m="217:10665"><Header theme="light" /></div>
+  <main class="bs-locations bs-fit">
+    <Hero />
+    <Offices />
+    <StateRules />
+    <FinalCta />
+  </main>
+  <div data-node="217:8257" data-node-m="217:12011"><Footer /></div>
+  <CallBar node="217:12047" />
+</Base>

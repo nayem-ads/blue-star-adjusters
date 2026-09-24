@@ -1,0 +1,63 @@
+---
+// Claims kit / PhotoSplit (Fire & Smoke "Detail" 217:7856 / 218:2563; also Wind, Wildfire, ALE, Code, Denied).
+// Desktop: photo 600 wide × `height` at the left edge, optional inset (320×212, 8px white frame, crop marks, optional dimension line)
+// at 360,168, detail blocks in a 496 column at x 704 from y `top`. Mobile: photo 390×420 (+ inset 208×138 at 158,308), then blocks.
+// Usage: <PhotoSplit img={{d,m,alt}} height={960} top={120} inset={{d,m,alt,label?}} blocks={[{chip:'§ 02', title:'Heat.', body:'…', nodes:{…}}]} nodes={{…}} />
+// Blocks: first gets bottom padding, the rest a top rule. Extra content after block i's body: slot "block-<i>" (button, disclaimer, link).
+// Optional: dark (navy section, white dimension line on mobile; Code "Founder"); slot "details" replaces the blocks with the page's own markup.
+import Img from '../../components/Img.astro';
+import Chip from './Chip.astro';
+import CropMarks from './CropMarks.astro';
+import Dimension from './Dimension.astro';
+import { dn, type N } from './nodes';
+
+interface Block { chip: string; title: string; body?: string; id?: string; nodes?: Partial<Record<'block' | 'chip' | 'chipText' | 'title' | 'body', N>> }
+interface Props {
+  img: { d: string; m: string; alt: string };
+  height: number; top: number;
+  inset?: { d: string; m: string; alt: string; label?: string };
+  blocks: Block[];
+  nodes: Partial<Record<'section' | 'img' | 'stack' | 'inset' | 'insetImg' | 'dimension' | 'crop' | 'details', N>>;
+  dark?: boolean;
+}
+const { img, height, top, inset, blocks, nodes: n, dark = false } = Astro.props;
+const custom = Astro.slots.has('details') ? await Astro.slots.render('details') : '';
+const extras = await Promise.all(blocks.map((_, i) => (Astro.slots.has(`block-${i}`) ? Astro.slots.render(`block-${i}`) : Promise.resolve(''))));
+const dim = !!inset?.label;
+const [imgD, imgM] = typeof n.img === 'string' ? [n.img] : (n.img ?? []);
+---
+<section class:list={['bs-psplit relative', dark ? 'bg-navy' : 'bg-white']} style={`--ps-h:${height}px;--ps-top:${top}px`} {...dn(n.section)}>
+  <!-- Photo (mobile stack / desktop left column) -->
+  <div class:list={['relative lg:absolute lg:left-0 lg:top-0 lg:w-[600px] lg:h-full', inset ? (dim ? 'h-[496px]' : 'h-[462px]') : 'h-[420px]']} data-node-m={Array.isArray(n.stack) ? n.stack[1] : undefined}>
+    <div class="absolute left-0 top-0 w-full h-[420px] lg:hidden" data-node-m={imgM}><Img node={img.m} alt={img.alt} class="w-full h-full object-cover" /></div>
+    <div class="absolute inset-0 hidden lg:block" data-node={imgD}><Img node={img.d} alt={img.alt} class="w-full h-full object-cover" /></div>
+    {inset && (
+      <>
+        <CropMarks node={n.crop} class:list={['absolute left-[142px] top-[292px] w-[240px] h-[170px] lg:left-[344px] lg:top-[152px] lg:w-[352px]', dim ? 'lg:h-[288px]' : 'lg:h-[244px]']} />
+        <div class="absolute left-[158px] top-[308px] lg:left-[360px] lg:top-[168px] lg:bg-white lg:pb-[16px] lg:flex lg:flex-col lg:gap-[12px]" data-node={Array.isArray(n.inset) ? n.inset[0] : n.inset}>
+          <div class="relative w-[208px] h-[138px] lg:w-[320px] lg:h-[212px] overflow-hidden" {...dn(n.insetImg)}>
+            <Img node={inset.m} alt={inset.alt} class="w-full h-full object-cover lg:hidden" />
+            <Img node={inset.d} alt={inset.alt} class="w-full h-full object-cover hidden lg:block" />
+            <span aria-hidden="true" class="absolute inset-0 border-4 lg:border-8 border-white"></span>
+          </div>
+          {dim && (dark
+            ? <Dimension label={inset.label!} node={n.dimension} tick="bg-white lg:bg-royal" rule="bg-white/50 lg:bg-royal" class="absolute left-0 top-[164px] w-[208px] text-white lg:static lg:w-[320px] lg:text-navy" />
+            : <Dimension label={inset.label!} node={n.dimension} class="absolute left-0 top-[164px] w-[208px] text-royal lg:static lg:w-[320px] lg:text-navy" />)}
+        </div>
+      </>
+    )}
+  </div>
+  <div class="relative max-w-[1280px] mx-auto pt-[40px] pb-[56px] lg:px-[80px] lg:pl-[704px] lg:pt-[var(--ps-top)] lg:pb-0 lg:min-h-[var(--ps-h)]">
+    <div class="flex flex-col" {...dn(n.details)}>
+      {custom && <Fragment set:html={custom} />}
+      {!custom && blocks.map((b, i) => (
+        <div class:list={['mx-[20px] lg:mx-0 flex flex-col items-start gap-[16px] lg:gap-[24px]', i === 0 ? 'pb-[40px] lg:pb-[56px]' : 'border-t border-line pt-[40px] lg:pt-[56px]']} {...dn(b.nodes?.block)}>
+          <Chip node={b.nodes?.chip} text={b.nodes?.chipText}>{b.chip}</Chip>
+          <h2 id={b.id} class="m-0 w-full tm-display lg:t-display-l text-navy" {...dn(b.nodes?.title)}>{b.title}</h2>
+          {b.body && <p class="m-0 w-full tm-body lg:t-body text-ink" {...dn(b.nodes?.body)}>{b.body}</p>}
+          {extras[i] && <Fragment set:html={extras[i]} />}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

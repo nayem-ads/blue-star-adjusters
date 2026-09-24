@@ -1,0 +1,43 @@
+---
+// Who We Serve / Final CTA (statement + direct panel). Desktop 217:8307 (1280×696, white, blueprint grid, ruler on top),
+// mobile 217:11434 (390×858). "Speak with Michael directly": no direct line yet ([CLIENT: confirm]), so it calls the main number.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Grid from '../results/Grid.astro';
+import Ticks from '../results/Ticks.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const facts = [
+  { icon: 'clock', t: 'Monday to Friday, 9 AM to 5 PM Pacific.', d: ['217:8323', '217:8327'], m: ['217:11494', '217:11498'] },
+  { icon: 'check', t: 'You always have final say on any settlement', d: ['217:8328', '217:8331'], m: ['217:11500', '217:11503'] },
+];
+---
+<section aria-labelledby="wws-cta-title" class="relative overflow-hidden bg-white" data-node="217:8307" data-node-m="217:11434">
+  <Grid major={200} />
+  <Ticks class="hidden lg:block absolute left-0 right-0 top-0 text-navy opacity-40" node="217:8386" />
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:pt-[121px] lg:pb-[120px] flex flex-col lg:flex-row lg:items-end lg:gap-[120px]">
+    <div class="lg:w-[640px] lg:shrink-0 flex flex-col lg:gap-[32px]" data-node="217:8308">
+      <div class="flex items-center gap-[12px]" data-node-m="217:11435">
+        <p class="m-0 tm-label lg:t-label text-ink whitespace-nowrap" data-node="217:8309" data-node-m="217:11436">§ 03</p>
+        <Ticks class="lg:hidden flex-1 min-w-0 text-navy opacity-50 [clip-path:inset(0_31px_0_0)]" nodeM="217:11437" />
+      </div>
+      <h2 id="wws-cta-title" class="m-0 mt-[24px] lg:mt-0 tm-display lg:t-display-l text-navy" data-node="217:8310" data-node-m="217:11475">Call Before the Carrier Sets the Narrative.</h2>
+      <p class="m-0 mt-[16px] lg:mt-0 tm-body lg:t-lead text-ink lg:w-[552px]" data-node="217:8311" data-node-m="217:11477">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+    </div>
+    <div class="mt-[40px] lg:mt-0 lg:w-[360px] lg:shrink-0 bg-white border border-navy p-[24px] lg:p-[32px] flex flex-col gap-[20px] lg:gap-[24px]" data-node="217:8312" data-node-m="217:11479">
+      <h3 class="m-0 tm-h3 lg:t-h3 text-navy" data-node="217:8313" data-node-m="217:11480">Speak with Michael directly</h3>
+      <div class="flex flex-col gap-[12px] lg:gap-[24px]" data-node-m="217:11482">
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px]" node="217:8314" data-node-m="217:11483">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px]" node="217:8318" data-node-m="217:11487">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <ul class="m-0 p-0 list-none flex flex-col lg:gap-[24px] border-t border-line lg:pt-[24px]" data-node-m="217:11492">
+        {facts.map((f, i) => (
+          <li class:list={['flex items-start gap-[12px] pt-[16px] pb-[16px] lg:p-0 lg:gap-[16px] tm-body lg:t-small lg:font-medium text-ink', i > 0 && 'border-t border-line lg:border-t-0']} data-node={f.d[0]} data-node-m={f.m[0]}>
+            <Icon name={f.icon} size={20} class="lg:hidden shrink-0 text-navy" />
+            <Icon name={f.icon} size={24} class="hidden lg:block shrink-0 text-navy" />
+            <span class="flex-1 min-w-0" data-node={f.d[1]} data-node-m={f.m[1]}>{f.t}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

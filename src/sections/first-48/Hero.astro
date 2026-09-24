@@ -1,0 +1,55 @@
+---
+// First 48 Hours Hero. Desktop 217:5626 (1280×760), mobile 217:9405 (390×1032).
+// Desktop: text column left (eyebrow, H1, CTAs, trust ledger, ruler ticks), phone-evidence photo right (624×760).
+// Mobile: text, full-bleed photo (390×360), trust ledger, ruler ticks.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Ruler from '../faq/Ruler.astro';
+import Photo from './Photo.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const alt = 'Hands holding a phone to photograph a fire-damaged kitchen before anything is moved.';
+const trust = [
+  { t: 'No upfront cost', d: '217:5653', m: ['217:9424', '217:9425'] },
+  { t: 'You always have final say on any settlement', d: '217:5656', m: ['217:9426', '217:9427'] },
+  { t: 'CA License No. 2B60428', d: '217:5659', m: ['217:9428', '217:9429'] },
+];
+const dRows = ['217:5652', '217:5655', '217:5658'];
+---
+<section aria-labelledby="f48-title" class="relative overflow-hidden bg-white lg:h-[760px]" data-node="217:5626" data-node-m="217:9405">
+  <div class="relative max-w-[1280px] mx-auto flow-root">
+    <div class="px-[20px] pt-[32px] lg:px-0 lg:pt-0 lg:mt-[96px] lg:ml-[80px] lg:w-[520px] flex flex-col items-start gap-[24px] lg:gap-[32px]" data-node="217:5630">
+      <p class="lg:hidden m-0 flex items-center gap-[12px] tm-label text-navy whitespace-nowrap" data-node-m="217:9407">
+        <span aria-hidden="true" class="block w-[24px] h-[2px] bg-navy/50" data-node-m="217:9408"></span>
+        <span data-node-m="217:9409">First 48 Hours</span>
+      </p>
+      <Eyebrow class="hidden lg:flex" node="217:5631">First 48 Hours</Eyebrow>
+      <h1 id="f48-title" class="m-0 tm-display lg:t-display-l text-navy w-full" data-node="217:5634" data-node-m="217:9410">The First 48 Hours. What to Do, in Order.</h1>
+      <div class="w-full flex flex-col gap-[12px] lg:w-auto lg:flex-row lg:gap-[16px]" data-node="217:5641" data-node-m="217:9411">
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" node="217:5642" data-node-m="217:9412">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]" node="217:5646" data-node-m="217:9416">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <ul class="hidden lg:block m-0 p-0 list-none w-full border-t border-line" data-node="217:5650">
+        {trust.map((r, i) => (
+          <li class="py-[12px] border-b border-line" data-node={dRows[i]}>
+            <span class="block w-max text-[15px] leading-[24px] font-medium text-ink" data-node={r.d}>{r.t}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <Ruler anchor="bottom" class="hidden lg:block absolute left-[80px] top-[728px] w-[560px] h-[16px] text-navy opacity-40" node="217:5661" />
+  </div>
+  <div class="relative mt-[32px] h-[360px] lg:mt-0 lg:absolute lg:top-0 lg:bottom-0 lg:h-auto lg:left-[calc(50%+16px)] lg:right-0" data-node="217:5627" data-node-m="217:9420">
+    <Photo node="I217:5627;41:71" alt={alt} class="hidden lg:block w-full h-full object-cover" priority />
+    <Photo node="I217:9420;41:71" alt={alt} class="lg:hidden w-full h-full object-cover" priority />
+  </div>
+  <div class="lg:hidden px-[20px] pt-[24px] pb-[32px]" data-node-m="217:9423">
+    <ul class="m-0 p-0 list-none">
+      {trust.map((r) => (
+        <li class="py-[12px] border-b border-line first:border-t" data-node-m={r.m[0]}>
+          <span class="block tm-body font-medium text-ink" data-node-m={r.m[1]}>{r.t}</span>
+        </li>
+      ))}
+    </ul>
+    <Ruler anchor="bottom" class="mt-[24px] w-[344px] h-[16px] text-navy opacity-40" nodeM="217:9431" />
+  </div>
+</section>

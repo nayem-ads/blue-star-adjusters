@@ -1,0 +1,118 @@
+---
+// Offices — seven cards. Desktop 217:6473 (1280×1502), mobile 217:10727 (390×1938).
+// Desktop: Sacramento (544) + 2×2 grid, then Seattle / Scottsdale / navy CTA tile. Mobile: Sacramento, a two-column mosaic, then the tile.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import OfficeCard from './OfficeCard.astro';
+import { ADDRESS, PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const alt = {
+  sac: 'Craftsman bungalow under elm trees',
+  sm: 'Spanish revival home with a palm tree',
+  sf: 'Victorian houses on a hill in fog',
+  reno: 'Mountain modern home with sagebrush',
+  pdx: 'Cedar shingle Craftsman home in the rain',
+  sea: 'Cedar modern home among fir trees, overcast sky',
+  scot: 'Desert modern home with a saguaro at sunset',
+};
+const cityW: Record<string, [number, number]> = { Sacramento: [161, 182], 'Santa Monica': [180, 142], 'San Francisco': [186, 146], Reno: [68, 54], Portland: [114, 90], Seattle: [94, 74], Scottsdale: [142, 112] };
+const sm = (city: string, st: string, href: string, img: string, a: string, photoH: number, n: string[]) => ({ city, st, href, img, alt: a, photoH, scrimH: Math.round(photoH * 0.55), n, cityW: cityW[city][1] });
+const left = [
+  sm('Santa Monica', 'CA', ROUTES.santaMonica, '217:11225', alt.sm, 260, ['217:11223', '217:11224', '217:11225', '217:11226', '217:11229', '217:11230', '217:11232']),
+  sm('Reno', 'NV', ROUTES.reno, '217:11238', alt.reno, 200, ['217:11236', '217:11237', '217:11238', '217:11239', '217:11242', '217:11243', '217:11245']),
+  sm('Seattle', 'WA', ROUTES.seattle, '217:11251', alt.sea, 260, ['217:11249', '217:11250', '217:11251', '217:11252', '217:11255', '217:11256', '217:11258']),
+];
+const right = [
+  sm('San Francisco', 'CA', ROUTES.sanFrancisco, '217:11265', alt.sf, 220, ['217:11263', '217:11264', '217:11265', '217:11266', '217:11269', '217:11270', '217:11272']),
+  sm('Portland', 'OR', ROUTES.portland, '217:11278', alt.pdx, 260, ['217:11276', '217:11277', '217:11278', '217:11279', '217:11282', '217:11283', '217:11285']),
+  sm('Scottsdale', 'AZ', ROUTES.scottsdale, '217:11291', alt.scot, 240, ['217:11289', '217:11290', '217:11291', '217:11292', '217:11295', '217:11296', '217:11298']),
+];
+const pairs = [
+  [
+    { city: 'Santa Monica', st: 'CA', href: ROUTES.santaMonica, img: '217:6499', alt: alt.sm, n: ['217:6497', '217:6498', '217:6499', '217:7992', '217:6503', '217:6501', '217:6504'] },
+    { city: 'San Francisco', st: 'CA', href: ROUTES.sanFrancisco, img: '217:6510', alt: alt.sf, n: ['217:6508', '217:6509', '217:6510', '217:7995', '217:6514', '217:6512', '217:6515'] },
+  ],
+  [
+    { city: 'Reno', st: 'NV', href: ROUTES.reno, img: '217:6522', alt: alt.reno, n: ['217:6520', '217:6521', '217:6522', '217:7998', '217:6526', '217:6524', '217:6527'] },
+    { city: 'Portland', st: 'OR', href: ROUTES.portland, img: '217:6533', alt: alt.pdx, n: ['217:6531', '217:6532', '217:6533', '217:8001', '217:6537', '217:6535', '217:6538'] },
+  ],
+];
+const tileTitle = 'We represent the insured only.';
+const tileFee = "No upfront cost. We're paid a percentage of what we recover.";
+---
+<section aria-labelledby="loc-offices-title" class="relative bg-paper" data-node="217:6473" data-node-m="217:10727">
+  <h2 id="loc-offices-title" class="sr-only">Our offices</h2>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[24px] pb-[56px] lg:px-[80px] lg:pt-[96px] lg:pb-[120px]">
+    <div class="flex items-center gap-[12px] lg:gap-[16px]" data-node="217:6474" data-node-m="217:10728">
+      <p class="m-0 tm-label lg:t-label text-navy whitespace-nowrap" data-node="217:6475" data-node-m="217:10729">§ 01</p>
+      <span aria-hidden="true" class="flex-1 self-start mt-[12px] lg:mt-[13px] h-[2px] bg-navy opacity-[.174] lg:opacity-[.153]"></span>
+      <p class="m-0 border border-navy rounded-[2px] px-[8px] py-[4px] tm-label lg:t-label text-navy whitespace-nowrap" data-node="217:6477" data-node-m="217:10731">7 offices</p>
+    </div>
+
+    <!-- Desktop -->
+    <div class="hidden lg:block">
+      <div class="mt-[40px] flex items-start gap-[32px]" data-node="217:6479">
+        <OfficeCard cityW={161} city="Sacramento" st="CA" href={ROUTES.sacramento} img="217:6482" alt={alt.sac} photoH={576} scrimH={288} size="d" class="w-[544px] shrink-0"
+          n={['217:6480', '217:6481', '217:6482', '217:7989', '217:6486', '217:6484', '217:6491']}>
+          <div class="pt-[20px] pb-[4px] flex flex-col gap-[4px]" data-node="217:6487">
+            <p class="m-0 self-start t-label text-ink" data-node="217:6488">Head office</p>
+            <p class="m-0 t-body text-ink" data-node="217:6489">{ADDRESS}</p>
+            <a href={PHONE_TEL} class="lc-link self-start t-body-strong text-navy" data-node="217:6490">{PHONE_DISPLAY}</a>
+          </div>
+          <span aria-hidden="true" class="absolute left-0 top-[586.5px] w-[4px] h-[1.5px] bg-royal"></span>
+          <span aria-hidden="true" class="absolute right-0 top-[586.5px] w-[4px] h-[1.5px] bg-royal"></span>
+        </OfficeCard>
+        <div class="w-[512px] shrink-0 flex flex-col gap-[24px]" data-node="217:6495">
+          {pairs.map((pair, i) => (
+            <div class="flex gap-[24px]" data-node={i === 0 ? '217:6496' : '217:6519'}>
+              {pair.map((c) => <OfficeCard {...c} cityW={cityW[c.city][0]} photoH={305} scrimH={153} size="d" class="w-[244px] shrink-0" />)}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="mt-[40px] flex items-start gap-[24px]" data-node="217:6551">
+        <OfficeCard cityW={94} city="Seattle" st="WA" href={ROUTES.seattle} img="217:6554" alt={alt.sea} photoH={400} scrimH={200} size="d" class="w-[448px] shrink-0"
+          n={['217:6552', '217:6553', '217:6554', '217:8004', '217:6558', '217:6556', '217:6559']} />
+        <OfficeCard cityW={142} city="Scottsdale" st="AZ" href={ROUTES.scottsdale} img="217:6565" alt={alt.scot} photoH={400} scrimH={200} size="d" class="w-[296px] shrink-0"
+          n={['217:6563', '217:6564', '217:6565', '217:8007', '217:6569', '217:6567', '217:6570']} />
+        <div class="relative overflow-hidden w-[352px] h-[448px] shrink-0 bg-navy rounded-[2px] p-[32px] flex flex-col justify-between" data-node="217:6574">
+          <span aria-hidden="true" class="absolute left-[140px] top-[180px] opacity-[.07] pointer-events-none" data-node="217:6575"><Logo variant="mark-white" bare width={263.565} height={320} label="" /></span>
+          <div class="relative flex flex-col gap-[16px] text-white" data-node="217:6580">
+            <p class="m-0 t-h3" data-node="217:6581">{tileTitle}</p>
+            <p class="m-0 t-body opacity-90" data-node="217:6582">{tileFee}</p>
+          </div>
+          <Button href={ROUTES.freeClaimReview} variant="on-dark" class="relative self-start" data-node="217:6583">Schedule a Free Review</Button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="lg:hidden">
+      <OfficeCard mobile cityW={182} city="Sacramento" st="CA" href={ROUTES.sacramento} img="217:10735" alt={alt.sac} photoH={420} scrimH={231} size="mbig" class="mt-[16px]"
+        n={['217:10733', '217:10734', '217:10735', '217:10736', '217:10739', '217:10740', '217:10749']}>
+        <div class="pt-[16px] flex flex-col" data-node-m="217:10742">
+          <p class="m-0 self-start tm-label text-ink" data-node-m="217:10743">Head office</p>
+          <p class="m-0 mt-[8px] tm-body text-ink" data-node-m="217:10744">{ADDRESS}</p>
+          <a href={PHONE_TEL} class="lc-link mt-[8px] flex items-center gap-[8px] h-[44px] text-navy" data-node-m="217:10745">
+            <Icon name="phone" size={20} class="shrink-0" />
+            <span class="tm-body-strong" data-node-m="217:10748">{PHONE_DISPLAY}</span>
+          </a>
+        </div>
+      </OfficeCard>
+      <div class="mt-[16px] pt-[16px] flex gap-[8px]" data-node-m="217:11221">
+        <div class="flex-1 min-w-0 flex flex-col gap-[12px]" data-node-m="217:11222">
+          {left.map((c) => <OfficeCard mobile {...c} size="msm" />)}
+        </div>
+        <div class="flex-1 min-w-0 flex flex-col gap-[12px]" data-node-m="217:11262">
+          {right.map((c) => <OfficeCard mobile {...c} size="msm" />)}
+        </div>
+      </div>
+      <div class="relative overflow-hidden mt-[16px] bg-navy rounded-[2px] px-[24px] pt-[32px] pb-[28px]" data-node-m="217:11302">
+        <span aria-hidden="true" class="absolute left-[221.5px] top-[40px] opacity-[.07] pointer-events-none" data-node-m="217:11303"><Logo variant="mark-white" bare width={214.1} height={260} label="" /></span>
+        <p class="relative m-0 tm-h2 text-white" data-node-m="217:11308">{tileTitle}</p>
+        <p class="relative m-0 mt-[12px] tm-body text-white opacity-90" data-node-m="217:11309">{tileFee}</p>
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="relative mt-[32px] h-[56px] w-full" data-node-m="217:11311">Schedule a Free Review</Button>
+      </div>
+    </div>
+  </div>
+</section>

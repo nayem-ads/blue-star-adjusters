@@ -1,0 +1,55 @@
+---
+// Claims kit / CTA (Fire & Smoke 217:9312 desktop 1280×762, 220:941 mobile 390×672). White band: H2, lead, phone as display, hours, 2 buttons, wave corner.
+// Copy is identical on every claims page (design/text slot/cta/1, slot/cta/2); only the node ids change.
+// Usage: <Cta nodes={{section:['217:9312','220:941'], heading:[,'220:942'], title:['217:9316','220:943'], body:['217:9317','220:944'], phone:['217:9319','220:945'], …}} />
+// Keys: section heading title body block phone label number rule hours hoursText buttons cta1 cta2 wave.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import WaveCorner from '../../components/WaveCorner.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+import { dn, d, m, type N } from './nodes';
+
+type K = 'section' | 'heading' | 'title' | 'body' | 'block' | 'phone' | 'label' | 'number' | 'rule' | 'hours' | 'hoursText' | 'buttons' | 'cta1' | 'cta2' | 'wave';
+interface Props { nodes: Partial<Record<K, N>>; title?: string; body?: string; id?: string }
+const {
+  nodes: n,
+  title = 'Call Before the Carrier Sets the Narrative.',
+  body = 'Your insurance company has an adjuster protecting their interests. You have the right to one too.',
+  id = 'cta-title',
+} = Astro.props;
+---
+<section aria-labelledby={id} class="relative overflow-hidden bg-white" {...dn(n.section)}>
+  <div class="relative z-[1] max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[112px] lg:px-[80px] lg:py-[120px] flex flex-col items-start gap-[32px]">
+    <div class="flex flex-col gap-[16px] lg:gap-[32px]" {...dn(n.heading)}>
+      <h2 id={id} class="m-0 tm-h2 lg:t-display-l text-navy lg:w-[860px]" {...dn(n.title)}>{title}</h2>
+      <p class="m-0 tm-body lg:t-lead text-ink lg:w-[560px]" {...dn(n.body)}>{body}</p>
+    </div>
+    <div class="w-full lg:w-auto flex flex-col items-start gap-[32px] lg:flex-row lg:items-end lg:gap-[64px] lg:pt-[24px]" data-node={d(n.block)}>
+      <a href={PHONE_TEL} class="group flex flex-col items-start gap-[8px]" {...dn(n.phone)}>
+        <span class="tm-label lg:t-label text-ink" {...dn(n.label)}>Call</span>
+        <span class="bs-ccta__num text-navy whitespace-nowrap min-w-[306px] lg:min-w-[631px]" {...dn(n.number)}>{PHONE_DISPLAY}</span>
+        <span aria-hidden="true" class="block w-full h-[4px] bg-royal" {...dn(n.rule)}></span>
+      </a>
+      <p class="m-0 w-full lg:w-auto flex items-center gap-[12px] lg:pb-[12px] text-ink" {...dn(n.hours)}>
+        <Icon name="clock" size={24} class="shrink-0" />
+        <span class="bs-ccta__hours flex-1 lg:flex-none" {...dn(n.hoursText)}>Monday to Friday, 9 AM to 5 PM Pacific</span>
+      </p>
+    </div>
+    <div class="w-full lg:w-auto flex flex-col gap-[12px] lg:flex-row lg:gap-[16px] lg:pt-[16px]" data-node={d(n.buttons)} data-node-m={m(n.buttons)}>
+      <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" {...dn(n.cta1)}>Schedule a Free Review</Button>
+      <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" {...dn(n.cta2)}>Call {PHONE_DISPLAY}</Button>
+    </div>
+  </div>
+  <div class="absolute right-0 bottom-0 w-[180px] h-[100px] lg:w-[360px] lg:h-[200px]" {...dn(n.wave)}>
+    <WaveCorner position="bottom-right" class="block w-full h-full" />
+  </div>
+</section>
+
+<style is:global>
+  .bs-ccta__num { font-family: var(--font-display); font-weight: 700; font-size: 46px; line-height: 48px; letter-spacing: -0.025em; }
+  .bs-ccta__hours { font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 26px; }
+  @media (min-width: 1024px) {
+    .bs-ccta__num { font-size: 96px; line-height: 96px; letter-spacing: -0.03em; }
+    .bs-ccta__hours { font-size: 15px; line-height: 24px; }
+  }
+</style>

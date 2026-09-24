@@ -1,0 +1,35 @@
+---
+// Additional Living Expenses (Figma desktop 238:698, mobile 238:1106). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../../layouts/Base.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CallBar from '../../../components/CallBar.astro';
+import Icon from '../../../components/Icon.astro';
+import Hero from '../../../sections/claims/Hero.astro';
+import LawDoc from '../../../sections/claims/LawDoc.astro';
+import PhotoSplit from '../../../sections/claims/PhotoSplit.astro';
+import Related from '../../../sections/claims/Related.astro';
+import Cta from '../../../sections/claims/Cta.astro';
+import Includes from '../../../sections/claims/ale/Includes.astro';
+import { page, hero, heroLead, includes, law, detail, detailLink as l, related, cta } from '../../../data/claims/additional-living-expenses';
+---
+<Base title={page.title} description={page.description}>
+  <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
+  <main class="bs-ale bs-fit">
+    <Hero {...hero} />
+    <Includes heroLead={heroLead} {...includes} />
+    <LawDoc {...law} />
+    <PhotoSplit {...detail}>
+      <a slot="block-0" href={l.href} class="inline-flex items-center gap-[12px] py-[12px] border-b border-navy text-navy tm-body-strong lg:t-body-strong" data-node={l.node[0]} data-node-m={l.node[1]}>
+        <span data-node={l.text[0]} data-node-m={l.text[1]}>{l.label}</span><Icon name="arrow-right" size={24} />
+      </a>
+    </PhotoSplit>
+    <Related {...related} />
+    <Cta {...cta} />
+  </main>
+  <div data-node={page.footer[0]} data-node-m={page.footer[1]}><Footer /></div>
+  <CallBar node={page.callBar} />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-ale :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

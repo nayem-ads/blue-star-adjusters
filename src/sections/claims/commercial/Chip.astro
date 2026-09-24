@@ -1,0 +1,9 @@
+---
+// Claims-A shared part: "Index chip" (§ nn). 1px navy (light) or white (dark) border, 2px radius, 8/4 padding.
+// Desktop t-label (28 tall), mobile tm-label (26 tall). Used by the Commercial, Wildfire and Wind one-off sections.
+interface Props { dark?: boolean; node?: string; nodeM?: string; textNode?: string; textNodeM?: string; class?: string }
+const { dark = false, node, nodeM, textNode, textNodeM, class: cls = '' } = Astro.props;
+---
+<div class:list={['inline-flex items-start self-start shrink-0 px-[8px] py-[4px] rounded-[2px] border', dark ? 'border-white text-white' : 'border-navy text-navy', cls]} data-node={node} data-node-m={nodeM}>
+  <span class="tm-label lg:t-label whitespace-nowrap" data-node={textNode} data-node-m={textNodeM}><slot /></span>
+</div>

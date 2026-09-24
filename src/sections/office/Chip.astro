@@ -1,0 +1,9 @@
+---
+// Tag chip: 2px radius, 8px sides. Desktop t-label 13/18, mobile tm-label 12/16.
+// kind: outline (1px border; desktop 28 / mobile 26 tall) · solid (no border; 26 / 24 tall).
+interface Props { class?: string; node?: string; nodeM?: string; textNode?: string; textNodeM?: string }
+const { class: cls = '', node, nodeM, textNode, textNodeM } = Astro.props;
+---
+<span class:list={['inline-flex shrink-0 items-start rounded-[2px] px-[8px] py-[4px] whitespace-nowrap', cls]} data-node={node} data-node-m={nodeM}>
+  <span class="tm-label lg:t-label" data-node={textNode} data-node-m={textNodeM}><slot /></span>
+</span>

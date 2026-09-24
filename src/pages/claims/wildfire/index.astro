@@ -1,0 +1,36 @@
+---
+// Wildfire (Figma desktop 234:917, mobile 234:1325). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../../layouts/Base.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CallBar from '../../../components/CallBar.astro';
+import Hero from '../../../sections/claims/Hero.astro';
+import PhotoSplit from '../../../sections/claims/PhotoSplit.astro';
+import Related from '../../../sections/claims/Related.astro';
+import Cta from '../../../sections/claims/Cta.astro';
+import TwoClaims from '../../../sections/claims/wildfire/TwoClaims.astro';
+import Rights from '../../../sections/claims/wildfire/Rights.astro';
+import Market from '../../../sections/claims/wildfire/Market.astro';
+import Timing from '../../../sections/claims/wildfire/Timing.astro';
+import { page, hero, detail, related, cta } from '../../../data/claims/wildfire';
+---
+<Base title={page.title} description={page.description}>
+  <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
+  <main class="bs-wildfire bs-fit">
+    <Hero {...hero} />
+    <TwoClaims />
+    <PhotoSplit {...detail} />
+    <Rights />
+    <Market />
+    <Timing />
+    <Related {...related} />
+    <Cta {...cta} />
+  </main>
+  <div data-node={page.footer[0]} data-node-m={page.footer[1]}><Footer /></div>
+  <CallBar node={page.callBar} />
+</Base>
+<style is:global>
+  /* Mobile photo stack is 496 tall in Figma (kit default without a dimension line is 462). */
+  @media (max-width: 1023.98px) { .bs-wildfire .bs-psplit > div:first-child { height: 496px; } }
+  @media (max-width: 1023.98px) { .bs-wildfire :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

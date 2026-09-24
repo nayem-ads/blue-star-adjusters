@@ -1,0 +1,26 @@
+---
+// Denied / Public adjuster or attorney (desktop 238:11233, mobile 238:11479). Navy band, faint B mark, rail (§ 03 chip,
+// question, white 40% hairline, Schedule button) + statement set at H2 size.
+import Button from '../../../components/Button.astro';
+import Logo from '../../../components/Logo.astro';
+import Chip from '../Chip.astro';
+import { ROUTES } from '../../../data/site';
+---
+<section aria-labelledby="counsel-title" class="relative overflow-hidden bg-navy" data-node="238:11233" data-node-m="238:11479">
+  <span aria-hidden="true" class="bs-dcounsel__mark absolute right-0 top-0 opacity-[.06] pointer-events-none" data-node="238:11234" data-node-m="238:11480"><Logo variant="mark-white" bare label="" class="block w-full h-full" /></span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[136px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[32px] lg:w-[360px] lg:shrink-0" data-node="238:11235">
+      <div class="flex flex-col items-start gap-[16px] lg:contents" data-node-m="238:11481">
+        <Chip theme="dark" node={['238:11236', '238:11482']} text={['238:11237', '238:11483']}>§ 03</Chip>
+        <h2 id="counsel-title" class="m-0 w-full tm-h3 lg:t-h3 text-white" data-node="238:11238" data-node-m="238:11484">Public adjuster or attorney?</h2>
+        <span aria-hidden="true" class="block w-full h-px bg-white/40" data-node="243:1036" data-node-m="244:992"></span>
+      </div>
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="order-last lg:order-none h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="238:11239" data-node-m="238:11493">Schedule a Free Review</Button>
+    </div>
+    <p class="m-0 tm-h2 lg:t-h2 text-white lg:flex-1 lg:min-w-0" data-node="243:1037" data-node-m="244:993">We measure, document and negotiate the claim. We don't give legal advice. When a claim needs counsel, we say so and work alongside them.</p>
+  </div>
+</section>
+<style is:global>
+  .bs-dcounsel__mark { width: 280.8px; height: 340.9px; }
+  @media (min-width: 1024px) { .bs-dcounsel__mark { width: 461.24px; height: 560px; } }
+</style>

@@ -1,0 +1,8 @@
+---
+// Claims kit / Index chip ("§ 01"): 1px rule box, radius 2, px 8 py 4. Desktop 13/18 label (28 tall), mobile 12/16 (26 tall).
+// Usage: <Chip node={['217:5949','217:13422']} text={['217:5950','217:13423']}>§ 01</Chip>   theme 'light' (navy) | 'dark' (white)
+import { dn, type N } from './nodes';
+interface Props { node?: N; text?: N; theme?: 'light' | 'dark'; class?: string }
+const { node, text, theme = 'light', class: cls = '' } = Astro.props;
+---
+<p class:list={['m-0 inline-flex self-start shrink-0 border rounded-[2px] px-[8px] py-[4px] tm-label lg:t-label whitespace-nowrap', theme === 'dark' ? 'border-white text-white' : 'border-navy text-navy', cls]} {...dn(node)}><span {...dn(text)}><slot /></span></p>

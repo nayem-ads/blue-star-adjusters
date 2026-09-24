@@ -1,0 +1,84 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/c8e38938-8568-4d7d-8fdf-f6611a9f0d64.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/50cbe875-0a62-4bd8-90f3-6e79f36bc950.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/ded668a1-df00-4698-97de-af8214505bea.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:128">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function FinalCta() {
+  return (
+    <div className="bg-[var(--color\/white,white)] relative size-full" data-node-id="217:7519" data-name="Final CTA">
+      <div className="absolute content-stretch flex flex-col gap-[24px] items-start left-[80px] overflow-clip top-[120px] w-[552px]" data-node-id="217:7520" data-name="CTA text">
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] min-w-full relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.72px] w-[min-content]" data-node-id="217:7521">
+          Call Before the Carrier Sets the Narrative.
+        </p>
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] text-[color:var(--color\/ink,#070f33)] w-[min-content]" data-node-id="217:7522">
+          Your insurance company has an adjuster protecting their interests. You have the right to one too.
+        </p>
+        <div className="content-stretch flex items-start overflow-clip pt-[16px] relative shrink-0" data-node-id="217:7523" data-name="CTA buttons">
+          <Button className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[16px] items-start left-[704px] overflow-clip top-[120px] w-[496px]" data-node-id="217:7528" data-name="Phone block">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:7529">
+          Call
+        </p>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[68px] relative shrink-0 text-[64px] text-[color:var(--color\/navy,#081d5e)] tracking-[-1.28px] whitespace-nowrap" data-node-id="217:7530" data-annotations="tel: link to (916) 507-1005. Stands in for the 'Call (916) 507-1005' button in the standard final CTA block.">
+          (916) 507-1005
+        </p>
+        <div className="bg-[var(--color\/royal,#133faa)] h-[4px] relative shrink-0 w-[429px]" data-node-id="217:7531" data-name="Royal underline" />
+        <div className="content-stretch flex flex-col items-start overflow-clip pt-[24px] relative shrink-0 w-full" data-node-id="217:7532" data-name="Fact ledger">
+          <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:7533" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[12px] relative shrink-0 w-full" data-node-id="217:7534" data-name="Fact row / clock">
+            <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:7535" data-name="Icon circle / clock">
+              <div className="relative shrink-0 size-[24px]" data-node-id="217:7536" data-name="Icon / clock">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="217:7539">
+              Monday to Friday, 9 AM to 5 PM Pacific
+            </p>
+          </div>
+          <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:7540" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[12px] relative shrink-0 w-full" data-node-id="217:7541" data-name="Fact row / shield">
+            <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:7542" data-name="Icon circle / shield">
+              <div className="relative shrink-0 size-[24px]" data-node-id="217:7543" data-name="Icon / shield">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] whitespace-nowrap" data-node-id="217:7546">
+              We represent the insured only.
+            </p>
+          </div>
+          <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:7547" data-name="Hairline" />
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0), Desktop/Display L: Font(family: "Schibsted Grotesk", style: Bold, size: 64, weight: 700, lineHeight: 68, letterSpacing: -2).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

@@ -1,0 +1,99 @@
+---
+// First 48 Hours Checklist. Desktop 217:6591 (1280×1432), mobile 217:9762 (390×1980).
+// Paper band on the blueprint grid. White checklist sheet (title + logo, 10 numbered steps with real checkboxes, phone and
+// licence footer) inside crop marks; § 01 rail with the moisture-meter photo and vertical ruler ticks.
+import Logo from '../../components/Logo.astro';
+import Grid from '../faq/Grid.astro';
+import Ruler from '../faq/Ruler.astro';
+import CropMarks from '../faq/CropMarks.astro';
+import Photo from './Photo.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+const steps = [
+  "Get safe. Don't go back in until officials clear the property.",
+  "Report the claim. Write down the claim number and the adjuster's name.",
+  'Photograph and video everything before anything is moved or cleaned.',
+  'Stop further damage: shut off water, tarp openings. Keep the receipts.',
+  "Don't throw anything away until it's documented, even if it's ruined.",
+  "Don't sign on the spot with anyone, including a public adjuster.",
+  'Keep every receipt for living costs: hotel, meals, mileage, pet boarding.',
+  'Get your full policy, with the declarations page and every endorsement.',
+  'Log every conversation: date, name, what was said.',
+  'Get the loss measured before the first estimate is final.',
+];
+// Desktop step frame ids start at 217:6606 (+6 per step: frame, wrap, box, number, text, hairline); mobile at 217:9780 (+5).
+const d = (i: number, k: number) => `217:${6606 + i * 6 + k}`;
+const m = (i: number, k: number) => `217:${9780 + i * 5 + k}`;
+const alt = 'A moisture meter held against a water-stained wall near the floor.';
+---
+<section aria-labelledby="f48-list" class="relative overflow-hidden bg-paper" data-node="217:6591" data-node-m="217:9762">
+  <Grid class="hidden lg:block absolute inset-0" major={160} rightEdge node="217:6592" />
+  <Grid class="lg:hidden absolute inset-0" nodeM="217:9763" />
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[56px] pb-[76px] lg:px-[80px] lg:pt-[144px] lg:pb-[147px] lg:flex lg:items-start lg:gap-[40px]">
+    <div class="lg:hidden flex items-center gap-[12px] w-[337px]" data-node-m="217:9764">
+      <p class="m-0 tm-label text-ink whitespace-nowrap" data-node-m="217:9765">§ 01</p>
+      <span aria-hidden="true" class="block flex-1 h-[2px] bg-line" data-node-m="217:9766"></span>
+    </div>
+
+    <div class="relative mt-[40px] lg:mt-0 lg:ml-[24px] lg:w-[784px] lg:shrink-0">
+      <CropMarks class="absolute left-[-10px] right-[-10px] top-[-12px] bottom-[-12px] lg:left-[-24px] lg:right-[-24px] lg:top-[-24px] lg:bottom-[-24px]" node="217:6669" nodeM="217:9833" />
+      <div id="f48-sheet" class="relative bg-white px-[20px] pt-[24px] pb-[20px] lg:border lg:border-line lg:px-[48px] lg:pt-[48px] lg:pb-[40px]" data-node="217:6593" data-node-m="217:9767">
+        <div class="flex items-center justify-between pb-[16px] lg:pb-[20px]" data-node="217:6594" data-node-m="217:9768">
+          <h2 id="f48-list" class="m-0 tm-h3 lg:t-h3 text-navy whitespace-nowrap" data-node="217:6595" data-node-m="217:9769">First 48 Hours</h2>
+          <span class="hidden lg:block" data-node="217:6596"><Logo variant="horizontal-color" width={135.2} height={30} class="block" /></span>
+          <span class="lg:hidden" data-node-m="217:9770"><Logo variant="horizontal-color" width={108.2} height={24} class="block" /></span>
+        </div>
+        <span aria-hidden="true" class="block h-[2px] bg-ink" data-node="217:6605" data-node-m="217:9779"></span>
+        <ol class="m-0 p-0 list-none">
+          {steps.map((s, i) => (
+            <li class:list={['bs-f48-step', i < steps.length - 1 && 'border-b border-line']} data-node={d(i, 0)} data-node-m={m(i, 0)}>
+              <label class="flex items-start gap-[16px] py-[16px] cursor-pointer lg:gap-[20px] lg:py-[20px]">
+                <span class="shrink-0 lg:pt-[4px]" data-node={d(i, 1)}>
+                  <input type="checkbox" class="bs-f48-box block" data-node={d(i, 2)} data-node-m={m(i, 1)} />
+                </span>
+                <span class="flex-1 min-w-0 flex flex-col items-start gap-[4px] lg:flex-row lg:items-start lg:gap-[20px]" data-node-m={m(i, 2)}>
+                  <span class="bs-f48-num text-navy" data-node={d(i, 3)} data-node-m={m(i, 3)}>{String(i + 1).padStart(2, '0')}</span>
+                  <span class="flex-1 min-w-0 tm-body lg:t-lead text-ink" data-node={d(i, 4)} data-node-m={m(i, 4)}>{s}</span>
+                </span>
+              </label>
+            </li>
+          ))}
+        </ol>
+        <span aria-hidden="true" class="hidden lg:block h-[2px] bg-ink" data-node="217:6665"></span>
+        <div class="flex items-start justify-between pt-[16px] border-t border-navy lg:border-t-0 text-ink whitespace-nowrap" data-node="217:6666" data-node-m="217:9830">
+          <a href={PHONE_TEL} class="t-caption lg:text-[15px] lg:leading-[24px] lg:font-medium lg:tracking-normal" data-node="217:6667" data-node-m="217:9831">{PHONE_DISPLAY}</a>
+          <span class="t-caption lg:text-[15px] lg:leading-[24px] lg:font-medium lg:tracking-normal" data-node="217:6668" data-node-m="217:9832">CA License No. 2B60428</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative mt-[70px] lg:mt-0 lg:w-[272px] lg:shrink-0 lg:flex lg:flex-col lg:gap-[24px]" data-node="217:6678">
+      <p class="hidden lg:block lg:w-max m-0 t-label text-ink whitespace-nowrap" data-node="217:6679">§ 01</p>
+      <span aria-hidden="true" class="hidden lg:block h-px bg-navy" data-node="217:6680"></span>
+      <div class="relative ml-[136px] w-[214px] h-[268px] lg:ml-0 lg:w-[272px] lg:h-[336px]" data-node="217:6681">
+        <div class="absolute inset-0 lg:inset-[16px]" data-node="217:6682" data-node-m="217:9842">
+          <Photo node="I217:6682;41:71" alt={alt} class="hidden lg:block w-full h-full object-cover" />
+          <Photo node="I217:9842;41:71" alt={alt} class="lg:hidden w-full h-full object-cover" />
+        </div>
+        <CropMarks class="absolute left-[-12px] right-[-12px] top-[-12px] bottom-[-12px] lg:inset-0" node="217:6685" nodeM="217:9845" />
+      </div>
+      <Ruler orient="v" class="absolute left-0 top-[2px] w-[16px] h-[264px] lg:top-[448px] lg:h-[696px] text-navy opacity-35" node="217:6694" nodeM="217:9854" />
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .bs-f48-num { font-family: var(--font-display); font-weight: 600; font-size: 16px; line-height: 26px; }
+  .bs-f48-box {
+    appearance: none; -webkit-appearance: none; margin: 0; width: 44px; height: 44px; border-radius: 2px; cursor: pointer;
+    background: #fff center / 24px 24px no-repeat; box-shadow: inset 0 0 0 1.5px var(--color-navy);
+  }
+  .bs-f48-box:checked {
+    background-color: var(--color-navy);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E");
+  }
+  .bs-f48-box:focus-visible { outline: 2px solid var(--color-royal); outline-offset: 3px; }
+  @media (min-width: 1024px) {
+    .bs-f48-num { width: 32px; flex-shrink: 0; font-size: 20px; line-height: 32px; }
+    .bs-f48-box { width: 24px; height: 24px; background-size: 16px 16px; }
+  }
+</style>

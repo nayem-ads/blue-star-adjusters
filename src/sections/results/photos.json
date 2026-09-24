@@ -1,0 +1,72 @@
+{
+  "217:7285": {
+    "src": "/img/ai-rebuilt-home-217-6195-216x272.webp",
+    "src1x": "/img/ai-rebuilt-home-217-6195-216x272-1x.webp",
+    "width": 216,
+    "height": 272,
+    "frame": "217:6195"
+  },
+  "217:7312": {
+    "src": "/img/smoke-corner-217-6195-216x272.webp",
+    "src1x": "/img/smoke-corner-217-6195-216x272-1x.webp",
+    "width": 216,
+    "height": 272,
+    "frame": "217:6195"
+  },
+  "217:7340": {
+    "src": "/img/private-library-wine-217-6195-216x272.webp",
+    "src1x": "/img/private-library-wine-217-6195-216x272-1x.webp",
+    "width": 216,
+    "height": 272,
+    "frame": "217:6195"
+  },
+  "217:7369": {
+    "src": "/img/gym-ruin-217-6195-216x272.webp",
+    "src1x": "/img/gym-ruin-217-6195-216x272-1x.webp",
+    "width": 216,
+    "height": 272,
+    "frame": "217:6195"
+  },
+  "217:8831": {
+    "src": "/img/onsite-adjuster-217-6195-608x646.webp",
+    "src1x": "/img/onsite-adjuster-217-6195-608x646-1x.webp",
+    "width": 608,
+    "height": 646,
+    "frame": "217:6195"
+  },
+  "217:11760": {
+    "src": "/img/ai-rebuilt-home-217-11645-144x180.webp",
+    "src1x": "/img/ai-rebuilt-home-217-11645-144x180-1x.webp",
+    "width": 144,
+    "height": 180,
+    "frame": "217:11645"
+  },
+  "217:11784": {
+    "src": "/img/smoke-corner-217-11645-144x180.webp",
+    "src1x": "/img/smoke-corner-217-11645-144x180-1x.webp",
+    "width": 144,
+    "height": 180,
+    "frame": "217:11645"
+  },
+  "217:11809": {
+    "src": "/img/private-library-wine-217-11645-144x180.webp",
+    "src1x": "/img/private-library-wine-217-11645-144x180-1x.webp",
+    "width": 144,
+    "height": 180,
+    "frame": "217:11645"
+  },
+  "217:11837": {
+    "src": "/img/gym-ruin-217-11645-144x180.webp",
+    "src1x": "/img/gym-ruin-217-11645-144x180-1x.webp",
+    "width": 144,
+    "height": 180,
+    "frame": "217:11645"
+  },
+  "217:12113": {
+    "src": "/img/onsite-adjuster-217-11645-390x332.webp",
+    "src1x": "/img/onsite-adjuster-217-11645-390x332-1x.webp",
+    "width": 390,
+    "height": 332,
+    "frame": "217:11645"
+  }
+}

@@ -62,3 +62,14 @@
 @utility tf-label { font-family: var(--font-body); font-weight: 600; font-size: 15px; line-height: 20px; }
 @utility tf-input { font-family: var(--font-body); font-weight: 400; font-size: 16px; line-height: 24px; }
 @utility tf-helper { font-family: var(--font-body); font-weight: 500; font-size: 14px; line-height: 20px; }
+
+/* bs-fit (session-3 pages): the Figma frames are fixed 390 / 1280 layouts. Between the designed widths the page
+   content scales proportionally instead of overflowing (header and footer are fluid and stay unscaled).
+   Exactly 1:1 at 390–1023 and ≥ 1280, so the pixel QA widths are unaffected. */
+@media (max-width: 389.98px) { .bs-fit { zoom: 0.9615; } }
+@media (max-width: 374.98px) { .bs-fit { zoom: 0.923; } }
+@media (max-width: 359.98px) { .bs-fit { zoom: 0.82; } }
+@media (min-width: 1024px) and (max-width: 1279.98px) { .bs-fit { zoom: 0.8; } }
+@media (min-width: 1100px) and (max-width: 1279.98px) { .bs-fit { zoom: 0.859; } }
+@media (min-width: 1180px) and (max-width: 1279.98px) { .bs-fit { zoom: 0.921; } }
+@media (min-width: 1240px) and (max-width: 1279.98px) { .bs-fit { zoom: 0.968; } }

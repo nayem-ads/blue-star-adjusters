@@ -154,7 +154,7 @@ const cardCls = 'wwd-card relative flex flex-col shrink-0 w-[280px] h-[622px] bg
             <li class="relative flex items-start gap-[32px] py-[32px] border-b border-line">
               <IconCircle icon={c.icon} variant="white" />
               <p class="m-0 flex-1 min-w-0 t-body text-ink pt-[6px]"><strong class="font-semibold">{c.lead}</strong>{c.rest}</p>
-              <a href="/commercial-claims/" class={tapCls} aria-label={`${c.lead.replace(/[,:]$/, '')}: commercial claims`}><Icon name="arrow-right" size={24} /></a>
+              <a href="/claims/commercial/" class={tapCls} aria-label={`${c.lead.replace(/[,:]$/, '')}: commercial claims`}><Icon name="arrow-right" size={24} /></a>
             </li>
           ))}
         </ul>
@@ -166,7 +166,7 @@ const cardCls = 'wwd-card relative flex flex-col shrink-0 w-[280px] h-[622px] bg
               <IconCircle icon={c.icon} variant="paper" />
               <p class="m-0 w-full tm-body text-ink"><strong class="font-semibold">{c.lead}</strong>{c.rest}</p>
               <div class="flex-1" aria-hidden="true"></div>
-              <a href="/commercial-claims/" class="wwd-cardlink group flex items-center gap-[8px] min-h-[44px] text-royal after:absolute after:inset-0 after:content-['']">
+              <a href="/claims/commercial/" class="wwd-cardlink group flex items-center gap-[8px] min-h-[44px] text-royal after:absolute after:inset-0 after:content-['']">
                 <span class="tm-body-strong group-hover:underline group-focus-visible:underline underline-offset-[3px]">See the claim page</span><Icon name="arrow-right" size={24} class="shrink-0" />
               </a>
             </div>

@@ -1,0 +1,79 @@
+---
+// Contents & Valuables § 03 Result (bento). Desktop 230:979, mobile 230:1224.
+// White + full-bleed 40px blueprint grid (navy 5 %, majors every 200 at 10 %). Desktop: photo | case tile over
+// figure + disclaimer tiles. Mobile: case tile, then photo + figure tiles, disclaimer below the mosaic.
+import Img from '../../../components/Img.astro';
+import Icon from '../../../components/Icon.astro';
+interface Props { chip: string; heading: string; caseText: string; figure: string; figureLabel: string; disclaimer: string; imageAlt: string }
+const { chip, heading, caseText, figure, figureLabel, disclaimer, imageAlt } = Astro.props;
+---
+<section aria-labelledby="result-title" class="relative bg-white overflow-hidden" data-node="230:979" data-node-m="230:1224">
+  <div aria-hidden="true" class="bs-bento-grid absolute inset-0" data-node="230:980" data-node-m="230:1225"></div>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px]">
+    <div class="flex flex-col gap-[16px] lg:gap-[24px] lg:w-[211px]" data-node="230:1047" data-node-m="230:1263">
+      <div class="inline-flex self-start px-[8px] py-[4px] border border-navy rounded-[2px] bg-white" data-node="230:1048" data-node-m="230:1264">
+        <span class="tm-label lg:t-label text-navy" data-node="230:1049" data-node-m="230:1265">{chip}</span>
+      </div>
+      <h2 id="result-title" class="m-0 tm-display lg:t-display-l text-navy lg:whitespace-nowrap" data-node="230:1050" data-node-m="230:1266">{heading}</h2>
+    </div>
+
+    <!-- Desktop bento -->
+    <div class="hidden lg:flex gap-[24px] items-stretch mt-[48px]" data-node="230:1483">
+      <div class="w-[400px] shrink-0" data-node="230:1484">
+        <Img node="230:1484" alt={imageAlt} class="w-full h-full object-cover" />
+      </div>
+      <div class="flex flex-col gap-[24px] w-[696px] shrink-0" data-node="230:1485">
+        <div class="flex flex-col gap-[24px] p-[48px] bg-navy text-white" data-node="230:1486">
+          <span class="block size-[24px]" data-node="230:1487"><Icon name="document" size={24} /></span>
+          <p class="m-0 t-h3 text-white" data-node="230:1490">{caseText}</p>
+        </div>
+        <div class="flex gap-[24px] items-start" data-node="230:1491">
+          <div class="flex flex-col items-start gap-[8px] w-[412px] shrink-0 p-[40px] bg-paper whitespace-nowrap" data-node="230:1492">
+            <p class="m-0 w-[332px] t-figure text-navy" data-node="230:1493">{figure}</p>
+            <p class="m-0 t-body text-ink" data-node="230:1494">{figureLabel}</p>
+          </div>
+          <div class="flex-1 self-stretch flex flex-col justify-end px-[32px] py-[40px] bg-white border border-line" data-node="230:1495">
+            <div class="flex items-center gap-[16px]" data-node="230:1055">
+              <span aria-hidden="true" class="block w-[24px] h-px bg-navy shrink-0" data-node="230:1056"></span>
+              <p class="m-0 flex-1 t-small font-medium text-ink" data-node="230:1057">{disclaimer}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile mosaic -->
+    <div class="lg:hidden flex flex-col gap-[16px] mt-[32px]" data-node-m="230:1506">
+      <div class="flex flex-col gap-[16px] p-[24px] bg-navy text-white" data-node-m="230:1507">
+        <span class="block size-[24px]" data-node-m="230:1508"><Icon name="document" size={24} /></span>
+        <p class="m-0 tm-lead text-white" data-node-m="230:1511">{caseText}</p>
+      </div>
+      <div class="flex gap-[16px] h-[220px]" data-node-m="230:1512">
+        <div class="w-[167px] shrink-0 grow" data-node-m="230:1513">
+          <Img node="230:1513" alt={imageAlt} class="w-full h-full object-cover" />
+        </div>
+        <div class="w-[167px] shrink-0 grow flex flex-col justify-end gap-[8px] p-[16px] bg-paper" data-node-m="230:1514">
+          <p class="m-0 tm-h2 font-bold text-navy" data-node-m="230:1515">{figure}</p>
+          <p class="m-0 tm-body text-ink" data-node-m="230:1516">{figureLabel}</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:hidden flex items-start gap-[12px] mt-[32px]" data-node-m="230:1271">
+      <span aria-hidden="true" class="block w-[24px] h-px bg-navy shrink-0" data-node-m="230:1272"></span>
+      <p class="m-0 flex-1 t-legal font-medium text-ink" data-node-m="230:1273">{disclaimer}</p>
+    </div>
+  </div>
+</section>
+<style>
+  .bs-bento-grid {
+    --g: rgb(8 29 94 / .05);
+    --G: rgb(8 29 94 / .053);
+    background-image:
+      linear-gradient(to right, var(--g) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--g) 1px, transparent 1px),
+      linear-gradient(to right, var(--G) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--G) 1px, transparent 1px);
+    background-size: 40px 100%, 100% 40px, 200px 100%, 100% 200px;
+    background-position: 0 0;
+  }
+</style>

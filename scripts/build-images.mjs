@@ -9,13 +9,14 @@ import path from 'node:path';
 const map = JSON.parse(fs.readFileSync('design/imagemap.json', 'utf8')).rows;
 const srcDir = 'design/source-img';
 const files = fs.readdirSync(srcDir);
-const out = {};
+// Merge: slots whose source photo isn't present locally keep their existing entry (sources aren't committed).
+const out = fs.existsSync('src/data/images.json') ? JSON.parse(fs.readFileSync('src/data/images.json', 'utf8')) : {};
 fs.mkdirSync('public/img', { recursive: true });
 const slug = (s) => s.replace(/^IMG:/, '').replace(/\(.*?\)/g, '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
 
 for (const [frame, nodeId, name, hash, mode, t, , w, h] of map) {
   const file = files.find((f) => f.startsWith(hash));
-  if (!file) { console.error('MISSING source', hash, name); process.exitCode = 1; continue; }
+  if (!file) { if (!out[nodeId]) { console.error('MISSING source', hash, name); process.exitCode = 1; } continue; }
   const src = path.join(srcDir, file);
   const meta = await sharp(src).metadata();
   const iw = meta.width, ih = meta.height;

@@ -1,0 +1,1018 @@
+<canvas id="212:708" name="Results" x="0" y="0" width="0" height="0">
+  <frame id="217:6195" name="Desktop — Results (1280)" x="0" y="0" width="1280" height="5110">
+    <instance id="217:6196" name="Header / Desktop (Light)" x="0" y="0" width="1280" height="88" />
+    <frame id="217:6219" name="Hero" x="0" y="88" width="1280" height="693">
+      <frame id="217:6256" name="Blueprint grid (full bleed, 40px)" x="0" y="0" width="1280" height="693">
+        <rounded-rectangle id="217:6257" name="Grid line V" x="0" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6258" name="Grid line V" x="40" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6259" name="Grid line V" x="80" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6260" name="Grid line V" x="120" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6261" name="Grid line V" x="160" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6262" name="Grid line V" x="200" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6263" name="Grid line V" x="240" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6264" name="Grid line V" x="280" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6265" name="Grid line V" x="320" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6266" name="Grid line V" x="360" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6267" name="Grid line V" x="400" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6268" name="Grid line V" x="440" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6269" name="Grid line V" x="480" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6270" name="Grid line V" x="520" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6271" name="Grid line V" x="560" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6272" name="Grid line V" x="600" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6273" name="Grid line V" x="640" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6274" name="Grid line V" x="680" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6275" name="Grid line V" x="720" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6276" name="Grid line V" x="760" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6277" name="Grid line V" x="800" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6278" name="Grid line V" x="840" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6279" name="Grid line V" x="880" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6280" name="Grid line V" x="920" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6281" name="Grid line V" x="960" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6282" name="Grid line V" x="1000" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6283" name="Grid line V" x="1040" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6284" name="Grid line V" x="1080" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6285" name="Grid line V" x="1120" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6286" name="Grid line V" x="1160" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6287" name="Grid line V" x="1200" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6288" name="Grid line V" x="1240" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6289" name="Grid line V" x="1280" y="0" width="1" height="693" />
+        <rounded-rectangle id="217:6290" name="Grid line H" x="0" y="0" width="1280" height="1" />
+        <rounded-rectangle id="217:6291" name="Grid line H" x="0" y="40" width="1280" height="1" />
+        <rounded-rectangle id="217:6292" name="Grid line H" x="0" y="80" width="1280" height="1" />
+        <rounded-rectangle id="217:6293" name="Grid line H" x="0" y="120" width="1280" height="1" />
+        <rounded-rectangle id="217:6294" name="Grid line H" x="0" y="160" width="1280" height="1" />
+        <rounded-rectangle id="217:6295" name="Grid line H" x="0" y="200" width="1280" height="1" />
+        <rounded-rectangle id="217:6296" name="Grid line H" x="0" y="240" width="1280" height="1" />
+        <rounded-rectangle id="217:6297" name="Grid line H" x="0" y="280" width="1280" height="1" />
+        <rounded-rectangle id="217:6298" name="Grid line H" x="0" y="320" width="1280" height="1" />
+        <rounded-rectangle id="217:6299" name="Grid line H" x="0" y="360" width="1280" height="1" />
+        <rounded-rectangle id="217:6300" name="Grid line H" x="0" y="400" width="1280" height="1" />
+        <rounded-rectangle id="217:6301" name="Grid line H" x="0" y="440" width="1280" height="1" />
+        <rounded-rectangle id="217:6302" name="Grid line H" x="0" y="480" width="1280" height="1" />
+        <rounded-rectangle id="217:6303" name="Grid line H" x="0" y="520" width="1280" height="1" />
+        <rounded-rectangle id="217:6304" name="Grid line H" x="0" y="560" width="1280" height="1" />
+        <rounded-rectangle id="217:6305" name="Grid line H" x="0" y="600" width="1280" height="1" />
+        <rounded-rectangle id="217:6306" name="Grid line H" x="0" y="640" width="1280" height="1" />
+        <rounded-rectangle id="217:6307" name="Grid line H" x="0" y="680" width="1280" height="1" />
+      </frame>
+      <frame id="217:6220" name="Hero heading" x="80" y="96" width="1120" height="178">
+        <instance id="217:6221" name="Eyebrow / Results" x="0" y="0" width="87" height="18" />
+        <text id="217:6224" name="H1" x="0" y="42" width="766" height="136" />
+      </frame>
+      <frame id="217:6225" name="Hero base" x="80" y="330" width="1120" height="251">
+        <frame id="217:6226" name="Hero actions" x="0" y="12" width="664" height="239">
+          <frame id="217:6227" name="Buttons" x="0" y="0" width="504" height="52">
+            <instance id="217:6228" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+            <instance id="217:6232" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+          </frame>
+          <frame id="217:6236" name="Trust facts" x="0" y="92" width="664" height="147">
+            <frame id="217:6237" name="Fact / No upfront cost" x="0" y="0" width="664" height="49">
+              <instance id="217:6238" name="Icon / check" x="0" y="13" width="24" height="24" />
+              <text id="217:6240" name="No upfront cost" x="40" y="13" width="120" height="24" />
+            </frame>
+            <frame id="217:6241" name="Fact / You always have final say on any settlement" x="0" y="49" width="664" height="49">
+              <instance id="217:6242" name="Icon / shield" x="0" y="13" width="24" height="24" />
+              <text id="217:6245" name="You always have final say on" x="40" y="13" width="333" height="24" />
+            </frame>
+            <frame id="217:6246" name="Fact / CA License No. 2B60428" x="0" y="98" width="664" height="49">
+              <instance id="217:6247" name="Icon / document" x="0" y="13" width="24" height="24" />
+              <text id="217:6250" name="CA License No. 2B60428" x="40" y="13" width="184" height="24" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="217:6251" name="Ledger key" x="760" y="0" width="360" height="251">
+          <text id="217:6252" name="Key / Offer (struck)" x="33" y="33" width="70" height="34" />
+          <text id="217:6253" name="Key / Settlement" x="33" y="83" width="247" height="54" />
+          <rounded-rectangle id="217:6254" name="Key hairline" x="33" y="153" width="296" height="1" />
+          <text id="217:6255" name="Key / Offer note" x="33" y="170" width="296" height="48" />
+        </frame>
+      </frame>
+      <frame id="217:6308" name="Ruler ticks (bottom edge)" x="0" y="677" width="1280" height="16">
+        <rounded-rectangle id="217:6309" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6310" name="Tick" x="8" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6311" name="Tick" x="16" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6312" name="Tick" x="24" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6313" name="Tick" x="32" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6314" name="Tick" x="40" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6315" name="Tick" x="48" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6316" name="Tick" x="56" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6317" name="Tick" x="64" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6318" name="Tick" x="72" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6319" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6320" name="Tick" x="88" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6321" name="Tick" x="96" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6322" name="Tick" x="104" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6323" name="Tick" x="112" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6324" name="Tick" x="120" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6325" name="Tick" x="128" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6326" name="Tick" x="136" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6327" name="Tick" x="144" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6328" name="Tick" x="152" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6329" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6330" name="Tick" x="168" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6331" name="Tick" x="176" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6332" name="Tick" x="184" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6333" name="Tick" x="192" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6334" name="Tick" x="200" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6335" name="Tick" x="208" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6336" name="Tick" x="216" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6337" name="Tick" x="224" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6338" name="Tick" x="232" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6339" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6340" name="Tick" x="248" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6341" name="Tick" x="256" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6342" name="Tick" x="264" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6343" name="Tick" x="272" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6344" name="Tick" x="280" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6345" name="Tick" x="288" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6346" name="Tick" x="296" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6347" name="Tick" x="304" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6348" name="Tick" x="312" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6349" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6350" name="Tick" x="328" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6351" name="Tick" x="336" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6352" name="Tick" x="344" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6353" name="Tick" x="352" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6354" name="Tick" x="360" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6355" name="Tick" x="368" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6356" name="Tick" x="376" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6357" name="Tick" x="384" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6358" name="Tick" x="392" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6359" name="Tick" x="400" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6360" name="Tick" x="408" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6361" name="Tick" x="416" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6362" name="Tick" x="424" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6363" name="Tick" x="432" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6364" name="Tick" x="440" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6365" name="Tick" x="448" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6366" name="Tick" x="456" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6367" name="Tick" x="464" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6368" name="Tick" x="472" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6369" name="Tick" x="480" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6370" name="Tick" x="488" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6371" name="Tick" x="496" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6372" name="Tick" x="504" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6373" name="Tick" x="512" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6374" name="Tick" x="520" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6375" name="Tick" x="528" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6376" name="Tick" x="536" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6377" name="Tick" x="544" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6378" name="Tick" x="552" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6379" name="Tick" x="560" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6380" name="Tick" x="568" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6381" name="Tick" x="576" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6382" name="Tick" x="584" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6383" name="Tick" x="592" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6384" name="Tick" x="600" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6385" name="Tick" x="608" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6386" name="Tick" x="616" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6387" name="Tick" x="624" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6388" name="Tick" x="632" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6389" name="Tick" x="640" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6390" name="Tick" x="648" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6391" name="Tick" x="656" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6392" name="Tick" x="664" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6393" name="Tick" x="672" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6394" name="Tick" x="680" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6395" name="Tick" x="688" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6396" name="Tick" x="696" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6397" name="Tick" x="704" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6398" name="Tick" x="712" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6399" name="Tick" x="720" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6400" name="Tick" x="728" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6401" name="Tick" x="736" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6402" name="Tick" x="744" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6403" name="Tick" x="752" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6404" name="Tick" x="760" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6405" name="Tick" x="768" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6406" name="Tick" x="776" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6407" name="Tick" x="784" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6408" name="Tick" x="792" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6409" name="Tick" x="800" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6410" name="Tick" x="808" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6411" name="Tick" x="816" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6412" name="Tick" x="824" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6413" name="Tick" x="832" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6414" name="Tick" x="840" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6415" name="Tick" x="848" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6416" name="Tick" x="856" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6417" name="Tick" x="864" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6418" name="Tick" x="872" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6419" name="Tick" x="880" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6420" name="Tick" x="888" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6421" name="Tick" x="896" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6422" name="Tick" x="904" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6423" name="Tick" x="912" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6424" name="Tick" x="920" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6425" name="Tick" x="928" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6426" name="Tick" x="936" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6427" name="Tick" x="944" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6428" name="Tick" x="952" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6429" name="Tick" x="960" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6430" name="Tick" x="968" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6431" name="Tick" x="976" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6432" name="Tick" x="984" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6433" name="Tick" x="992" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6434" name="Tick" x="1000" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6435" name="Tick" x="1008" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6436" name="Tick" x="1016" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6437" name="Tick" x="1024" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6438" name="Tick" x="1032" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6439" name="Tick" x="1040" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6440" name="Tick" x="1048" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6441" name="Tick" x="1056" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6442" name="Tick" x="1064" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6443" name="Tick" x="1072" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6444" name="Tick" x="1080" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6445" name="Tick" x="1088" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6446" name="Tick" x="1096" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6447" name="Tick" x="1104" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6448" name="Tick" x="1112" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6449" name="Tick" x="1120" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6450" name="Tick" x="1128" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6451" name="Tick" x="1136" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6452" name="Tick" x="1144" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6453" name="Tick" x="1152" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6454" name="Tick" x="1160" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6455" name="Tick" x="1168" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6456" name="Tick" x="1176" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6457" name="Tick" x="1184" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6458" name="Tick" x="1192" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6459" name="Tick" x="1200" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:6460" name="Tick" x="1208" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6461" name="Tick" x="1216" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6462" name="Tick" x="1224" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6463" name="Tick" x="1232" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6464" name="Tick" x="1240" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:6465" name="Tick" x="1248" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6466" name="Tick" x="1256" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6467" name="Tick" x="1264" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6468" name="Tick" x="1272" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:6469" name="Tick" x="1280" y="0" width="1" height="16" />
+      </frame>
+    </frame>
+    <frame id="217:7283" name="Results ledger" x="0" y="781" width="1280" height="2007">
+      <frame id="217:7284" name="Result / Palisades fire, home." x="80" y="96" width="1120" height="410">
+        <instance id="217:7285" name="Photo / ai-rebuilt-home" x="0" y="0" width="216" height="272" />
+        <frame id="217:7288" name="Result body" x="264" y="0" width="856" height="354">
+          <frame id="217:7289" name="Loss strip" x="0" y="0" width="856" height="40">
+            <frame id="217:7290" name="Loss" x="0" y="0" width="236" height="40">
+              <frame id="217:7291" name="Icon circle / flame" x="0" y="0" width="40" height="40">
+                <instance id="217:7292" name="Icon / flame" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:7295" name="Loss / Palisades fire, home." x="56" y="6" width="180" height="28" />
+            </frame>
+          </frame>
+          <frame id="217:7299" name="Settlement" x="0" y="64" width="856" height="174">
+            <frame id="217:7598" name="Offer line" x="0" y="0" width="856" height="54">
+              <text id="217:7599" name="Label / Offer" x="0" y="27" width="112" height="24" />
+              <text id="217:7600" name="Offer value" x="128" y="0" width="186" height="54" />
+            </frame>
+            <frame id="217:7301" name="Figure line" x="0" y="62" width="856" height="112">
+              <text id="217:7601" name="Label / Settlement" x="0" y="82" width="112" height="24" />
+              <text id="217:7302" name="Figure / $276,000" x="128" y="0" width="498" height="112" />
+            </frame>
+          </frame>
+          <frame id="217:7303" name="Result base" x="0" y="262" width="856" height="92">
+            <frame id="217:7304" name="What made the difference" x="128" y="0" width="416" height="92">
+              <text id="217:7305" name="Label / What made the difference" x="0" y="0" width="236" height="28" />
+              <text id="217:7306" name="Note" x="0" y="36" width="416" height="56" />
+            </frame>
+            <frame id="217:7307" name="Disclaimer" x="592" y="0" width="264" height="68">
+              <rounded-rectangle id="217:7308" name="Disclaimer rule" x="0" y="0" width="24" height="2" />
+              <text id="217:7309" name="Results disclaimer" x="0" y="14" width="264" height="54" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <rounded-rectangle id="217:7310" name="Ledger hairline" x="80" y="506" width="1120" height="1" />
+      <frame id="217:7311" name="Result / Smoke, home." x="80" y="507" width="1120" height="466">
+        <instance id="217:7312" name="Photo / smoke-corner" x="0" y="56" width="216" height="272" />
+        <frame id="217:7315" name="Result body" x="264" y="56" width="856" height="354">
+          <frame id="217:7316" name="Loss strip" x="0" y="0" width="856" height="40">
+            <frame id="217:7317" name="Loss" x="0" y="0" width="181" height="40">
+              <frame id="217:7318" name="Icon circle / home" x="0" y="0" width="40" height="40">
+                <instance id="217:7319" name="Icon / home" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:7322" name="Loss / Smoke, home." x="56" y="6" width="125" height="28" />
+            </frame>
+          </frame>
+          <frame id="217:7326" name="Settlement" x="0" y="64" width="856" height="174">
+            <frame id="217:7602" name="Offer line" x="0" y="0" width="856" height="54">
+              <text id="217:7603" name="Label / Offer" x="0" y="27" width="112" height="24" />
+              <text id="217:7604" name="Offer value" x="128" y="0" width="164" height="54" />
+            </frame>
+            <frame id="217:7328" name="Figure line" x="0" y="62" width="856" height="112">
+              <text id="217:7605" name="Label / Settlement" x="0" y="82" width="112" height="24" />
+              <text id="217:7329" name="Figure word / about" x="128" y="72" width="78" height="34" />
+              <text id="217:7330" name="Figure / $1.1 million" x="222" y="0" width="531" height="112" />
+            </frame>
+          </frame>
+          <frame id="217:7331" name="Result base" x="0" y="262" width="856" height="92">
+            <frame id="217:7332" name="What made the difference" x="128" y="0" width="416" height="92">
+              <text id="217:7333" name="Label / What made the difference" x="0" y="0" width="236" height="28" />
+              <text id="217:7334" name="Note" x="0" y="36" width="416" height="56" />
+            </frame>
+            <frame id="217:7335" name="Disclaimer" x="592" y="0" width="264" height="68">
+              <rounded-rectangle id="217:7336" name="Disclaimer rule" x="0" y="0" width="24" height="2" />
+              <text id="217:7337" name="Results disclaimer" x="0" y="14" width="264" height="54" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <rounded-rectangle id="217:7338" name="Ledger hairline" x="80" y="973" width="1120" height="1" />
+      <frame id="217:7339" name="Result / Fire, estate." x="80" y="974" width="1120" height="532">
+        <instance id="217:7340" name="Photo / private-library-wine" x="0" y="56" width="216" height="272" />
+        <frame id="217:7343" name="Result body" x="264" y="56" width="856" height="420">
+          <frame id="217:7344" name="Loss strip" x="0" y="0" width="856" height="40">
+            <frame id="217:7345" name="Loss" x="0" y="0" width="157" height="40">
+              <frame id="217:7346" name="Icon circle / building" x="0" y="0" width="40" height="40">
+                <instance id="217:7347" name="Icon / building" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:7349" name="Loss / Fire, estate." x="56" y="6" width="101" height="28" />
+            </frame>
+          </frame>
+          <frame id="217:7353" name="Settlement" x="0" y="64" width="856" height="264">
+            <frame id="217:7606" name="Offer line" x="0" y="0" width="856" height="40">
+              <text id="217:7607" name="Label / Offer" x="0" y="6" width="112" height="24" />
+              <text id="217:7608" name="Offer value" x="128" y="0" width="410" height="32" />
+            </frame>
+            <frame id="217:7355" name="Figure line" x="0" y="40" width="856" height="112">
+              <text id="217:7609" name="Label / Settlement" x="0" y="82" width="112" height="24" />
+              <text id="217:7356" name="Figure / $11M" x="128" y="0" width="248" height="112" />
+              <text id="217:7357" name="Figure word / structure and" x="392" y="72" width="178" height="34" />
+            </frame>
+            <frame id="217:7610" name="Figure line 2" x="0" y="152" width="856" height="112">
+              <text id="217:7358" name="Figure / $5.2M" x="128" y="0" width="332" height="112" />
+              <text id="217:7359" name="Figure word / contents" x="476" y="72" width="116" height="34" />
+            </frame>
+          </frame>
+          <frame id="217:7360" name="Result base" x="0" y="352" width="856" height="68">
+            <frame id="217:7361" name="What made the difference" x="128" y="0" width="416" height="64">
+              <text id="217:7362" name="Label / What made the difference" x="0" y="0" width="236" height="28" />
+              <text id="217:7363" name="Note" x="0" y="36" width="416" height="28" />
+            </frame>
+            <frame id="217:7364" name="Disclaimer" x="592" y="0" width="264" height="68">
+              <rounded-rectangle id="217:7365" name="Disclaimer rule" x="0" y="0" width="24" height="2" />
+              <text id="217:7366" name="Results disclaimer" x="0" y="14" width="264" height="54" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <rounded-rectangle id="217:7367" name="Ledger hairline" x="80" y="1506" width="1120" height="1" />
+      <frame id="217:7368" name="Result / Apartment fire, 800 sq ft." x="80" y="1507" width="1120" height="404">
+        <instance id="217:7369" name="Photo / gym-ruin" x="0" y="56" width="216" height="272" />
+        <frame id="217:7372" name="Result body" x="264" y="56" width="856" height="292">
+          <frame id="217:7373" name="Loss strip" x="0" y="0" width="856" height="40">
+            <frame id="217:7374" name="Loss" x="0" y="0" width="277" height="40">
+              <frame id="217:7375" name="Icon circle / building" x="0" y="0" width="40" height="40">
+                <instance id="217:7376" name="Icon / building" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:7378" name="Loss / Apartment fire, 800 sq ft." x="56" y="6" width="221" height="28" />
+            </frame>
+          </frame>
+          <frame id="217:7379" name="Settlement" x="0" y="64" width="856" height="112">
+            <frame id="217:7381" name="Figure line" x="0" y="0" width="856" height="112">
+              <text id="217:7611" name="Label / Settlement" x="0" y="82" width="112" height="24" />
+              <text id="217:7382" name="Figure word / nearly" x="128" y="72" width="84" height="34" />
+              <text id="217:7383" name="Figure / $200,000" x="228" y="0" width="514" height="112" />
+            </frame>
+          </frame>
+          <frame id="217:7384" name="Result base" x="0" y="200" width="856" height="92">
+            <frame id="217:7385" name="What made the difference" x="128" y="0" width="416" height="92">
+              <text id="217:7386" name="Label / What made the difference" x="0" y="0" width="236" height="28" />
+              <text id="217:7387" name="Note" x="0" y="36" width="416" height="56" />
+            </frame>
+            <frame id="217:7388" name="Disclaimer" x="592" y="0" width="264" height="68">
+              <rounded-rectangle id="217:7389" name="Disclaimer rule" x="0" y="0" width="24" height="2" />
+              <text id="217:7390" name="Results disclaimer" x="0" y="14" width="264" height="54" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="217:8598" name="Result / Garage fire, total loss (navy)" x="0" y="2788" width="1280" height="604">
+      <frame id="217:8599" name="Result figures" x="80" y="120" width="648" height="364">
+        <frame id="217:8600" name="Rule motif" x="0" y="0" width="300" height="28">
+          <rounded-rectangle id="217:8601" name="Motif rule" x="0" y="13.5" width="40" height="1" />
+          <text id="217:8602" name="Loss / Garage fire, total loss." x="56" y="0" width="188" height="28" />
+          <rounded-rectangle id="217:8603" name="Motif rule" x="260" y="13.5" width="40" height="1" />
+        </frame>
+        <frame id="217:8604" name="Offer line" x="0" y="60" width="283" height="54">
+          <text id="217:8605" name="Label / Offer" x="0" y="27" width="112" height="24" />
+          <text id="217:8606" name="Offer value" x="128" y="0" width="155" height="54" />
+        </frame>
+        <frame id="217:8607" name="Result line" x="0" y="146" width="648" height="136">
+          <text id="217:8608" name="Label / Result" x="0" y="40" width="112" height="24" />
+          <text id="217:8609" name="Result value" x="128" y="0" width="520" height="136" />
+        </frame>
+        <frame id="217:8610" name="Disclaimer" x="0" y="314" width="648" height="50">
+          <rounded-rectangle id="217:8611" name="Disclaimer rule" x="128" y="0" width="24" height="2" />
+          <text id="217:8612" name="Results disclaimer" x="128" y="14" width="520" height="36" />
+        </frame>
+      </frame>
+      <frame id="217:8613" name="What made the difference" x="824" y="120" width="376" height="329">
+        <frame id="217:8614" name="Icon circle / flame" x="0" y="0" width="40" height="40">
+          <instance id="217:8615" name="Icon / flame" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="217:8618" name="Label / What made the difference" x="0" y="64" width="236" height="28" />
+        <text id="217:8619" name="Note" x="0" y="116" width="376" height="96" />
+        <rounded-rectangle id="217:8620" name="Statement rule" x="0" y="236" width="48" height="1" />
+        <text id="217:8621" name="Note / statement" x="0" y="261" width="376" height="68" />
+      </frame>
+      <instance id="217:8622" name="B-mark (faint)" x="844.652099609375" y="148.00003051757812" width="395.3479309082031" height="479.9999694824219" />
+      <frame id="217:8627" name="Ruler ticks (top edge)" x="0" y="0" width="1280" height="16">
+        <rounded-rectangle id="217:8628" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8629" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8630" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8631" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8632" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8633" name="Tick" x="40" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8634" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8635" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8636" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8637" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8638" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8639" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8640" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8641" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8642" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8643" name="Tick" x="120" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8644" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8645" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8646" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8647" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8648" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8649" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8650" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8651" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8652" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8653" name="Tick" x="200" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8654" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8655" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8656" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8657" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8658" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8659" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8660" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8661" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8662" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8663" name="Tick" x="280" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8664" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8665" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8666" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8667" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8668" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8669" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8670" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8671" name="Tick" x="344" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8672" name="Tick" x="352" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8673" name="Tick" x="360" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8674" name="Tick" x="368" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8675" name="Tick" x="376" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8676" name="Tick" x="384" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8677" name="Tick" x="392" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8678" name="Tick" x="400" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8679" name="Tick" x="408" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8680" name="Tick" x="416" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8681" name="Tick" x="424" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8682" name="Tick" x="432" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8683" name="Tick" x="440" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8684" name="Tick" x="448" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8685" name="Tick" x="456" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8686" name="Tick" x="464" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8687" name="Tick" x="472" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8688" name="Tick" x="480" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8689" name="Tick" x="488" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8690" name="Tick" x="496" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8691" name="Tick" x="504" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8692" name="Tick" x="512" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8693" name="Tick" x="520" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8694" name="Tick" x="528" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8695" name="Tick" x="536" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8696" name="Tick" x="544" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8697" name="Tick" x="552" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8698" name="Tick" x="560" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8699" name="Tick" x="568" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8700" name="Tick" x="576" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8701" name="Tick" x="584" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8702" name="Tick" x="592" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8703" name="Tick" x="600" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8704" name="Tick" x="608" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8705" name="Tick" x="616" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8706" name="Tick" x="624" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8707" name="Tick" x="632" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8708" name="Tick" x="640" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8709" name="Tick" x="648" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8710" name="Tick" x="656" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8711" name="Tick" x="664" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8712" name="Tick" x="672" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8713" name="Tick" x="680" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8714" name="Tick" x="688" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8715" name="Tick" x="696" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8716" name="Tick" x="704" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8717" name="Tick" x="712" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8718" name="Tick" x="720" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8719" name="Tick" x="728" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8720" name="Tick" x="736" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8721" name="Tick" x="744" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8722" name="Tick" x="752" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8723" name="Tick" x="760" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8724" name="Tick" x="768" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8725" name="Tick" x="776" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8726" name="Tick" x="784" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8727" name="Tick" x="792" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8728" name="Tick" x="800" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8729" name="Tick" x="808" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8730" name="Tick" x="816" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8731" name="Tick" x="824" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8732" name="Tick" x="832" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8733" name="Tick" x="840" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8734" name="Tick" x="848" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8735" name="Tick" x="856" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8736" name="Tick" x="864" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8737" name="Tick" x="872" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8738" name="Tick" x="880" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8739" name="Tick" x="888" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8740" name="Tick" x="896" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8741" name="Tick" x="904" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8742" name="Tick" x="912" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8743" name="Tick" x="920" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8744" name="Tick" x="928" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8745" name="Tick" x="936" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8746" name="Tick" x="944" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8747" name="Tick" x="952" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8748" name="Tick" x="960" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8749" name="Tick" x="968" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8750" name="Tick" x="976" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8751" name="Tick" x="984" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8752" name="Tick" x="992" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8753" name="Tick" x="1000" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8754" name="Tick" x="1008" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8755" name="Tick" x="1016" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8756" name="Tick" x="1024" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8757" name="Tick" x="1032" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8758" name="Tick" x="1040" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8759" name="Tick" x="1048" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8760" name="Tick" x="1056" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8761" name="Tick" x="1064" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8762" name="Tick" x="1072" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8763" name="Tick" x="1080" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8764" name="Tick" x="1088" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8765" name="Tick" x="1096" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8766" name="Tick" x="1104" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8767" name="Tick" x="1112" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8768" name="Tick" x="1120" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8769" name="Tick" x="1128" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8770" name="Tick" x="1136" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8771" name="Tick" x="1144" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8772" name="Tick" x="1152" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8773" name="Tick" x="1160" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8774" name="Tick" x="1168" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8775" name="Tick" x="1176" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8776" name="Tick" x="1184" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8777" name="Tick" x="1192" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8778" name="Tick" x="1200" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:8779" name="Tick" x="1208" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8780" name="Tick" x="1216" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8781" name="Tick" x="1224" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8782" name="Tick" x="1232" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8783" name="Tick" x="1240" y="0" width="1" height="10" />
+        <rounded-rectangle id="217:8784" name="Tick" x="1248" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8785" name="Tick" x="1256" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8786" name="Tick" x="1264" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8787" name="Tick" x="1272" y="0" width="1" height="6" />
+        <rounded-rectangle id="217:8788" name="Tick" x="1280" y="0" width="1" height="16" />
+      </frame>
+    </frame>
+    <frame id="217:8789" name="Disclaimer and CTA" x="0" y="3392" width="1280" height="455">
+      <frame id="217:8790" name="Margin rail" x="80" y="120" width="264" height="71">
+        <rounded-rectangle id="217:8791" name="Rail hairline" x="0" y="0" width="264" height="1" />
+        <frame id="217:8792" name="Rail mark" x="0" y="17" width="87" height="54">
+          <frame id="217:8793" name="Icon circle / document" x="0" y="7" width="40" height="40">
+            <instance id="217:8794" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="217:8797" name="Section mark" x="56" y="0" width="31" height="54" />
+        </frame>
+      </frame>
+      <frame id="217:8798" name="Disclaimer body" x="440" y="120" width="760" height="215">
+        <text id="217:8799" name="Results disclaimer (full)" x="0" y="0" width="760" height="64" />
+        <rounded-rectangle id="217:8800" name="Hairline" x="0" y="112" width="760" height="1" />
+        <frame id="217:8801" name="CTA / Offered too little" x="0" y="161" width="760" height="54">
+          <text id="217:8802" name="CTA heading" x="0" y="0" width="391" height="54" />
+          <instance id="217:8803" name="Button / Schedule a Free Review" x="507" y="1" width="253" height="52" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="217:8807" name="Final CTA" x="0" y="3847" width="1280" height="706">
+      <instance id="217:8831" name="Photo / onsite-adjuster" x="0" y="0" width="608" height="674" />
+      <frame id="217:8808" name="Final CTA panel" x="608" y="0" width="672" height="706">
+        <text id="217:8809" name="Final CTA H2" x="80" y="120" width="512" height="108" />
+        <text id="217:8810" name="Final CTA body" x="80" y="260" width="512" height="96" />
+        <frame id="217:8811" name="Buttons" x="80" y="388" width="504" height="52">
+          <instance id="217:8812" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+          <instance id="217:8816" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+        </frame>
+        <frame id="217:8820" name="Key facts" x="80" y="472" width="512" height="114">
+          <frame id="217:8821" name="Fact / No upfront cost. We&#39;re p" x="0" y="0" width="512" height="57">
+            <instance id="217:8822" name="Icon / document" x="0" y="17" width="24" height="24" />
+            <text id="217:8825" name="No upfront cost. We&#39;re paid " x="40" y="17" width="472" height="24" />
+          </frame>
+          <frame id="217:8826" name="Fact / We represent the insured" x="0" y="57" width="512" height="57">
+            <instance id="217:8827" name="Icon / shield" x="0" y="17" width="24" height="24" />
+            <text id="217:8830" name="We represent the insured onl" x="40" y="17" width="472" height="24" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="217:8834" name="Ruler ticks (seam)" x="608" y="0" width="16" height="706">
+        <rounded-rectangle id="217:8835" name="Tick" x="0" y="0" width="16" height="1" />
+        <rounded-rectangle id="217:8836" name="Tick" x="0" y="8" width="6" height="1" />
+        <rounded-rectangle id="217:8837" name="Tick" x="0" y="16" width="6" height="1" />
+        <rounded-rectangle id="217:8838" name="Tick" x="0" y="24" width="6" height="1" />
+        <rounded-rectangle id="217:8839" name="Tick" x="0" y="32" width="6" height="1" />
+        <rounded-rectangle id="217:8840" name="Tick" x="0" y="40" width="10" height="1" />
+        <rounded-rectangle id="217:8841" name="Tick" x="0" y="48" width="6" height="1" />
+        <rounded-rectangle id="217:8842" name="Tick" x="0" y="56" width="6" height="1" />
+        <rounded-rectangle id="217:8843" name="Tick" x="0" y="64" width="6" height="1" />
+        <rounded-rectangle id="217:8844" name="Tick" x="0" y="72" width="6" height="1" />
+        <rounded-rectangle id="217:8845" name="Tick" x="0" y="80" width="16" height="1" />
+        <rounded-rectangle id="217:8846" name="Tick" x="0" y="88" width="6" height="1" />
+        <rounded-rectangle id="217:8847" name="Tick" x="0" y="96" width="6" height="1" />
+        <rounded-rectangle id="217:8848" name="Tick" x="0" y="104" width="6" height="1" />
+        <rounded-rectangle id="217:8849" name="Tick" x="0" y="112" width="6" height="1" />
+        <rounded-rectangle id="217:8850" name="Tick" x="0" y="120" width="10" height="1" />
+        <rounded-rectangle id="217:8851" name="Tick" x="0" y="128" width="6" height="1" />
+        <rounded-rectangle id="217:8852" name="Tick" x="0" y="136" width="6" height="1" />
+        <rounded-rectangle id="217:8853" name="Tick" x="0" y="144" width="6" height="1" />
+        <rounded-rectangle id="217:8854" name="Tick" x="0" y="152" width="6" height="1" />
+        <rounded-rectangle id="217:8855" name="Tick" x="0" y="160" width="16" height="1" />
+        <rounded-rectangle id="217:8856" name="Tick" x="0" y="168" width="6" height="1" />
+        <rounded-rectangle id="217:8857" name="Tick" x="0" y="176" width="6" height="1" />
+        <rounded-rectangle id="217:8858" name="Tick" x="0" y="184" width="6" height="1" />
+        <rounded-rectangle id="217:8859" name="Tick" x="0" y="192" width="6" height="1" />
+        <rounded-rectangle id="217:8860" name="Tick" x="0" y="200" width="10" height="1" />
+        <rounded-rectangle id="217:8861" name="Tick" x="0" y="208" width="6" height="1" />
+        <rounded-rectangle id="217:8862" name="Tick" x="0" y="216" width="6" height="1" />
+        <rounded-rectangle id="217:8863" name="Tick" x="0" y="224" width="6" height="1" />
+        <rounded-rectangle id="217:8864" name="Tick" x="0" y="232" width="6" height="1" />
+        <rounded-rectangle id="217:8865" name="Tick" x="0" y="240" width="16" height="1" />
+        <rounded-rectangle id="217:8866" name="Tick" x="0" y="248" width="6" height="1" />
+        <rounded-rectangle id="217:8867" name="Tick" x="0" y="256" width="6" height="1" />
+        <rounded-rectangle id="217:8868" name="Tick" x="0" y="264" width="6" height="1" />
+        <rounded-rectangle id="217:8869" name="Tick" x="0" y="272" width="6" height="1" />
+        <rounded-rectangle id="217:8870" name="Tick" x="0" y="280" width="10" height="1" />
+        <rounded-rectangle id="217:8871" name="Tick" x="0" y="288" width="6" height="1" />
+        <rounded-rectangle id="217:8872" name="Tick" x="0" y="296" width="6" height="1" />
+        <rounded-rectangle id="217:8873" name="Tick" x="0" y="304" width="6" height="1" />
+        <rounded-rectangle id="217:8874" name="Tick" x="0" y="312" width="6" height="1" />
+        <rounded-rectangle id="217:8875" name="Tick" x="0" y="320" width="16" height="1" />
+        <rounded-rectangle id="217:8876" name="Tick" x="0" y="328" width="6" height="1" />
+        <rounded-rectangle id="217:8877" name="Tick" x="0" y="336" width="6" height="1" />
+        <rounded-rectangle id="217:8878" name="Tick" x="0" y="344" width="6" height="1" />
+        <rounded-rectangle id="217:8879" name="Tick" x="0" y="352" width="6" height="1" />
+        <rounded-rectangle id="217:8880" name="Tick" x="0" y="360" width="10" height="1" />
+        <rounded-rectangle id="217:8881" name="Tick" x="0" y="368" width="6" height="1" />
+        <rounded-rectangle id="217:8882" name="Tick" x="0" y="376" width="6" height="1" />
+        <rounded-rectangle id="217:8883" name="Tick" x="0" y="384" width="6" height="1" />
+        <rounded-rectangle id="217:8884" name="Tick" x="0" y="392" width="6" height="1" />
+        <rounded-rectangle id="217:8885" name="Tick" x="0" y="400" width="16" height="1" />
+        <rounded-rectangle id="217:8886" name="Tick" x="0" y="408" width="6" height="1" />
+        <rounded-rectangle id="217:8887" name="Tick" x="0" y="416" width="6" height="1" />
+        <rounded-rectangle id="217:8888" name="Tick" x="0" y="424" width="6" height="1" />
+        <rounded-rectangle id="217:8889" name="Tick" x="0" y="432" width="6" height="1" />
+        <rounded-rectangle id="217:8890" name="Tick" x="0" y="440" width="10" height="1" />
+        <rounded-rectangle id="217:8891" name="Tick" x="0" y="448" width="6" height="1" />
+        <rounded-rectangle id="217:8892" name="Tick" x="0" y="456" width="6" height="1" />
+        <rounded-rectangle id="217:8893" name="Tick" x="0" y="464" width="6" height="1" />
+        <rounded-rectangle id="217:8894" name="Tick" x="0" y="472" width="6" height="1" />
+        <rounded-rectangle id="217:8895" name="Tick" x="0" y="480" width="16" height="1" />
+        <rounded-rectangle id="217:8896" name="Tick" x="0" y="488" width="6" height="1" />
+        <rounded-rectangle id="217:8897" name="Tick" x="0" y="496" width="6" height="1" />
+        <rounded-rectangle id="217:8898" name="Tick" x="0" y="504" width="6" height="1" />
+        <rounded-rectangle id="217:8899" name="Tick" x="0" y="512" width="6" height="1" />
+        <rounded-rectangle id="217:8900" name="Tick" x="0" y="520" width="10" height="1" />
+        <rounded-rectangle id="217:8901" name="Tick" x="0" y="528" width="6" height="1" />
+        <rounded-rectangle id="217:8902" name="Tick" x="0" y="536" width="6" height="1" />
+        <rounded-rectangle id="217:8903" name="Tick" x="0" y="544" width="6" height="1" />
+        <rounded-rectangle id="217:8904" name="Tick" x="0" y="552" width="6" height="1" />
+        <rounded-rectangle id="217:8905" name="Tick" x="0" y="560" width="16" height="1" />
+        <rounded-rectangle id="217:8906" name="Tick" x="0" y="568" width="6" height="1" />
+        <rounded-rectangle id="217:8907" name="Tick" x="0" y="576" width="6" height="1" />
+        <rounded-rectangle id="217:8908" name="Tick" x="0" y="584" width="6" height="1" />
+        <rounded-rectangle id="217:8909" name="Tick" x="0" y="592" width="6" height="1" />
+        <rounded-rectangle id="217:8910" name="Tick" x="0" y="600" width="10" height="1" />
+        <rounded-rectangle id="217:8911" name="Tick" x="0" y="608" width="6" height="1" />
+        <rounded-rectangle id="217:8912" name="Tick" x="0" y="616" width="6" height="1" />
+        <rounded-rectangle id="217:8913" name="Tick" x="0" y="624" width="6" height="1" />
+        <rounded-rectangle id="217:8914" name="Tick" x="0" y="632" width="6" height="1" />
+        <rounded-rectangle id="217:8915" name="Tick" x="0" y="640" width="16" height="1" />
+        <rounded-rectangle id="217:8916" name="Tick" x="0" y="648" width="6" height="1" />
+        <rounded-rectangle id="217:8917" name="Tick" x="0" y="656" width="6" height="1" />
+        <rounded-rectangle id="217:8918" name="Tick" x="0" y="664" width="6" height="1" />
+        <rounded-rectangle id="217:8919" name="Tick" x="0" y="672" width="6" height="1" />
+        <rounded-rectangle id="217:8920" name="Tick" x="0" y="680" width="10" height="1" />
+        <rounded-rectangle id="217:8921" name="Tick" x="0" y="688" width="6" height="1" />
+        <rounded-rectangle id="217:8922" name="Tick" x="0" y="696" width="6" height="1" />
+        <rounded-rectangle id="217:8923" name="Tick" x="0" y="704" width="6" height="1" />
+      </frame>
+    </frame>
+    <instance id="217:8924" name="Footer / Desktop" x="0" y="4553" width="1280" height="557" />
+  </frame>
+  <frame id="217:11645" name="Mobile — Results (390)" x="1400" y="0" width="390" height="5924">
+    <instance id="217:11646" name="Header / Mobile (Light)" x="0" y="0" width="390" height="64" />
+    <frame id="217:11663" name="Hero" x="0" y="64" width="390" height="448">
+      <frame id="217:11677" name="Blueprint grid (full bleed, 40px)" x="0" y="0" width="390" height="448">
+        <rounded-rectangle id="217:11678" name="Grid line V" x="0" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11679" name="Grid line V" x="40" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11680" name="Grid line V" x="80" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11681" name="Grid line V" x="120" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11682" name="Grid line V" x="160" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11683" name="Grid line V" x="200" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11684" name="Grid line V" x="240" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11685" name="Grid line V" x="280" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11686" name="Grid line V" x="320" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11687" name="Grid line V" x="360" y="0" width="1" height="448" />
+        <rounded-rectangle id="217:11688" name="Grid line H" x="0" y="0" width="390" height="1" />
+        <rounded-rectangle id="217:11689" name="Grid line H" x="0" y="40" width="390" height="1" />
+        <rounded-rectangle id="217:11690" name="Grid line H" x="0" y="80" width="390" height="1" />
+        <rounded-rectangle id="217:11691" name="Grid line H" x="0" y="120" width="390" height="1" />
+        <rounded-rectangle id="217:11692" name="Grid line H" x="0" y="160" width="390" height="1" />
+        <rounded-rectangle id="217:11693" name="Grid line H" x="0" y="200" width="390" height="1" />
+        <rounded-rectangle id="217:11694" name="Grid line H" x="0" y="240" width="390" height="1" />
+        <rounded-rectangle id="217:11695" name="Grid line H" x="0" y="280" width="390" height="1" />
+        <rounded-rectangle id="217:11696" name="Grid line H" x="0" y="320" width="390" height="1" />
+        <rounded-rectangle id="217:11697" name="Grid line H" x="0" y="360" width="390" height="1" />
+        <rounded-rectangle id="217:11698" name="Grid line H" x="0" y="400" width="390" height="1" />
+        <rounded-rectangle id="217:11699" name="Grid line H" x="0" y="440" width="390" height="1" />
+      </frame>
+      <frame id="217:11664" name="Eyebrow" x="20" y="32" width="83" height="16">
+        <rounded-rectangle id="217:11665" name="Eyebrow rule" x="0" y="7.5" width="24" height="1" />
+        <text id="217:11666" name="Eyebrow / Results" x="36" y="0" width="47" height="16" />
+      </frame>
+      <text id="217:11667" name="H1" x="20" y="68" width="350" height="192" />
+      <frame id="217:11668" name="CTAs" x="20" y="280" width="350" height="128">
+        <instance id="217:11669" name="Button / Schedule a Free Review" x="0" y="4" width="350" height="56" />
+        <instance id="217:11673" name="Button / Call (916) 507-1005" x="0" y="72" width="350" height="56" />
+      </frame>
+      <frame id="217:11700" name="Ruler ticks (bottom edge)" x="0" y="432" width="390" height="16">
+        <rounded-rectangle id="217:11701" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:11702" name="Tick" x="8" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11703" name="Tick" x="16" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11704" name="Tick" x="24" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11705" name="Tick" x="32" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11706" name="Tick" x="40" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:11707" name="Tick" x="48" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11708" name="Tick" x="56" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11709" name="Tick" x="64" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11710" name="Tick" x="72" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11711" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:11712" name="Tick" x="88" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11713" name="Tick" x="96" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11714" name="Tick" x="104" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11715" name="Tick" x="112" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11716" name="Tick" x="120" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:11717" name="Tick" x="128" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11718" name="Tick" x="136" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11719" name="Tick" x="144" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11720" name="Tick" x="152" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11721" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:11722" name="Tick" x="168" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11723" name="Tick" x="176" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11724" name="Tick" x="184" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11725" name="Tick" x="192" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11726" name="Tick" x="200" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:11727" name="Tick" x="208" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11728" name="Tick" x="216" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11729" name="Tick" x="224" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11730" name="Tick" x="232" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11731" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:11732" name="Tick" x="248" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11733" name="Tick" x="256" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11734" name="Tick" x="264" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11735" name="Tick" x="272" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11736" name="Tick" x="280" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:11737" name="Tick" x="288" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11738" name="Tick" x="296" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11739" name="Tick" x="304" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11740" name="Tick" x="312" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11741" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="217:11742" name="Tick" x="328" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11743" name="Tick" x="336" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11744" name="Tick" x="344" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11745" name="Tick" x="352" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11746" name="Tick" x="360" y="6" width="1" height="10" />
+        <rounded-rectangle id="217:11747" name="Tick" x="368" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11748" name="Tick" x="376" y="10" width="1" height="6" />
+        <rounded-rectangle id="217:11749" name="Tick" x="384" y="10" width="1" height="6" />
+      </frame>
+    </frame>
+    <frame id="217:11750" name="Results ledger" x="0" y="512" width="390" height="2340">
+      <frame id="217:11751" name="Ledger key" x="20" y="32" width="350" height="66">
+        <frame id="217:11752" name="Key row" x="0" y="0" width="182" height="26">
+          <text id="217:11753" name="Key / Offer (struck)" x="0" y="0" width="41" height="26" />
+          <rounded-rectangle id="217:11754" name="Key rule" x="53" y="12.5" width="24" height="1" />
+          <text id="217:11755" name="Key / Settlement" x="89" y="0" width="93" height="26" />
+        </frame>
+        <text id="217:11756" name="Key / Offer note" x="0" y="34" width="350" height="16" />
+      </frame>
+      <rounded-rectangle id="217:11757" name="Hairline" x="20" y="98" width="350" height="1" />
+      <frame id="217:11758" name="Result / Palisades fire, home." x="20" y="99" width="350" height="506">
+        <frame id="217:11759" name="Strip" x="0" y="24" width="350" height="180">
+          <instance id="217:11760" name="Photo / ai-rebuilt-home" x="0" y="0" width="144" height="180" />
+          <frame id="217:11763" name="Loss and offer" x="160" y="0" width="190" height="116">
+            <frame id="217:11764" name="Loss" x="0" y="0" width="190" height="52">
+              <frame id="217:11765" name="Icon circle / flame" x="0" y="6" width="40" height="40">
+                <instance id="217:11766" name="Icon / flame" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:11769" name="Loss / Palisades fire, home." x="52" y="0" width="138" height="52" />
+            </frame>
+            <frame id="217:11770" name="Offer" x="0" y="60" width="190" height="56">
+              <text id="217:11771" name="Label / Offer" x="0" y="0" width="33" height="16" />
+              <text id="217:11772" name="Offer value" x="0" y="20" width="126" height="36" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="217:11773" name="Settlement" x="0" y="236" width="350" height="124">
+          <text id="217:11774" name="Label / Settlement" x="0" y="0" width="72" height="16" />
+          <frame id="217:11775" name="Figure line" x="0" y="20" width="273" height="64">
+            <text id="217:11776" name="Figure / $276,000" x="0" y="0" width="273" height="64" />
+          </frame>
+          <text id="217:11777" name="Results disclaimer" x="0" y="88" width="350" height="36" />
+        </frame>
+        <frame id="217:11778" name="Difference" x="0" y="392" width="350" height="82">
+          <text id="217:11779" name="Label / What made the difference" x="18" y="0" width="332" height="26" />
+          <text id="217:11780" name="Note" x="18" y="30" width="332" height="52" />
+        </frame>
+      </frame>
+      <rounded-rectangle id="217:11781" name="Hairline" x="20" y="605" width="350" height="1" />
+      <frame id="217:11782" name="Result / Smoke, home." x="20" y="606" width="350" height="564">
+        <frame id="217:11783" name="Strip" x="0" y="24" width="350" height="180">
+          <instance id="217:11784" name="Photo / smoke-corner" x="0" y="0" width="144" height="180" />
+          <frame id="217:11787" name="Loss and offer" x="160" y="0" width="190" height="104">
+            <frame id="217:11788" name="Loss" x="0" y="0" width="190" height="40">
+              <frame id="217:11789" name="Icon circle / home" x="0" y="0" width="40" height="40">
+                <instance id="217:11790" name="Icon / home" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:11793" name="Loss / Smoke, home." x="52" y="7" width="138" height="26" />
+            </frame>
+            <frame id="217:11794" name="Offer" x="0" y="48" width="190" height="56">
+              <text id="217:11795" name="Label / Offer" x="0" y="0" width="33" height="16" />
+              <text id="217:11796" name="Offer value" x="0" y="20" width="112" height="36" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="217:11797" name="Settlement" x="0" y="236" width="350" height="156">
+          <text id="217:11798" name="Label / Settlement" x="0" y="0" width="72" height="16" />
+          <text id="217:11799" name="Figure word / about" x="0" y="20" width="61" height="28" />
+          <frame id="217:11800" name="Figure line" x="0" y="52" width="295" height="64">
+            <text id="217:11801" name="Figure / $1.1 million" x="0" y="0" width="295" height="64" />
+          </frame>
+          <text id="217:11802" name="Results disclaimer" x="0" y="120" width="350" height="36" />
+        </frame>
+        <frame id="217:11803" name="Difference" x="0" y="424" width="350" height="108">
+          <text id="217:11804" name="Label / What made the difference" x="18" y="0" width="332" height="26" />
+          <text id="217:11805" name="Note" x="18" y="30" width="332" height="78" />
+        </frame>
+      </frame>
+      <rounded-rectangle id="217:11806" name="Hairline" x="20" y="1170" width="350" height="1" />
+      <frame id="217:11807" name="Result / Fire, estate." x="20" y="1171" width="350" height="548">
+        <frame id="217:11808" name="Strip" x="0" y="24" width="350" height="180">
+          <instance id="217:11809" name="Photo / private-library-wine" x="0" y="0" width="144" height="180" />
+          <frame id="217:11812" name="Loss and offer" x="160" y="0" width="190" height="120">
+            <frame id="217:11813" name="Loss" x="0" y="0" width="190" height="40">
+              <frame id="217:11814" name="Icon circle / document" x="0" y="0" width="40" height="40">
+                <instance id="217:11815" name="Icon / document" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:11818" name="Loss / Fire, estate." x="52" y="7" width="138" height="26" />
+            </frame>
+            <frame id="217:11819" name="Offer" x="0" y="48" width="190" height="72">
+              <text id="217:11820" name="Label / Offer" x="0" y="0" width="33" height="16" />
+              <text id="217:11821" name="Offer value" x="0" y="20" width="190" height="52" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="217:11822" name="Settlement" x="0" y="236" width="350" height="192">
+          <text id="217:11823" name="Label / Settlement" x="0" y="0" width="72" height="16" />
+          <frame id="217:11824" name="Figure line" x="0" y="20" width="288" height="64">
+            <text id="217:11825" name="Figure / $11M" x="0" y="0" width="136" height="64" />
+            <text id="217:11826" name="Figure word / structure and" x="148" y="33" width="140" height="28" />
+          </frame>
+          <frame id="217:11827" name="Figure line" x="0" y="88" width="284" height="64">
+            <text id="217:11828" name="Figure / $5.2M" x="0" y="0" width="181" height="64" />
+            <text id="217:11829" name="Figure word / contents" x="193" y="33" width="91" height="28" />
+          </frame>
+          <text id="217:11830" name="Results disclaimer" x="0" y="156" width="350" height="36" />
+        </frame>
+        <frame id="217:11831" name="Difference" x="0" y="460" width="350" height="56">
+          <text id="217:11832" name="Label / What made the difference" x="18" y="0" width="332" height="26" />
+          <text id="217:11833" name="Note" x="18" y="30" width="332" height="26" />
+        </frame>
+      </frame>
+      <rounded-rectangle id="217:11834" name="Hairline" x="20" y="1719" width="350" height="1" />
+      <frame id="217:11835" name="Result / Apartment fire, 800 sq ft." x="20" y="1720" width="350" height="564">
+        <frame id="217:11836" name="Strip" x="0" y="24" width="350" height="180">
+          <instance id="217:11837" name="Photo / gym-ruin" x="0" y="0" width="144" height="180" />
+          <frame id="217:11840" name="Loss and offer" x="160" y="0" width="190" height="52">
+            <frame id="217:11841" name="Loss" x="0" y="0" width="190" height="52">
+              <frame id="217:11842" name="Icon circle / building" x="0" y="6" width="40" height="40">
+                <instance id="217:11843" name="Icon / building" x="8" y="8" width="24" height="24" />
+              </frame>
+              <text id="217:11845" name="Loss / Apartment fire, 800 sq ft." x="52" y="0" width="138" height="52" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="217:11846" name="Settlement" x="0" y="236" width="350" height="156">
+          <text id="217:11847" name="Label / Settlement" x="0" y="0" width="72" height="16" />
+          <text id="217:11848" name="Figure word / nearly" x="0" y="20" width="66" height="28" />
+          <frame id="217:11849" name="Figure line" x="0" y="52" width="282" height="64">
+            <text id="217:11850" name="Figure / $200,000" x="0" y="0" width="282" height="64" />
+          </frame>
+          <text id="217:11851" name="Results disclaimer" x="0" y="120" width="350" height="36" />
+        </frame>
+        <frame id="217:11852" name="Difference" x="0" y="424" width="350" height="108">
+          <text id="217:11853" name="Label / What made the difference" x="18" y="0" width="332" height="26" />
+          <text id="217:11854" name="Note" x="18" y="30" width="332" height="78" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="217:12055" name="Result / Garage fire, total loss (navy)" x="0" y="2852" width="390" height="651">
+      <instance id="217:12056" name="Logo / Mark / White (faint)" x="226.58950805664062" y="395" width="263.5653076171875" height="320" />
+      <frame id="217:12061" name="Loss strip" x="20" y="56" width="249" height="26">
+        <rounded-rectangle id="217:12062" name="Tagline rule" x="0" y="12.5" width="24" height="1" />
+        <text id="217:12063" name="Loss / Garage fire, total loss." x="36" y="0" width="177" height="26" />
+        <rounded-rectangle id="217:12064" name="Tagline rule" x="225" y="12.5" width="24" height="1" />
+      </frame>
+      <frame id="217:12065" name="Offer" x="20" y="106" width="350" height="56">
+        <text id="217:12066" name="Label / Offer" x="0" y="0" width="33" height="16" />
+        <text id="217:12067" name="Offer value" x="0" y="20" width="103" height="36" />
+      </frame>
+      <frame id="217:12068" name="Result" x="20" y="186" width="350" height="156">
+        <text id="217:12069" name="Label / Result" x="0" y="0" width="41" height="16" />
+        <text id="217:12070" name="Result value" x="0" y="20" width="350" height="96" />
+        <text id="217:12071" name="Results disclaimer" x="0" y="120" width="350" height="36" />
+      </frame>
+      <rounded-rectangle id="217:12072" name="Hairline" x="20" y="366" width="350" height="1" />
+      <frame id="217:12073" name="Difference head" x="20" y="391" width="274" height="40">
+        <frame id="217:12074" name="Icon circle / search" x="0" y="0" width="40" height="40">
+          <instance id="217:12075" name="Icon / search" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="217:12078" name="Label / What made the difference" x="52" y="7" width="222" height="26" />
+      </frame>
+      <text id="217:12079" name="Note" x="20" y="455" width="350" height="52" />
+      <frame id="217:12080" name="Statement" x="20" y="531" width="350" height="56">
+        <text id="217:12081" name="Note / statement" x="18" y="0" width="332" height="56" />
+      </frame>
+    </frame>
+    <frame id="217:12082" name="Disclaimer and CTA" x="0" y="3503" width="390" height="668">
+      <frame id="217:12083" name="Section mark" x="20" y="56" width="73" height="40">
+        <frame id="217:12084" name="Icon circle / document" x="0" y="0" width="40" height="40">
+          <instance id="217:12085" name="Icon / document" x="8" y="8" width="24" height="24" />
+        </frame>
+        <text id="217:12088" name="Section mark" x="52" y="2" width="21" height="36" />
+      </frame>
+      <text id="217:12089" name="Results disclaimer (full)" x="20" y="120" width="350" height="112" />
+      <rounded-rectangle id="217:12090" name="Hairline" x="20" y="256" width="350" height="1" />
+      <frame id="217:12091" name="CTA / Offered too little" x="20" y="281" width="350" height="112">
+        <text id="217:12092" name="CTA heading" x="0" y="0" width="350" height="36" />
+        <instance id="217:12093" name="Button / Schedule a Free Review" x="0" y="56" width="350" height="56" />
+      </frame>
+      <frame id="217:12097" name="Trust ledger" x="20" y="417" width="350" height="187">
+        <frame id="217:12098" name="Fact / No upfront cost" x="0" y="8" width="350" height="51">
+          <instance id="217:12099" name="Icon / check" x="0" y="14" width="24" height="24" />
+          <text id="217:12101" name="No upfront cost" x="36" y="13" width="314" height="26" />
+        </frame>
+        <frame id="217:12102" name="Fact / You always have final sa" x="0" y="59" width="350" height="77">
+          <instance id="217:12103" name="Icon / shield" x="0" y="27" width="24" height="24" />
+          <text id="217:12106" name="You always have final say on" x="36" y="13" width="314" height="52" />
+        </frame>
+        <frame id="217:12107" name="Fact / CA License No. 2B60428" x="0" y="136" width="350" height="51">
+          <instance id="217:12108" name="Icon / document" x="0" y="14" width="24" height="24" />
+          <text id="217:12111" name="CA License No. 2B60428" x="36" y="13" width="314" height="26" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="217:12112" name="Final CTA" x="0" y="4171" width="390" height="900">
+      <instance id="217:12113" name="Photo / onsite-adjuster" x="0" y="0" width="390" height="360" />
+      <frame id="217:12116" name="Final CTA content" x="0" y="360" width="390" height="540">
+        <text id="217:12117" name="Final CTA H2" x="20" y="40" width="350" height="72" />
+        <text id="217:12118" name="Final CTA body" x="20" y="132" width="350" height="78" />
+        <frame id="217:12119" name="CTAs" x="20" y="230" width="350" height="128">
+          <instance id="217:12120" name="Button / Schedule a Free Review" x="0" y="4" width="350" height="56" />
+          <instance id="217:12124" name="Button / Call (916) 507-1005" x="0" y="72" width="350" height="56" />
+        </frame>
+        <frame id="217:12128" name="Fee and representation" x="20" y="378" width="350" height="98">
+          <frame id="217:12129" name="Fact / No upfront cost. We&#39;re p" x="0" y="8" width="350" height="52">
+            <instance id="217:12130" name="Icon / document" x="0" y="0" width="24" height="24" />
+            <text id="217:12133" name="No upfront cost. We&#39;re paid " x="36" y="0" width="314" height="52" />
+          </frame>
+          <frame id="217:12134" name="Fact / We represent the insured" x="0" y="72" width="350" height="26">
+            <instance id="217:12135" name="Icon / shield" x="0" y="0" width="24" height="24" />
+            <text id="217:12138" name="We represent the insured onl" x="36" y="0" width="314" height="26" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <instance id="217:12139" name="Footer / Mobile" x="0" y="5071" width="390" height="853" />
+    <instance id="217:12175" name="Mobile call bar" x="0" y="756" width="390" height="89" />
+  </frame>
+</canvas>

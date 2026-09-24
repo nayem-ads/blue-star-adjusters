@@ -1,0 +1,24 @@
+---
+// Wildfire / Two claims (desktop 234:1100 1280×540, mobile 234:1366 390×456). Paper band: § 01 + total loss vs standing home.
+// Mobile tracking per item keeps Figma's line breaks (browser text runs ~1% wider than Figma's at 22px).
+import Chip from '../commercial/Chip.astro';
+import Circle from '../commercial/Circle.astro';
+
+const items = [
+  { icon: 'flame', b: 'Total loss:', t: ' the question is the rebuild number, code upgrades, debris removal, and if your limits are enough.', tr: 'tracking-[-0.01em]', d: ['234:1153', '234:1154', '234:1156'], m: ['234:1399', '234:1400', '234:1402'] },
+  { icon: 'home', b: 'Standing home:', t: ' the question is smoke, ash, and whether the house is truly fit to live in.', tr: 'tracking-[-0.015em]', d: ['234:1157', '234:1158', '234:1160'], m: ['234:1403', '234:1404', '234:1406'] },
+];
+---
+<section aria-label="Two different claims" class="bg-paper" data-node="234:1100" data-node-m="234:1366">
+  <div class="max-w-[1280px] mx-auto flex flex-col items-start gap-[32px] px-[20px] pt-[64px] pb-[56px] lg:gap-[48px] lg:px-[80px] lg:py-[120px]">
+    <div class="flex w-full" data-node-m="234:1367"><Chip node="234:1102" nodeM="234:1368" textNode="234:1103" textNodeM="234:1369">§ 01</Chip></div>
+    <ul class="m-0 p-0 list-none w-full flex flex-col lg:flex-row lg:gap-[48px] lg:h-[224px]" data-node="234:1152" data-node-m="234:1398">
+      {items.map((it) => (
+        <li class="flex items-center gap-[16px] py-[20px] border-t border-line lg:flex-1 lg:min-w-0 lg:flex-col lg:items-start lg:gap-[24px] lg:py-[32px]" data-node={it.d[0]} data-node-m={it.m[0]}>
+          <Circle icon={it.icon} node={it.d[1]} nodeM={it.m[1]} />
+          <p class:list={[it.tr, 'relative top-[1px] lg:top-0 m-0 flex-1 min-w-0 font-display text-[22px] leading-[28px] lg:tracking-[-0.01em] text-ink lg:flex-none lg:w-full lg:h-[95px] lg:text-[28px] lg:leading-[34px]']} data-node={it.d[2]} data-node-m={it.m[2]}><strong class="font-bold">{it.b}</strong>{it.t}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

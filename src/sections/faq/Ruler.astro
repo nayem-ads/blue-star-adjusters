@@ -1,0 +1,24 @@
+---
+// Ruler ticks as used on FAQ (217:799, 217:7644, 217:10826, 217:11339) and First 48 (217:5661, 217:6694, 217:9431, 217:9854).
+// A 1px tick every 8px (6px long), every 40px 10px long, every 80px 16px long. No base line.
+// orient 'h': ticks hang from the top (anchor 'top') or stand on the bottom (anchor 'bottom'); orient 'v': ticks grow from the left.
+// Colour and opacity via class (text-* sets the tick colour, opacity-[..] the layer opacity). Size/position via class.
+interface Props { orient?: 'h' | 'v'; anchor?: 'top' | 'bottom'; class?: string; node?: string; nodeM?: string }
+const { orient = 'h', anchor = 'top', class: cls = '', node, nodeM } = Astro.props;
+---
+<div aria-hidden="true" class:list={['bs-ruler48 pointer-events-none', orient === 'v' ? 'bs-ruler48--v' : anchor === 'bottom' ? 'bs-ruler48--b' : 'bs-ruler48--t', cls]} data-node={node} data-node-m={nodeM}></div>
+<style is:global>
+  .bs-ruler48 { --t: currentColor; background-repeat: repeat-x; }
+  .bs-ruler48--t, .bs-ruler48--b {
+    background-image: linear-gradient(to right, var(--t) 1px, transparent 1px), linear-gradient(to right, var(--t) 1px, transparent 1px), linear-gradient(to right, var(--t) 1px, transparent 1px);
+    background-size: 80px 16px, 40px 10px, 8px 6px;
+  }
+  .bs-ruler48--t { background-position: left top, left top, left top; }
+  .bs-ruler48--b { background-position: left bottom, left bottom, left bottom; }
+  .bs-ruler48--v {
+    background-repeat: repeat-y;
+    background-image: linear-gradient(to bottom, var(--t) 1px, transparent 1px), linear-gradient(to bottom, var(--t) 1px, transparent 1px), linear-gradient(to bottom, var(--t) 1px, transparent 1px);
+    background-size: 16px 80px, 10px 40px, 6px 8px;
+    background-position: left top, left top, left top;
+  }
+</style>

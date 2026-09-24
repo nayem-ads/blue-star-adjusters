@@ -1,0 +1,11 @@
+---
+// Photo slot for First 48 Hours. The photos sit inside Figma "Photo /" instances (I217:5627;41:71, I217:9420;41:71,
+// I217:6682;41:71, I217:9842;41:71) that the Phase 0 image export missed. Renders <Img> once the node is in
+// src/data/images.json; until then a paper placeholder of the same size keeps the layout exact.
+import Img from '../../components/Img.astro';
+import images from '../../data/images.json';
+interface Props { node: string; alt: string; class?: string; priority?: boolean }
+const { node, alt, class: cls = '', priority = false } = Astro.props;
+const has = node in (images as Record<string, unknown>);
+---
+{has ? <Img node={node} alt={alt} class={cls} priority={priority} /> : <div role="img" aria-label={alt} class:list={['bg-line', cls]}></div>}

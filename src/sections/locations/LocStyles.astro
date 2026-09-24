@@ -1,0 +1,43 @@
+---
+// Page-level styles for /locations/ (Figma desktop 217:961, mobile 217:10664).
+---
+<style is:global>
+  @media (max-width: 1023.98px) {
+    .bs-locations :where(.tm-body, .tm-body-strong, .tm-h2, .tm-h3, .tm-display, .bs-btn__label) { position: relative; top: 1px; }
+  }
+
+  @layer theme, base, components, utilities;
+  @layer components {
+  /* Desktop hero blueprint grid (217:1033): navy minor lines every 40px at 5 %, major every 200px at 10 %.
+     Minor lines skip the major positions, like the Figma layers, so crossings never double up. */
+  .lc-grid {
+    --mi: rgb(8 29 94 / .05); --ma: rgb(8 29 94 / .10);
+    background:
+      linear-gradient(to right, var(--ma) 0 1px, transparent 1px) 0 0 / 200px 100%,
+      linear-gradient(to bottom, var(--ma) 0 1px, transparent 1px) 0 0 / 100% 200px,
+      linear-gradient(to right, transparent 40px, var(--mi) 40px 41px, transparent 41px 80px, var(--mi) 80px 81px, transparent 81px 120px, var(--mi) 120px 121px, transparent 121px 160px, var(--mi) 160px 161px, transparent 161px) 0 0 / 200px 100%,
+      linear-gradient(to bottom, transparent 40px, var(--mi) 40px 41px, transparent 41px 80px, var(--mi) 80px 81px, transparent 81px 120px, var(--mi) 120px 121px, transparent 121px 160px, var(--mi) 160px 161px, transparent 161px) 0 0 / 100% 200px;
+  }
+
+  /* Ruler ticks: 1px navy every 8px (6 tall), every 40px 10 tall, every 80px 16 tall. */
+  .lc-ruler {
+    height: 16px; pointer-events: none;
+    background:
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 80px 16px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 40px 10px repeat-x,
+      linear-gradient(to right, var(--color-navy) 1px, transparent 1px) 0 0 / 8px 6px repeat-x;
+  }
+  .lc-ruler--up {
+    background-position: 0 100%, 0 100%, 0 100%;
+  }
+
+  /* Office photo scrim: navy tint at 90 %, luminance-masked ramp over the lower half of the photo. */
+  .lc-scrim { background: linear-gradient(to bottom, rgb(8 29 94 / .08) 0%, rgb(8 29 94 / .9) 55.5%, rgb(8 29 94 / .9) 100%); }
+
+  .lc-link { text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1.5px; text-underline-offset: 4px; transition: text-decoration-color .15s ease, color .15s ease; border-radius: 2px; }
+  .lc-link:hover, .lc-link:focus-visible { text-decoration-color: currentColor; color: var(--color-royal); }
+  .lc-card:hover .lc-card__img { transform: scale(1.03); }
+  .lc-card__img { transition: transform .4s ease; }
+  @media (prefers-reduced-motion: reduce) { .lc-card:hover .lc-card__img { transform: none; } }
+  }
+</style>

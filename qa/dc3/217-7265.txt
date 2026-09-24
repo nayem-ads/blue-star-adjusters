@@ -1,0 +1,55 @@
+export default function SectionWhoCallsUsTypographicList() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex flex-col gap-[56px] items-start px-[80px] py-[120px] relative size-full" data-node-id="217:7265" data-name="Section / Who calls us (typographic list)">
+      <div className="[word-break:break-word] content-stretch flex font-semibold gap-[24px] items-end overflow-clip relative shrink-0 w-full" data-node-id="217:7266" data-name="Heading row">
+        <p className="font-['Montserrat:SemiBold'] leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] w-[264px]" data-node-id="217:7267">
+          § 01
+        </p>
+        <p className="font-['Schibsted_Grotesk:SemiBold'] leading-[54px] relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.72px] whitespace-nowrap" data-node-id="217:7268">
+          Who calls us
+        </p>
+      </div>
+      <div className="border-[var(--color\/line,#d9dfee)] border-solid border-t content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="217:7269" data-annotations="\[CLIENT: confirm\] true of Blue Star's own clients, not the prior firm's (CD 525). Keep and flag.;Who calls us (V), CD 525. Split from one sentence into a list; items set in sentence case. Edited from: 'high-net-worth'." data-name="Client type list">
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex items-center justify-between overflow-clip py-[24px] relative shrink-0 w-full" data-node-id="217:7270" data-name="Row / Technology executives">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[48px] relative shrink-0 text-[40px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.6px] whitespace-nowrap" data-node-id="217:7271">
+            Technology executives
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex items-center justify-between overflow-clip pl-[288px] py-[24px] relative shrink-0 w-full" data-node-id="217:7272" data-name="Row / Private equity and finance partners">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:Medium'] font-medium leading-[48px] relative shrink-0 text-[40px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.6px] whitespace-nowrap" data-node-id="217:7273">
+            Private equity and finance partners
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex items-center justify-between overflow-clip py-[24px] relative shrink-0 w-full" data-node-id="217:7274" data-name="Row / Entertainment principals">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[48px] relative shrink-0 text-[40px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.6px] whitespace-nowrap" data-node-id="217:7275">
+            Entertainment principals
+          </p>
+        </div>
+        <div className="[word-break:break-word] border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex font-medium items-center justify-between overflow-clip pl-[288px] py-[24px] relative shrink-0 w-full" data-node-id="217:7276" data-name="Row / Law firm partners">
+          <p className="font-['Schibsted_Grotesk:Medium'] leading-[48px] relative shrink-0 text-[40px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.6px] whitespace-nowrap" data-node-id="217:7277">
+            Law firm partners
+          </p>
+          <p className="font-['Montserrat:Medium_Italic'] italic leading-[28px] relative shrink-0 text-[17px] text-[color:var(--color\/ink,#070f33)] w-[392px]" data-node-id="217:7278">
+            “the professionals hired to fix problems, who come to us to fix their own”
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex items-center justify-between overflow-clip py-[24px] relative shrink-0 w-full" data-node-id="217:7279" data-name="Row / Luxury home builders">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[48px] relative shrink-0 text-[40px] text-[color:var(--color\/ink,#070f33)] tracking-[-0.6px] whitespace-nowrap" data-node-id="217:7280">
+            Luxury home builders
+          </p>
+        </div>
+        <div className="border-[var(--color\/line,#d9dfee)] border-b border-solid content-stretch flex items-center justify-between overflow-clip pl-[288px] py-[24px] relative shrink-0 w-full" data-node-id="217:7281" data-name="Row / High net worth homeowners">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:Medium'] font-medium leading-[48px] relative shrink-0 text-[40px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.6px] whitespace-nowrap" data-node-id="217:7282">
+            High net worth homeowners
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

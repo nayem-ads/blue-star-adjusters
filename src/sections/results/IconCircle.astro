@@ -1,0 +1,7 @@
+---
+// Icon circle (40 or 48): 1px ring + 24px icon, centred. Colour via class (text-* + border-*).
+import Icon from '../../components/Icon.astro';
+interface Props { name: string; size?: number; class?: string; node?: string; nodeM?: string }
+const { name, size = 40, class: cls = 'border-navy text-navy bg-white', node, nodeM } = Astro.props;
+---
+<span aria-hidden="true" class:list={['flex items-center justify-center shrink-0 rounded-full border border-solid', cls]} style={`width:${size}px;height:${size}px`} data-node={node} data-node-m={nodeM}><Icon name={name} size={24} /></span>

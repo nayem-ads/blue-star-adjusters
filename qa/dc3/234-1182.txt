@@ -1,0 +1,80 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/30d7d764-73d5-4523-9157-246f09c5b5ab.svg";
+const imgMarkFaintB6 = "https://www.figma.com/api/mcp/asset/d2a358c4-5a8a-47e3-9830-8d1ef11da437.svg";
+
+function DetailCropMarks({ className }: { className?: string }) {
+  return (
+    <div className={className || "h-[160px] relative w-[240px]"} data-node-id="71:533" data-name="Detail/Crop marks">
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] left-0 top-0 w-[16px]" data-node-id="71:534" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] left-0 top-0 w-[1.5px]" data-node-id="71:535" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] right-0 top-0 w-[16px]" data-node-id="71:536" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] right-0 top-0 w-[1.5px]" data-node-id="71:537" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] left-0 w-[16px]" data-node-id="71:538" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] left-0 w-[1.5px]" data-node-id="71:539" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] right-0 w-[16px]" data-node-id="71:540" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] right-0 w-[1.5px]" data-node-id="71:541" data-name="Mark" />
+    </div>
+  );
+}
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:152">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionMarket() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex gap-[112px] items-start pb-[136px] pt-[120px] px-[80px] relative size-full" data-node-id="234:1182" data-annotations="\[LEGAL CHECK\] AB 1795 effective date not verified. Source: Claims Journal, 15 Sep 2026. Keep the line and flag." data-name="Section / Market">
+      <div className="absolute h-[560px] left-[818.76px] top-0 w-[461.239px]" data-node-id="234:1183" data-name="Mark / faint B (6%)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMarkFaintB6} />
+      </div>
+      <div className="content-stretch flex flex-col gap-[32px] items-start overflow-clip relative shrink-0 w-[360px]" data-node-id="234:1184" data-name="Rail">
+        <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="234:1185" data-name="Index chip">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="234:1186">
+            § 05
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] min-w-full relative shrink-0 text-[48px] text-[color:var(--color\/white,white)] tracking-[-0.72px] w-[min-content]" data-node-id="234:1187">
+          Where the market stands.
+        </p>
+        <Button className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+      </div>
+      <div className="h-[435px] relative shrink-0 w-[648px]" data-node-id="234:1189" data-name="Document holder">
+        <div className="absolute flex h-[239.629px] items-center justify-center left-[14.5px] top-[24px] w-[605.658px]" data-node-id="234:1190">
+          <div className="flex-none rotate-[1.5deg]">
+            <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex flex-col items-start overflow-clip p-[48px] relative rounded-[2px] shadow-[0px_24px_48px_0px_rgba(7,15,51,0.35)] w-[600px]" data-name="Law item / CDI">
+              <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[0] relative shrink-0 text-[0px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="234:1196" data-annotations="CD 394, keep and flag. \[LEGAL CHECK\] State Farm wording: review quarterly. Source: CDI release 019, May 2026.">
+                <span className="leading-[32px] text-[20px]">{`In May 2026 the California Department of Insurance alleged 398 violations in 114 of 220 State Farm wildfire claims its examiners reviewed. `}</span>
+                <span className="[text-underline-position:from-font] decoration-from-font decoration-solid leading-[32px] text-[20px] underline">These are allegations, not findings.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <DetailCropMarks className="absolute h-[395px] left-[8px] top-0 w-[632px]" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

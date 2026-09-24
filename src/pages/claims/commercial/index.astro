@@ -1,5 +1,28 @@
 ---
-// Noindex stub (components agent). Replace with the real page when it is designed.
-import StubPage from '../../../components/StubPage.astro';
+// Commercial Claims (Figma desktop 230:10208, mobile 230:10616). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../../layouts/Base.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CallBar from '../../../components/CallBar.astro';
+import Hero from '../../../sections/claims/Hero.astro';
+import Cta from '../../../sections/claims/Cta.astro';
+import Scope from '../../../sections/claims/commercial/Scope.astro';
+import List from '../../../sections/claims/commercial/List.astro';
+import Index from '../../../sections/claims/commercial/Index.astro';
+import { page, hero, scope, cta } from '../../../data/claims/commercial';
 ---
-<StubPage name="Commercial Claims" eyebrow="Claims" />
+<Base title={page.title} description={page.description}>
+  <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
+  <main class="bs-commercial bs-fit">
+    <Hero {...hero} />
+    <Scope {...scope} />
+    <List />
+    <Index />
+    <Cta {...cta} />
+  </main>
+  <div data-node={page.footer[0]} data-node-m={page.footer[1]}><Footer /></div>
+  <CallBar node={page.callBar} />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-commercial :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

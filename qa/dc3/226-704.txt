@@ -1,0 +1,80 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/0393c81b-2d03-4c04-90b8-c5cb0adc71e4.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/3222026d-04e0-4d7e-a9e7-40bbb0f343fe.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark" | "Outline on-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  const isOnDarkAndDefault = style === "On-dark" && state === "Default";
+  const isOutlineOnDarkAndDefault = style === "Outline on-dark" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] ${isOutlineOnDarkAndDefault ? String.raw`border-[1.5px] border-[var(--color\/white,white)] border-solid` : String.raw`bg-[var(--color\/white,white)]`}`} id={isOutlineOnDarkAndDefault ? "node-37_164" : "node-37_152"}>
+      {isOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      {isOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+          {label}
+        </p>
+      )}
+      {isOutlineOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:165" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+        </div>
+      )}
+      {isOutlineOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:167">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+export default function HeroContent() {
+  return (
+    <div className="content-stretch flex flex-col gap-[32px] items-start relative size-full" data-node-id="226:704" data-name="Hero content">
+      <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="226:705" data-name="Eyebrow">
+        <div className="bg-[var(--color\/white,white)] h-[2px] relative shrink-0 w-[24px]" data-node-id="I226:705;39:89" data-name="Rule" />
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="I226:705;39:90">
+          Residential Claims
+        </p>
+      </div>
+      <div className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[0] min-w-full relative shrink-0 text-[96px] text-[color:var(--color\/white,white)] tracking-[-2.88px] w-[min-content]" data-node-id="226:706" data-annotations="H1 (V), word for word. Line break is layout only.">
+        <p className="leading-[96px] mb-0">Your Home.</p>
+        <p className="leading-[96px]">Fully Recovered.</p>
+      </div>
+      <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/white,white)] w-[640px]" data-node-id="226:1395" data-annotations="Lead (V), word for word.">{`When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won't let the carrier set the scope.`}</p>
+      <div className="content-stretch flex gap-[16px] items-start overflow-clip relative shrink-0" data-node-id="226:707" data-name="Hero CTAs">
+        <Button className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+        <Button className="border-[1.5px] border-[var(--color\/white,white)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" label="Call (916) 507-1005" showIcon style="Outline on-dark" />
+      </div>
+      <div className="content-stretch flex gap-[20px] items-center overflow-clip pt-[8px] relative shrink-0" data-node-id="226:710" data-name="Trust line">
+        <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="226:711">
+          No upfront cost
+        </p>
+        <div className="bg-[var(--color\/white,white)] h-[16px] opacity-50 relative shrink-0 w-px" data-node-id="226:712" data-name="Divider" />
+        <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="226:713">
+          You always have final say on any settlement
+        </p>
+        <div className="bg-[var(--color\/white,white)] h-[16px] opacity-50 relative shrink-0 w-px" data-node-id="226:714" data-name="Divider" />
+        <p className="[word-break:break-word] font-['Montserrat:Medium'] font-medium leading-[24px] relative shrink-0 text-[15px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="226:715">
+          CA License No. 2B60428
+        </p>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Display XL: Font(family: "Schibsted Grotesk", style: Bold, size: 96, weight: 700, lineHeight: 96, letterSpacing: -3), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

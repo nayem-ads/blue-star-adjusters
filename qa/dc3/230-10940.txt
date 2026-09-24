@@ -1,0 +1,154 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/e2b5e28e-b0c5-4791-a858-89501e1013ed.svg";
+const imgImgAiBusinessInterruption = "https://www.figma.com/api/mcp/asset/a56b1951-f71d-484f-a2f1-46b9c5fd984b.png";
+const imgMarkFaintB6 = "https://www.figma.com/api/mcp/asset/53483873-f6df-45df-846c-356384123c4f.svg";
+const imgIconFlame = "https://www.figma.com/api/mcp/asset/1599ba16-91af-4024-80ad-1600e5380559.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/51d22f6b-3557-4043-8bd8-05a5cf12d39f.svg";
+const imgIconBuilding = "https://www.figma.com/api/mcp/asset/9c38d316-8fab-48aa-87eb-ddb302bd1f3f.svg";
+const imgIconSearch = "https://www.figma.com/api/mcp/asset/e3010ae3-f2cd-47ed-a307-68940298d248.svg";
+const imgIconRuler = "https://www.figma.com/api/mcp/asset/c2cd2048-ab64-4a8d-9074-4d3896fa997e.svg";
+const imgIconHome = "https://www.figma.com/api/mcp/asset/e53a5805-e8ac-4e81-8e80-93854b6cf0a6.svg";
+const imgIconShield = "https://www.figma.com/api/mcp/asset/7298b7ed-69b0-46df-acea-83654c7e2a3e.svg";
+const imgIconDocument = "https://www.figma.com/api/mcp/asset/319d0ed2-1949-4911-93fe-f44f099997e3.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:152">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function SectionCommercialList() {
+  return (
+    <div className="content-stretch flex items-start relative size-full" data-node-id="230:10940" data-name="Section / Commercial list">
+      <div className="relative self-stretch shrink-0 w-[544px]" data-node-id="230:10941" data-annotations="Alt text: Closed storefront with papered windows and a notice on the door.;AI illustrative. Replace with a real photo before launch." data-name="IMG:ai-business-interruption">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-full left-[-71.25%] max-w-none top-0 w-[242.5%]" src={imgImgAiBusinessInterruption} />
+        </div>
+      </div>
+      <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex flex-[1_0_0] flex-col gap-[40px] items-start min-w-px overflow-clip px-[80px] py-[120px] relative" data-node-id="230:10942" data-name="Panel / navy">
+        <div className="absolute h-[560px] left-[390.07px] top-[64px] w-[461.239px]" data-node-id="230:10943" data-name="Mark / faint B (6%)">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMarkFaintB6} />
+        </div>
+        <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="230:10948" data-name="Index chip">
+          <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="230:10949">
+            § 02
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="230:10950" data-annotations="Mike's eight-item commercial list (V), source: LIVE home page, fetched 24 Sep 2026 (fills CD 351). Changes from live: '&' to 'and', hyphens removed ('Dependent-property / contingent' to 'Dependent property and contingent'), 'Ordinance of law' to 'Ordinance or law'. Layout moves 9 (split screen) and 4 (ledger rows)." data-name="Ledger / Eight items">
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10951" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:10952" data-name="Row / Fire, water and structural losses">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:10953" data-name="Icon circle / flame">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:10954" data-name="Icon / flame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconFlame} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:10957">
+              Fire, water and structural losses
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10958" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:10959" data-name="Row / Business interruption and loss of income">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:10960" data-name="Icon circle / clock">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:10961" data-name="Icon / clock">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:10964">
+              Business interruption and loss of income
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10965" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:10966" data-name="Row / Dependent property and contingent BI">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:10967" data-name="Icon circle / building">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:10968" data-name="Icon / building">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBuilding} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:10970">
+              Dependent property and contingent BI
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10971" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:10972" data-name="Row / Equipment breakdown and failure claims">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:10973" data-name="Icon circle / search">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:10974" data-name="Icon / search">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSearch} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:10977">
+              Equipment breakdown and failure claims
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10978" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:10979" data-name="Row / Ordinance or law and seismic code upgrades">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:10980" data-name="Icon circle / ruler">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:10981" data-name="Icon / ruler">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconRuler} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:10984">
+              Ordinance or law and seismic code upgrades
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10985" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:10986" data-name="Row / Rebuild cost estimating and Xactimate">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:10987" data-name="Icon circle / home">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:10988" data-name="Icon / home">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:10991">
+              Rebuild cost estimating and Xactimate
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10992" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:10993" data-name="Row / IH report interpretation and remediation">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:10994" data-name="Icon circle / shield">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:10995" data-name="Icon / shield">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconShield} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:10998">
+              IH report interpretation and remediation
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:10999" data-name="Hairline" />
+          <div className="content-stretch flex gap-[16px] items-center overflow-clip py-[16px] relative shrink-0 w-full" data-node-id="230:11000" data-name="Row / Litigation support and demand packaging">
+            <div className="bg-[var(--color\/navy,#081d5e)] border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="230:11001" data-name="Icon circle / document">
+              <div className="relative shrink-0 size-[24px]" data-node-id="230:11002" data-name="Icon / document">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDocument} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="230:11005" data-annotations="\[LEGAL CHECK\] 'Litigation support'. We don't give legal advice (NV rule). Keep it; counsel should confirm the wording.">
+              Litigation support and demand packaging
+            </p>
+          </div>
+          <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="230:11006" data-name="Hairline" />
+        </div>
+        <Button className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

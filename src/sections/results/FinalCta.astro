@@ -1,0 +1,38 @@
+---
+// Results / Final CTA. Desktop 217:8807 (1280×706, paper): field photo 608 wide + panel; ruler ticks on the seam.
+// Mobile 217:12112 (390×900): photo 390×332 + caption, then the panel.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Photo from './Photo.astro';
+import Ticks from './Ticks.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const alt = 'A Blue Star adjuster documenting damage on site, field photograph.';
+---
+<section aria-labelledby="results-cta-title" class="relative bg-paper" data-node="217:8807" data-node-m="217:12112">
+  <div class="relative max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:items-start">
+    <div class="lg:w-[608px] lg:shrink-0 flex flex-col gap-[12px]" data-node="217:8831" data-node-m="217:12113">
+      <div class="h-[332px] lg:h-[646px]">
+        <Photo node="217:12113" alt={alt} class="lg:hidden w-full h-full object-cover" />
+        <Photo node="217:8831" alt={alt} class="hidden lg:block w-full h-full object-cover" />
+      </div>
+      <p class="m-0 t-caption text-ink whitespace-nowrap">Field photograph</p>
+    </div>
+    <Ticks dir="v" class="hidden lg:block absolute left-[608px] top-0 bottom-0 text-navy opacity-50" node="217:8834" />
+    <div class="flex-1 min-w-0 flex flex-col gap-[20px] px-[20px] pt-[40px] pb-[64px] lg:gap-[32px] lg:px-[80px] lg:py-[120px]" data-node="217:8808" data-node-m="217:12116">
+      <h2 id="results-cta-title" class="m-0 tm-h2 lg:t-h2 text-navy" data-node="217:8809" data-node-m="217:12117">Call Before the Carrier Sets the Narrative.</h2>
+      <p class="m-0 tm-body lg:t-lead text-ink" data-node="217:8810" data-node-m="217:12118">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+      <div class="flex flex-col gap-[12px] pt-[4px] lg:pt-0 lg:flex-row lg:gap-[16px] lg:self-start" data-node="217:8811" data-node-m="217:12119">
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" node="217:8812" data-node-m="217:12120">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" node="217:8816" data-node-m="217:12124">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <ul class="m-0 p-0 pt-[8px] lg:pt-0 list-none flex flex-col gap-[12px] lg:gap-0" data-node="217:8820" data-node-m="217:12128">
+        <li class="flex items-start gap-[12px] tm-body lg:items-center lg:gap-[16px] lg:py-[16px] lg:border-t lg:border-line lg:t-small lg:font-medium text-ink" data-node="217:8821" data-node-m="217:12129">
+          <Icon name="document" size={24} class="shrink-0 text-navy" /><span class="flex-1 min-w-0" data-node="217:8825" data-node-m="217:12133">No upfront cost. We're paid a percentage of what we recover.</span>
+        </li>
+        <li class="flex items-start gap-[12px] tm-body lg:items-center lg:gap-[16px] lg:py-[16px] lg:border-t lg:border-line lg:t-small lg:font-medium text-ink" data-node="217:8826" data-node-m="217:12134">
+          <Icon name="shield" size={24} class="shrink-0 text-navy" /><span class="flex-1 min-w-0" data-node="217:8830" data-node-m="217:12138">We represent the insured only.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

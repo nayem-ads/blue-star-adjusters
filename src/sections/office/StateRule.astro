@@ -1,0 +1,69 @@
+---
+// State rule. Navy band: citation + state chips with hairline, faint B-mark, rotated paper "document" card with crop marks,
+// white ruler base. Card is rotated in Figma (desktop: the whole 800×380 document; mobile: the card), so it stays untagged.
+// Per state: citation chip, lead (California has a bold "California:" prefix), underlined line.
+import Icon from '../../components/Icon.astro';
+import Logo from '../../components/Logo.astro';
+import CropMarks from '../what-we-do/CropMarks.astro';
+import Chip from './Chip.astro';
+import Ticks from './Ticks.astro';
+import { nodes, type OfficeData } from './types';
+interface Props { data: OfficeData }
+const { data: d } = Astro.props;
+const n = (k: string) => nodes(d, k);
+const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
+const r = d.rule;
+---
+<section aria-label={`${d.state} rule`} class="relative bg-navy overflow-hidden" {...n('state')}>
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[28px] px-[20px] pt-[64px] pb-[72px] lg:block lg:h-[584px] lg:p-0">
+    <span aria-hidden="true" class="absolute left-[-70px] top-[306px] opacity-[.08] pointer-events-none lg:hidden" data-node-m={id('state.mark', 1)}><Logo variant="mark-white" bare width={247.09} height={300} label="" /></span>
+    <span aria-hidden="true" class="hidden lg:block absolute left-[40px] top-[164px] opacity-[.08] pointer-events-none" data-node={id('state.mark', 0)}><Logo variant="mark-white" bare width={345.93} height={420} label="" /></span>
+
+    <div class="relative flex items-center self-start gap-[8px] lg:absolute lg:left-[80px] lg:top-[128px] lg:flex-col lg:items-start lg:gap-[16px]" {...n('state.margin')}>
+      <Chip class="bg-white text-ink" node={id('state.cite', 0)} nodeM={id('state.cite', 1)} textNode={id('state.citet', 0)} textNodeM={id('state.citet', 1)}>{r.cite}</Chip>
+      <Chip class="border border-white text-white" node={id('state.chip', 0)} nodeM={id('state.chip', 1)} textNode={id('state.chipt', 0)} textNodeM={id('state.chipt', 1)}>{d.state}</Chip>
+      <span aria-hidden="true" class="block bg-white opacity-40 h-px w-[120px] lg:w-px lg:h-[160px]" {...n('state.hairline')}></span>
+    </div>
+
+    <!-- Mobile document: 350×376 box with crop marks; card rotated inside -->
+    <div class="relative h-[376px] w-full lg:hidden" data-node-m={id('state.document', 1)}>
+      <div class="bs-office-card absolute left-[16px] top-[24px] w-[318px] flex flex-col gap-[16px] bg-paper pt-[24px] px-[24px] pb-[28px]">
+        <div class="flex items-center gap-[12px] h-[20px]">
+          <Icon name="document" size={20} class="shrink-0 text-navy" />
+          <Ticks count={16} class="w-[120px] text-navy opacity-45" />
+        </div>
+        <p class="m-0 tm-body text-ink">{r.leadBold && <strong class="font-semibold">{r.leadBold}</strong>}{r.lead}</p>
+        <p class="bs-office-line m-0 text-navy">{r.line}</p>
+      </div>
+      <CropMarks class="absolute inset-0" nodeM={id('state.crop', 1)} />
+    </div>
+
+    <!-- Desktop document: the whole 800×380 document is rotated inside its 809.67×400.81 bounds -->
+    <div class="hidden lg:flex absolute left-[436px] top-[75.06px] w-[809.67px] h-[400.81px] items-center justify-center">
+      <div class="relative w-[800px] h-[380px] shrink-0 rotate-[-1.5deg]">
+        <div class="bs-office-card absolute left-[28px] top-[28px] w-[744px] flex flex-col gap-[32px] bg-paper pt-[48px] px-[56px] pb-[56px]">
+          <div class="flex items-center gap-[16px]">
+            <Icon name="document" size={24} class="shrink-0 text-navy" />
+            <Ticks count={26} class="flex-1 text-navy opacity-50" />
+          </div>
+          <p class="m-0 t-lead text-ink">{r.leadBold && <strong class="font-semibold">{r.leadBold}</strong>}{r.lead}</p>
+          <p class="bs-office-line m-0 text-navy">{r.line}</p>
+        </div>
+        <CropMarks class="absolute inset-0" />
+      </div>
+    </div>
+
+    <Ticks count={49} class="lg:hidden absolute left-0 bottom-0 w-[390px] text-white opacity-25" nodeM={id('state.ruler', 1)} />
+    <Ticks count={161} class="hidden lg:block absolute left-0 top-[568px] w-[1280px] text-white opacity-25" node={id('state.ruler', 0)} />
+  </div>
+</section>
+<style>
+  .bs-office-card { transform-origin: 0 0; transform: rotate(-1.5deg); box-shadow: 0 12px 32px rgb(7 15 51 / .35); }
+  .bs-office-line { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 28px; letter-spacing: -0.01em;
+    text-decoration: underline; text-decoration-color: var(--color-royal); text-decoration-thickness: 2px; text-underline-offset: 4px;
+    position: relative; top: 1px; /* mobile baseline nudge, as the page's tm-* nudge */ }
+  @media (min-width: 1024px) {
+    .bs-office-card { transform: none; box-shadow: 0 24px 48px rgb(8 15 51 / .35); }
+    .bs-office-line { top: 0; font-size: 28px; line-height: 34px; text-decoration-thickness: 3px; text-underline-offset: 6px; }
+  }
+</style>

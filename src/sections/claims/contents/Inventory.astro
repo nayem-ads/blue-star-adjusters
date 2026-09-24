@@ -1,0 +1,40 @@
+---
+// Contents & Valuables § 01 Inventory. Desktop 230:881, mobile 230:1147.
+// Rail (chip, H3-size heading, ruler ticks, photo) + list of three icon-circle items.
+import Img from '../../../components/Img.astro';
+import Icon from '../../../components/Icon.astro';
+import Ticks from './Ticks.astro';
+interface Item { icon: string; text: string }
+interface Props { chip: string; heading: string; items: Item[]; imageAlt: string }
+const { chip, heading, items, imageAlt } = Astro.props;
+const ids = [
+  { li: ['230:934', '230:1180'], c: ['230:935', '230:1181'], t: ['230:937', '230:1183'] },
+  { li: ['230:938', '230:1184'], c: ['230:939', '230:1185'], t: ['230:941', '230:1187'] },
+  { li: ['230:942', '230:1188'], c: ['230:943', '230:1189'], t: ['230:945', '230:1191'] },
+];
+---
+<section aria-labelledby="inventory-title" class="bg-paper" data-node="230:881" data-node-m="230:1147">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0" data-node="230:882" data-node-m="230:1148">
+      <div class="inline-flex self-start px-[8px] py-[4px] border border-navy rounded-[2px]" data-node="230:883" data-node-m="230:1149">
+        <span class="tm-label lg:t-label text-navy" data-node="230:884" data-node-m="230:1150">{chip}</span>
+      </div>
+      <h2 id="inventory-title" class="m-0 tm-h3 lg:t-h3 text-navy" data-node="230:885" data-node-m="230:1151">{heading}</h2>
+      <Ticks class="w-[200px] lg:w-[360px]" node="230:886" nodeM="230:1152" />
+      <div class="w-full h-[220px] lg:w-[360px] lg:h-[240px]" data-node="230:1482" data-node-m="230:1505">
+        <Img node="230:1482" alt={imageAlt} class="hidden lg:block w-full h-full object-cover" />
+        <Img node="230:1505" alt={imageAlt} class="lg:hidden w-full h-full object-cover" />
+      </div>
+    </div>
+    <ul class="m-0 p-0 list-none flex flex-col w-full lg:flex-1" data-node="230:933" data-node-m="230:1179">
+      {items.map((item, i) => (
+        <li class="flex items-center gap-[16px] py-[20px] border-t border-line last:border-b lg:items-start lg:gap-[24px] lg:py-[32px]" data-node={ids[i].li[0]} data-node-m={ids[i].li[1]}>
+          <span aria-hidden="true" class="flex items-center justify-center shrink-0 size-[40px] rounded-full border border-navy bg-white text-navy" data-node={ids[i].c[0]} data-node-m={ids[i].c[1]}>
+            <Icon name={item.icon} size={24} />
+          </span>
+          <p class="m-0 flex-1 tm-body lg:t-lead text-ink" data-node={ids[i].t[0]} data-node-m={ids[i].t[1]}>{item.text}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

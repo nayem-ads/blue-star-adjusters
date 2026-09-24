@@ -1,0 +1,144 @@
+---
+// FAQ Questions. Desktop 217:6018 (1280×1842), mobile 217:10876 (390×2299).
+// Accordion (217:6019 / 217:10877): 13 rows, each question line is a real <button aria-expanded aria-controls>; its ::after
+// stretches the tap target over the whole row (Figma annotation: "each row is one button"). § 01 to § 03 start open,
+// the rest closed, exactly as the frame shows them; the closed rows' answers are the hidden "open-state" layers in Figma.
+// Open row: white, royal open-marker under the § index, navy minus toggle. Closed row: transparent, outlined plus toggle.
+// Side column (217:6168, sticky on desktop): policy-desk photo (desktop only; mobile shows it in the hero), key facts, CTA.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import CropMarks from './CropMarks.astro';
+import { ROUTES } from '../../data/site';
+
+const q = (n: number) => `217:${n}`;
+// Row node ids. Open rows list every id; closed rows follow Figma's fixed offsets from the row id.
+type Row = { n: string; q: string; a: string; open?: boolean; one?: boolean; d: number[]; m: number[]; link?: boolean };
+const open = (d: number[], m: number[]) => ({ d, m });
+const closed = (d: number, m: number) => ({ d: [d, d + 1, d + 2, 0, d + 3, d + 4, d + 5, d + 6], m: [m, m + 1, m + 2, 0, m + 3, m + 4, m + 5, m + 6] });
+// d/m = [row, rail, index, openMarker, qAndA, questionLine, question, toggle, answer, answerText]
+const rows: Row[] = [
+  { n: '01', q: 'What is a public adjuster?', a: "A licensed professional who prepares, presents and negotiates your claim, working only for you. The insurer's adjuster works for the insurer.", open: true,
+    ...open([6020, 6021, 6022, 6023, 6024, 6025, 6026, 6027, 6029, 6030], [10878, 10879, 10880, 10881, 10882, 10883, 10884, 10885, 10887, 10888]) },
+  { n: '02', q: 'How are you paid?', a: "No upfront cost. We're paid a percentage of what we recover. The terms are set in writing before we start.", open: true, one: true, link: true,
+    ...open([6031, 6032, 6033, 6034, 6035, 6036, 6037, 6038, 6040, 6041], [10889, 10890, 10891, 10892, 10893, 10894, 10895, 10896, 10898, 10899]) },
+  { n: '03', q: 'I already have an offer. Is it too late?', a: 'Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.', open: true,
+    ...open([6046, 6047, 6048, 6049, 6050, 6051, 6052, 6053, 6055, 6056], [10904, 10905, 10906, 10907, 10908, 10909, 10910, 10911, 10913, 10914]) },
+  { n: '04', q: 'Will hiring you slow my claim?', a: 'We have a strong financial incentive to expedite settlement on your behalf.', ...closed(6057, 10915) },
+  { n: '05', q: 'Will my insurer treat me differently?', a: 'Carriers work with public adjusters every day. The difference is what gets measured.', ...closed(6068, 10926) },
+  { n: '06', q: 'Do I still talk to my insurer?', a: 'You can. Most clients prefer we handle it.', ...closed(6079, 10937) },
+  { n: '07', q: 'Do you replace my attorney?', a: "No. We don't give legal advice. We work alongside counsel when a claim needs one.", ...closed(6090, 10948) },
+  { n: '08', q: 'Do you do repairs?', a: "No. We measure and negotiate. Your contractor builds. Arizona law requires this, and it's our practice everywhere.", one: true, ...closed(6101, 10959) },
+  { n: '09', q: 'Who has the final say?', a: 'You always have final say on any settlement.', ...closed(6112, 10970) },
+  { n: '10', q: 'Can I cancel?', a: 'In California, within three business days of signing and receiving the contract, or five calendar days in a declared catastrophic disaster area.', one: true, ...closed(6123, 10981) },
+  { n: '11', q: "What if my claim isn't covered?", a: "We'll tell you at the free review, before you sign anything.", ...closed(6134, 10992) },
+  { n: '12', q: 'Which states?', a: 'Offices in California, Nevada, Oregon, Washington and Arizona.', one: true, ...closed(6145, 11003) },
+  { n: '13', q: 'Homes and businesses?', a: 'Both, from single family homes to commercial properties.', ...closed(6156, 11014) },
+];
+const wD = [32, 35, 35, 37, 35, 36, 36, 36, 36, 32, 27, 30, 30];
+const wM = [23, 26, 26, 27, 26, 26, 26, 27, 26, 23, 20, 22, 22];
+const id = (n?: number) => (n ? q(n) : undefined);
+const facts = [
+  { icon: 'check', text: "No upfront cost. We're paid a percentage of what we recover.", d: [6181, 6182, 6184], m: [11028, 11029, 11030] },
+  { icon: 'shield', text: 'We represent the insured only.', d: [6185, 6186, 6189], m: [11031, 11032, 11033] },
+  { icon: 'document', text: 'CA License No. 2B60428', d: [6190, 6191, 6194], m: [11034, 11035, 11036] },
+];
+---
+<section aria-labelledby="faq-questions" class="bg-paper" data-node="217:6018" data-node-m="217:10876">
+  <h2 id="faq-questions" class="sr-only">Questions and answers</h2>
+  <div class="max-w-[1280px] mx-auto pt-[48px] pb-[64px] lg:px-[80px] lg:py-[120px] lg:flex lg:items-start lg:gap-[96px]">
+    <div class="lg:w-[760px] lg:shrink-0" data-node="217:6019" data-node-m="217:10877">
+      {rows.map((r, i) => (
+        <div class:list={['bs-faq-row group relative border-t border-line px-[20px] lg:px-[24px]', r.open && 'is-open']} data-node={id(r.d[0])} data-node-m={id(r.m[0])}>
+          <div class="flex items-start gap-[12px] lg:gap-[24px]">
+            <div class:list={['bs-faq-rail w-[40px] shrink-0 flex flex-col items-start gap-[8px] lg:w-[56px] lg:gap-[12px] lg:pt-[8px]', r.one ? 'pt-[16px]' : 'pt-[8px]']} data-node={id(r.d[1])} data-node-m={id(r.m[1])}>
+              <span class="block w-[var(--wm)] lg:w-[var(--wd)] tm-label lg:t-body-strong text-navy whitespace-nowrap" style={`--wd:${wD[i]}px;--wm:${wM[i]}px`} data-node={id(r.d[2])} data-node-m={id(r.m[2])}>§ {r.n}</span>
+              <span aria-hidden="true" class="bs-faq-marker block w-[16px] h-[2px] bg-royal lg:w-[24px]" data-node={id(r.d[3])} data-node-m={id(r.m[3])}></span>
+            </div>
+            <div class="flex-1 min-w-0 flex flex-col gap-[12px] lg:gap-[16px]" data-node={id(r.d[4])} data-node-m={id(r.m[4])}>
+              <h3 class="m-0">
+                <button type="button" id={`faq-q${r.n}`} aria-expanded={r.open ? 'true' : 'false'} aria-controls={`faq-a${r.n}`}
+                  class="bs-faq-btn relative w-full flex items-center gap-[16px] min-h-[48px] text-left cursor-pointer lg:items-start lg:gap-[32px] lg:min-h-0"
+                  data-node={id(r.d[5])} data-node-m={id(r.m[5])}>
+                  <span class="bs-faq-q flex-1 min-w-0 text-navy" data-node={id(r.d[6])} data-node-m={id(r.m[6])}>{r.q}</span>
+                  <span aria-hidden="true" class="bs-faq-toggle relative block shrink-0 w-[44px] h-[44px] rounded-full" data-node={id(r.d[7])} data-node-m={id(r.m[7])}>
+                    <span class="bs-faq-bar absolute left-[14px] top-[21px] w-[16px] h-[2px]"></span>
+                    <span class="bs-faq-bar bs-faq-bar--v absolute left-[21px] top-[14px] w-[2px] h-[16px]"></span>
+                  </span>
+                </button>
+              </h3>
+              <div id={`faq-a${r.n}`} role="region" aria-labelledby={`faq-q${r.n}`} hidden={!r.open}
+                class="flex flex-col items-start gap-[16px] pr-[60px] lg:pr-[76px]" data-node={r.open ? id(r.d[8]) : undefined} data-node-m={r.open ? id(r.m[8]) : undefined}>
+                <p class="m-0 tm-body lg:t-body text-ink w-full" data-node={r.open ? id(r.d[9]) : undefined} data-node-m={r.open ? id(r.m[9]) : undefined}>{r.a}</p>
+                {r.link && (
+                  <a href={ROUTES.fees} class="flex items-center gap-[8px] min-h-[44px] text-navy lg:min-h-0 lg:pt-[4px]" data-node="217:6042" data-node-m="217:10900">
+                    <span class="block w-[37px] lg:w-[41px] tm-body-strong lg:t-body-strong underline" style="top:0" data-node="217:6043" data-node-m="217:10901">Fees</span>
+                    <Icon name="arrow-right" size={20} class="shrink-0" />
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+      <span aria-hidden="true" class="block h-px bg-line" data-node="217:6167" data-node-m="217:11025"></span>
+    </div>
+
+    <aside aria-label="Key facts" class="mt-[56px] px-[20px] flex flex-col items-start gap-[48px] lg:mt-0 lg:px-0 lg:w-[264px] lg:shrink-0 lg:gap-[40px] lg:sticky lg:top-[120px]" data-node="217:6168" data-node-m="217:11026">
+      <div class="hidden lg:block relative w-[264px] h-[330px]" data-node="217:6169">
+        <Img node="217:6170" alt="A policy binder with coloured tabs, a highlighter, a tape measure and a cup of tea on a desk." class="block w-full h-full object-cover" />
+        <CropMarks class="absolute left-[-16px] top-[-16px] w-[296px] h-[362px]" node="217:6171" />
+      </div>
+      <ul class="m-0 p-0 list-none w-full" data-node="217:6180" data-node-m="217:11027">
+        {facts.map((f) => (
+          <li class="flex items-start gap-[16px] py-[16px] border-t border-line" data-node={q(f.d[0])} data-node-m={q(f.m[0])}>
+            <span class="block shrink-0 w-[20px] h-[20px] text-navy" data-node={q(f.d[1])} data-node-m={q(f.m[1])}><Icon name={f.icon} size={20} class="block" /></span>
+            <span class="flex-1 min-w-0 text-[15px] leading-[24px] font-medium text-ink" data-node={q(f.d[2])} data-node-m={q(f.m[2])}>{f.text}</span>
+          </li>
+        ))}
+      </ul>
+      <div class="w-full flex flex-col items-start gap-[24px]" data-node="217:7612" data-node-m="217:11042">
+        <span aria-hidden="true" class="block w-[48px] h-[2px] bg-royal" data-node="217:7613" data-node-m="217:11043"></span>
+        <p class="m-0 tm-h2 lg:t-h3 text-navy w-full" data-node="217:7614" data-node-m="217:11044">Still have a question?</p>
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" node="217:7615" data-node-m="217:11045">Schedule a Free Review</Button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<style is:global>
+  .bs-faq-row { padding-top: 16px; padding-bottom: 16px; }
+  .bs-faq-row.is-open { background: #fff; padding-top: 24px; padding-bottom: 32px; }
+  .bs-faq-marker { display: none; }
+  .is-open .bs-faq-marker { display: block; }
+  .bs-faq-q { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 30px; letter-spacing: -0.01em; }
+  .bs-faq-toggle { box-shadow: inset 0 0 0 1.5px var(--color-navy); transition: background-color .15s ease; }
+  .bs-faq-bar { background: var(--color-navy); }
+  .is-open .bs-faq-toggle { background: var(--color-navy); box-shadow: none; }
+  .is-open .bs-faq-bar { background: #fff; }
+  .is-open .bs-faq-bar--v { display: none; }
+  .bs-faq-btn:hover .bs-faq-toggle { background: var(--color-paper); }
+  .is-open .bs-faq-btn:hover .bs-faq-toggle { background: var(--color-royal); }
+  /* Whole row is the tap target: stretch the button's hit area over the row padding, index rail and (when closed) the row. */
+  .bs-faq-btn::after { content: ''; position: absolute; top: -16px; left: -72px; right: -20px; bottom: -16px; }
+  .is-open .bs-faq-btn::after { top: -24px; bottom: 0; }
+  @media (min-width: 1024px) {
+    .bs-faq-row { padding-top: 24px; padding-bottom: 24px; }
+    .bs-faq-row.is-open { padding-top: 32px; padding-bottom: 40px; }
+    .bs-faq-q { font-size: 28px; line-height: 34px; letter-spacing: -0.01em; }
+    .bs-faq-btn::after { top: -24px; left: -104px; right: -24px; bottom: -24px; }
+    .is-open .bs-faq-btn::after { top: -32px; bottom: 0; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.bs-faq-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', String(open));
+      const panel = document.getElementById(btn.getAttribute('aria-controls') || '');
+      if (panel) panel.hidden = !open;
+      btn.closest('.bs-faq-row')?.classList.toggle('is-open', open);
+    });
+  });
+</script>

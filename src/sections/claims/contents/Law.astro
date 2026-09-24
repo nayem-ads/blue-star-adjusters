@@ -1,0 +1,46 @@
+---
+// Contents & Valuables § 02 California total losses. Desktop 230:963, mobile 230:1209.
+// Navy band, faint white B-mark (6 %) top right. Rail: chip, H2, free-review button (below the document on mobile).
+// Document: crop-marked holder with a law card rotated 1.5° about its top-left corner (rotated nodes stay untagged).
+import Button from '../../../components/Button.astro';
+import Logo from '../../../components/Logo.astro';
+import { ROUTES } from '../../../data/site';
+interface Props { chip: string; heading: string; citation: string; body: readonly [string, string, string] }
+const { chip, heading, citation, body } = Astro.props;
+const mark = 'absolute bg-royal';
+---
+<section aria-labelledby="law-title" class="relative bg-navy overflow-hidden" data-node="230:963" data-node-m="230:1209">
+  <span aria-hidden="true" class="absolute top-0 left-[calc(50%+178.8px)] opacity-[.06] pointer-events-none hidden lg:block" data-node="230:964"><Logo variant="mark-white" bare width={461.239} height={560} label="" /></span>
+  <span aria-hidden="true" class="absolute top-0 left-[calc(50%-85.8px)] opacity-[.06] pointer-events-none lg:hidden" data-node-m="230:1210"><Logo variant="mark-white" bare width={280.8} height={340.925} label="" /></span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[136px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[32px] lg:w-[360px] lg:shrink-0" data-node="230:965" data-node-m="230:1211">
+      <div class="inline-flex px-[8px] py-[4px] border border-white rounded-[2px]" data-node="230:966" data-node-m="230:1212">
+        <span class="tm-label lg:t-label text-white" data-node="230:967" data-node-m="230:1213">{chip}</span>
+      </div>
+      <h2 id="law-title" class="m-0 w-full tm-display lg:t-h2 text-white" data-node="230:968" data-node-m="230:1214">{heading}</h2>
+      <Button href={ROUTES.freeClaimReview} variant="on-dark" class="hidden lg:inline-flex" node="230:969">Schedule a Free Review</Button>
+    </div>
+
+    <div class="relative w-full h-[387px] lg:w-[648px] lg:h-[435px] lg:shrink-0" data-node="230:970" data-node-m="230:1215">
+      <div aria-hidden="true" class="absolute inset-0 lg:left-[8px] lg:right-[8px] lg:bottom-[40px] pointer-events-none" data-node="230:978" data-node-m="230:1216">
+        <span class={`${mark} left-0 top-0 w-[16px] h-[1.5px]`}></span><span class={`${mark} left-0 top-0 w-[1.5px] h-[16px]`}></span>
+        <span class={`${mark} right-0 top-0 w-[16px] h-[1.5px]`}></span><span class={`${mark} right-0 top-0 w-[1.5px] h-[16px]`}></span>
+        <span class={`${mark} left-0 bottom-0 w-[16px] h-[1.5px]`}></span><span class={`${mark} left-0 bottom-0 w-[1.5px] h-[16px]`}></span>
+        <span class={`${mark} right-0 bottom-0 w-[16px] h-[1.5px]`}></span><span class={`${mark} right-0 bottom-0 w-[1.5px] h-[16px]`}></span>
+      </div>
+      <div class="bs-lawcard absolute left-[27.5px] top-[20px] w-[310px] lg:left-[23.2px] lg:top-[24px] lg:w-[600px] flex flex-col gap-[16px] lg:gap-[24px] p-[24px] lg:p-[48px] bg-white lg:bg-paper rounded-[2px]">
+        <div class="flex items-center gap-[12px] lg:gap-[16px] pb-[12px] border-b border-line lg:pb-0 lg:border-0">
+          <span class="flex items-center justify-center size-[28px] lg:size-auto lg:px-[8px] lg:py-[4px] bg-navy rounded-[2px] text-white font-body font-semibold text-[18px] leading-[26px] lg:t-label" aria-hidden="true">§</span>
+          <span class="tm-label lg:t-label text-navy">{citation}</span>
+        </div>
+        <span aria-hidden="true" class="hidden lg:block w-[504px] h-px bg-line"></span>
+        <p class="m-0 tm-body lg:t-lead text-ink">{body[0]}<strong class="font-semibold underline">{body[1]}</strong>{body[2]}</p>
+      </div>
+    </div>
+
+    <Button href={ROUTES.freeClaimReview} variant="on-dark" class="lg:hidden h-[56px] w-full" data-node-m="230:1223">Schedule a Free Review</Button>
+  </div>
+</section>
+<style>
+  .bs-lawcard { transform: rotate(1.5deg); transform-origin: 0 0; box-shadow: 0 24px 48px 0 rgb(7 15 51 / .35); }
+</style>

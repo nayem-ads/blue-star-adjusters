@@ -1,0 +1,357 @@
+const imgMark = "https://www.figma.com/api/mcp/asset/862453fb-bd55-42e8-aeb9-ea2e94c961e5.svg";
+const imgGroup = "https://www.figma.com/api/mcp/asset/4b63d8be-27de-47e9-b5fb-9ef50dd12c8f.svg";
+const imgImgAiMoisture = "https://www.figma.com/api/mcp/asset/13a225f5-cbcf-4f11-a14a-3b1a2a983f7a.png";
+
+function DetailCropMarks({ className }: { className?: string }) {
+  return (
+    <div className={className || "h-[160px] relative w-[240px]"} data-node-id="71:533" data-name="Detail/Crop marks">
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] left-0 top-0 w-[16px]" data-node-id="71:534" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] left-0 top-0 w-[1.5px]" data-node-id="71:535" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[1.5px] right-0 top-0 w-[16px]" data-node-id="71:536" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] h-[16px] right-0 top-0 w-[1.5px]" data-node-id="71:537" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] left-0 w-[16px]" data-node-id="71:538" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] left-0 w-[1.5px]" data-node-id="71:539" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[1.5px] right-0 w-[16px]" data-node-id="71:540" data-name="Mark" />
+      <div className="absolute bg-[var(--color\/royal,#133faa)] bottom-0 h-[16px] right-0 w-[1.5px]" data-node-id="71:541" data-name="Mark" />
+    </div>
+  );
+}
+
+function LogoHorizontalColor30({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex gap-[9px] items-center overflow-clip relative"} data-node-id="4:73" data-name="Logo/Horizontal/Color 30">
+      <div className="h-[30px] relative shrink-0 w-[24.709px]" data-node-id="4:65" data-name="Mark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMark} />
+      </div>
+      <div className="h-[15px] overflow-clip relative shrink-0 w-[101.538px]" data-node-id="4:70" data-name="Wordmark">
+        <div className="absolute flex inset-[0.61%_0.09%_0.71%_0.12%] items-center justify-center" data-node-id="4:71" style={{ containerType: "size" }}>
+          <div className="-rotate-180 -scale-x-100 flex-none h-[100cqh] w-[100cqw]">
+            <div className="relative size-full" data-name="Group">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Checklist() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] relative size-full" data-node-id="217:6591" data-name="Checklist">
+      <div className="absolute inset-0 overflow-clip" data-node-id="217:6592" data-name="Blueprint grid (full bleed, 40px)">
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-0 opacity-10 top-0 w-px" data-node-id="217:6783" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[40px] opacity-5 top-0 w-px" data-node-id="217:6784" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[80px] opacity-5 top-0 w-px" data-node-id="217:6785" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[120px] opacity-5 top-0 w-px" data-node-id="217:6786" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[160px] opacity-10 top-0 w-px" data-node-id="217:6787" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[200px] opacity-5 top-0 w-px" data-node-id="217:6788" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[240px] opacity-5 top-0 w-px" data-node-id="217:6789" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[280px] opacity-5 top-0 w-px" data-node-id="217:6790" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[320px] opacity-10 top-0 w-px" data-node-id="217:6791" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[360px] opacity-5 top-0 w-px" data-node-id="217:6792" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[400px] opacity-5 top-0 w-px" data-node-id="217:6793" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[440px] opacity-5 top-0 w-px" data-node-id="217:6794" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[480px] opacity-10 top-0 w-px" data-node-id="217:6795" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[520px] opacity-5 top-0 w-px" data-node-id="217:6796" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[560px] opacity-5 top-0 w-px" data-node-id="217:6797" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[600px] opacity-5 top-0 w-px" data-node-id="217:6798" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[640px] opacity-10 top-0 w-px" data-node-id="217:6799" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[680px] opacity-5 top-0 w-px" data-node-id="217:6800" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[720px] opacity-5 top-0 w-px" data-node-id="217:6801" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[760px] opacity-5 top-0 w-px" data-node-id="217:6802" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[800px] opacity-10 top-0 w-px" data-node-id="217:6803" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[840px] opacity-5 top-0 w-px" data-node-id="217:6804" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[880px] opacity-5 top-0 w-px" data-node-id="217:6805" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[920px] opacity-5 top-0 w-px" data-node-id="217:6806" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[960px] opacity-10 top-0 w-px" data-node-id="217:6807" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1000px] opacity-5 top-0 w-px" data-node-id="217:6808" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1040px] opacity-5 top-0 w-px" data-node-id="217:6809" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1080px] opacity-5 top-0 w-px" data-node-id="217:6810" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1120px] opacity-10 top-0 w-px" data-node-id="217:6811" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1160px] opacity-5 top-0 w-px" data-node-id="217:6812" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1200px] opacity-5 top-0 w-px" data-node-id="217:6813" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1240px] opacity-5 top-0 w-px" data-node-id="217:6814" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-[1432px] left-[1279px] opacity-10 top-0 w-px" data-node-id="217:6815" data-name="Grid V" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-0 w-[1280px]" data-node-id="217:6816" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[40px] w-[1280px]" data-node-id="217:6817" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[80px] w-[1280px]" data-node-id="217:6818" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[120px] w-[1280px]" data-node-id="217:6819" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[160px] w-[1280px]" data-node-id="217:6820" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[200px] w-[1280px]" data-node-id="217:6821" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[240px] w-[1280px]" data-node-id="217:6822" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[280px] w-[1280px]" data-node-id="217:6823" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[320px] w-[1280px]" data-node-id="217:6824" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[360px] w-[1280px]" data-node-id="217:6825" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[400px] w-[1280px]" data-node-id="217:6826" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[440px] w-[1280px]" data-node-id="217:6827" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[480px] w-[1280px]" data-node-id="217:6828" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[520px] w-[1280px]" data-node-id="217:6829" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[560px] w-[1280px]" data-node-id="217:6830" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[600px] w-[1280px]" data-node-id="217:6831" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[640px] w-[1280px]" data-node-id="217:6832" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[680px] w-[1280px]" data-node-id="217:6833" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[720px] w-[1280px]" data-node-id="217:6834" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[760px] w-[1280px]" data-node-id="217:6835" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[800px] w-[1280px]" data-node-id="217:6836" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[840px] w-[1280px]" data-node-id="217:6837" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[880px] w-[1280px]" data-node-id="217:6838" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[920px] w-[1280px]" data-node-id="217:6839" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[960px] w-[1280px]" data-node-id="217:6840" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1000px] w-[1280px]" data-node-id="217:6841" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1040px] w-[1280px]" data-node-id="217:6842" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1080px] w-[1280px]" data-node-id="217:6843" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[1120px] w-[1280px]" data-node-id="217:6844" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1160px] w-[1280px]" data-node-id="217:6845" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1200px] w-[1280px]" data-node-id="217:6846" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1240px] w-[1280px]" data-node-id="217:6847" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-10 top-[1280px] w-[1280px]" data-node-id="217:6848" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1320px] w-[1280px]" data-node-id="217:6849" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1360px] w-[1280px]" data-node-id="217:6850" data-name="Grid H" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 opacity-5 top-[1400px] w-[1280px]" data-node-id="217:6851" data-name="Grid H" />
+      </div>
+      <div className="absolute bg-[var(--color\/white,white)] border border-[var(--color\/line,#d9dfee)] border-solid content-stretch flex flex-col items-start left-[104px] overflow-clip pb-[40px] pt-[48px] px-[48px] top-[144px] w-[784px]" data-node-id="217:6593" data-name="Checklist sheet">
+        <div className="content-stretch flex items-center justify-between overflow-clip pb-[20px] relative shrink-0 w-full" data-node-id="217:6594" data-name="Sheet header">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] relative shrink-0 text-[28px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.28px] whitespace-nowrap" data-node-id="217:6595">
+            First 48 Hours
+          </p>
+          <LogoHorizontalColor30 className="content-stretch flex gap-[9px] items-center overflow-clip relative shrink-0" />
+        </div>
+        <div className="bg-[var(--color\/ink,#070f33)] h-[2px] relative shrink-0 w-full" data-node-id="217:6605" data-name="Sheet rule" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6606" data-name="Step 01">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6607" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6608" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6609">
+            01
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6610" data-annotations="Edited from: 'Don't re-enter'.">{`Get safe. Don't go back in until officials clear the property.`}</p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6611" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6612" data-name="Step 02">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6613" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6614" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6615">
+            02
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6616">{`Report the claim. Write down the claim number and the adjuster's name.`}</p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6617" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6618" data-name="Step 03">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6619" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6620" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6621">
+            03
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6622">
+            Photograph and video everything before anything is moved or cleaned.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6623" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6624" data-name="Step 04">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6625" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6626" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6627">
+            04
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6628">
+            Stop further damage: shut off water, tarp openings. Keep the receipts.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6629" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6630" data-name="Step 05">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6631" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6632" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6633">
+            05
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6634">{`Don't throw anything away until it's documented, even if it's ruined.`}</p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6635" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6636" data-name="Step 06">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6637" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6638" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6639">
+            06
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6640">{`Don't sign on the spot with anyone, including a public adjuster.`}</p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6641" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6642" data-name="Step 07">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6643" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6644" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6645">
+            07
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6646">
+            Keep every receipt for living costs: hotel, meals, mileage, pet boarding.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6647" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6648" data-name="Step 08">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6649" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6650" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6651">
+            08
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6652">
+            Get your full policy, with the declarations page and every endorsement.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6653" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6654" data-name="Step 09">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6655" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6656" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6657">
+            09
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6658">
+            Log every conversation: date, name, what was said.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:6659" data-name="Hairline" />
+        <div className="content-stretch flex gap-[20px] items-start overflow-clip py-[20px] relative shrink-0 w-full" data-node-id="217:6660" data-name="Step 10">
+          <div className="content-stretch flex items-start overflow-clip pt-[4px] relative shrink-0" data-node-id="217:6661" data-name="Checkbox wrap">
+            <div className="bg-[var(--color\/white,white)] border-[1.5px] border-[var(--color\/navy,#081d5e)] border-solid relative rounded-[2px] shrink-0 size-[24px]" data-node-id="217:6662" data-name="Checkbox" />
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/navy,#081d5e)] w-[32px]" data-node-id="217:6663">
+            10
+          </p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/ink,#070f33)]" data-node-id="217:6664">
+            Get the loss measured before the first estimate is final.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/ink,#070f33)] h-[2px] relative shrink-0 w-full" data-node-id="217:6665" data-name="Sheet rule" />
+        <div className="[word-break:break-word] content-stretch flex font-['Montserrat:Medium'] font-medium items-start justify-between leading-[24px] overflow-clip pt-[16px] relative shrink-0 text-[15px] text-[color:var(--color\/ink,#070f33)] w-full whitespace-nowrap" data-node-id="217:6666" data-name="Sheet footer">
+          <p className="relative shrink-0" data-node-id="217:6667">
+            (916) 507-1005
+          </p>
+          <p className="relative shrink-0" data-node-id="217:6668">
+            CA License No. 2B60428
+          </p>
+        </div>
+      </div>
+      <DetailCropMarks className="absolute h-[1189px] left-[80px] top-[120px] w-[832px]" />
+      <div className="absolute content-stretch flex flex-col gap-[24px] items-start left-[928px] overflow-clip top-[144px] w-[272px]" data-node-id="217:6678" data-name="Rail">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/ink,#070f33)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:6679">
+          § 01
+        </p>
+        <div className="bg-[var(--color\/navy,#081d5e)] h-px relative shrink-0 w-full" data-node-id="217:6680" data-name="Rail hairline" />
+        <div className="h-[336px] overflow-clip relative shrink-0 w-[272px]" data-node-id="217:6681" data-name="Moisture detail">
+          <div className="absolute content-stretch flex flex-col gap-[12px] h-[304px] items-start left-[16px] top-[16px] w-[240px]" data-node-id="217:6682" data-annotations="AI illustrative. Replace with a real photo before launch." data-name="Photo / ai-moisture">
+            <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="I217:6682;41:71" data-annotations="Alt text: A moisture meter held against a water-stained wall near the floor." data-name="IMG:ai-moisture">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-[-1.02%] max-w-none top-0 w-[102.04%]" src={imgImgAiMoisture} />
+              </div>
+            </div>
+          </div>
+          <DetailCropMarks className="absolute h-[336px] left-0 top-0 w-[272px]" />
+        </div>
+      </div>
+      <div className="absolute h-[696px] left-[928px] opacity-35 overflow-clip top-[592px] w-[16px]" data-node-id="217:6694" data-name="Ruler ticks (rail)">
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-0 w-[16px]" data-node-id="217:6695" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[8px] w-[6px]" data-node-id="217:6696" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[16px] w-[6px]" data-node-id="217:6697" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[24px] w-[6px]" data-node-id="217:6698" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[32px] w-[6px]" data-node-id="217:6699" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[40px] w-[10px]" data-node-id="217:6700" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[48px] w-[6px]" data-node-id="217:6701" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[56px] w-[6px]" data-node-id="217:6702" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[64px] w-[6px]" data-node-id="217:6703" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[72px] w-[6px]" data-node-id="217:6704" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[80px] w-[16px]" data-node-id="217:6705" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[88px] w-[6px]" data-node-id="217:6706" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[96px] w-[6px]" data-node-id="217:6707" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[104px] w-[6px]" data-node-id="217:6708" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[112px] w-[6px]" data-node-id="217:6709" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[120px] w-[10px]" data-node-id="217:6710" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[128px] w-[6px]" data-node-id="217:6711" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[136px] w-[6px]" data-node-id="217:6712" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[144px] w-[6px]" data-node-id="217:6713" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[152px] w-[6px]" data-node-id="217:6714" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[160px] w-[16px]" data-node-id="217:6715" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[168px] w-[6px]" data-node-id="217:6716" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[176px] w-[6px]" data-node-id="217:6717" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[184px] w-[6px]" data-node-id="217:6718" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[192px] w-[6px]" data-node-id="217:6719" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[200px] w-[10px]" data-node-id="217:6720" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[208px] w-[6px]" data-node-id="217:6721" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[216px] w-[6px]" data-node-id="217:6722" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[224px] w-[6px]" data-node-id="217:6723" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[232px] w-[6px]" data-node-id="217:6724" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[240px] w-[16px]" data-node-id="217:6725" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[248px] w-[6px]" data-node-id="217:6726" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[256px] w-[6px]" data-node-id="217:6727" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[264px] w-[6px]" data-node-id="217:6728" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[272px] w-[6px]" data-node-id="217:6729" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[280px] w-[10px]" data-node-id="217:6730" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[288px] w-[6px]" data-node-id="217:6731" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[296px] w-[6px]" data-node-id="217:6732" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[304px] w-[6px]" data-node-id="217:6733" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[312px] w-[6px]" data-node-id="217:6734" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[320px] w-[16px]" data-node-id="217:6735" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[328px] w-[6px]" data-node-id="217:6736" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[336px] w-[6px]" data-node-id="217:6737" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[344px] w-[6px]" data-node-id="217:6738" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[352px] w-[6px]" data-node-id="217:6739" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[360px] w-[10px]" data-node-id="217:6740" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[368px] w-[6px]" data-node-id="217:6741" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[376px] w-[6px]" data-node-id="217:6742" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[384px] w-[6px]" data-node-id="217:6743" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[392px] w-[6px]" data-node-id="217:6744" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[400px] w-[16px]" data-node-id="217:6745" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[408px] w-[6px]" data-node-id="217:6746" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[416px] w-[6px]" data-node-id="217:6747" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[424px] w-[6px]" data-node-id="217:6748" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[432px] w-[6px]" data-node-id="217:6749" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[440px] w-[10px]" data-node-id="217:6750" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[448px] w-[6px]" data-node-id="217:6751" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[456px] w-[6px]" data-node-id="217:6752" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[464px] w-[6px]" data-node-id="217:6753" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[472px] w-[6px]" data-node-id="217:6754" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[480px] w-[16px]" data-node-id="217:6755" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[488px] w-[6px]" data-node-id="217:6756" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[496px] w-[6px]" data-node-id="217:6757" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[504px] w-[6px]" data-node-id="217:6758" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[512px] w-[6px]" data-node-id="217:6759" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[520px] w-[10px]" data-node-id="217:6760" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[528px] w-[6px]" data-node-id="217:6761" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[536px] w-[6px]" data-node-id="217:6762" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[544px] w-[6px]" data-node-id="217:6763" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[552px] w-[6px]" data-node-id="217:6764" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[560px] w-[16px]" data-node-id="217:6765" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[568px] w-[6px]" data-node-id="217:6766" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[576px] w-[6px]" data-node-id="217:6767" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[584px] w-[6px]" data-node-id="217:6768" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[592px] w-[6px]" data-node-id="217:6769" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[600px] w-[10px]" data-node-id="217:6770" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[608px] w-[6px]" data-node-id="217:6771" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[616px] w-[6px]" data-node-id="217:6772" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[624px] w-[6px]" data-node-id="217:6773" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[632px] w-[6px]" data-node-id="217:6774" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[640px] w-[16px]" data-node-id="217:6775" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[648px] w-[6px]" data-node-id="217:6776" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[656px] w-[6px]" data-node-id="217:6777" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[664px] w-[6px]" data-node-id="217:6778" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[672px] w-[6px]" data-node-id="217:6779" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[680px] w-[10px]" data-node-id="217:6780" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[688px] w-[6px]" data-node-id="217:6781" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/navy,#081d5e)] h-px left-0 top-[696px] w-[6px]" data-node-id="217:6782" data-name="Tick" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

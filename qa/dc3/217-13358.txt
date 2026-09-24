@@ -1,0 +1,35 @@
+const imgIconPin = "https://www.figma.com/api/mcp/asset/cda11694-f78f-4f12-a77c-f1bb767ae47b.svg";
+
+export default function SectionLocalLine() {
+  return (
+    <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex gap-[112px] items-start px-[80px] py-[96px] relative size-full" data-node-id="217:13358" data-name="Section / Local line">
+      <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[264px]" data-node-id="217:13359" data-name="Local line / Rail">
+        <div className="content-stretch flex gap-[12px] items-center overflow-clip relative shrink-0" data-node-id="217:13360" data-name="Rail / Marker">
+          <div className="bg-[var(--color\/paper,#f4f6fb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="217:13354" data-name="Icon circle">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:13355" data-name="Icon / pin">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPin} />
+            </div>
+          </div>
+          <div className="border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-start overflow-clip px-[8px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="217:13361" data-name="slot/local/chip">
+            <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/navy,#081d5e)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:13362">
+              CA
+            </p>
+          </div>
+        </div>
+        <div className="bg-[var(--color\/line,#d9dfee)] h-px relative shrink-0 w-full" data-node-id="217:13363" data-name="Rail rule" />
+      </div>
+      <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip relative shrink-0 w-[744px]" data-node-id="217:13364" data-name="Local line / Lead">
+        <div className="bg-[var(--color\/royal,#133faa)] h-[4px] relative shrink-0 w-[48px]" data-node-id="217:13365" data-name="Lead rule" />
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Medium'] font-medium leading-[44px] min-w-full relative shrink-0 text-[36px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.36px] w-[min-content]" data-node-id="217:13366" data-annotations="Local line (keep and flag). Edited from: 'total-loss claims'.;\[CLIENT: confirm\] the local line (CD 570).">
+          Minutes from Pacific Palisades. Since the January 2025 fire, much of our Westside work is smoke and total loss claims.
+        </p>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

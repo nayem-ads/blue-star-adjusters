@@ -11,7 +11,7 @@ const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
 <section aria-label={`${d.city} local note`} class="bg-paper" {...n('local')}>
   <div class="max-w-[1280px] mx-auto flex flex-col gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[112px] lg:px-[80px] lg:py-[96px]">
     <div class="flex flex-col gap-[16px] lg:w-[264px] lg:shrink-0" {...n('local.rail')}>
-      <div class="flex items-center gap-[12px]" {...n('local.marker')}>
+      <div class="flex items-center gap-[12px] w-fit" {...n('local.marker')}>
         <span aria-hidden="true" class="flex items-center justify-center shrink-0 size-[42px] rounded-full border border-navy text-navy lg:size-[48px] lg:border-0 lg:bg-paper" {...n('local.icon')}><Icon name="map-pin" size={24} /></span>
         <Chip class="border border-navy text-navy" node={id('local.chip', 0)} nodeM={id('local.chip', 1)} textNode={id('local.chipt', 0)} textNodeM={id('local.chipt', 1)}>{d.state}</Chip>
       </div>

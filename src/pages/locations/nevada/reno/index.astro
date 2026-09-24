@@ -1,5 +1,6 @@
 ---
-// Noindex stub (components agent). Replace with the real page when it is designed.
-import StubPage from '../../../../components/StubPage.astro';
+// Office page: data in src/data/offices/reno.ts, template in src/sections/office/.
+import OfficePage from '../../../../sections/office/OfficePage.astro';
+import data from '../../../../data/offices/reno';
 ---
-<StubPage name="Reno Office" eyebrow="Offices" />
+<OfficePage data={data} />

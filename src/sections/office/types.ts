@@ -7,9 +7,10 @@ export interface OfficeData {
   city: string;
   state: string; // two-letter chip text
   hero: { eyebrow: string; h1: string; headOffice: boolean; alt: string };
-  office: { label: string; rows: { kind: OfficeRowKind; value: string }[] };
+  office: { label: string; labelWidthM?: number; rows: { kind: OfficeRowKind; value: string }[] };
   local: string | null; // Local line (Santa Monica, San Francisco only)
   rule: { cite: string; lead: string; leadBold: string | null; line: string };
+  // labelWidthM: Figma's mobile text box width for the label, where the browser's measure differs by > 1px.
   n: Record<string, [string | null, string | null]>;
 }
 /** data-node / data-node-m attributes for a role key. */

@@ -56,7 +56,7 @@ export const related = {
   nodes: { section: ['230:1058', '230:1274'], chip: ['230:1059', '230:1275'], chipText: ['230:1060', '230:1276'], hubs: ['230:1061'], index: ['230:1068'], list: [undefined, '230:1277'] },
   hubs: [
     { label: 'Residential Claims', href: ROUTES.residential, node: ['230:1062', '230:1278'], text: ['230:1063', '230:1279'] },
-    { label: 'Commercial Claims', href: ROUTES.commercial, node: ['230:1065', '230:1281'], text: ['230:1066', '230:1282'] },
+    { label: 'Commercial Claims', href: ROUTES.commercial, node: ['230:1065', '230:1281'], text: ['230:1066', '230:1282'], w: 257 },
   ],
   links: [
     { label: 'Fire & Smoke', href: ROUTES.fireSmoke, node: ['230:1078', '230:1293'], text: ['230:1079', '230:1294'] },

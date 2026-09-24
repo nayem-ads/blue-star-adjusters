@@ -61,7 +61,7 @@ export const related = {
   nodes: { section: ['238:1976', '238:2192'], chip: ['238:1977', '238:2193'], chipText: ['238:1978', '238:2194'], hubs: ['238:1979'], index: ['238:1986'], list: [undefined, '238:2195'] },
   hubs: [
     { label: 'Residential Claims', href: ROUTES.residential, node: ['238:1980', '238:2196'], text: ['238:1981', '238:2197'] },
-    { label: 'Commercial Claims', href: ROUTES.commercial, node: ['238:1983', '238:2199'], text: ['238:1984', '238:2200'] },
+    { label: 'Commercial Claims', href: ROUTES.commercial, node: ['238:1983', '238:2199'], text: ['238:1984', '238:2200'], w: 257 },
   ],
   links: [
     { label: 'Fire & Smoke', href: ROUTES.fireSmoke, node: ['238:2002', '238:2217'], text: ['238:2003', '238:2218'] },

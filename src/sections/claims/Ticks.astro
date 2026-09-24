@@ -1,0 +1,16 @@
+---
+// Claims kit / Ruler ticks: 1px ticks every 8px (6 tall), every 40px 10 tall, every 80px 16 tall, hanging from the top edge.
+// Width/opacity/colour via class, e.g. class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy". Decorative.
+import { dn, type N } from './nodes';
+interface Props { node?: N; class?: string }
+const { node, class: cls = '' } = Astro.props;
+---
+<div aria-hidden="true" class:list={['bs-ticks h-[16px] shrink-0', cls]} {...dn(node)}></div>
+<style is:global>
+  .bs-ticks {
+    background:
+      linear-gradient(to right, currentColor 1px, transparent 1px) left top / 80px 16px repeat-x,
+      linear-gradient(to right, currentColor 1px, transparent 1px) left top / 40px 10px repeat-x,
+      linear-gradient(to right, currentColor 1px, transparent 1px) left top / 8px 6px repeat-x;
+  }
+</style>

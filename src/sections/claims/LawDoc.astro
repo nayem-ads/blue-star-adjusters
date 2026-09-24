@@ -1,0 +1,46 @@
+---
+// Claims kit / LawDoc (Fire & Smoke "Law" 217:7886 / 218:2593; also ALE "Law"). Navy band, faint B mark top right,
+// rail (§ chip, H2, button) + a paper "document" card tilted 1.5° inside crop marks, with a § citation row and the law text.
+// Usage: <LawDoc chip="§ 04" title="The law moved." cite="AB 1795" body={['Plain text ', {u:'underlined emphasis'}, '.']} nodes={{…}} />
+// body segments: string = regular, {u} = semibold underlined. Optional button {label, href} (default Schedule a Free Review).
+import Button from '../../components/Button.astro';
+import Logo from '../../components/Logo.astro';
+import Chip from './Chip.astro';
+import CropMarks from './CropMarks.astro';
+import { ROUTES } from '../../data/site';
+import { dn, type N } from './nodes';
+
+type Seg = string | { u: string };
+type K = 'section' | 'mark' | 'rail' | 'heading' | 'chip' | 'chipText' | 'title' | 'button' | 'holder' | 'crop' | 'citeRow' | 'citeChip' | 'cite' | 'body';
+interface Props { chip: string; title: string; cite: string; body: Seg[]; button?: { label: string; href: string }; id?: string; nodes: Partial<Record<K, N>> }
+const { chip, title, cite, body, button = { label: 'Schedule a Free Review', href: ROUTES.freeClaimReview }, id = 'law-title', nodes: n } = Astro.props;
+---
+<section aria-labelledby={id} class="relative overflow-hidden bg-navy" {...dn(n.section)}>
+  <span aria-hidden="true" class="bs-law__mark absolute right-0 top-0 opacity-[.06] pointer-events-none" {...dn(n.mark)}><Logo variant="mark-white" bare label="" class="block w-full h-full" /></span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[136px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[32px] lg:w-[360px] lg:shrink-0" data-node={Array.isArray(n.rail) ? n.rail[0] : n.rail}>
+      <div class="flex flex-col items-start gap-[16px] lg:contents" data-node-m={Array.isArray(n.heading) ? n.heading[1] : undefined}>
+        <Chip theme="dark" node={n.chip} text={n.chipText}>{chip}</Chip>
+        <h2 id={id} class="m-0 w-full tm-display lg:t-h2 text-white" {...dn(n.title)}>{title}</h2>
+      </div>
+      <Button href={button.href} variant="on-dark" class="order-last lg:order-none h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" {...dn(n.button)}>{button.label}</Button>
+    </div>
+    <div class="relative w-[350px] h-[387px] lg:w-[648px] lg:h-[435px] lg:shrink-0" {...dn(n.holder)}>
+      <CropMarks node={n.crop} class="absolute left-0 top-0 w-[350px] h-[387px] lg:left-[8px] lg:w-[632px] lg:h-[395px]" />
+      <div class="bs-law__card absolute left-[24.4px] top-[24px] w-[309px] lg:left-[19px] lg:top-[32px] lg:w-[600px] flex flex-col gap-[16px] lg:gap-[24px] p-[24px] lg:p-[48px] bg-white lg:bg-paper rounded-[2px]">
+        <p class="m-0 flex items-center gap-[12px] lg:gap-[16px] pb-[12px] border-b border-line lg:pb-0 lg:border-0" {...dn(n.citeRow)}>
+          <span class="flex items-center justify-center size-[28px] lg:size-auto lg:px-[8px] lg:py-[4px] rounded-[2px] bg-navy text-white font-body font-semibold text-[16px] leading-[26px] lg:t-label" {...dn(n.citeChip)}>§</span>
+          <span class="tm-label lg:t-label text-navy" {...dn(n.cite)}>{cite}</span>
+        </p>
+        <span aria-hidden="true" class="hidden lg:block w-[504px] h-px bg-line"></span>
+        <p class="m-0 tm-body lg:t-lead text-ink" {...dn(n.body)}>{body.map((s) => typeof s === 'string' ? s : <strong class="font-semibold underline decoration-from-font [text-underline-position:from-font]">{s.u}</strong>)}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .bs-law__mark { width: 280.8px; height: 340.9px; }
+  .bs-law__card { transform: rotate(1.5deg); box-shadow: 0 24px 48px rgba(7, 15, 51, .35); }
+  @media (min-width: 1024px) { .bs-law__mark { width: 461.24px; height: 560px; } }
+</style>

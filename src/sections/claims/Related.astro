@@ -3,11 +3,12 @@
 // Usage: <Related index="§ 06" hubs={[{label:'Residential Claims', href:ROUTES.residential, node:['217:9275','219:988'], text:['217:9276','219:989']}, …]} links={[…7 items]} nodes={{section:['217:9271','219:984'], chip:[…], hubs:'217:9274', index:[…]}} />
 // hubs: the 2 hub links (Residential, Commercial); links: every other claims page except the current one, in the page's own order.
 // Rules: mobile rows carry bottom rules (first hub also a top rule), desktop rows top rules (hubs 2px navy, index 1px line).
+// w (optional) = Figma desktop width of a hub label, pins it when the webfont renders a hair narrower.
 // node = the link row ids, text = the label ids (desktop, mobile). Mobile stacks everything in one column (hub arrows 24, index 20).
 import Icon from '../../components/Icon.astro';
 import { dn, type N } from './nodes';
 
-interface Item { label: string; href: string; node?: N; text?: N }
+interface Item { label: string; href: string; node?: N; text?: N; w?: number }
 interface Props { index: string; hubs: Item[]; links: Item[]; nodes: Partial<Record<'section' | 'chip' | 'chipText' | 'hubs' | 'index' | 'list', N>> }
 const { index, hubs, links, nodes: n } = Astro.props;
 ---
@@ -19,7 +20,7 @@ const { index, hubs, links, nodes: n } = Astro.props;
         {hubs.map((h, i) => (
           <li class="lg:flex-1 min-w-0" {...dn(h.node)}>
             <a href={h.href} class:list={['group flex items-center justify-between border-navy border-b lg:border-b-0 lg:border-t-2 py-[20px] lg:py-[24px] text-navy', i === 0 && 'border-t']}>
-              <span class="flex-1 min-w-0 lg:flex-none tm-h3 lg:t-h3" {...dn(h.text)}>{h.label}</span>
+              <span class="flex-1 min-w-0 lg:flex-none lg:min-w-[var(--w)] tm-h3 lg:t-h3" style={h.w ? `--w:${h.w}px` : undefined} {...dn(h.text)}>{h.label}</span>
               <Icon name="arrow-right" size={24} class="shrink-0 text-navy transition-transform group-hover:translate-x-[4px]" />
             </a>
           </li>

@@ -1,0 +1,14 @@
+---
+// Claims kit / Detail dimension line (Figma 71:527): tick, rule, caption label, rule, tick (royal rules, 8px gaps, 16 tall).
+// Usage: <Dimension label="Well past the burn line" class="w-[208px] lg:w-[320px] text-royal lg:text-navy" />  (class colours the label)
+import { dn, type N } from './nodes';
+interface Props { label: string; node?: N; class?: string }
+const { label, node, class: cls = '' } = Astro.props;
+---
+<p class:list={['m-0 flex items-center gap-[8px] h-[16px]', cls]} {...dn(node)}>
+  <span aria-hidden="true" class="block w-px h-[12px] bg-royal shrink-0"></span>
+  <span aria-hidden="true" class="block flex-1 h-px bg-royal"></span>
+  <span class="t-caption whitespace-nowrap">{label}</span>
+  <span aria-hidden="true" class="block flex-1 h-px bg-royal"></span>
+  <span aria-hidden="true" class="block w-px h-[12px] bg-royal shrink-0"></span>
+</p>

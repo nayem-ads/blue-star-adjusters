@@ -1,0 +1,17 @@
+---
+// Claims kit / Detail crop marks (Figma 71:533): four royal 16px corner marks, 1.5px thick. Size/position via class. Decorative.
+import { dn, type N } from './nodes';
+interface Props { node?: N; class?: string }
+const { node, class: cls = '' } = Astro.props;
+---
+<div aria-hidden="true" class:list={['bs-crop pointer-events-none', cls]} {...dn(node)}></div>
+<style is:global>
+  .bs-crop {
+    --c: var(--color-royal);
+    background:
+      linear-gradient(var(--c), var(--c)) left top / 16px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) left top / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) right top / 16px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) right top / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) left bottom / 16px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) left bottom / 1.5px 16px no-repeat,
+      linear-gradient(var(--c), var(--c)) right bottom / 16px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) right bottom / 1.5px 16px no-repeat;
+  }
+</style>

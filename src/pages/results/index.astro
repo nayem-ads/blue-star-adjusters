@@ -1,5 +1,27 @@
 ---
-// Noindex stub (components agent). Replace with the real page when it is designed.
-import StubPage from '../../components/StubPage.astro';
+// Results (Figma desktop 217:6195, mobile 217:11645). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/results/Hero.astro';
+import Ledger from '../../sections/results/Ledger.astro';
+import Garage from '../../sections/results/Garage.astro';
+import Disclaimer from '../../sections/results/Disclaimer.astro';
+import FinalCta from '../../sections/results/FinalCta.astro';
 ---
-<StubPage name="Results" eyebrow="The firm" />
+<Base title="Public Adjuster Results: Offer vs. Settlement | Blue Star Adjusters" description="What the carrier offered and what we recovered: Palisades fire, smoke, estate and apartment fire claims. Results reflect specific losses and policies.">
+  <div data-node="217:6196" data-node-m="217:11646"><Header theme="light" /></div>
+  <main class="bs-results">
+    <Hero />
+    <Ledger />
+    <Garage />
+    <Disclaimer />
+    <FinalCta />
+  </main>
+  <div data-node="217:8924" data-node-m="217:12139"><Footer /></div>
+  <CallBar node="217:12175" />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-results :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

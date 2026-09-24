@@ -1,0 +1,14 @@
+---
+// Blueprint grid (full bleed, 40px): navy 1px lines every 40px at `minor` opacity, every `major` px at `majorOp`.
+// Absolute, fills its positioned parent unless class says otherwise.
+interface Props { major?: number; minor?: number; majorOp?: number; class?: string }
+const { major = 160, minor = 0.05, majorOp = 0.1, class: cls = 'absolute inset-0' } = Astro.props;
+const a = (o: number) => `rgb(8 29 94 / ${o})`;
+const bg = [
+  `linear-gradient(to right, ${a(majorOp - minor)} 1px, transparent 1px) 0 0 / ${major}px ${major}px`,
+  `linear-gradient(to bottom, ${a(majorOp - minor)} 1px, transparent 1px) 0 0 / ${major}px ${major}px`,
+  `linear-gradient(to right, ${a(minor)} 1px, transparent 1px) 0 0 / 40px 40px`,
+  `linear-gradient(to bottom, ${a(minor)} 1px, transparent 1px) 0 0 / 40px 40px`,
+].join(', ');
+---
+<div aria-hidden="true" class:list={['pointer-events-none', cls]} style={`background:${bg}`}></div>

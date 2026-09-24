@@ -1,0 +1,47 @@
+---
+// Results / Hero. Desktop 217:6219 (1280×693, paper, blueprint grid, ruler at the bottom edge), mobile 217:11663 (390×448).
+// Desktop has the trust facts + ledger key here; mobile moves the key into the ledger and the facts into the disclaimer section.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Icon from '../../components/Icon.astro';
+import Grid from './Grid.astro';
+import Ticks from './Ticks.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const facts = [
+  { icon: 'check', text: 'No upfront cost', node: '217:6237', t: '217:6240' },
+  { icon: 'shield', text: 'You always have final say on any settlement', node: '217:6241', t: '217:6245' },
+  { icon: 'document', text: 'CA License No. 2B60428', node: '217:6246', t: '217:6250' },
+];
+---
+<section aria-labelledby="results-title" class="relative overflow-hidden bg-paper" data-node="217:6219" data-node-m="217:11663">
+  <Grid />
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[32px] pb-[40px] lg:px-[80px] lg:pt-[96px] lg:pb-[112px]">
+    <div class="flex flex-col gap-[20px] lg:gap-[24px]" data-node="217:6220">
+      <p class="lg:hidden m-0 flex self-start items-center gap-[12px] tm-label text-royal" data-node-m="217:11664"><span aria-hidden="true" class="block w-[24px] h-px bg-royal"></span><span data-node-m="217:11666">Results</span></p>
+      <Eyebrow class="hidden lg:flex self-start" node="217:6221">Results</Eyebrow>
+      <h1 id="results-title" class="m-0 tm-display lg:t-display-l text-navy lg:whitespace-nowrap lg:self-start lg:pr-[3.8px]" data-node="217:6224" data-node-m="217:11667">What the Carrier Offered.<br class="hidden lg:inline" /> What We Recovered.</h1>
+    </div>
+    <div class="mt-[20px] lg:mt-[56px] flex flex-col lg:flex-row lg:items-end lg:gap-[96px]" data-node="217:6225">
+      <div class="flex-1 min-w-0 flex flex-col gap-[40px]" data-node="217:6226">
+        <div class="flex flex-col gap-[12px] pt-[4px] lg:pt-0 lg:flex-row lg:gap-[16px] lg:self-start" data-node="217:6227" data-node-m="217:11668">
+          <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" node="217:6228" data-node-m="217:11669">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" node="217:6232" data-node-m="217:11673">Call {PHONE_DISPLAY}</Button>
+        </div>
+        <ul class="hidden lg:flex m-0 p-0 list-none flex-col" data-node="217:6236">
+          {facts.map((f) => (
+            <li class="flex items-center gap-[16px] py-[12px] border-t border-line t-small font-medium text-ink" data-node={f.node}>
+              <Icon name={f.icon} size={24} class="shrink-0 text-navy" /><span data-node={f.t}>{f.text}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="hidden lg:flex flex-col items-start gap-[16px] w-[360px] shrink-0 p-[32px] bg-white border border-line" data-node="217:6251">
+        <p class="m-0 t-h3 text-ink line-through pr-[1.5px]" data-node="217:6252">Offer</p>
+        <p class="m-0 t-h2 text-navy pr-[1.6px]" data-node="217:6253">Settlement</p>
+        <span aria-hidden="true" class="block w-[296px] h-px bg-ink opacity-20"></span>
+        <p class="m-0 t-small font-medium text-ink w-[296px]" data-node="217:6255">“Offer” is the insurer’s offer, not a payment.</p>
+      </div>
+    </div>
+  </div>
+  <Ticks anchor="bottom" class="absolute left-0 right-0 bottom-0 text-navy opacity-50" node="217:6308" nodeM="217:11700" />
+</section>

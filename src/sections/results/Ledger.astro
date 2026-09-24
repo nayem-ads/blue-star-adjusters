@@ -1,0 +1,137 @@
+---
+// Results / Results ledger. Desktop 217:7283 (1280×2007, white): photo 216×272 + body (loss strip, offer line,
+// 120px settlement figure, "What made the difference" + disclaimer). Mobile 217:11750 (390×2340): ledger key on top,
+// then per result: photo 144×180 beside loss + offer, settlement block, ruled "difference" note.
+// The shared LedgerRow (41:92 table row) is a different design, so it isn't used here.
+import Icon from '../../components/Icon.astro';
+import IconCircle from './IconCircle.astro';
+import Photo from './Photo.astro';
+
+type Row = {
+  loss: string; icon: string; iconM: string; photo: [string, string]; alt: string;
+  offer?: string; offerText?: boolean; word?: string; figures: { fig: string; after?: string }[]; note: string;
+  d: Record<string, string>; m: Record<string, string>; pad: string;
+};
+const disclaimer = 'Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.';
+const rows: Row[] = [
+  { loss: 'Palisades fire, home.', icon: 'flame', iconM: 'flame', photo: ['217:7285', '217:11760'], alt: 'A rebuilt single-family home, finished exterior in daylight.',
+    offer: '$38,000', figures: [{ fig: '$276,000' }], note: 'structural damage properly measured, full strip out of subfloor and electrical.', pad: 'lg:pt-0',
+    d: { row: '217:7284', photo: '217:7285', body: '217:7288', loss: '217:7295', offer: '217:7600', fig: '217:7302', diff: '217:7304', note: '217:7306', disc: '217:7309' },
+    m: { row: '217:11758', photo: '217:11760', loss: '217:11769', offer: '217:11772', fig: '217:11776', disc: '217:11777', diff: '217:11778', note: '217:11780' } },
+  { loss: 'Smoke, home.', icon: 'home', iconM: 'home', photo: ['217:7312', '217:11784'], alt: 'Smoke staining along the corner of a room, field photograph.',
+    offer: '$17,000', word: 'about', figures: [{ fig: '$1.1 million' }], note: 'industrial hygienist proved combustion byproducts in porous materials and doors.', pad: '',
+    d: { row: '217:7311', photo: '217:7312', body: '217:7315', loss: '217:7322', offer: '217:7604', word: '217:7329', fig: '217:7330', diff: '217:7332', note: '217:7334', disc: '217:7337' },
+    m: { row: '217:11782', photo: '217:11784', loss: '217:11793', offer: '217:11796', word: '217:11799', fig: '217:11801', disc: '217:11802', diff: '217:11803', note: '217:11805' } },
+  { loss: 'Fire, estate.', icon: 'building', iconM: 'document', photo: ['217:7340', '217:11809'], alt: 'A private library with oil paintings and a wine rack under a film of soot, inventory tags attached.',
+    offer: 'owner recovered $6M alone, then stalled.', offerText: true, figures: [{ fig: '$11M', after: 'structure and' }, { fig: '$5.2M', after: 'contents' }], note: 'specialist valuation of fine wine and art.', pad: '',
+    d: { row: '217:7339', photo: '217:7340', body: '217:7343', loss: '217:7349', offer: '217:7608', fig: '217:7356', after: '217:7357', fig2: '217:7358', after2: '217:7359', diff: '217:7361', note: '217:7363', disc: '217:7366' },
+    m: { row: '217:11807', photo: '217:11809', loss: '217:11818', offer: '217:11821', fig: '217:11825', after: '217:11826', fig2: '217:11828', after2: '217:11829', disc: '217:11830', diff: '217:11831', note: '217:11833' } },
+  { loss: 'Apartment fire, 800 sq ft.', icon: 'building', iconM: 'building', photo: ['217:7369', '217:11837'], alt: 'Fire-gutted interior with charred framing, field photograph.',
+    word: 'nearly', figures: [{ fig: '$200,000' }], note: 'tongue and groove ceiling, structural repair, smoke mitigation for the neighboring unit.', pad: '',
+    d: { row: '217:7368', photo: '217:7369', body: '217:7372', loss: '217:7378', word: '217:7382', fig: '217:7383', diff: '217:7385', note: '217:7387', disc: '217:7390' },
+    m: { row: '217:11835', photo: '217:11837', loss: '217:11845', word: '217:11848', fig: '217:11850', disc: '217:11851', diff: '217:11852', note: '217:11854' } },
+];
+const label = 'm-0 t-small font-medium text-ink w-[112px] shrink-0';
+const fig = 'm-0 t-figure-xl text-navy whitespace-nowrap pr-[5.9px]';
+const word = 'm-0 t-h3 text-ink whitespace-nowrap pr-[1px]';
+---
+<section aria-label="Results" class="bg-white" data-node="217:7283" data-node-m="217:11750">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[32px] pb-[56px] lg:px-[80px] lg:py-[96px]">
+    <!-- mobile ledger key -->
+    <div class="lg:hidden pb-[16px] border-b border-line" data-node-m="217:11751">
+      <p class="m-0 flex w-fit items-center gap-[12px] pr-[1.2px]" data-node-m="217:11752">
+        <s class="tm-body text-ink" data-node-m="217:11753">Offer</s>
+        <span aria-hidden="true" class="block w-[24px] h-px bg-ink"></span>
+        <span class="tm-body-strong text-navy" data-node-m="217:11755">Settlement</span>
+      </p>
+      <p class="m-0 mt-[8px] t-caption text-ink" data-node-m="217:11756">“Offer” is the insurer’s offer, not a payment.</p>
+    </div>
+
+    {rows.map((r, i) => (
+      <article class:list={['border-line', i > 0 && 'border-t lg:border-[rgb(7_15_51/0.18)]']}>
+        <!-- desktop row -->
+        <div class:list={['hidden lg:flex items-start gap-[48px] py-[56px]', r.pad]} data-node={r.d.row}>
+          <div class="w-[216px] h-[272px] shrink-0" data-node={r.d.photo}><Photo node={r.photo[0]} alt={r.alt} class="w-full h-full object-cover" /></div>
+          <div class="flex-1 min-w-0 flex flex-col gap-[24px]" data-node={r.d.body}>
+            <div class="flex items-center gap-[16px]">
+              <IconCircle name={r.icon} />
+              <h2 class="m-0 t-body-strong text-ink whitespace-nowrap" data-node={r.d.loss}>{r.loss}</h2>
+            </div>
+            <div class:list={['flex flex-col', !r.offerText && 'gap-[8px]']}>
+              {r.offer && (
+                <p class:list={['m-0 flex items-baseline gap-[16px] text-ink', r.offerText && 'pb-[8px]']}>
+                  <span class={label}>Offer</span>
+                  {r.offerText
+                    ? <span class="t-lead whitespace-nowrap" data-node={r.d.offer}>{r.offer}</span>
+                    : <s class="font-display font-medium text-[48px] leading-[54px] tracking-[-0.015em] whitespace-nowrap pr-[1.4px]" data-node={r.d.offer}>{r.offer}</s>}
+                </p>
+              )}
+              <p class="m-0 flex items-baseline gap-[16px]">
+                <span class={label}>Settlement</span>
+                {r.word && <span class={word} data-node={r.d.word}>{r.word}</span>}
+                <span class={fig} data-node={r.d.fig}>{r.figures[0].fig}</span>
+                {r.figures[0].after && <span class={word} data-node={r.d.after}>{r.figures[0].after}</span>}
+              </p>
+              {r.figures[1] && (
+                <p class="m-0 flex items-baseline gap-[16px] pl-[128px]">
+                  <span class={fig} data-node={r.d.fig2}>{r.figures[1].fig}</span>
+                  <span class={word} data-node={r.d.after2}>{r.figures[1].after}</span>
+                </p>
+              )}
+            </div>
+            <div class="flex items-start gap-[48px] pl-[128px]">
+              <div class="flex-1 min-w-0 flex flex-col gap-[8px]" data-node={r.d.diff}>
+                <p class="m-0 t-body-strong text-navy whitespace-nowrap">What made the difference:</p>
+                <p class="m-0 t-body text-ink" data-node={r.d.note}>{r.note}</p>
+              </div>
+              <div class="w-[264px] shrink-0 flex flex-col gap-[12px]">
+                <span aria-hidden="true" class="block w-[24px] h-[2px] bg-royal"></span>
+                <p class="m-0 font-body font-medium text-[12px] leading-[18px] text-ink" data-node={r.d.disc}>{disclaimer}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- mobile card -->
+        <div class="lg:hidden pt-[24px] pb-[32px]" data-node-m={r.m.row}>
+          <div class="flex gap-[16px]">
+            <div class="w-[144px] h-[180px] shrink-0" data-node-m={r.m.photo}><Photo node={r.photo[1]} alt={r.alt} class="w-full h-full object-cover" /></div>
+            <div class="flex-1 min-w-0 flex flex-col gap-[8px]">
+              <div class="flex items-center gap-[12px]">
+                <IconCircle name={r.iconM} />
+                <h2 class="m-0 flex-1 min-w-0 tm-body-strong text-ink" data-node-m={r.m.loss}>{r.loss}</h2>
+              </div>
+              {r.offer && (
+                <p class="m-0 flex flex-col gap-[4px] text-ink">
+                  <span class="tm-label">Offer</span>
+                  {r.offerText
+                    ? <span class="tm-body" data-node-m={r.m.offer}>{r.offer}</span>
+                    : <s class="font-display font-semibold text-[32px] leading-[36px] tracking-[-0.015em] whitespace-nowrap self-start" data-node-m={r.m.offer}>{r.offer}</s>}
+                </p>
+              )}
+            </div>
+          </div>
+          <div class="mt-[32px] flex flex-col items-start">
+            <p class="m-0 tm-label text-ink">Settlement</p>
+            {r.word && <p class="m-0 mt-[4px] tm-h3 text-ink" data-node-m={r.m.word}>{r.word}</p>}
+            <p class="m-0 mt-[4px] flex items-baseline gap-[12px]">
+              <span class:list={['t-figure text-navy whitespace-nowrap', i > 1 && 'pr-[1.3px]']} data-node-m={r.m.fig}>{r.figures[0].fig}</span>
+              {r.figures[0].after && <span class="tm-h3 text-ink whitespace-nowrap !top-0" data-node-m={r.m.after}>{r.figures[0].after}</span>}
+            </p>
+            {r.figures[1] && (
+              <p class="m-0 mt-[4px] flex items-baseline gap-[12px]">
+                <span class="t-figure text-navy whitespace-nowrap pr-[1.3px]" data-node-m={r.m.fig2}>{r.figures[1].fig}</span>
+                <span class="tm-h3 text-ink whitespace-nowrap !top-0" data-node-m={r.m.after2}>{r.figures[1].after}</span>
+              </p>
+            )}
+            <p class="m-0 mt-[4px] font-body font-medium text-[12px] leading-[18px] text-ink" data-node-m={r.m.disc}>{disclaimer}</p>
+          </div>
+          <div class="mt-[32px] border-l-2 border-navy pl-[16px] flex flex-col gap-[4px]" data-node-m={r.m.diff}>
+            <p class="m-0 tm-body-strong text-navy">What made the difference:</p>
+            <p class="m-0 tm-body text-ink" data-node-m={r.m.note}>{r.note}</p>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import smartQuotes from './scripts/smart-quotes.mjs';
 
 export default defineConfig({
   site: process.env.PUBLIC_SITE_URL || 'https://bluestaradjusters.com',
@@ -8,4 +9,5 @@ export default defineConfig({
   // Old placeholder URL for Commercial Claims (linked before Sep 2026) keeps working.
   redirects: { '/commercial-claims/': '/claims/commercial/' },
   vite: { plugins: [tailwindcss()] },
+  integrations: [smartQuotes()],
 });

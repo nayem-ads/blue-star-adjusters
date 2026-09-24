@@ -37,7 +37,18 @@ const nav = [
       { label: 'Why Blue Star', href: ROUTES.whyBlueStar },
       { label: 'Results', href: ROUTES.results },
       { label: 'Who We Serve', href: ROUTES.whoWeServe },
-      { label: 'Locations', href: ROUTES.locations }
+      { label: 'Locations', href: ROUTES.locations,
+        sub: [
+          { label: 'Sacramento, CA', href: ROUTES.sacramento },
+          { label: 'Santa Monica, CA', href: ROUTES.santaMonica },
+          { label: 'San Francisco, CA', href: ROUTES.sanFrancisco },
+          { label: 'Reno, NV', href: ROUTES.reno },
+          { label: 'Portland, OR', href: ROUTES.portland },
+          { label: 'Seattle, WA', href: ROUTES.seattle },
+          { label: 'Scottsdale, AZ', href: ROUTES.scottsdale }
+        ]
+      },
+      { label: 'Contact', href: ROUTES.contact }
     ]
   },
   { label: 'How It Works', href: ROUTES.howItWorks, w: 103,
@@ -77,8 +88,17 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
             </a>
             {l.sub && (
               <ul class="hidden group-hover:flex group-focus-within:flex absolute top-full left-0 min-w-[240px] bg-white border border-line shadow-lg rounded-[4px] py-[12px] flex-col z-50 bs-dropdown-menu">
-                {l.sub.map((s) => (
-                  <li><a href={s.href} class="block px-[16px] py-[8px] text-[15px] font-medium text-ink hover:text-royal bs-dropdown-link" aria-current={isCurrent(s.href) ? 'page' : undefined}>{s.label}</a></li>
+                {l.sub.map((s: any) => (
+                  <li class="relative group/sub">
+                    <a href={s.href} class="flex items-center justify-between gap-[12px] px-[16px] py-[8px] text-[15px] font-medium text-ink hover:text-royal bs-dropdown-link whitespace-nowrap" aria-current={isCurrent(s.href) ? 'page' : undefined}>{s.label}{s.sub && <Icon name="chevron-down" size={14} class="-rotate-90" />}</a>
+                    {s.sub && (
+                      <ul class="hidden group-hover/sub:flex group-focus-within/sub:flex absolute left-full top-[-12px] min-w-[220px] bg-white border border-line shadow-lg rounded-[4px] py-[12px] flex-col z-50 list-none m-0 bs-dropdown-menu">
+                        {s.sub.map((c: any) => (
+                          <li><a href={c.href} class="block px-[16px] py-[8px] text-[15px] font-medium text-ink hover:text-royal bs-dropdown-link whitespace-nowrap" aria-current={isCurrent(c.href) ? 'page' : undefined}>{c.label}</a></li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
                 ))}
               </ul>
             )}
@@ -116,7 +136,16 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
             {l.sub && (
               <ul class="m-0 pl-[16px] pb-[16px] list-none flex flex-col">
                 {l.sub.map((s: any) => (
-                  <li><a href={s.href} class="block py-[12px] text-[16px] font-medium text-white/80 hover:text-white hover:underline underline-offset-4" aria-current={isCurrent(s.href) ? 'page' : undefined}>{s.label}</a></li>
+                  <li>
+                    <a href={s.href} class="block py-[12px] text-[16px] font-medium text-white/80 hover:text-white hover:underline underline-offset-4" aria-current={isCurrent(s.href) ? 'page' : undefined}>{s.label}</a>
+                    {s.sub && (
+                      <ul class="m-0 pl-[16px] pb-[4px] list-none flex flex-col">
+                        {s.sub.map((c: any) => (
+                          <li><a href={c.href} class="block py-[10px] text-[15px] font-medium text-white/70 hover:text-white hover:underline underline-offset-4" aria-current={isCurrent(c.href) ? 'page' : undefined}>{c.label}</a></li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
                 ))}
               </ul>
             )}

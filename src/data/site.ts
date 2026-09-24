@@ -16,8 +16,7 @@ export const ROUTES = {
   howItWorks: '/how-it-works/',
   fees: '/fees/',
   whyBlueStar: '/why-blue-star/',
-  
-  // New Pages
+  // Claims, firm and location pages (built Sep 2026)
   residential: '/claims/residential/',
   commercial: '/claims/commercial/',
   fireSmoke: '/claims/fire-smoke-damage/',
@@ -33,6 +32,14 @@ export const ROUTES = {
   locations: '/locations/',
   faq: '/faq/',
   first48Hours: '/first-48-hours/',
+  // Office pages
+  sacramento: '/locations/california/sacramento/',
+  santaMonica: '/locations/california/santa-monica/',
+  sanFrancisco: '/locations/california/san-francisco/',
+  reno: '/locations/nevada/reno/',
+  portland: '/locations/oregon/portland/',
+  seattle: '/locations/washington/seattle/',
+  scottsdale: '/locations/arizona/scottsdale/',
 } as const;
 
 // FormSubmit (https://formsubmit.co). First submission sends an activation email to FORM_TO.

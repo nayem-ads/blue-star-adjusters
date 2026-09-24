@@ -1,0 +1,691 @@
+<canvas id="212:699" name="Commercial" x="0" y="0" width="0" height="0">
+  <frame id="230:10208" name="Desktop — Commercial (1280)" x="0" y="0" width="1280" height="4863">
+    <frame id="230:10209" name="Section / Hero" x="0" y="0" width="1280" height="820">
+      <rounded-rectangle id="230:10210" name="IMG:ai-commercial-fire" x="0" y="0" width="1280" height="820" />
+      <rounded-rectangle id="230:10211" name="Overlay / ink" x="0" y="0" width="1280" height="820" />
+      <rounded-rectangle id="230:10212" name="Overlay / left soft scrim" x="0" y="0" width="760" height="820" />
+      <instance id="230:10213" name="Header / Desktop (Dark)" x="0" y="0" width="1280" height="88" />
+      <frame id="230:10214" name="Hero content" x="80" y="174" width="1040" height="550">
+        <instance id="230:10215" name="Eyebrow" x="0" y="0" width="171" height="18" />
+        <text id="230:10216" name="slot/hero/2" x="0" y="50" width="1040" height="192" />
+        <text id="230:10905" name="slot/hero/lead" x="0" y="274" width="640" height="128" />
+        <frame id="230:10217" name="Hero CTAs" x="0" y="434" width="504" height="52">
+          <instance id="230:10218" name="Button / Schedule a Free Review" x="0" y="0" width="253" height="52" />
+          <instance id="230:10219" name="Button / Call (916) 507-1005" x="269" y="0" width="235" height="52" />
+        </frame>
+        <frame id="230:10220" name="Trust line" x="0" y="518" width="719" height="32">
+          <text id="230:10221" name="slot/hero/3" x="0" y="8" width="120" height="24" />
+          <rounded-rectangle id="230:10222" name="Divider" x="140" y="12" width="1" height="16" />
+          <text id="230:10223" name="slot/hero/4" x="161" y="8" width="333" height="24" />
+          <rounded-rectangle id="230:10224" name="Divider" x="514" y="12" width="1" height="16" />
+          <text id="230:10225" name="slot/hero/5" x="535" y="8" width="184" height="24" />
+        </frame>
+      </frame>
+      <frame id="230:10226" name="Ruler ticks (bottom edge)" x="0" y="804" width="1280" height="16">
+        <rounded-rectangle id="230:10227" name="Tick" x="0" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10228" name="Tick" x="8" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10229" name="Tick" x="16" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10230" name="Tick" x="24" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10231" name="Tick" x="32" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10232" name="Tick" x="40" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10233" name="Tick" x="48" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10234" name="Tick" x="56" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10235" name="Tick" x="64" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10236" name="Tick" x="72" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10237" name="Tick" x="80" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10238" name="Tick" x="88" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10239" name="Tick" x="96" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10240" name="Tick" x="104" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10241" name="Tick" x="112" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10242" name="Tick" x="120" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10243" name="Tick" x="128" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10244" name="Tick" x="136" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10245" name="Tick" x="144" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10246" name="Tick" x="152" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10247" name="Tick" x="160" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10248" name="Tick" x="168" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10249" name="Tick" x="176" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10250" name="Tick" x="184" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10251" name="Tick" x="192" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10252" name="Tick" x="200" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10253" name="Tick" x="208" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10254" name="Tick" x="216" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10255" name="Tick" x="224" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10256" name="Tick" x="232" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10257" name="Tick" x="240" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10258" name="Tick" x="248" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10259" name="Tick" x="256" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10260" name="Tick" x="264" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10261" name="Tick" x="272" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10262" name="Tick" x="280" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10263" name="Tick" x="288" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10264" name="Tick" x="296" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10265" name="Tick" x="304" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10266" name="Tick" x="312" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10267" name="Tick" x="320" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10268" name="Tick" x="328" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10269" name="Tick" x="336" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10270" name="Tick" x="344" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10271" name="Tick" x="352" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10272" name="Tick" x="360" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10273" name="Tick" x="368" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10274" name="Tick" x="376" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10275" name="Tick" x="384" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10276" name="Tick" x="392" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10277" name="Tick" x="400" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10278" name="Tick" x="408" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10279" name="Tick" x="416" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10280" name="Tick" x="424" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10281" name="Tick" x="432" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10282" name="Tick" x="440" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10283" name="Tick" x="448" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10284" name="Tick" x="456" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10285" name="Tick" x="464" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10286" name="Tick" x="472" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10287" name="Tick" x="480" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10288" name="Tick" x="488" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10289" name="Tick" x="496" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10290" name="Tick" x="504" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10291" name="Tick" x="512" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10292" name="Tick" x="520" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10293" name="Tick" x="528" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10294" name="Tick" x="536" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10295" name="Tick" x="544" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10296" name="Tick" x="552" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10297" name="Tick" x="560" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10298" name="Tick" x="568" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10299" name="Tick" x="576" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10300" name="Tick" x="584" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10301" name="Tick" x="592" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10302" name="Tick" x="600" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10303" name="Tick" x="608" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10304" name="Tick" x="616" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10305" name="Tick" x="624" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10306" name="Tick" x="632" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10307" name="Tick" x="640" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10308" name="Tick" x="648" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10309" name="Tick" x="656" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10310" name="Tick" x="664" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10311" name="Tick" x="672" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10312" name="Tick" x="680" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10313" name="Tick" x="688" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10314" name="Tick" x="696" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10315" name="Tick" x="704" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10316" name="Tick" x="712" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10317" name="Tick" x="720" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10318" name="Tick" x="728" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10319" name="Tick" x="736" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10320" name="Tick" x="744" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10321" name="Tick" x="752" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10322" name="Tick" x="760" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10323" name="Tick" x="768" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10324" name="Tick" x="776" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10325" name="Tick" x="784" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10326" name="Tick" x="792" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10327" name="Tick" x="800" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10328" name="Tick" x="808" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10329" name="Tick" x="816" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10330" name="Tick" x="824" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10331" name="Tick" x="832" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10332" name="Tick" x="840" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10333" name="Tick" x="848" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10334" name="Tick" x="856" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10335" name="Tick" x="864" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10336" name="Tick" x="872" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10337" name="Tick" x="880" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10338" name="Tick" x="888" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10339" name="Tick" x="896" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10340" name="Tick" x="904" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10341" name="Tick" x="912" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10342" name="Tick" x="920" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10343" name="Tick" x="928" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10344" name="Tick" x="936" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10345" name="Tick" x="944" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10346" name="Tick" x="952" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10347" name="Tick" x="960" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10348" name="Tick" x="968" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10349" name="Tick" x="976" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10350" name="Tick" x="984" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10351" name="Tick" x="992" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10352" name="Tick" x="1000" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10353" name="Tick" x="1008" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10354" name="Tick" x="1016" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10355" name="Tick" x="1024" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10356" name="Tick" x="1032" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10357" name="Tick" x="1040" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10358" name="Tick" x="1048" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10359" name="Tick" x="1056" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10360" name="Tick" x="1064" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10361" name="Tick" x="1072" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10362" name="Tick" x="1080" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10363" name="Tick" x="1088" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10364" name="Tick" x="1096" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10365" name="Tick" x="1104" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10366" name="Tick" x="1112" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10367" name="Tick" x="1120" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10368" name="Tick" x="1128" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10369" name="Tick" x="1136" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10370" name="Tick" x="1144" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10371" name="Tick" x="1152" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10372" name="Tick" x="1160" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10373" name="Tick" x="1168" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10374" name="Tick" x="1176" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10375" name="Tick" x="1184" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10376" name="Tick" x="1192" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10377" name="Tick" x="1200" y="0" width="1" height="16" />
+        <rounded-rectangle id="230:10378" name="Tick" x="1208" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10379" name="Tick" x="1216" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10380" name="Tick" x="1224" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10381" name="Tick" x="1232" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10382" name="Tick" x="1240" y="0" width="1" height="10" />
+        <rounded-rectangle id="230:10383" name="Tick" x="1248" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10384" name="Tick" x="1256" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10385" name="Tick" x="1264" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10386" name="Tick" x="1272" y="0" width="1" height="6" />
+        <rounded-rectangle id="230:10387" name="Tick" x="1280" y="0" width="1" height="16" />
+      </frame>
+    </frame>
+    <frame id="230:10391" name="Section / Scope" x="0" y="820" width="1280" height="1010">
+      <frame id="230:10392" name="Rail" x="80" y="120" width="360" height="574">
+        <frame id="230:10393" name="Index chip" x="0" y="0" width="43" height="28">
+          <text id="230:10394" name="Index / § 01" x="9" y="5" width="25" height="18" />
+        </frame>
+        <text id="230:10395" name="slot/scope/1" x="0" y="52" width="360" height="170" />
+        <frame id="230:10396" name="Ruler ticks" x="0" y="246" width="360" height="16">
+          <rounded-rectangle id="230:10397" name="Tick" x="0" y="0" width="1" height="16" />
+          <rounded-rectangle id="230:10398" name="Tick" x="8" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10399" name="Tick" x="16" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10400" name="Tick" x="24" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10401" name="Tick" x="32" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10402" name="Tick" x="40" y="0" width="1" height="10" />
+          <rounded-rectangle id="230:10403" name="Tick" x="48" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10404" name="Tick" x="56" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10405" name="Tick" x="64" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10406" name="Tick" x="72" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10407" name="Tick" x="80" y="0" width="1" height="16" />
+          <rounded-rectangle id="230:10408" name="Tick" x="88" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10409" name="Tick" x="96" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10410" name="Tick" x="104" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10411" name="Tick" x="112" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10412" name="Tick" x="120" y="0" width="1" height="10" />
+          <rounded-rectangle id="230:10413" name="Tick" x="128" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10414" name="Tick" x="136" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10415" name="Tick" x="144" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10416" name="Tick" x="152" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10417" name="Tick" x="160" y="0" width="1" height="16" />
+          <rounded-rectangle id="230:10418" name="Tick" x="168" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10419" name="Tick" x="176" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10420" name="Tick" x="184" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10421" name="Tick" x="192" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10422" name="Tick" x="200" y="0" width="1" height="10" />
+          <rounded-rectangle id="230:10423" name="Tick" x="208" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10424" name="Tick" x="216" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10425" name="Tick" x="224" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10426" name="Tick" x="232" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10427" name="Tick" x="240" y="0" width="1" height="16" />
+          <rounded-rectangle id="230:10428" name="Tick" x="248" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10429" name="Tick" x="256" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10430" name="Tick" x="264" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10431" name="Tick" x="272" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10432" name="Tick" x="280" y="0" width="1" height="10" />
+          <rounded-rectangle id="230:10433" name="Tick" x="288" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10434" name="Tick" x="296" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10435" name="Tick" x="304" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10436" name="Tick" x="312" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10437" name="Tick" x="320" y="0" width="1" height="16" />
+          <rounded-rectangle id="230:10438" name="Tick" x="328" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10439" name="Tick" x="336" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10440" name="Tick" x="344" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10441" name="Tick" x="352" y="0" width="1" height="6" />
+          <rounded-rectangle id="230:10442" name="Tick" x="360" y="0" width="1" height="10" />
+        </frame>
+        <rounded-rectangle id="230:10936" name="IMG:apartment" x="0" y="286" width="360" height="248" />
+        <frame id="230:10937" name="Photo caption" x="0" y="558" width="148" height="16">
+          <rounded-rectangle id="230:10938" name="Caption rule" x="0" y="7.5" width="32" height="1" />
+          <text id="230:10939" name="Caption / Field photograph" x="40" y="0" width="108" height="16" />
+        </frame>
+      </frame>
+      <frame id="230:10443" name="List / Misses" x="552" y="120" width="648" height="770">
+        <frame id="230:10444" name="Item / Loss of income and extra expense" x="0" y="0" width="648" height="133">
+          <frame id="230:10445" name="Icon circle / clock" x="0" y="33" width="40" height="40">
+            <instance id="230:10446" name="Icon / clock" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10447" name="slot/scope/2" x="64" y="33" width="584" height="68" />
+        </frame>
+        <frame id="230:10448" name="Item / Tenant improvements vs. building" x="0" y="133" width="648" height="133">
+          <frame id="230:10449" name="Icon circle / building" x="0" y="33" width="40" height="40">
+            <instance id="230:10450" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10451" name="slot/scope/3" x="64" y="33" width="584" height="68" />
+        </frame>
+        <frame id="230:10452" name="Item / Inventory and equipment" x="0" y="266" width="648" height="134">
+          <frame id="230:10453" name="Icon circle / document" x="0" y="33" width="40" height="40">
+            <instance id="230:10454" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10455" name="slot/scope/4" x="64" y="33" width="584" height="68" />
+        </frame>
+        <frame id="230:10911" name="Item / Code" x="0" y="400" width="648" height="168">
+          <frame id="230:10912" name="Icon circle / ruler" x="0" y="33" width="40" height="40">
+            <instance id="230:10913" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10914" name="slot/scope/5" x="64" y="33" width="584" height="102" />
+        </frame>
+        <frame id="230:10915" name="Item / Xactimate and IH reports" x="0" y="568" width="648" height="202">
+          <frame id="230:10916" name="Icon circle / search" x="0" y="33" width="40" height="40">
+            <instance id="230:10917" name="Icon / search" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10918" name="slot/scope/6" x="64" y="33" width="584" height="136" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="230:10940" name="Section / Commercial list" x="0" y="1830" width="1280" height="985">
+      <rounded-rectangle id="230:10941" name="IMG:ai-business-interruption" x="0" y="0" width="544" height="985" />
+      <frame id="230:10942" name="Panel / navy" x="544" y="0" width="736" height="985">
+        <instance id="230:10943" name="Mark / faint B (6%)" x="390.07049560546875" y="64" width="461.23931884765625" height="560.0000610351562" />
+        <frame id="230:10948" name="Index chip" x="80" y="120" width="46" height="28">
+          <text id="230:10949" name="Index / § 02" x="9" y="5" width="28" height="18" />
+        </frame>
+        <frame id="230:10950" name="Ledger / Eight items" x="80" y="188" width="576" height="585">
+          <rounded-rectangle id="230:10951" name="Hairline" x="0" y="0" width="576" height="1" />
+          <frame id="230:10952" name="Row / Fire, water and structural losses" x="0" y="1" width="576" height="72">
+            <frame id="230:10953" name="Icon circle / flame" x="0" y="16" width="40" height="40">
+              <instance id="230:10954" name="Icon / flame" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:10957" name="slot/list/1" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:10958" name="Hairline" x="0" y="73" width="576" height="1" />
+          <frame id="230:10959" name="Row / Business interruption and loss of income" x="0" y="74" width="576" height="72">
+            <frame id="230:10960" name="Icon circle / clock" x="0" y="16" width="40" height="40">
+              <instance id="230:10961" name="Icon / clock" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:10964" name="slot/list/2" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:10965" name="Hairline" x="0" y="146" width="576" height="1" />
+          <frame id="230:10966" name="Row / Dependent property and contingent BI" x="0" y="147" width="576" height="72">
+            <frame id="230:10967" name="Icon circle / building" x="0" y="16" width="40" height="40">
+              <instance id="230:10968" name="Icon / building" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:10970" name="slot/list/3" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:10971" name="Hairline" x="0" y="219" width="576" height="1" />
+          <frame id="230:10972" name="Row / Equipment breakdown and failure claims" x="0" y="220" width="576" height="72">
+            <frame id="230:10973" name="Icon circle / search" x="0" y="16" width="40" height="40">
+              <instance id="230:10974" name="Icon / search" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:10977" name="slot/list/4" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:10978" name="Hairline" x="0" y="292" width="576" height="1" />
+          <frame id="230:10979" name="Row / Ordinance or law and seismic code upgrades" x="0" y="293" width="576" height="72">
+            <frame id="230:10980" name="Icon circle / ruler" x="0" y="16" width="40" height="40">
+              <instance id="230:10981" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:10984" name="slot/list/5" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:10985" name="Hairline" x="0" y="365" width="576" height="1" />
+          <frame id="230:10986" name="Row / Rebuild cost estimating and Xactimate" x="0" y="366" width="576" height="72">
+            <frame id="230:10987" name="Icon circle / home" x="0" y="16" width="40" height="40">
+              <instance id="230:10988" name="Icon / home" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:10991" name="slot/list/6" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:10992" name="Hairline" x="0" y="438" width="576" height="1" />
+          <frame id="230:10993" name="Row / IH report interpretation and remediation" x="0" y="439" width="576" height="72">
+            <frame id="230:10994" name="Icon circle / shield" x="0" y="16" width="40" height="40">
+              <instance id="230:10995" name="Icon / shield" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:10998" name="slot/list/7" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:10999" name="Hairline" x="0" y="511" width="576" height="1" />
+          <frame id="230:11000" name="Row / Litigation support and demand packaging" x="0" y="512" width="576" height="72">
+            <frame id="230:11001" name="Icon circle / document" x="0" y="16" width="40" height="40">
+              <instance id="230:11002" name="Icon / document" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11005" name="slot/list/8" x="56" y="20" width="520" height="32" />
+          </frame>
+          <rounded-rectangle id="230:11006" name="Hairline" x="0" y="584" width="576" height="1" />
+        </frame>
+        <instance id="230:11007" name="Button / Schedule a Free Review" x="80" y="813" width="253" height="52" />
+      </frame>
+    </frame>
+    <frame id="230:10568" name="Section / Index" x="0" y="2815" width="1280" height="729">
+      <frame id="230:10569" name="Index chip" x="80" y="96" width="46" height="28">
+        <text id="230:10570" name="Index / § 03" x="9" y="5" width="28" height="18" />
+      </frame>
+      <frame id="230:11013" name="Index / Loss types" x="80" y="164" width="1120" height="360">
+        <frame id="230:11014" name="Index link / Fire &amp; Smoke" x="0" y="0" width="548" height="90">
+          <frame id="230:11017" name="Icon circle / flame" x="0" y="26" width="40" height="40">
+            <instance id="230:11018" name="Icon / flame" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11015" name="slot/index/1" x="56" y="29" width="452" height="34" />
+          <instance id="230:11016" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+        <frame id="230:11021" name="Index link / Wildfire" x="572" y="0" width="548" height="90">
+          <frame id="230:11024" name="Icon circle / pin" x="0" y="26" width="40" height="40">
+            <instance id="230:11025" name="Icon / pin" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11022" name="slot/index/2" x="56" y="29" width="452" height="34" />
+          <instance id="230:11023" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+        <frame id="230:11028" name="Index link / Water &amp; Plumbing" x="0" y="90" width="548" height="90">
+          <frame id="230:11031" name="Icon circle / droplet" x="0" y="26" width="40" height="40">
+            <instance id="230:11032" name="Icon / droplet" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11029" name="slot/index/3" x="56" y="29" width="452" height="34" />
+          <instance id="230:11030" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+        <frame id="230:11034" name="Index link / Wind, Hail &amp; Falling Trees" x="572" y="90" width="548" height="90">
+          <frame id="230:11037" name="Icon circle / wind" x="0" y="26" width="40" height="40">
+            <instance id="230:11038" name="Icon / wind" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11035" name="slot/index/4" x="56" y="29" width="452" height="34" />
+          <instance id="230:11036" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+        <frame id="230:11040" name="Index link / Contents &amp; Valuables" x="0" y="180" width="548" height="90">
+          <frame id="230:11043" name="Icon circle / document" x="0" y="26" width="40" height="40">
+            <instance id="230:11044" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11041" name="slot/index/5" x="56" y="29" width="452" height="34" />
+          <instance id="230:11042" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+        <frame id="230:11047" name="Index link / Additional Living Expenses" x="572" y="180" width="548" height="90">
+          <frame id="230:11050" name="Icon circle / clock" x="0" y="26" width="40" height="40">
+            <instance id="230:11051" name="Icon / clock" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11048" name="slot/index/6" x="56" y="29" width="452" height="34" />
+          <instance id="230:11049" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+        <frame id="230:11054" name="Index link / Code Upgrades" x="0" y="270" width="548" height="90">
+          <frame id="230:11057" name="Icon circle / ruler" x="0" y="26" width="40" height="40">
+            <instance id="230:11058" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11055" name="slot/index/7" x="56" y="29" width="452" height="34" />
+          <instance id="230:11056" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+        <frame id="230:11061" name="Index link / Denied or Underpaid" x="572" y="270" width="548" height="90">
+          <frame id="230:11064" name="Icon circle / shield" x="0" y="26" width="40" height="40">
+            <instance id="230:11065" name="Icon / shield" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11062" name="slot/index/8" x="56" y="29" width="452" height="34" />
+          <instance id="230:11063" name="Icon / arrow" x="524" y="34" width="24" height="24" />
+        </frame>
+      </frame>
+      <frame id="230:10578" name="Hub link" x="80" y="564" width="1120" height="69">
+        <frame id="230:10579" name="Index link / Residential Claims" x="0" y="0" width="262" height="69">
+          <text id="230:10580" name="slot/index/9" x="0" y="21" width="238" height="28" />
+          <instance id="230:10581" name="Icon / arrow" x="238" y="23" width="24" height="24" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="230:10600" name="Section / CTA" x="0" y="3544" width="1280" height="762">
+      <instance id="230:10601" name="Brand wave corner" x="920" y="562" width="360" height="200" />
+      <text id="230:10602" name="slot/cta/1" x="80" y="120" width="860" height="136" />
+      <text id="230:10603" name="slot/cta/2" x="80" y="288" width="560" height="64" />
+      <frame id="230:10604" name="Phone block" x="80" y="384" width="1024" height="158">
+        <frame id="230:10605" name="Phone as display" x="0" y="24" width="631" height="134">
+          <text id="230:10606" name="Label / Call" x="0" y="0" width="26" height="18" />
+          <text id="230:10607" name="Phone / display" x="0" y="26" width="631" height="96" />
+          <rounded-rectangle id="230:10608" name="Royal rule" x="0" y="130" width="631" height="4" />
+        </frame>
+        <frame id="230:10609" name="Hours" x="695" y="122" width="329" height="36">
+          <instance id="230:10610" name="Icon / clock" x="0" y="0" width="24" height="24" />
+          <text id="230:10611" name="Hours" x="36" y="0" width="293" height="24" />
+        </frame>
+      </frame>
+      <frame id="230:10612" name="CTA buttons" x="80" y="574" width="504" height="68">
+        <instance id="230:10613" name="Button / Schedule a Free Review" x="0" y="16" width="253" height="52" />
+        <instance id="230:10614" name="Button / Call (916) 507-1005" x="269" y="16" width="235" height="52" />
+      </frame>
+    </frame>
+    <instance id="230:10615" name="Footer / Desktop" x="0" y="4306" width="1280" height="557" />
+  </frame>
+  <frame id="230:10616" name="Mobile — Commercial (390)" x="1400" y="0" width="390" height="5522">
+    <frame id="230:10617" name="Section / Hero" x="0" y="0" width="390" height="844">
+      <rounded-rectangle id="230:10618" name="IMG:ai-commercial-fire" x="0" y="0" width="390" height="520" />
+      <rounded-rectangle id="230:10619" name="Scrim / ink (photo)" x="0" y="0" width="390" height="520" />
+      <frame id="230:10620" name="Scrim / ink ramp (photo edge)" x="0" y="264" width="390" height="264">
+        <rounded-rectangle id="230:10621" name="Ramp step" x="0" y="0" width="390" height="12" />
+        <rounded-rectangle id="230:10622" name="Ramp step" x="0" y="12" width="390" height="12" />
+        <rounded-rectangle id="230:10623" name="Ramp step" x="0" y="24" width="390" height="12" />
+        <rounded-rectangle id="230:10624" name="Ramp step" x="0" y="36" width="390" height="12" />
+        <rounded-rectangle id="230:10625" name="Ramp step" x="0" y="48" width="390" height="12" />
+        <rounded-rectangle id="230:10626" name="Ramp step" x="0" y="60" width="390" height="12" />
+        <rounded-rectangle id="230:10627" name="Ramp step" x="0" y="72" width="390" height="12" />
+        <rounded-rectangle id="230:10628" name="Ramp step" x="0" y="84" width="390" height="12" />
+        <rounded-rectangle id="230:10629" name="Ramp step" x="0" y="96" width="390" height="12" />
+        <rounded-rectangle id="230:10630" name="Ramp step" x="0" y="108" width="390" height="12" />
+        <rounded-rectangle id="230:10631" name="Ramp step" x="0" y="120" width="390" height="12" />
+        <rounded-rectangle id="230:10632" name="Ramp step" x="0" y="132" width="390" height="12" />
+        <rounded-rectangle id="230:10633" name="Ramp step" x="0" y="144" width="390" height="12" />
+        <rounded-rectangle id="230:10634" name="Ramp step" x="0" y="156" width="390" height="12" />
+        <rounded-rectangle id="230:10635" name="Ramp step" x="0" y="168" width="390" height="12" />
+        <rounded-rectangle id="230:10636" name="Ramp step" x="0" y="180" width="390" height="12" />
+        <rounded-rectangle id="230:10637" name="Ramp step" x="0" y="192" width="390" height="12" />
+        <rounded-rectangle id="230:10638" name="Ramp step" x="0" y="204" width="390" height="12" />
+        <rounded-rectangle id="230:10639" name="Ramp step" x="0" y="216" width="390" height="12" />
+        <rounded-rectangle id="230:10640" name="Ramp step" x="0" y="228" width="390" height="12" />
+        <rounded-rectangle id="230:10641" name="Ramp step" x="0" y="240" width="390" height="12" />
+        <rounded-rectangle id="230:10642" name="Ramp step" x="0" y="252" width="390" height="12" />
+      </frame>
+      <instance id="230:10643" name="Header / Mobile (Dark)" x="0" y="0" width="390" height="64" />
+      <frame id="230:10645" name="Hero content" x="20" y="334" width="350" height="398">
+        <instance id="230:10646" name="Eyebrow" x="0" y="0" width="171" height="18" />
+        <text id="230:10647" name="slot/hero/2" x="0" y="42" width="350" height="144" />
+        <frame id="230:10648" name="Trust line" x="0" y="210" width="350" height="40">
+          <frame id="230:10649" name="Trust row" x="0" y="0" width="281" height="16">
+            <text id="230:10650" name="slot/hero/3" x="0" y="0" width="101" height="16" />
+            <rounded-rectangle id="230:10651" name="Divider" x="113" y="1" width="1" height="14" />
+            <text id="230:10652" name="slot/hero/5" x="126" y="0" width="155" height="16" />
+          </frame>
+          <text id="230:10653" name="slot/hero/4" x="0" y="24" width="281" height="16" />
+        </frame>
+        <frame id="230:10654" name="CTAs" x="0" y="274" width="350" height="124">
+          <instance id="230:10655" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+          <instance id="230:10656" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="230:10657" name="Section / Scope" x="0" y="844" width="390" height="1188">
+      <frame id="230:11158" name="Lead block" x="20" y="64" width="350" height="168">
+        <rounded-rectangle id="230:11159" name="Royal rule" x="0" y="0" width="3" height="168" />
+        <text id="230:11160" name="slot/hero/lead" x="19" y="0" width="331" height="168" />
+      </frame>
+      <frame id="230:10658" name="Heading group" x="20" y="264" width="350" height="186">
+        <frame id="230:10659" name="Index chip / § 01" x="0" y="0" width="41" height="26">
+          <text id="230:10660" name="Index / § 01" x="9" y="5" width="23" height="16" />
+        </frame>
+        <text id="230:10661" name="slot/scope/1" x="0" y="42" width="350" height="112" />
+        <frame id="230:10662" name="Ruler ticks" x="0" y="170" width="200" height="16" />
+      </frame>
+      <frame id="230:10689" name="Items" x="20" y="482" width="350" height="650">
+        <frame id="230:10690" name="Item / Loss of income and extra expense" x="0" y="0" width="350" height="119">
+          <frame id="230:10691" name="Icon circle / clock" x="0" y="40" width="40" height="40">
+            <instance id="230:10692" name="Icon / clock" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10693" name="slot/scope/2" x="56" y="21" width="294" height="78" />
+        </frame>
+        <frame id="230:10694" name="Item / Tenant improvements vs. building" x="0" y="119" width="350" height="119">
+          <frame id="230:10695" name="Icon circle / building" x="0" y="40" width="40" height="40">
+            <instance id="230:10696" name="Icon / building" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10697" name="slot/scope/3" x="56" y="21" width="294" height="78" />
+        </frame>
+        <frame id="230:10698" name="Item / Inventory and equipment" x="0" y="238" width="350" height="120">
+          <frame id="230:10699" name="Icon circle / document" x="0" y="40" width="40" height="40">
+            <instance id="230:10700" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:10701" name="slot/scope/4" x="56" y="21" width="294" height="78" />
+        </frame>
+        <frame id="230:11133" name="Item / Code" x="0" y="358" width="350" height="120">
+          <frame id="230:11134" name="Icon circle / ruler" x="0" y="40" width="40" height="40">
+            <instance id="230:11135" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11136" name="slot/scope/5" x="56" y="21" width="294" height="78" />
+        </frame>
+        <frame id="230:11137" name="Item / Xactimate and IH reports" x="0" y="478" width="350" height="172">
+          <frame id="230:11138" name="Icon circle / search" x="0" y="66" width="40" height="40">
+            <instance id="230:11139" name="Icon / search" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11140" name="slot/scope/6" x="56" y="21" width="294" height="130" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="230:11161" name="Section / Commercial list" x="0" y="2032" width="390" height="1143">
+      <rounded-rectangle id="230:11162" name="IMG:ai-business-interruption" x="0" y="0" width="390" height="280" />
+      <frame id="230:11163" name="Panel / navy" x="0" y="280" width="390" height="863">
+        <instance id="230:11164" name="Mark / faint B (6%)" x="179.39999389648438" y="24" width="280.8000183105469" height="340.9250183105469" />
+        <frame id="230:11169" name="Index chip" x="20" y="64" width="44" height="26">
+          <text id="230:11170" name="Index / § 02" x="9" y="5" width="26" height="16" />
+        </frame>
+        <frame id="230:11171" name="Ledger / Eight items" x="20" y="114" width="350" height="605">
+          <rounded-rectangle id="230:11172" name="Hairline" x="0" y="0" width="350" height="1" />
+          <frame id="230:11173" name="Row / Fire, water and structural losses" x="0" y="1" width="350" height="64">
+            <frame id="230:11174" name="Icon circle / flame" x="0" y="12" width="40" height="40">
+              <instance id="230:11175" name="Icon / flame" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11178" name="slot/list/1" x="56" y="19" width="294" height="26" />
+          </frame>
+          <rounded-rectangle id="230:11179" name="Hairline" x="0" y="65" width="350" height="1" />
+          <frame id="230:11180" name="Row / Business interruption and loss of income" x="0" y="66" width="350" height="76">
+            <frame id="230:11181" name="Icon circle / clock" x="0" y="18" width="40" height="40">
+              <instance id="230:11182" name="Icon / clock" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11185" name="slot/list/2" x="56" y="12" width="294" height="52" />
+          </frame>
+          <rounded-rectangle id="230:11186" name="Hairline" x="0" y="142" width="350" height="1" />
+          <frame id="230:11187" name="Row / Dependent property and contingent BI" x="0" y="143" width="350" height="76">
+            <frame id="230:11188" name="Icon circle / building" x="0" y="18" width="40" height="40">
+              <instance id="230:11189" name="Icon / building" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11191" name="slot/list/3" x="56" y="12" width="294" height="52" />
+          </frame>
+          <rounded-rectangle id="230:11192" name="Hairline" x="0" y="219" width="350" height="1" />
+          <frame id="230:11193" name="Row / Equipment breakdown and failure claims" x="0" y="220" width="350" height="76">
+            <frame id="230:11194" name="Icon circle / search" x="0" y="18" width="40" height="40">
+              <instance id="230:11195" name="Icon / search" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11198" name="slot/list/4" x="56" y="12" width="294" height="52" />
+          </frame>
+          <rounded-rectangle id="230:11199" name="Hairline" x="0" y="296" width="350" height="1" />
+          <frame id="230:11200" name="Row / Ordinance or law and seismic code upgrades" x="0" y="297" width="350" height="76">
+            <frame id="230:11201" name="Icon circle / ruler" x="0" y="18" width="40" height="40">
+              <instance id="230:11202" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11205" name="slot/list/5" x="56" y="12" width="294" height="52" />
+          </frame>
+          <rounded-rectangle id="230:11206" name="Hairline" x="0" y="373" width="350" height="1" />
+          <frame id="230:11207" name="Row / Rebuild cost estimating and Xactimate" x="0" y="374" width="350" height="76">
+            <frame id="230:11208" name="Icon circle / home" x="0" y="18" width="40" height="40">
+              <instance id="230:11209" name="Icon / home" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11212" name="slot/list/6" x="56" y="12" width="294" height="52" />
+          </frame>
+          <rounded-rectangle id="230:11213" name="Hairline" x="0" y="450" width="350" height="1" />
+          <frame id="230:11214" name="Row / IH report interpretation and remediation" x="0" y="451" width="350" height="76">
+            <frame id="230:11215" name="Icon circle / shield" x="0" y="18" width="40" height="40">
+              <instance id="230:11216" name="Icon / shield" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11219" name="slot/list/7" x="56" y="12" width="294" height="52" />
+          </frame>
+          <rounded-rectangle id="230:11220" name="Hairline" x="0" y="527" width="350" height="1" />
+          <frame id="230:11221" name="Row / Litigation support and demand packaging" x="0" y="528" width="350" height="76">
+            <frame id="230:11222" name="Icon circle / document" x="0" y="18" width="40" height="40">
+              <instance id="230:11223" name="Icon / document" x="8" y="8" width="24" height="24" />
+            </frame>
+            <text id="230:11226" name="slot/list/8" x="56" y="12" width="294" height="52" />
+          </frame>
+          <rounded-rectangle id="230:11227" name="Hairline" x="0" y="604" width="350" height="1" />
+        </frame>
+        <instance id="230:11228" name="Button / Schedule a Free Review" x="20" y="743" width="350" height="56" />
+      </frame>
+    </frame>
+    <frame id="230:10784" name="Section / Index" x="0" y="3175" width="390" height="822">
+      <frame id="230:10785" name="Index chip / § 06" x="20" y="64" width="44" height="26">
+        <text id="230:10786" name="Index / § 03" x="9" y="5" width="26" height="16" />
+      </frame>
+      <frame id="230:10787" name="Index" x="20" y="114" width="350" height="652">
+        <frame id="230:11233" name="Index link / Fire &amp; Smoke" x="0" y="0" width="350" height="73">
+          <frame id="230:11257" name="Icon circle / flame" x="0" y="16" width="40" height="40">
+            <instance id="230:11258" name="Icon / flame" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11234" name="slot/index/1" x="40" y="22" width="290" height="28" />
+          <instance id="230:11235" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:11236" name="Index link / Wildfire" x="0" y="73" width="350" height="73">
+          <frame id="230:11261" name="Icon circle / pin" x="0" y="16" width="40" height="40">
+            <instance id="230:11262" name="Icon / pin" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11237" name="slot/index/2" x="40" y="22" width="290" height="28" />
+          <instance id="230:11238" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:11239" name="Index link / Water &amp; Plumbing" x="0" y="146" width="350" height="73">
+          <frame id="230:11265" name="Icon circle / droplet" x="0" y="16" width="40" height="40">
+            <instance id="230:11266" name="Icon / droplet" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11240" name="slot/index/3" x="40" y="22" width="290" height="28" />
+          <instance id="230:11241" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:11242" name="Index link / Wind, Hail &amp; Falling Trees" x="0" y="219" width="350" height="73">
+          <frame id="230:11268" name="Icon circle / wind" x="0" y="16" width="40" height="40">
+            <instance id="230:11269" name="Icon / wind" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11243" name="slot/index/4" x="40" y="22" width="290" height="28" />
+          <instance id="230:11244" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:11245" name="Index link / Contents &amp; Valuables" x="0" y="292" width="350" height="73">
+          <frame id="230:11271" name="Icon circle / document" x="0" y="16" width="40" height="40">
+            <instance id="230:11272" name="Icon / document" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11246" name="slot/index/5" x="40" y="22" width="290" height="28" />
+          <instance id="230:11247" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:11248" name="Index link / Additional Living Expenses" x="0" y="365" width="350" height="73">
+          <frame id="230:11275" name="Icon circle / clock" x="0" y="16" width="40" height="40">
+            <instance id="230:11276" name="Icon / clock" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11249" name="slot/index/6" x="40" y="22" width="290" height="28" />
+          <instance id="230:11250" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:11251" name="Index link / Code Upgrades" x="0" y="438" width="350" height="73">
+          <frame id="230:11279" name="Icon circle / ruler" x="0" y="16" width="40" height="40">
+            <instance id="230:11280" name="Icon / ruler" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11252" name="slot/index/7" x="40" y="22" width="290" height="28" />
+          <instance id="230:11253" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:11254" name="Index link / Denied or Underpaid" x="0" y="511" width="350" height="73">
+          <frame id="230:11283" name="Icon circle / shield" x="0" y="16" width="40" height="40">
+            <instance id="230:11284" name="Icon / shield" x="8" y="8" width="24" height="24" />
+          </frame>
+          <text id="230:11255" name="slot/index/8" x="40" y="22" width="290" height="28" />
+          <instance id="230:11256" name="Icon / arrow" x="330" y="26" width="20" height="20" />
+        </frame>
+        <frame id="230:10788" name="Index link / Residential Claims" x="0" y="584" width="350" height="68">
+          <text id="230:10789" name="slot/index/9" x="0" y="21" width="326" height="26" />
+          <instance id="230:10790" name="Icon / arrow" x="326" y="22" width="24" height="24" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="230:10815" name="Section / CTA" x="0" y="3997" width="390" height="672">
+      <frame id="230:10816" name="Heading group" x="20" y="64" width="350" height="166">
+        <text id="230:10817" name="slot/cta/1" x="0" y="0" width="350" height="72" />
+        <text id="230:10818" name="slot/cta/2" x="0" y="88" width="350" height="78" />
+      </frame>
+      <frame id="230:10819" name="Tap/Call (916) 507-1005" x="20" y="262" width="306" height="84">
+        <text id="230:10820" name="Label / Call" x="0" y="0" width="24" height="16" />
+        <text id="230:10821" name="Phone / display" x="0" y="24" width="306" height="48" />
+        <rounded-rectangle id="230:10822" name="Rule / royal 4px" x="0" y="80" width="306" height="4" />
+      </frame>
+      <frame id="230:10823" name="Hours" x="20" y="378" width="350" height="26">
+        <instance id="230:10824" name="Icon / clock" x="0" y="1" width="24" height="24" />
+        <text id="230:10825" name="Hours" x="36" y="0" width="314" height="26" />
+      </frame>
+      <frame id="230:10826" name="CTAs" x="20" y="436" width="350" height="124">
+        <instance id="230:10827" name="Button / Schedule a Free Review" x="0" y="0" width="350" height="56" />
+        <instance id="230:10828" name="Button / Call (916) 507-1005" x="0" y="68" width="350" height="56" />
+      </frame>
+      <instance id="230:10829" name="Brand wave corner" x="210" y="572" width="180" height="100" />
+    </frame>
+    <instance id="230:10830" name="Footer / Mobile" x="0" y="4669" width="390" height="853" />
+    <instance id="230:10831" name="Mobile call bar" x="0" y="756" width="390" height="89" />
+  </frame>
+</canvas>

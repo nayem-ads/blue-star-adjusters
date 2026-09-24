@@ -1,0 +1,23 @@
+---
+// FAQ (Figma desktop 217:698, mobile 217:10753). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/faq/Hero.astro';
+import Questions from '../../sections/faq/Questions.astro';
+import FinalCta from '../../sections/faq/FinalCta.astro';
+---
+<Base title="Public Adjuster FAQ | Blue Star Adjusters" description="Straight answers about public adjusters: how we're paid, what happens if you already have an offer, who has the final say, and where we work.">
+  <div data-node="217:699" data-node-m="217:10754"><Header theme="light" /></div>
+  <main class="bs-faq">
+    <Hero />
+    <Questions />
+    <FinalCta />
+  </main>
+  <div data-node="217:7806" data-node-m="217:11389"><Footer /></div>
+  <CallBar node="217:11425" />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-faq :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

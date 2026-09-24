@@ -1,0 +1,16 @@
+---
+// Blueprint grid (full bleed, 40px): navy 1px lines, minor every 40px at 5 %, major every `major` px at 10 %.
+// FAQ hero 217:751 / 217:10797 (major 200), First 48 checklist 217:6592 (major 160, extra line at the right edge) / 217:9763 (major 200).
+// The major layer is drawn over the minor one at 5.26 % so the two composite to exactly 10 %, as in Figma.
+interface Props { major?: number; rightEdge?: boolean; class?: string; node?: string; nodeM?: string }
+const { major = 200, rightEdge = false, class: cls = '', node, nodeM } = Astro.props;
+const mi = 'rgba(8,29,94,.05)', ma = 'rgba(8,29,94,.0526)';
+const layers = [
+  `linear-gradient(to right, ${ma} 1px, transparent 1px) 0 0 / ${major}px 100%`,
+  `linear-gradient(to bottom, ${ma} 1px, transparent 1px) 0 0 / 100% ${major}px`,
+  `linear-gradient(to right, ${mi} 1px, transparent 1px) 0 0 / 40px 100%`,
+  `linear-gradient(to bottom, ${mi} 1px, transparent 1px) 0 0 / 100% 40px`,
+];
+if (rightEdge) layers.unshift('linear-gradient(to left, rgba(8,29,94,.1) 1px, transparent 1px) 0 0 / 100% 100% no-repeat');
+---
+<div aria-hidden="true" class:list={['pointer-events-none', cls]} style={`background:${layers.join(',')}`} data-node={node} data-node-m={nodeM}></div>

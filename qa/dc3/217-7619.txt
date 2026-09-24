@@ -1,0 +1,243 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/702141f7-e325-46c1-bf06-a029b490b250.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/b4e52daa-4721-4bbd-ba7d-69fa6a0c20c5.svg";
+const imgLogoMarkFaint = "https://www.figma.com/api/mcp/asset/b1f1ea6e-dfab-4eda-8f7b-5ad1bf33601b.svg";
+const imgIconClock = "https://www.figma.com/api/mcp/asset/c3f9722d-b32f-4585-bd66-fe7eb976aee3.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "On-dark" | "Outline on-dark";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "On-dark" }: ButtonProps) {
+  const isOnDarkAndDefault = style === "On-dark" && state === "Default";
+  const isOutlineOnDarkAndDefault = style === "Outline on-dark" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] ${isOutlineOnDarkAndDefault ? String.raw`border-[1.5px] border-[var(--color\/white,white)] border-solid` : String.raw`bg-[var(--color\/white,white)]`}`} id={isOutlineOnDarkAndDefault ? "node-37_164" : "node-37_152"}>
+      {isOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:153" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      {isOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/navy,#081d5e)] whitespace-nowrap" data-node-id="37:155">
+          {label}
+        </p>
+      )}
+      {isOutlineOnDarkAndDefault && showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:165" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+        </div>
+      )}
+      {isOutlineOnDarkAndDefault && (
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:167">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+export default function FinalCta() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex gap-[112px] items-end px-[80px] py-[120px] relative size-full" data-node-id="217:7619" data-name="Final CTA">
+      <div className="absolute h-[569px] left-[811.35px] top-0 w-[468.652px]" data-node-id="217:7639" data-name="Logo mark (faint)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkFaint} />
+      </div>
+      <div className="content-stretch flex flex-col gap-[32px] items-start overflow-clip relative shrink-0 w-[648px]" data-node-id="217:7620" data-name="Statement">
+        <div className="bg-[var(--color\/royal,#133faa)] h-[2px] relative shrink-0 w-[48px]" data-node-id="217:7621" data-name="Royal rule" />
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:Bold'] font-bold leading-[68px] min-w-full relative shrink-0 text-[64px] text-[color:var(--color\/white,white)] tracking-[-1.28px] w-[min-content]" data-node-id="217:7622" data-annotations="(V) Mike's line, word for word (CD 197). Set as H2 in markup.">
+          Call Before the Carrier Sets the Narrative.
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col gap-[32px] items-start overflow-clip relative shrink-0 w-[360px]" data-node-id="217:7623" data-name="Actions">
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-full relative shrink-0 text-[20px] text-[color:var(--color\/white,white)] w-[min-content]" data-node-id="217:7624" data-annotations="(V) Mike's line, word for word (CD 199).">
+          Your insurance company has an adjuster protecting their interests. You have the right to one too.
+        </p>
+        <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0" data-node-id="217:7625" data-name="CTA stack">
+          <Button className="bg-[var(--color\/white,white)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+          <Button className="border-[1.5px] border-[var(--color\/white,white)] border-solid content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" label="Call (916) 507-1005" showIcon style="Outline on-dark" />
+        </div>
+        <div className="border-[var(--color\/white,white)] border-solid border-t content-stretch flex gap-[12px] items-center overflow-clip pt-[24px] relative shrink-0 w-full" data-node-id="217:7634" data-name="Hours">
+          <div className="relative shrink-0 size-[24px]" data-node-id="217:7635" data-name="Icon / clock">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Medium'] font-medium leading-[24px] min-w-px relative text-[15px] text-[color:var(--color\/white,white)]" data-node-id="217:7638">
+            Monday to Friday, 9 AM to 5 PM Pacific.
+          </p>
+        </div>
+      </div>
+      <div className="absolute h-[16px] left-0 opacity-25 overflow-clip top-[553px] w-[1280px]" data-node-id="217:7644" data-name="Ruler ticks (bottom edge)">
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-0 top-0 w-px" data-node-id="217:7645" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[8px] top-[10px] w-px" data-node-id="217:7646" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[16px] top-[10px] w-px" data-node-id="217:7647" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[24px] top-[10px] w-px" data-node-id="217:7648" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[32px] top-[10px] w-px" data-node-id="217:7649" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[40px] top-[6px] w-px" data-node-id="217:7650" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[48px] top-[10px] w-px" data-node-id="217:7651" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[56px] top-[10px] w-px" data-node-id="217:7652" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[64px] top-[10px] w-px" data-node-id="217:7653" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[72px] top-[10px] w-px" data-node-id="217:7654" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[80px] top-0 w-px" data-node-id="217:7655" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[88px] top-[10px] w-px" data-node-id="217:7656" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[96px] top-[10px] w-px" data-node-id="217:7657" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[104px] top-[10px] w-px" data-node-id="217:7658" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[112px] top-[10px] w-px" data-node-id="217:7659" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[120px] top-[6px] w-px" data-node-id="217:7660" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[128px] top-[10px] w-px" data-node-id="217:7661" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[136px] top-[10px] w-px" data-node-id="217:7662" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[144px] top-[10px] w-px" data-node-id="217:7663" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[152px] top-[10px] w-px" data-node-id="217:7664" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[160px] top-0 w-px" data-node-id="217:7665" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[168px] top-[10px] w-px" data-node-id="217:7666" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[176px] top-[10px] w-px" data-node-id="217:7667" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[184px] top-[10px] w-px" data-node-id="217:7668" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[192px] top-[10px] w-px" data-node-id="217:7669" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[200px] top-[6px] w-px" data-node-id="217:7670" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[208px] top-[10px] w-px" data-node-id="217:7671" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[216px] top-[10px] w-px" data-node-id="217:7672" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[224px] top-[10px] w-px" data-node-id="217:7673" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[232px] top-[10px] w-px" data-node-id="217:7674" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[240px] top-0 w-px" data-node-id="217:7675" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[248px] top-[10px] w-px" data-node-id="217:7676" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[256px] top-[10px] w-px" data-node-id="217:7677" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[264px] top-[10px] w-px" data-node-id="217:7678" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[272px] top-[10px] w-px" data-node-id="217:7679" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[280px] top-[6px] w-px" data-node-id="217:7680" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[288px] top-[10px] w-px" data-node-id="217:7681" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[296px] top-[10px] w-px" data-node-id="217:7682" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[304px] top-[10px] w-px" data-node-id="217:7683" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[312px] top-[10px] w-px" data-node-id="217:7684" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[320px] top-0 w-px" data-node-id="217:7685" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[328px] top-[10px] w-px" data-node-id="217:7686" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[336px] top-[10px] w-px" data-node-id="217:7687" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[344px] top-[10px] w-px" data-node-id="217:7688" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[352px] top-[10px] w-px" data-node-id="217:7689" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[360px] top-[6px] w-px" data-node-id="217:7690" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[368px] top-[10px] w-px" data-node-id="217:7691" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[376px] top-[10px] w-px" data-node-id="217:7692" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[384px] top-[10px] w-px" data-node-id="217:7693" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[392px] top-[10px] w-px" data-node-id="217:7694" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[400px] top-0 w-px" data-node-id="217:7695" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[408px] top-[10px] w-px" data-node-id="217:7696" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[416px] top-[10px] w-px" data-node-id="217:7697" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[424px] top-[10px] w-px" data-node-id="217:7698" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[432px] top-[10px] w-px" data-node-id="217:7699" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[440px] top-[6px] w-px" data-node-id="217:7700" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[448px] top-[10px] w-px" data-node-id="217:7701" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[456px] top-[10px] w-px" data-node-id="217:7702" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[464px] top-[10px] w-px" data-node-id="217:7703" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[472px] top-[10px] w-px" data-node-id="217:7704" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[480px] top-0 w-px" data-node-id="217:7705" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[488px] top-[10px] w-px" data-node-id="217:7706" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[496px] top-[10px] w-px" data-node-id="217:7707" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[504px] top-[10px] w-px" data-node-id="217:7708" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[512px] top-[10px] w-px" data-node-id="217:7709" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[520px] top-[6px] w-px" data-node-id="217:7710" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[528px] top-[10px] w-px" data-node-id="217:7711" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[536px] top-[10px] w-px" data-node-id="217:7712" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[544px] top-[10px] w-px" data-node-id="217:7713" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[552px] top-[10px] w-px" data-node-id="217:7714" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[560px] top-0 w-px" data-node-id="217:7715" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[568px] top-[10px] w-px" data-node-id="217:7716" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[576px] top-[10px] w-px" data-node-id="217:7717" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[584px] top-[10px] w-px" data-node-id="217:7718" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[592px] top-[10px] w-px" data-node-id="217:7719" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[600px] top-[6px] w-px" data-node-id="217:7720" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[608px] top-[10px] w-px" data-node-id="217:7721" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[616px] top-[10px] w-px" data-node-id="217:7722" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[624px] top-[10px] w-px" data-node-id="217:7723" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[632px] top-[10px] w-px" data-node-id="217:7724" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[640px] top-0 w-px" data-node-id="217:7725" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[648px] top-[10px] w-px" data-node-id="217:7726" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[656px] top-[10px] w-px" data-node-id="217:7727" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[664px] top-[10px] w-px" data-node-id="217:7728" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[672px] top-[10px] w-px" data-node-id="217:7729" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[680px] top-[6px] w-px" data-node-id="217:7730" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[688px] top-[10px] w-px" data-node-id="217:7731" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[696px] top-[10px] w-px" data-node-id="217:7732" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[704px] top-[10px] w-px" data-node-id="217:7733" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[712px] top-[10px] w-px" data-node-id="217:7734" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[720px] top-0 w-px" data-node-id="217:7735" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[728px] top-[10px] w-px" data-node-id="217:7736" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[736px] top-[10px] w-px" data-node-id="217:7737" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[744px] top-[10px] w-px" data-node-id="217:7738" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[752px] top-[10px] w-px" data-node-id="217:7739" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[760px] top-[6px] w-px" data-node-id="217:7740" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[768px] top-[10px] w-px" data-node-id="217:7741" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[776px] top-[10px] w-px" data-node-id="217:7742" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[784px] top-[10px] w-px" data-node-id="217:7743" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[792px] top-[10px] w-px" data-node-id="217:7744" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[800px] top-0 w-px" data-node-id="217:7745" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[808px] top-[10px] w-px" data-node-id="217:7746" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[816px] top-[10px] w-px" data-node-id="217:7747" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[824px] top-[10px] w-px" data-node-id="217:7748" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[832px] top-[10px] w-px" data-node-id="217:7749" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[840px] top-[6px] w-px" data-node-id="217:7750" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[848px] top-[10px] w-px" data-node-id="217:7751" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[856px] top-[10px] w-px" data-node-id="217:7752" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[864px] top-[10px] w-px" data-node-id="217:7753" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[872px] top-[10px] w-px" data-node-id="217:7754" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[880px] top-0 w-px" data-node-id="217:7755" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[888px] top-[10px] w-px" data-node-id="217:7756" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[896px] top-[10px] w-px" data-node-id="217:7757" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[904px] top-[10px] w-px" data-node-id="217:7758" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[912px] top-[10px] w-px" data-node-id="217:7759" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[920px] top-[6px] w-px" data-node-id="217:7760" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[928px] top-[10px] w-px" data-node-id="217:7761" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[936px] top-[10px] w-px" data-node-id="217:7762" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[944px] top-[10px] w-px" data-node-id="217:7763" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[952px] top-[10px] w-px" data-node-id="217:7764" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[960px] top-0 w-px" data-node-id="217:7765" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[968px] top-[10px] w-px" data-node-id="217:7766" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[976px] top-[10px] w-px" data-node-id="217:7767" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[984px] top-[10px] w-px" data-node-id="217:7768" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[992px] top-[10px] w-px" data-node-id="217:7769" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[1000px] top-[6px] w-px" data-node-id="217:7770" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1008px] top-[10px] w-px" data-node-id="217:7771" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1016px] top-[10px] w-px" data-node-id="217:7772" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1024px] top-[10px] w-px" data-node-id="217:7773" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1032px] top-[10px] w-px" data-node-id="217:7774" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[1040px] top-0 w-px" data-node-id="217:7775" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1048px] top-[10px] w-px" data-node-id="217:7776" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1056px] top-[10px] w-px" data-node-id="217:7777" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1064px] top-[10px] w-px" data-node-id="217:7778" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1072px] top-[10px] w-px" data-node-id="217:7779" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[1080px] top-[6px] w-px" data-node-id="217:7780" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1088px] top-[10px] w-px" data-node-id="217:7781" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1096px] top-[10px] w-px" data-node-id="217:7782" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1104px] top-[10px] w-px" data-node-id="217:7783" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1112px] top-[10px] w-px" data-node-id="217:7784" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[1120px] top-0 w-px" data-node-id="217:7785" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1128px] top-[10px] w-px" data-node-id="217:7786" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1136px] top-[10px] w-px" data-node-id="217:7787" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1144px] top-[10px] w-px" data-node-id="217:7788" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1152px] top-[10px] w-px" data-node-id="217:7789" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[1160px] top-[6px] w-px" data-node-id="217:7790" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1168px] top-[10px] w-px" data-node-id="217:7791" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1176px] top-[10px] w-px" data-node-id="217:7792" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1184px] top-[10px] w-px" data-node-id="217:7793" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1192px] top-[10px] w-px" data-node-id="217:7794" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[1200px] top-0 w-px" data-node-id="217:7795" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1208px] top-[10px] w-px" data-node-id="217:7796" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1216px] top-[10px] w-px" data-node-id="217:7797" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1224px] top-[10px] w-px" data-node-id="217:7798" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1232px] top-[10px] w-px" data-node-id="217:7799" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[10px] left-[1240px] top-[6px] w-px" data-node-id="217:7800" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1248px] top-[10px] w-px" data-node-id="217:7801" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1256px] top-[10px] w-px" data-node-id="217:7802" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1264px] top-[10px] w-px" data-node-id="217:7803" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[6px] left-[1272px] top-[10px] w-px" data-node-id="217:7804" data-name="Tick" />
+        <div className="absolute bg-[var(--color\/white,white)] h-[16px] left-[1280px] top-0 w-px" data-node-id="217:7805" data-name="Tick" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Display L: Font(family: "Schibsted Grotesk", style: Bold, size: 64, weight: 700, lineHeight: 68, letterSpacing: -2), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

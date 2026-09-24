@@ -1,0 +1,32 @@
+---
+// FAQ Hero. Desktop 217:733 (1280×444), mobile 217:10771 (390×719). White band on the blueprint grid,
+// margin rail (hairline + eyebrow), H1, two CTAs, ruler ticks along the bottom edge. Mobile adds the policy-desk photo.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Img from '../../components/Img.astro';
+import Grid from './Grid.astro';
+import Ruler from './Ruler.astro';
+import CropMarks from './CropMarks.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+---
+<section aria-labelledby="faq-title" class="relative overflow-hidden bg-white" data-node="217:733" data-node-m="217:10771">
+  <Grid class="absolute inset-0" node="217:751" nodeM="217:10797" />
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[40px] pb-[56px] lg:px-[80px] lg:pt-[96px] lg:pb-[120px] lg:flex lg:items-start lg:gap-[120px]">
+    <div class="flex flex-col items-start gap-[16px] lg:w-[264px] lg:shrink-0" data-node="217:734" data-node-m="217:10772">
+      <span aria-hidden="true" class="block w-full h-px bg-navy" data-node="217:735" data-node-m="217:10773"></span>
+      <div class="w-max" data-node-m="217:10774"><Eyebrow node="217:736">FAQ</Eyebrow></div>
+    </div>
+    <div class="flex flex-col items-start gap-[32px] mt-[32px] lg:mt-0 lg:gap-[40px] lg:w-[744px] lg:shrink-0" data-node="217:739">
+      <h1 id="faq-title" class="m-0 tm-display lg:t-display-l text-navy w-full lg:w-[600px]" data-node="217:740" data-node-m="217:10777">Your Questions. Straight Answers.</h1>
+      <div class="w-full flex flex-col gap-[12px] lg:w-auto lg:flex-row lg:gap-[16px]" data-node="217:741" data-node-m="217:10778">
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" node="217:742" data-node-m="217:10779">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]" node="217:747" data-node-m="217:10782">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+    <div class="lg:hidden relative mt-[32px] w-full h-[224px]" data-node-m="217:10786">
+      <Img node="217:10787" alt="A policy binder with coloured tabs, a highlighter, a tape measure and a cup of tea on a desk." class="block w-full h-full object-cover" />
+      <CropMarks class="absolute left-[-16px] top-[-16px] w-[calc(100%+32px)] h-[256px]" nodeM="217:10788" />
+    </div>
+  </div>
+  <Ruler class="absolute left-0 w-full h-[16px] text-navy opacity-35 bottom-0" node="217:799" nodeM="217:10826" />
+</section>

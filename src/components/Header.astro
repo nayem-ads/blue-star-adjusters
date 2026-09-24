@@ -22,7 +22,12 @@ const nav = [
       { label: 'Residential', href: ROUTES.residential },
       { label: 'Commercial', href: ROUTES.commercial },
       { label: 'Fire & Smoke', href: ROUTES.fireSmoke },
+      { label: 'Wildfire', href: ROUTES.wildfire },
       { label: 'Water & Plumbing', href: ROUTES.waterDamage },
+      { label: 'Wind, Hail & Falling Trees', href: ROUTES.windHailTrees },
+      { label: 'Contents & Valuables', href: ROUTES.contentsValuables },
+      { label: 'Additional Living Expenses', href: ROUTES.additionalLiving },
+      { label: 'Code Upgrades', href: ROUTES.codeUpgrades },
       { label: 'Denied or Underpaid', href: ROUTES.deniedOrUnderpaid }
     ]
   },
@@ -30,11 +35,18 @@ const nav = [
     sub: [
       { label: 'Our Founder', href: ROUTES.founder },
       { label: 'Why Blue Star', href: ROUTES.whyBlueStar },
-      { label: 'Results', href: '/results/' }
+      { label: 'Results', href: ROUTES.results },
+      { label: 'Who We Serve', href: ROUTES.whoWeServe },
+      { label: 'Locations', href: ROUTES.locations }
     ]
   },
-  { label: 'How It Works', href: '/how-it-works/', w: 103 },
-  { label: 'Fees', href: '/fees/', w: 36 },
+  { label: 'How It Works', href: ROUTES.howItWorks, w: 103,
+    sub: [
+      { label: 'The First 48 Hours', href: ROUTES.first48Hours },
+      { label: 'FAQ', href: ROUTES.faq }
+    ]
+  },
+  { label: 'Fees', href: ROUTES.fees, w: 36 },
 ];
 const menu = [{ label: 'Home', href: ROUTES.home }, ...nav];
 const menuId = `bs-menu-${Math.random().toString(36).slice(2, 8)}`;
@@ -61,10 +73,10 @@ const isCurrent = (href: string) => (href === '/' ? here === '/' : here.startsWi
           <li class="relative group h-[88px] flex items-center" style={`min-width:${l.w}px`}>
             <a href={l.href} class="bs-navlink flex items-center gap-[4px] w-full" aria-current={isCurrent(l.href) ? 'page' : undefined}>
               {l.label}
-              {l.sub && <Icon name="chevron-down" size={16} class="transition-transform group-hover:rotate-180" />}
+              {l.sub && <Icon name="chevron-down" size={16} class="transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />}
             </a>
             {l.sub && (
-              <ul class="hidden group-hover:flex absolute top-full left-0 min-w-[240px] bg-white border border-line shadow-lg rounded-[4px] py-[12px] flex-col z-50 bs-dropdown-menu">
+              <ul class="hidden group-hover:flex group-focus-within:flex absolute top-full left-0 min-w-[240px] bg-white border border-line shadow-lg rounded-[4px] py-[12px] flex-col z-50 bs-dropdown-menu">
                 {l.sub.map((s) => (
                   <li><a href={s.href} class="block px-[16px] py-[8px] text-[15px] font-medium text-ink hover:text-royal bs-dropdown-link" aria-current={isCurrent(s.href) ? 'page' : undefined}>{s.label}</a></li>
                 ))}

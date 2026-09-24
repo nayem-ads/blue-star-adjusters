@@ -1,0 +1,40 @@
+---
+// Claims kit / Related (Fire & Smoke 217:9271 desktop 1280×522, 219:984 mobile 390×722). Paper band: § chip, 2 hub links, index links.
+// Usage: <Related index="§ 06" hubs={[{label:'Residential Claims', href:ROUTES.residential, node:['217:9275','219:988'], text:['217:9276','219:989']}, …]} links={[…7 items]} nodes={{section:['217:9271','219:984'], chip:[…], hubs:'217:9274', index:[…]}} />
+// hubs: the 2 hub links (Residential, Commercial); links: every other claims page except the current one, in the page's own order.
+// Rules: mobile rows carry bottom rules (first hub also a top rule), desktop rows top rules (hubs 2px navy, index 1px line).
+// node = the link row ids, text = the label ids (desktop, mobile). Mobile stacks everything in one column (hub arrows 24, index 20).
+import Icon from '../../components/Icon.astro';
+import { dn, type N } from './nodes';
+
+interface Item { label: string; href: string; node?: N; text?: N }
+interface Props { index: string; hubs: Item[]; links: Item[]; nodes: Partial<Record<'section' | 'chip' | 'chipText' | 'hubs' | 'index' | 'list', N>> }
+const { index, hubs, links, nodes: n } = Astro.props;
+---
+<section aria-label="Other claim types" class="bg-paper" {...dn(n.section)}>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[96px] flex flex-col items-start gap-[24px] lg:gap-[40px]">
+    <p class="m-0 inline-flex border border-navy rounded-[2px] px-[8px] py-[4px] tm-label lg:t-label text-navy" {...dn(n.chip)}><span {...dn(n.chipText)}>{index}</span></p>
+    <div class="w-full flex flex-col lg:gap-[40px]" {...dn(n.list)}>
+      <ul class="m-0 p-0 list-none w-full flex flex-col lg:flex-row lg:gap-[24px]" {...dn(n.hubs)}>
+        {hubs.map((h, i) => (
+          <li class="lg:flex-1 min-w-0" {...dn(h.node)}>
+            <a href={h.href} class:list={['group flex items-center justify-between border-navy border-b lg:border-b-0 lg:border-t-2 py-[20px] lg:py-[24px] text-navy', i === 0 && 'border-t']}>
+              <span class="flex-1 min-w-0 lg:flex-none tm-h3 lg:t-h3" {...dn(h.text)}>{h.label}</span>
+              <Icon name="arrow-right" size={24} class="shrink-0 text-navy transition-transform group-hover:translate-x-[4px]" />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <ul class="m-0 p-0 list-none w-full flex flex-col lg:flex-row lg:flex-wrap lg:gap-x-[24px]" {...dn(n.index)}>
+        {links.map((l) => (
+          <li class="lg:w-[262px]" {...dn(l.node)}>
+            <a href={l.href} class="group flex items-center justify-between border-b border-line lg:border-b-0 lg:border-t py-[16px] lg:py-[20px] text-ink">
+              <span class="flex-1 min-w-0 tm-body-strong lg:t-body-strong" {...dn(l.text)}>{l.label}</span>
+              <span class="shrink-0 text-navy transition-transform group-hover:translate-x-[4px]"><Icon name="arrow-right" size={24} class="block w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]" /></span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

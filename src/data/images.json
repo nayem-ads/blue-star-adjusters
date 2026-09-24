@@ -1447,5 +1447,33 @@
     "height": 224,
     "frame": "217:10753",
     "name": "IMG:faq-policy-desk"
+  },
+  "I217:5627;41:71": {
+    "src": "/img/first48-phone-evidence-217-5602-624x760.webp",
+    "width": 624,
+    "height": 760,
+    "frame": "217:5602",
+    "name": "IMG:first48-phone-evidence"
+  },
+  "I217:9420;41:71": {
+    "src": "/img/first48-phone-evidence-217-9387-390x360.webp",
+    "width": 390,
+    "height": 360,
+    "frame": "217:9387",
+    "name": "IMG:first48-phone-evidence"
+  },
+  "I217:6682;41:71": {
+    "src": "/img/ai-moisture-217-5602-240x304.webp",
+    "width": 240,
+    "height": 304,
+    "frame": "217:5602",
+    "name": "IMG:ai-moisture"
+  },
+  "I217:9842;41:71": {
+    "src": "/img/ai-moisture-217-9387-214x268.webp",
+    "width": 214,
+    "height": 268,
+    "frame": "217:9387",
+    "name": "IMG:ai-moisture"
   }
 }

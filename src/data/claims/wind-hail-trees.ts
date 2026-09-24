@@ -29,7 +29,7 @@ export const related = {
   nodes: { section: ['229:9286', '229:9502'], chip: ['229:9287', '229:9503'], chipText: ['229:9288', '229:9504'], hubs: ['229:9289'], index: ['229:9296'], list: [undefined, '229:9505'] },
   hubs: [
     { label: 'Residential Claims', href: ROUTES.residential, node: ['229:9290', '229:9506'], text: ['229:9291', '229:9507'] },
-    { label: 'Commercial Claims', href: ROUTES.commercial, node: ['229:9293', '229:9509'], text: ['229:9294', '229:9510'] },
+    { label: 'Commercial Claims', href: ROUTES.commercial, node: ['229:9293', '229:9509'], text: ['229:9294', '229:9510'], w: 257 },
   ],
   links: [
     { label: 'Fire & Smoke', href: ROUTES.fireSmoke, node: ['229:9303', '229:9518'], text: ['229:9304', '229:9519'] },

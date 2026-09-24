@@ -22,7 +22,7 @@ export const page = {
 const lead = "Commercial claims are more complex: more code requirements, more stakeholders, more ways for carriers to undervalue the loss. Michael's development background means nothing gets missed.";
 
 export const hero = {
-  img: { d: '230:10210', m: '230:10618', alt: 'Commercial building damaged by fire.' },
+  img: { d: '230:10210', m: '230:10618', alt: 'Fire-damaged commercial interior, walls and ceiling blackened by smoke.' },
   eyebrow: 'Commercial Claims',
   title: 'Your Business.\nFully Recovered.',
   lead,

@@ -2,7 +2,7 @@
 // Claims kit / Hero (Fire & Smoke 217:5734 desktop 1280×820, 217:13378 mobile 390×844). Dark photo hero, content bottom-anchored.
 // Usage: <Hero img={{d:'217:5735', m:'217:13379', alt:'…'}} eyebrow="Fire & Smoke" title={'Line one.\nLine two.'} nodes={…} />
 // Optional: lead (640 wide, under the H1), leadOnMobile=false (page renders the lead in its next section, e.g. ALE/Code),
-// titleM (mobile H1 text when it differs), caption=false (no "Field photograph"), bottom (desktop gap under content, default 96).
+// titleM (mobile H1 text when it differs), titleClass (H1 type/width classes, default 'tm-display lg:t-display-xl'), caption=false (no "Field photograph"), bottom (desktop gap under content, default 96).
 // nodes: every key is 'desktopId' or ['desktopId','mobileId'] (see NodeKeys below); pages pass their own ids so QA geometry is exact.
 import Button from '../../components/Button.astro';
 import Eyebrow from '../../components/Eyebrow.astro';
@@ -17,6 +17,7 @@ interface Props {
   eyebrow: string;
   title: string;
   titleM?: string;
+  titleClass?: string;
   lead?: string;
   leadOnMobile?: boolean;
   caption?: boolean;
@@ -24,7 +25,7 @@ interface Props {
   bottom?: number;
   nodes: Partial<Record<NodeKeys, N>>;
 }
-const { img, eyebrow, title, titleM, lead, leadOnMobile = true, caption = true, captionM = caption, bottom = 96, nodes: n } = Astro.props;
+const { img, eyebrow, title, titleM, titleClass = 'tm-display lg:t-display-xl', lead, leadOnMobile = true, caption = true, captionM = caption, bottom = 96, nodes: n } = Astro.props;
 const trust = ['No upfront cost', 'You always have final say on any settlement', 'CA License No. 2B60428'];
 const id = 'hero-title';
 ---
@@ -46,7 +47,7 @@ const id = 'hero-title';
   <div class="relative max-w-[1280px] mx-auto min-h-[844px] lg:min-h-[820px] flex flex-col justify-end px-[20px] pb-[112px] lg:px-[80px] lg:pb-[var(--hb)]" style={`--hb:${bottom}px`}>
     <div class="bs-chero__content flex flex-col items-start gap-[24px] lg:gap-[32px] lg:w-[1040px]" {...dn(n.content)}>
       <div {...dn(n.eyebrow)}><Eyebrow theme="dark">{eyebrow}</Eyebrow></div>
-      <h1 id={id} class="m-0 w-full tm-display lg:t-display-xl text-white whitespace-pre-line" {...dn(n.title)}>{titleM ? (<><span class="lg:hidden">{titleM}</span><span class="hidden lg:inline">{title}</span></>) : title}</h1>
+      <h1 id={id} class:list={['m-0 w-full text-white whitespace-pre-line', titleClass]} {...dn(n.title)}>{titleM ? (<><span class="lg:hidden">{titleM}</span><span class="hidden lg:inline">{title}</span></>) : title}</h1>
       {lead && <p class:list={['m-0 tm-lead lg:t-lead text-white lg:w-[640px]', !leadOnMobile && 'hidden lg:block']} {...dn(n.lead)}>{lead}</p>}
       <!-- mobile: trust line sits above the buttons -->
       <div class="lg:hidden w-full flex flex-col items-start gap-[8px] text-white" data-node-m={m(n.trust)}>

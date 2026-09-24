@@ -1,14 +1,15 @@
 ---
 // Claims kit / Detail dimension line (Figma 71:527): tick, rule, caption label, rule, tick (royal rules, 8px gaps, 16 tall).
 // Usage: <Dimension label="Well past the burn line" class="w-[208px] lg:w-[320px] text-royal lg:text-navy" />  (class colours the label)
+// Optional tick / rule: classes for the end ticks / the two rules (default 'bg-royal'), e.g. white on navy.
 import { dn, type N } from './nodes';
-interface Props { label: string; node?: N; class?: string }
-const { label, node, class: cls = '' } = Astro.props;
+interface Props { label: string; node?: N; class?: string; tick?: string; rule?: string }
+const { label, node, class: cls = '', tick = 'bg-royal', rule = 'bg-royal' } = Astro.props;
 ---
 <p class:list={['m-0 flex items-center gap-[8px] h-[16px]', cls]} {...dn(node)}>
-  <span aria-hidden="true" class="block w-px h-[12px] bg-royal shrink-0"></span>
-  <span aria-hidden="true" class="block flex-1 h-px bg-royal"></span>
+  <span aria-hidden="true" class:list={['block w-px h-[12px] shrink-0', tick]}></span>
+  <span aria-hidden="true" class:list={['block flex-1 h-px', rule]}></span>
   <span class="t-caption whitespace-nowrap">{label}</span>
-  <span aria-hidden="true" class="block flex-1 h-px bg-royal"></span>
-  <span aria-hidden="true" class="block w-px h-[12px] bg-royal shrink-0"></span>
+  <span aria-hidden="true" class:list={['block flex-1 h-px', rule]}></span>
+  <span aria-hidden="true" class:list={['block w-px h-[12px] shrink-0', tick]}></span>
 </p>

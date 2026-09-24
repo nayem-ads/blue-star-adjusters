@@ -4,6 +4,7 @@
 // at 360,168, detail blocks in a 496 column at x 704 from y `top`. Mobile: photo 390×420 (+ inset 208×138 at 158,308), then blocks.
 // Usage: <PhotoSplit img={{d,m,alt}} height={960} top={120} inset={{d,m,alt,label?}} blocks={[{chip:'§ 02', title:'Heat.', body:'…', nodes:{…}}]} nodes={{…}} />
 // Blocks: first gets bottom padding, the rest a top rule. Extra content after block i's body: slot "block-<i>" (button, disclaimer, link).
+// Optional: dark (navy section, white dimension line on mobile; Code "Founder"); slot "details" replaces the blocks with the page's own markup.
 import Img from '../../components/Img.astro';
 import Chip from './Chip.astro';
 import CropMarks from './CropMarks.astro';
@@ -17,13 +18,15 @@ interface Props {
   inset?: { d: string; m: string; alt: string; label?: string };
   blocks: Block[];
   nodes: Partial<Record<'section' | 'img' | 'stack' | 'inset' | 'insetImg' | 'dimension' | 'crop' | 'details', N>>;
+  dark?: boolean;
 }
-const { img, height, top, inset, blocks, nodes: n } = Astro.props;
+const { img, height, top, inset, blocks, nodes: n, dark = false } = Astro.props;
+const custom = Astro.slots.has('details') ? await Astro.slots.render('details') : '';
 const extras = await Promise.all(blocks.map((_, i) => (Astro.slots.has(`block-${i}`) ? Astro.slots.render(`block-${i}`) : Promise.resolve(''))));
 const dim = !!inset?.label;
 const [imgD, imgM] = typeof n.img === 'string' ? [n.img] : (n.img ?? []);
 ---
-<section class="bs-psplit relative bg-white" style={`--ps-h:${height}px;--ps-top:${top}px`} {...dn(n.section)}>
+<section class:list={['bs-psplit relative', dark ? 'bg-navy' : 'bg-white']} style={`--ps-h:${height}px;--ps-top:${top}px`} {...dn(n.section)}>
   <!-- Photo (mobile stack / desktop left column) -->
   <div class:list={['relative lg:absolute lg:left-0 lg:top-0 lg:w-[600px] lg:h-full', inset ? (dim ? 'h-[496px]' : 'h-[462px]') : 'h-[420px]']} data-node-m={Array.isArray(n.stack) ? n.stack[1] : undefined}>
     <div class="absolute left-0 top-0 w-full h-[420px] lg:hidden" data-node-m={imgM}><Img node={img.m} alt={img.alt} class="w-full h-full object-cover" /></div>
@@ -37,14 +40,17 @@ const [imgD, imgM] = typeof n.img === 'string' ? [n.img] : (n.img ?? []);
             <Img node={inset.d} alt={inset.alt} class="w-full h-full object-cover hidden lg:block" />
             <span aria-hidden="true" class="absolute inset-0 border-4 lg:border-8 border-white"></span>
           </div>
-          {dim && <Dimension label={inset.label!} node={n.dimension} class="absolute left-0 top-[164px] w-[208px] text-royal lg:static lg:w-[320px] lg:text-navy" />}
+          {dim && (dark
+            ? <Dimension label={inset.label!} node={n.dimension} tick="bg-white lg:bg-royal" rule="bg-white/50 lg:bg-royal" class="absolute left-0 top-[164px] w-[208px] text-white lg:static lg:w-[320px] lg:text-navy" />
+            : <Dimension label={inset.label!} node={n.dimension} class="absolute left-0 top-[164px] w-[208px] text-royal lg:static lg:w-[320px] lg:text-navy" />)}
         </div>
       </>
     )}
   </div>
   <div class="relative max-w-[1280px] mx-auto pt-[40px] pb-[56px] lg:px-[80px] lg:pl-[704px] lg:pt-[var(--ps-top)] lg:pb-0 lg:min-h-[var(--ps-h)]">
     <div class="flex flex-col" {...dn(n.details)}>
-      {blocks.map((b, i) => (
+      {custom && <Fragment set:html={custom} />}
+      {!custom && blocks.map((b, i) => (
         <div class:list={['mx-[20px] lg:mx-0 flex flex-col items-start gap-[16px] lg:gap-[24px]', i === 0 ? 'pb-[40px] lg:pb-[56px]' : 'border-t border-line pt-[40px] lg:pt-[56px]']} {...dn(b.nodes?.block)}>
           <Chip node={b.nodes?.chip} text={b.nodes?.chipText}>{b.chip}</Chip>
           <h2 id={b.id} class="m-0 w-full tm-display lg:t-display-l text-navy" {...dn(b.nodes?.title)}>{b.title}</h2>

@@ -2,37 +2,39 @@
 // Claims kit / RailList (Fire & Smoke "Misses" 217:5947 / 217:13420; also Water "Method", Denied "Questions").
 // Desktop: rail 360 (§ chip, H2, ruler) + 112 gap + list 648 of ruled items (40px icon circle + text). Mobile: heading group, then list.
 // Usage: <RailList chip="§ 01" title="…" items={[{icon:'home', text:'…', node:[..], iconNode:[..], textNode:[..]}]} nodes={{section, rail, chip, chipText, title, ruler, list}} />
-// titleStyle 'h2' (48/54, default) | 'display' (64/68); itemStyle 'h3' (28/34 ink, default) | 'lead' (20/32). Extra content under
+// titleStyle 'h2' (48/54, default) | 'display' (64/68) | 'h3' (28/34); itemStyle 'h3' (28/34 ink, default) | 'lead' (20/32; text may be
+// segments ['plain', {b:'semibold'}]); item bottomRule adds a rule under a middle item (Water item 3). Extra content under
 // item i's text: slot name "item-<i>" (e.g. Denied §2071 citation row). bg 'paper' (default) | 'white'.
 import Chip from './Chip.astro';
 import Ticks from './Ticks.astro';
 import IconCircle from './IconCircle.astro';
 import { dn, type N } from './nodes';
 
-interface Item { icon: string; text: string; node?: N; iconNode?: N; textNode?: N; colNode?: N }
+type Seg = string | { b: string };
+interface Item { icon: string; text: string | Seg[]; node?: N; iconNode?: N; textNode?: N; colNode?: N; bottomRule?: boolean }
 interface Props {
   chip: string; title: string; items: Item[];
-  titleStyle?: 'h2' | 'display'; itemStyle?: 'h3' | 'lead'; bg?: 'paper' | 'white'; id?: string;
+  titleStyle?: 'h2' | 'display' | 'h3'; itemStyle?: 'h3' | 'lead'; bg?: 'paper' | 'white'; id?: string;
   nodes: Partial<Record<'section' | 'rail' | 'chip' | 'chipText' | 'title' | 'ruler' | 'list', N>>;
 }
 const { chip, title, items, titleStyle = 'h2', itemStyle = 'h3', bg = 'paper', id = 'raillist-title', nodes: n } = Astro.props;
 const extras = await Promise.all(items.map((_, i) => (Astro.slots.has(`item-${i}`) ? Astro.slots.render(`item-${i}`) : Promise.resolve(''))));
-const titleCls = titleStyle === 'display' ? 'lg:t-display-l' : 'lg:t-h2';
-const itemCls = itemStyle === 'lead' ? 'lg:t-lead' : 'lg:t-h3';
+const titleCls = { h2: 'tm-h2 lg:t-h2', display: 'tm-h2 lg:t-display-l', h3: 'tm-h3 lg:t-h3' }[titleStyle];
+const itemCls = itemStyle === 'lead' ? 'tm-body lg:t-lead' : 'tm-body-strong lg:t-h3';
 ---
 <section aria-labelledby={id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']} {...dn(n.section)}>
   <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
     <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0" {...dn(n.rail)}>
       <Chip node={n.chip} text={n.chipText}>{chip}</Chip>
-      <h2 id={id} class:list={['m-0 w-full tm-h2 text-navy', titleCls]} {...dn(n.title)}>{title}</h2>
+      <h2 id={id} class:list={['m-0 w-full text-navy', titleCls]} {...dn(n.title)}>{title}</h2>
       <Ticks node={n.ruler} class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
     </div>
     <ul class="m-0 p-0 list-none flex flex-col lg:flex-1 lg:min-w-0" {...dn(n.list)}>
       {items.map((it, i) => (
-        <li class:list={['flex items-center gap-[16px] border-t border-line py-[20px] lg:items-start lg:gap-[24px] lg:py-[32px]', i === items.length - 1 && 'border-b']} {...dn(it.node)}>
+        <li class:list={['flex items-center gap-[16px] border-t border-line py-[20px] lg:items-start lg:gap-[24px] lg:py-[32px]', (i === items.length - 1 || it.bottomRule) && 'border-b']} {...dn(it.node)}>
           <IconCircle icon={it.icon} node={it.iconNode} />
           <div class="flex-1 min-w-0 flex flex-col gap-[16px]" {...dn(it.colNode)}>
-            <p class:list={['m-0 tm-body-strong text-ink', itemCls]} {...dn(it.textNode)}>{it.text}</p>
+            <p class:list={['m-0 text-ink', itemCls]} {...dn(it.textNode)}>{typeof it.text === 'string' ? it.text : it.text.map((sg) => typeof sg === 'string' ? sg : <strong class="font-semibold">{sg.b}</strong>)}</p>
             {extras[i] && <Fragment set:html={extras[i]} />}
           </div>
         </li>

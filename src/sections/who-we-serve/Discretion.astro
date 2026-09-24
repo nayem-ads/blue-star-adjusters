@@ -1,0 +1,41 @@
+---
+// Who We Serve / Library split with discretion quote. Desktop 217:7956 (1280×800, paper): photo 640×800 with crop marks + panel.
+// Mobile 217:10533 (390×1069): full-bleed photo 390×560, white quote card overlapping it by 104.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Img from '../../components/Img.astro';
+import CropMarks from '../home-a/CropMarks.astro';
+import { ROUTES } from '../../data/site';
+const alt = 'A private library with oil paintings and a wine rack under a film of soot, inventory tags on the pieces.';
+const facts = [
+  { icon: 'shield', t: 'We represent the insured only.', d: ['217:7975', '217:7979'], m: ['217:10548', '217:10552'] },
+  { icon: 'document', t: "No upfront cost. We're paid a percentage of what we recover.", d: ['217:7980', '217:7984'], m: ['217:10554', '217:10558'] },
+];
+---
+<section aria-labelledby="discretion-quote" class="bg-paper" data-node="217:7956" data-node-m="217:10533">
+  <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row pb-[64px] lg:pb-0">
+    <div class="relative h-[560px] lg:h-[800px] lg:w-[640px] lg:shrink-0 overflow-hidden" data-node="217:7957" data-node-m="217:10534">
+      <Img node="217:10535" alt={alt} class="lg:hidden w-full h-full object-cover" />
+      <Img node="217:7958" alt={alt} class="hidden lg:block w-full h-full object-cover" />
+      <CropMarks class="hidden lg:block absolute left-[40px] top-[40px] w-[560px] h-[720px]" node="217:7959" />
+    </div>
+    <div class="relative mt-[-104px] pl-[40px] pr-[20px] lg:mt-0 lg:p-0 lg:flex-1 lg:min-w-0 flex flex-col justify-center" data-node="217:7968" data-node-m="217:10536">
+      <div class="bg-white px-[24px] pt-[32px] pb-[32px] lg:bg-transparent lg:pl-[96px] lg:pr-[80px] lg:py-[96px] flex flex-col items-start lg:gap-[32px]" data-node-m="217:10537">
+        <Icon name="quote" size={48} class="hidden lg:block text-royal" />
+        <Icon name="quote" size={40} class="lg:hidden text-royal" />
+        <p id="discretion-quote" class="m-0 mt-[16px] lg:mt-0 font-display font-medium text-navy text-[26px] leading-[32px] tracking-[-0.015em] lg:text-[40px] lg:leading-[48px]" data-node="217:7972" data-node-m="217:10542">Client names and references are held in confidence and available on request.</p>
+        <span aria-hidden="true" class="block mt-[24px] lg:mt-0 w-[48px] lg:w-[64px] h-[2px] bg-royal"></span>
+        <ul class="m-0 mt-[23px] lg:mt-0 p-0 pb-[1px] lg:pb-0 list-none w-full border-b border-line lg:border-b-0" data-node="217:7974" data-node-m="217:10546">
+          {facts.map((f) => (
+            <li class="flex items-start gap-[12px] py-[16px] lg:items-center lg:gap-[16px] border-t border-line tm-body font-medium lg:t-body lg:font-medium text-ink" data-node={f.d[0]} data-node-m={f.m[0]}>
+              <Icon name={f.icon} size={20} class="lg:hidden shrink-0 text-navy" />
+              <Icon name={f.icon} size={24} class="hidden lg:block shrink-0 text-navy" />
+              <span class="flex-1 min-w-0" data-node={f.d[1]} data-node-m={f.m[1]}>{f.t}</span>
+            </li>
+          ))}
+        </ul>
+        <Button href={ROUTES.freeClaimReview} variant="outline" class="mt-[24px] lg:mt-0 h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" node="217:7985" data-node-m="217:10561">Schedule a Free Review</Button>
+      </div>
+    </div>
+  </div>
+</section>

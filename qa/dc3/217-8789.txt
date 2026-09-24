@@ -1,0 +1,63 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/7fb7932f-0654-4059-8c78-68b0f01c04f3.svg";
+const imgIconDocument = "https://www.figma.com/api/mcp/asset/3f972d8e-11cd-4a44-a4b6-6345c139bfcb.svg";
+
+type ButtonProps = {
+  className?: string;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default";
+  style?: "Solid";
+};
+
+function Button({ className, label = "Schedule a Free Review", showIcon = false, state = "Default", style = "Solid" }: ButtonProps) {
+  return (
+    <div className={className || "bg-[var(--color\\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px]"} data-node-id="37:128">
+      {showIcon && (
+        <div className="relative shrink-0 size-[20px]" data-node-id="37:129" data-name="Icon">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+        </div>
+      )}
+      <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[20px] relative shrink-0 text-[16px] text-[color:var(--color\/white,white)] whitespace-nowrap" data-node-id="37:131">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function DisclaimerAndCta() {
+  return (
+    <div className="bg-[var(--color\/white,white)] content-stretch flex gap-[96px] items-start px-[80px] py-[120px] relative size-full" data-node-id="217:8789" data-name="Disclaimer and CTA">
+      <div className="content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[264px]" data-node-id="217:8790" data-name="Margin rail">
+        <div className="bg-[var(--color\/navy,#081d5e)] h-px relative shrink-0 w-[264px]" data-node-id="217:8791" data-name="Rail hairline" />
+        <div className="content-stretch flex gap-[16px] items-center overflow-clip relative shrink-0" data-node-id="217:8792" data-name="Rail mark">
+          <div className="bg-[var(--color\/white,white)] border border-[var(--color\/navy,#081d5e)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[20px] shrink-0 size-[40px]" data-node-id="217:8793" data-name="Icon circle / document">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:8794" data-name="Icon / document">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDocument} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.72px] whitespace-nowrap" data-node-id="217:8797">
+            §
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-[1_0_0] flex-col gap-[48px] items-start min-w-px overflow-clip relative" data-node-id="217:8798" data-name="Disclaimer body">
+        <p className="[word-break:break-word] font-['Montserrat:Regular'] font-normal leading-[32px] relative shrink-0 text-[20px] text-[color:var(--color\/ink,#070f33)] w-full" data-node-id="217:8799" data-annotations="Disclaimer under the cards (CD 509).;\[LEGAL CHECK\] results disclaimer; results consent and attribution (CD 511).">
+          Results reflect specific losses and policies. “Offer” is the insurer’s offer, not a payment. Past results don’t guarantee a similar outcome.
+        </p>
+        <div className="bg-[var(--color\/ink,#070f33)] h-px opacity-18 relative shrink-0 w-full" data-node-id="217:8800" data-name="Hairline" />
+        <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="217:8801" data-annotations="CTA (CD 513)." data-name="CTA / Offered too little">
+          <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[54px] relative shrink-0 text-[48px] text-[color:var(--color\/navy,#081d5e)] tracking-[-0.72px] whitespace-nowrap" data-node-id="217:8802">
+            Offered too little?
+          </p>
+          <Button className="bg-[var(--color\/royal,#133faa)] content-stretch flex gap-[10px] items-center justify-center px-[28px] py-[16px] relative rounded-[999px] shrink-0" />
+        </div>
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/H2: Font(family: "Schibsted Grotesk", style: SemiBold, size: 48, weight: 600, lineHeight: 54, letterSpacing: -1.5), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0), Desktop/Button: Font(family: "Montserrat", style: SemiBold, size: 16, weight: 600, lineHeight: 20, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

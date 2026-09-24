@@ -1,0 +1,27 @@
+---
+// Who We Serve (Figma desktop 217:1248, mobile 217:9663). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CallBar from '../../components/CallBar.astro';
+import Hero from '../../sections/who-we-serve/Hero.astro';
+import WhoCallsUs from '../../sections/who-we-serve/WhoCallsUs.astro';
+import HighValue from '../../sections/who-we-serve/HighValue.astro';
+import Discretion from '../../sections/who-we-serve/Discretion.astro';
+import FinalCta from '../../sections/who-we-serve/FinalCta.astro';
+---
+<Base title="Who We Serve: High Value Home Claims | Blue Star Adjusters" description="A boutique public adjusting practice for executives, principals, partners and high net worth homeowners. Discreet, senior led, built around your privacy.">
+  <div class="absolute left-0 right-0 top-0 z-40" data-node="217:1253" data-node-m="217:9670"><Header theme="dark" overlay /></div>
+  <main class="bs-wws">
+    <Hero />
+    <WhoCallsUs />
+    <HighValue />
+    <Discretion />
+    <FinalCta />
+  </main>
+  <div data-node="217:8548" data-node-m="217:11541"><Footer /></div>
+  <CallBar node="217:11577" />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-wws :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

@@ -1,0 +1,33 @@
+---
+// Who We Serve / What's different about a high value claim (margin rail, navy). Desktop 217:7917 (1280×760), mobile 217:10492 (390×877).
+import Logo from '../../components/Logo.astro';
+import IconCircle from '../results/IconCircle.astro';
+const rows = [
+  { icon: 'document', t: 'Scheduled items (art, jewelry, wine) and the appraisals behind them.', d: ['217:7929', '217:7934'], m: ['217:10506', '217:10511'] },
+  { icon: 'home', t: 'Several residences, several carriers, and sometimes excess and surplus lines.', d: ['217:7936', '217:7941'], m: ['217:10513', '217:10518'] },
+  { icon: 'ruler', t: "Custom millwork, stone and steel that standard Xactimate line items don't price.", d: ['217:7943', '217:7948'], m: ['217:10520', '217:10525'] },
+  { icon: 'phone', t: "One point of contact for your family office, CPA, attorney and property manager, so you're asked once.", d: ['217:7950', '217:7954'], m: ['217:10527', '217:10531'] },
+];
+---
+<section aria-labelledby="hv-title" class="relative overflow-hidden bg-navy text-white" data-node="217:7917" data-node-m="217:10492">
+  <span aria-hidden="true" class="hidden lg:block absolute left-[calc(50%+354.03px)] top-[-40px] opacity-[.07] pointer-events-none" data-node="217:7918"><Logo variant="mark-white" bare width={461.239} height={560} label="" /></span>
+  <span aria-hidden="true" class="lg:hidden absolute left-[210px] top-[-40px] opacity-[.07] pointer-events-none" data-node-m="217:10493"><Logo variant="mark-white" bare width={302.4} height={367.1} label="" /></span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:pt-[120px] lg:pb-[123px] flex flex-col lg:flex-row lg:items-start lg:gap-[120px]">
+    <div class="lg:w-[264px] lg:shrink-0 flex flex-col lg:gap-[24px]" data-node="217:7923">
+      <div class="flex items-center gap-[12px] lg:contents" data-node-m="217:10498">
+        <p class="m-0 tm-label lg:t-label whitespace-nowrap lg:self-start" data-node="217:7924" data-node-m="217:10499">§ 02</p>
+        <span aria-hidden="true" class="block flex-1 lg:flex-none lg:w-full h-px bg-white opacity-40"></span>
+      </div>
+      <h2 id="hv-title" class="m-0 mt-[24px] lg:mt-0 w-[300px] lg:w-full tm-h2 lg:t-h3" data-node="217:7926" data-node-m="217:10502">What's different about a high value claim</h2>
+    </div>
+    <ul class="m-0 mt-[40px] lg:mt-0 p-0 list-none lg:w-[736px] lg:shrink-0 border-t border-white/[.24]" data-node="217:7927" data-node-m="217:10504">
+      {rows.map((r) => (
+        <li class="flex items-start gap-[16px] py-[24px] lg:items-center lg:gap-[32px] lg:py-[32px] border-b border-white/[.24]" data-node={r.d[0]} data-node-m={r.m[0]}>
+          <IconCircle name={r.icon} size={40} class="lg:hidden border-white text-white" />
+          <IconCircle name={r.icon} size={48} class="hidden lg:flex border-white text-white" />
+          <p class="m-0 flex-1 min-w-0 tm-lead lg:t-lead" data-node={r.d[1]} data-node-m={r.m[1]}>{r.t}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

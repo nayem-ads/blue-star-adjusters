@@ -1,0 +1,71 @@
+const imgLogoMarkWhiteFaintCropped = "https://www.figma.com/api/mcp/asset/ef2c1bd1-f668-4b66-b8d8-cfc9d434e891.svg";
+const imgIconDocument = "https://www.figma.com/api/mcp/asset/4a5605d4-ac3c-422c-9914-cc6d0f662d31.svg";
+const imgIconHome = "https://www.figma.com/api/mcp/asset/36d8e915-6547-48d3-abc4-15ad5138d488.svg";
+const imgIconRuler = "https://www.figma.com/api/mcp/asset/199d831d-c71e-442f-90f4-d19586cbd196.svg";
+const imgIconPhone = "https://www.figma.com/api/mcp/asset/e9eb11e7-0a11-4e65-841d-0708cd1ab509.svg";
+
+export default function SectionWhatsDifferentAboutAHighValueClaimMarginRailNavy() {
+  return (
+    <div className="bg-[var(--color\/navy,#081d5e)] content-stretch flex gap-[120px] items-start px-[80px] py-[120px] relative size-full" data-node-id="217:7917" data-name="Section / What's different about a high value claim (margin rail, navy)">
+      <div className="absolute h-[560px] left-[994.03px] top-[-40px] w-[461.239px]" data-node-id="217:7918" data-name="Logo / Mark / White (faint, cropped)">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoMarkWhiteFaintCropped} />
+      </div>
+      <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip relative shrink-0 w-[264px]" data-node-id="217:7923" data-name="Margin rail">
+        <p className="[word-break:break-word] font-['Montserrat:SemiBold'] font-semibold leading-[18px] relative shrink-0 text-[13px] text-[color:var(--color\/white,white)] tracking-[0.26px] whitespace-nowrap" data-node-id="217:7924">
+          § 02
+        </p>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-40 relative shrink-0 w-[264px]" data-node-id="217:7925" data-name="Hairline" />
+        <p className="[word-break:break-word] font-['Schibsted_Grotesk:SemiBold'] font-semibold leading-[34px] min-w-full relative shrink-0 text-[28px] text-[color:var(--color\/white,white)] tracking-[-0.28px] w-[min-content]" data-node-id="217:7926" data-annotations="Semantic H2 (set at H3 size in the margin rail). CD 527. Edited from: 'high-value claim'.">{`What's different about a high value claim`}</p>
+      </div>
+      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-[736px]" data-node-id="217:7927" data-name="Rows">
+        <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="217:7928" data-name="Hairline / top" />
+        <div className="content-stretch flex gap-[32px] items-center overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:7929" data-name="Row / Scheduled items (art, je">
+          <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="217:7930" data-name="Icon ring">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:7931" data-name="Icon / document">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconDocument} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="217:7934">
+            Scheduled items (art, jewelry, wine) and the appraisals behind them.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="217:7935" data-name="Hairline" />
+        <div className="content-stretch flex gap-[32px] items-center overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:7936" data-name="Row / Several residences, seve">
+          <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="217:7937" data-name="Icon ring">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:7938" data-name="Icon / home">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="217:7941">
+            Several residences, several carriers, and sometimes excess and surplus lines.
+          </p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="217:7942" data-name="Hairline" />
+        <div className="content-stretch flex gap-[32px] items-center overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:7943" data-name="Row / Custom millwork, stone a">
+          <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="217:7944" data-name="Icon ring">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:7945" data-name="Icon / ruler">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconRuler} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="217:7948">{`Custom millwork, stone and steel that standard Xactimate line items don't price.`}</p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="217:7949" data-name="Hairline" />
+        <div className="content-stretch flex gap-[32px] items-center overflow-clip py-[32px] relative shrink-0 w-full" data-node-id="217:7950" data-name="Row / One point of contact for">
+          <div className="border border-[var(--color\/white,white)] border-solid content-stretch flex items-center justify-center overflow-clip relative rounded-[24px] shrink-0 size-[48px]" data-node-id="217:7951" data-name="Icon ring">
+            <div className="relative shrink-0 size-[24px]" data-node-id="217:7952" data-name="Icon / phone">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconPhone} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Montserrat:Regular'] font-normal leading-[32px] min-w-px relative text-[20px] text-[color:var(--color\/white,white)]" data-node-id="217:7954">{`One point of contact for your family office, CPA, attorney and property manager, so you're asked once.`}</p>
+        </div>
+        <div className="bg-[var(--color\/white,white)] h-px opacity-24 relative shrink-0 w-full" data-node-id="217:7955" data-name="Hairline" />
+      </div>
+    </div>
+  );
+}SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.These styles are contained in the design: Desktop/Label: Font(family: "Montserrat", style: SemiBold, size: 13, weight: 600, lineHeight: 18, letterSpacing: 2), Desktop/H3: Font(family: "Schibsted Grotesk", style: SemiBold, size: 28, weight: 600, lineHeight: 34, letterSpacing: -1), Desktop/Lead: Font(family: "Montserrat", style: Regular, size: 20, weight: 400, lineHeight: 32, letterSpacing: 0).Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

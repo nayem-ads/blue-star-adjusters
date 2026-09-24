@@ -1,0 +1,36 @@
+---
+// Who We Serve / Hero (private estate at dusk). Desktop 217:1249 (1280×800): photo, ink wash .35, left masked ink scrim,
+// narrow copy column, licence chip, white ruler at the base. Mobile 217:9664 (390×844): bottom masked scrim.
+import Button from '../../components/Button.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Img from '../../components/Img.astro';
+import Ticks from '../results/Ticks.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE } from '../../data/site';
+const alt = 'A hillside estate at dusk among olive trees, windows lit.';
+---
+<section aria-labelledby="wws-title" class="bs-wws-hero relative overflow-hidden bg-ink text-white" data-node="217:1249" data-node-m="217:9664">
+  <div class="absolute inset-0 lg:hidden" data-node-m="217:9665"><Img node="217:9665" alt={alt} class="w-full h-full object-cover" priority /></div>
+  <div class="absolute inset-0 hidden lg:block" data-node="217:1250"><Img node="217:1250" alt={alt} class="w-full h-full object-cover" priority /></div>
+  <div aria-hidden="true" class="absolute inset-0 bg-ink opacity-35"></div>
+  <div aria-hidden="true" class="bs-wws-hero__scrim-d hidden lg:block absolute left-0 top-0 h-full w-[880px] bg-ink opacity-60"></div>
+  <div aria-hidden="true" class="bs-wws-hero__scrim-m lg:hidden absolute left-0 right-0 top-[284px] h-[560px] bg-ink"></div>
+
+  <div class="relative max-w-[1280px] mx-auto min-h-[844px] lg:min-h-[800px] px-[20px] pt-[252px] lg:px-[80px] lg:pt-[338px]">
+    <div class="flex flex-col items-start lg:gap-[24px] lg:w-[672px]" data-node="217:1276" data-node-m="217:9687">
+      <p class="lg:hidden m-0 flex items-center gap-[12px] tm-label" data-node-m="217:9688"><span aria-hidden="true" class="block w-[24px] h-px bg-white"></span><span data-node-m="217:9690">Who We Serve</span></p>
+      <Eyebrow theme="dark" class="hidden lg:flex" node="217:1277">Who We Serve</Eyebrow>
+      <h1 id="wws-title" class="m-0 mt-[20px] lg:mt-0 w-[290px] lg:w-full tm-display lg:t-display-l" data-node="217:1280" data-node-m="217:9692">A Boutique Practice.<br /> A Family Office.</h1>
+      <p class="m-0 mt-[16px] lg:mt-0 w-[318px] lg:w-[456px] tm-lead lg:t-lead !top-0" data-node="217:1281" data-node-m="217:9694">Every engagement is discreet, senior led, and built around the client's privacy.</p>
+      <div class="mt-[28px] lg:mt-0 w-full lg:w-auto flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]" data-node="217:1282" data-node-m="217:9696">
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" node="217:1283" data-node-m="217:9697">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" node="217:1288" data-node-m="217:9701">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+    <p class="hidden lg:block absolute left-[968px] top-[644px] m-0 px-[16px] py-[8px] border border-white rounded-[2px] t-label whitespace-nowrap" data-node="217:1292">{LICENSE}</p>
+  </div>
+  <Ticks class="hidden lg:block absolute left-0 right-0 bottom-0 text-white opacity-50" node="217:1294" />
+</section>
+<style>
+  .bs-wws-hero__scrim-d { -webkit-mask-image: linear-gradient(to right, #000, transparent); mask-image: linear-gradient(to right, #000, transparent); }
+  .bs-wws-hero__scrim-m { opacity: .6; -webkit-mask-image: linear-gradient(to bottom, transparent, #000); mask-image: linear-gradient(to bottom, transparent, #000); }
+</style>

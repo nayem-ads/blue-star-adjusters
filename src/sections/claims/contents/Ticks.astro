@@ -1,0 +1,10 @@
+---
+// "Ruler ticks" as drawn on the claims pages (e.g. Contents 230:886): navy 1px ticks every 8px, 16px tall every
+// 10th, 10px every 5th, 6px otherwise, top-aligned, 40 % opacity. Width via class; the row is clipped to its box.
+interface Props { class?: string; node?: string; nodeM?: string; count?: number }
+const { class: cls = '', node, nodeM, count = 46 } = Astro.props;
+const ticks = Array.from({ length: count }, (_, i) => i);
+---
+<div aria-hidden="true" class:list={['relative h-[16px] overflow-hidden opacity-40', cls]} data-node={node} data-node-m={nodeM}>
+  {ticks.map((i) => <span class:list={['absolute top-0 w-px bg-navy', i % 10 === 0 ? 'h-[16px]' : i % 5 === 0 ? 'h-[10px]' : 'h-[6px]']} style={`left:${i * 8}px`}></span>)}
+</div>

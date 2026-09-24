@@ -1,0 +1,30 @@
+---
+// Contents & Valuables (Figma desktop 230:698, mobile 230:1106). data-node = desktop id, data-node-m = mobile id.
+import Base from '../../../layouts/Base.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CallBar from '../../../components/CallBar.astro';
+import Hero from '../../../sections/claims/Hero.astro';
+import Related from '../../../sections/claims/Related.astro';
+import Cta from '../../../sections/claims/Cta.astro';
+import Inventory from '../../../sections/claims/contents/Inventory.astro';
+import Law from '../../../sections/claims/contents/Law.astro';
+import Result from '../../../sections/claims/contents/Result.astro';
+import { page, hero, inventory, law, result, related, cta } from '../../../data/claims/contents-valuables';
+---
+<Base title={page.title} description={page.description}>
+  <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
+  <main class="bs-contents">
+    <Hero {...hero} />
+    <Inventory {...inventory} />
+    <Law {...law} />
+    <Result {...result} />
+    <Related {...related} />
+    <Cta {...cta} />
+  </main>
+  <div data-node={page.footer[0]} data-node-m={page.footer[1]}><Footer /></div>
+  <CallBar node={page.callBar} />
+</Base>
+<style is:global>
+  @media (max-width: 1023.98px) { .bs-contents :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+</style>

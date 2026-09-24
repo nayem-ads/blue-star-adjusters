@@ -16,7 +16,7 @@ import { page, hero, detail, related, cta } from '../../../data/claims/wildfire'
 ---
 <Base title={page.title} description={page.description}>
   <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
-  <main class="bs-wildfire">
+  <main class="bs-wildfire bs-fit">
     <Hero {...hero} />
     <TwoClaims />
     <PhotoSplit {...detail} />

@@ -16,7 +16,7 @@ const { data: d } = Astro.props;
 ---
 <Base title={d.title} description={d.description}>
   <div {...nodes(d, 'header')}><Header theme="light" /></div>
-  <main class="bs-office">
+  <main class="bs-office bs-fit">
     <Hero data={d} />
     <Office data={d} />
     {d.local && <LocalLine data={d} />}

@@ -21,7 +21,7 @@ const sacramento: OfficeData = {
       { kind: 'phone', value: "(916) 507-1005" },
       { kind: 'email', value: "mike@bluestaradjusters.com" },
       { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
-      { kind: 'license', value: "CA DOI License No. 2B60428" },
+      { kind: 'license', value: "CA DOI License No. 6015234" },
     ],
   },
   local: null,

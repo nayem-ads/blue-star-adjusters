@@ -19,7 +19,7 @@ const sanFrancisco: OfficeData = {
     rows: [
       { kind: 'phone', value: "(916) 507-1005" },
       { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
-      { kind: 'license', value: "CA DOI License No. 2B60428" },
+      { kind: 'license', value: "CA DOI License No. 6015234" },
     ],
   },
   local: "In San Francisco, the code sets the rebuild scope, not what burned. Michael has built to the city’s seismic retrofit ordinance.",

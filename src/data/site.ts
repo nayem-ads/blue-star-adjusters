@@ -1,7 +1,7 @@
 // Single source of truth for contact details and routes.
 export const PHONE_DISPLAY = '(916) 507-1005';
 export const PHONE_TEL = 'tel:+19165071005';
-export const LICENSE = 'CA DOI License No. 2B60428';
+export const LICENSE = 'CA DOI License No. 6015234';
 export const ADDRESS = '1610 R Street, Suite 300, Sacramento, California 95811';
 
 export const ROUTES = {

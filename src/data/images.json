@@ -28,11 +28,11 @@
     "name": "IMG:mike"
   },
   "55:156": {
-    "src": "/img/onsite-adjuster-22-62-1120x560.webp",
+    "src": "/img/malibu-frame-22-62-1120x560.webp",
     "width": 1120,
     "height": 560,
     "frame": "22:62",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:malibu-frame"
   },
   "73:2514": {
     "src": "/img/stair-detail-22-62-200x264.webp",
@@ -91,11 +91,11 @@
     "name": "IMG:mike"
   },
   "62:705": {
-    "src": "/img/onsite-adjuster-58-463-390x320.webp",
+    "src": "/img/malibu-frame-58-463-390x320.webp",
     "width": 390,
     "height": 320,
     "frame": "58:463",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:malibu-frame"
   },
   "63:586": {
     "src": "/img/wood-house-58-463-350x236.webp",
@@ -224,11 +224,11 @@
     "name": "IMG:ai-plans"
   },
   "I73:3028;41:71": {
-    "src": "/img/onsite-adjuster-68-449-544x400.webp",
+    "src": "/img/malibu-frame-68-449-544x400.webp",
     "width": 544,
     "height": 400,
     "frame": "68:449",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:malibu-frame"
   },
   "I74:2716;41:71": {
     "src": "/img/mike-portrait-68-450-390x264.webp",
@@ -245,18 +245,18 @@
     "name": "IMG:ai-plans"
   },
   "I74:3307;41:71": {
-    "src": "/img/onsite-adjuster-68-450-350x440.webp",
+    "src": "/img/malibu-frame-68-450-350x440.webp",
     "width": 350,
     "height": 440,
     "frame": "68:450",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:malibu-frame"
   },
   "73:915": {
-    "src": "/img/onsite-adjuster-70-574-424x504.webp",
+    "src": "/img/smoke-corner-70-574-424x504.webp",
     "width": 424,
     "height": 504,
     "frame": "70:574",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:smoke-corner"
   },
   "73:925": {
     "src": "/img/ai-moisture-70-574-176x224.webp",
@@ -343,11 +343,11 @@
     "name": "IMG:ai-contents"
   },
   "74:3475": {
-    "src": "/img/onsite-adjuster-70-575-338x204.webp",
+    "src": "/img/smoke-corner-70-575-338x204.webp",
     "width": 338,
     "height": 204,
     "frame": "70:575",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:smoke-corner"
   },
   "74:3719": {
     "src": "/img/wood-house-70-575-278x200.webp",
@@ -714,18 +714,18 @@
     "name": "IMG:hiw-negotiation"
   },
   "128:5965": {
-    "src": "/img/onsite-adjuster-128-3750-1280x640.webp",
+    "src": "/img/malibu-frame-128-3750-1280x640.webp",
     "width": 1280,
     "height": 640,
     "frame": "128:3750",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:malibu-frame"
   },
   "I135:4679;41:71": {
-    "src": "/img/onsite-adjuster-135-4640-350x164.webp",
+    "src": "/img/malibu-frame-135-4640-350x164.webp",
     "width": 350,
     "height": 164,
     "frame": "135:4640",
-    "name": "IMG:onsite-adjuster"
+    "name": "IMG:malibu-frame"
   },
   "I135:5325;41:71": {
     "src": "/img/hiw-hero-135-4640-318x224.webp",

@@ -20,7 +20,7 @@ const santaMonica: OfficeData = {
     rows: [
       { kind: 'phone', value: "(916) 507-1005" },
       { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
-      { kind: 'license', value: "CA DOI License No. 2B60428" },
+      { kind: 'license', value: "CA DOI License No. 6015234" },
     ],
   },
   local: "Minutes from Pacific Palisades. Since the January 2025 fire, much of our Westside work is smoke and total loss claims.",

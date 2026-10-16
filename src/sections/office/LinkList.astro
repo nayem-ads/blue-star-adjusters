@@ -1,0 +1,25 @@
+---
+// Office link list ("Other Blue Star Offices", "Related"): H2, then ruled arrow rows (2 per row on desktop), as Claim types.
+import Icon from '../../components/Icon.astro';
+import type { Bg, OfficeLink } from './types';
+interface Props { id: string; title: string; links: OfficeLink[]; bg: Bg }
+const { id, title, links, bg } = Astro.props;
+---
+<section aria-labelledby={id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']}>
+  <div class="max-w-[1280px] mx-auto flex flex-col px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[112px]">
+    <h2 id={id} class="m-0 tm-h2 lg:t-h2 text-navy mb-[24px] lg:mb-[40px]">{title}</h2>
+    <ul class="m-0 p-0 list-none grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[48px] border-t-2 border-navy">
+      {links.map((l) => (
+        <li class="border-b border-line">
+          <a href={l.href} class="bs-office-link flex items-center gap-[16px] py-[20px] no-underline lg:gap-[24px] lg:py-[28px]">
+            <span class="flex-1 min-w-0 tm-body-strong lg:t-lead text-navy">{l.label}</span>
+            <span class="shrink-0 text-royal"><Icon name="arrow-right" size={24} class="block" /></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<style>
+  .bs-office-link:hover span:first-child { text-decoration: underline; text-underline-offset: 4px; }
+</style>

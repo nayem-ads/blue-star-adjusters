@@ -1,0 +1,40 @@
+---
+// Code Upgrades / Prose: page copy of kit/KitProse.astro plus `cite` (source line under the H2) and a default slot
+// at the end of the copy column (mid page buttons). Usage: <CodeProse title="…" id="…" cite="Cal. Ins. Code …" list={['…']}><Button …/></CodeProse>
+import Chip from '../Chip.astro';
+import Ticks from '../Ticks.astro';
+import KitStyles from '../../kit/KitStyles.astro';
+import { md } from '../../kit/md';
+interface Props { chip?: string; cite?: string; title: string; id: string; body?: string[]; list?: string[]; listStyle?: 'bullet' | 'number'; after?: string[]; note?: string; bg?: 'paper' | 'white' }
+const { chip, cite, title, id, body = [], list = [], listStyle = 'bullet', after = [], note, bg = 'paper' } = Astro.props;
+const L = listStyle === 'number' ? 'ol' : 'ul';
+---
+<KitStyles />
+<section aria-labelledby={id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']}>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      {chip && <Chip>{chip}</Chip>}
+      <h2 id={id} class="m-0 w-full text-navy tm-h2 lg:t-h2">{title}</h2>
+      {cite && <p class="m-0 tm-label lg:t-label text-muted italic">{cite}</p>}
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+      {body.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      {list.length > 0 && (
+        <L class:list={['m-0 mt-[24px] lg:mt-[32px] p-0 list-none flex flex-col border-t border-line', listStyle === 'number' && 'bs-kit-ol']}>
+          {list.map((it, i) => (
+            <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+              {listStyle === 'number'
+                ? <span aria-hidden="true" class="shrink-0 w-[32px] tm-body-strong lg:t-body-strong text-royal">{String(i + 1).padStart(2, '0')}</span>
+                : <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>}
+              <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+            </li>
+          ))}
+        </L>
+      )}
+      {after.map((p) => <p class="m-0 mt-[16px] lg:mt-[20px] text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      {note && <p class="m-0 mt-[24px] t-caption text-muted" set:html={md(note)} />}
+      {Astro.slots.has('default') && <div class="mt-[32px] lg:mt-[40px]"><slot /></div>}
+    </div>
+  </div>
+</section>

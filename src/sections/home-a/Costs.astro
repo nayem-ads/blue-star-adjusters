@@ -1,0 +1,35 @@
+---
+// What It Costs (Figma Homepage v2 488:1692): navy band, heading + fees link left, three ruled rows right.
+// Row badges ($0, icons) are decorative; "$0" is drawn with CSS so the text stays the approved copy.
+import Icon from '../../components/Icon.astro';
+import Button from '../../components/Button.astro';
+import Logo from '../../components/Logo.astro';
+import { ROUTES } from '../../data/site';
+---
+<section aria-labelledby="costs-title" class="relative bg-navy text-white overflow-hidden">
+  <span aria-hidden="true" class="hidden lg:block absolute right-[80px] bottom-[-80px] opacity-[.06] pointer-events-none"><Logo variant="mark-white" bare width={312} height={380} label="" /></span>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[96px]">
+    <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[32px] lg:w-[464px] lg:shrink-0">
+      <h2 id="costs-title" class="order-1 lg:order-none m-0 tm-h2 lg:t-h2">What It Costs</h2>
+      <p class="order-2 lg:order-none -mt-[12px] lg:mt-0 m-0 tm-body lg:t-lead text-white/85">And if we don’t think we can add value to your claim, we’ll tell you at the free review.</p>
+      <Button href={ROUTES.fees} variant="outline-on-dark" class="order-4 lg:order-none h-[56px] w-full lg:h-[52px] lg:w-auto">Public adjuster fees, explained</Button>
+    </div>
+    <ul class="order-3 lg:order-none flex-1 min-w-0 m-0 p-0 list-none border-t border-white/20">
+      <li class="flex gap-[16px] lg:gap-[24px] py-[20px] lg:py-[28px] border-b border-white/20">
+        <span aria-hidden="true" class="zero flex items-center justify-center w-[56px] h-[48px] lg:w-[72px] lg:h-[56px] shrink-0 rounded-[4px] bg-royal tm-h3 lg:t-h3"></span>
+        <p class="m-0 tm-body lg:t-body pt-[10px] lg:pt-[14px]"><strong class="font-semibold">No upfront cost.</strong> We’re paid a percentage of what we recover.</p>
+      </li>
+      <li class="flex gap-[16px] lg:gap-[24px] py-[20px] lg:py-[28px] border-b border-white/20">
+        <span aria-hidden="true" class="flex items-center justify-center w-[56px] h-[48px] lg:w-[72px] lg:h-[56px] shrink-0 rounded-[4px] border border-white/25 bg-white/5"><Icon name="document" size={20} /></span>
+        <p class="m-0 tm-body lg:t-body pt-[10px] lg:pt-[14px] text-white/90">The percentage is agreed in writing before we start, and in California our fee can never leave you with less than your insurer had already paid before you hired us.</p>
+      </li>
+      <li class="flex gap-[16px] lg:gap-[24px] py-[20px] lg:py-[28px] border-b border-white/20">
+        <span aria-hidden="true" class="flex items-center justify-center w-[56px] h-[48px] lg:w-[72px] lg:h-[56px] shrink-0 rounded-[4px] border border-white/25 bg-white/5"><Icon name="shield" size={20} /></span>
+        <p class="m-0 tm-body lg:t-body pt-[10px] lg:pt-[14px] text-white/90">In California, you may cancel within three business days of signing and receiving the contract, or five calendar days if your property is in a declared catastrophic disaster area.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<style>
+  .zero::before { content: '$0'; }
+</style>

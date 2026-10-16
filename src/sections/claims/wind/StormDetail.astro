@@ -1,0 +1,40 @@
+---
+// Wind, Hail & Trees / Hail + Falling trees (desktop 229:9174, mobile 229:9420). Claims PhotoSplit (hail photo, framing inset)
+// with this page's own details: § 01 hail (H2, four paragraphs, button), § 02 trees (H2, two paragraphs, two H3 sub-blocks).
+import Button from '../../../components/Button.astro';
+import PhotoSplit from '../PhotoSplit.astro';
+import Chip from '../Chip.astro';
+import { md } from '../../kit/md';
+import { dn } from '../nodes';
+import { ROUTES } from '../../../data/site';
+import { detail, hail, trees } from '../../../data/claims/wind-hail-trees';
+---
+<PhotoSplit {...detail}>
+  <div slot="details" class="flex flex-col">
+    <div class="mx-[20px] lg:mx-0 flex flex-col items-start gap-[16px] lg:gap-[24px] pb-[40px] lg:pb-[56px]" {...dn(hail.nodes.block)}>
+      <Chip node={hail.nodes.chip} text={hail.nodes.chipText}>{hail.chip}</Chip>
+      <h2 id={hail.id} class="m-0 w-full tm-h2 lg:t-h2 text-navy" {...dn(hail.nodes.title)}>{hail.title}</h2>
+      <div class="bs-wind-prose w-full">
+        {hail.body.map((p) => <p class="m-0 tm-body lg:t-body text-ink" set:html={md(p)} />)}
+      </div>
+      <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" node="229:9664" data-node-m="229:9816">Schedule a Free Review</Button>
+    </div>
+    <div class="mx-[20px] lg:mx-0 flex flex-col items-start gap-[16px] lg:gap-[24px] border-t border-line pt-[40px] lg:pt-[56px] lg:pb-[120px]" {...dn(trees.nodes.block)}>
+      <Chip node={trees.nodes.chip} text={trees.nodes.chipText}>{trees.chip}</Chip>
+      <h2 id={trees.id} class="m-0 w-full tm-h2 lg:t-h2 text-navy" {...dn(trees.nodes.title)}>{trees.title}</h2>
+      <div class="bs-wind-prose w-full">
+        {trees.body.map((p) => <p class="m-0 tm-body lg:t-body text-ink" set:html={md(p)} />)}
+      </div>
+      {trees.subs.map((s) => (
+        <div class="w-full flex flex-col gap-[12px] border-l-2 border-royal pl-[16px] lg:pl-[20px]">
+          <h3 class="m-0 tm-h3 lg:t-h3 text-navy">{s.title}</h3>
+          <p class="m-0 tm-body lg:t-body text-ink" set:html={md(s.body)} />
+        </div>
+      ))}
+    </div>
+  </div>
+</PhotoSplit>
+<style is:global>
+  .bs-wind-prose p + p { margin-top: 16px; }
+  @media (min-width: 1024px) { .bs-wind-prose p + p { margin-top: 20px; } }
+</style>

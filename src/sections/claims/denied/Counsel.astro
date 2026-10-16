@@ -1,23 +1,47 @@
 ---
 // Denied / Public adjuster or attorney (desktop 238:11233, mobile 238:11479). Navy band, faint B mark, rail (§ 03 chip,
-// question, white 40% hairline, Schedule button) + statement set at H2 size.
+// question, white 40% hairline, Schedule button) + statement set at H2 size, then a "who takes which dispute" table
+// (desktop table, mobile stacked cards). Props: chip, head, rows (from data/claims/denied-or-underpaid.ts counsel).
 import Button from '../../../components/Button.astro';
 import Logo from '../../../components/Logo.astro';
 import Chip from '../Chip.astro';
 import { ROUTES } from '../../../data/site';
+interface Props { chip: string; head: readonly string[]; rows: readonly (readonly string[])[] }
+const { chip, head, rows } = Astro.props;
 ---
 <section aria-labelledby="counsel-title" class="relative overflow-hidden bg-navy" data-node="238:11233" data-node-m="238:11479">
   <span aria-hidden="true" class="bs-dcounsel__mark absolute right-0 top-0 opacity-[.06] pointer-events-none" data-node="238:11234" data-node-m="238:11480"><Logo variant="mark-white" bare label="" class="block w-full h-full" /></span>
   <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[136px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
     <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[32px] lg:w-[360px] lg:shrink-0" data-node="238:11235">
       <div class="flex flex-col items-start gap-[16px] lg:contents" data-node-m="238:11481">
-        <Chip theme="dark" node={['238:11236', '238:11482']} text={['238:11237', '238:11483']}>§ 03</Chip>
+        <Chip theme="dark" node={['238:11236', '238:11482']} text={['238:11237', '238:11483']}>{chip}</Chip>
         <h2 id="counsel-title" class="m-0 w-full tm-h3 lg:t-h3 text-white" data-node="238:11238" data-node-m="238:11484">Public adjuster or attorney?</h2>
         <span aria-hidden="true" class="block w-full h-px bg-white/40" data-node="243:1036" data-node-m="244:992"></span>
       </div>
       <Button href={ROUTES.freeClaimReview} variant="on-dark" class="order-last lg:order-none h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="238:11239" data-node-m="238:11493">Schedule a Free Review</Button>
     </div>
-    <p class="m-0 tm-h2 lg:t-h2 text-white lg:flex-1 lg:min-w-0" data-node="243:1037" data-node-m="244:993">We measure, document and negotiate the claim. We don't give legal advice. When a claim needs counsel, we say so and work alongside them.</p>
+    <div class="flex flex-col gap-[32px] lg:gap-[56px] lg:flex-1 lg:min-w-0">
+      <p class="m-0 tm-h2 lg:t-h2 text-white" data-node="243:1037" data-node-m="244:993">We measure, document and negotiate the claim. We don't give legal advice. When a claim needs counsel, we say so and work alongside them.</p>
+      <table class="hidden lg:table w-full border-collapse text-left">
+        <thead><tr class="border-b-2 border-white">{head.map((h) => <th scope="col" class="t-label text-white py-[16px] pr-[24px] align-bottom">{h}</th>)}</tr></thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr class="border-b border-white/30">
+              <th scope="row" class="t-body-strong text-white py-[20px] pr-[32px] align-top w-[50%]">{r[0]}</th>
+              <td class="t-body text-white py-[20px] align-top">{r[1]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div class="lg:hidden flex flex-col border-t-2 border-white">
+        {rows.map((r) => (
+          <div class="border-b border-white/30 py-[20px] flex flex-col gap-[10px]">
+            <p class="m-0 tm-body-strong text-white">{r[0]}</p>
+            <p class="m-0 tm-body text-white"><span class="block tm-label text-white/70 mb-[2px]">{head[1]}</span>{r[1]}</p>
+          </div>
+        ))}
+      </div>
+    </div>
   </div>
 </section>
 <style is:global>

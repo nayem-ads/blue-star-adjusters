@@ -1,24 +1,28 @@
-// Scottsdale office (Figma desktop 217:18233, mobile 217:18830). Copy is character-exact from design/text; node ids generated from design/meta.
+// Scottsdale office (Figma desktop 217:18233, mobile 217:18830). Copy from pages/office-scottsdale/content.md; node ids generated from design/meta.
 import type { OfficeData } from '../../sections/office/types';
 import { ROUTES } from '../site';
 
 const scottsdale: OfficeData = {
   route: ROUTES.scottsdale,
-  title: 'Public Adjuster in Scottsdale, AZ | Blue Star Adjusters',
-  description: "Blue Star Adjusters, licensed public adjusters for Scottsdale property owners. We measure the loss and negotiate with your insurer. Free claim review.",
+  title: "Public Adjuster in Arizona | Scottsdale Office | Blue Star",
+  description: "Blue Star Adjusters is a licensed Arizona public adjuster in Scottsdale. The three rules ARS 20-321.02 sets for adjusters, and what they mean for you.",
   city: "Scottsdale",
   state: "AZ",
   hero: {
     eyebrow: "Scottsdale Codes. Scottsdale Contractors.",
-    h1: "Public Adjuster in Scottsdale.",
+    h1: "Public Adjuster in Arizona. Scottsdale Office.",
+    lead: "A public adjuster in Arizona is a licensed adjuster who represents you, the policyholder, on a property insurance claim. Arizona law bars public adjusters from taking any part in repairs on a claim they adjust. Blue Star Adjusters holds Arizona firm license No. 3004469742. We measure the loss, document it, and negotiate with your carrier.",
     headOffice: false,
     alt: 'Desert modern house with a saguaro at sunset.',
   },
   office: {
     label: "Scottsdale",
     rows: [
-      { kind: 'phone', value: "(916) 507-1005" },
-      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
+      { kind: 'phone', value: "(480) 933-1557" },
+      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday. We call back the same business day." },
+      { kind: 'email', value: "mike@bluestaradjusters.com" },
+      { kind: 'license', value: "Arizona firm license No. 3004469742, Blue Star Adjusters LLC" },
+      { kind: 'address', value: "1610 R Street, Suite 300, Sacramento, California 95811", label: "Head office" },
     ],
   },
   local: null,
@@ -28,6 +32,17 @@ const scottsdale: OfficeData = {
     leadBold: null,
     line: "We measure and negotiate. Your contractor builds.",
   },
+  blocks: [
+    {"type": "office"},
+    {"type": "state"},
+    {"type": "prose", "id": "office-ars", "title": "Three Arizona Rules Every Adjuster Must Follow", "body": ["ARS 20-321.02 sets three limits on an adjuster handling your claim. Arizona's definition of adjuster covers anyone who adjusts claims for the insurer or the insured, so public adjusters are bound too.", "**No solicitation while the loss is still happening.** An adjuster may not propose to represent you while the loss is still continuing at the damaged property. The same applies while the fire department or another public safety service is engaged in an emergency response. An adjuster who pitches you while crews are still working the fire is doing what this rule forbids.", "**No part in the repairs.** An adjuster may not take part, directly or indirectly, in the restoration, reconstruction or repair of property on a claim they adjust. That includes working as a contractor or subcontractor. The person pricing your loss can't also take part in the build.", "**No signing your checks.** An adjuster may not endorse a claim payment issued to you without your direct endorsement and signature. The money goes through your hands.", "Those rules fit how we already work. We document and price the damage, then negotiate the claim. You hire the builder, and every check carries your signature."]},
+    {"type": "prose", "id": "office-check", "title": "Hiring a Public Adjuster in Arizona: What to Check", "listStyle": "bullet", "buttons": true, "list": ["**The license.** Arizona law bars anyone from acting as an adjuster without a license (ARS 20-321.01). Ask the Department of Insurance and Financial Institutions to confirm any adjuster's license before you sign. Ours is Arizona firm license No. 3004469742.", "**Who they represent.** A public adjuster represents you. The adjuster your insurer sends represents the insurer.", "**The fee, in writing.** Ask to see the percentage in the contract before any work starts. Ours: No upfront cost. We're paid a percentage of what we recover.", "**Who does the work.** Ask who will measure the loss and who will speak to the carrier. With us, a senior adjuster leads every claim, from the first call to the final settlement.", "**Who decides.** You do. You always have final say on any settlement."]},
+    {"type": "prose", "id": "office-work", "title": "What We Do on an Arizona Claim", "body": ["A loss turns a household upside down. The paperwork should not land on you as well.", "Your insurer's adjuster writes the first estimate for the insurer. That adjuster's job is to close the file at a number the policy supports. The first number is the carrier's estimate, not a final ruling.", "Our job is to prove the full loss. We inspect the property and photograph every damaged surface. Our building estimators price the repair line by line. Then we check what the first estimate left out: recoverable depreciation, code upgrades under an ordinance or law endorsement, contents, and additional living expenses. The carrier gets a documented claim, and we negotiate it."]},
+    {"type": "prose", "id": "office-notfor", "title": "When We'll Tell You Not to Hire Us.", "body": ["Some claims don't need a public adjuster. If the damage is small, or the carrier's offer already covers the repair, our fee would cost you more than we could add. We'll tell you that at the free review."]},
+    {"type": "claims", "title": "Claims We Handle in Scottsdale and Across Arizona", "links": [{"label": "Residential claims", "href": "/claims/residential/"}, {"label": "Commercial claims", "href": "/claims/commercial/"}, {"label": "Fire and smoke damage claims", "href": "/claims/fire-smoke-damage/"}, {"label": "Water and plumbing claims", "href": "/claims/water-damage/"}, {"label": "Wind, hail and falling tree claims", "href": "/claims/wind-hail-trees/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}]},
+    {"type": "faq", "id": "office-faq", "title": "Arizona Public Adjuster Questions", "items": [{"q": "What does a public adjuster do in Arizona?", "a": "A public adjuster represents the policyholder on a property insurance claim. We read the policy, document and price the damage, and negotiate the claim with the insurer. Arizona law keeps us out of the repairs."}, {"q": "Does a public adjuster need to be licensed in Arizona?", "a": "Yes. ARS 20-321.01 bars anyone from acting as an adjuster without a license, and the director of the Department of Insurance and Financial Institutions grants it. Blue Star Adjusters LLC holds Arizona firm license No. 3004469742."}, {"q": "How much does a public adjuster charge in Arizona?", "a": "No upfront cost. We're paid a percentage of what we recover. The percentage is written into your contract before we start. For Arizona's current rules on public adjuster contracts, ask the Department of Insurance and Financial Institutions."}, {"q": "Can I hire a public adjuster if my claim has already been denied or paid?", "a": "Often, yes. A first payment or a denial letter doesn't always end the claim. Send us the letter or the estimate, and we'll review it free."}, {"q": "What is the difference between a public adjuster and an insurance company adjuster?", "a": "The insurance company's adjuster works for the insurer and is paid by the insurer. A public adjuster works for you and is paid from the claim. Both read the same policy. They don't always read it the same way."}, {"q": "Can a public adjuster also do my repairs in Arizona?", "a": "No. ARS 20-321.02 bars an adjuster from taking part, directly or indirectly, in the restoration, reconstruction or repair of property on a claim they adjust, including as contractor or subcontractor. If an adjuster offers to handle the claim and the rebuild, walk away."}]},
+    {"type": "links", "id": "office-related", "title": "Related", "links": [{"label": "How a public adjuster works", "href": "/how-it-works/"}, {"label": "Public adjuster fees", "href": "/fees/"}, {"label": "Water damage insurance claims", "href": "/claims/water-damage/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}, {"label": "All Blue Star office locations", "href": "/locations/"}]},
+  ],
   n: {
     'header': ["217:18234", "217:18831"],
     'footer': ["217:18829", "217:19157"],

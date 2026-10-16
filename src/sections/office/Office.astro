@@ -1,11 +1,10 @@
 ---
 // Office details. Desktop: rail (label, 264 rule, state chip) + 744 ledger; mobile: head then ledger. White + blueprint grid.
-// 3 variants by row list: Sacramento (address, phone, email, hours, license), Santa Monica / San Francisco (phone, hours,
-// license), Reno / Portland / Seattle / Scottsdale (phone, hours). The ledger closes up when rows are left out.
+// Rows come from the page data (kind sets icon, link and default label; a row may override its label, e.g. "Head office").
 import Icon from '../../components/Icon.astro';
 import Chip from './Chip.astro';
 import Grid from './Grid.astro';
-import { PHONE_TEL } from '../../data/site';
+import { telHref } from '../../data/site';
 import { nodes, type OfficeData } from './types';
 interface Props { data: OfficeData }
 const { data: d } = Astro.props;
@@ -18,7 +17,7 @@ const meta = {
   hours: { label: 'Hours', icon: 'clock' },
   license: { label: 'License', icon: 'shield' },
 } as const;
-const href = (k: string, v: string) => (k === 'phone' ? PHONE_TEL : k === 'email' ? `mailto:${v}` : undefined);
+const href = (k: string, v: string) => (k === 'phone' ? telHref(v) : k === 'email' ? `mailto:${v}` : undefined);
 ---
 <section aria-labelledby="office-label" class="relative bg-white overflow-hidden" {...n('office')}>
   <Grid node={id('office.grid', 0)} nodeM={id('office.grid', 1)} />
@@ -30,13 +29,13 @@ const href = (k: string, v: string) => (k === 'phone' ? PHONE_TEL : k === 'email
     </div>
     <div class="flex flex-col border-t-2 border-navy lg:w-[744px] lg:shrink-0" {...n('office.ledger')}>
       {d.office.rows.map((r) => {
-        const m = meta[r.kind]; const k = `office.${r.kind}`; const h = href(r.kind, r.value);
+        const m = meta[r.kind]; const k = `office.${r.kind}`; const label = r.label ?? m.label; const h = href(r.kind, r.value);
         const big = r.kind === 'phone';
         return (
           <div class="flex items-start gap-[16px] py-[20px] border-b border-line lg:items-center lg:gap-[24px] lg:py-[24px]" {...n(k)}>
             <span aria-hidden="true" class="flex items-center justify-center shrink-0 size-[42px] rounded-full border border-navy text-navy lg:size-[48px] lg:border-0 lg:bg-paper" {...n(k + '.icon')}><Icon name={m.icon} size={24} /></span>
             <div class="flex flex-col gap-[4px] flex-1 min-w-0 lg:contents" {...n(k + '.pair')}>
-              <p class="m-0 tm-label lg:t-label text-ink lg:w-[120px] lg:shrink-0" {...n(k + '.label')}>{m.label}</p>
+              <p class="m-0 tm-label lg:t-label text-ink lg:w-[120px] lg:shrink-0" {...n(k + '.label')}>{label}</p>
               <p class:list={['m-0 lg:flex-1 lg:min-w-0', big ? 'tm-h3 lg:t-h3 text-navy' : 'tm-body lg:t-lead text-ink']} {...n(k + '.value')}>
                 {h ? <a href={h} class="text-inherit no-underline hover:underline">{r.value}</a> : r.value}
               </p>

@@ -1,25 +1,27 @@
 ---
-// Claim types index: ruler + navy rule, six links (2 per row on desktop, a single list on mobile). Same on all offices.
+// Claim types index: H2, ruler + navy rule, claim links (2 per row on desktop, a single list on mobile), optional line after.
+// Labels come from the page data; the icon is picked by route.
 import Icon from '../../components/Icon.astro';
 import Ticks from './Ticks.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
 import { ROUTES } from '../../data/site';
-import { nodes, type OfficeData } from './types';
-interface Props { data: OfficeData }
-const { data: d } = Astro.props;
+import { nodes, type Bg, type OfficeData, type OfficeLink } from './types';
+interface Props { data: OfficeData; title: string; links: OfficeLink[]; after?: string; bg: Bg }
+const { data: d, title, links: items, after, bg } = Astro.props;
 const n = (k: string) => nodes(d, k);
 const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
-const links = [
-  { label: 'Residential Claims', href: ROUTES.residential, icon: 'home' },
-  { label: 'Commercial Claims', href: ROUTES.commercial, icon: 'building' },
-  { label: 'Fire & Smoke', href: ROUTES.fireSmoke, icon: 'flame' },
-  { label: 'Water & Plumbing', href: ROUTES.waterDamage, icon: 'droplet' },
-  { label: 'Wind, Hail & Falling Trees', href: ROUTES.windHailTrees, icon: 'wind' },
-  { label: 'Denied or Underpaid', href: ROUTES.deniedOrUnderpaid, icon: 'search' },
-];
-const rows = [0, 1, 2].map((r) => links.slice(r * 2, r * 2 + 2).map((l, j) => ({ ...l, i: r * 2 + j })));
+const icons: Record<string, string> = {
+  [ROUTES.residential]: 'home', [ROUTES.commercial]: 'building', [ROUTES.fireSmoke]: 'flame',
+  [ROUTES.waterDamage]: 'droplet', [ROUTES.windHailTrees]: 'wind', [ROUTES.deniedOrUnderpaid]: 'search',
+};
+const links = items.map((l) => ({ ...l, icon: icons[l.href] ?? 'arrow-right' }));
+const rows = Array.from({ length: Math.ceil(links.length / 2) }, (_, r) => links.slice(r * 2, r * 2 + 2).map((l, j) => ({ ...l, i: r * 2 + j })));
 ---
-<section aria-label="Claim types" class="bg-white" {...n('claims')}>
+<KitStyles />
+<section aria-labelledby="office-claims" class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']} {...n('claims')}>
   <div class="max-w-[1280px] mx-auto flex flex-col px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[112px]">
+    <h2 id="office-claims" class="m-0 tm-h2 lg:t-h2 text-navy mb-[24px] lg:mb-[40px]">{title}</h2>
     <Ticks count={141} class="w-full text-navy opacity-35" node={id('claims.ruler', 0)} nodeM={id('claims.ruler', 1)} />
     <span aria-hidden="true" class="block h-[2px] w-full bg-navy mt-[12px] lg:mt-0" {...n('claims.rule')}></span>
       {rows.map((row, r) => (
@@ -33,6 +35,7 @@ const rows = [0, 1, 2].map((r) => links.slice(r * 2, r * 2 + 2).map((l, j) => ({
           ))}
         </div>
       ))}
+    {after && <p class="m-0 mt-[24px] lg:mt-[32px] text-ink tm-body lg:t-lead" set:html={md(after)} />}
   </div>
 </section>
 <style>

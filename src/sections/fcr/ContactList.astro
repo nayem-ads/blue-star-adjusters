@@ -8,7 +8,7 @@ const d = variant === 'd';
 const main = d ? 't-body-strong text-navy' : 'tm-body-strong text-navy';
 const sub = d ? 'font-body font-medium text-[15px] leading-[24px] text-ink' : 'tm-body text-ink';
 const rows = [
-  { icon: 'phone', main: PHONE_DISPLAY, sub: 'Mon–Sun, 8 AM–6 PM Pacific', href: PHONE_TEL },
+  { icon: 'phone', main: PHONE_DISPLAY, sub: 'Monday to Friday, 9 AM to 5 PM Pacific', href: PHONE_TEL },
   { icon: 'map-pin', main: '1610 R Street, Suite 300', sub: 'Sacramento, California 95811, USA' },
   { icon: 'document', main: LICENSE, sub: 'We represent the insured only.' },
 ];
@@ -26,6 +26,6 @@ const rows = [
     </div>
   ))}
   <ul class:list={['flex gap-[8px] m-0 p-0 list-none', d && 'pt-[4px]']}>
-    {['7 offices', '5 states'].map((c) => <li class:list={['bg-white border border-navy rounded-[2px] px-[12px] py-[8px] text-navy whitespace-nowrap', d ? 't-label' : 'tm-label']}>{c}</li>)}
+    {['Licensed in six states'].map((c) => <li class:list={['bg-white border border-navy rounded-[2px] px-[12px] py-[8px] text-navy whitespace-nowrap', d ? 't-label' : 'tm-label']}>{c}</li>)}
   </ul>
 </div>

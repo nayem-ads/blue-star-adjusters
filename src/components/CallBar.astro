@@ -4,12 +4,12 @@
 // leaves for this bar, so the footer content is never covered and page height stays equal to Figma.
 // Props: node = mobile Figma id of the bar instance (emitted as data-node-m: the bar only exists in 390 frames); static = render in flow (QA/previews).
 import Button from './Button.astro';
-import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../data/site';
-interface Props { node?: string; static?: boolean; class?: string }
-const { node, static: inFlow = false, class: cls = '' } = Astro.props;
+import { PHONE_DISPLAY, ROUTES, telHref } from '../data/site';
+interface Props { node?: string; static?: boolean; class?: string; phone?: string }
+const { node, static: inFlow = false, class: cls = '', phone = PHONE_DISPLAY } = Astro.props;
 ---
 <div class:list={['bs-callbar lg:hidden', inFlow && 'bs-callbar--static', cls]} data-node-m={node} role="region" aria-label="Call or request a free claim review">
-  <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] px-[12px] flex-1 min-w-0"><span class="bs-callbar__call-word">Call </span>{PHONE_DISPLAY}</Button>
+  <Button href={telHref(phone)} variant="outline-on-dark" icon="phone" class="h-[56px] px-[12px] flex-1 min-w-0"><span class="bs-callbar__call-word">Call </span>{phone}</Button>
   <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] px-[16px]">Free Review</Button>
 </div>
 

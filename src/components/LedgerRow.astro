@@ -4,7 +4,7 @@
 // lg = desktop row. Stack the rows yourself; the desktop section adds its own closing bottom rule (e.g. 53:272).
 //
 // Props (all copy exactly as in Figma):
-//   loss            string  loss name, e.g. "Palisades fire"                      (41:75 / 41:84)
+//   loss            string  loss name, e.g. "Los Angeles house fire"                      (41:75 / 41:84)
 //   note            string  what made the difference, one sentence               (41:76 / 41:91)
 //   offer           string  carrier's offer, shown struck through, e.g. "$38,000" (41:79 / 41:87)
 //   recovered       string  settlement figure, e.g. "$276,000"                    (41:82 / 41:90)
@@ -13,7 +13,7 @@
 //   lossAs?         tag for the loss name, default 'h3' (use 'p' when the section has no h2 above it)
 //   node?           data-node id of the row/card instance in the page frame
 //   class?          extra classes on the root
-// Usage: <LedgerRow loss="Palisades fire" note="We measured..." offer="$38,000" recovered="$276,000" node="53:242" />
+// Usage: <LedgerRow loss="Los Angeles house fire" note="We measured..." offer="$38,000" recovered="$276,000" node="53:242" />
 interface Props { loss: string; note: string; offer: string; recovered: string; offerLabel?: string; recoveredLabel?: string; lossAs?: string; node?: string; class?: string }
 const { loss, note, offer, recovered, offerLabel = "Carrier's offer", recoveredLabel = 'Settlement', lossAs: LossTag = 'h3', node, class: cls = '' } = Astro.props;
 ---

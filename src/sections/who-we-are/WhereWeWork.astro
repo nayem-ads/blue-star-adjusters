@@ -2,7 +2,7 @@
 // S8 Where we work, typographic city index. Desktop 128:5326, mobile 135:1614.
 import Button from '../../components/Button.astro';
 import Icon from '../../components/Icon.astro';
-import { ROUTES, LICENSE } from '../../data/site';
+import { ROUTES } from '../../data/site';
 const cities = [
   { name: 'Santa Monica', st: 'CA', href: '/locations/california/santa-monica/', d: ['128:5343', '128:5346', '128:5347', '128:5349'], m: ['135:1628', '135:1629', '135:1634', '135:1630'], tone: 'a' },
   { name: 'Sacramento', st: 'CA', href: '/locations/california/sacramento/', d: ['128:5350', '128:5353', '128:5354', '128:5357'], m: ['135:1636', '135:1637', '135:1642', '135:1638'], tone: 'b' },
@@ -13,20 +13,19 @@ const cities = [
   { name: 'Scottsdale', st: 'AZ', href: '/locations/arizona/scottsdale/', d: ['128:5386', '128:5389', '128:5390', '128:5392'], m: ['135:1676', '135:1677', '135:1682', '135:1678'], tone: 'a' },
 ];
 ---
-<section aria-labelledby="wwa-where" class="relative bg-paper lg:bg-white min-h-[1104px] lg:min-h-[800px]" data-node="128:5326" data-node-m="135:1614">
+<section aria-labelledby="wwa-where" class="relative bg-white" data-node="128:5326" data-node-m="135:1614">
   <div class="max-w-[1280px] mx-auto px-[20px] lg:px-[80px] pt-[64px] pb-[64px] lg:pt-[120px] lg:pb-[96px] lg:flex lg:gap-[56px]">
     <div class="lg:w-[328px] lg:shrink-0 lg:pt-[8px]">
       <div class="flex items-start gap-[18px]">
-        <p class="m-0 w-max tm-label lg:t-label lg:text-[15px] lg:tracking-[0.3px] text-navy lg:text-royal whitespace-nowrap" data-node="128:5327" data-node-m="135:1615">07</p>
+        <p class="m-0 w-max tm-label lg:t-label lg:text-[15px] lg:tracking-[0.3px] text-navy lg:text-royal whitespace-nowrap" data-node="128:5327" data-node-m="135:1615">08</p>
         <span aria-hidden="true" class="lg:hidden block flex-1 h-px bg-line mt-[7px]" data-node-m="135:1616"></span>
       </div>
-      <h2 id="wwa-where" class="m-0 mt-[24px] lg:mt-[14px] tm-h2 lg:t-h2 text-navy w-full lg:w-[367px]" data-node="128:5328" data-node-m="135:1617">Where we work.</h2>
-      <p class="m-0 mt-[16px] lg:mt-[24px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]" data-node="128:5329" data-node-m="135:1618">Offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle and Scottsdale.</p>
-      <ul class="m-0 p-0 list-none mt-[20px] lg:mt-[32px] flex gap-[8px] w-max" data-node="128:5330" data-node-m="135:1619">
-        <li class="flex items-center gap-[8px] h-[44px] lg:h-[42px] pl-[12px] pr-[12px] lg:pr-[16px] border border-line rounded-[4px] lg:rounded-[2px] bg-white font-semibold text-[15px] leading-[26px] lg:leading-[24px] text-ink" data-node="128:5331" data-node-m="135:1620"><Icon name="map-pin" size={16} class="lg:hidden text-royal" /><Icon name="map-pin" size={20} class="hidden lg:block text-royal" />7 offices</li>
-        <li class="flex items-center h-[44px] lg:h-[42px] pl-[12px] pr-[12px] lg:pr-[16px] border border-line rounded-[4px] lg:rounded-[2px] bg-white font-semibold text-[15px] leading-[26px] lg:leading-[24px] text-ink" data-node="128:5336" data-node-m="135:1625">5 states</li>
-      </ul>
+      <h2 id="wwa-where" class="m-0 mt-[24px] lg:mt-[14px] tm-h2 lg:t-h2 text-navy w-full lg:w-[367px]" data-node="128:5328" data-node-m="135:1617">Where We Work.</h2>
+      <p class="m-0 mt-[16px] lg:mt-[24px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]">Head office: 1610 R Street, Suite 300, Sacramento, California 95811.</p>
+      <p class="m-0 mt-[12px] lg:mt-[16px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]" data-node="128:5329" data-node-m="135:1618">Offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle and Scottsdale, plus Utah, Hawaii and Colorado. Our firm licenses are the six states in the table above.</p>
+      <p class="m-0 mt-[12px] lg:mt-[16px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]">Monday to Friday, 9 AM to 5 PM Pacific. We call back the same business day.</p>
       <Button href={ROUTES.freeClaimReview} variant="outline" class="hidden lg:inline-flex mt-[48px] lg:min-w-[253px]" data-node="128:5338">Schedule a Free Review</Button>
+      <a href="/locations/" class="wwa-all hidden lg:inline-flex items-center gap-[8px] mt-[24px] text-royal t-body-strong underline">All our offices<Icon name="arrow-right" size={20} /></a>
     </div>
     <div class="mt-[32px] lg:mt-0 lg:flex-1 lg:min-w-0 lg:max-w-[736px]">
       <span aria-hidden="true" class="block h-px bg-navy" data-node="128:5342"></span>
@@ -44,11 +43,12 @@ const cities = [
           </li>
         ))}
       </ul>
-      <p class="lg:hidden m-0 mt-[24px] tm-label text-ink w-max" data-node-m="135:1684">{LICENSE}</p>
       <Button href={ROUTES.freeClaimReview} variant="outline" full class="lg:hidden mt-[32px] h-[56px]" data-node-m="135:1685">Schedule a Free Review</Button>
+      <a href="/locations/" class="wwa-all lg:hidden flex items-center gap-[8px] mt-[20px] text-royal tm-body-strong underline">All our offices<Icon name="arrow-right" size={20} /></a>
     </div>
   </div>
 </section>
 <style>
+  .wwa-all:hover { color: var(--color-navy); }
   .wwa-city:hover .wwa-city__name, .wwa-city:focus-visible .wwa-city__name { color: var(--color-royal); }
 </style>

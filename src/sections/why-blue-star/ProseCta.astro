@@ -1,0 +1,41 @@
+---
+// Why Blue Star / prose section with a mid page CTA. Same layout as the content kit's KitProse (rail H2 left,
+// copy right), plus the two standard buttons under the copy. Used only by /why-blue-star/.
+import Chip from '../claims/Chip.astro';
+import Ticks from '../claims/Ticks.astro';
+import Button from '../../components/Button.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+interface Props { chip?: string; title: string; id: string; body?: string[]; list?: string[]; after?: string[]; note?: string; bg?: 'paper' | 'white' }
+const { chip, title, id, body = [], list = [], after = [], note, bg = 'paper' } = Astro.props;
+---
+<KitStyles />
+<section aria-labelledby={id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']}>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      {chip && <Chip>{chip}</Chip>}
+      <h2 id={id} class="m-0 w-full text-navy tm-h2 lg:t-h2">{title}</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+      {body.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      {list.length > 0 && (
+        <ul class="m-0 mt-[24px] lg:mt-[32px] p-0 list-none flex flex-col border-t border-line">
+          {list.map((it) => (
+            <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+              <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+              <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+            </li>
+          ))}
+        </ul>
+      )}
+      {after.map((p) => <p class="m-0 mt-[16px] lg:mt-[20px] text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      {note && <p class="m-0 mt-[24px] t-caption text-muted" set:html={md(note)} />}
+      <div class="flex flex-col gap-[12px] mt-[32px] lg:flex-row lg:gap-[16px] lg:mt-[40px]">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,81 @@
+---
+// FAQ / Deadlines (FAQ only). Built from the content kit patterns (KitTable rail + ruled table, mobile cards; KitProse list),
+// plus the two California deadline bullets, the proof line with its disclaimer, and the CTA pair.
+import Button from '../../components/Button.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+
+const head = ['Where your claim stands', 'Too late?'];
+const rows = [
+  ['Damage happened, no claim filed yet', 'No. This is the best time to call.'],
+  ['Claim open, no offer yet', 'No.'],
+  ['Offer in hand, not accepted', 'Usually not. We can reopen scope before you accept.'],
+  ['Payment received or check cashed', 'Usually not, unless you signed a release.'],
+  ['Claim denied', 'Often not. We read the denial against the whole policy.'],
+  ['Final release signed', 'Usually yes, for that claim. Speak with an attorney.'],
+];
+const deadlines = [
+  '**Time to sue.** The standard fire policy in Cal. Ins. Code 2071 allows 12 months from the start of the loss to file suit, or 24 months when the loss is tied to a declared state of emergency.',
+  '**Held back depreciation.** Cal. Ins. Code 2051.5 gives you at least 12 months from the first actual cash value payment to collect full replacement cost, or 36 months after a state of emergency. Insurers must grant six month extensions for good cause, such as permit delays or a shortage of contractors.',
+];
+---
+<KitStyles />
+<section aria-labelledby="faq-deadlines" class="bg-paper">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:py-[120px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[820px]">
+      <span aria-hidden="true" class="block w-[48px] h-[2px] bg-royal"></span>
+      <h2 id="faq-deadlines" class="m-0 text-navy tm-h2 lg:t-h2">When Is It Too Late to Hire a Public Adjuster in California?</h2>
+      <p class="m-0 text-ink tm-body lg:t-lead">After a fire or a flood, deadlines are the last thing on anyone's mind. They still run. Find where your claim stands.</p>
+    </div>
+
+    <table class="hidden lg:table mt-[56px] w-full border-collapse text-left">
+      <thead><tr class="border-b-2 border-navy">{head.map((h) => <th scope="col" class="t-label text-navy py-[16px] pr-[24px] align-bottom">{h}</th>)}</tr></thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr class="border-b border-line">
+            <th scope="row" class="t-body-strong text-navy py-[24px] pr-[24px] align-top w-[440px]">{r[0]}</th>
+            <td class="t-body text-ink py-[24px] pr-[24px] align-top">{r[1]}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="lg:hidden mt-[32px] flex flex-col border-t-2 border-navy">
+      {rows.map((r) => (
+        <div class="border-b border-line py-[20px] flex flex-col gap-[10px]">
+          <p class="m-0 tm-body-strong text-navy">{r[0]}</p>
+          <p class="m-0 tm-body text-ink"><span aria-hidden="true" class="bs-faq-cell-label block tm-label text-muted mb-[2px]" data-label={head[1]}></span>{r[1]}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-[48px] lg:mt-[72px] flex flex-col gap-[40px] lg:flex-row lg:items-start lg:gap-[96px]">
+      <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+        <p class="m-0 text-ink tm-body-strong lg:t-body-strong">Two California deadlines run no matter who handles the claim:</p>
+        <ul class="m-0 mt-[16px] lg:mt-[20px] p-0 list-none flex flex-col border-t border-line">
+          {deadlines.map((it) => (
+            <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+              <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+              <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+            </li>
+          ))}
+        </ul>
+        <p class="m-0 mt-[16px] lg:mt-[20px] text-ink tm-body lg:t-body">Your policy may give you more time than these minimums. Hiring a public adjuster doesn't extend any of them.</p>
+      </div>
+      <div class="flex flex-col items-start gap-[24px] lg:w-[392px] lg:shrink-0">
+        <div class="w-full bg-white border-l-2 border-royal px-[20px] py-[20px] lg:px-[28px] lg:py-[28px]">
+          <p class="m-0 text-navy tm-body-strong lg:t-body-strong">An offer is not the end of a claim. A Los Angeles house fire, full strip out: Offered $38,000. Settled at $276,000.</p>
+          <p class="m-0 mt-[12px] t-caption text-muted">Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</p>
+        </div>
+        <div class="w-full flex flex-col gap-[12px]">
+          <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px]">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px]">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .bs-faq-cell-label::before { content: attr(data-label); }
+</style>

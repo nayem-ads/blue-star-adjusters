@@ -1,36 +1,40 @@
 ---
-// Fire & Smoke / Results (desktop 217:9165, mobile 219:910). Blueprint grid, § 05 heading, 3 ledger rows, disclaimer.
+// Fire & Smoke / Results (desktop 217:9165, mobile 219:910). Blueprint grid, § chip + H2, 3 ledger rows, disclaimer, results link, mid page CTA.
+// Each row reads in DOM order as the approved sentences: loss. Offered $X. Settled at/for [prefix] $Y[,] note.
 // Built here rather than with components/LedgerRow: these rows have no note on rows 1–2, a hidden offer on row 3,
 // "about"/"nearly" figure prefixes and navy desktop labels, none of which LedgerRow expresses.
+import Button from '../../../components/Button.astro';
 import Chip from '../Chip.astro';
+import KitStyles from '../../kit/KitStyles.astro';
+import { md } from '../../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../../data/site';
 import { dn, type N } from '../nodes';
 
-interface Row { loss: string; note?: string; offer?: string; prefix?: string; figure: string; node: N; lossNode?: N; noteNode?: N; figureNode?: N }
-interface Props { rows: Row[]; nodes: Partial<Record<'section' | 'heading' | 'chip' | 'chipText' | 'title' | 'ledger' | 'disclaimer' | 'disclaimerText', N>> }
-const { rows, nodes: n } = Astro.props;
+interface Row { loss: string; note?: string; offer?: string; settled: string; prefix?: string; figure: string; node: N; lossNode?: N; noteNode?: N; figureNode?: N }
+interface Props { chip: string; title: string; rows: readonly Row[]; more?: string; callFirst?: string; nodes: Partial<Record<'section' | 'heading' | 'chip' | 'chipText' | 'title' | 'ledger' | 'disclaimer' | 'disclaimerText', N>> }
+const { chip, title, rows, more, callFirst, nodes: n } = Astro.props;
 ---
-<section aria-labelledby="results-title" class="bs-fresults relative overflow-hidden bg-white" {...dn(n.section)}>
+<KitStyles />
+<section aria-labelledby="results-title" class="bs-fresults relative overflow-hidden bg-paper" {...dn(n.section)}>
   <div aria-hidden="true" class="bs-fresults__grid absolute inset-0"></div>
   <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:gap-[48px]">
     <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:self-start" {...dn(n.heading)}>
-      <Chip node={n.chip} text={n.chipText}>§ 05</Chip>
-      <h2 id="results-title" class="m-0 w-full lg:w-auto lg:min-w-[244px] tm-display lg:t-display-l text-navy whitespace-nowrap" {...dn(n.title)}>Results.</h2>
+      <Chip node={n.chip} text={n.chipText}>{chip}</Chip>
+      <h2 id="results-title" class="m-0 w-full tm-h2 lg:t-display-l text-navy lg:w-[860px]" {...dn(n.title)}>{title}</h2>
     </div>
     <ul class="m-0 p-0 list-none flex flex-col gap-[16px] lg:gap-0" {...dn(n.ledger)}>
       {rows.map((r) => (
-        <li class="flex flex-col items-start gap-[12px] bg-white rounded-[16px] px-[20px] py-[24px] lg:flex-row lg:items-end lg:gap-[40px] lg:rounded-none lg:bg-transparent lg:px-0 lg:py-[32px] lg:border-t lg:border-line" {...dn(r.node)}>
-          <div class="contents lg:flex lg:flex-col lg:gap-[8px] lg:w-[360px] lg:shrink-0">
-            <h3 class="m-0 tm-body-strong lg:t-body-strong text-navy" {...dn(r.lossNode)}>{r.loss}</h3>
-            {r.note && <p class="m-0 order-last lg:order-none tm-body lg:t-small text-ink" {...dn(r.noteNode)}>{r.note}</p>}
-          </div>
-          <p class:list={['m-0 flex items-baseline gap-[8px] whitespace-nowrap lg:flex-col lg:items-start lg:gap-[6px] lg:w-[240px] lg:shrink-0', !r.offer && 'hidden lg:flex lg:invisible']} aria-hidden={r.offer ? undefined : 'true'}>
-            <span class="t-caption text-ink lg:text-navy">Carrier's offer</span>
-            <s class="t-h3 text-ink">{r.offer ?? '-'}</s>
+        <li class="bs-fresults__row flex flex-col items-start gap-[12px] bg-white rounded-[16px] px-[20px] py-[24px] lg:grid lg:gap-x-[40px] lg:gap-y-0 lg:rounded-none lg:bg-transparent lg:px-0 lg:py-[32px] lg:border-t lg:border-line" {...dn(r.node)}>
+          <h3 class="m-0 tm-body-strong lg:t-body-strong text-navy lg:col-start-1 lg:row-start-1 lg:self-end lg:pb-[6px]" {...dn(r.lossNode)}>{r.loss}</h3>
+          <p class:list={['m-0 flex items-baseline gap-[8px] whitespace-nowrap lg:col-start-2 lg:row-start-1 lg:self-end lg:flex-col lg:items-start lg:gap-[6px]', !r.offer && 'hidden lg:flex lg:invisible']} aria-hidden={r.offer ? undefined : 'true'}>
+            {r.offer ? <span class="t-caption text-ink lg:text-navy">Offered</span> : null}
+            {r.offer ? <s class="t-h3 text-ink">{r.offer}</s> : <span class="t-h3">&nbsp;</span>}
           </p>
-          <p class="m-0 flex flex-col items-start gap-[2px] whitespace-nowrap lg:gap-[6px] lg:flex-1 lg:min-w-0 text-navy">
-            <span class="t-caption text-royal lg:text-navy">Settlement</span>
+          <p class="m-0 flex flex-col items-start gap-[2px] whitespace-nowrap lg:col-start-3 lg:row-start-1 lg:self-end lg:gap-[6px] lg:min-w-0 text-navy">
+            <span class="t-caption text-royal lg:text-navy">{r.settled}</span>
             <span class="bs-fresults__fig" {...dn(r.figureNode)}>{r.prefix && <span class="bs-fresults__pre">{r.prefix} </span>}{r.figure}</span>
           </p>
+          {r.note && <p class="m-0 tm-body lg:t-small text-ink lg:col-start-3 lg:row-start-2 lg:mt-[12px]" {...dn(r.noteNode)}>{r.note}</p>}
         </li>
       ))}
     </ul>
@@ -38,6 +42,16 @@ const { rows, nodes: n } = Astro.props;
       <span aria-hidden="true" class="block w-[24px] h-px bg-navy shrink-0"></span>
       <span class="bs-fresults__disc text-ink" {...dn(n.disclaimerText)}>Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</span>
     </p>
+    {more && <p class="m-0 tm-body-strong lg:t-body-strong" set:html={md(more)} />}
+    {callFirst && (
+      <div class="flex flex-col items-start gap-[20px] lg:gap-[24px] border-t border-line pt-[32px] lg:pt-[40px] w-full">
+        <p class="m-0 tm-body lg:t-lead text-ink">{callFirst}</p>
+        <div class="w-full lg:w-auto flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]">
+          <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </div>
+    )}
   </div>
 </section>
 
@@ -53,6 +67,7 @@ const { rows, nodes: n } = Astro.props;
   .bs-fresults__pre { font-size: 22px; line-height: 1; letter-spacing: -0.02em; }
   .bs-fresults__disc { font-family: var(--font-body); font-weight: 400; font-size: 12px; line-height: 18px; }
   @media (min-width: 1024px) {
+    .bs-fresults__row { grid-template-columns: 360px 240px minmax(0, 1fr); }
     .bs-fresults__fig { font-size: 64px; line-height: 64px; }
     .bs-fresults__pre { font-size: 24px; }
     .bs-fresults__disc { font-weight: 500; font-size: 15px; line-height: 24px; white-space: nowrap; }

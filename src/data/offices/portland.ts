@@ -1,33 +1,49 @@
-// Portland office (Figma desktop 217:15891, mobile 217:16488). Copy is character-exact from design/text; node ids generated from design/meta.
+// Portland office (Figma desktop 217:15891, mobile 217:16488). Copy from pages/office-portland/content.md; node ids generated from design/meta.
 import type { OfficeData } from '../../sections/office/types';
 import { ROUTES } from '../site';
 
 const portland: OfficeData = {
   route: ROUTES.portland,
-  title: 'Public Adjuster in Portland, OR | Blue Star Adjusters',
-  description: "Blue Star Adjusters, licensed public adjusters for Portland property owners. We measure the loss and negotiate with your insurer. Free claim review.",
+  title: "Public Adjuster in Oregon | Portland Office | Blue Star",
+  description: "Blue Star Adjusters is a licensed Oregon public adjuster in Portland. Oregon's wildfire order, the state's own claim tips, and how to check a license.",
   city: "Portland",
   state: "OR",
   hero: {
     eyebrow: "Portland Codes. Portland Contractors.",
-    h1: "Public Adjuster in Portland.",
+    h1: "Public Adjuster in Oregon. Portland Office.",
+    lead: "A public adjuster in Oregon is a licensed adjuster you hire to represent you, the policyholder, on a property insurance claim. The adjuster your insurer sends works for the insurer. Blue Star Adjusters holds Oregon firm license No. 3004448214 and works Oregon claims from Portland. We measure the loss, document it, and negotiate with your carrier.",
     headOffice: false,
     alt: 'Cedar shingle Craftsman house in the rain.',
   },
   office: {
     label: "Portland",
     rows: [
-      { kind: 'phone', value: "(916) 507-1005" },
-      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
+      { kind: 'phone', value: "(971) 610-0741" },
+      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday. We call back the same business day." },
+      { kind: 'email', value: "mike@bluestaradjusters.com" },
+      { kind: 'license', value: "Oregon firm license No. 3004448214, Blue Star Adjusters LLC" },
+      { kind: 'address', value: "1610 R Street, Suite 300, Sacramento, California 95811", label: "Head office" },
     ],
   },
   local: null,
   rule: {
     cite: "Oregon DFR",
-    lead: "Oregon created a separate public adjuster license on August 1, 2025.",
+    lead: "Oregon has used emergency orders to pause cancellations and nonrenewals in wildfire ZIP codes.",
     leadBold: null,
-    line: "On July 31, 2026 it temporarily paused cancellations and nonrenewals in wildfire evacuation ZIP codes.",
+    line: "Each order is temporary and covers listed ZIP codes only. Check the Division's wildfire page for current orders.",
   },
+  blocks: [
+    {"type": "office"},
+    {"type": "state"},
+    {"type": "prose", "id": "office-wildfire-order", "title": "Oregon's Wildfire Orders, in Plain Terms", "listStyle": "bullet", "body": ["Alongside the governor's wildfire emergency declaration, Oregon issued a Wildfire Emergency Order on July 31, 2026. It applied only in the ZIP codes the Division of Financial Regulation listed in a bulletin. While it was in effect, insurers had to:"], "list": ["Suspend cancellations and nonrenewals.", "Give a grace period on premium payments.", "Extend the deadlines for reporting claims.", "Not cancel or nonrenew a policy solely because of a claim from the wildfires. The exceptions were fraud, intentional misrepresentation of a material fact, or the policyholder's own written request."], "after": ["Orders like this are temporary, and the ZIP code list can change as wildfire conditions and evacuation orders change. Check the Division's wildfire page for any order in effect now. Then ask your insurer in writing whether your policy falls under it."]},
+    {"type": "prose", "id": "office-state-tips", "title": "What Oregon Tells Policyholders After a Loss", "listStyle": "bullet", "buttons": true, "body": ["The Division's wildfire page gives advice that holds for any large claim. Four points matter most:"], "list": ["**Keep damaged items.** Don't dispose of damaged belongings until your adjuster has seen them.", "**Build the contents list properly.** List each item, its age, and its approximate original and replacement cost. Ask the insurer how long you have to submit it.", "**Think before an ALE claim.** Additional living expenses are typically subject to your deductible, and a claim can count against you in underwriting even if nothing is paid.", "**Don't be rushed.** In the Division's words, \"You should not be rushed or pressured during your insurance claim process.\""], "after": ["This is where a public adjuster earns the fee. We build the contents list room by room, price each line, and defend it when the carrier pushes back."]},
+    {"type": "prose", "id": "office-check", "title": "Hiring a Public Adjuster in Oregon: What to Check", "listStyle": "bullet", "list": ["**The license.** The Division's advice is direct: \"Always verify that the company or individual you are working with has a license.\" The Division points consumers to the NAIC State Based System lookup. Ours is Oregon firm license No. 3004448214.", "**Who they represent.** A public adjuster represents you. The adjuster your insurer sends represents the insurer.", "**The fee, in writing.** Ask to see the percentage in the contract before any work starts. Ours: No upfront cost. We're paid a percentage of what we recover.", "**Who does the work.** Ask who will measure the loss and who will speak to the carrier. With us, a senior adjuster leads every claim, from the first call to the final settlement.", "**Who decides.** You do. You always have final say on any settlement."]},
+    {"type": "prose", "id": "office-work", "title": "What We Do on an Oregon Claim", "body": ["A loss turns a household upside down. The paperwork should not land on you as well.", "Your insurer's adjuster writes the first estimate for the insurer. That adjuster's job is to close the file at a number the policy supports. The first number is the carrier's estimate, not a final ruling.", "Our job is to prove the full loss. We inspect the property and photograph every damaged surface. Our building estimators price the repair line by line. Then we check what the first estimate left out: recoverable depreciation, code upgrades under an ordinance or law endorsement, contents, and additional living expenses. The carrier gets a documented claim, and we negotiate it.", "We don't arrange repairs or act as your contractor. You choose the builder. We negotiate the money that pays for the build."]},
+    {"type": "prose", "id": "office-notfor", "title": "When We'll Tell You Not to Hire Us.", "body": ["Some claims don't need a public adjuster. If the damage is small, or the carrier's offer already covers the repair, our fee would cost you more than we could add. We'll tell you that at the free review."]},
+    {"type": "claims", "title": "Claims We Handle in Portland and Across Oregon", "links": [{"label": "Residential claims", "href": "/claims/residential/"}, {"label": "Commercial claims", "href": "/claims/commercial/"}, {"label": "Fire and smoke damage claims", "href": "/claims/fire-smoke-damage/"}, {"label": "Water and plumbing claims", "href": "/claims/water-damage/"}, {"label": "Wind, hail and falling tree claims", "href": "/claims/wind-hail-trees/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}], "after": "Wildfire losses have their own page: [wildfire insurance claims](/claims/wildfire/)."},
+    {"type": "faq", "id": "office-faq", "title": "Oregon Public Adjuster Questions", "items": [{"q": "What is a public adjuster?", "a": "A public adjuster is a licensed adjuster who represents the policyholder on a property insurance claim. The insurer's adjuster represents the insurer. A public adjuster documents the loss, prices it and negotiates the claim for you."}, {"q": "Does Oregon require public adjusters to be licensed?", "a": "Yes. Oregon requires a license to act as an adjuster, and the Division of Financial Regulation issues it. Resident individual applicants must pass the Oregon adjuster exam. Blue Star Adjusters LLC holds Oregon firm license No. 3004448214."}, {"q": "How can I verify a public adjuster's license in Oregon?", "a": "The Division sends consumers to the NAIC State Based System to look up a license. You can also call the Division's consumer hotline at 888‑877‑4894. Check the firm and the person who will handle your claim."}, {"q": "Do public adjusters in Oregon have a fee cap?", "a": "No upfront cost. We're paid a percentage of what we recover. The percentage is written into your contract before we start. For Oregon's current rules on public adjuster contracts and fees, call the Division's consumer hotline at 888‑877‑4894."}, {"q": "Does an Oregon wildfire order cover my Portland home?", "a": "Only if your ZIP code is on the Division's list for that order. Each order is temporary, and the list can change. Check your ZIP code on the Division's wildfire page and ask your insurer in writing."}, {"q": "When should I hire a public adjuster in Oregon?", "a": "Before you accept a final offer or sign a release. Early is better, because we can document damage before cleanup removes the evidence. If the carrier has already paid or denied part of the claim, we can still review it."}]},
+    {"type": "links", "id": "office-related", "title": "Related", "links": [{"label": "Wildfire insurance claims", "href": "/claims/wildfire/"}, {"label": "Contents and personal property claims", "href": "/claims/contents-valuables/"}, {"label": "Additional living expenses", "href": "/claims/additional-living-expenses/"}, {"label": "Public adjuster fees", "href": "/fees/"}, {"label": "All Blue Star office locations", "href": "/locations/"}]},
+  ],
   n: {
     'header': ["217:15892", "217:16489"],
     'footer': ["217:16487", "217:16815"],

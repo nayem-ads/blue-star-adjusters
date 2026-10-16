@@ -1,5 +1,6 @@
 ---
 // Who We Serve (Figma desktop 217:1248, mobile 217:9663). data-node = desktop id, data-node-m = mobile id.
+// Approved copy: bluestar-work/pages/who-we-serve/content.md. New blocks use the content kit (KitProse, KitFaq) and a page Proof card.
 import Base from '../../layouts/Base.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -7,16 +8,77 @@ import CallBar from '../../components/CallBar.astro';
 import Hero from '../../sections/who-we-serve/Hero.astro';
 import WhoCallsUs from '../../sections/who-we-serve/WhoCallsUs.astro';
 import HighValue from '../../sections/who-we-serve/HighValue.astro';
+import Proof from '../../sections/who-we-serve/Proof.astro';
 import Discretion from '../../sections/who-we-serve/Discretion.astro';
 import FinalCta from '../../sections/who-we-serve/FinalCta.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+
+const faq = [
+  { q: 'Do I need a public adjuster if I already have an insurance broker?', a: 'For a large loss, often yes. Your broker placed the policy and manages the account. A public adjuster is licensed to represent you on the claim itself: measuring the loss, building the claim and negotiating it. Your broker can stay informed throughout.' },
+  { q: "How is a public adjuster different from the insurance company's adjuster?", a: 'Their adjuster works for the insurance company. A public adjuster is licensed to work only for you, the policyholder. We start from their estimate and measure what it left out.' },
+  { q: 'How are public adjusters paid?', a: "No upfront cost. We're paid a percentage of what we recover. In California, our fee can never leave you with less than your insurer had already paid before you hired us. [Public adjuster fees, explained](/fees/)" },
+  { q: 'Does hiring a public adjuster slow the claim down?', a: 'It can. A 2010 Florida legislative study of Citizens Property Insurance claims found that claims with a public adjuster took longer to close, and paid more before fees. A loss with art, wine and custom work takes time to document properly. You decide on every offer, including when to settle.' },
+  { q: 'When should I call a public adjuster?', a: 'Before you accept an offer, and ideally before the carrier\'s scope is final. Our ability to affect your outcome diminishes with time. If you already have an offer, we can usually reopen scope before you accept.' },
+];
 ---
-<Base title="Who We Serve: High Value Home Claims | Blue Star Adjusters" description="A boutique public adjusting practice for executives, principals, partners and high net worth homeowners. Discreet, senior led, built around your privacy.">
+<Base title="High Net Worth Insurance Claims | Blue Star Adjusters" description="Discreet, senior led representation for high net worth insurance claims: scheduled art and wine, several residences, wildfire and custom construction.">
   <div class="absolute left-0 right-0 top-0 z-40" data-node="217:1253" data-node-m="217:9670"><Header theme="dark" overlay /></div>
   <main class="bs-wws bs-fit">
     <Hero />
     <WhoCallsUs />
     <HighValue />
+    <KitProse chip="§ 03" id="wws-scheduled" bg="paper" title="The Schedule Lists It. The Appraisal Proves It." body={[
+      'A scheduled item is insured on its own, under a floater added to your policy. Insurers want a professional appraisal before they schedule it. When a piece is damaged or lost, the claim starts with that paper.',
+      'Here is where it goes wrong. The appraisal is years old, and the market has moved since. A piece was never scheduled, so it falls under the general contents limit. Or the policy caps a category, such as jewelry theft, below what a single piece is worth.',
+      'We read the schedule, the endorsement and the contents limit before anything is priced. Then we document each piece: purchase records, provenance, prior appraisals, photographs of the room.',
+      'A wine cellar can look untouched after a fire. The question is what the heat did to the bottles, and that takes records, storage conditions and an expert\'s opinion to prove. [Contents and valuables claims](/claims/contents-valuables/)',
+    ]} />
+    <Proof chip="§ 04" id="wws-proof" bg="white" title="What the Carrier Paid. What We Recovered."
+      result={{ title: 'Estate fire, fine wine and art.', text: 'The owner recovered $6 million on his own, then the claim stalled on the fine wine and art. With Blue Star, the structure settled at $11 million, with $5.2 million more for contents.' }}
+      disclaimer="Results reflect specific losses and policies. Past results don't guarantee a similar outcome."
+      link="[More claim results](/results/)" />
+    <KitProse chip="§ 05" id="wws-wildfire" bg="paper" title="Wildfire Claims on High Value California Homes" body={[
+      'Losing a home you built a life in is a loss no inventory captures. The claim still has to be built, and on a large home the money sits in several parts of the policy, each with its own rules.',
+    ]} list={[
+      '**Rebuild cost above the limit.** Extended replacement cost pays a set percentage above the dwelling limit. Some policies, where offered, pay whatever it costs to rebuild.',
+      '**Code upgrades.** A standard policy generally won\'t pay to bring the house up to current code. An ordinance or law endorsement can.',
+      '**The foundation.** Concrete and rebar damaged by heat may not be able to carry a new house.',
+      '**Debris removal.** Read how your policy pays for it before the lot is cleared.',
+      '**Loss of use.** After a loss tied to a declared state of emergency in California, your homeowners policy must allow at least 24 months of additional living expenses. If you act in good faith and delays beyond your control hold up the rebuild, the insurer must grant up to 12 more months. The dollar limit doesn\'t grow.',
+      '**Where you rebuild.** After a total loss, you can rebuild or buy at another location. The payment is capped at what rebuilding where the house stood would cost. You can use the contractor you choose.',
+    ]} after={[
+      'Some homes in high fire risk areas carry two policies. The California FAIR Plan provides basic fire insurance for high risk properties. A difference in conditions policy, found through a broker, adds the coverage a full homeowners policy would carry. One fire can mean two claims, with two carriers, each paying under its own policy.',
+      '[Wildfire insurance claims](/claims/wildfire/) · [Ordinance or law coverage](/claims/code-upgrades/) · [Additional living expenses](/claims/additional-living-expenses/)',
+    ]} />
+    <KitProse chip="§ 06" id="wws-residences" bg="white" title="Several Residences. Several Carriers." body={[
+      'A primary home, a second home in the mountains, a place on the coast. Each can sit with a different carrier, on a different form, with different limits and deductibles.',
+      'When one event touches more than one property, the claims run side by side. We read every policy on its own terms. Loss of use on a second home, for one, depends entirely on the wording.',
+      'Blue Star Adjusters is licensed in California, Nevada, Oregon, Washington, Arizona and Colorado. [Our offices](/locations/)',
+    ]} />
+    <KitProse chip="§ 07" id="wws-carriers" bg="paper" title="Private Client Carriers and Surplus Lines" body={[
+      'Private client carriers write policies for high value homes. Their wording can include features a standard form lacks: rebuild cost above the dwelling limit, the choice to rebuild or take a cash settlement, and a waived deductible on a large loss.',
+      'Their adjuster still works for the carrier. A feature in the policy pays only when someone reads for it and builds the claim to use it. That is our job.',
+      'When standard carriers won\'t write a home, a surplus lines carrier may. We read that policy form itself, endorsements included, before a line of scope is written.',
+    ]} />
+    <KitProse chip="§ 08" id="wws-custom" bg="white" title="Custom Work. Priced as Built." body={[
+      'Carrier estimates are often written in Xactimate, from a database of standard line items. A curved stair in walnut, matched slab marble or exposed structural steel has no honest line item.',
+      'We document what the work actually costs to replace: the original drawings and specifications where they exist, the material specs, and bids from the specialty trades who do that work. Smoke in porous stone and millwork gets the same scrutiny as the fire damage. [Fire and smoke damage claims](/claims/fire-smoke-damage/)',
+    ]} />
     <Discretion />
+    <KitProse chip="§ 09" id="wws-fit" bg="white" title="When You May Not Need Us" body={[
+      'A large home doesn\'t make every claim large. If the loss is small, or the carrier\'s offer already covers the full scope, you may not need a public adjuster. We\'ll tell you so at the free review.',
+    ]} />
+    <KitFaq chip="§ 10" id="wws-faq" bg="paper" title="Questions About High Net Worth Insurance Claims" items={faq} />
+    <KitProse id="wws-related" bg="white" title="Related Pages" list={[
+      '[Contents and valuables claims](/claims/contents-valuables/)',
+      '[Wildfire insurance claims](/claims/wildfire/)',
+      '[Fire and smoke damage claims](/claims/fire-smoke-damage/)',
+      '[Ordinance or law coverage](/claims/code-upgrades/)',
+      '[Claim results](/results/)',
+      '[How a public adjuster works on your claim](/how-it-works/)',
+      '[Meet Michael Rapport, founder](/about/michael-rapport/)',
+    ]} />
     <FinalCta />
   </main>
   <div data-node="217:8548" data-node-m="217:11541"><Footer /></div>

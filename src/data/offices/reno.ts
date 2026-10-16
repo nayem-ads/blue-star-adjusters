@@ -1,24 +1,28 @@
-// Reno office (Figma desktop 217:14686, mobile 217:15283). Copy is character-exact from design/text; node ids generated from design/meta.
+// Reno office (Figma desktop 217:14686, mobile 217:15283). Copy from pages/office-reno/content.md; node ids generated from design/meta.
 import type { OfficeData } from '../../sections/office/types';
 import { ROUTES } from '../site';
 
 const reno: OfficeData = {
   route: ROUTES.reno,
-  title: 'Public Adjuster in Reno, NV | Blue Star Adjusters',
-  description: "Blue Star Adjusters, licensed public adjusters for Reno property owners. We measure the loss and negotiate with your insurer. Free claim review.",
+  title: "Public Adjuster in Reno, Nevada | Blue Star Adjusters",
+  description: "Blue Star Adjusters is a licensed Nevada public adjuster for Reno homes and businesses. What Nevada law asks of an adjuster, and how to check a license.",
   city: "Reno",
   state: "NV",
   hero: {
     eyebrow: "Reno Codes. Reno Contractors.",
-    h1: "Public Adjuster in Reno.",
+    h1: "Public Adjuster in Reno, Nevada",
+    lead: "A public adjuster in Reno is a Nevada licensed adjuster who works for you, the policyholder, and not for the insurance company. Nevada law defines a public adjuster as one representing solely the financial interests of the insured. Blue Star Adjusters holds Nevada firm license No. 4263596. We measure your loss, document it, and negotiate the claim with your carrier.",
     headOffice: false,
     alt: 'Mountain modern house among sagebrush.',
   },
   office: {
     label: "Reno",
     rows: [
-      { kind: 'phone', value: "(916) 507-1005" },
-      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
+      { kind: 'phone', value: "(775) 993-5511" },
+      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday. We call back the same business day." },
+      { kind: 'email', value: "mike@bluestaradjusters.com" },
+      { kind: 'license', value: "Nevada firm license No. 4263596, Blue Star Adjusters LLC" },
+      { kind: 'address', value: "1610 R Street, Suite 300, Sacramento, California 95811", label: "Head office" },
     ],
   },
   local: null,
@@ -28,6 +32,17 @@ const reno: OfficeData = {
     leadBold: null,
     line: "When your claim needs counsel, we bring counsel in.",
   },
+  blocks: [
+    {"type": "office"},
+    {"type": "state"},
+    {"type": "prose", "id": "office-nevada-law", "title": "What Nevada Law Asks of a Public Adjuster", "listStyle": "bullet", "body": ["Nevada licenses adjusters under chapter 684A of its statutes. In the statute's words, a public adjuster represents \"solely the financial interests of the insured named in the policy.\" Every licensed public adjuster in Nevada works under that definition. It is the law, not a sales point.", "NRS 684A.165 sets the standards of conduct. Among them, a Nevada adjuster must:"], "list": ["Be honest and fair with you, your insurer and the public.", "Give prompt, knowledgeable service and fair, objective treatment.", "Identify themselves as an adjuster.", "Take no financial interest in an adjustment, and no salvage, without written authority from the principal.", "Give no legal advice."], "after": ["That last rule shapes how we work. We read your policy, measure the damage and price the scope. When a coverage dispute becomes a legal question, a lawyer answers it. We tell you when the claim has reached that point."]},
+    {"type": "prose", "id": "office-check", "title": "Hiring a Public Adjuster in Reno: What to Check", "listStyle": "bullet", "buttons": true, "list": ["**The license.** Nevada requires a license to act as an adjuster (NRS 684A.040). Search the adjuster on the Nevada Division of Insurance \"Verify a License\" page before you sign anything. Ours is Nevada firm license No. 4263596.", "**Who they represent.** A public adjuster represents you. The adjuster your insurer sends represents the insurer.", "**The fee, in writing.** Ask to see the percentage in the contract before any work starts. Ours: No upfront cost. We're paid a percentage of what we recover.", "**Who does the work.** Ask who will measure the loss and who will speak to the carrier. With us, a senior adjuster leads every claim, from the first call to the final settlement.", "**Who decides.** You do. You always have final say on any settlement."]},
+    {"type": "prose", "id": "office-work", "title": "What We Do on a Reno Claim", "body": ["A loss turns a household upside down. The paperwork should not land on you as well.", "Your insurer's adjuster writes the first estimate for the insurer. That adjuster's job is to close the file at a number the policy supports. The first number is the carrier's estimate, not a final ruling.", "Our job is to prove the full loss. We inspect the property room by room and photograph every damaged surface. Our building estimators price the repair line by line. Then we check what the first estimate left out: recoverable depreciation, code upgrades under an ordinance or law endorsement, contents, and additional living expenses. The carrier gets a documented claim, and we negotiate it.", "We don't arrange repairs or act as your contractor. You choose the builder. We negotiate the money that pays for the build."]},
+    {"type": "prose", "id": "office-notfor", "title": "When We'll Tell You Not to Hire Us.", "body": ["Some claims don't need a public adjuster. If the damage is small, or the carrier's offer already covers the repair, our fee would cost you more than we could add. We'll tell you that at the free review."]},
+    {"type": "claims", "title": "Claims We Handle in Reno and Across Nevada", "links": [{"label": "Residential claims", "href": "/claims/residential/"}, {"label": "Commercial claims", "href": "/claims/commercial/"}, {"label": "Fire and smoke damage claims", "href": "/claims/fire-smoke-damage/"}, {"label": "Water and plumbing claims", "href": "/claims/water-damage/"}, {"label": "Wind, hail and falling tree claims", "href": "/claims/wind-hail-trees/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}]},
+    {"type": "faq", "id": "office-faq", "title": "Reno Public Adjuster Questions", "items": [{"q": "What is a public adjuster in Nevada?", "a": "A public adjuster is a licensed adjuster who represents the policyholder on a property insurance claim. Nevada law defines the role as representing solely the financial interests of the insured named in the policy. The adjuster your insurer sends represents the insurer."}, {"q": "Does Nevada require a public adjuster license?", "a": "Yes. NRS 684A.040 requires a license to act as an adjuster in Nevada, and NRS 684A.030 names public adjusters as one kind of adjuster. Blue Star Adjusters LLC holds Nevada firm license No. 4263596."}, {"q": "How can I verify a public adjuster's license in Nevada?", "a": "Use the \"Verify a License\" search on the Nevada Division of Insurance website. Search the firm and the person who will handle your claim. If neither comes up, don't sign."}, {"q": "How much does a public adjuster cost in Reno?", "a": "No upfront cost. We're paid a percentage of what we recover. The percentage is written into your contract before we start. For Nevada's current rules on public adjuster contracts, ask the Nevada Division of Insurance."}, {"q": "What is the difference between a public adjuster and an insurance adjuster?", "a": "The insurance company's adjuster works for the insurer and is paid by the insurer. A public adjuster works for you and is paid from the claim. Both read the same policy. They don't always read it the same way."}, {"q": "How soon should I call a public adjuster after damage in Reno?", "a": "Call before you accept a final offer or sign a release. Early is better, because we can document damage before cleanup removes the evidence. If the carrier has already paid or denied part of the claim, we can still review it."}]},
+    {"type": "links", "id": "office-related", "title": "Related", "links": [{"label": "How a public adjuster works", "href": "/how-it-works/"}, {"label": "Public adjuster fees", "href": "/fees/"}, {"label": "What to do in the first 48 hours", "href": "/first-48-hours/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}, {"label": "All Blue Star office locations", "href": "/locations/"}]},
+  ],
   n: {
     'header': ["217:14687", "217:15284"],
     'footer': ["217:15282", "217:15610"],

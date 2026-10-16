@@ -1,0 +1,30 @@
+---
+// Wind, Hail & Trees / Replacement cost and depreciation. Same rail layout as kit/KitProse (chip + H2 + ticks left, paragraphs right),
+// plus the mid-page call to action (Schedule a Free Review + Call) under the paragraphs.
+import Button from '../../../components/Button.astro';
+import Chip from '../Chip.astro';
+import Ticks from '../Ticks.astro';
+import KitStyles from '../../kit/KitStyles.astro';
+import { md } from '../../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../../data/site';
+import { depreciation as s } from '../../../data/claims/wind-hail-trees';
+---
+<KitStyles />
+<section aria-labelledby={s.id} class="bg-paper">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <Chip>{s.chip}</Chip>
+      <h2 id={s.id} class="m-0 w-full text-navy tm-h2 lg:t-h2">{s.title}</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="lg:flex-1 lg:min-w-0">
+      <div class="bs-kit-prose">
+        {s.body.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      </div>
+      <div class="mt-[32px] lg:mt-[40px] w-full lg:w-auto flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+</section>

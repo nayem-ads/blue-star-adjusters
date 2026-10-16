@@ -6,9 +6,9 @@ interface Props { variant: 'd'|'m'; ty?: boolean; nodes?: string[] }
 const { variant, ty = false, nodes = [] } = Astro.props;
 const d = variant === 'd';
 const steps = [
-  { icon: 'phone', label: 'Step 1', text: 'We call you.' },
-  { icon: 'document', label: 'Step 2', text: 'We read your policy and the carrier’s letters.' },
-  { icon: 'search', label: 'Step 3', text: 'We tell you whether we can add value, and why.' },
+  { icon: 'phone', label: '01', text: 'We call you, the same business day.' },
+  { icon: 'document', label: '02', text: 'We read your policy and the carrier’s letters.' },
+  { icon: 'search', label: '03', text: 'We tell you whether we can add value, and why.' },
 ];
 const label = d ? 't-label' : 'tm-label';
 ---

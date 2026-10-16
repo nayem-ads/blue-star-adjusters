@@ -16,22 +16,26 @@ const trustText = 'bs-fnudge flex-1 min-w-0 m-0 font-body font-medium text-ink t
     <div class="flex flex-col items-start gap-[16px] px-[20px] pt-[24px] lg:flex-[0_1_504px] lg:min-w-[400px] lg:gap-[32px] lg:p-0" data-node="73:1838">
       <div data-node="73:1839" data-node-m="74:2729"><Eyebrow class="text-ink!">Your Adjuster. Your Advocate.</Eyebrow></div>
       <div class="flex flex-col gap-[12px] lg:gap-[20px] w-full" data-node="73:1842" data-node-m="74:2732">
-        <h1 id="founder-h1" class="m-0 text-navy tm-display lg:t-display-xl" data-node="73:1843" data-node-m="74:2733">Michael Rapport.</h1>
-        <p class="m-0 text-ink tm-lead lg:t-lead" data-node="73:1844" data-node-m="74:2734">Founding Principal, Blue Star Adjusters. Principal, MSR Properties.</p>
+        <h1 id="founder-h1" class="m-0 text-navy tm-display lg:t-display-xl" data-node="73:1843" data-node-m="74:2733">Michael Rapport, Public Adjuster.</h1>
+        <p class="m-0 text-ink tm-lead lg:t-lead" data-node="73:1844" data-node-m="74:2734">Founding Principal, Blue Star Adjusters.</p>
       </div>
-      <p class="order-1 lg:order-none m-0 mt-[142px] lg:mt-0 text-ink tm-body lg:t-body w-full" data-node="73:1845" data-node-m="74:2746">25 years as a developer and merchant builder. Top producer at one of the nation's leading public adjusting firms. Licensed personally in 7 states, always working for the insured, never for the carrier.</p>
+      <p class="m-0 text-ink tm-body lg:t-body w-full" data-node="73:1845" data-node-m="74:2746">Michael Rapport is a licensed public adjuster and the founder of Blue Star Adjusters. Before he founded Blue Star, he was a top producer at one of the nation's leading public adjusting firms, across hundreds of losses. He works for policyholders, never for the insurance company. On every Blue Star claim, a senior adjuster leads from the first call to the final settlement.</p>
       <div class="flex flex-col gap-[12px] pt-[8px] w-full lg:flex-row lg:flex-wrap lg:gap-[16px] lg:pt-0 lg:w-auto" data-node="73:1846" data-node-m="74:2735">
         <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="73:1847" data-node-m="74:2736">Schedule a Free Review</Button>
         <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="73:1851" data-node-m="74:2741">Call {PHONE_DISPLAY}</Button>
       </div>
-      <ul class="order-2 lg:order-none m-0 mt-[4px] lg:mt-0 p-0 list-none flex flex-col gap-[12px] w-full border-t border-line pt-[20px] lg:pt-[24px]" data-node="73:1855" data-node-m="74:2747">
+      <ul class="m-0 mt-[4px] lg:mt-0 p-0 list-none flex flex-col gap-[12px] w-full border-t border-line pt-[20px] lg:pt-[24px]" data-node="73:1855" data-node-m="74:2747">
         <li class="flex items-start lg:items-center gap-[12px]" data-node="73:1856" data-node-m="74:2748">
-          <Icon name="shield" size={20} class="shrink-0 text-navy" />
-          <span class={trustText}>{LICENSE}</span>
+          <Icon name="document" size={20} class="shrink-0 text-navy" />
+          <span class={trustText}>No upfront cost</span>
         </li>
         <li class="flex items-start lg:items-center gap-[12px]" data-node="73:1861" data-node-m="74:2753">
-          <Icon name="document" size={20} class="shrink-0 text-navy" />
-          <span class={trustText}>No upfront cost. We're paid a percentage of what we recover.</span>
+          <Icon name="check" size={20} class="shrink-0 text-navy" />
+          <span class={trustText}>You always have final say on any settlement</span>
+        </li>
+        <li class="flex items-start lg:items-center gap-[12px]">
+          <Icon name="shield" size={20} class="shrink-0 text-navy" />
+          <span class={trustText}>{LICENSE}</span>
         </li>
       </ul>
     </div>
@@ -43,10 +47,6 @@ const trustText = 'bs-fnudge flex-1 min-w-0 m-0 font-body font-medium text-ink t
       </div>
       <CropMarks class="absolute inset-[12px] lg:inset-auto lg:left-[calc(100%*16/592)] lg:top-[3%] lg:w-full lg:h-[91.5%]" node="73:1899" nodeM="74:2719" />
       <DimLine label="Founding Principal" class="hidden! lg:flex! absolute left-[calc(100%*32/592)] top-[96.5%] w-[calc(100%*560/592)]" node="73:1908" />
-      <div class="hidden lg:flex absolute left-0 bottom-[9.5%] w-[240px] flex-col gap-[8px] p-[24px] bg-navy text-white" data-node="73:1914">
-        <p class="m-0 t-figure">25</p>
-        <p class="m-0 font-body font-medium text-[15px] leading-[24px]">years as a developer and merchant builder</p>
-      </div>
     </div>
   </div>
 </section>

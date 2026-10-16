@@ -1,9 +1,10 @@
 ---
-// Offices: Local Codes. Local Contractors. Desktop 57:281, mobile 63:697.
+// Offices: Is There a Public Adjuster Near Me? (Figma Homepage v2 482:1883), ten offices; Utah, Hawaii and Colorado have no page (plain text). Desktop 57:281, mobile 63:697.
 import Icon from '../../components/Icon.astro';
 import Button from '../../components/Button.astro';
 import FactChip from './FactChip.astro';
-import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+import Eyebrow from '../../components/Eyebrow.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
 const offices = [
   { name: 'Santa Monica', w: 'lg:min-w-[346px]', href: '/locations/california/santa-monica/', d: ['74:1694', '57:291'], m: ['63:701', '63:702'] },
   { name: 'Sacramento', w: 'lg:min-w-[313px]', href: '/locations/california/sacramento/', d: ['74:1698', '57:292'], m: ['63:703', '63:704'] },
@@ -12,32 +13,53 @@ const offices = [
   { name: 'Portland', w: 'lg:min-w-[234px]', href: '/locations/oregon/portland/', d: ['74:1710', '57:295'], m: ['63:709', '63:710'] },
   { name: 'Seattle', w: 'lg:min-w-[199px]', href: '/locations/washington/seattle/', d: ['74:1714', '57:296'], m: ['63:711', '63:712'] },
   { name: 'Scottsdale', w: 'lg:min-w-[281px]', href: '/locations/arizona/scottsdale/', d: ['74:1718', '57:297'], m: ['63:713', '63:714'] },
+  { name: 'Utah', w: 'lg:min-w-[156px]', href: '', d: ['', ''], m: ['', ''] },
+  { name: 'Hawaii', w: 'lg:min-w-[199px]', href: '', d: ['', ''], m: ['', ''] },
+  { name: 'Colorado', w: 'lg:min-w-[234px]', href: '', d: ['', ''], m: ['', ''] },
 ];
 ---
 <section aria-labelledby="offices-title" class="relative bg-white overflow-hidden" data-node="57:281" data-node-m="63:697">
   <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[24px] lg:gap-[56px]">
     <div aria-hidden="true" class="office-grid hidden lg:block absolute left-[720px] top-[504px] w-[560px] h-[280px] pointer-events-none" data-node="74:1734"></div>
     <div class="contents lg:flex lg:items-start lg:gap-[80px]" data-node="57:282">
-      <h2 id="offices-title" class="m-0 tm-h2 lg:t-h2 text-navy lg:flex-1 lg:max-w-[640px]" data-node="57:283" data-node-m="63:698">Local Codes.<br /> Local Contractors.</h2>
-      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[24px] lg:w-[400px] lg:shrink-0" data-node="57:284">
-        <div class="order-2 lg:order-none self-start flex gap-[12px]" data-node="74:1722" data-node-m="74:3671">
-          <FactChip icon="map-pin" node="74:1723" nodeM="74:3672">7 offices</FactChip>
-          <FactChip icon="document" node="74:1728" nodeM="74:3677">5 states</FactChip>
-        </div>
-        <p class="order-1 lg:order-none m-0 tm-body lg:t-body text-ink" data-node="57:285" data-node-m="63:699">Seven offices from Santa Monica to Seattle. We know your community, your local codes and your local contractors.</p>
-        <Button href={PHONE_TEL} variant="outline" icon="phone" class="order-5 lg:order-none h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="57:286" data-node-m="63:715">Call {PHONE_DISPLAY}</Button>
+      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[24px] lg:flex-1 lg:max-w-[640px]">
+        <h2 id="offices-title" class="order-1 lg:order-none m-0 tm-h2 lg:t-h2 text-navy" data-node="57:283" data-node-m="63:698">Is There a Public Adjuster Near Me?</h2>
+        <Eyebrow class="order-2 lg:order-none">Local Codes. Local Contractors.</Eyebrow>
+        <p class="order-3 lg:order-none m-0 tm-body lg:t-lead text-ink">Very likely, if you’re in California, Nevada, Oregon, Washington, Arizona or Colorado. Blue Star Adjusters is licensed in all six.</p>
+      </div>
+      <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[20px] lg:w-[400px] lg:shrink-0" data-node="57:284">
+        <ul class="order-4 lg:order-none self-start m-0 p-0 list-none flex flex-wrap gap-[12px]" data-node="74:1722" data-node-m="74:3671">
+          <li><FactChip icon="map-pin" node="74:1723" nodeM="74:3672">10 offices</FactChip></li>
+          <li><FactChip icon="document" node="74:1728" nodeM="74:3677">6 licensed states</FactChip></li>
+        </ul>
+        <p class="order-5 lg:order-none m-0 tm-body lg:t-small text-ink" data-node="57:285" data-node-m="63:699">Offices from Hawaii to Colorado, and from Santa Monica to Seattle. We know your community, your local codes and your local contractors.</p>
+        <p class="order-6 lg:order-none m-0 tm-body lg:t-small text-ink">Looking for a public adjuster in California? Our California offices are in Sacramento, San Francisco and Santa Monica. Head office: 1610 R Street, Suite 300, Sacramento, California 95811.</p>
       </div>
     </div>
-    <ul class="order-3 lg:order-none m-0 p-0 list-none flex flex-col lg:flex-row lg:flex-wrap lg:gap-x-[48px] lg:gap-y-[8px] lg:py-[32px] lg:border-t lg:border-b border-line" data-node="57:290" data-node-m="63:700">
+    <ul class="order-7 lg:order-none m-0 p-0 list-none flex flex-col lg:flex-row lg:flex-wrap lg:gap-x-[48px] lg:gap-y-[8px] lg:py-[32px] lg:border-t lg:border-b border-line" data-node="57:290" data-node-m="63:700">
       {offices.map((o, i) => (
-        <li class:list={['border-t border-line py-[12px] lg:border-0 lg:py-0', o.w, i === offices.length - 1 && 'border-b']} data-node={o.d[0]} data-node-m={o.m[0]}>
-          <a href={o.href} class="office flex items-center gap-[12px] text-navy">
-            <Icon name="map-pin" size={28} class="text-royal shrink-0 w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
-            <span class="flex-1 tm-h3 lg:t-h2 whitespace-nowrap" data-node={o.d[1]} data-node-m={o.m[1]}>{o.name}</span>
-          </a>
+        <li class:list={['border-t border-line py-[12px] lg:border-0 lg:py-0', o.w, i === offices.length - 1 && 'border-b']} data-node={o.d[0] || undefined} data-node-m={o.m[0] || undefined}>
+          {o.href ? (
+            <a href={o.href} class="office flex items-center gap-[12px] text-navy">
+              <Icon name="map-pin" size={28} class="text-royal shrink-0 w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
+              <span class="flex-1 tm-h3 lg:t-h2 whitespace-nowrap" data-node={o.d[1] || undefined} data-node-m={o.m[1] || undefined}>{o.name}</span>
+            </a>
+          ) : (
+            <span class="flex items-center gap-[12px] text-navy">
+              <Icon name="map-pin" size={28} class="text-royal/50 shrink-0 w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
+              <span class="flex-1 tm-h3 lg:t-h2 whitespace-nowrap">{o.name}</span>
+            </span>
+          )}
         </li>
       ))}
     </ul>
+    <div class="order-8 lg:order-none flex flex-col gap-[20px] lg:flex-row lg:items-center lg:justify-between">
+      <p class="m-0 tm-body lg:t-body-strong text-ink">Monday to Friday, 9 AM to 5 PM Pacific. We call back the same business day.</p>
+      <div class="flex flex-col gap-[12px] w-full lg:flex-row lg:w-auto lg:gap-[16px]">
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="57:286" data-node-m="63:715">Call {PHONE_DISPLAY}</Button>
+        <Button href={ROUTES.locations} variant="solid" icon="arrow-right" iconPosition="right" class="h-[56px] w-full lg:h-[52px] lg:w-auto">All office locations</Button>
+      </div>
+    </div>
   </div>
 </section>
 <style>

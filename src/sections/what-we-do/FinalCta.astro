@@ -1,0 +1,22 @@
+---
+// What We Do / Final CTA. Reuses the Denied section's frame (desktop 74:764, mobile 74:4198): paper band, blueprint grid,
+// heading on the left, navy panel with the two buttons on the right.
+import Button from '../../components/Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+---
+<section aria-labelledby="wwd-cta-title" class="relative overflow-hidden bg-paper" data-node="74:764" data-node-m="74:4198">
+  <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[32px] px-[20px] py-[64px] lg:flex-row lg:items-center lg:gap-[96px] lg:px-[80px] lg:py-[120px]">
+    <img src="/svg/detail-blueprint-grid.svg" width="432" height="200" alt="" aria-hidden="true" loading="lazy"
+      class="hidden lg:block absolute left-[80px] bottom-[40px] w-[432px] h-[200px] opacity-40 pointer-events-none" data-node="74:765" />
+    <div class="relative flex flex-col items-start gap-[24px] w-full lg:flex-[0_1_592px] lg:min-w-0" data-node="74:794">
+      <h2 id="wwd-cta-title" class="m-0 w-full text-navy tm-h2 lg:t-display-l" data-node="74:798" data-node-m="74:4202">Call Before the Carrier Sets the Narrative.</h2>
+    </div>
+    <div class="relative flex flex-col gap-[24px] w-full px-[24px] py-[32px] bg-navy text-white rounded-[4px] lg:flex-[0_1_432px] lg:min-w-0 lg:px-[40px] lg:py-[48px]" data-node="74:831" data-node-m="74:4235">
+      <p class="m-0 w-full tm-lead lg:t-lead" data-node="74:799" data-node-m="74:4203"><em>Your insurance company has an adjuster protecting their interests. You have the right to one too.</em></p>
+      <div class="flex flex-col gap-[12px] w-full lg:pt-[8px]" data-node="74:858" data-node-m="74:4262">
+        <Button href={ROUTES.freeClaimReview} variant="on-dark" full class="h-[56px] lg:h-[52px]" data-node="74:859" data-node-m="74:4263">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" full class="h-[56px] lg:h-[52px]" data-node="74:864" data-node-m="74:4267">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+</section>

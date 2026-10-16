@@ -1,25 +1,26 @@
 ---
-// Who we serve: A Boutique Practice. A Family Office. Desktop 57:278, mobile 63:694.
+// Major loss: A Major Loss Is More Than a Claim (Figma Homepage v2 482:1567): photo left, navy copy right.
+// The Figma AI rental photo is replaced by a real field photo (modern-home: fire-damaged stair beside a house).
+import Pic from './Pic.astro';
 import Icon from '../../components/Icon.astro';
 import Logo from '../../components/Logo.astro';
-import TaglineRule from './TaglineRule.astro';
+import { ROUTES } from '../../data/site';
 ---
 <section aria-labelledby="serve-title" class="relative bg-navy text-white overflow-hidden" data-node="57:278" data-node-m="63:694">
-  <span aria-hidden="true" class="lg:hidden absolute left-[200px] -top-[30px] opacity-[.06] pointer-events-none"><Logo variant="mark-white" bare width={312} height={380} label="" /></span>
-  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[20px] lg:flex-row lg:items-start lg:gap-[96px]">
-    <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[40px] lg:flex-1 lg:min-w-0 lg:max-w-[640px]" data-node="85:3089">
-      <h2 id="serve-title" class="order-2 lg:order-none m-0 tm-h2 lg:t-display-l lg:w-full" data-node="57:279" data-node-m="63:695">A Boutique Practice.<br /> A Family Office.</h2>
-      <TaglineRule class="hidden lg:flex" node="85:3090" />
-    </div>
-        <div class="contents lg:relative lg:flex lg:flex-col lg:items-start lg:gap-[24px] lg:w-[384px] lg:shrink-0 lg:h-[333px]" data-node="74:1683">
-      <div aria-hidden="true" class="hidden lg:block absolute -left-[48px] top-0 w-px h-[333px] bg-white" data-node="74:1688"></div>
-      <span class="order-1 lg:order-none flex items-center justify-center w-[48px] h-[48px] rounded-full border border-white shrink-0" data-node="74:1684" data-node-m="74:3641"><Icon name="shield" size={24} /></span>
-      <p class="order-3 lg:order-none m-0 tm-lead lg:t-lead" data-node="57:280" data-node-m="63:696">Every engagement is discreet, senior-led, and built around the client’s privacy. References are held in confidence and available on request.</p>
-      <div aria-hidden="true" class="hidden lg:block w-full h-px bg-white" data-node="85:3077"></div>
-      <ul class="hidden lg:flex m-0 p-0 list-none flex-col gap-[12px] w-full" data-node="85:3078">
-        <li class="flex items-start gap-[12px] text-[15px] leading-[24px] font-medium" data-node="85:3079"><Icon name="document" size={20} class="shrink-0" /><span class="flex-1">CA DOI License No. 6015234</span></li>
-        <li class="flex items-start gap-[12px] text-[15px] leading-[24px] font-medium" data-node="85:3084"><Icon name="shield" size={20} class="shrink-0" /><span class="flex-1">No upfront cost. We're paid a percentage of what we recover.</span></li>
-      </ul>
+  <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:items-stretch">
+    <figure class="relative m-0 h-[300px] lg:h-auto lg:min-h-[640px] lg:w-[520px] lg:shrink-0">
+      <Pic d="53:280" m="62:638" alt="Fire-damaged exterior stair and debris beside a white house after a loss." wrap="absolute inset-0" />
+      <figcaption class="absolute left-[20px] bottom-[16px] lg:left-[24px] lg:bottom-[20px] t-caption text-white">Field photograph</figcaption>
+    </figure>
+    <div class="relative flex-1 min-w-0 flex flex-col items-start justify-center gap-[24px] lg:gap-[32px] px-[20px] pt-[48px] pb-[56px] lg:pl-[96px] lg:pr-[80px] lg:py-[120px]" data-node="85:3089">
+      <span aria-hidden="true" class="absolute right-[-60px] bottom-[-40px] opacity-[.05] pointer-events-none"><Logo variant="mark-white" bare width={280} height={340} label="" /></span>
+      <h2 id="serve-title" class="relative m-0 tm-h2 lg:t-h2 w-full" data-node="57:279" data-node-m="63:695">A Major Loss Is More<br class="hidden lg:inline" /> Than a Claim.</h2>
+      <p class="relative m-0 tm-body lg:t-body lg:max-w-[520px]" data-node="57:280" data-node-m="63:696">When a home burns or a building floods, everything happens at once. You may be living in a hotel, keeping a business running from somewhere else, and chasing receipts, all while learning a policy you never had reason to read. The decisions that set your settlement are made in the first few weeks, often before you know what to ask for. We handle the claim so you can look after your family or keep your business running.</p>
+      <a href={ROUTES.whoWeServe} class="serve-link relative flex items-center gap-[8px] min-h-[44px] tm-body-strong lg:t-body-strong text-white"><span>Who we serve</span><Icon name="arrow-right" size={24} /></a>
     </div>
   </div>
 </section>
+<style>
+  .serve-link { text-decoration: underline; text-decoration-color: rgb(255 255 255 / .4); text-underline-offset: 4px; transition: text-decoration-color .15s ease; }
+  .serve-link:hover, .serve-link:focus-visible { text-decoration-color: currentColor; }
+</style>

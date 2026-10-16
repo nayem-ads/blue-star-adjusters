@@ -4,6 +4,8 @@
 // figure + disclaimer tiles. Mobile: case tile, then photo + figure tiles, disclaimer below the mosaic.
 import Img from '../../../components/Img.astro';
 import Icon from '../../../components/Icon.astro';
+import Button from '../../../components/Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../../data/site';
 interface Props { chip: string; heading: string; caseText: string; figure: string; figureLabel: string; disclaimer: string; imageAlt: string }
 const { chip, heading, caseText, figure, figureLabel, disclaimer, imageAlt } = Astro.props;
 ---
@@ -61,6 +63,10 @@ const { chip, heading, caseText, figure, figureLabel, disclaimer, imageAlt } = A
     <div class="lg:hidden flex items-start gap-[12px] mt-[32px]" data-node-m="230:1271">
       <span aria-hidden="true" class="block w-[24px] h-px bg-navy shrink-0" data-node-m="230:1272"></span>
       <p class="m-0 flex-1 t-legal font-medium text-ink" data-node-m="230:1273">{disclaimer}</p>
+    </div>
+    <div class="w-full lg:w-auto flex flex-col gap-[12px] mt-[32px] lg:flex-row lg:gap-[16px] lg:mt-[48px]">
+      <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+      <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px] bg-white">Call {PHONE_DISPLAY}</Button>
     </div>
   </div>
 </section>

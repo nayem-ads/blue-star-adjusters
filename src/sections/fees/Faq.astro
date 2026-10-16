@@ -1,30 +1,36 @@
 ---
 // 06 Fee questions. Desktop 128:4832 (y 3856, 1280×768); mobile 128:6599 (y 3942, 390×668).
-// Designed as two always-open Q/A rows (no accordion), so each row is a static h3 + answer: nothing to toggle.
+// Always-open Q/A rows (no accordion), so each row is a static h3 + answer: nothing to toggle.
 import SectionIndex from './SectionIndex.astro';
-import Chip from './Chip.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
 const qa = [
-  { d: '128:4841', m: '128:6607', qd: '128:4843', qm: '128:6608', am: '128:6609', q: 'How are you paid?', a: 'A percentage of the settlement, set in writing before we start. No upfront cost.', td: '128:4845', tm: '128:6612', acd: '128:4844', acm: '128:6611', qcd: '128:4842' },
-  { d: '128:4847', m: '128:6614', qd: '128:4849', qm: '128:6615', am: '128:6616', q: 'I already have an offer. Is it too late?', a: 'Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.', td: '128:4851', tm: '128:6619', acd: '128:4850', acm: '128:6618', qcd: '128:4848', chip: '15027(b)(7)', cd: '128:4852', cm: '128:6620', ctd: '128:4853', ctm: '128:6621' },
+  { d: '128:4841', m: '128:6607', qd: '128:4843', qm: '128:6608', td: '128:4845', tm: '128:6612', q: 'How are you paid?', a: ["No upfront cost. We're paid a percentage of what we recover. The terms are set in writing before we start."] },
+  { q: 'How much does a public adjuster cost in California?', a: ["There's no upfront cost. A public adjuster in California is usually paid a percentage of the settlement, set in a written contract before any work starts. California law also protects what you've already received. Our fee can never leave you with less than your insurer had already paid before you hired us."] },
+  { q: 'How much should a public adjuster charge?', a: ['A fair fee is one you agreed to in writing, based only on what the adjuster recovers for you. If the offer on the table is already fair, a good public adjuster will tell you so rather than take a fee for adding nothing.'] },
+  { q: 'What does the fee cover?', a: ['It covers all of our work, from reading the policy and measuring the loss to building the claim and negotiating the settlement. When the claim needs specialists, we bring them in.', '[What a public adjuster does](/claims/)'] },
+  { q: 'Who pays the public adjuster, me or my insurance company?', a: ['You do, from the recovery. Your insurer pays the claim, and our percentage comes out of each payment under the contract you signed. The adjuster your insurer sends is paid by the insurer.'] },
+  { d: '128:4847', m: '128:6614', qd: '128:4849', qm: '128:6615', td: '128:4851', tm: '128:6619', q: 'I already have an offer. Is it too late?', a: ['Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.'] },
+  { q: 'Can I cancel a public adjuster contract in California?', a: ['Yes. You can cancel within three business days of signing and receiving the contract, or five calendar days if the property is in a declared catastrophic disaster area.'] },
 ];
 ---
+<KitStyles />
 <section aria-labelledby="fees-faq" class="bg-paper" data-node="128:4832" data-node-m="128:6599">
   <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[124px]">
-    <div class="flex flex-col items-start lg:w-[480px]" data-node="128:4834">
-      <SectionIndex label="06" node="128:4835" nodeM="128:6600" textNode="128:4836" textNodeM="128:6601" />
-      <h2 id="fees-faq" class="m-0 mt-[12px] lg:mt-[24px] text-navy tm-h2 lg:t-h2 whitespace-nowrap w-[208px] lg:w-[311px]" data-node="128:4838" data-node-m="128:6604">Fee questions</h2>
+    <div class="flex flex-col items-start lg:w-[720px]" data-node="128:4834">
+      <SectionIndex label="08" node="128:4835" nodeM="128:6600" textNode="128:4836" textNodeM="128:6601" />
+      <h2 id="fees-faq" class="m-0 mt-[12px] lg:mt-[24px] text-navy tm-h2 lg:t-h2 w-full" data-node="128:4838" data-node-m="128:6604">Questions About Public Adjuster Fees</h2>
     </div>
     <div class="mt-[32px] lg:mt-[56px] border-t-2 border-navy">
       {qa.map((r, i) => (
         <div class:list={['flex flex-col pt-[28px] pb-[28px] lg:flex-row lg:items-start lg:pt-[40px] lg:pb-[40px] border-b', i === qa.length - 1 ? 'border-line lg:border-navy' : 'border-line']} data-node={r.d} data-node-m={r.m}>
-          <div class="lg:w-[480px] lg:shrink-0" data-node={r.qcd}>
-            <h3 class="m-0 text-navy tm-h3 lg:t-h3 lg:w-[384px]" data-node={r.qd} data-node-m={r.qm}>{r.q}</h3>
+          <div class="lg:w-[480px] lg:shrink-0 lg:pr-[48px]">
+            <h3 class="m-0 text-navy tm-h3 lg:t-h3" data-node={r.qd} data-node-m={r.qm}>{r.q}</h3>
           </div>
-          <div class="mt-[16px] lg:mt-0 flex gap-[16px] lg:block lg:w-[560px]" data-node-m={r.am}>
-            <span aria-hidden="true" class="lg:hidden block w-[2px] shrink-0 bg-royal" data-node-m={`${r.am.split(':')[0]}:${+r.am.split(':')[1] + 1}`}></span>
-            <div class="flex flex-col items-start gap-[12px] lg:gap-[20px] flex-1 min-w-0" data-node={r.acd} data-node-m={r.acm}>
-              <p class="m-0 text-ink tm-body lg:t-lead w-full" data-node={r.td} data-node-m={r.tm}>{r.a}</p>
-              {r.chip && <Chip node={r.cd} nodeM={r.cm} textNode={r.ctd} textNodeM={r.ctm}>{r.chip}</Chip>}
+          <div class="mt-[16px] lg:mt-0 flex gap-[16px] lg:block lg:flex-1 lg:min-w-0">
+            <span aria-hidden="true" class="lg:hidden block w-[2px] shrink-0 bg-royal"></span>
+            <div class="bs-kit-prose flex-1 min-w-0">
+              {r.a.map((p, j) => <p class="m-0 text-ink tm-body lg:t-lead w-full" data-node={j === 0 ? r.td : undefined} data-node-m={j === 0 ? r.tm : undefined} set:html={md(p)} />)}
             </div>
           </div>
         </div>

@@ -1,9 +1,8 @@
 ---
 // Why Blue Star / Hero + comparison. Desktop 128:3867 (1280×2232), mobile 135:1579 (390×3336).
-// The dark header (128:3871 / 135:1584) is embedded in this section, over the hero photo.
+// The dark header (128:3871 / 135:1584) sits over the hero photo; it is placed by the page, outside <main>.
 // Desktop: semantic <table> with a lifted navy "Blue Star" column panel. Mobile: sticky key + stacked answer cards
 // (a list with visually hidden column names so screen readers get the same pairing as the table).
-import Header from '../../components/Header.astro';
 import Eyebrow from '../../components/Eyebrow.astro';
 import Button from '../../components/Button.astro';
 import Icon from '../../components/Icon.astro';
@@ -12,6 +11,8 @@ import { rows } from './rows';
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
 const img = images as Record<string, { src: string; width: number; height: number }>;
 const heroD = img['128:3868'], heroM = img['135:1581'];
+const lead = "Is a public adjuster worth it? It depends on the loss. On a fire, a total loss or a business that can't open, there's more for the first estimate to miss. If the loss is small, or when the carrier's offer is already fair, our fee may outweigh what we add. We'll tell you so at the free review.";
+const trust = ['No upfront cost', 'You always have final say on any settlement', 'CA DOI License No. 6015234'];
 ---
 <section aria-labelledby="why-title" class="why-hero relative bg-paper overflow-hidden pb-[76px] lg:pb-[126px]" data-node="128:3867" data-node-m="135:1579">
   <div aria-hidden="true" class="absolute top-0 left-0 right-0 h-[880px] lg:h-[960px] bg-navy" data-node="128:4728" data-node-m="135:1580"></div>
@@ -27,23 +28,30 @@ const heroD = img['128:3868'], heroM = img['135:1581'];
   <div aria-hidden="true" class="lg:hidden absolute left-0 right-0 top-[264px] h-[336px] bg-navy opacity-[.45]" data-node-m="142:1267"></div>
   <div aria-hidden="true" class="why-scrim-bottom absolute left-0 right-0 top-[160px] h-[440px] lg:top-0 lg:h-[960px]" data-node="128:4288" data-node-m="135:4758"></div>
 
-  <div class="absolute top-0 left-0 right-0 z-20" data-node="128:3871" data-node-m="135:1584"><Header theme="dark" overlay={false} /></div>
-
   <div class="relative max-w-[1280px] mx-auto px-[20px] lg:px-[80px]">
-    <div class="flex flex-col pt-[276px] lg:grid lg:grid-cols-[1fr_448px] lg:pt-[448px]">
-      <h1 id="why-title" class="order-2 m-0 mt-[16px] text-white why-h1 lg:col-span-2 lg:w-[856px] lg:mt-0 lg:t-display-xl lg:whitespace-nowrap" data-node="128:3894" data-node-m="135:1610">
-        Blue Star Adjusters<br class="hidden lg:inline" /> vs. Going It Alone.
-      </h1>
-      <div class="order-1 lg:row-start-2 lg:col-start-1 lg:mt-[45px] lg:self-start w-fit" data-node="128:3896" data-node-m="135:1611"><Eyebrow theme="dark">Why Blue Star</Eyebrow></div>
-      <p class="order-3 m-0 mt-[20px] text-white tm-lead lg:t-lead lg:row-start-2 lg:col-start-2 lg:mt-[40px]" data-node="128:3895" data-node-m="135:1609">Most homeowners don't realize they have the right to hire their own adjuster, someone who works for them, not the insurance company.</p>
-      <div class="order-4 flex flex-col gap-[12px] mt-[32px] lg:hidden">
-        <Button href={ROUTES.freeClaimReview} variant="solid" full class="h-[56px]" data-node-m="135:1605">Schedule a Free Review</Button>
-        <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" full class="h-[56px]" data-node-m="135:1601">Call {PHONE_DISPLAY}</Button>
+    <div class="relative">
+      <!-- Navy band under the hero copy and the comparison heading (below the photo); its bottom edge runs into the table, as in Figma. -->
+      <div aria-hidden="true" class="absolute top-[600px] lg:top-[800px] bottom-[-88px] lg:bottom-[-176px] left-[-100vw] right-[-100vw] bg-navy"></div>
+      <div class="relative flex flex-col pt-[276px] lg:grid lg:grid-cols-[1fr_448px] lg:gap-x-[64px] lg:pt-[360px]">
+        <h1 id="why-title" class="relative order-2 m-0 mt-[16px] text-white why-h1 lg:row-start-1 lg:col-span-2 lg:max-w-[1000px] lg:mt-0 lg:t-display-xl" data-node="128:3894" data-node-m="135:1610">Is a Public Adjuster Worth It?</h1>
+        <div class="relative order-1 lg:row-start-2 lg:col-start-1 lg:mt-[45px] lg:self-start w-fit" data-node="128:3896" data-node-m="135:1611"><Eyebrow theme="dark">Why Blue Star</Eyebrow></div>
+        <p class="relative order-3 m-0 mt-[20px] text-white tm-lead lg:t-lead lg:row-start-3 lg:col-start-1 lg:mt-[24px]">{lead}</p>
+        <p class="relative order-4 m-0 mt-[20px] text-white tm-body italic lg:t-lead lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:mt-[40px] lg:pl-[24px] lg:border-l-2 lg:border-royal lg:self-start" data-node="128:3895" data-node-m="135:1609">Most homeowners don't realize they have the right to hire their own adjuster, someone who works for them, not the insurance company.</p>
+        <div class="relative order-5 flex flex-col gap-[12px] mt-[32px] lg:row-start-4 lg:col-span-2 lg:flex-row lg:gap-[16px] lg:mt-[40px]">
+          <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-[253px]" data-node-m="135:1605">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]" data-node-m="135:1601">Call {PHONE_DISPLAY}</Button>
+        </div>
+        <ul class="relative order-6 m-0 mt-[24px] p-0 list-none flex flex-col gap-[6px] text-white lg:flex-row lg:flex-wrap lg:items-center lg:row-start-5 lg:col-span-2 lg:mt-[24px] lg:gap-x-[16px]">
+          {trust.map((t, i) => (
+            <li class="flex items-center gap-x-[12px] lg:gap-x-[16px] why-trust">{i > 0 && <span aria-hidden="true" class="hidden lg:inline opacity-60">·</span>}{t}</li>
+          ))}
+        </ul>
       </div>
+      <h2 id="why-compare-title" class="relative m-0 mt-[72px] text-white tm-h2 lg:t-h2 lg:mt-[96px]">Blue Star Adjusters vs. Going It Alone.</h2>
     </div>
 
     <!-- Desktop: comparison table -->
-    <div class="hidden lg:block relative mt-[72px] bg-white border border-line box-border" data-node="128:4729">
+    <div class="hidden lg:block relative mt-[56px] bg-white border border-line box-border" data-node="128:4729">
       <div aria-hidden="true" class="absolute left-[calc(23.5714%-0.53px)] top-[-25px] w-[calc(40.7143%+0.81px)] h-[calc(100%+50px)] bg-navy rounded-[4px] shadow-[0_4px_12px_0_rgba(7,15,51,0.16),0_24px_56px_0_rgba(7,15,51,0.28)]" data-node="128:4730"></div>
       <table class="why-table relative -m-px w-[calc(100%+2px)]" data-node="128:4731">
         <caption class="sr-only">Blue Star Adjusters compared with handling a claim yourself</caption>
@@ -78,7 +86,7 @@ const heroD = img['128:3868'], heroM = img['135:1581'];
     </div>
 
     <!-- Mobile: sticky key + stacked cards -->
-    <div class="lg:hidden relative mt-[104px]">
+    <div class="lg:hidden relative mt-[48px]">
       <div aria-hidden="true" class="why-key sticky top-[8px] z-10 h-[80px] bg-white rounded-[4px] px-[20px] py-[20px] box-border" data-node-m="135:4901">
         <div class="flex gap-[16px]" data-node-m="135:4902">
           <div class="flex gap-[8px] w-[147px]" data-node-m="135:4903">
@@ -119,6 +127,7 @@ const heroD = img['128:3868'], heroM = img['135:1581'];
 
 <style>
   @media (max-width: 1023.98px) { .why-h1 { font-family: var(--font-display); font-weight: 700; font-size: 44px; line-height: 46px; letter-spacing: -0.01em; } }
+  .why-trust { font-family: var(--font-body); font-weight: 500; font-size: 15px; line-height: 24px; }
   .why-keytext { font-family: var(--font-display); font-weight: 600; font-size: 17px; line-height: 20px; }
   .why-key, .why-us { box-shadow: 0 3px 8px 0 rgba(7, 15, 51, .14), 0 14px 32px 0 rgba(7, 15, 51, .24); }
   /* Mobile scrims (banded in Figma, smooth here). */

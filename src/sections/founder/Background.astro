@@ -1,15 +1,14 @@
 ---
-// S3 The Background That Changes Everything (navy). Desktop 73:2348 (y 1944, 1280×1191); mobile M3 74:3178 (y 2280, 390×1272).
-// Mobile shows only the second paragraph; the four "before he adjusted" facts become a ruled list.
+// S3 Results (navy). Desktop 73:2348; mobile M3 74:3178. The old builder copy and four facts are replaced by three Blue Star results
+// in the same ruled grid (three columns on desktop, a ruled list on mobile), with the locked results disclaimer.
 import Button from '../../components/Button.astro';
 import Logo from '../../components/Logo.astro';
 import Badge from './Badge.astro';
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
-const facts = [
-  { icon: 'building', text: 'Developing affordable housing, commercial projects, and hospitality assets', n: ['73:2364', '73:2365', '73:2368'], m: ['74:3191', '74:3192', '74:3195'] },
-  { icon: 'ruler', text: 'Measuring and estimating rebuild costs to current building and fire code', n: ['73:2369', '73:2370', '73:2374'], m: ['74:3196', '74:3197', '74:3201'] },
-  { icon: 'document', text: 'Value-engineering plans across electrical, mechanical, and structural trades', n: ['73:2375', '73:2376', '73:2380'], m: ['74:3202', '74:3203', '74:3207'] },
-  { icon: 'map-pin', text: 'Coordinating with health departments, planning commissions, and use-and-occupancy authorities', n: ['73:2381', '73:2382', '73:2386'], m: ['74:3208', '74:3209', '74:3213'] },
+const results = [
+  { icon: 'flame', title: 'Los Angeles house fire, full strip out.', body: 'Offered $38,000. Settled at $276,000.' },
+  { icon: 'search', title: 'Smoke damage.', body: 'Offered $17,000. Settled for about $1.1 million. An industrial hygienist proved combustion byproducts in the porous materials and doors.' },
+  { icon: 'home', title: '800 square foot apartment fire, started by a computer.', body: 'Settled for nearly $200,000, including the tongue and groove ceiling and smoke mitigation for the neighboring unit.' },
 ];
 ---
 <section aria-labelledby="background-title" class="relative overflow-hidden bg-navy text-white" data-node="73:2348" data-node-m="74:3178">
@@ -19,36 +18,39 @@ const facts = [
     </div>
 
     <div class="relative flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[64px]" data-node="73:2354">
-      <div class="flex flex-col gap-[32px] lg:gap-[24px] lg:flex-[0_1_464px] lg:min-w-0" data-node="73:2355">
+      <div class="flex flex-col gap-[32px] lg:gap-[24px] lg:flex-[0_1_720px] lg:min-w-0" data-node="73:2355">
         <p class="bs-ftagline m-0 flex items-center gap-[12px] self-start whitespace-nowrap tm-label" data-node="73:2356" data-node-m="74:3184">
           <span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>Your Claim. Our Fight.<span aria-hidden="true" class="block w-[32px] h-px bg-white"></span>
         </p>
-        <h2 id="background-title" class="m-0 tm-h2 lg:t-h2" data-node="73:2360" data-node-m="74:3188">The Background That Changes Everything.</h2>
-      </div>
-      <div class="flex flex-col gap-[24px] lg:flex-[0_1_592px] lg:min-w-0 tm-body lg:t-lead" data-node="73:2361">
-        <p class="hidden lg:block m-0" data-node="85:3330">Michael built his career developing affordable housing, commercial projects, and hospitality assets: measuring and estimating rebuild costs to current building and fire code, value-engineering plans across electrical, mechanical, and structural trades, and coordinating with health departments, planning commissions, and use-and-occupancy authorities.</p>
-        <p class="m-0" data-node="73:2362" data-node-m="74:3189">As the redevelopment developer for MSR Properties, he has built to the City of San Francisco's seismic retrofit ordinance, arguably the most complex seismic code in the world. That ground-up experience with the strictest life-safety, structural, and code-upgrade requirements is exactly what he brings to every insurance claim: he already knows what a full code-compliant rebuild looks like, and he knows how to prove it to a carrier.</p>
+        <h2 id="background-title" class="m-0 tm-h2 lg:t-h2" data-node="73:2360" data-node-m="74:3188">What the Carrier Offered. What We Recovered.</h2>
       </div>
     </div>
 
-    <ul class="relative m-0 p-0 list-none mt-[32px] flex flex-col lg:mt-[72px] lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-[32px] lg:gap-y-[40px] lg:border-t lg:border-white" aria-label="Before he adjusted" data-node="73:2363" data-node-m="74:3190">
-      {facts.map((f) => (
-        <li class="flex flex-col border-t border-white py-[20px] last:border-b lg:border-0 lg:last:border-b-0 lg:py-0 lg:gap-[24px] lg:min-w-0" data-node={f.n[0]} data-node-m={f.m[0]}>
-          <span aria-hidden="true" class="hidden lg:block h-px w-full bg-white/30"></span>
-          <div class="flex items-start gap-[16px] lg:gap-[20px]">
-            <Badge icon={f.icon} variant="on-dark" node={f.n[1]} nodeM={f.m[1]} />
-            <p class="m-0 flex-1 min-w-0 tm-body lg:t-lead" data-node={f.n[2]} data-node-m={f.m[2]}>{f.text}</p>
+    <ul class="relative m-0 p-0 list-none mt-[32px] flex flex-col lg:mt-[72px] lg:grid lg:grid-cols-3 lg:items-start lg:gap-x-[32px] lg:border-t lg:border-white" aria-label="Claim results" data-node="73:2363" data-node-m="74:3190">
+      {results.map((r) => (
+        <li class="flex flex-col border-t border-white py-[20px] last:border-b lg:border-0 lg:last:border-b-0 lg:pt-[32px] lg:pb-0 lg:min-w-0">
+          <div class="flex items-start gap-[16px] lg:flex-col lg:gap-[20px]">
+            <Badge icon={r.icon} variant="on-dark" />
+            <div class="flex-1 min-w-0 flex flex-col gap-[8px] lg:gap-[12px]">
+              <p class="m-0 tm-body-strong lg:t-lead lg:font-semibold">{r.title}</p>
+              <p class="m-0 tm-body lg:t-body text-white/90">{r.body}</p>
+            </div>
           </div>
         </li>
       ))}
     </ul>
+    <p class="relative m-0 mt-[24px] lg:mt-[48px] t-caption text-white/80"><em>Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</em></p>
+    <p class="relative m-0 mt-[16px] tm-body lg:t-body"><a href="/results/" class="bs-fresults font-semibold">More claim results</a></p>
 
-    <div class="relative flex flex-col gap-[12px] pt-[8px] mt-[32px] lg:w-fit lg:flex-row lg:flex-wrap lg:gap-[16px] lg:pt-0 lg:mt-[72px]" data-node="73:2387" data-node-m="74:3214">
+    <div class="relative flex flex-col gap-[12px] pt-[8px] mt-[32px] lg:w-fit lg:flex-row lg:flex-wrap lg:gap-[16px] lg:pt-0 lg:mt-[48px]" data-node="73:2387" data-node-m="74:3214">
       <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="73:2388" data-node-m="74:3215">Schedule a Free Review</Button>
       <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="73:2393" data-node-m="74:3219">Call {PHONE_DISPLAY}</Button>
     </div>
   </div>
 </section>
 <style>
+  .bs-fresults { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .bs-fresults:hover, .bs-fresults:focus-visible { text-decoration-thickness: 2px; }
+  .bs-fresults:focus-visible { outline-color: #fff; }
   @media (min-width: 1024px) { .bs-ftagline { font-weight: 500; font-size: 15px; line-height: 24px; letter-spacing: 0; } }
 </style>

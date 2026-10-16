@@ -1,41 +1,77 @@
 ---
-// Results ledger. Desktop 53:237, mobile 58:538.
-import LedgerRow from '../../components/LedgerRow.astro';
+// Results: case cards with offer-vs-settled bars (Figma Homepage v2 482:1351). Desktop 53:237, mobile 58:538.
+// Big figures and bar end labels are decorative repeats of the sentence figures, drawn with CSS (data-fig) so the
+// accessible text stays the approved sentences.
+import Icon from '../../components/Icon.astro';
 import Button from '../../components/Button.astro';
 import DimLine from './DimLine.astro';
-import Ruler from './Ruler.astro';
 import { ROUTES } from '../../data/site';
-const rows = [
-  { loss: 'Palisades fire', note: 'We measured the structural damage and proved the subfloor and electrical needed a full strip-out.', offer: '$38,000', recovered: '$276,000', node: '53:242', nodeM: '58:541' },
-  { loss: 'Smoke damage', note: 'An industrial hygienist proved the combustion byproducts in the home’s porous materials and doors.', offer: '$17,000', recovered: 'About $1.1M', node: '53:252', nodeM: '58:550' },
+const cases = [
+  { icon: 'flame', title: 'Los Angeles house fire, full strip out.', note: ['We measured the structural damage and proved the subfloor and electrical needed a full strip out.'], fig: '$276,000',
+    bars: [{ label: 'Offered $38,000.', w: 14, tone: 'offer' }, { label: 'Settled at $276,000.', w: 100, tone: 'settled' }], node: '53:242', nodeM: '58:541' },
+  { icon: 'search', title: 'Smoke damage.', note: ['An industrial hygienist proved the combustion byproducts in the home’s porous materials and doors.'], fig: '$1.1 million',
+    bars: [{ label: 'Offered $17,000.', w: 2, tone: 'offer' }, { label: 'Settled for about $1.1 million.', w: 100, tone: 'settled' }], node: '53:252', nodeM: '58:550' },
+  { icon: 'home', title: 'Estate fire, fine wine and art.', note: ['The owner recovered $6 million on his own, then the claim stalled on the fine wine and art.', 'With Blue Star, the structure settled at $11 million, with $5.2 million more for contents.'], fig: '$11M + $5.2M',
+    bars: [], node: '53:262', nodeM: '58:559' },
 ];
-const estate = { loss: 'Estate fire', note: 'Specialist valuation of fine wine and art: $11M for the structure and $5.2M for contents.', offer: '$6M', recovered: '$11M + $5.2M' };
 ---
 <section aria-labelledby="results-title" class="results relative bg-paper overflow-hidden" data-node="53:237" data-node-m="58:538">
   <div aria-hidden="true" class="results-grid absolute pointer-events-none" data-node="85:2982" data-node-m="74:3098"></div>
   <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[96px] lg:pb-[120px] flex flex-col gap-[32px] lg:gap-[56px]">
-    <div class="flex flex-col gap-[32px] lg:flex-row lg:items-end lg:gap-[80px]" data-node="53:238">
+    <div class="flex flex-col gap-[20px] lg:flex-row lg:items-end lg:gap-[80px]" data-node="53:238">
       <h2 id="results-title" class="m-0 tm-h2 lg:t-h2 text-navy lg:flex-1 lg:max-w-[640px]" data-node="53:239" data-node-m="58:539">What the Carrier Offered.<br class="hidden lg:inline" /> What We Recovered.</h2>
-      <div class="flex flex-col gap-[24px] lg:w-[400px] lg:shrink-0" data-node="73:1623">
-        <p class="m-0 hidden lg:block t-body text-ink" data-node="53:240">Having a licensed public adjuster evaluate the loss often results in an entirely different financial outcome for the policyholder.</p>
-        <DimLine class="w-[320px]" node="73:1624" nodeM="74:3092" />
+      <div class="flex flex-col gap-[20px] lg:w-[400px] lg:shrink-0" data-node="73:1623">
+        <p class="m-0 tm-body lg:t-body text-ink" data-node="53:240">Having a licensed public adjuster evaluate the loss can result in an entirely different financial outcome for the policyholder.</p>
+        <DimLine class="w-[280px] lg:w-[320px]" node="73:1624" nodeM="74:3092" />
       </div>
     </div>
-    <div class="ledger flex flex-col gap-[16px] lg:gap-0" data-node="53:241" data-node-m="58:540">
-      <Ruler class="hidden lg:block" node="73:1630" />
-      {rows.map((r) => <div data-node={r.node} data-node-m={r.nodeM}><LedgerRow loss={r.loss} note={r.note} offer={r.offer} recovered={r.recovered} /></div>)}
-      <div class="lg:hidden" data-node-m="58:559"><LedgerRow loss={estate.loss} note={estate.note} offer={estate.offer} recovered={estate.recovered} offerLabel="Recovered alone, then stalled" /></div>
-      <div class="hidden lg:block" data-node="53:262"><LedgerRow loss={estate.loss} note={estate.note} offer={estate.offer} recovered={estate.recovered} offerLabel="Owner recovered alone, then stalled" /></div>
-      <div aria-hidden="true" class="hidden lg:block h-px bg-line" data-node="53:272"></div>
-    </div>
-    <div class="flex flex-col gap-[32px] lg:flex-row lg:items-center lg:justify-between" data-node="53:273">
-      <p class="m-0 t-caption lg:text-[15px] lg:leading-[24px] lg:tracking-normal text-ink lg:w-[760px]" data-node="53:274" data-node-m="58:568">Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.</p>
-      <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="53:275" data-node-m="58:569">Schedule a Free Review</Button>
+    <ol class="m-0 p-0 list-none flex flex-col gap-[16px] lg:gap-[20px]" data-node="53:241" data-node-m="58:540">
+      {cases.map((c, i) => (
+        <li class="case bg-white rounded-[4px] border border-line flex flex-col gap-[24px] p-[20px] lg:flex-row lg:gap-[56px] lg:px-[32px] lg:py-[32px]" data-node={c.node} data-node-m={c.nodeM}>
+          <div class="flex flex-col items-start gap-[12px] lg:w-[400px] lg:shrink-0">
+            <span aria-hidden="true" class="flex items-center gap-[12px]">
+              <span class="flex items-center justify-center w-[32px] h-[32px] rounded-[4px] bg-navy text-white"><Icon name={c.icon} size={18} /></span>
+              <span class="case-no t-label text-royal" data-fig={`CASE 0${i + 1}`}></span>
+            </span>
+            <h3 class="m-0 tm-h3 lg:t-h3 text-navy">{c.title}</h3>
+            {c.note.map((n) => <p class="m-0 tm-body lg:t-small text-ink">{n}</p>)}
+          </div>
+          <div class="flex-1 min-w-0 flex flex-col gap-[16px] lg:pt-[4px]">
+            <span aria-hidden="true" class="fig tm-figure lg:t-figure text-navy" data-fig={c.fig}></span>
+            {c.bars.length > 0 ? c.bars.map((b) => (
+              <div class="flex flex-col gap-[8px]">
+                <p class:list={['m-0 t-small', b.tone === 'offer' ? 'text-muted' : 'text-navy font-semibold']}>{b.label}</p>
+                <span aria-hidden="true" class="block h-[8px] rounded-full bg-paper overflow-hidden"><span class:list={['block h-full rounded-full', b.tone === 'offer' ? 'bg-line' : 'bg-royal']} style={`width:${b.w}%`}></span></span>
+              </div>
+            )) : (
+              <div aria-hidden="true" class="flex flex-col gap-[16px]">
+                <div class="flex flex-col gap-[8px]">
+                  <span class="bar-l t-small text-muted" data-fig="$6M"></span>
+                  <span class="block h-[8px] rounded-full bg-paper overflow-hidden"><span class="block h-full w-[37%] rounded-full bg-line"></span></span>
+                </div>
+                <div class="flex flex-col gap-[8px]">
+                  <span class="bar-l t-small text-navy font-semibold" data-fig="$11M + $5.2M"></span>
+                  <span class="flex h-[8px] rounded-full bg-paper overflow-hidden"><span class="block h-full w-[68%] bg-royal"></span><span class="block h-full flex-1 bg-royal/40"></span></span>
+                </div>
+              </div>
+            )}
+          </div>
+        </li>
+      ))}
+    </ol>
+    <div class="flex flex-col gap-[24px] lg:flex-row lg:items-center lg:justify-between" data-node="53:273">
+      <p class="m-0 t-caption lg:text-[15px] lg:leading-[24px] lg:tracking-normal text-ink lg:w-[640px]" data-node="53:274" data-node-m="58:568"><em>Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.</em></p>
+      <div class="flex flex-col gap-[12px] w-full lg:flex-row lg:w-auto lg:gap-[16px]">
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="53:275" data-node-m="58:569">Schedule a Free Review</Button>
+        <Button href={ROUTES.results} variant="outline" icon="arrow-right" iconPosition="right" class="h-[56px] w-full lg:h-[52px] lg:w-auto">More claim results</Button>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
+  .fig::before, .case-no::before, .bar-l::before { content: attr(data-fig); }
+  .case { box-shadow: 0 12px 32px 0 rgb(7 15 51 / .06); }
   .results-grid {
     right: 0; top: 0; width: 240px; height: 200px; opacity: .12;
     background:
@@ -51,7 +87,5 @@ const estate = { loss: 'Estate fire', note: 'Specialist valuation of fine wine a
         linear-gradient(to right, rgb(19 63 170 / .05) 1px, transparent 1px) 0 0 / 40px 40px,
         linear-gradient(to bottom, rgb(19 63 170 / .05) 1px, transparent 1px) 0 0 / 40px 40px;
     }
-    /* Figma note text in the ledger rows is Montserrat Medium 15/24 */
-    .ledger :global(p.order-last) { font-weight: 500; }
   }
 </style>

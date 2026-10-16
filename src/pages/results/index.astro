@@ -8,15 +8,57 @@ import Hero from '../../sections/results/Hero.astro';
 import Ledger from '../../sections/results/Ledger.astro';
 import Garage from '../../sections/results/Garage.astro';
 import Disclaimer from '../../sections/results/Disclaimer.astro';
+import Study from '../../sections/results/Study.astro';
 import FinalCta from '../../sections/results/FinalCta.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+
+const study = [
+  'OPPAGA, an office of the Florida Legislature, published Report No. 10-06 in January 2010. It looked at 76,321 claims filed with Citizens Property Insurance Corporation from March 2008 to June 2009, and compared claims with a public adjuster to claims without one.',
+  [
+    '**Catastrophe claims from Florida’s 2004 storm season, filed in 2008 and 2009.** The typical payment was $22,266 with a public adjuster and $18,659 without.',
+    '**Claims outside a catastrophe.** The report estimated $9,379 with a public adjuster and $1,391 without.',
+    '**Time to settle.** Catastrophe claims with a public adjuster typically took 132 to 296 days longer. Outside a catastrophe, the median was 115 days with one and 41 days without.',
+  ],
+  'Read those numbers with their limits:',
+  [
+    'They are before the adjuster’s fee. The report itself says the policyholder’s net would be lower.',
+    'One state, one insurer, and claims from 2008 and 2009.',
+    '“Without a public adjuster” included claims where an attorney represented the policyholder.',
+    'The report shows the payments differed. It does not say why. Claims that bring in a public adjuster may simply be larger or more disputed.',
+  ],
+  'So a study can’t price your claim. Your policy and your damage do. That is what we measure at the free review. [How a public adjuster works on your claim](/how-it-works/)',
+];
+const notFor = [
+  'On a small loss, or when the carrier’s offer is already fair, our fee may outweigh what we add. When an exclusion clearly applies, as in the garage claim above, no adjuster can change the policy. And no public adjuster can recover more than your policy limits allow.',
+  'The carrier doesn’t have to accept our numbers, either. We have to prove them, line by line, with the measurements, expert reports and valuations behind each one. If we can’t, we’ll say so before you sign.',
+];
+const faq = [
+  { q: 'How does hiring a public adjuster affect my claim payout?', a: 'It depends on what the insurer’s estimate missed. In the Florida study above, claims with a public adjuster paid more before fees, and took longer. On our claims, the gap came from scope: a full strip out, an industrial hygienist’s findings, a specialist’s valuation.' },
+  { q: 'Is a public adjuster worth it after the fee?', a: 'Only if what we add is more than the fee. No upfront cost. We’re paid a percentage of what we recover. In California, our fee can never leave you with less than your insurer had already paid before you hired us. [Public adjuster fees, explained](/fees/)' },
+  { q: 'Will a public adjuster slow down my claim?', a: 'It can. In the Florida study, claims with a public adjuster took longer to close. Outside a catastrophe, the median was 115 days with one and 41 days without. The report notes that public adjusters may present a larger scope of damage to assess.' },
+  { q: 'Does the insurance company have to accept a public adjuster’s estimate?', a: 'No. The insurer settles under the terms of your policy, not our estimate. That is why every line we add carries the measurement or the expert report behind it.' },
+  { q: 'Will my claim settle for a similar amount?', a: 'No one can promise that. Each result above came from a specific loss and a specific policy. We’ll give you our honest read at the free review, before you sign anything.' },
+];
+const related = [
+  '[Fire and smoke damage claims](/claims/fire-smoke-damage/)',
+  '[Contents and valuables claims](/claims/contents-valuables/)',
+  '[Denied or underpaid claims](/claims/denied-or-underpaid/)',
+  '[Public adjuster fees, explained](/fees/)',
+  '[Why Blue Star](/why-blue-star/)',
+];
 ---
-<Base title="Public Adjuster Results: Offer vs. Settlement | Blue Star Adjusters" description="What the carrier offered and what we recovered: Palisades fire, smoke, estate and apartment fire claims. Results reflect specific losses and policies.">
+<Base title="How Much More Do Public Adjusters Get? | Blue Star Results" description="What the carrier offered and what we recovered on five claims, plus what a Florida state study found on public adjuster payments, fees and time to settle.">
   <div data-node="217:6196" data-node-m="217:11646"><Header theme="light" /></div>
   <main class="bs-results bs-fit">
     <Hero />
     <Ledger />
     <Garage />
     <Disclaimer />
+    <Study id="results-study" title="The Florida Study. How Much More Do Public Adjusters Get Before Fees?" blocks={study} bg="paper" />
+    <KitProse id="results-not-for" title="When a Public Adjuster Won’t Get You More" body={notFor} bg="white" />
+    <KitFaq id="results-faq" title="Questions About Public Adjuster Results" items={faq} bg="paper" />
+    <KitProse id="results-related" title="Related" list={related} bg="white" />
     <FinalCta />
   </main>
   <div data-node="217:8924" data-node-m="217:12139"><Footer /></div>

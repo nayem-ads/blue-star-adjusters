@@ -12,7 +12,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
       <p class="m-0 flex items-center gap-[12px] w-fit shrink-0" data-node="128:5877">
         <Icon name="clock" size={24} class="hidden lg:block text-navy" />
         <Icon name="clock" size={20} class="lg:hidden text-navy" />
-        <span id="ct-timing-label" class="tm-label lg:t-label text-ink whitespace-nowrap" data-node="128:5881" data-node-m="135:1706">Timing note</span>
+        <span id="ct-timing-label" class="tm-label lg:t-label text-ink whitespace-nowrap" data-node="128:5881" data-node-m="135:1706">05 · Timing note</span>
       </p>
       <span aria-hidden="true" class="lg:hidden flex-1 h-[2px] ct-index__rule" data-node-m="135:1707"></span>
     </div>
@@ -22,9 +22,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
         <div class="ct-excerpt__doc">
           <div class="ct-excerpt__box">
           <div class="ct-excerpt__card">
-            <p class="m-0 w-fit ct-excerpt__chip">05</p>
-            <span aria-hidden="true" class="block h-px bg-line ct-excerpt__rule"></span>
-            <p class="m-0 ct-excerpt__text text-ink">In a declared disaster area, California bars public adjusters from soliciting you until seven days after the event ends. <strong class="ct-excerpt__hl">It doesn't apply if you call us first</strong>, and then we can look at your claim the same day.</p>
+            <p class="m-0 ct-excerpt__text text-ink">In a declared catastrophic disaster area, California bars public adjusters from soliciting a homeowner until seven calendar days after the loss producing event ends. <strong class="ct-excerpt__hl">It doesn't apply if you call us first.</strong> We call back the same business day.</p>
           </div>
           </div>
           <span aria-hidden="true" class="ct-crop ct-excerpt__crop"></span>
@@ -44,7 +42,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
   .ct-excerpt__crop { inset: 0; }
   .ct-excerpt__chip { background: var(--color-navy); color: #fff; border-radius: 2px; padding: 4px 8px; font-family: var(--font-body); font-weight: 600; font-size: 12px; line-height: 16px; letter-spacing: 0.02em; white-space: nowrap; }
   .ct-excerpt__rule { margin-top: 16px; }
-  .ct-excerpt__text { margin-top: 16px; font-family: var(--font-body); font-weight: 400; font-size: 18px; line-height: 28px; }
+  .ct-excerpt__text { margin-top: 0; font-family: var(--font-body); font-weight: 400; font-size: 18px; line-height: 28px; }
   .ct-excerpt__hl { font-weight: 600; text-decoration: underline; text-decoration-color: var(--color-royal); text-decoration-thickness: 3px; text-decoration-skip-ink: none; text-underline-offset: 6px; }
   @media (min-width: 64rem) {
     .ct-excerpt { width: 704.374px; height: 348px; }
@@ -53,7 +51,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
     .ct-excerpt__card { position: absolute; left: 16px; top: 16px; width: 664px; padding: 40px 48px 43px; transform: none; border-radius: 0; border: 1px solid var(--color-line); box-shadow: 0 12px 24px rgb(7 15 51 / .08); }
     .ct-excerpt__chip { font-size: 13px; line-height: 18px; }
     .ct-excerpt__rule { margin-top: 24px; }
-    .ct-excerpt__text { margin-top: 25px; font-size: 22px; line-height: 1.55; }
+    .ct-excerpt__text { margin-top: 0; font-size: 22px; line-height: 1.55; }
   }
   /* 1024-1279: the 1280 composition doesn't fit; keep the card upright-in-flow and narrower. */
   @media (min-width: 64rem) and (max-width: 79.999rem) {

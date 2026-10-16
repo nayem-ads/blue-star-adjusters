@@ -7,12 +7,24 @@ import CallBar from '../../components/CallBar.astro';
 import Hero from '../../sections/faq/Hero.astro';
 import Questions from '../../sections/faq/Questions.astro';
 import FinalCta from '../../sections/faq/FinalCta.astro';
+import Deadlines from '../../sections/faq/Deadlines.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+const deeper = [
+  '[How a public adjuster works](/how-it-works/)',
+  '[Public adjuster fees](/fees/)',
+  '[Is a public adjuster worth it?](/why-blue-star/)',
+  '[Denied or underpaid claims](/claims/denied-or-underpaid/)',
+  '[The first 48 hours after a loss](/first-48-hours/)',
+  '[Results](/results/)',
+];
 ---
-<Base title="Public Adjuster FAQ | Blue Star Adjusters" description="Straight answers about public adjusters: how we're paid, what happens if you already have an offer, who has the final say, and where we work.">
+<Base title="When Is It Too Late to Hire a Public Adjuster? | Blue Star" description="Rarely, while your claim is open. See the deadlines that can make it too late, plus straight answers on public adjuster fees, timing and your rights.">
   <div data-node="217:699" data-node-m="217:10754"><Header theme="light" /></div>
   <main class="bs-faq bs-fit">
     <Hero />
+    <Deadlines />
     <Questions />
+    <KitProse id="faq-deeper" title="Go Deeper" list={deeper} bg="paper" />
     <FinalCta />
   </main>
   <div data-node="217:7806" data-node-m="217:11389"><Footer /></div>

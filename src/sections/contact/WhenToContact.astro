@@ -1,0 +1,28 @@
+---
+// Contact / When to contact a public adjuster. Kit prose layout (KitProse rail) with the hero's two buttons under the copy.
+import Ticks from '../claims/Ticks.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import Button from '../../components/Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const body = [
+  "As early as you can. Bringing us in before the first estimate is final, and before anything is thrown away, gives us the most room to work. If you already have an offer, it's usually not too late.",
+  "If you're calling from a hotel room or a relative's spare bed, keep it short. Tell us what happened and where things stand with your insurer.",
+  "Bring whatever you have. The policy, the carrier's letters, photos. If we can't add value, we'll say so. On a small loss, or when the offer is already fair, our fee may outweigh what we add.",
+];
+---
+<KitStyles />
+<section aria-labelledby="ct-when-h" class="bg-paper">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <h2 id="ct-when-h" class="m-0 w-full text-navy tm-h2 lg:t-h2">When to Contact a Public Adjuster</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+      {body.map((p) => <p class="m-0 text-ink tm-body lg:t-lead">{p}</p>)}
+      <div class="mt-[32px] lg:mt-[40px] flex flex-col gap-[12px] lg:flex-row lg:gap-[16px] lg:w-fit">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="max-lg:w-full max-lg:h-[56px] lg:w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="max-lg:w-full max-lg:h-[56px] lg:w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+</section>

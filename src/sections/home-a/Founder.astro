@@ -1,7 +1,6 @@
 ---
-// Founder: Built From the Ground Up. Desktop 54:192, mobile 62:693.
+// Founder: Senior Led. Start to Finish. (Figma Homepage v2 482:1652; builder bio, builder chips and quote removed). Desktop 54:192, mobile 62:693.
 import Pic from './Pic.astro';
-import Icon from '../../components/Icon.astro';
 import Button from '../../components/Button.astro';
 import CropMarks from './CropMarks.astro';
 import FactChip from './FactChip.astro';
@@ -14,21 +13,22 @@ import { ROUTES } from '../../data/site';
       <CropMarks class="absolute -inset-[10px] lg:-inset-[12px]" node="73:2491" nodeM="74:3393" />
     </div>
     <div class="flex flex-col items-start gap-[24px] lg:gap-[28px] lg:flex-1 lg:min-w-0" data-node="54:194">
-      <h2 id="founder-title" class="m-0 tm-h2 lg:t-h2 text-navy w-full" data-node="54:195" data-node-m="62:695">Built From<br class="lg:hidden" /> the Ground Up.</h2>
-      <p class="m-0 tm-body lg:t-body text-ink w-[340px] lg:w-full" data-node="54:196" data-node-m="62:696">Michael Rapport spent 25 years as a developer and merchant builder before he became a public adjuster. He has built to San Francisco’s seismic retrofit ordinance, and he knows what a code-compliant rebuild costs because he’s paid for plenty of them.</p>
-      <div class="flex flex-wrap gap-[12px] w-full" data-node="73:2503">
-        <FactChip icon="ruler" node="73:2504" nodeM="74:3388">25 years as a developer and builder</FactChip>
-        <div class="hidden lg:flex"><FactChip icon="home" node="73:2509">Built to San Francisco’s seismic retrofit ordinance</FactChip></div>
+      <h2 id="founder-title" class="m-0 tm-h2 lg:t-h2 text-navy w-full" data-node="54:195" data-node-m="62:695">Senior Led.<br /> Start to Finish.</h2>
+      <div class="flex flex-col gap-[16px] w-full">
+        <p class="m-0 tm-body lg:t-body text-ink" data-node="54:196" data-node-m="62:696">Every Blue Star claim is led by a senior adjuster, from the first call to the final settlement. The person who reads your policy is the person who negotiates it. We built the firm that way on purpose, so you get the experience of a large firm without being handed off.</p>
+        <p class="m-0 tm-body lg:t-body text-ink">Michael Rapport founded Blue Star Adjusters. Before that, he was a top producer at one of the nation’s leading public adjusting firms, across hundreds of losses.</p>
       </div>
-      <figure class="m-0 flex flex-col items-start gap-[12px] lg:gap-[16px] w-full" data-node="54:197" data-node-m="62:697">
-        <Icon name="quote" size={48} class="text-royal w-[40px] h-[40px] lg:w-[48px] lg:h-[48px]" />
-        <blockquote class="m-0 tm-h3 lg:t-h3 text-navy w-[310px] lg:w-auto lg:max-w-[544px]" data-node="54:198" data-node-m="62:698"><p class="m-0">“I’ve stood on both sides of a construction set of plans, as a developer who builds, and as a public adjuster who fights to make policyholders whole. That dual background is the reason clients hire me and Blue Star Adjusters.”</p></blockquote>
-        <figcaption class="w-full lg:w-auto tm-body text-ink whitespace-nowrap" data-node="54:199" data-node-m="62:699">Michael Rapport, Founding Principal</figcaption>
-      </figure>
-      <Button href={ROUTES.founder} variant="outline" class="h-[56px] w-full lg:h-[52px] lg:w-auto" data-node="54:200" data-node-m="62:700">Meet Michael</Button>
+      <ul class="m-0 p-0 list-none flex flex-wrap gap-[12px] w-full" data-node="73:2503">
+        <li><FactChip icon="shield" node="73:2504" nodeM="74:3388">Senior adjuster on every claim</FactChip></li>
+        <li><FactChip icon="check" node="73:2509">PCAPIA member</FactChip></li>
+      </ul>
+      <p class="m-0 tm-body text-ink lg:text-[15px] lg:leading-[24px] font-medium" data-node="54:199" data-node-m="62:699">Michael Rapport, Founding Principal</p>
+      <Button href={ROUTES.founder} variant="outline" class="founder-btn h-auto min-h-[56px] py-[14px] px-[24px] w-full text-center lg:h-[52px] lg:min-h-0 lg:py-0 lg:w-auto" data-node="54:200" data-node-m="62:700">Meet Michael Rapport, licensed public adjuster</Button>
     </div>
   </div>
 </section>
+
+
 <style>
-  @media (min-width: 1024px) { figcaption { font-weight: 500; font-size: 15px; line-height: 24px; } }
+  :global(.founder-btn) { white-space: normal; }
 </style>

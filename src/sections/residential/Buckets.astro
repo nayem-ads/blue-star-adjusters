@@ -4,32 +4,41 @@
 import '@fontsource/schibsted-grotesk/latin-400.css'; // item text is Schibsted Regular; only 500-700 are global
 import Img from '../../components/Img.astro';
 import Icon from '../../components/Icon.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
 
 const items = [
-  { icon: 'home', term: 'Dwelling:', text: ' the structure, returned to its condition before the loss and to current code.',
+  { icon: 'home', term: 'Dwelling.', text: ' The structure, returned to its condition before the loss and to current code.',
     d: ['226:934', '226:935', '226:937'], m: ['226:1180', '226:1181', '226:1183'] },
-  { icon: 'building', term: 'Other structures:', text: ' fences, decks, garages, barns, guest houses.',
+  { icon: 'building', term: 'Other structures.', text: ' Fences, decks, garages, barns, guest houses.',
     d: ['226:938', '226:939', '226:941'], m: ['226:1184', '226:1185', '226:1187'] },
-  { icon: 'document', term: 'Contents:', text: ' everything inside, from furniture to fine art.', bottom: true,
+  { icon: 'document', term: 'Contents.', text: ' Everything inside, from furniture to fine art.', bottom: true,
     d: ['226:942', '226:943', '226:945'], m: ['226:1188', '226:1189', '226:1191'] },
-  { icon: 'clock', term: 'Loss of use:', text: " comparable living while you're displaced, including pet accommodations where your policy allows.", bottom: true,
+  { icon: 'clock', term: 'Loss of use.', text: " Comparable living while you're displaced, including pet accommodations where your policy allows.", bottom: true,
     d: ['226:1401', '226:1402', '226:1404'], m: ['226:1487', '226:1488', '226:1490'] },
 ];
+const after = [
+  'Your declarations page shows the limits. We read all four before we write a line of scope.',
+  'Losing a home, even for a few months, upends a family. That is why loss of use gets measured as carefully as the framing. [Additional living expenses](/claims/additional-living-expenses/) · [Contents and valuables claims](/claims/contents-valuables/)',
+];
 ---
+<KitStyles />
 <section aria-labelledby="res-buckets-title" class="bg-paper" data-node="226:881" data-node-m="226:1147">
-  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col lg:flex-row lg:items-start lg:gap-[112px]">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col">
 
-    <div class="flex lg:hidden mb-[32px]" data-node-m="226:1504">
+    <div class="flex mb-[32px] lg:mb-[64px] lg:w-[864px]" data-node-m="226:1504">
       <span aria-hidden="true" class="block w-[3px] shrink-0 bg-royal" data-node-m="226:1505"></span>
-      <p class="m-0 ml-[16px] tm-lead text-ink" data-node-m="226:1506">When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won't let the carrier set the scope.</p>
+      <p class="m-0 ml-[16px] lg:ml-[24px] tm-lead lg:t-lead text-ink" data-node-m="226:1506">When your home is damaged, your insurer sends their adjuster. We send ours: a senior adjuster who measures what your rebuild will cost and won't let the carrier set the scope.</p>
     </div>
+
+    <div class="flex flex-col lg:flex-row lg:items-start lg:gap-[112px]">
 
     <div class="flex flex-col lg:items-start lg:gap-[24px] lg:w-[360px] lg:shrink-0" data-node="226:882">
       <div class="flex flex-col items-start gap-[16px] lg:contents" data-node-m="226:1148">
         <div class="inline-flex border border-navy rounded-[2px] px-[8px] py-[4px]" data-node="226:883" data-node-m="226:1149">
           <span class="tm-label lg:t-label text-navy whitespace-nowrap" data-node="226:884" data-node-m="226:1150">§ 01</span>
         </div>
-        <h2 id="res-buckets-title" class="m-0 w-full tm-h2 lg:t-h2 text-navy" data-node="226:885" data-node-m="226:1151">Four buckets. We measure each one.</h2>
+        <h2 id="res-buckets-title" class="m-0 w-full tm-h2 lg:t-h2 text-navy" data-node="226:885" data-node-m="226:1151">Four Buckets. We Measure Each One.</h2>
         <div aria-hidden="true" class="res-ruler w-[200px] lg:w-[360px]" data-node="226:886" data-node-m="226:1152"></div>
       </div>
       <div class="hidden lg:block w-[360px] h-[248px] overflow-hidden" data-node="226:1418">
@@ -41,7 +50,8 @@ const items = [
       </div>
     </div>
 
-    <ul class="m-0 mt-[32px] lg:mt-0 p-0 list-none flex flex-col flex-1 min-w-0" data-node="226:933" data-node-m="226:1179">
+    <div class="flex flex-col flex-1 min-w-0">
+    <ul class="m-0 mt-[32px] lg:mt-0 p-0 list-none flex flex-col" data-node="226:933" data-node-m="226:1179">
       {items.map((it) => (
         <li class:list={['flex items-center lg:items-start gap-[16px] lg:gap-[24px] py-[20px] lg:py-[32px] border-t border-line', it.bottom && 'border-b']} data-node={it.d[0]} data-node-m={it.m[0]}>
           <span class="flex items-center justify-center shrink-0 size-[40px] rounded-full bg-white border border-navy text-navy" data-node={it.d[1]} data-node-m={it.m[1]}>
@@ -51,6 +61,11 @@ const items = [
         </li>
       ))}
     </ul>
+    <div class="bs-kit-prose mt-[24px] lg:mt-[40px]">
+      {after.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+    </div>
+    </div>
+    </div>
 
   </div>
 </section>

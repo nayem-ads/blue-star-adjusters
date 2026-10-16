@@ -1,14 +1,14 @@
 ---
-// Local line (Santa Monica, San Francisco only). Paper band: pin + state chip rail, royal lead rule, Schibsted Medium line.
+// Local line (offices with a local line). Paper or white band: pin + state chip rail, royal lead rule, Schibsted Medium line.
 import Icon from '../../components/Icon.astro';
 import Chip from './Chip.astro';
-import { nodes, type OfficeData } from './types';
-interface Props { data: OfficeData }
-const { data: d } = Astro.props;
+import { nodes, type Bg, type OfficeData } from './types';
+interface Props { data: OfficeData; bg: Bg }
+const { data: d, bg } = Astro.props;
 const n = (k: string) => nodes(d, k);
 const id = (k: string, i: 0 | 1) => d.n[k]?.[i] ?? undefined;
 ---
-<section aria-label={`${d.city} local note`} class="bg-paper" {...n('local')}>
+<section aria-label={`${d.city} local note`} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']} {...n('local')}>
   <div class="max-w-[1280px] mx-auto flex flex-col gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[112px] lg:px-[80px] lg:py-[96px]">
     <div class="flex flex-col gap-[16px] lg:w-[264px] lg:shrink-0" {...n('local.rail')}>
       <div class="flex items-center gap-[12px] w-fit" {...n('local.marker')}>

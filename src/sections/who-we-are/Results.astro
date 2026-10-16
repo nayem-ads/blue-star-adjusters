@@ -1,0 +1,44 @@
+---
+// S6 Results (kit rail layout + CTA row). Page specific: Who We Are only.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import Chip from '../claims/Chip.astro';
+import Ticks from '../claims/Ticks.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const results = [
+  '**Los Angeles house fire, full strip out.** Offered $38,000. Settled at $276,000.',
+  '**Smoke damage.** Offered $17,000. Settled for about $1.1 million, after an industrial hygienist proved combustion byproducts in porous materials and doors.',
+];
+---
+<KitStyles />
+<section aria-labelledby="wwa-results" class="bg-white">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <Chip>06</Chip>
+      <h2 id="wwa-results" class="m-0 w-full text-navy tm-h2 lg:t-h2">What the Carrier Offered. What We Recovered.</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="lg:flex-1 lg:min-w-0">
+      <ul class="m-0 p-0 list-none flex flex-col border-t border-line">
+        {results.map((r) => (
+          <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[20px] lg:py-[28px]">
+            <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+            <span class="flex-1 min-w-0 text-ink tm-body lg:t-lead" set:html={md(r)} />
+          </li>
+        ))}
+      </ul>
+      <p class="m-0 mt-[16px] text-[14px] leading-[22px] text-muted"><em>Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</em></p>
+      <p class="m-0 mt-[24px] lg:mt-[32px] text-ink tm-body lg:t-lead">Not every claim needs us. If the loss is small or the offer is fair, we'll tell you at the free review.</p>
+      <div class="mt-[28px] lg:mt-[36px] flex flex-col gap-[12px] lg:flex-row lg:flex-wrap lg:gap-[16px]">
+        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+      <a href="/results/" class="wwa-more inline-flex items-center gap-[8px] mt-[24px] text-royal tm-body-strong lg:t-body-strong underline">More claim results<Icon name="arrow-right" size={20} /></a>
+    </div>
+  </div>
+</section>
+<style>
+  .wwa-more:hover { color: var(--color-navy); }
+</style>

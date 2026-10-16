@@ -1,0 +1,38 @@
+---
+// Free Claim Review / What a review covers. Same rail layout as the content kit's KitProse (chip-less), plus the
+// locked smoke result with its disclaimer and a CTA row. Paper on mobile (between navy and white), white on desktop.
+import Ticks from '../claims/Ticks.astro';
+import Button from '../../components/Button.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+const buckets = ['Dwelling', 'Other structures', 'Contents', 'Loss of use', 'Code upgrades', 'Debris removal'];
+---
+<KitStyles />
+<section aria-labelledby="fcr-covers" class="bg-paper lg:bg-white">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <h2 id="fcr-covers" class="m-0 w-full text-navy tm-h2 lg:t-h2">What a Free Insurance Claim Review Covers</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+      <p class="m-0 text-ink tm-body lg:t-lead">We read the whole policy, endorsements included. We identify all avenues of recovery available under your policy, and check what the carrier has paid or offered against each one.</p>
+      <ul class="m-0 mt-[24px] lg:mt-[32px] p-0 list-none grid grid-cols-1 sm:grid-cols-2 border-t border-line sm:gap-x-[32px]">
+        {buckets.map((b) => (
+          <li class="flex gap-[16px] items-start border-b border-line py-[16px] lg:py-[20px]">
+            <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+            <span class="flex-1 min-w-0 text-ink tm-body-strong lg:t-body-strong">{b}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="m-0 mt-[16px] lg:mt-[20px] text-ink tm-body lg:t-lead">Each bucket gets measured on its own. We measure what the first estimate missed.</p>
+      <div class="mt-[32px] lg:mt-[40px] border-l-4 border-royal bg-white lg:bg-paper px-[20px] py-[20px] lg:px-[32px] lg:py-[28px] flex flex-col gap-[12px]">
+        <p class="m-0 text-ink tm-body lg:t-body"><strong class="text-navy">Smoke damage.</strong> Offered $17,000. Settled for about $1.1 million, after an industrial hygienist proved combustion byproducts in porous materials and doors.</p>
+        <p class="m-0 t-caption text-muted"><em>Results reflect specific losses and policies. Past results don’t guarantee a similar outcome.</em></p>
+      </div>
+      <div class="mt-[32px] lg:mt-[40px] w-full flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]">
+        <Button href="#fcr-form" class="h-[56px] w-full lg:h-[52px] lg:w-auto">Request My Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+</section>

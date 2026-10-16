@@ -8,18 +8,68 @@ import Hero from '../../sections/first-48/Hero.astro';
 import Checklist from '../../sections/first-48/Checklist.astro';
 import Statement from '../../sections/first-48/Statement.astro';
 import FinalCta from '../../sections/first-48/FinalCta.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+
+const faq = [
+  { q: 'When can I go back into my house after a fire?', a: 'Only when the fire department says it is safe. Floors and walls may not be as safe as they look. Once inside, don\'t turn the gas, power or water back on yourself.' },
+  { q: 'Will insurance pay for a hotel after a house fire?', a: "Often, if the fire is a covered loss. Your policy's loss of use coverage may pay the extra cost of living elsewhere, up to its limit. Ask your insurer for an advance, and keep every receipt from the day of the fire." },
+  { q: 'Should I clean up before the insurance adjuster comes?', a: "Protect the property, but don't clean it out. Board up openings and stop water from spreading. Leave damaged items in place, photographed and listed, so the insurer's adjuster sees the loss as it is." },
+  { q: "Do I have to use my insurance company's contractor?", a: "No. You don't have to accept the insurer's contractor or its estimate. Get your own written estimate from an independent professional, and compare the two line by line." },
+  { q: 'Should I hire a public adjuster after a house fire?', a: "It depends on the size of the loss and how far apart you and the insurer are. A public adjuster works for you, reads the policy, measures the loss and negotiates the claim. Call before the first estimate is final and before anything is thrown away. If we can't add value, we'll say so at the free review." },
+];
 ---
-<Base title="The First 48 Hours After a Loss | Blue Star Adjusters" description="What to do in the first 48 hours after a fire, water or storm loss, in order: a 10-step checklist from a licensed public adjuster.">
+<Base title="What to Do After a House Fire: The 48 Hour Checklist" description="What to do after a house fire, in order: who to call, what to photograph, which receipts to keep and what not to sign. From a licensed public adjuster.">
   <div data-node="217:5603" data-node-m="217:9388"><Header theme="light" /></div>
   <main class="bs-f48 bs-fit">
     <Hero />
     <Checklist />
     <Statement />
+    <KitProse id="f48-ours" bg="paper" title="What We Do in the First 48 Hours" body={[
+      "A senior adjuster leads every claim, from the first call to the final settlement. We read the whole policy, endorsements included. We measure the loss before the carrier's estimate sets the number. That can mean moisture mapping where the firefighting water went, or an industrial hygienist where smoke reached.",
+      '**Smoke damage: Offered $17,000. Settled for about $1.1 million.** An industrial hygienist proved combustion byproducts in the porous materials and doors.',
+      "We attend the inspections. You approve the claim package and decide on every offer. We represent the insured only. Calls are returned the same business day, Monday to Friday, 9 AM to 5 PM Pacific.",
+    ]} note="Results reflect specific losses and policies. Past results don't guarantee a similar outcome." />
+    <KitProse id="f48-papers" bg="white" title="Papers, Cards and Burned Cash" body={["FEMA's after the fire guide lists the records most people need to replace:"]} list={[
+      "Driver's license and auto registration",
+      'Passports, birth, marriage and death certificates, and citizenship papers',
+      'Social Security and Medicare cards',
+      'Titles and deeds, wills, insurance policies and income tax records',
+      'Credit cards. Call each issuer to report them lost in the fire.',
+      'Medical records and warranties',
+    ]} after={['Burned money can often be replaced. Handle it as little as possible and wrap each bill in plastic. If half or more of a bill is intact, your regional Federal Reserve Bank can replace it. Badly damaged notes go to the Bureau of Engraving and Printing, which redeems them as a free public service.']} />
+    <KitProse id="f48-water" bg="paper" title="What to Do After Water Damage in the House" body={['The same order works when the loss is water, not fire. After a fire, the water used to put it out is a loss of its own.']} list={[
+      'Shut off the water at the main or the fixture.',
+      'Photograph and video every wet room before anything is dried or torn out.',
+      'Start drying right away. The EPA says to dry water damaged areas and items within 24 to 48 hours to prevent mold growth.',
+      'Keep every receipt for fans, dehumidifiers and emergency repairs.',
+      "Don't throw out wet drywall, flooring or contents until they're documented.",
+    ]} after={['See [water damage insurance claims](/claims/water-damage/).']} />
+    <KitProse id="f48-ca" bg="white" title="What to Do After a House Fire: Insurance Rules in California" body={[
+      'California sets the clock for both sides. Within 15 calendar days of your notice, your insurer must acknowledge the claim, send the forms and instructions, and begin its investigation.',
+      'Your side has deadlines too. The standard fire policy gives you 60 days after the loss to send a signed, sworn proof of loss, unless the insurer extends the time in writing. A lawsuit over the claim must be filed within 12 months of the loss. If the loss is tied to a declared state of emergency, that becomes 24 months. Ask for any extension in writing, and keep the letter.',
+    ]} />
+    <KitProse id="f48-notfor" bg="paper" title="When You May Not Need Us" body={[
+      "A small kitchen fire with a fair offer may not need a public adjuster. On a loss that size, our fee may outweigh what we add. We'll tell you so at the free review, before you sign anything.",
+      "**No upfront cost. We're paid a percentage of what we recover.**",
+    ]} />
+    <KitFaq id="f48-faq" bg="white" title="Questions About the First 48 Hours" items={faq} />
+    <KitProse id="f48-related" bg="paper" title="Related Pages" list={[
+      '[Fire and smoke damage claims](/claims/fire-smoke-damage/)',
+      '[Wildfire insurance claims](/claims/wildfire/)',
+      '[Water damage insurance claims](/claims/water-damage/)',
+      '[Additional living expenses](/claims/additional-living-expenses/)',
+      '[Contents and personal property](/claims/contents-valuables/)',
+      '[How a public adjuster works](/how-it-works/)',
+      '[Public adjuster fees](/fees/)',
+      '[When is it too late to hire a public adjuster?](/faq/)',
+    ]} />
     <FinalCta />
   </main>
   <div data-node="217:7548" data-node-m="217:10620"><Footer /></div>
   <CallBar node="217:10656" />
 </Base>
 <style is:global>
+  .bs-f48 h2 { text-wrap: balance; }
   @media (max-width: 1023.98px) { .bs-f48 :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
 </style>

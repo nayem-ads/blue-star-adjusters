@@ -1,0 +1,30 @@
+---
+// Results / Florida study. Same rail layout as kit KitProse (§ rail + H2 on the left, copy on the right),
+// but the copy column takes interleaved blocks: a string is a paragraph, a string[] is a bullet list.
+import Ticks from '../claims/Ticks.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
+interface Props { title: string; id: string; blocks: (string | string[])[]; bg?: 'paper' | 'white' }
+const { title, id, blocks, bg = 'paper' } = Astro.props;
+---
+<KitStyles />
+<section aria-labelledby={id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']}>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <h2 id={id} class="m-0 w-full text-navy tm-h2 lg:t-h2">{title}</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="lg:flex-1 lg:min-w-0 flex flex-col gap-[24px] lg:gap-[32px]">
+      {blocks.map((b) => Array.isArray(b) ? (
+        <ul class="m-0 p-0 list-none flex flex-col border-t border-line">
+          {b.map((it) => (
+            <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+              <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+              <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+            </li>
+          ))}
+        </ul>
+      ) : <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(b)} />)}
+    </div>
+  </div>
+</section>

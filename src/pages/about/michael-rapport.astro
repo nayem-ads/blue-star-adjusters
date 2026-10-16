@@ -11,17 +11,29 @@ import Background from '../../sections/founder/Background.astro';
 import Job from '../../sections/founder/Job.astro';
 import Quote from '../../sections/founder/Quote.astro';
 import Cta from '../../sections/founder/Cta.astro';
-const title = 'Michael Rapport, Founding Principal | Blue Star Adjusters';
-const description = "Michael Rapport: 25 years as a developer and merchant builder. Licensed personally in 7 states, always working for the insured, never for the carrier.";
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+const title = 'Michael Rapport, Public Adjuster | Blue Star Adjusters';
+const description = 'Michael Rapport, public adjuster and Founding Principal of Blue Star Adjusters. Top producer across hundreds of losses. Free claim review, no upfront cost.';
+const faq = [
+  { q: 'Is Michael Rapport a licensed public adjuster?', a: "Yes. Michael Rapport's personal license is CA DOI License No. 2B60428. Blue Star Adjusters LLC holds its own licenses in six states, including CA DOI License No. 6015234 in California. You can check either number on the California Department of Insurance license search." },
+  { q: 'What are your claim adjusting credentials?', a: "Michael Rapport was a top producer at one of the nation's leading public adjusting firms before founding Blue Star. He has worked hundreds of losses, from single family homes to commercial properties, and he checks every carrier estimate against what the rebuild will actually cost." },
+  { q: 'What does a public adjuster do?', a: ['A public adjuster is a licensed adjuster who works for the policyholder, not the insurance company. We read your policy, measure and document the loss, build the claim and negotiate the settlement with your insurer. You decide on every offer.', '[How does a public adjuster work?](/how-it-works/)'] },
+  { q: 'Is it worth hiring a public adjuster?', a: ["It depends on the size of the loss and the gap between the offer and the real cost. A carrier's first estimate may leave out the code upgrades the city will require. If your loss is small or the offer is fair, we'll tell you at the free review.", '[Is a public adjuster worth it?](/why-blue-star/)'] },
+  { q: 'How is Blue Star paid?', a: ["No upfront cost. We're paid a percentage of what we recover. The free review costs nothing and carries no obligation.", '[Public adjuster fees, explained](/fees/)'] },
+];
 ---
 <Base title={title} description={description}>
   <div data-node="73:1814" data-node-m="74:2697"><Header theme="light" /></div>
   <main class="bs-founder">
     <Hero />
     <Career />
-    <Background />
     <Job />
+    <KitProse id="handling-title" bg="white" title="Will You Be Handling My Claim Personally?" body={["A senior adjuster leads your claim from the first call to the final settlement, and it stays with that person the whole way. You'll have one person to call, and that person will know your file.", 'That adjuster leads the policy review, the scope of the loss, the claim package and the negotiation with your insurer. You always have final say on any settlement.']} after={['[How a claim with Blue Star runs](/how-it-works/)']} />
     <Quote />
+    <Background />
+    <KitFaq id="faq-title" bg="paper" title="Questions About Michael Rapport and Blue Star" items={faq} />
+    <KitProse id="related-title" bg="white" title="Related" list={['[Who We Are](/about/)', '[Why Blue Star](/why-blue-star/)', '[Claim results](/results/)', '[Our offices](/locations/)']} />
     <Cta />
   </main>
   <div data-node="73:3068" data-node-m="74:3341"><Footer /></div>

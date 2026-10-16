@@ -5,15 +5,19 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import CallBar from '../../../components/CallBar.astro';
 import Hero from '../../../sections/claims/Hero.astro';
-import Related from '../../../sections/claims/Related.astro';
 import Cta from '../../../sections/claims/Cta.astro';
 import Button from '../../../components/Button.astro';
 import PhotoSplit from '../../../sections/claims/PhotoSplit.astro';
 import Chip from '../../../sections/claims/Chip.astro';
 import { dn } from '../../../sections/claims/nodes';
-import { ROUTES } from '../../../data/site';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../../data/site';
 import Requires from '../../../sections/claims/code/Requires.astro';
-import { page, hero, heroLead, requires, founder, related, cta } from '../../../data/claims/code-upgrades';
+import CoverageTable from '../../../sections/claims/code/CoverageTable.astro';
+import CodeProse from '../../../sections/claims/code/CodeProse.astro';
+import Related from '../../../sections/claims/code/Related.astro';
+import KitProse from '../../../sections/kit/KitProse.astro';
+import KitFaq from '../../../sections/kit/KitFaq.astro';
+import { page, hero, heroLead, requires, coverage, replacementCost, california, founder, processSteps, exclusions, notFor, faq, related, cta } from '../../../data/claims/code-upgrades';
 const { line, ...split } = founder;
 const fn = line.nodes;
 ---
@@ -22,14 +26,27 @@ const fn = line.nodes;
   <main class="bs-code bs-fit">
     <Hero {...hero} />
     <Requires heroLead={heroLead} {...requires} />
+    <CoverageTable id="coverage-abc" bg="white" {...coverage} />
+    <KitProse id="replacement-cost" bg="paper" {...replacementCost} />
+    <CodeProse id="california" bg="white" {...california} />
     <PhotoSplit {...split}>
       <div slot="details" class="mx-[20px] lg:mx-0 flex flex-col items-start gap-[16px] lg:gap-[24px] pb-[40px] lg:pb-[56px]" {...dn(fn.block)}>
         <Chip theme="dark" node={fn.chip} text={fn.chipText}>{line.chip}</Chip>
+        <h2 class="m-0 w-full tm-display lg:t-display-l text-white">{line.title}</h2>
         <span aria-hidden="true" class="block w-[40px] h-[4px] bg-white lg:w-[48px]" {...dn(fn.rule)}></span>
         <p class="m-0 tm-h3 lg:t-h3 text-white" {...dn(fn.body)}>{line.body}</p>
         <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node={fn.button[0]} data-node-m={fn.button[1]}>Schedule a Free Review</Button>
       </div>
     </PhotoSplit>
+    <CodeProse id="process" bg="paper" listStyle="number" {...processSteps}>
+      <div class="flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </CodeProse>
+    <KitProse id="exclusions" bg="white" {...exclusions} />
+    <KitProse id="not-for" bg="paper" {...notFor} />
+    <KitFaq id="faq" bg="white" {...faq} />
     <Related {...related} />
     <Cta {...cta} />
   </main>

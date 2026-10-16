@@ -1,7 +1,7 @@
 ---
 // Fees (Figma desktop 128:3369, mobile 128:6166). Indexable.
 // data-node = desktop node id, data-node-m = mobile node id (pixel-diff --mobile swaps them in).
-// No fee percentage or rate anywhere on this page (Jay, 2026-09-23).
+// No fee percentage, rate or range anywhere on this page (Jay, 2026-09-23).
 import '@fontsource/schibsted-grotesk/latin-400.css'; // Schibsted Regular (Why lead, When-not body): only 500-700 are global
 import Base from '../../layouts/Base.astro';
 import Header from '../../components/Header.astro';
@@ -15,19 +15,42 @@ import NotHire from '../../sections/fees/NotHire.astro';
 import Specialists from '../../sections/fees/Specialists.astro';
 import Faq from '../../sections/fees/Faq.astro';
 import Cta from '../../sections/fees/Cta.astro';
-const title = 'Public Adjuster Fees, Explained | Blue Star Adjusters';
-const description = 'No upfront cost. Blue Star is paid a percentage of your settlement, set in writing before we start.';
+import KitProse from '../../sections/kit/KitProse.astro';
+const title = 'Public Adjuster Fees, Explained: No Upfront Cost | Blue Star';
+const description = 'Public adjuster fees are usually a percentage of the recovery, with no upfront cost. What California law requires in the contract, and what it forbids.';
 ---
 <Base title={title} description={description}>
   <div data-node="128:3370" data-node-m="128:6167"><Header theme="light" /></div>
   <main class="bs-fees">
     <Hero />
     <Statement />
+    <KitProse chip="02" id="fees-percent" bg="white" title="What Percent Does a Public Adjuster Take?" body={[
+      'The percentage is agreed with you in writing before we start, and it depends on the size and complexity of the claim. We go through it at the free review, so you know the number before you sign anything.',
+      "California requires every public adjuster's contract to state the percentage and the amount it applies to. You initial that line before you sign.",
+      "Ranges you'll find online describe other firms' contracts, not yours. Ask every adjuster you speak with for their number in writing. Then compare the contracts, line by line.",
+    ]} note="Cal. Ins. Code 15027(b)(12) and (f)(3)" />
     <Why />
     <Protect />
+    <KitProse chip="05" id="fees-ask" bg="paper" title="Questions to Ask Any Public Adjuster About Fees" body={[
+      'Ask us. Ask anyone else you\'re considering. Get every answer in writing.',
+    ]} list={[
+      'What is your percentage, and what amount does it apply to?',
+      'Does it apply to money my insurer paid before I hired you?',
+      'Are there other charges, for experts, testing or travel?',
+      'Is the fee taken from each check as it arrives?',
+      'How long do I have to cancel, and how do I do it?',
+      'What is your license number? Then look it up yourself.',
+    ]} />
     <NotHire />
     <Specialists />
     <Faq />
+    <KitProse id="fees-related" bg="white" title="Related" list={[
+      '[How a public adjuster works on your claim](/how-it-works/)',
+      '[Denied or underpaid claims](/claims/denied-or-underpaid/)',
+      '[Claim results](/results/)',
+      '[Public adjuster FAQ](/faq/)',
+      '[Is a public adjuster worth it?](/why-blue-star/)',
+    ]} />
     <Cta />
   </main>
   <div data-node="128:4872" data-node-m="128:6736"><Footer /></div>

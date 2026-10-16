@@ -1,0 +1,42 @@
+---
+// Residential "What the Carrier Offered. What We Recovered." Kit prose rail layout (KitProse) plus the two page buttons.
+import Chip from '../claims/Chip.astro';
+import Ticks from '../claims/Ticks.astro';
+import Button from '../../components/Button.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+
+const items = [
+  '**Los Angeles house fire, full strip out.** Offered $38,000. Settled at $276,000.',
+  '**Smoke damage.** Offered $17,000. Settled for about $1.1 million. An industrial hygienist proved combustion byproducts in the porous materials and doors.',
+  '**800 sq ft apartment fire, started by a computer.** Settled for nearly $200,000, including the tongue and groove ceiling and smoke mitigation for the neighboring unit.',
+  '**A denied total loss.** A $1.4 million total loss was denied because the homeowner was welding for his business in the garage. The policy excluded business operations. We read the exclusions at the free review, so you know early where a claim stands.',
+];
+---
+<KitStyles />
+<section aria-labelledby="res-results-title" class="bg-white">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <Chip>§ 04</Chip>
+      <h2 id="res-results-title" class="m-0 w-full text-navy tm-h2 lg:t-h2">What the Carrier Offered. What We Recovered.</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+      <ul class="m-0 p-0 list-none flex flex-col border-t border-line">
+        {items.map((it) => (
+          <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+            <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+            <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+          </li>
+        ))}
+      </ul>
+      <p class="m-0 mt-[24px] t-caption text-muted"><em>Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</em></p>
+      <p class="m-0 mt-[16px] tm-body lg:t-body text-ink"><a href={ROUTES.results} class="bs-kit-link">More claim results</a></p>
+      <div class="mt-[32px] w-full lg:w-auto flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+</section>

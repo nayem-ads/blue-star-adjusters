@@ -20,10 +20,10 @@ const options = [
   { label: 'Commercial loss', lw: 126, lwm: 134, icon: 'building', d: '73:1577', m: '74:4000', o: 'order-4' },
   { label: 'Other', lw: 45, lwm: 48, icon: 'document', d: '73:1581', m: '74:4004', o: 'order-7' },
 ];
-const states = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Other'];
+const states = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Colorado', 'Other'];
 const span = 'lg:col-span-2 lg:order-1';
 ---
-<div class="fcr-card relative w-full bg-white border border-line rounded-[4px] pt-[28px] pb-[24px] px-[20px] lg:flex-1 lg:min-w-0 lg:max-w-[648px] lg:p-[48px]" data-node="73:1440" data-node-m="74:3913">
+<div id="fcr-form" class="fcr-card relative w-full scroll-mt-[96px] bg-white border border-line rounded-[4px] pt-[28px] pb-[24px] px-[20px] lg:flex-1 lg:min-w-0 lg:max-w-[648px] lg:p-[48px]" data-node="73:1440" data-node-m="74:3913">
   <Ruler />
   <form action={FORM_ACTION} method="POST" enctype="multipart/form-data" data-lead-form novalidate aria-labelledby="fcr-form-title"
     class="fcr-form flex flex-col gap-[16px] lg:grid lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[32px] lg:items-start">
@@ -97,7 +97,7 @@ const span = 'lg:col-span-2 lg:order-1';
       <Button type="submit" class="w-full h-[56px] lg:w-auto lg:h-[52px]" data-node="73:1602" data-node-m="74:4031">Request My Review</Button>
       <p class="m-0 flex-1 min-w-0 lg:min-w-[240px] flex gap-[12px] items-start" data-node="73:1606" data-node-m="74:4035">
         <Icon name="clock" size={20} class="shrink-0 text-navy" />
-        <span class="flex-1 min-w-0 tm-body lg:font-medium lg:text-[15px] lg:leading-[24px] text-ink">We call back the same day, Mon–Sun, 8 AM–6 PM Pacific. Every engagement is discreet.</span>
+        <span class="flex-1 min-w-0 tm-body lg:font-medium lg:text-[15px] lg:leading-[24px] text-ink">We call back the same business day, Monday to Friday, 9 AM to 5 PM Pacific. Every engagement is discreet.</span>
       </p>
     </div>
   </form>

@@ -1,6 +1,6 @@
 ---
 // Wind, Hail & Trees / Wind and collapse (desktop 229:9191 1280×658, mobile 229:9437 390×590). Navy band, faint B mark:
-// § 03 + wind icon + H2, display statement, two lead columns (one paragraph on mobile), white ruler.
+// § 03 + wind icon, H2 as the display statement, three lead paragraphs (approved copy 2026-10-16), white ruler.
 import Icon from '../../../components/Icon.astro';
 import Logo from '../../../components/Logo.astro';
 import Chip from '../commercial/Chip.astro';
@@ -11,16 +11,15 @@ import Ruler from '../commercial/Ruler.astro';
     <span aria-hidden="true" class="absolute left-[109.2px] top-0 opacity-[.06] pointer-events-none lg:hidden" data-node-m="229:9438"><Logo variant="mark-white" bare width={280.8} height={340.9} label="" /></span>
     <span aria-hidden="true" class="hidden lg:block absolute left-[818.76px] top-0 opacity-[.06] pointer-events-none" data-node="229:9192"><Logo variant="mark-white" bare width={461.239} height={560} label="" /></span>
     <div class="relative flex flex-col items-start gap-[32px] px-[20px] pt-[64px] pb-[56px] lg:gap-[40px] lg:px-[80px] lg:pt-[120px] lg:pb-[136px]">
-      <div class="flex flex-col items-start gap-[16px] w-full lg:w-auto lg:flex-row lg:items-center lg:gap-[24px]" data-node="229:9193" data-node-m="229:9439">
+      <div class="flex flex-row items-center gap-[16px] lg:gap-[24px]" data-node="229:9193" data-node-m="229:9439">
         <Chip dark class="lg:self-center" node="229:9194" nodeM="229:9440" textNode="229:9195" textNodeM="229:9441">§ 03</Chip>
         <span class="flex shrink-0" data-node="229:9668" data-node-m="229:9820"><Icon name="wind" size={24} /></span>
-        <h2 id="wind-collapse-title" class="m-0 w-full tm-h3 lg:t-h3 lg:w-[251px]" data-node="229:9196" data-node-m="229:9442">Wind and collapse.</h2>
       </div>
-      <p class="m-0 w-full tm-display lg:w-[864px] lg:t-display-l" data-node="229:9670" data-node-m="229:9822">Wind lifts shingles and breaks the seal.</p>
-      <p class="lg:hidden m-0 w-full tm-body" data-node-m="229:9823">The leak often shows up months later. We document uplift before it's called wear and tear. Snow load collapse gets the same structural review.</p>
-      <div class="hidden lg:flex items-start gap-[48px] t-lead" data-node="229:9671">
-        <p class="m-0 w-[420px]" data-node="229:9672">The leak often shows up months later. We document uplift before it's called wear and tear.</p>
-        <p class="m-0 w-[420px]" data-node="229:9673">Snow load collapse gets the same structural review.</p>
+      <h2 id="wind-collapse-title" class="m-0 w-full tm-display lg:t-display-l lg:w-[960px]" data-node="229:9670" data-node-m="229:9822">Wind Damage. Uplift Before It's Called Wear and Tear.</h2>
+      <div class="flex flex-col gap-[16px] lg:gap-[20px] w-full lg:w-[864px] tm-body lg:t-lead" data-node="229:9671" data-node-m="229:9823">
+        <p class="m-0" data-node="229:9672">Wind lifts shingles and breaks the seal. The leak often shows up months later. We document uplift before it's called wear and tear.</p>
+        <p class="m-0">Rain inside the house is the next argument. Some policies pay for rain damage inside only if wind or hail first opened the roof or walls. So the opening gets photographed and measured before the tarp goes on. Then cover it. Most policies require you to prevent further damage, and the tarp receipt belongs in the claim.</p>
+        <p class="m-0" data-node="229:9673">Snow load collapse gets the same structural review.</p>
       </div>
       <Ruler dark count={141} class="w-full lg:w-[1120px]" node="229:9674" nodeM="229:9824" />
     </div>

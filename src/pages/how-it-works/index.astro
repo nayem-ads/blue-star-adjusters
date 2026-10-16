@@ -11,8 +11,11 @@ import WhoDoesWhat from '../../sections/how-it-works/WhoDoesWhat.astro';
 import Contract from '../../sections/how-it-works/Contract.astro';
 import BeforeYouCall from '../../sections/how-it-works/BeforeYouCall.astro';
 import FinalCta from '../../sections/how-it-works/FinalCta.astro';
-const title = 'How a Public Adjuster Works on Your Claim | Blue Star';
-const description = 'Five steps from first call to settlement. What we do, and what you decide.';
+import KitTable from '../../sections/kit/KitTable.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+const title = 'How Does a Public Adjuster Work? 5 Steps | Blue Star';
+const description = 'A public adjuster works for you, not your insurer. Five steps from free review to settlement, one senior adjuster, and you decide on every offer.';
 ---
 <Base title={title} description={description}>
   <div class="hiw-hdr" data-node="128:3751" data-node-m="135:4641"><Header theme="light" /></div>
@@ -20,8 +23,50 @@ const description = 'Five steps from first call to settlement. What we do, and w
     <Hero />
     <Steps />
     <WhoDoesWhat />
+    <KitTable
+      id="hiw-vs-title"
+      bg="white"
+      title="Public Adjuster, Insurance Company Adjuster or Attorney?"
+      intro="All three can be part of a property claim. They work for different people."
+      head={['', 'Insurance company adjuster', 'Public adjuster', 'Attorney']}
+      rows={[
+        ['Works for', 'The insurance company', 'You, the policyholder', 'You'],
+        ['What they do', 'Inspects the loss and settles the claim for the insurer', 'Reads the policy, measures the loss, builds and negotiates the claim', 'Gives legal advice and takes a dispute to court'],
+        ['How they’re paid', 'By the insurance company', 'No upfront cost. We’re paid a percentage of what we recover.', 'Set by your agreement with them'],
+      ]}
+      note="We don’t give legal advice. When a claim needs counsel, we work alongside your attorney."
+    />
     <Contract />
+    <KitProse
+      id="hiw-license-title"
+      bg="white"
+      title="How to Check a Public Adjuster’s License"
+      body={[
+        'Public adjusters in California are licensed by the California Department of Insurance. Before you sign, look the license number up on the Department’s license search. Ours is CA DOI License No. 6015234.',
+        '[Check a license with the California Department of Insurance](https://cdicloud.insurance.ca.gov/cal/LicenseNumberSearch)',
+      ]}
+    />
+    <KitProse
+      id="hiw-worth-title"
+      bg="paper"
+      title="When a Public Adjuster May Not Be Worth It"
+      body={[
+        'On a small loss, or when the carrier’s offer is already fair, our fee may outweigh what we add. We’ll tell you so at the free review, before you sign anything.',
+        '[Is a public adjuster worth it?](/why-blue-star/)',
+      ]}
+    />
     <BeforeYouCall />
+    <KitFaq
+      id="hiw-faq-title"
+      bg="paper"
+      title="Questions About How a Public Adjuster Works"
+      items={[
+        { q: 'Does hiring a public adjuster slow the claim down?', a: 'It can. A 2010 Florida state study of claims at Citizens Property Insurance (OPPAGA Report 10-06) found that claims with a public adjuster took longer to settle than claims without one, and that the payments were higher before fees. More of the loss gets measured and argued, and that takes time.' },
+        { q: 'Do I still talk to my insurer?', a: 'You can. Most clients prefer we handle it.' },
+        { q: 'Will my insurer treat me differently?', a: 'Carriers work with public adjusters every day. The difference is what gets measured.' },
+        { q: 'When should I call a public adjuster?', a: ['As early as you can. Bringing us in before the first estimate is final, and before anything is thrown away, gives us the most room to work. If you already have an offer, it’s usually not too late.', '[When is it too late to hire a public adjuster?](/faq/)'] },
+      ]}
+    />
     <FinalCta />
   </main>
   <div data-node="128:5982" data-node-m="146:1056"><Footer /></div>

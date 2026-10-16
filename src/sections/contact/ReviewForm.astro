@@ -13,7 +13,7 @@ const steps = [
   { n: '02', t: "We read your policy and the carrier's letters.", d: '128:4673', dn: '128:4678', dt: '128:4679', m: '128:6902', mn: '128:6907', mt: '128:6908' },
   { n: '03', t: 'We tell you whether we can add value, and why.', d: '128:4680', dn: '128:4684', dt: '128:4685', m: '128:6909', mn: '128:6913', mt: '128:6914' },
 ];
-const states = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona'];
+const states = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Colorado'];
 const happened = ['Fire or smoke', 'Wildfire', 'Water', 'Wind, hail or tree', 'Collapse', 'Commercial loss', 'Other'];
 ---
 <section aria-labelledby="ct-next-h" class="ct-review relative overflow-hidden bg-navy text-white" data-node="128:4658" data-node-m="128:6889">
@@ -24,7 +24,7 @@ const happened = ['Fire or smoke', 'Wildfire', 'Water', 'Wind, hail or tree', 'C
   <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[64px] lg:px-[80px] lg:pt-[120px] lg:pb-[120px] lg:flex ct-review__row lg:items-start">
     <div class="lg:flex-1 lg:min-w-0 lg:pt-[48px]" data-node="128:4659">
       <SectionIndex n="03" tone="dark" node="128:4660" nodeM="128:6890" />
-      <h2 id="ct-next-h" class="m-0 mt-[32px] lg:mt-[24px] tm-h2 lg:t-h2 text-white" data-node="128:4664" data-node-m="128:6893">What happens next</h2>
+      <h2 id="ct-next-h" class="m-0 mt-[32px] lg:mt-[24px] tm-h2 lg:t-h2 text-white" data-node="128:4664" data-node-m="128:6893">What Happens Next</h2>
       <ol class="m-0 p-0 list-none mt-[32px] lg:mt-[56px]" data-node-m="128:6894">
         {steps.map((s, i) => (
           <li class:list={['ct-step relative flex gap-[20px] lg:gap-[24px]', i < steps.length - 1 && 'ct-step--line pb-[32px] lg:pb-[48px]']} data-node={s.d} data-node-m={s.m}>

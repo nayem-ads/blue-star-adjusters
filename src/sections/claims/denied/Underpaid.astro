@@ -1,0 +1,50 @@
+---
+// Denied / "Underpaid Insurance Claim? Start With the Scope." Content kit Prose layout (rail: § chip, H2, ruler; right: intro,
+// bullet list, two results with the results disclaimer, follow-up paragraphs, then the two CTA buttons). Page-specific.
+import Button from '../../../components/Button.astro';
+import Chip from '../Chip.astro';
+import Ticks from '../Ticks.astro';
+import KitStyles from '../../kit/KitStyles.astro';
+import { md } from '../../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../../data/site';
+interface Props {
+  chip: string; id: string; title: string; body: readonly string[]; list: readonly string[];
+  results: readonly { lead: string; text: string }[]; after: readonly string[];
+}
+const { chip, id, title, body, list, results, after } = Astro.props;
+---
+<KitStyles />
+<section aria-labelledby={id} class="bg-paper">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <Chip>{chip}</Chip>
+      <h2 id={id} class="m-0 w-full text-navy tm-h2 lg:t-h2">{title}</h2>
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+      {body.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      <ul class="m-0 mt-[24px] lg:mt-[32px] p-0 list-none flex flex-col border-t border-line">
+        {list.map((it) => (
+          <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+            <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+            <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+          </li>
+        ))}
+      </ul>
+      <div class="mt-[32px] lg:mt-[40px] flex flex-col gap-[16px] lg:flex-row lg:gap-[24px]">
+        {results.map((r) => (
+          <div class="flex-1 bg-white border-l-4 border-royal px-[20px] py-[20px] lg:px-[24px] lg:py-[24px] text-ink tm-body lg:t-body"><strong class="block font-semibold text-navy mb-[8px]">{r.lead}</strong>{r.text}</div>
+        ))}
+      </div>
+      <p class="m-0 mt-[16px] lg:mt-[20px] w-full flex items-start gap-[12px] lg:items-center lg:gap-[16px]">
+        <span aria-hidden="true" class="block w-[24px] h-px bg-navy shrink-0"></span>
+        <span class="bs-dden__disc flex-1 text-ink">Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</span>
+      </p>
+      {after.map((p) => <p class="m-0 mt-[24px] lg:mt-[32px] text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      <div class="mt-[32px] lg:mt-[40px] flex flex-col gap-[12px] lg:flex-row lg:gap-[16px]">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </div>
+  </div>
+</section>

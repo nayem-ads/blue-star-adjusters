@@ -1,31 +1,49 @@
 ---
-// Office page template: light header, Hero, Office, [Local line], State rule, Claim types, CTA, footer, mobile call bar.
+// Office page template: light header, Hero, then the page's blocks in content order (Office, Local line, State rule,
+// Claim types and prose / FAQ / link-list sections), CTA, footer, mobile call bar. Backgrounds alternate paper / white
+// around the fixed white Office and navy State rule sections.
 import Base from '../../layouts/Base.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CallBar from '../../components/CallBar.astro';
+import KitFaq from '../kit/KitFaq.astro';
 import Hero from './Hero.astro';
 import Office from './Office.astro';
 import LocalLine from './LocalLine.astro';
 import StateRule from './StateRule.astro';
 import ClaimTypes from './ClaimTypes.astro';
+import Prose from './Prose.astro';
+import LinkList from './LinkList.astro';
 import Cta from './Cta.astro';
-import { nodes, type OfficeData } from './types';
+import { nodes, officePhone, type Bg, type OfficeData } from './types';
 interface Props { data: OfficeData }
 const { data: d } = Astro.props;
+let prev: Bg | 'navy' = 'paper'; // hero
+const bgs = d.blocks.map((b) => {
+  const bg: Bg | 'navy' = b.type === 'office' ? 'white' : b.type === 'state' ? 'navy' : prev === 'paper' ? 'white' : 'paper';
+  prev = bg;
+  return bg as Bg;
+});
+const ctaBg: Bg = prev === 'paper' ? 'white' : 'paper';
 ---
 <Base title={d.title} description={d.description}>
   <div {...nodes(d, 'header')}><Header theme="light" /></div>
   <main class="bs-office bs-fit">
     <Hero data={d} />
-    <Office data={d} />
-    {d.local && <LocalLine data={d} />}
-    <StateRule data={d} />
-    <ClaimTypes data={d} />
-    <Cta data={d} />
+    {d.blocks.map((b, i) => {
+      const bg = bgs[i];
+      if (b.type === 'office') return <Office data={d} />;
+      if (b.type === 'local') return d.local && <LocalLine data={d} bg={bg} />;
+      if (b.type === 'state') return <StateRule data={d} />;
+      if (b.type === 'claims') return <ClaimTypes data={d} title={b.title} links={b.links} after={b.after} bg={bg} />;
+      if (b.type === 'prose') return <Prose block={b} phone={officePhone(d)} bg={bg} />;
+      if (b.type === 'faq') return <KitFaq id={b.id} title={b.title} items={b.items} bg={bg} />;
+      if (b.type === 'links') return <LinkList id={b.id} title={b.title} links={b.links} bg={bg} />;
+    })}
+    <Cta data={d} bg={ctaBg} />
   </main>
   <div {...nodes(d, 'footer')}><Footer /></div>
-  <CallBar node={d.n.callbar?.[1] ?? undefined} />
+  <CallBar node={d.n.callbar?.[1] ?? undefined} phone={officePhone(d)} />
 </Base>
 <style is:global>
   @media (max-width: 1023.98px) { .bs-office :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }

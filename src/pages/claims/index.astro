@@ -1,6 +1,7 @@
 ---
 // What We Do: the claims hub (Figma desktop 70:574, mobile 70:575). Indexable.
 // data-node = desktop node id, data-node-m = mobile node id (QA swaps them for the 390 run).
+// Copy: /home/claude/bluestar-work/pages/what-we-do/content.md (approved 2026-10-16).
 import Base from '../../layouts/Base.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -10,9 +11,26 @@ import Routing from '../../sections/what-we-do/Routing.astro';
 import LossIndex from '../../sections/what-we-do/LossIndex.astro';
 import Commercial from '../../sections/what-we-do/Commercial.astro';
 import Callouts from '../../sections/what-we-do/Callouts.astro';
-import Denied from '../../sections/what-we-do/Denied.astro';
-const title = 'Where Claims Go Wrong. Where We Start. | Blue Star';
-const description = "When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows what your rebuild costs. No upfront cost.";
+import FinalCta from '../../sections/what-we-do/FinalCta.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+const title = 'Public Adjuster Services in California | Blue Star Adjusters';
+const description = 'Fire, smoke, water, wind and contents claims for homes and businesses. A licensed public adjuster reads your policy, measures the loss and negotiates.';
+const steps = [
+  'Free review of your claim, at no cost or obligation.',
+  'Policy review: the whole policy, endorsements included.',
+  'Scope the loss: moisture mapping, testing and structural review where the loss calls for it.',
+  'Build your claim: an itemized claim package, sent only with your approval.',
+  'Negotiate the settlement with your insurer, line by line.',
+];
+const faq = [
+  { q: 'What kinds of insurance claims do you handle?', a: 'Property claims for homes and businesses: fire and smoke, wildfire, water, wind, hail and falling trees, contents and valuables, additional living expenses, code upgrades, and claims that were denied or underpaid. Each one has its own page above.' },
+  { q: 'Where are you licensed?', a: ['Blue Star Adjusters is licensed in California, Nevada, Oregon, Washington, Arizona and Colorado. Our California license is CA DOI License No. 6015234. In California, our offices are in Sacramento, San Francisco and Santa Monica.', '[Our offices](/locations/)'] },
+  { q: 'My insurance company already sent an adjuster. Why would I need another one?', a: 'Their adjuster works for the insurance company. A public adjuster is licensed to work only for you, the policyholder. We start from their estimate and measure what it left out.' },
+  { q: 'I already have an offer. Is it too late?', a: 'Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.' },
+  { q: 'How are you paid?', a: ["No upfront cost. We're paid a percentage of what we recover. The free review costs nothing, and if we can't add value, we'll say so.", '[Public adjuster fees, explained](/fees/)'] },
+  { q: 'Do you do the repairs?', a: 'No. We measure and negotiate. Your contractor builds.' },
+];
 ---
 <Base title={title} description={description}>
   <div data-node="73:830" data-node-m="74:3456"><Header theme="light" /></div>
@@ -22,7 +40,9 @@ const description = "When your home is damaged, your insurer sends their adjuste
     <LossIndex />
     <Commercial />
     <Callouts />
-    <Denied />
+    <KitProse id="wwd-steps-title" title="How a Claim With Blue Star Runs" body={['Five steps, from a free review to the settlement. You decide on every offer.']} list={steps} listStyle="number" after={['[How a public adjuster works on your claim](/how-it-works/)']} bg="paper" />
+    <KitFaq id="wwd-faq-title" title="Questions About Public Adjuster Services in California" items={faq} bg="white" />
+    <FinalCta />
   </main>
   <div data-node="74:872" data-node-m="74:4275"><Footer /></div>
   <CallBar />

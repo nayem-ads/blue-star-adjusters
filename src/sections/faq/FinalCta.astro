@@ -1,8 +1,7 @@
 ---
 // FAQ Final CTA. Desktop 217:7619 (1280×569), mobile 217:11315 (390×667). Navy band: royal rule + H2 (left),
-// lead, on-dark buttons and hours (right), faint white B-mark (5 %), white ruler ticks along the bottom edge.
+// lead and on-dark buttons (right), faint white B-mark (5 %), white ruler ticks along the bottom edge.
 import Button from '../../components/Button.astro';
-import Icon from '../../components/Icon.astro';
 import Logo from '../../components/Logo.astro';
 import Ruler from './Ruler.astro';
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
@@ -23,10 +22,6 @@ import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
         <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto" node="217:7626" data-node-m="217:11327">Schedule a Free Review</Button>
         <Button href={PHONE_TEL} variant="outline-on-dark" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto" node="217:7630" data-node-m="217:11328">Call {PHONE_DISPLAY}</Button>
       </div>
-      <p class="m-0 w-full flex items-center gap-[12px] pt-[24px] border-t border-white" data-node="217:7634" data-node-m="217:11329">
-        <span class="block shrink-0 w-[24px] h-[24px]" data-node="217:7635" data-node-m="217:11330"><Icon name="clock" size={24} class="block" /></span>
-        <span class="flex-1 min-w-0 text-[15px] leading-[24px] font-medium" data-node="217:7638" data-node-m="217:11331">Monday to Friday, 9 AM to 5 PM Pacific.</span>
-      </p>
     </div>
   </div>
   <Ruler anchor="bottom" class="absolute left-0 bottom-0 w-full h-[16px] text-white opacity-25" node="217:7644" nodeM="217:11339" />

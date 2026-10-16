@@ -12,8 +12,26 @@ import ReviewForm from '../../sections/contact/ReviewForm.astro';
 import Offices from '../../sections/contact/Offices.astro';
 import TimingNote from '../../sections/contact/TimingNote.astro';
 import Closing from '../../sections/contact/Closing.astro';
-const title = 'Contact Blue Star Adjusters | One Call, a Straight Answer';
-const description = "Tell us what happened. We'll read your policy and the carrier's letters, and tell you whether we can add value, and why. Call (916) 507-1005.";
+import WhenToContact from '../../sections/contact/WhenToContact.astro';
+import FinalCta from '../../sections/contact/FinalCta.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+const title = 'Contact Blue Star Adjusters | Licensed Public Adjusters';
+const description = 'Call (888) 971-2524, Monday to Friday, 9 AM to 5 PM Pacific, or send your claim for review. We call back the same business day. Head office in Sacramento.';
+const faq = [
+  { q: 'How fast will you call me back?', a: 'The same business day. Our hours are Monday to Friday, 9 AM to 5 PM Pacific. Send the form outside those hours and we call the next business day.' },
+  { q: 'Is the first review free?', a: 'Yes. There is no cost or obligation for the initial review.' },
+  { q: 'What should I have ready?', a: "Whatever you have. The policy, the carrier's letters, photos. You can also send them after the first call." },
+  { q: 'Do I still talk to my insurer?', a: 'You can. Most clients prefer we handle it. California law says it plainly: you have the right to communicate with your insurance company at any time.' },
+  { q: 'What happens after the review?', a: 'We tell you whether we can add value, and why. If you hire us, the percentage is set in writing before we start. In California you may cancel within three business days of signing and receiving the contract, or five calendar days if your property is in a declared catastrophic disaster area.' },
+  { q: 'Which office should I call?', a: 'The toll free line, (888) 971-2524, or the local number of the office nearest the property. Every number reaches Blue Star Adjusters, and a senior adjuster leads every claim, from the first call to the final settlement.' },
+];
+const related = [
+  '[Request a free claim review](/free-claim-review/)',
+  '[How a public adjuster works on your claim](/how-it-works/)',
+  '[Public adjuster fees](/fees/)',
+  '[All locations and licenses](/locations/)',
+];
 ---
 <Base title={title} description={description}>
   <ContactStyles />
@@ -23,9 +41,13 @@ const description = "Tell us what happened. We'll read your policy and the carri
     <PhotoBand />
     <Ledger />
     <ReviewForm />
+    <WhenToContact />
     <Offices />
     <TimingNote />
+    <KitFaq id="ct-faq" title="Questions Before You Call" items={faq} bg="white" />
+    <KitProse id="ct-related" title="Related" list={related} bg="paper" />
     <Closing />
+    <FinalCta />
   </main>
   <div data-node="128:5914" data-node-m="135:1735"><Footer /></div>
   <CallBar />

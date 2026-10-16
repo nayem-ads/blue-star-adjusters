@@ -1,14 +1,21 @@
 ---
 // ALE § 01 Includes. Desktop 238:881, mobile 238:1147.
-// Rail (chip, heading, ruler ticks) + oversized lead under a royal rule. On mobile the hero's lead paragraph
-// (slot/hero/6, 240:947) opens this section instead of sitting in the hero. The heading renders #000 in Figma (not navy).
+// Rail (chip, heading, ruler ticks) + oversized lead under a royal rule, then the cost list and follow-up paragraphs.
+// On mobile the hero's lead paragraphs and tagline (slot/hero/6, 240:947) open this section instead of sitting in the hero.
+// The heading renders #000 in Figma (not navy).
 import Ticks from '../contents/Ticks.astro';
-interface Props { heroLead: string; chip: string; heading: string; lead: string }
-const { heroLead, chip, heading, lead } = Astro.props;
+import KitStyles from '../../kit/KitStyles.astro';
+import { md } from '../../kit/md';
+interface Props { heroLead: readonly string[]; heroTagline?: string; chip: string; heading: string; lead: string; list?: string[]; after?: string[] }
+const { heroLead, heroTagline, chip, heading, lead, list = [], after = [] } = Astro.props;
 ---
+<KitStyles />
 <section aria-labelledby="includes-title" class="bg-paper" data-node="238:881" data-node-m="238:1147">
   <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
-    <p class="lg:hidden m-0 tm-lead text-ink" data-node-m="240:947">{heroLead}</p>
+    <div class="lg:hidden flex flex-col gap-[16px] pb-[32px] border-b border-line" data-node-m="240:947">
+      {heroLead.map((p) => <p class="m-0 tm-lead text-ink">{p}</p>)}
+      {heroTagline && <p class="m-0 pt-[8px] tm-h3 italic text-navy">{heroTagline}</p>}
+    </div>
     <div class="flex flex-col gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0" data-node="238:882" data-node-m="238:1148">
       <div class="inline-flex self-start px-[8px] py-[4px] border border-navy rounded-[2px]" data-node="238:883" data-node-m="238:1149">
         <span class="tm-label lg:t-label text-navy" data-node="238:884" data-node-m="238:1150">{chip}</span>
@@ -16,9 +23,24 @@ const { heroLead, chip, heading, lead } = Astro.props;
       <h2 id="includes-title" class="m-0 tm-h3 lg:t-h3 text-black" data-node="238:885" data-node-m="238:1151">{heading}</h2>
       <Ticks class="w-[200px] lg:w-[360px]" node="238:886" nodeM="238:1152" />
     </div>
-    <div class="flex flex-col lg:flex-1" data-node="238:933" data-node-m="238:1179">
+    <div class="flex flex-col lg:flex-1 lg:min-w-0" data-node="238:933" data-node-m="238:1179">
       <span aria-hidden="true" class="block w-[40px] h-[4px] bg-royal lg:w-[48px]" data-node="239:993" data-node-m="240:948"></span>
       <p class="bs-ale-lead m-0 text-ink" data-node="239:994" data-node-m="240:949">{lead}</p>
+      {list.length > 0 && (
+        <ul class="m-0 mt-[32px] lg:mt-[48px] p-0 list-none flex flex-col border-t border-line">
+          {list.map((it) => (
+            <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+              <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>
+              <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+            </li>
+          ))}
+        </ul>
+      )}
+      {after.length > 0 && (
+        <div class="bs-kit-prose mt-[24px] lg:mt-[32px]">
+          {after.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+        </div>
+      )}
     </div>
   </div>
 </section>

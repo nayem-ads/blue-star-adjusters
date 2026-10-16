@@ -1,27 +1,65 @@
 ---
-// Why now: The Rules Changed. Desktop 53:279, mobile 62:637.
-import Pic from './Pic.astro';
+// What can a public adjuster do for me (Figma Homepage v2 486:1665): explainer left, four numbered steps right.
+// Replaces the old "The Rules Changed" block in this slot (content.md: what-a-public-adjuster-does).
 import Icon from '../../components/Icon.astro';
-import Logo from '../../components/Logo.astro';
-import FactChip from './FactChip.astro';
+import { ROUTES } from '../../data/site';
+const steps = [
+  { icon: 'document', text: 'We read the whole policy, including every endorsement, before we tell you what it should pay.' },
+  { icon: 'ruler', text: 'We measure what the first estimate missed: hidden water, smoke in porous materials, code upgrades.' },
+  { icon: 'search', text: 'Then we build the claim line by line and present it with your approval.' },
+  { icon: 'shield', text: 'We negotiate. You always have final say on any settlement.' },
+];
+const buckets = [
+  { t: 'Dwelling.', d: 'The structure, returned to its condition before the loss and to current code.' },
+  { t: 'Other structures.', d: 'Fences, decks, garages, barns, guest houses.' },
+  { t: 'Contents.', d: 'Everything inside, from furniture to fine art.' },
+  { t: 'Loss of use.', d: 'Comparable living while you’re displaced, including pet accommodations where your policy allows.' },
+];
 ---
-<section aria-labelledby="rules-title" class="relative bg-navy text-white overflow-hidden" data-node="53:279" data-node-m="62:637">
-  <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:items-stretch">
-    <div class="relative h-[300px] lg:h-auto lg:w-[520px] lg:shrink-0" data-node="53:280" data-node-m="62:638">
-          <Pic d="53:280" m="62:638" alt="Fire-damaged exterior stair and debris beside a white modern house." wrap="absolute inset-0" />
-    </div>
-    <div class="relative flex-1 min-w-0 flex flex-col items-start gap-[20px] lg:gap-[32px] px-[20px] pt-[48px] pb-[56px] lg:pl-[96px] lg:pr-[80px] lg:py-[120px]" data-node="53:281" data-node-m="62:639">
-      <span aria-hidden="true" class="lg:hidden absolute left-[190px] top-[480px] opacity-[.05] pointer-events-none"><Logo variant="mark-white" bare width={280} height={340} label="" /></span>
-      <h2 id="rules-title" class="relative m-0 tm-h2 lg:t-h2 w-full" data-node="53:282" data-node-m="62:640">The Rules Changed.<br class="hidden lg:inline" /> The First Estimate Didn’t.</h2>
-      <FactChip icon="document" theme="dark" class="relative" node="73:1801" nodeM="74:3127">Signed September 15, 2026</FactChip>
-      <div class="relative contents lg:flex lg:flex-col lg:gap-[16px] lg:w-full" data-node="53:283">
-        <p class="m-0 tm-body lg:t-body" data-node="53:284" data-node-m="62:641">California’s Smoke Damage Recovery Act, signed September 15, 2026, presumes smoke in a home inside a wildfire zone came from that fire, and makes insurers pay for the testing.</p>
-        <p class="m-0 tm-body lg:t-body" data-node="53:285" data-node-m="62:642">But the carrier still writes the first estimate. We measure the loss forensically and push for what it takes to return your property to its pre-loss condition.</p>
+<section aria-labelledby="pa-title" class="pa relative bg-paper overflow-hidden">
+  <div aria-hidden="true" class="pa-grid hidden lg:block absolute pointer-events-none"></div>
+  <div class="relative max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[40px] lg:flex-row lg:items-start lg:gap-[96px]">
+    <div class="flex flex-col items-start gap-[24px] lg:gap-[32px] lg:w-[520px] lg:shrink-0">
+      <h2 id="pa-title" class="m-0 tm-h2 lg:t-h2 text-navy">What Can a Public Adjuster Do for Me?</h2>
+      <p class="m-0 tm-body lg:t-body text-ink">A public adjuster reads your policy, measures and documents the full loss, builds an itemized claim and negotiates with your insurer on your behalf. You decide on every offer. Some people call us a public insurance adjuster or a private adjuster. Whatever the name, a public adjuster works for the policyholder and never for the insurance company.</p>
+      <div class="w-full bg-white border border-line">
+        <h3 class="m-0 px-[20px] pt-[20px] pb-[16px] lg:px-[28px] lg:pt-[24px] tm-body-strong lg:t-body-strong text-navy">Four buckets. We measure each one.</h3>
+        <ul class="m-0 p-0 list-none grid grid-cols-1 sm:grid-cols-2 border-t border-line">
+          {buckets.map((b, i) => (
+            <li class:list={['flex flex-col gap-[4px] px-[20px] py-[16px] lg:px-[28px] lg:py-[20px] border-line', i > 0 && 'border-t', i === 1 && 'sm:border-t-0', i % 2 === 1 && 'sm:border-l']}>
+              <strong class="t-label text-royal uppercase tracking-[0.06em]">{b.t}</strong>
+              <span class="t-small text-ink">{b.d}</span>
+            </li>
+          ))}
+        </ul>
       </div>
-      <blockquote class="relative m-0 w-full flex flex-col items-start border-l-2 border-white/40 lg:border-[#051138] pl-[20px] lg:pl-[32px] py-[8px]" data-node="53:286" data-node-m="62:643">
-        <Icon name="quote" size={40} class="text-white lg:text-white/15 w-[32px] h-[32px] lg:w-[40px] lg:h-[40px]" />
-        <p class="m-0 tm-h3 lg:t-h3" data-node="53:287" data-node-m="62:644">Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas.<br />That wealth came<br class="lg:hidden" /> from somewhere.</p>
-      </blockquote>
+    </div>
+    <div class="flex-1 min-w-0 flex flex-col gap-[24px] lg:pt-[8px]">
+      <ol class="steps m-0 p-0 list-none flex flex-col">
+        {steps.map((s, i) => (
+          <li class="step relative flex gap-[20px] lg:gap-[24px] pb-[28px] last:pb-0">
+            <span aria-hidden="true" class:list={['relative z-[1] flex items-center justify-center w-[44px] h-[44px] lg:w-[48px] lg:h-[48px] rounded-full shrink-0 t-label', i === 0 ? 'bg-royal text-white' : 'bg-white text-navy border-[1.5px] border-royal']} data-n={`0${i + 1}`}></span>
+            <span class="flex-1 min-w-0 flex items-start gap-[12px] pt-[8px] lg:pt-[10px]">
+              <Icon name={s.icon} size={20} class="hidden lg:block text-royal shrink-0 mt-[4px]" />
+              <span class="tm-body lg:t-body text-ink">{s.text}</span>
+            </span>
+          </li>
+        ))}
+      </ol>
+      <a href={ROUTES.howItWorks} class="pa-link self-start flex items-center gap-[8px] min-h-[44px] tm-body-strong lg:t-body-strong text-royal lg:ml-[72px]"><span>See how a claim works, step by step</span><Icon name="arrow-right" size={24} /></a>
     </div>
   </div>
 </section>
+<style>
+  [data-n]::before { content: attr(data-n); }
+  .step:not(:last-child)::before { content: ''; position: absolute; left: 21px; top: 44px; bottom: 0; width: 1.5px; background: var(--color-royal); }
+  @media (min-width: 1024px) { .step:not(:last-child)::before { left: 23px; top: 48px; } }
+  .pa-grid {
+    right: 0; top: 33%; width: 46%; bottom: 0;
+    background:
+      linear-gradient(to right, rgb(19 63 170 / .06) 1px, transparent 1px) 0 0 / 40px 40px,
+      linear-gradient(to bottom, rgb(19 63 170 / .06) 1px, transparent 1px) 0 0 / 40px 40px;
+  }
+  .pa-link { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color .15s ease; }
+  .pa-link:hover, .pa-link:focus-visible { text-decoration-color: currentColor; }
+</style>

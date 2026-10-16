@@ -9,7 +9,10 @@ import Cta from '../../../sections/claims/Cta.astro';
 import Scope from '../../../sections/claims/commercial/Scope.astro';
 import List from '../../../sections/claims/commercial/List.astro';
 import Index from '../../../sections/claims/commercial/Index.astro';
-import { page, hero, scope, cta } from '../../../data/claims/commercial';
+import Proof from '../../../sections/claims/commercial/Proof.astro';
+import KitProse from '../../../sections/kit/KitProse.astro';
+import KitFaq from '../../../sections/kit/KitFaq.astro';
+import { page, hero, scope, businessIncome, contingent, tenant, equipment, code, proof, attorney, notFor, faq, cta } from '../../../data/claims/commercial';
 ---
 <Base title={page.title} description={page.description}>
   <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
@@ -17,6 +20,15 @@ import { page, hero, scope, cta } from '../../../data/claims/commercial';
     <Hero {...hero} />
     <Scope {...scope} />
     <List />
+    <KitProse {...businessIncome} />
+    <KitProse {...contingent} />
+    <KitProse {...tenant} />
+    <KitProse {...equipment} />
+    <KitProse {...code} />
+    <Proof {...proof} />
+    <KitProse {...attorney} />
+    <KitProse {...notFor} />
+    <KitFaq {...faq} />
     <Index />
     <Cta {...cta} />
   </main>
@@ -24,5 +36,8 @@ import { page, hero, scope, cta } from '../../../data/claims/commercial';
   <CallBar node={page.callBar} />
 </Base>
 <style is:global>
-  @media (max-width: 1023.98px) { .bs-commercial :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+  @media (max-width: 1023.98px) { .bs-commercial :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display,.bs-cm-h1){position:relative;top:1px} }
+  /* Mobile hero: the longer H1 and the direct answer lead need the content to start under the header, on the photo ramp. */
+  @media (max-width: 1023.98px) { .bs-commercial .bs-chero > .relative { padding-top: 300px; } }
+  .bs-cm-h1 { font-family: var(--font-display); font-weight: 700; font-size: 38px; line-height: 42px; letter-spacing: -0.025em; }
 </style>

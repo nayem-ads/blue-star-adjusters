@@ -11,8 +11,9 @@ import images from '../../data/images.json';
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
 const imgs = images as Record<string, { src: string; width: number; height: number }>;
 const desk = imgs['73:915'];
+const lead = "Blue Star Adjusters provides public adjuster services in California, and across the other states where we're licensed, to homeowners and businesses who need insurance claim help on a property loss. We take on fire and smoke, wildfire, water, wind and hail, lost contents, and the cost of living elsewhere while you rebuild. We read your policy, measure the full loss, build the claim and negotiate it with your insurer. A senior adjuster leads every claim, from the first call to the final settlement.";
 const trust = [
-  { icon: 'shield', text: "No upfront cost. We're paid a percentage of what we recover.", d: ['73:900', '73:904'], m: ['74:3497', '74:3501'] },
+  { icon: 'shield', text: 'No upfront cost', d: ['73:900', '73:904'], m: ['74:3497', '74:3501'] },
   { icon: 'check', text: 'You always have final say on any settlement.', d: ['73:905', '73:908'], m: ['74:3502', '74:3505'] },
   { icon: 'document', text: 'CA DOI License No. 6015234', d: ['73:909', '73:913'], m: ['74:3506', '74:3510'] },
 ];
@@ -23,11 +24,12 @@ const trust = [
   <div class="relative max-w-[1280px] mx-auto flex flex-col gap-[20px] px-[20px] pt-[24px] pb-[48px] lg:flex-row lg:items-start lg:gap-[64px] lg:px-[80px] lg:pt-[96px] lg:pb-[120px]">
     <div class="contents lg:flex lg:flex-col lg:gap-[32px] lg:items-start lg:flex-[0_1_560px] lg:min-w-0" data-node="73:883">
       <div class="hidden lg:block w-fit" data-node="73:884"><Eyebrow>What we do</Eyebrow></div>
-      <h1 id="wwd-hero-title" class="m-0 text-navy tm-display lg:t-display-l lg:w-full" data-node="73:887" data-node-m="74:3485">
-        Where Claims<br class="hidden lg:inline" /> Go Wrong.<br class="hidden lg:inline" /> Where We Start.
-      </h1>
-      <p class="hidden lg:block m-0 t-lead text-ink w-full" data-node="73:888">When your home is damaged, your insurer sends their adjuster. We send ours: a developer who knows exactly what your rebuild costs and won't let the carrier set the scope.</p>
-      <p class="lg:hidden m-0 tm-lead text-ink" data-node-m="74:3486">Your insurer sends their adjuster. We send ours.</p>
+      <h1 id="wwd-hero-title" class="m-0 text-navy tm-display lg:t-display-l lg:w-full" data-node="73:887" data-node-m="74:3485">Public Adjuster Services for California Homes and Businesses.</h1>
+      <p class="m-0 tm-body lg:t-lead text-ink w-full" data-node="73:888" data-node-m="74:3486">{lead}</p>
+      <div class="flex flex-col gap-[4px] w-full pl-[16px] border-l-2 border-royal">
+        <p class="m-0 tm-body-strong lg:t-body-strong text-navy"><em>Our ability to affect your outcome diminishes with time.</em></p>
+        <p class="m-0 tm-body lg:t-body text-ink">Call us first, and we can look at your claim the same business day.</p>
+      </div>
       <div class="flex flex-col gap-[12px] w-full lg:flex-row lg:gap-[16px] lg:w-auto" data-node="73:889" data-node-m="74:3487">
         <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] lg:h-[52px] lg:w-[253px]" data-node="73:890" data-node-m="74:3488">Schedule a Free Review</Button>
         <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] lg:h-[52px] lg:w-[235px]" data-node="73:895" data-node-m="74:3492">Call {PHONE_DISPLAY}</Button>

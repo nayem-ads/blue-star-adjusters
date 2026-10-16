@@ -1,0 +1,43 @@
+---
+// Free Claim Review / standard final CTA (RULES 4). Same band as the claims CTA (white, display phone, hours, wave corner);
+// the first button jumps back to this page's form.
+import Button from '../../components/Button.astro';
+import Icon from '../../components/Icon.astro';
+import WaveCorner from '../../components/WaveCorner.astro';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+---
+<section aria-labelledby="fcr-cta" class="relative overflow-hidden bg-white">
+  <div class="relative z-[1] max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[112px] lg:px-[80px] lg:py-[120px] flex flex-col items-start gap-[32px]">
+    <div class="flex flex-col gap-[16px] lg:gap-[32px]">
+      <h2 id="fcr-cta" class="m-0 tm-h2 lg:t-display-l text-navy lg:w-[860px] max-w-full">Call Before the Carrier Sets the Narrative.</h2>
+      <p class="m-0 tm-body lg:t-lead text-ink lg:w-[560px] max-w-full">Your insurance company has an adjuster protecting their interests. You have the right to one too.</p>
+    </div>
+    <div class="w-full lg:w-auto flex flex-col items-start gap-[32px] lg:flex-row lg:items-end lg:gap-[64px] lg:pt-[24px]">
+      <a href={PHONE_TEL} class="group flex flex-col items-start gap-[8px]">
+        <span class="tm-label lg:t-label text-ink">Call</span>
+        <span class="fcr-cta__num text-navy whitespace-nowrap">{PHONE_DISPLAY}</span>
+        <span aria-hidden="true" class="block w-full h-[4px] bg-royal"></span>
+      </a>
+      <p class="m-0 w-full lg:w-auto flex items-center gap-[12px] lg:pb-[12px] text-ink">
+        <Icon name="clock" size={24} class="shrink-0" />
+        <span class="fcr-cta__hours flex-1 lg:flex-none">Monday to Friday, 9 AM to 5 PM Pacific</span>
+      </p>
+    </div>
+    <div class="w-full lg:w-auto flex flex-col gap-[12px] lg:flex-row lg:gap-[16px] lg:pt-[16px]">
+      <Button href="#fcr-form" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Request My Review</Button>
+      <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+    </div>
+  </div>
+  <div class="absolute right-0 bottom-0 w-[180px] h-[100px] lg:w-[360px] lg:h-[200px]">
+    <WaveCorner position="bottom-right" class="block w-full h-full" />
+  </div>
+</section>
+
+<style is:global>
+  .fcr-cta__num { font-family: var(--font-display); font-weight: 700; font-size: 46px; line-height: 48px; letter-spacing: -0.025em; }
+  .fcr-cta__hours { font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 26px; }
+  @media (min-width: 1024px) {
+    .fcr-cta__num { font-size: 96px; line-height: 96px; letter-spacing: -0.03em; }
+    .fcr-cta__hours { font-size: 15px; line-height: 24px; }
+  }
+</style>

@@ -14,8 +14,9 @@ const fact = 'm-0 t-caption text-ink whitespace-nowrap';
   <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:items-stretch lg:gap-[80px] lg:pl-[80px]">
     <div class="flex flex-col items-start px-[20px] pt-[32px] pb-[40px] lg:px-0 lg:pt-[96px] lg:pb-[80px] lg:flex-[0_1_560px] lg:min-w-[440px]" data-node="128:3394">
       <div data-node="128:3395" data-node-m="128:6185"><Eyebrow>Fees</Eyebrow></div>
-      <h1 id="fees-h1" class="m-0 mt-[16px] lg:mt-[28px] text-navy tm-display lg:t-display-l w-full" data-node="128:3399" data-node-m="128:6189">Paid From What We Recover. Nothing Before.</h1>
+      <h1 id="fees-h1" class="m-0 mt-[16px] lg:mt-[28px] text-navy tm-display lg:t-display-l w-full" data-node="128:3399" data-node-m="128:6189">Public Adjuster Fees: Nothing Up Front. Paid From What We Recover.</h1>
       <p class="m-0 mt-[16px] lg:mt-[28px] text-ink tm-lead lg:t-lead w-[330px] lg:w-[440px]" data-node="128:3401" data-node-m="128:6191">No retainer, no hourly bill, and no cost for the initial review.</p>
+      <p class="m-0 mt-[16px] lg:mt-[20px] text-ink tm-body lg:t-body w-full lg:max-w-[560px]">Public adjuster fees in California are usually a percentage of the insurance settlement, not an hourly rate or a retainer. Blue Star works that way. No upfront cost. We're paid a percentage of what we recover. The percentage is agreed in writing before we start, and in California our fee can never leave you with less than your insurer had already paid before you hired us.</p>
       <div class="flex flex-col gap-[12px] mt-[24px] w-full lg:flex-row lg:gap-[16px] lg:mt-[40px] lg:w-auto" data-node="128:3403" data-node-m="128:6193">
         <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="128:3404" data-node-m="128:6194">Schedule a Free Review</Button>
         <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="128:3408" data-node-m="128:6198">Call {PHONE_DISPLAY}</Button>
@@ -26,7 +27,11 @@ const fact = 'm-0 t-caption text-ink whitespace-nowrap';
         </div>
       </div>
       <div aria-hidden="true" class="hidden lg:block mt-[48px] w-full h-px bg-line" data-node="128:3413"></div>
-      <ul class="m-0 p-0 list-none flex flex-col items-start gap-[12px] w-full lg:w-auto mt-[128px] lg:mt-0 lg:flex-row lg:gap-[32px] lg:pt-[20px]" data-node="128:3414" data-node-m="128:6208">
+      <ul class="m-0 p-0 list-none flex flex-col items-start gap-[12px] w-full lg:w-auto mt-[128px] lg:mt-0 lg:flex-row lg:flex-wrap lg:gap-x-[32px] lg:gap-y-[12px] lg:pt-[20px]" data-node="128:3414" data-node-m="128:6208">
+        <li class="flex items-center gap-[8px] lg:gap-[12px]">
+          <Icon name="check" size={20} class="shrink-0 text-navy lg:text-royal w-[16px] h-[16px] lg:w-[20px] lg:h-[20px]" />
+          <p class={fact}>No upfront cost</p>
+        </li>
         <li class="flex items-center gap-[8px] lg:gap-[12px]" data-node="128:3415" data-node-m="128:6209">
           <Icon name="shield" size={20} class="shrink-0 text-navy lg:text-royal w-[16px] h-[16px] lg:w-[20px] lg:h-[20px]" />
           <p class={fact} data-node="128:3419" data-node-m="128:6213">You always have final say on any settlement</p>
@@ -37,7 +42,7 @@ const fact = 'm-0 t-caption text-ink whitespace-nowrap';
         </li>
       </ul>
     </div>
-    <div class="hidden lg:block lg:flex-[0_1_560px] lg:min-w-0 h-[704px]" data-node="128:3425">
+    <div class="hidden lg:block lg:flex-[0_1_560px] lg:min-w-0 lg:min-h-[704px]" data-node="128:3425">
       <Img node="I128:3425;41:71" alt={alt} priority class="block w-full h-full object-cover" />
     </div>
   </div>

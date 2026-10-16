@@ -1,8 +1,6 @@
 ---
 // How It Works / Before you call (margin label). Desktop 128:5068 (1280×730), mobile 146:942 (390×834).
-import Button from '../../components/Button.astro';
 import Icon from '../../components/Icon.astro';
-import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
 const items = [
   { t: 'Get safe. Don’t go back in until officials clear the property.', d: ['128:5219', '128:5223'], m: ['146:998', '146:1002'] },
   { t: 'Photograph and video everything before anything is moved or cleaned.', d: ['128:5224', '128:5228'], m: ['146:1003', '146:1007'] },
@@ -13,15 +11,15 @@ const items = [
 // Ruler ticks every 8px: 16px tall every 80px, 10px every 40px, 6px otherwise.
 const ticks = Array.from({ length: 141 }, (_, i) => i);
 ---
-<section aria-labelledby="hiw-before-title" class="relative bg-paper h-[834px] lg:h-[730px]" data-node="128:5068" data-node-m="146:942">
-  <div class="max-w-[1280px] mx-auto px-[20px] pt-[56px] lg:px-[80px] lg:pt-0">
+<section aria-labelledby="hiw-before-title" class="relative bg-white" data-node="128:5068" data-node-m="146:942">
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[56px] pb-[56px] lg:px-[80px] lg:pt-0 lg:pb-[120px]">
     <div aria-hidden="true" class="relative h-[16px] overflow-hidden w-full opacity-45" data-node="128:5069" data-node-m="146:943">
       {ticks.map((i) => <span class="absolute top-0 w-px bg-navy" style={`left:${i * 8}px;height:${i % 10 === 0 ? 16 : i % 5 === 0 ? 10 : 6}px`}></span>)}
     </div>
     <div class="mt-[32px] lg:mt-[104px] flex flex-col lg:flex-row lg:justify-between">
       <div class="lg:self-start lg:w-[264px] lg:border-t lg:border-navy lg:pt-[20px] flex items-center gap-[16px] lg:flex-col lg:items-start lg:gap-[20px]" data-node="128:5211" data-node-m="146:989">
         <span aria-hidden="true" class="flex items-center justify-center size-[40px] rounded-full border border-navy bg-white text-navy box-border shrink-0" data-node="128:5213" data-node-m="146:990"><Icon name="clock" size={24} /></span>
-        <h2 id="hiw-before-title" class="m-0 flex-1 min-w-0 text-navy tm-h2 lg:flex-none lg:t-h3 lg:w-full" data-node="128:5217" data-node-m="146:994">Before you call</h2>
+        <h2 id="hiw-before-title" class="m-0 flex-1 min-w-0 text-navy tm-h2 lg:flex-none lg:t-h3 lg:w-full" data-node="128:5217" data-node-m="146:994">Before You Call</h2>
       </div>
       <div class="mt-[20px] lg:mt-0 lg:w-[736px]" data-node="128:5218">
         <ul class="m-0 p-0 list-none border-t border-navy/30 lg:border-line" data-node-m="146:997">
@@ -34,9 +32,8 @@ const ticks = Array.from({ length: 141 }, (_, i) => i);
         </ul>
         <div class="flex flex-col items-start lg:flex-row lg:items-center lg:gap-[32px] lg:w-fit mt-[24px] lg:mt-0 lg:pt-[40px]" data-node="128:5244">
           <a href="/first-48-hours/" class="hiw-link inline-flex items-center gap-[8px] h-[44px] lg:h-[28px] text-navy lg:text-royal font-body font-semibold text-[16px] leading-[26px] lg:text-[17px] lg:leading-[28px] underline [text-underline-position:from-font]" data-node="128:5245" data-node-m="146:1024">
-            <span>The First 48 Hours checklist</span><Icon name="arrow-right" size={24} class="shrink-0" />
+            <span>What to do after a house fire or flood</span><Icon name="arrow-right" size={24} class="shrink-0" />
           </a>
-          <Button href={PHONE_TEL} variant="outline" icon="phone" class="mt-[16px] lg:mt-0 w-full h-[56px] lg:w-[235px] lg:h-[52px]" data-node="128:5249" data-node-m="146:1030">Call {PHONE_DISPLAY}</Button>
         </div>
       </div>
     </div>

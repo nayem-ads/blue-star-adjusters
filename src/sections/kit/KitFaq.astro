@@ -1,0 +1,33 @@
+---
+// Content kit / FAQ: always open Q/A rows (no accordion), same pattern as Fees "Fee questions" (128:4832).
+// Usage: <KitFaq chip="§ 07" title="Questions about fire claims" items={[{ q: '…', a: ['para 1', 'para 2 with [link](/x/)'] }]} />
+import Chip from '../claims/Chip.astro';
+import KitStyles from './KitStyles.astro';
+import { md } from './md';
+interface Props { chip?: string; title: string; id?: string; items: { q: string; a: string | string[] }[]; bg?: 'paper' | 'white' }
+const { chip, title, id = 'kit-faq', items, bg = 'white' } = Astro.props;
+---
+<KitStyles />
+<section aria-labelledby={id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']}>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[120px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[720px]">
+      {chip && <Chip>{chip}</Chip>}
+      <h2 id={id} class="m-0 text-navy tm-h2 lg:t-h2">{title}</h2>
+    </div>
+    <div class="mt-[32px] lg:mt-[56px] border-t-2 border-navy">
+      {items.map((r, i) => (
+        <div class:list={['flex flex-col py-[28px] lg:flex-row lg:items-start lg:py-[40px] border-b', i === items.length - 1 ? 'border-navy' : 'border-line']}>
+          <div class="lg:w-[480px] lg:shrink-0 lg:pr-[48px]">
+            <h3 class="m-0 text-navy tm-h3 lg:t-h3">{r.q}</h3>
+          </div>
+          <div class="mt-[16px] lg:mt-0 flex gap-[16px] lg:block lg:flex-1 lg:min-w-0">
+            <span aria-hidden="true" class="lg:hidden block w-[2px] shrink-0 bg-royal"></span>
+            <div class="bs-kit-prose flex-1 min-w-0">
+              {(Array.isArray(r.a) ? r.a : [r.a]).map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

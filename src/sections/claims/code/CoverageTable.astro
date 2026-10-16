@@ -1,0 +1,47 @@
+---
+// Code Upgrades / Coverage A, B, C table: page copy of kit/KitTable.astro plus `after` (paragraphs under the table).
+// Usage: <CoverageTable title="…" id="…" intro="…" head={['Part', 'Col A', 'Col B']} rows={[['Row', 'a', 'b']]} after={['…']} />
+import Chip from '../Chip.astro';
+import KitStyles from '../../kit/KitStyles.astro';
+import { md } from '../../kit/md';
+interface Props { chip?: string; title: string; id: string; intro?: string; head: string[]; rows: string[][]; after?: string[]; note?: string; bg?: 'paper' | 'white' }
+const { chip, title, id, intro, head, rows, after = [], note, bg = 'white' } = Astro.props;
+---
+<KitStyles />
+<section aria-labelledby={id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']}>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[820px]">
+      {chip && <Chip>{chip}</Chip>}
+      <h2 id={id} class="m-0 text-navy tm-h2 lg:t-h2">{title}</h2>
+      {intro && <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(intro)} />}
+    </div>
+    <table class="hidden lg:table mt-[56px] w-full border-collapse text-left">
+      <thead><tr class="border-b-2 border-navy">{head.map((h) => <th scope="col" class="t-label text-navy py-[16px] pr-[24px] align-bottom">{h}</th>)}</tr></thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr class="border-b border-line">
+            {r.map((c, j) => j === 0
+              ? <th scope="row" class="t-body-strong text-navy py-[24px] pr-[24px] align-top w-[240px]" set:html={md(c)} />
+              : <td class="t-body text-ink py-[24px] pr-[24px] align-top" set:html={md(c)} />)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="lg:hidden mt-[32px] flex flex-col border-t-2 border-navy">
+      {rows.map((r) => (
+        <div class="border-b border-line py-[20px] flex flex-col gap-[10px]">
+          <p class="m-0 tm-body-strong text-navy" set:html={md(r[0])} />
+          {r.slice(1).map((c, j) => (
+            <p class="m-0 tm-body text-ink">{head[j + 1] && <span class="block tm-label text-muted mb-[2px]">{head[j + 1]}</span>}<span set:html={md(c)} /></p>
+          ))}
+        </div>
+      ))}
+    </div>
+    {after.length > 0 && (
+      <div class="bs-kit-prose mt-[32px] lg:mt-[48px] lg:w-[820px]">
+        {after.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      </div>
+    )}
+    {note && <p class="m-0 mt-[24px] t-caption text-muted" set:html={md(note)} />}
+  </div>
+</section>

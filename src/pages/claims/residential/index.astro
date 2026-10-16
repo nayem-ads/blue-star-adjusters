@@ -9,7 +9,10 @@ import Cta from '../../../sections/claims/Cta.astro';
 import Buckets from '../../../sections/residential/Buckets.astro';
 import Index from '../../../sections/residential/Index.astro';
 import Estimate from '../../../sections/residential/Estimate.astro';
-import { page, hero, cta } from '../../../data/claims/residential';
+import Results from '../../../sections/residential/Results.astro';
+import KitProse from '../../../sections/kit/KitProse.astro';
+import KitFaq from '../../../sections/kit/KitFaq.astro';
+import { page, hero, cta, depreciation, beforeSign, notFor, faq, related } from '../../../data/claims/residential';
 ---
 <Base title={page.title} description={page.description}>
   <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
@@ -18,6 +21,12 @@ import { page, hero, cta } from '../../../data/claims/residential';
     <Buckets />
     <Index />
     <Estimate />
+    <Results />
+    <KitProse {...depreciation} bg="paper" />
+    <KitProse {...beforeSign} bg="white" />
+    <KitProse {...notFor} bg="paper" />
+    <KitFaq {...faq} bg="white" />
+    <KitProse {...related} bg="paper" />
     <Cta {...cta} />
   </main>
   <div data-node={page.footer[0]} data-node-m={page.footer[1]}><Footer /></div>
@@ -25,4 +34,7 @@ import { page, hero, cta } from '../../../data/claims/residential';
 </Base>
 <style is:global>
   @media (max-width: 1023.98px) { .bs-residential :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
+  /* Keyword H1 + direct answer make the hero content taller than the bottom-anchored frame: keep it clear of the overlay header. */
+  .bs-residential .bs-chero > div.relative { padding-top: 112px; }
+  @media (min-width: 1024px) { .bs-residential .bs-chero > div.relative { padding-top: 128px; } }
 </style>

@@ -1,114 +1,126 @@
 ---
 // FAQ Questions. Desktop 217:6018 (1280×1842), mobile 217:10876 (390×2299).
-// Accordion (217:6019 / 217:10877): 13 rows, each question line is a real <button aria-expanded aria-controls>; its ::after
-// stretches the tap target over the whole row (Figma annotation: "each row is one button"). § 01 to § 03 start open,
-// the rest closed, exactly as the frame shows them; the closed rows' answers are the hidden "open-state" layers in Figma.
-// Open row: white, royal open-marker under the § index, navy minus toggle. Closed row: transparent, outlined plus toggle.
-// Side column (217:6168, sticky on desktop): policy-desk photo (desktop only; mobile shows it in the hero), key facts, CTA.
-import Button from '../../components/Button.astro';
+// Accordion (217:6019 / 217:10877), now in four groups, each under its own H2 (royal rule + H2, then its rows).
+// Each question line is a real <button aria-expanded aria-controls>; its ::after stretches the tap target over the whole row.
+// The first row of each group starts open, the rest closed. Open row: paper tint, royal open-marker under the § index,
+// navy minus toggle. Closed row: transparent, outlined plus toggle. Rows kept from the Figma frame keep their node ids.
+// Side column (217:6168, sticky, desktop only): policy-desk photo (mobile shows it in the hero). § index is drawn from data-idx (decorative).
 import Icon from '../../components/Icon.astro';
 import Img from '../../components/Img.astro';
 import CropMarks from './CropMarks.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
 import { ROUTES } from '../../data/site';
 
 const q = (n: number) => `217:${n}`;
-// Row node ids. Open rows list every id; closed rows follow Figma's fixed offsets from the row id.
-type Row = { n: string; q: string; a: string; open?: boolean; one?: boolean; d: number[]; m: number[]; link?: boolean };
+// Figma ids for rows kept from the original frame: [row, rail, index, openMarker, qAndA, questionLine, question, toggle, answer, answerText].
 const open = (d: number[], m: number[]) => ({ d, m });
 const closed = (d: number, m: number) => ({ d: [d, d + 1, d + 2, 0, d + 3, d + 4, d + 5, d + 6], m: [m, m + 1, m + 2, 0, m + 3, m + 4, m + 5, m + 6] });
-// d/m = [row, rail, index, openMarker, qAndA, questionLine, question, toggle, answer, answerText]
-const rows: Row[] = [
-  { n: '01', q: 'What is a public adjuster?', a: "A licensed professional who prepares, presents and negotiates your claim, working only for you. The insurer's adjuster works for the insurer.", open: true,
-    ...open([6020, 6021, 6022, 6023, 6024, 6025, 6026, 6027, 6029, 6030], [10878, 10879, 10880, 10881, 10882, 10883, 10884, 10885, 10887, 10888]) },
-  { n: '02', q: 'How are you paid?', a: "No upfront cost. We're paid a percentage of what we recover. The terms are set in writing before we start.", open: true, one: true, link: true,
-    ...open([6031, 6032, 6033, 6034, 6035, 6036, 6037, 6038, 6040, 6041], [10889, 10890, 10891, 10892, 10893, 10894, 10895, 10896, 10898, 10899]) },
-  { n: '03', q: 'I already have an offer. Is it too late?', a: 'Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.', open: true,
-    ...open([6046, 6047, 6048, 6049, 6050, 6051, 6052, 6053, 6055, 6056], [10904, 10905, 10906, 10907, 10908, 10909, 10910, 10911, 10913, 10914]) },
-  { n: '04', q: 'Will hiring you slow my claim?', a: 'We have a strong financial incentive to expedite settlement on your behalf.', ...closed(6057, 10915) },
-  { n: '05', q: 'Will my insurer treat me differently?', a: 'Carriers work with public adjusters every day. The difference is what gets measured.', ...closed(6068, 10926) },
-  { n: '06', q: 'Do I still talk to my insurer?', a: 'You can. Most clients prefer we handle it.', ...closed(6079, 10937) },
-  { n: '07', q: 'Do you replace my attorney?', a: "No. We don't give legal advice. We work alongside counsel when a claim needs one.", ...closed(6090, 10948) },
-  { n: '08', q: 'Do you do repairs?', a: "No. We measure and negotiate. Your contractor builds. Arizona law requires this, and it's our practice everywhere.", one: true, ...closed(6101, 10959) },
-  { n: '09', q: 'Who has the final say?', a: 'You always have final say on any settlement.', ...closed(6112, 10970) },
-  { n: '10', q: 'Can I cancel?', a: 'In California, within three business days of signing and receiving the contract, or five calendar days in a declared catastrophic disaster area.', one: true, ...closed(6123, 10981) },
-  { n: '11', q: "What if my claim isn't covered?", a: "We'll tell you at the free review, before you sign anything.", ...closed(6134, 10992) },
-  { n: '12', q: 'Which states?', a: 'Offices in California, Nevada, Oregon, Washington and Arizona.', one: true, ...closed(6145, 11003) },
-  { n: '13', q: 'Homes and businesses?', a: 'Both, from single family homes to commercial properties.', ...closed(6156, 11014) },
+type Ids = { d: number[]; m: number[] };
+type Item = { q: string; a: string; link?: [string, string]; ids?: Ids };
+type Group = { id: string; title: string; items: Item[] };
+const groups: Group[] = [
+  { id: 'faq-g-about', title: 'About Public Adjusters', items: [
+    { q: 'What is a public adjuster?', a: "A licensed professional who prepares, presents and negotiates your claim, working only for you. The insurer's adjuster works for the insurer.", link: ['How a public adjuster works', '/how-it-works/'],
+      ids: open([6020, 6021, 6022, 6023, 6024, 6025, 6026, 6027, 6029, 6030], [10878, 10879, 10880, 10881, 10882, 10883, 10884, 10885, 10887, 10888]) },
+    { q: 'Is hiring a public adjuster worth it?', a: "On a large, complex or disputed claim, it often is. On a small loss, or when the carrier's offer is already fair, our fee may outweigh what we add. We'll tell you so at the free review, before you sign anything.", link: ['Is a public adjuster worth it?', '/why-blue-star/'] },
+    { q: 'What are the disadvantages of hiring a public adjuster?', a: 'The fee comes out of your recovery, and the claim may take longer to settle. Be wary of anyone who pushes a contract at you while the fire trucks are still there. California bars public adjusters from soliciting while the loss is still under way, and between 6 p.m. and 8 a.m. unless you ask them to call.' },
+    { q: 'Should I hire a public adjuster or an attorney?', a: "Hire a public adjuster to prove what the loss is worth, and an attorney when the dispute turns legal. We don't give legal advice. We work alongside counsel when a claim needs one.", link: ["Public adjuster, insurer's adjuster or attorney", '/how-it-works/'] },
+    { q: 'What should I ask a public adjuster before I sign?', a: "Ask whether they're licensed in your state, who will handle your claim personally, how the fee is calculated and whether you can still talk to your insurer. Get every answer in the written contract. Take your time. Nobody should need your signature on the day of the loss." },
+    { q: "How do I check a public adjuster's license?", a: "Look the license number up on your state insurance department's website before you sign. In California, use the License Number Search on the Department of Insurance website. Ours is CA DOI License No. 6015234." },
+  ] },
+  { id: 'faq-g-cost', title: 'Cost', items: [
+    { q: 'How are you paid?', a: "No upfront cost. We're paid a percentage of what we recover. The terms are set in writing before we start.", link: ['Public adjuster fees, explained', '/fees/'],
+      ids: open([6031, 6032, 6033, 6034, 6035, 6036, 6037, 6038, 6040, 6041], [10889, 10890, 10891, 10892, 10893, 10894, 10895, 10896, 10898, 10899]) },
+    { q: 'How much do public adjusters charge?', a: 'It depends on the firm and the claim, so get the percentage in writing before you sign. In California, the fee can\'t leave you with less than your insurer paid before you hired the adjuster. We walk you through our terms at the free review.', link: ['Fees', '/fees/'] },
+    { q: 'Does the free review cost anything?', a: "No. It's a review of your claim at no cost or obligation. Bring whatever you have: the policy, the carrier's letters, photos. If we can't add value, we'll say so." },
+  ] },
+  { id: 'faq-g-claim', title: 'Your Claim', items: [
+    { q: 'I already have an offer. Is it too late?', a: 'Usually not. We can reopen scope before you accept. In California, our fee can never leave you with less than your insurer had already paid before you hired us.',
+      ids: open([6046, 6047, 6048, 6049, 6050, 6051, 6052, 6053, 6055, 6056], [10904, 10905, 10906, 10907, 10908, 10909, 10910, 10911, 10913, 10914]) },
+    { q: 'I cashed a check from my insurer. Is it too late?', a: "Usually not. A check can be a partial payment, not a final settlement. What matters is whether you signed a release. Send us the letter that came with the check, and we'll read it for release wording." },
+    { q: 'My claim was denied. Can you still help?', a: "Often, yes. We read the denial letter against the whole policy, endorsements included, and measure what the carrier never scoped. Some denials hold up, and we'll tell you if yours does.", link: ['Denied or underpaid claims', '/claims/denied-or-underpaid/'] },
+    { q: 'Can I hire a public adjuster after a settlement?', a: "If you signed a final release, usually not for that claim. If you didn't, damage the settlement missed may still support a supplemental claim. Bring the settlement letter and anything you signed to the free review." },
+    { q: "What if my claim isn't covered?", a: "We'll tell you at the free review, before you sign anything. If the policy clearly excludes the loss, no adjuster can change that.", ids: closed(6134, 10992) },
+    { q: 'Homes and businesses?', a: 'Both, from single family homes to commercial properties. We handle [fire and smoke](/claims/fire-smoke-damage/), [wildfire](/claims/wildfire/), [water](/claims/water-damage/) and [wind and hail](/claims/wind-hail-trees/) claims, plus the contents, living expenses and code upgrades inside them.', ids: closed(6156, 11014) },
+  ] },
+  { id: 'faq-g-working', title: 'Working With Us', items: [
+    { q: 'Will hiring you slow my claim?', a: 'It can. A 2010 Florida state study of Citizens Property Insurance claims filed in 2008 and 2009 (OPPAGA Report 10-06) found that claims with a public adjuster took longer to settle, and paid more before fees. Outside a catastrophe, the median was 115 days with a public adjuster and 41 days without. Catastrophe claims typically took 132 to 296 days longer.', ids: closed(6057, 10915) },
+    { q: 'Will my insurer treat me differently?', a: 'Carriers work with public adjusters every day. The difference is what gets measured.', ids: closed(6068, 10926) },
+    { q: 'Do I still talk to my insurer?', a: "You can. Most clients prefer we handle it. California's required contract disclosure says you may communicate with your insurance company at any time.", ids: closed(6079, 10937) },
+    { q: 'Who will actually handle my claim?', a: 'A senior adjuster leads every claim, from the first call to the final settlement. Ask for that adjuster\'s name at the free review.' },
+    { q: 'Who has the final say?', a: 'You always have final say on any settlement. We negotiate. You decide on every offer.', ids: closed(6112, 10970) },
+    { q: 'Do you do repairs?', a: "No. We measure and negotiate. Your contractor builds. Arizona law requires this, and it's our practice everywhere.", ids: closed(6101, 10959) },
+    { q: 'Can I cancel?', a: 'Yes. In California, within three business days of signing and receiving the contract, or five calendar days in a declared catastrophic disaster area.', ids: closed(6123, 10981) },
+    { q: 'Which states?', a: 'Six, by firm license: California, Nevada, Oregon, Washington, Arizona and Colorado. Our offices are in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle and Scottsdale, plus Utah, Hawaii and Colorado. License numbers: California 6015234, Nevada 4263596, Oregon 3004448214, Colorado 969283, Washington 1382428, Arizona 3004469742.', link: ['All locations', '/locations/'], ids: closed(6145, 11003) },
+  ] },
 ];
-const wD = [32, 35, 35, 37, 35, 36, 36, 36, 36, 32, 27, 30, 30];
-const wM = [23, 26, 26, 27, 26, 26, 26, 27, 26, 23, 20, 22, 22];
+let k = 0;
+const rows = groups.map((g) => ({ ...g, items: g.items.map((it, j) => ({ ...it, n: String(++k).padStart(2, '0'), open: j === 0, one: it.q.length <= 19 })) }));
 const id = (n?: number) => (n ? q(n) : undefined);
-const facts = [
-  { icon: 'check', text: "No upfront cost. We're paid a percentage of what we recover.", d: [6181, 6182, 6184], m: [11028, 11029, 11030] },
-  { icon: 'shield', text: 'We represent the insured only.', d: [6185, 6186, 6189], m: [11031, 11032, 11033] },
-  { icon: 'document', text: 'CA License No. 6015234', d: [6190, 6191, 6194], m: [11034, 11035, 11036] },
-];
 ---
-<section aria-labelledby="faq-questions" class="bg-paper" data-node="217:6018" data-node-m="217:10876">
-  <h2 id="faq-questions" class="sr-only">Questions and answers</h2>
-  <div class="max-w-[1280px] mx-auto pt-[48px] pb-[64px] lg:px-[80px] lg:py-[120px] lg:flex lg:items-start lg:gap-[96px]">
+<KitStyles />
+<section aria-labelledby="faq-g-about" class="bg-white" data-node="217:6018" data-node-m="217:10876">
+  <div class="max-w-[1280px] mx-auto pt-[56px] pb-[64px] lg:px-[80px] lg:py-[120px] lg:flex lg:items-start lg:gap-[96px]">
     <div class="lg:w-[760px] lg:shrink-0" data-node="217:6019" data-node-m="217:10877">
-      {rows.map((r, i) => (
-        <div class:list={['bs-faq-row group relative border-t border-line px-[20px] lg:px-[24px]', r.open && 'is-open']} data-node={id(r.d[0])} data-node-m={id(r.m[0])}>
-          <div class="flex items-start gap-[12px] lg:gap-[24px]">
-            <div class:list={['bs-faq-rail w-[40px] shrink-0 flex flex-col items-start gap-[8px] lg:w-[56px] lg:gap-[12px] lg:pt-[8px]', r.one ? 'pt-[16px]' : 'pt-[8px]']} data-node={id(r.d[1])} data-node-m={id(r.m[1])}>
-              <span class="block w-[var(--wm)] lg:w-[var(--wd)] tm-label lg:t-body-strong text-navy whitespace-nowrap" style={`--wd:${wD[i]}px;--wm:${wM[i]}px`} data-node={id(r.d[2])} data-node-m={id(r.m[2])}>§ {r.n}</span>
-              <span aria-hidden="true" class="bs-faq-marker block w-[16px] h-[2px] bg-royal lg:w-[24px]" data-node={id(r.d[3])} data-node-m={id(r.m[3])}></span>
-            </div>
-            <div class="flex-1 min-w-0 flex flex-col gap-[12px] lg:gap-[16px]" data-node={id(r.d[4])} data-node-m={id(r.m[4])}>
-              <h3 class="m-0">
-                <button type="button" id={`faq-q${r.n}`} aria-expanded={r.open ? 'true' : 'false'} aria-controls={`faq-a${r.n}`}
-                  class="bs-faq-btn relative w-full flex items-center gap-[16px] min-h-[48px] text-left cursor-pointer lg:items-start lg:gap-[32px] lg:min-h-0"
-                  data-node={id(r.d[5])} data-node-m={id(r.m[5])}>
-                  <span class="bs-faq-q flex-1 min-w-0 text-navy" data-node={id(r.d[6])} data-node-m={id(r.m[6])}>{r.q}</span>
-                  <span aria-hidden="true" class="bs-faq-toggle relative block shrink-0 w-[44px] h-[44px] rounded-full" data-node={id(r.d[7])} data-node-m={id(r.m[7])}>
-                    <span class="bs-faq-bar absolute left-[14px] top-[21px] w-[16px] h-[2px]"></span>
-                    <span class="bs-faq-bar bs-faq-bar--v absolute left-[21px] top-[14px] w-[2px] h-[16px]"></span>
-                  </span>
-                </button>
-              </h3>
-              <div id={`faq-a${r.n}`} role="region" aria-labelledby={`faq-q${r.n}`} hidden={!r.open}
-                class="flex flex-col items-start gap-[16px] pr-[60px] lg:pr-[76px]" data-node={r.open ? id(r.d[8]) : undefined} data-node-m={r.open ? id(r.m[8]) : undefined}>
-                <p class="m-0 tm-body lg:t-body text-ink w-full" data-node={r.open ? id(r.d[9]) : undefined} data-node-m={r.open ? id(r.m[9]) : undefined}>{r.a}</p>
-                {r.link && (
-                  <a href={ROUTES.fees} class="flex items-center gap-[8px] min-h-[44px] text-navy lg:min-h-0 lg:pt-[4px]" data-node="217:6042" data-node-m="217:10900">
-                    <span class="block w-[37px] lg:w-[41px] tm-body-strong lg:t-body-strong underline" style="top:0" data-node="217:6043" data-node-m="217:10901">Fees</span>
-                    <Icon name="arrow-right" size={20} class="shrink-0" />
-                  </a>
-                )}
+      {rows.map((g, gi) => (
+        <div role="group" aria-labelledby={g.id} class:list={[gi > 0 && 'mt-[56px] lg:mt-[80px]']}>
+          <div class="px-[20px] lg:px-0 pb-[24px] lg:pb-[32px] flex flex-col items-start gap-[16px] lg:gap-[24px]">
+            <span aria-hidden="true" class="block w-[48px] h-[2px] bg-royal"></span>
+            <h2 id={g.id} class="m-0 text-navy tm-h2 lg:t-h2">{g.title}</h2>
+          </div>
+          {g.items.map((r) => {
+            const d = r.ids?.d ?? [], m = r.ids?.m ?? [];
+            return (
+            <div class:list={['bs-faq-row group relative border-t border-line px-[20px] lg:px-[24px]', r.open && 'is-open']} data-node={id(d[0])} data-node-m={id(m[0])}>
+              <div class="flex items-start gap-[12px] lg:gap-[24px]">
+                <div class:list={['bs-faq-rail w-[40px] shrink-0 flex flex-col items-start gap-[8px] lg:w-[56px] lg:gap-[12px] lg:pt-[8px]', r.one ? 'pt-[16px]' : 'pt-[8px]']} data-node={id(d[1])} data-node-m={id(m[1])}>
+                  <span aria-hidden="true" class="bs-faq-idx block w-max tm-label lg:t-body-strong text-navy whitespace-nowrap" data-idx={`§ ${r.n}`} data-node={id(d[2])} data-node-m={id(m[2])}></span>
+                  <span aria-hidden="true" class="bs-faq-marker block w-[16px] h-[2px] bg-royal lg:w-[24px]" data-node={id(d[3])} data-node-m={id(m[3])}></span>
+                </div>
+                <div class="flex-1 min-w-0 flex flex-col gap-[12px] lg:gap-[16px]" data-node={id(d[4])} data-node-m={id(m[4])}>
+                  <h3 class="m-0">
+                    <button type="button" id={`faq-q${r.n}`} aria-expanded={r.open ? 'true' : 'false'} aria-controls={`faq-a${r.n}`}
+                      class="bs-faq-btn relative w-full flex items-center gap-[16px] min-h-[48px] text-left cursor-pointer lg:items-start lg:gap-[32px] lg:min-h-0"
+                      data-node={id(d[5])} data-node-m={id(m[5])}>
+                      <span class="bs-faq-q flex-1 min-w-0 text-navy" data-node={id(d[6])} data-node-m={id(m[6])}>{r.q}</span>
+                      <span aria-hidden="true" class="bs-faq-toggle relative block shrink-0 w-[44px] h-[44px] rounded-full" data-node={id(d[7])} data-node-m={id(m[7])}>
+                        <span class="bs-faq-bar absolute left-[14px] top-[21px] w-[16px] h-[2px]"></span>
+                        <span class="bs-faq-bar bs-faq-bar--v absolute left-[21px] top-[14px] w-[2px] h-[16px]"></span>
+                      </span>
+                    </button>
+                  </h3>
+                  <div id={`faq-a${r.n}`} role="region" aria-labelledby={`faq-q${r.n}`} hidden={!r.open}
+                    class="flex flex-col items-start gap-[16px] pr-[60px] lg:pr-[76px]" data-node={r.open ? id(d[8]) : undefined} data-node-m={r.open ? id(m[8]) : undefined}>
+                    <p class="m-0 tm-body lg:t-body text-ink w-full" data-node={r.open ? id(d[9]) : undefined} data-node-m={r.open ? id(m[9]) : undefined} set:html={md(r.a)} />
+                    {r.link && (
+                      <p class="m-0 py-[10px] lg:py-0 lg:pt-[4px]">
+                        <a href={r.link[1]} class="text-navy tm-body-strong lg:t-body-strong" style="top:0"><span class="underline">{r.link[0].replace(/\S+$/, '')}</span><span class="whitespace-nowrap"><span class="underline">{r.link[0].match(/\S+$/)?.[0]}</span><Icon name="arrow-right" size={20} class="inline-block align-middle ml-[8px] -mt-[2px]" /></span></a>
+                      </p>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          ); })}
+          <span aria-hidden="true" class="block h-px bg-line" data-node={gi === rows.length - 1 ? '217:6167' : undefined} data-node-m={gi === rows.length - 1 ? '217:11025' : undefined}></span>
         </div>
       ))}
-      <span aria-hidden="true" class="block h-px bg-line" data-node="217:6167" data-node-m="217:11025"></span>
     </div>
 
-    <aside aria-label="Key facts" class="mt-[56px] px-[20px] flex flex-col items-start gap-[48px] lg:mt-0 lg:px-0 lg:w-[264px] lg:shrink-0 lg:gap-[40px] lg:sticky lg:top-[120px]" data-node="217:6168" data-node-m="217:11026">
+    <div class="hidden lg:flex flex-col items-start lg:w-[264px] lg:shrink-0 lg:gap-[40px] lg:sticky lg:top-[120px]" data-node="217:6168" data-node-m="217:11026">
       <div class="hidden lg:block relative w-[264px] h-[330px]" data-node="217:6169">
         <Img node="217:6170" alt="A policy binder with coloured tabs, a highlighter, a tape measure and a cup of tea on a desk." class="block w-full h-full object-cover" />
         <CropMarks class="absolute left-[-16px] top-[-16px] w-[296px] h-[362px]" node="217:6171" />
       </div>
-      <ul class="m-0 p-0 list-none w-full" data-node="217:6180" data-node-m="217:11027">
-        {facts.map((f) => (
-          <li class="flex items-start gap-[16px] py-[16px] border-t border-line" data-node={q(f.d[0])} data-node-m={q(f.m[0])}>
-            <span class="block shrink-0 w-[20px] h-[20px] text-navy" data-node={q(f.d[1])} data-node-m={q(f.m[1])}><Icon name={f.icon} size={20} class="block" /></span>
-            <span class="flex-1 min-w-0 text-[15px] leading-[24px] font-medium text-ink" data-node={q(f.d[2])} data-node-m={q(f.m[2])}>{f.text}</span>
-          </li>
-        ))}
-      </ul>
-      <div class="w-full flex flex-col items-start gap-[24px]" data-node="217:7612" data-node-m="217:11042">
-        <span aria-hidden="true" class="block w-[48px] h-[2px] bg-royal" data-node="217:7613" data-node-m="217:11043"></span>
-        <p class="m-0 tm-h2 lg:t-h3 text-navy w-full" data-node="217:7614" data-node-m="217:11044">Still have a question?</p>
-        <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto" node="217:7615" data-node-m="217:11045">Schedule a Free Review</Button>
-      </div>
-    </aside>
+    </div>
   </div>
 </section>
 
 <style is:global>
   .bs-faq-row { padding-top: 16px; padding-bottom: 16px; }
-  .bs-faq-row.is-open { background: #fff; padding-top: 24px; padding-bottom: 32px; }
+  .bs-faq-row.is-open { background: var(--color-paper); padding-top: 24px; padding-bottom: 32px; }
+  .bs-faq-idx::before { content: attr(data-idx); }
   .bs-faq-marker { display: none; }
   .is-open .bs-faq-marker { display: block; }
   .bs-faq-q { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 30px; letter-spacing: -0.01em; }

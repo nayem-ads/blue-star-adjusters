@@ -1,21 +1,22 @@
-// Sacramento office (Figma desktop 217:1456, mobile 217:9476). Copy is character-exact from design/text; node ids generated from design/meta.
+// Sacramento office (Figma desktop 217:1456, mobile 217:9476). Copy from pages/office-sacramento/content.md; node ids generated from design/meta.
 import type { OfficeData } from '../../sections/office/types';
 import { ROUTES } from '../site';
 
 const sacramento: OfficeData = {
   route: ROUTES.sacramento,
-  title: 'Public Adjuster in Sacramento, CA | Blue Star Adjusters',
-  description: "Blue Star Adjusters, licensed public adjusters for Sacramento property owners. We measure the loss and negotiate with your insurer. Free claim review.",
+  title: "Public Adjuster in Sacramento, CA | Blue Star Adjusters",
+  description: "Blue Star Adjusters, licensed public adjuster with its head office in Sacramento. We measure the loss and negotiate with your insurer. Free claim review.",
   city: "Sacramento",
   state: "CA",
   hero: {
     eyebrow: "Sacramento Codes. Sacramento Contractors.",
     h1: "Public Adjuster in Sacramento.",
+    lead: "Blue Star Adjusters is a licensed public adjuster in Sacramento, with our head office at 1610 R Street. We work for the policyholder on home and business property claims. We read your policy, measure the full loss and negotiate the claim with your insurer. A senior adjuster leads every claim, from the first call to the final settlement.",
     headOffice: true,
     alt: 'Craftsman bungalow under mature elm trees in Sacramento.',
   },
   office: {
-    label: "Head office",
+    label: "Head Office",
     rows: [
       { kind: 'address', value: "1610 R Street, Suite 300, Sacramento, California 95811" },
       { kind: 'phone', value: "(916) 507-1005" },
@@ -24,13 +25,26 @@ const sacramento: OfficeData = {
       { kind: 'license', value: "CA DOI License No. 6015234" },
     ],
   },
-  local: null,
+  local: "In Sacramento, find out where the water came from first. A burst pipe and a rising river are two different policies.",
   rule: {
     cite: "§15027",
-    lead: " cancel within 3 business days of signing (5 calendar days in a declared catastrophic disaster area).",
+    lead: " you can cancel within three business days of signing and receiving the contract, or five calendar days in a declared catastrophic disaster area.",
     leadBold: "California:",
     line: "Our fee can never leave you with less than your insurer already paid before you hired us.",
   },
+  blocks: [
+    {"type": "office"},
+    {"type": "prose", "id": "office-reach", "title": "Before You Call the Sacramento Office", "body": ["Call or email. We call back the same business day.", "Bring whatever you have: the policy, the carrier's letters, photos. Your insurer's adjuster already came out? Good. Bring their estimate too. We start from it and measure what it left out.", "Check our license before you sign anything. Look up CA DOI License No. 6015234 on the California Department of Insurance license search. [Check a license with the California Department of Insurance](https://cdicloud.insurance.ca.gov/cal/LicenseNumberSearch)"]},
+    {"type": "local"},
+    {"type": "state"},
+    {"type": "prose", "id": "office-flood", "title": "Flood or Water Damage? In Sacramento, the Source Decides the Claim.", "sub": "Water Dries. The Evidence Goes With It.", "links": "[Water damage insurance claims](/claims/water-damage/)", "body": ["Sacramento's flood control agency, SAFCA, finances levee and dam projects on the American and Sacramento rivers.", "Flood is its own policy. FEMA's flood program says it plainly: \"Most homeowners insurance does not cover flood damage.\" Water that rises from outside is the flood policy's question. A pipe that bursts inside the house is a different loss, read under different wording.", "So the first job is proof of the source. Where did the water enter? How far did it travel? We document it room by room, before the drying erases it. If the water isn't measured, it dries, and mold begins to grow."]},
+    {"type": "prose", "id": "office-process", "title": "How a Claim Runs With Blue Star", "listStyle": "number", "links": "[How a public adjuster works on your claim](/how-it-works/)", "body": ["Five steps, from a free review to the settlement. You decide on every offer."], "list": ["Free review of your claim, at no cost or obligation.", "Policy review: the whole policy, endorsements included.", "Scope the loss: moisture mapping, testing and structural review where the loss calls for it.", "Build your claim: an itemized claim package, sent only with your approval.", "Negotiate the settlement with your insurer, line by line."]},
+    {"type": "prose", "id": "office-results", "title": "What the Carrier Offered. What We Recovered.", "note": "Results reflect specific losses and policies. Past results don't guarantee a similar outcome.", "links": "[More claim results](/results/)", "buttons": true, "body": ["**Smoke damage.** Offered $17,000. Settled for about $1.1 million. An industrial hygienist proved combustion byproducts in porous materials and doors.", "**Apartment fire, 800 sq ft, started by a computer.** Settled for nearly $200,000, including the tongue and groove ceiling and smoke mitigation for the neighboring unit.", "**A denial that held.** A $1.4 million total loss was denied because the homeowner was welding for his business in the garage. The policy excluded business operations. If the policy clearly excludes the loss, no adjuster can change that."]},
+    {"type": "claims", "title": "Sacramento Claims We Handle", "links": [{"label": "Residential claims", "href": "/claims/residential/"}, {"label": "Commercial claims", "href": "/claims/commercial/"}, {"label": "Fire and smoke damage", "href": "/claims/fire-smoke-damage/"}, {"label": "Water and plumbing", "href": "/claims/water-damage/"}, {"label": "Wind, hail and falling trees", "href": "/claims/wind-hail-trees/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}]},
+    {"type": "prose", "id": "office-not-for", "title": "When You May Not Need Us", "body": ["On a small loss, our fee may outweigh what we add. If the carrier's offer is already fair, we'll tell you so at the free review, before you sign anything."]},
+    {"type": "faq", "id": "office-faq", "title": "Questions About Hiring a Public Adjuster in Sacramento", "items": [{"q": "What does a public adjuster do?", "a": "A public adjuster prepares, presents and negotiates your claim, working only for you. The insurer's adjuster works for the insurer. We read the whole policy, scope the loss and send the claim package only with your approval. You decide on every offer. [How a public adjuster works](/how-it-works/)"}, {"q": "How do I check a public adjuster's license in California?", "a": "Look the license number up on the Department of Insurance license search before you sign. California also requires the contract to be in writing, on a form the Insurance Commissioner approved, with the adjuster's license number on it. Ours is CA DOI License No. 6015234."}, {"q": "How much does a public adjuster cost in Sacramento?", "a": "No upfront cost. We're paid a percentage of what we recover. The terms are set in writing before we start. In California, our fee can never leave you with less than your insurer had already paid before you hired us. [Public adjuster fees, explained](/fees/)"}, {"q": "When should I call a public adjuster after a loss?", "a": "Before you accept an offer or sign a release. Our ability to affect your outcome diminishes with time. If you already have an offer, it's usually not too late, because we can reopen scope before you accept. [When it's too late to hire a public adjuster](/faq/)"}, {"q": "Does homeowners insurance cover flood damage in Sacramento?", "a": "Usually not. FEMA says most homeowners insurance does not cover flood damage, and only flood insurance covers the cost of rebuilding after a flood. Water from a burst pipe inside the house is a separate question. Bring every policy you have to the free review."}, {"q": "Will a public adjuster make my claim faster?", "a": "It can take longer. A 2010 Florida state study of Citizens Property Insurance claims found claims with a public adjuster took longer to settle, and paid more before fees. More of the loss gets measured and argued, and that takes time."}]},
+    {"type": "links", "id": "office-offices", "title": "Other Blue Star Offices", "links": [{"label": "Public adjuster in San Francisco", "href": "/locations/california/san-francisco/"}, {"label": "Public adjuster in Los Angeles, from Santa Monica", "href": "/locations/california/santa-monica/"}, {"label": "All locations", "href": "/locations/"}]},
+  ],
   n: {
     'header': ["217:1457", "217:9477"],
     'footer': ["217:7440", "217:10175"],

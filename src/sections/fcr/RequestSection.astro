@@ -6,8 +6,12 @@ import Eyebrow from '../../components/Eyebrow.astro';
 import FormCard from './FormCard.astro';
 import ThanksCard from './ThanksCard.astro';
 import Sidebar from './Sidebar.astro';
+import WhereWeWork from './WhereWeWork.astro';
+import Button from '../../components/Button.astro';
+import { PHONE_DISPLAY, PHONE_TEL, LICENSE } from '../../data/site';
 interface Props { ty?: boolean }
 const { ty = false } = Astro.props;
+const trust = ['No upfront cost', 'You always have final say on any settlement', LICENSE];
 ---
 <section aria-labelledby="fcr-h1" class="relative overflow-hidden bg-paper" data-node={ty ? '74:2049' : '73:1403'} data-node-m={ty ? '74:4727' : '74:3880'}>
   <span aria-hidden="true" class="fcr-grid absolute top-0 right-0"></span>
@@ -16,11 +20,27 @@ const { ty = false } = Astro.props;
       <Eyebrow class="hidden lg:flex" node={ty ? '74:2052' : '73:1434'}>Free Claim Review</Eyebrow>
       {ty
         ? <h1 id="fcr-h1" class="m-0 w-full lg:w-[1000px] max-w-full tm-display lg:t-display-l text-navy" data-node="74:2053" data-node-m="74:4729">Request Received.<br />We’ll Call You.</h1>
-        : <h1 id="fcr-h1" class="m-0 w-full lg:w-[1000px] max-w-full tm-display lg:t-display-l text-navy" data-node="73:1437" data-node-m="74:3910">Tell Us What Happened.<br />We’ll Read Your Policy.</h1>}
+        : <h1 id="fcr-h1" class="m-0 w-full lg:w-[1000px] max-w-full tm-display lg:t-display-l text-navy" data-node="73:1437" data-node-m="74:3910">Free Insurance Claim Review</h1>}
+      {!ty && <p class="m-0 w-full lg:w-[760px] max-w-full tm-lead lg:t-lead text-ink">A free insurance claim review is a look at your loss, your policy and your insurer’s letters by a licensed public adjuster, at no cost or obligation. Send the form or call {PHONE_DISPLAY}. We call back the same business day. We read your policy and the carrier’s letters, and tell you whether we can add value, and why.</p>}
+      {!ty && <p class="m-0 pt-[8px] w-full max-w-full tm-h3 lg:t-h3 text-navy">Tell Us What Happened. We’ll Read Your Policy.</p>}
       <p class="m-0 w-full lg:w-[648px] max-w-full tm-lead lg:t-lead text-ink" data-node={ty ? '74:2054' : '73:1438'} data-node-m={ty ? '74:4730' : '74:3911'}>There is no cost or obligation for the initial review.</p>
+      {!ty && <>
+        <div class="w-full lg:w-auto flex flex-col gap-[12px] pt-[8px] lg:flex-row lg:gap-[16px]">
+          <Button href="#fcr-form" class="h-[56px] w-full lg:h-[52px] lg:w-auto">Request My Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto">Call {PHONE_DISPLAY}</Button>
+        </div>
+        <ul class="m-0 p-0 list-none flex flex-col items-start gap-[6px] lg:flex-row lg:items-center lg:gap-[16px] tm-label lg:t-label text-ink">
+          {trust.map((t, i) => <>{i > 0 && <li aria-hidden="true" class="hidden lg:block w-px h-[14px] bg-ink opacity-40"></li>}<li>{t}</li></>)}
+        </ul>
+      </>}
     </div>
     <div class="fcr-cols flex flex-col mt-[40px] lg:mt-[56px] lg:flex-row lg:items-start lg:justify-between lg:gap-[48px]" data-node={ty ? '74:2055' : '73:1439'}>
-      {ty ? <ThanksCard /> : <FormCard />}
+      {ty ? <ThanksCard /> : (
+        <div class="flex flex-col gap-[24px] w-full lg:flex-1 lg:min-w-0 lg:max-w-[648px]">
+          <FormCard />
+          <div class="hidden lg:flex"><WhereWeWork variant="d" /></div>
+        </div>
+      )}
       <Sidebar ty={ty} />
     </div>
   </div>

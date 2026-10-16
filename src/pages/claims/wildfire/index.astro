@@ -12,17 +12,38 @@ import TwoClaims from '../../../sections/claims/wildfire/TwoClaims.astro';
 import Rights from '../../../sections/claims/wildfire/Rights.astro';
 import Market from '../../../sections/claims/wildfire/Market.astro';
 import Timing from '../../../sections/claims/wildfire/Timing.astro';
-import { page, hero, detail, related, cta } from '../../../data/claims/wildfire';
+import Button from '../../../components/Button.astro';
+import KitProse from '../../../sections/kit/KitProse.astro';
+import KitFaq from '../../../sections/kit/KitFaq.astro';
+import KitStyles from '../../../sections/kit/KitStyles.astro';
+import { md } from '../../../sections/kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../../data/site';
+import { page, hero, detail, related, cta, firstSteps, faq } from '../../../data/claims/wildfire';
 ---
 <Base title={page.title} description={page.description}>
   <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
   <main class="bs-wildfire bs-fit">
     <Hero {...hero} />
     <TwoClaims />
-    <PhotoSplit {...detail} />
+    <KitProse chip="§ 02" id="wf-steps-title" title={firstSteps.title} list={firstSteps.list} after={firstSteps.after} bg="white" />
+    <KitStyles />
+    <PhotoSplit {...detail}>
+      <p slot="block-0" class="m-0 w-full tm-body lg:t-body text-ink">Where the loss calls for it, we get structural review before any estimate assumes the foundation can stay.</p>
+      <span slot="block-1" aria-hidden="true" class="block h-[24px] lg:h-[32px]"></span>
+      <Fragment slot="block-2">
+        <p class="m-0 w-full tm-body lg:t-body text-ink">Once you hit the dwelling limit, the other coverages have to carry the rebuild. Code upgrades. Extended replacement cost. Debris removal.</p>
+        <p class="m-0 w-full tm-body lg:t-body text-ink">Don't assume you're underinsured before the loss is measured. Each coverage gets scoped on its own.</p>
+        <p class="m-0 w-full tm-body lg:t-body text-ink" set:html={md(`[Ordinance or law coverage](${ROUTES.codeUpgrades})`)} />
+        <div class="w-full lg:w-auto flex flex-col gap-[12px] pt-[8px] lg:flex-row lg:gap-[16px]">
+          <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto">Call {PHONE_DISPLAY}</Button>
+        </div>
+      </Fragment>
+    </PhotoSplit>
     <Rights />
     <Market />
     <Timing />
+    <KitFaq chip="§ 09" id="wf-faq-title" title={faq.title} items={faq.items} bg="white" />
     <Related {...related} />
     <Cta {...cta} />
   </main>
@@ -32,5 +53,8 @@ import { page, hero, detail, related, cta } from '../../../data/claims/wildfire'
 <style is:global>
   /* Mobile photo stack is 496 tall in Figma (kit default without a dimension line is 462). */
   @media (max-width: 1023.98px) { .bs-wildfire .bs-psplit > div:first-child { height: 496px; } }
+  /* Hero carries the direct answer (lead): give the content room under the overlaid header. */
+  .bs-wildfire .bs-chero > div.relative { padding-top: 112px; }
+  @media (min-width: 1024px) { .bs-wildfire .bs-chero > div.relative { padding-top: 128px; } }
   @media (max-width: 1023.98px) { .bs-wildfire :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
 </style>

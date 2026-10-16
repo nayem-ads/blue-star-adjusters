@@ -7,18 +7,20 @@ import Grid from '../faq/Grid.astro';
 import Ruler from '../faq/Ruler.astro';
 import CropMarks from '../faq/CropMarks.astro';
 import Photo from './Photo.astro';
-import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
+import Button from '../../components/Button.astro';
+import { md } from '../kit/md';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
 const steps = [
-  "Get safe. Don't go back in until officials clear the property.",
-  "Report the claim. Write down the claim number and the adjuster's name.",
-  'Photograph and video everything before anything is moved or cleaned.',
-  'Stop further damage: shut off water, tarp openings. Keep the receipts.',
-  "Don't throw anything away until it's documented, even if it's ruined.",
-  "Don't sign on the spot with anyone, including a public adjuster.",
-  'Keep every receipt for living costs: hotel, meals, mileage, pet boarding.',
-  'Get your full policy, with the declarations page and every endorsement.',
-  'Log every conversation: date, name, what was said.',
-  'Get the loss measured before the first estimate is final.',
+  { t: "Get safe. Don't go back in until officials clear the property.", b: "FEMA's fire administration puts it plainly: don't enter until the fire department says it is safe. Floors and walls may not be as safe as they look. Don't turn the gas, power or water back on yourself. If you need a bed tonight, call the Red Cross. Have your pets checked by a veterinarian, because smoke can damage their lungs." },
+  { t: "Report the claim. Write down the claim number and the adjuster's name.", b: 'Call your insurer or agent right away and ask what to do first. Then confirm the call by email. California\'s standard fire policy asks for written notice of a loss "without unnecessary delay." Ask the fire department for the incident report number. Request a copy of the report and send it to your insurer.' },
+  { t: 'Photograph and video everything before anything is moved or cleaned.', b: 'Shoot every room from every angle, outside and in. Get the smoke and soot on surfaces that look clean, because that damage is easy to miss. Film your belongings where they sit. Serial numbers and purchase dates make the contents list easier to prove later.' },
+  { t: 'Stop further damage: shut off water, tarp openings. Keep the receipts.', b: "Under California's standard fire policy, protecting the property from further damage is your job. Board up broken windows and doors. Cover any hole in the roof. If the house will sit empty, tell the police it's vacant. Keep the invoice for every board, tarp and emergency repair, since your insurer may reimburse them." },
+  { t: "Don't throw anything away until it's documented, even if it's ruined.", b: 'The policy can require you to separate damaged from undamaged belongings and show the insurer what remains. A ruined sofa is still evidence. The Red Cross says food, medicine and hygiene products exposed to the fire should go. Photograph them and list them first.' },
+  { t: "Don't sign on the spot with anyone, including a public adjuster.", b: "The California Department of Insurance says to demand identification from anyone who contacts you about your claim. Ask to see the adjuster's California license and write down the number and full name. A business card proves nothing. Look the number up in the License Number Search on the Department of Insurance website before you sign. In California, you may cancel a public adjuster contract within three business days of signing and receiving it, or five calendar days in a declared catastrophic disaster area." },
+  { t: 'Keep every receipt for living costs: hotel, meals, mileage, pet boarding.', b: 'If the fire is a covered loss, your policy may pay the extra cost of living elsewhere. Ask your insurer for an advance on living expenses. Keep receipts for meals, lodging and purchases from the day of the fire, plus a running log of what you spent. More on [additional living expenses](/claims/additional-living-expenses/).' },
+  { t: 'Get your full policy, with the declarations page and every endorsement.', b: 'Ask in writing. After a covered loss, California law requires your insurer to send a free, complete copy of the policy in force on the day of the fire. That includes the declarations page and every endorsement. The insurer has 30 calendar days from receiving your request.' },
+  { t: 'Log every conversation: date, name, what was said.', b: 'Write down who you spoke to, the number you called, the date and time, and what was said. Confirm agreements, disputes and deadlines in writing, by letter or email. A California insurer has 15 calendar days to respond to a communication that calls for an answer. Your log shows when the clock started.' },
+  { t: 'Get the loss measured before the first estimate is final.', b: "You don't have to accept the insurance company's contractor or its estimate. Get your own written estimate. Fire damage hides. Water from the hoses soaks insulation and subfloor. Heat breaks down the sheathing on wiring inside the walls. Smoke travels into ductwork. If it isn't measured before the walls are closed, it isn't in the claim." },
 ];
 // Desktop step frame ids start at 217:6606 (+6 per step: frame, wrap, box, number, text, hairline); mobile at 217:9780 (+5).
 const d = (i: number, k: number) => `217:${6606 + i * 6 + k}`;
@@ -35,33 +37,49 @@ const alt = 'A moisture meter held against a water-stained wall near the floor.'
     </div>
 
     <div class="relative mt-[40px] lg:mt-0 lg:ml-[24px] lg:w-[784px] lg:shrink-0">
+      <div class="relative">
       <CropMarks class="absolute left-[-10px] right-[-10px] top-[-12px] bottom-[-12px] lg:left-[-24px] lg:right-[-24px] lg:top-[-24px] lg:bottom-[-24px]" node="217:6669" nodeM="217:9833" />
       <div id="f48-sheet" class="relative bg-white px-[20px] pt-[24px] pb-[20px] lg:border lg:border-line lg:px-[48px] lg:pt-[48px] lg:pb-[40px]" data-node="217:6593" data-node-m="217:9767">
-        <div class="flex items-center justify-between pb-[16px] lg:pb-[20px]" data-node="217:6594" data-node-m="217:9768">
-          <h2 id="f48-list" class="m-0 tm-h3 lg:t-h3 text-navy whitespace-nowrap" data-node="217:6595" data-node-m="217:9769">First 48 Hours</h2>
-          <span class="hidden lg:block" data-node="217:6596"><Logo variant="horizontal-color" width={135.2} height={30} class="block" /></span>
-          <span class="lg:hidden" data-node-m="217:9770"><Logo variant="horizontal-color" width={108.2} height={24} class="block" /></span>
+        <div class="flex items-start justify-between gap-[16px] lg:gap-[32px] pb-[16px] lg:pb-[20px]" data-node="217:6594" data-node-m="217:9768">
+          <h2 id="f48-list" class="m-0 flex-1 min-w-0 tm-h3 lg:t-h3 text-navy [text-wrap:balance]" data-node="217:6595" data-node-m="217:9769">House Fire Checklist: The First 48 Hours</h2>
+          <span class="hidden lg:block shrink-0 pt-[2px]" data-node="217:6596"><Logo variant="horizontal-color" width={135.2} height={30} class="block" /></span>
+          <span class="lg:hidden shrink-0 pt-[2px]" data-node-m="217:9770"><Logo variant="horizontal-color" width={108.2} height={24} class="block" /></span>
         </div>
+        <p class="bs-f48-detail m-0 pb-[20px] lg:pb-[28px] tm-body lg:t-body text-ink">Ten steps, in the order they matter. The first line of each is the checklist. The rest tells you who to call, what to shoot and what to keep. Losing a home to fire is a shock. Nobody expects you to remember all of this, so print it.</p>
         <span aria-hidden="true" class="block h-[2px] bg-ink" data-node="217:6605" data-node-m="217:9779"></span>
         <ol class="m-0 p-0 list-none">
           {steps.map((s, i) => (
             <li class:list={['bs-f48-step', i < steps.length - 1 && 'border-b border-line']} data-node={d(i, 0)} data-node-m={m(i, 0)}>
-              <label class="flex items-start gap-[16px] py-[16px] cursor-pointer lg:gap-[20px] lg:py-[20px]">
+              <div class="flex items-start gap-[16px] py-[16px] lg:gap-[20px] lg:py-[24px]">
                 <span class="shrink-0 lg:pt-[4px]" data-node={d(i, 1)}>
-                  <input type="checkbox" class="bs-f48-box block" data-node={d(i, 2)} data-node-m={m(i, 1)} />
+                  <input type="checkbox" id={`f48-s${i + 1}`} class="bs-f48-box block" data-node={d(i, 2)} data-node-m={m(i, 1)} />
                 </span>
-                <span class="flex-1 min-w-0 flex flex-col items-start gap-[4px] lg:flex-row lg:items-start lg:gap-[20px]" data-node-m={m(i, 2)}>
-                  <span class="bs-f48-num text-navy" data-node={d(i, 3)} data-node-m={m(i, 3)}>{String(i + 1).padStart(2, '0')}</span>
-                  <span class="flex-1 min-w-0 tm-body lg:t-lead text-ink" data-node={d(i, 4)} data-node-m={m(i, 4)}>{s}</span>
-                </span>
-              </label>
+                <div class="flex-1 min-w-0" data-node-m={m(i, 2)}>
+                  <h3 class="m-0">
+                    <label for={`f48-s${i + 1}`} class="flex flex-col items-start gap-[4px] cursor-pointer lg:flex-row lg:items-start lg:gap-[20px]">
+                      <span class="bs-f48-num text-navy" data-node={d(i, 3)} data-node-m={m(i, 3)}>{String(i + 1).padStart(2, '0')}</span>
+                      <span class="flex-1 min-w-0 tm-body-strong lg:t-lead lg:font-semibold text-ink" data-node={d(i, 4)} data-node-m={m(i, 4)}>{s.t}</span>
+                    </label>
+                  </h3>
+                </div>
+              </div>
+              <p class="bs-f48-detail m-0 -mt-[4px] pb-[20px] lg:-mt-[16px] lg:pb-[24px] lg:pl-[96px] tm-body lg:t-body text-ink" set:html={md(s.b)} />
             </li>
           ))}
         </ol>
         <span aria-hidden="true" class="hidden lg:block h-[2px] bg-ink" data-node="217:6665"></span>
         <div class="flex items-start justify-between pt-[16px] border-t border-navy lg:border-t-0 text-ink whitespace-nowrap" data-node="217:6666" data-node-m="217:9830">
           <a href={PHONE_TEL} class="t-caption lg:text-[15px] lg:leading-[24px] lg:font-medium lg:tracking-normal" data-node="217:6667" data-node-m="217:9831">{PHONE_DISPLAY}</a>
-          <span class="t-caption lg:text-[15px] lg:leading-[24px] lg:font-medium lg:tracking-normal" data-node="217:6668" data-node-m="217:9832">CA License No. 6015234</span>
+          <span class="t-caption lg:text-[15px] lg:leading-[24px] lg:font-medium lg:tracking-normal" data-node="217:6668" data-node-m="217:9832">CA DOI License No. 6015234</span>
+        </div>
+      </div>
+      </div>
+      <div class="relative mt-[48px] lg:mt-[64px] flex flex-col items-start gap-[16px] lg:gap-[20px]">
+        <p class="m-0 w-full border-l-[3px] border-royal pl-[16px] lg:pl-[24px] tm-h3 lg:t-h3 text-navy">Los Angeles house fire, full strip out: Offered $38,000. Settled at $276,000.</p>
+        <p class="m-0 t-caption text-muted">Results reflect specific losses and policies. Past results don't guarantee a similar outcome.</p>
+        <div class="w-full flex flex-col gap-[12px] pt-[8px] lg:w-auto lg:flex-row lg:gap-[16px]">
+          <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-[253px]">Schedule a Free Review</Button>
+          <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-[235px]">Call {PHONE_DISPLAY}</Button>
         </div>
       </div>
     </div>
@@ -92,6 +110,7 @@ const alt = 'A moisture meter held against a water-stained wall near the floor.'
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E");
   }
   .bs-f48-box:focus-visible { outline: 2px solid var(--color-royal); outline-offset: 3px; }
+  @media print { body.bs-print-checklist .bs-f48-detail { display: none !important; } }
   @media (min-width: 1024px) {
     .bs-f48-num { width: 32px; flex-shrink: 0; font-size: 20px; line-height: 32px; }
     .bs-f48-box { width: 24px; height: 24px; background-size: 16px 16px; }

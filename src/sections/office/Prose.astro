@@ -1,0 +1,48 @@
+---
+// Office prose block (kit rail layout, as KitProse): rail (H2, optional italic subhead, ruler) on the left; paragraphs,
+// an optional bullet / numbered list, closing paragraphs, a results disclaimer, a links line and the call buttons on the right.
+import Button from '../../components/Button.astro';
+import Ticks from '../claims/Ticks.astro';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
+import { ROUTES, telHref } from '../../data/site';
+import type { Bg, OfficeBlock } from './types';
+interface Props { block: Extract<OfficeBlock, { type: 'prose' }>; phone: string; bg: Bg }
+const { block: b, phone, bg } = Astro.props;
+const { body = [], list = [], after = [], listStyle = 'bullet' } = b;
+const L = listStyle === 'number' ? 'ol' : 'ul';
+---
+<KitStyles />
+<section aria-labelledby={b.id} class:list={[bg === 'white' ? 'bg-white' : 'bg-paper']}>
+  <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:py-[120px] flex flex-col gap-[32px] lg:flex-row lg:items-start lg:gap-[112px]">
+    <div class="flex flex-col items-start gap-[16px] lg:gap-[24px] lg:w-[360px] lg:shrink-0">
+      <h2 id={b.id} class="m-0 w-full text-navy tm-h2 lg:t-h2">{b.title}</h2>
+      {b.sub && <p class="m-0 w-full text-royal tm-body-strong lg:t-body-strong italic">{b.sub}</p>}
+      <Ticks class="w-[200px] lg:w-[360px] opacity-50 lg:opacity-40 text-navy" />
+    </div>
+    <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
+      {body.map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      {list.length > 0 && (
+        <L class:list={['m-0 p-0 list-none flex flex-col border-t border-line', body.length > 0 && 'mt-[24px] lg:mt-[32px]']}>
+          {list.map((it, i) => (
+            <li class="flex gap-[16px] lg:gap-[24px] border-b border-line py-[16px] lg:py-[20px]">
+              {listStyle === 'number'
+                ? <span aria-hidden="true" class="shrink-0 w-[32px] tm-body-strong lg:t-body-strong text-royal">{String(i + 1).padStart(2, '0')}</span>
+                : <span aria-hidden="true" class="shrink-0 mt-[10px] lg:mt-[12px] block w-[8px] h-[8px] bg-royal"></span>}
+              <span class="flex-1 min-w-0 text-ink tm-body lg:t-body" set:html={md(it)} />
+            </li>
+          ))}
+        </L>
+      )}
+      {after.map((p) => <p class="m-0 mt-[16px] lg:mt-[20px] text-ink tm-body lg:t-lead" set:html={md(p)} />)}
+      {b.note && <p class="m-0 mt-[24px] lg:mt-[28px] pl-[16px] border-l-2 border-royal text-muted tm-body lg:t-body italic" set:html={md(b.note)} />}
+      {b.links && <p class="m-0 mt-[24px] lg:mt-[28px] text-ink tm-body-strong lg:t-body-strong" set:html={md(b.links)} />}
+      {b.buttons && (
+        <div class="flex flex-col w-full gap-[12px] mt-[32px] lg:flex-row lg:w-auto lg:gap-[16px] lg:mt-[40px]">
+          <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+          <Button href={telHref(phone)} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {phone}</Button>
+        </div>
+      )}
+    </div>
+  </div>
+</section>

@@ -1,16 +1,17 @@
-// Santa Monica office (Figma desktop 217:12183, mobile 217:12780). Copy is character-exact from design/text; node ids generated from design/meta.
+// Santa Monica office (Figma desktop 217:12183, mobile 217:12780). Copy from pages/office-santa-monica/content.md; node ids generated from design/meta.
 import type { OfficeData } from '../../sections/office/types';
 import { ROUTES } from '../site';
 
 const santaMonica: OfficeData = {
   route: ROUTES.santaMonica,
-  title: 'Public Adjuster in Santa Monica, CA | Blue Star Adjusters',
-  description: "Blue Star Adjusters, licensed public adjusters for Santa Monica property owners. We measure the loss and negotiate with your insurer. Free claim review.",
+  title: "Public Adjuster in Los Angeles, CA | Blue Star Santa Monica",
+  description: "Licensed public adjuster for Los Angeles homes and businesses, from our Santa Monica office. Smoke, fire and total loss claims. Free claim review.",
   city: "Santa Monica",
   state: "CA",
   hero: {
     eyebrow: "Santa Monica Codes. Santa Monica Contractors.",
-    h1: "Public Adjuster in Santa Monica.",
+    h1: "Public Adjuster in Los Angeles. Office in Santa Monica.",
+    lead: "Blue Star Adjusters is a licensed public adjuster for Los Angeles homes and businesses, with an office in Santa Monica. We work for the policyholder. We read the whole policy, measure the full loss, from smoke in a standing home to a total loss, and negotiate the claim with your insurer. A senior adjuster leads every claim, from the first call to the final settlement.",
     headOffice: false,
     alt: 'Spanish revival house with a tall palm.',
   },
@@ -18,18 +19,33 @@ const santaMonica: OfficeData = {
     label: "Santa Monica",
     labelWidthM: 142,
     rows: [
-      { kind: 'phone', value: "(916) 507-1005" },
+      { kind: 'phone', value: "(213) 572-6005" },
+      { kind: 'email', value: "mike@bluestaradjusters.com" },
       { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
       { kind: 'license', value: "CA DOI License No. 6015234" },
     ],
   },
-  local: "Minutes from Pacific Palisades. Since the January 2025 fire, much of our Westside work is smoke and total loss claims.",
+  local: "Since the January 2025 fire, much of our Westside work is smoke and total loss claims.",
   rule: {
     cite: "§15027",
-    lead: " cancel within 3 business days of signing (5 calendar days in a declared catastrophic disaster area).",
+    lead: " you can cancel within three business days of signing and receiving the contract, or five calendar days in a declared catastrophic disaster area.",
     leadBold: "California:",
     line: "Our fee can never leave you with less than your insurer already paid before you hired us.",
   },
+  blocks: [
+    {"type": "office"},
+    {"type": "prose", "id": "office-reach", "title": "How to Reach the Santa Monica Office", "body": ["Call (213) 572-6005 or email. We call back the same business day.", "Tell us where the property is and what happened. Bring the policy, every letter from the carrier, and photos from before and after the loss if you have them. If you've been displaced, keep every receipt for where you're staying.", "Check our license before you sign anything. Look up CA DOI License No. 6015234 on the California Department of Insurance license search. [Check a license with the California Department of Insurance](https://cdicloud.insurance.ca.gov/cal/LicenseNumberSearch)"]},
+    {"type": "local"},
+    {"type": "state"},
+    {"type": "prose", "id": "office-fires", "title": "After the January 2025 Fires: Standing Homes and Total Losses", "sub": "Heat Is Fire Damage. Smoke Is Chemistry.", "links": "[Fire and smoke damage claims](/claims/fire-smoke-damage/) · [Wildfire insurance claims](/claims/wildfire/) · [Additional living expenses](/claims/additional-living-expenses/)", "body": ["CAL FIRE counts more than 16,000 structures destroyed by two Los Angeles County fires that started on January 7, 2025. Behind those numbers are two very different claims.", "**The home that still stands.** Walls that look clean can still hold smoke residue, so the real answer comes from testing. Heat and smoke travel into wiring, windows, walls and the air system. We measure what the first estimate missed before the carrier decides it will \"clean out.\"", "**The home that's gone.** The questions change. Can the foundation be reused? Concrete and rebar damaged by heat often can't carry a new house. Then come code upgrades, extended replacement cost, debris removal, and an inventory of everything you owned. Most people can't list one room from memory, and what isn't listed isn't paid.", "Either way, the rent runs while the claim does. Loss of use, where your policy includes it, means comparable living: same size home, same school district."]},
+    {"type": "prose", "id": "office-disaster-rules", "title": "California Rules for Hiring a Public Adjuster After a Disaster", "listStyle": "bullet", "list": ["**Nobody should be at your door the next morning.** In an area subject to a declared catastrophic disaster, a public adjuster can't solicit a contract for a residential property until seven calendar days after the event that caused the loss ends. That wait doesn't apply if you or your representative contacted them first.", "**The contract has a form.** It must be in writing, on a form approved by the Insurance Commissioner, with the adjuster's name and license number on it.", "**You can change your mind.** In a declared catastrophic disaster area, you have five calendar days to cancel after signing and receiving the contract. Elsewhere it's three business days.", "**The fee can't touch what you were already paid.** Our fee can never leave you with less than your insurer had already paid before you hired us."]},
+    {"type": "prose", "id": "office-process", "title": "How a Claim Runs With Blue Star", "listStyle": "number", "links": "[How a public adjuster works on your claim](/how-it-works/)", "body": ["Five steps, from a free review to the settlement. You decide on every offer."], "list": ["Free review of your claim, at no cost or obligation.", "Policy review: the whole policy, endorsements included.", "Scope the loss: moisture mapping, testing and structural review where the loss calls for it.", "Build your claim: an itemized claim package, sent only with your approval.", "Negotiate the settlement with your insurer, line by line."]},
+    {"type": "prose", "id": "office-results", "title": "What the Carrier Offered. What We Recovered.", "note": "Results reflect specific losses and policies. Past results don't guarantee a similar outcome.", "links": "[More claim results](/results/)", "buttons": true, "body": ["**Los Angeles house fire, full strip out.** We measured the structural damage and proved the subfloor and electrical needed a full strip out. Offered $38,000. Settled at $276,000.", "**Smoke damage.** Offered $17,000. Settled for about $1.1 million. An industrial hygienist proved combustion byproducts in porous materials and doors."]},
+    {"type": "claims", "title": "Los Angeles Claims We Handle", "links": [{"label": "Residential claims", "href": "/claims/residential/"}, {"label": "Commercial claims", "href": "/claims/commercial/"}, {"label": "Fire and smoke damage", "href": "/claims/fire-smoke-damage/"}, {"label": "Water and plumbing", "href": "/claims/water-damage/"}, {"label": "Wind, hail and falling trees", "href": "/claims/wind-hail-trees/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}]},
+    {"type": "prose", "id": "office-not-for", "title": "When You May Not Need Us", "body": ["On a small loss, our fee may outweigh what we add. If the carrier's offer is already fair, we'll tell you so at the free review, before you sign anything."]},
+    {"type": "faq", "id": "office-faq", "title": "Questions About Hiring a Public Adjuster in Los Angeles", "items": [{"q": "What does a public adjuster do in Los Angeles?", "a": "A public adjuster prepares, presents and negotiates your claim, working only for you. The insurer's adjuster works for the insurer. We start from their estimate and measure what it left out. You decide on every offer. [How a public adjuster works](/how-it-works/)"}, {"q": "Can a public adjuster help with a commercial claim in Los Angeles?", "a": "Yes. When a business burns, payroll, customers, suppliers and the landlord all wait on the same scope. We write that scope first, with loss of income built from your books by a forensic accountant. [Commercial claims](/claims/commercial/)"}, {"q": "How much does a public adjuster cost in Los Angeles?", "a": "No upfront cost. We're paid a percentage of what we recover. The terms are set in writing before we start. In California, our fee can never leave you with less than your insurer had already paid before you hired us. [Public adjuster fees, explained](/fees/)"}, {"q": "How quickly can you help after a loss?", "a": "We call back the same business day. The claim itself can take longer with a public adjuster. A 2010 Florida state study of Citizens Property Insurance claims found exactly that, and found those claims paid more before fees."}, {"q": "When should I contact a public adjuster after property damage?", "a": "Before you accept an offer or sign a release. Our ability to affect your outcome diminishes with time. An offer on the table usually isn't too late, because we can reopen scope before you accept."}]},
+    {"type": "links", "id": "office-offices", "title": "Other Blue Star Offices", "links": [{"label": "Head office: public adjuster in Sacramento", "href": "/locations/california/sacramento/"}, {"label": "Public adjuster in San Francisco", "href": "/locations/california/san-francisco/"}, {"label": "All locations", "href": "/locations/"}]},
+  ],
   n: {
     'header': ["217:12184", "217:12781"],
     'footer': ["217:12779", "217:13107"],

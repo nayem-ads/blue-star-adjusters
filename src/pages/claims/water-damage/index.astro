@@ -1,22 +1,44 @@
 ---
-// Water & Plumbing claims page (Figma desktop 229:698, mobile 229:1106). data-node = desktop id, data-node-m = mobile id.
+// Water damage claims page (Figma desktop 229:698, mobile 229:1106). data-node = desktop id, data-node-m = mobile id.
 import Base from '../../../layouts/Base.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import CallBar from '../../../components/CallBar.astro';
-import Hero from '../../../sections/claims/Hero.astro';
-import RailList from '../../../sections/claims/RailList.astro';
+import Button from '../../../components/Button.astro';
+import WaterHero from '../../../sections/claims/water/WaterHero.astro';
+import WaterRailList from '../../../sections/claims/water/WaterRailList.astro';
 import MoldCap from '../../../sections/claims/water/MoldCap.astro';
 import Related from '../../../sections/claims/Related.astro';
 import Cta from '../../../sections/claims/Cta.astro';
-import { page, hero, method, related, cta } from '../../../data/claims/water-damage';
+import KitProse from '../../../sections/kit/KitProse.astro';
+import KitTable from '../../../sections/kit/KitTable.astro';
+import KitFaq from '../../../sections/kit/KitFaq.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../../data/site';
+import { page, hero, method, methodAfter, suddenGradual, flood, firstSteps, california, notFor, faq, related, cta } from '../../../data/claims/water-damage';
 ---
 <Base title={page.title} description={page.description}>
   <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
   <main class="bs-water bs-fit">
-    <Hero {...hero} />
-    <RailList {...method} />
+    <WaterHero {...hero} />
+    <WaterRailList {...method}>
+      {methodAfter.map((p) => <p class="m-0 text-ink tm-body lg:t-lead">{p}</p>)}
+      <div class="w-full lg:w-auto flex flex-col gap-[12px] lg:flex-row lg:gap-[16px] pt-[8px]">
+        <Button href={ROUTES.freeClaimReview} variant="solid" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]">Schedule a Free Review</Button>
+        <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]">Call {PHONE_DISPLAY}</Button>
+      </div>
+    </WaterRailList>
+    <div class="bs-water-table"><KitTable {...suddenGradual} note={undefined} bg="white" /></div>
+    <div class="bg-white">
+      <div class="max-w-[1280px] mx-auto px-[20px] pt-[24px] pb-[56px] lg:px-[80px] lg:pt-[40px] lg:pb-[120px]">
+        <p class="m-0 text-ink tm-body lg:t-lead lg:w-[820px]">{suddenGradual.note}</p>
+      </div>
+    </div>
     <MoldCap />
+    <KitProse {...flood} bg="white" />
+    <KitProse {...firstSteps} bg="paper" />
+    <KitProse {...california} bg="white" />
+    <KitProse {...notFor} bg="paper" />
+    <KitFaq {...faq} bg="white" />
     <Related {...related} />
     <Cta {...cta} />
   </main>
@@ -24,5 +46,6 @@ import { page, hero, method, related, cta } from '../../../data/claims/water-dam
   <CallBar node={page.callBar} />
 </Base>
 <style is:global>
+  .bs-water-table > section > div { padding-bottom: 0; }
   @media (max-width: 1023.98px) { .bs-water :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
 </style>

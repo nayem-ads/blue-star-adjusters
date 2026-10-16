@@ -25,9 +25,9 @@ const r = d.rule;
       <span aria-hidden="true" class="block bg-white opacity-40 h-px w-[120px] lg:w-px lg:h-[160px]" {...n('state.hairline')}></span>
     </div>
 
-    <!-- Mobile document: 350×376 box with crop marks; card rotated inside -->
-    <div class="relative h-[376px] w-full lg:hidden" data-node-m={id('state.document', 1)}>
-      <div class="bs-office-card absolute left-[16px] top-[24px] w-[318px] flex flex-col gap-[16px] bg-paper pt-[24px] px-[24px] pb-[28px]">
+    <!-- Mobile document: 350 wide box (376 min, grows with the copy) with crop marks; card rotated inside -->
+    <div class="relative min-h-[376px] w-full pt-[24px] pb-[36px] px-[16px] lg:hidden" data-node-m={id('state.document', 1)}>
+      <div class="bs-office-card relative w-[318px] flex flex-col gap-[16px] bg-paper pt-[24px] px-[24px] pb-[28px]">
         <div class="flex items-center gap-[12px] h-[20px]">
           <Icon name="document" size={20} class="shrink-0 text-navy" />
           <Ticks count={16} class="w-[120px] text-navy opacity-45" />

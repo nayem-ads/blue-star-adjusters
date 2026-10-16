@@ -1,34 +1,50 @@
-// San Francisco office (Figma desktop 217:13496, mobile 217:14093). Copy is character-exact from design/text; node ids generated from design/meta.
+// San Francisco office (Figma desktop 217:13496, mobile 217:14093). Copy from pages/office-san-francisco/content.md; node ids generated from design/meta.
 import type { OfficeData } from '../../sections/office/types';
 import { ROUTES } from '../site';
 
 const sanFrancisco: OfficeData = {
   route: ROUTES.sanFrancisco,
-  title: 'Public Adjuster in San Francisco, CA | Blue Star Adjusters',
-  description: "Blue Star Adjusters, licensed public adjusters for San Francisco property owners. We measure the loss and negotiate with your insurer. Free claim review.",
+  title: "Public Adjuster in San Francisco, CA | Blue Star Adjusters",
+  description: "Licensed public adjuster for San Francisco homes and buildings. Fire, smoke, water and code upgrade claims, soft story and earthquake rules explained.",
   city: "San Francisco",
   state: "CA",
   hero: {
     eyebrow: "San Francisco Codes. San Francisco Contractors.",
     h1: "Public Adjuster in San Francisco.",
+    lead: "Blue Star Adjusters is a licensed public adjuster for San Francisco homes, apartment buildings and businesses. We work for the policyholder. We read the whole policy, measure the full loss, including the code work a rebuild here will require, and negotiate the claim with your insurer. A senior adjuster leads every claim, from the first call to the final settlement.",
     headOffice: false,
     alt: 'Row of Victorian houses on a hill in fog.',
   },
   office: {
     label: "San Francisco",
     rows: [
-      { kind: 'phone', value: "(916) 507-1005" },
+      { kind: 'phone', value: "(628) 300-0741" },
+      { kind: 'email', value: "mike@bluestaradjusters.com" },
       { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
       { kind: 'license', value: "CA DOI License No. 6015234" },
     ],
   },
-  local: "In San Francisco, the code sets the rebuild scope, not what burned. Michael has built to the city’s seismic retrofit ordinance.",
+  local: "In San Francisco, the code sets the rebuild scope, not what burned.",
   rule: {
     cite: "§15027",
-    lead: " cancel within 3 business days of signing (5 calendar days in a declared catastrophic disaster area).",
+    lead: " you can cancel within three business days of signing and receiving the contract, or five calendar days in a declared catastrophic disaster area.",
     leadBold: "California:",
     line: "Our fee can never leave you with less than your insurer already paid before you hired us.",
   },
+  blocks: [
+    {"type": "office"},
+    {"type": "prose", "id": "office-reach", "title": "How to Reach Us in San Francisco", "body": ["Call the San Francisco line or email. We call back the same business day. Our head office is in Sacramento, at 1610 R Street, Suite 300.", "Have the policy ready, endorsements included, with the carrier's letters and your photos. If you own a multiunit building, find the original permit date too. In this city, it can change the claim.", "Check our license before you sign anything. Look up CA DOI License No. 6015234 on the California Department of Insurance license search. [Check a license with the California Department of Insurance](https://cdicloud.insurance.ca.gov/cal/LicenseNumberSearch)"]},
+    {"type": "local"},
+    {"type": "state"},
+    {"type": "prose", "id": "office-soft-story", "title": "San Francisco's Soft Story Ordinance and Your Claim", "sub": "Mandatory Soft Story Retrofit Program, signed into law April 18, 2013", "listStyle": "bullet", "links": "[Ordinance or law coverage](/claims/code-upgrades/)", "body": ["San Francisco requires a seismic retrofit of older wood frame apartment buildings with a soft story condition. The city's program page says a building is covered when it meets all of these:"], "list": ["Wood frame construction (Type V).", "The permit for the original construction was applied for before January 1, 1978.", "Five or more residential units.", "Two or more stories over a basement or underfloor area with any part above grade.", "A soft story condition that has not been seismically strengthened to the ordinance's standards."], "after": ["The program sorts buildings into four tiers, with ground floor commercial uses and mapped liquefaction zones in their own tier. The Department of Building Inspection's program database lists each building's deadlines.", "Why it matters after a fire or a water loss: was the retrofit done? When, and under which permit? Those answers shape which code work belongs in the claim. Code work is paid from ordinance or law coverage, up to its own limit. That limit is printed in your policy. We read it before the scope is written, so the code work is priced against money that's actually there."]},
+    {"type": "prose", "id": "office-earthquake", "title": "Earthquake Damage and Fire After an Earthquake", "body": ["California's Department of Insurance puts the first rule plainly: \"Your homeowners insurance does not cover earthquake damage.\" Earthquake coverage is bought separately. The California Earthquake Authority provides most of it in this state.", "Fire is the exception. California law says homeowners and renters insurance must cover fire damage that is caused by or follows an earthquake. That fire is a homeowners claim, even if you never bought earthquake coverage.", "After a quake, one building can carry two losses. Shaking damage belongs to the earthquake policy, if there is one. Fire, heat and smoke belong to the homeowners policy. The line between them has to be measured and documented, wall by wall, before the carrier draws it for you.", "Your insurer must also offer you earthquake coverage in writing, and repeat the offer every other year."]},
+    {"type": "prose", "id": "office-process", "title": "How a Claim Runs With Blue Star", "listStyle": "number", "links": "[How a public adjuster works on your claim](/how-it-works/)", "body": ["Five steps, from a free review to the settlement. You decide on every offer."], "list": ["Free review of your claim, at no cost or obligation.", "Policy review: the whole policy, endorsements included.", "Scope the loss: moisture mapping, testing and structural review where the loss calls for it.", "Build your claim: an itemized claim package, sent only with your approval.", "Negotiate the settlement with your insurer, line by line."]},
+    {"type": "prose", "id": "office-results", "title": "Fire and Smoke Claims We've Settled", "sub": "Heat Is Fire Damage. Smoke Is Chemistry.", "note": "Results reflect specific losses and policies. Past results don't guarantee a similar outcome.", "links": "[Fire and smoke damage claims](/claims/fire-smoke-damage/) · [More claim results](/results/)", "buttons": true, "body": ["**Apartment fire, 800 sq ft, started by a computer.** Settled for nearly $200,000, including the tongue and groove ceiling and smoke mitigation for the neighboring unit.", "**Smoke damage.** Offered $17,000. Settled for about $1.1 million. An industrial hygienist proved combustion byproducts in porous materials and doors."]},
+    {"type": "claims", "title": "San Francisco Claims We Handle", "links": [{"label": "Residential claims", "href": "/claims/residential/"}, {"label": "Commercial claims", "href": "/claims/commercial/"}, {"label": "Fire and smoke damage", "href": "/claims/fire-smoke-damage/"}, {"label": "Water and plumbing", "href": "/claims/water-damage/"}, {"label": "Wind, hail and falling trees", "href": "/claims/wind-hail-trees/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}]},
+    {"type": "prose", "id": "office-not-for", "title": "When You May Not Need Us", "body": ["On a small loss, our fee may outweigh what we add. If the carrier's offer is already fair, we'll tell you so at the free review, before you sign anything."]},
+    {"type": "faq", "id": "office-faq", "title": "Questions About Hiring a Public Adjuster in San Francisco", "items": [{"q": "Does homeowners insurance cover earthquake damage in San Francisco?", "a": "No. The Department of Insurance says homeowners insurance does not cover earthquake damage, except fire. Earthquake coverage is bought separately, and the California Earthquake Authority provides most of it in California."}, {"q": "Is fire after an earthquake covered?", "a": "Yes, under your homeowners or renters policy. California law requires both to cover fire damage caused by or following an earthquake. You don't need an earthquake policy for that part of the claim."}, {"q": "Does my building fall under the soft story ordinance?", "a": "Only if it meets all of the city's tests: wood frame, a permit for the original construction applied for before January 1, 1978, five or more residential units, two or more stories over a basement or underfloor area, and a soft story that hasn't been strengthened to the ordinance's standards. The Department of Building Inspection's program database lists each building's deadlines. Bring that record to the free review."}, {"q": "How much does a public adjuster cost in San Francisco?", "a": "No upfront cost. We're paid a percentage of what we recover. The terms are set in writing before we start, and in California our fee can never leave you with less than your insurer had already paid before you hired us. [Public adjuster fees, explained](/fees/)"}, {"q": "I already have an offer. Is it too late?", "a": "Usually not. We can reopen scope before you accept. If you signed a final release, it usually is too late for that claim, so read anything the carrier sends before you sign it."}, {"q": "Will my insurer treat me differently if I hire a public adjuster?", "a": "Carriers work with public adjusters every day. The difference is what gets measured. You can still talk to your insurer at any time. Most clients prefer we handle it."}, {"q": "Will hiring a public adjuster slow my claim?", "a": "It can. A 2010 Florida state study of claims at Citizens Property Insurance found claims with a public adjuster took longer to settle, and paid more before fees. More of the loss gets measured and argued, and that takes time."}]},
+    {"type": "links", "id": "office-offices", "title": "Other Blue Star Offices", "links": [{"label": "Head office: public adjuster in Sacramento", "href": "/locations/california/sacramento/"}, {"label": "Public adjuster in Los Angeles, from Santa Monica", "href": "/locations/california/santa-monica/"}, {"label": "All locations", "href": "/locations/"}]},
+  ],
   n: {
     'header': ["217:13497", "217:14094"],
     'footer': ["217:14092", "217:14420"],

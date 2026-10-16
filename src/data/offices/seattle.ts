@@ -1,24 +1,28 @@
-// Seattle office (Figma desktop 217:17062, mobile 217:17659). Copy is character-exact from design/text; node ids generated from design/meta.
+// Seattle office (Figma desktop 217:17062, mobile 217:17659). Copy from pages/office-seattle/content.md; node ids generated from design/meta.
 import type { OfficeData } from '../../sections/office/types';
 import { ROUTES } from '../site';
 
 const seattle: OfficeData = {
   route: ROUTES.seattle,
-  title: 'Public Adjuster in Seattle, WA | Blue Star Adjusters',
-  description: "Blue Star Adjusters, licensed public adjusters for Seattle property owners. We measure the loss and negotiate with your insurer. Free claim review.",
+  title: "Public Adjuster in Washington State | Seattle | Blue Star",
+  description: "Blue Star Adjusters is a licensed public adjuster in Washington State, based in Seattle. What the state's wildfire data shows, and how to check a license.",
   city: "Seattle",
   state: "WA",
   hero: {
     eyebrow: "Seattle Codes. Seattle Contractors.",
-    h1: "Public Adjuster in Seattle.",
+    h1: "Public Adjuster in Washington State. Seattle Office.",
+    lead: "A public adjuster in Washington State is an adjuster licensed by the Office of the Insurance Commissioner to represent the policyholder, not the insurer. Blue Star Adjusters holds Washington firm license No. 1382428 and works claims across the state from Seattle. We measure the loss, document it, and negotiate the claim with your carrier.",
     headOffice: false,
     alt: 'Cedar modern house among fir trees under an overcast sky.',
   },
   office: {
     label: "Seattle",
     rows: [
-      { kind: 'phone', value: "(916) 507-1005" },
-      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday." },
+      { kind: 'phone', value: "(564) 465-4550" },
+      { kind: 'hours', value: "Monday to Friday, 9 AM to 5 PM Pacific. Closed Saturday and Sunday. We call back the same business day." },
+      { kind: 'email', value: "mike@bluestaradjusters.com" },
+      { kind: 'license', value: "Washington firm license No. 1382428, Blue Star Adjusters LLC" },
+      { kind: 'address', value: "1610 R Street, Suite 300, Sacramento, California 95811", label: "Head office" },
     ],
   },
   local: null,
@@ -28,6 +32,18 @@ const seattle: OfficeData = {
     leadBold: null,
     line: "Underinsurance is common here.",
   },
+  blocks: [
+    {"type": "office"},
+    {"type": "state"},
+    {"type": "prose", "id": "office-limits", "title": "What Washington's Wildfire Data Shows", "listStyle": "bullet", "body": ["The Gray and Oregon Road fires burned outside Spokane in August 2023 and destroyed 366 homes. In June 2024 the Office of the Insurance Commissioner started a data call on the claims. Of 355 significant dwelling claims, 244 paid out their full coverage. The Commissioner called that a sign that in most cases the coverage limits were reached.", "Its consumer page puts it plainly. About two thirds of the people who lost their homes in those fires found they were underinsured. Many also ran out of additional living expense coverage.", "Three more findings from the same data call matter to any Washington homeowner:"], "list": ["Of the 244 claims that paid full coverage, 75 did not have extended replacement loss coverage.", "111 claims had personal property damage, outbuilding damage or loss of use coverage.", "Nearly one in three people who filed claims with significant losses were dropped by their insurer."], "after": ["The Commissioner's advice: review your policy regularly so it meets the cost to fully replace your home and possessions. In a wildfire risk area, carry at least 24 months of loss of use coverage, because of the time it takes to rebuild a destroyed home. Check yours before the renewal date."]},
+    {"type": "prose", "id": "office-atlimits", "title": "When the Dwelling Limit Runs Out", "buttons": true, "body": ["A paid out dwelling limit is not the end of the claim. Most policies have more than one coverage, and each has its own limit.", "We read the whole policy against the loss, endorsements included, because the money that rebuilds a house is often spread across several coverages. Extended replacement cost can pay above the dwelling limit. In the Commissioner's data, the 169 homes with that coverage recovered more than their policy limit. An ordinance or law endorsement pays for code upgrades the rebuild requires. Other structures, contents and loss of use are separate. Each one needs its own proof, priced line by line.", "A loss turns a household upside down. The proof is our work, not yours."]},
+    {"type": "prose", "id": "office-check", "title": "Hiring a Public Adjuster in Washington State: What to Check", "listStyle": "bullet", "list": ["**The license.** Washington requires a separate license for each type of adjuster, and public adjuster is its own license (RCW 48.17.390). Ask the Office of the Insurance Commissioner to confirm the license before you sign. Ours is Washington firm license No. 1382428.", "**The bond.** Before a public adjuster license is issued, the applicant must file a $5,000 bond with the Commissioner. The bond is contingent on the adjuster's accounting to any insured whose claim the adjuster handles (RCW 48.17.430).", "**The fee, in writing.** Ask to see the percentage in the contract before any work starts. Ours: No upfront cost. We're paid a percentage of what we recover.", "**Who does the work.** Ask who will measure the loss and who will speak to the carrier. With us, a senior adjuster leads every claim, from the first call to the final settlement.", "**Who decides.** You do. You always have final say on any settlement."]},
+    {"type": "prose", "id": "office-work", "title": "What We Do on a Washington Claim", "body": ["Your insurer's adjuster writes the first estimate for the insurer. That adjuster's job is to close the file at a number the policy supports. The first number is the carrier's estimate, not a final ruling.", "Our job is to prove the full loss. We inspect the property and photograph every damaged surface. Our building estimators price the repair line by line. Then we check what the first estimate left out: recoverable depreciation, code upgrades, contents and additional living expenses. The carrier gets a documented claim, and we negotiate it.", "We don't arrange repairs or act as your contractor. You choose the builder. We negotiate the money that pays for the build."]},
+    {"type": "prose", "id": "office-notfor", "title": "When We'll Tell You Not to Hire Us.", "body": ["Some claims don't need a public adjuster. If the damage is small, or the carrier's offer already covers the repair, our fee would cost you more than we could add. We'll tell you that at the free review."]},
+    {"type": "claims", "title": "Claims We Handle in Seattle and Across Washington", "links": [{"label": "Residential claims", "href": "/claims/residential/"}, {"label": "Commercial claims", "href": "/claims/commercial/"}, {"label": "Fire and smoke damage claims", "href": "/claims/fire-smoke-damage/"}, {"label": "Water and plumbing claims", "href": "/claims/water-damage/"}, {"label": "Wind, hail and falling tree claims", "href": "/claims/wind-hail-trees/"}, {"label": "Denied or underpaid claims", "href": "/claims/denied-or-underpaid/"}], "after": "Wildfire losses have their own page: [wildfire insurance claims](/claims/wildfire/)."},
+    {"type": "faq", "id": "office-faq", "title": "Washington Public Adjuster Questions", "items": [{"q": "Do I need a public adjuster for my claim in Washington?", "a": "Not always. A small claim with a fair offer doesn't need one. A large loss, a claim near your policy limits, or a denial often does. The free review tells you which yours is."}, {"q": "Are public adjusters licensed in Washington?", "a": "Yes. The Office of the Insurance Commissioner licenses public adjusters. Resident individuals must meet experience, exam, fingerprint and $5,000 bond requirements. Blue Star Adjusters LLC holds Washington firm license No. 1382428."}, {"q": "How much does a public adjuster cost in Washington?", "a": "No upfront cost. We're paid a percentage of what we recover. The percentage is written into your contract before we start. For Washington's current rules on public adjuster contracts, call the Insurance Commissioner's consumer hotline at 800-562-6900."}, {"q": "Can you help if my claim was denied or I already received a payment?", "a": "Often, yes. A first payment doesn't always end the claim. Send us the denial letter or the estimate, and we'll review it free."}, {"q": "What is the difference between a public adjuster and an insurance adjuster?", "a": "The insurance company's adjuster works for the insurer and is paid by the insurer. A public adjuster works for you and is paid from the claim. Both read the same policy. They don't always read it the same way."}, {"q": "Can my insurer drop me after a big claim?", "a": "It happens. After the 2023 fires, the Commissioner's data call found nearly one in three people with significant losses were dropped. State law generally requires written notice of nonrenewal at least 60 days before the policy expires (RCW 48.18.2901)."}]},
+    {"type": "links", "id": "office-related", "title": "Related", "links": [{"label": "Wildfire insurance claims", "href": "/claims/wildfire/"}, {"label": "Code upgrades and ordinance or law coverage", "href": "/claims/code-upgrades/"}, {"label": "Additional living expenses", "href": "/claims/additional-living-expenses/"}, {"label": "Public adjuster fees", "href": "/fees/"}, {"label": "All Blue Star office locations", "href": "/locations/"}]},
+  ],
   n: {
     'header': ["217:17063", "217:17660"],
     'footer': ["217:17658", "217:17986"],

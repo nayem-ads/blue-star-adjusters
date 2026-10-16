@@ -8,22 +8,24 @@ import Icon from '../../components/Icon.astro';
 import Img from '../../components/Img.astro';
 import Grid from './Grid.astro';
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const trust = ['No upfront cost', 'You always have final say on any settlement', 'CA DOI License No. 6015234'];
 const chips = [
   { n: '01', label: 'Free Review', d: '128:3799', t: '128:3801' },
   { n: '02', label: 'Policy Review', d: '128:3802', t: '128:3804' },
   { n: '03', label: 'Scope the Loss', d: '128:3805', t: '128:3807' },
   { n: '04', label: 'Build Your Claim', d: '128:3808', t: '128:3810' },
-  { n: '05', label: 'Maximize Settlement', d: '128:3811', t: '128:3813' },
+  { n: '05', label: 'Negotiate the Settlement', d: '128:3811', t: '128:3813' },
 ];
 ---
-<section aria-labelledby="hiw-title" class="relative overflow-hidden bg-paper h-[722px] lg:h-[688px]" data-node="128:3774" data-node-m="135:4658">
-  <Grid w={1280} h={692} skipMajorInMinor class="hidden lg:block lg:left-1/2 lg:-translate-x-1/2" />
-  <Grid w={390} h={824} class="lg:hidden" />
-  <div class="relative max-w-[1280px] mx-auto flex flex-col items-start px-[20px] pt-[32px] lg:px-[80px] lg:pt-[96px]">
+<section aria-labelledby="hiw-title" class="relative overflow-hidden bg-paper" data-node="128:3774" data-node-m="135:4658">
+  <Grid w={1280} h={1000} skipMajorInMinor class="hidden lg:block lg:left-1/2 lg:-translate-x-1/2" />
+  <Grid w={390} h={1400} class="lg:hidden" />
+  <div class="relative max-w-[1280px] mx-auto flex flex-col items-start px-[20px] pt-[32px] pb-[48px] lg:px-[80px] lg:pt-[96px] lg:pb-[64px]">
     <div class="w-fit" data-node="128:3775" data-node-m="135:4659"><Eyebrow>How It Works</Eyebrow></div>
-    <h1 id="hiw-title" class="m-0 mt-[20px] lg:mt-[32px] text-navy tm-display lg:t-display-xl w-full" data-node="128:3779" data-node-m="135:4663">Five Steps.<br /> You Have the Final Say.</h1>
+    <h1 id="hiw-title" class="m-0 mt-[20px] lg:mt-[32px] text-navy tm-display lg:t-display-xl w-full" data-node="128:3779" data-node-m="135:4663">How Does a Public Adjuster Work?</h1>
+    <p class="m-0 mt-[20px] lg:mt-[32px] w-full lg:w-[880px] text-ink tm-body lg:t-lead">A public adjuster is a licensed insurance adjuster who works for you, the policyholder, and not for the insurance company. We read your policy, measure and document the loss, build the claim and negotiate the settlement with your insurer. You decide on every offer. With Blue Star, one senior adjuster leads your claim from the first call to the final settlement.</p>
 
-    <div class="w-full mt-[24px] lg:mt-[48px] flex flex-col lg:flex-row lg:items-end lg:justify-between" data-node="128:3781">
+    <div class="w-full mt-[32px] lg:mt-[48px] flex flex-col lg:flex-row lg:items-end lg:justify-between" data-node="128:3781">
       <div class="flex items-start gap-[16px] lg:gap-[20px]" data-node="128:3782" data-node-m="135:4665">
         <span aria-hidden="true" class="block w-[2px] h-[56px] lg:h-[68px] bg-royal shrink-0" data-node="128:3783" data-node-m="135:4666"></span>
         <Icon name="clock" size={24} class="hidden lg:block shrink-0 text-royal" />
@@ -35,7 +37,11 @@ const chips = [
       </div>
     </div>
 
-    <nav aria-label="Jump to a step" class="hidden lg:flex relative w-full mt-[88px] items-center justify-between" data-node="128:3798">
+    <ul class="m-0 p-0 list-none mt-[20px] lg:mt-[24px] flex flex-wrap items-center gap-x-[12px] gap-y-[6px] text-ink tm-label lg:t-label">
+      {trust.map((t, i) => (<>{i > 0 && <li aria-hidden="true" class="text-royal">·</li>}<li>{t}</li></>))}
+    </ul>
+
+    <nav aria-label="Jump to a step" class="hidden lg:flex relative w-full mt-[72px] items-center justify-between" data-node="128:3798">
       <span aria-hidden="true" class="absolute left-0 top-[23px] w-full h-px bg-navy"></span>
       {chips.map((c, i) => (
         <a href={`#step-${c.n}`} class:list={['hiw-chip relative flex items-center h-[42px] pl-[16px] pr-[20px] rounded-[24px] border border-navy box-border whitespace-pre font-body font-medium text-[15px] leading-[24px]', i === 0 ? 'bg-navy text-white' : 'bg-white text-ink']} data-node={c.d}>

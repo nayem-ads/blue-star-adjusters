@@ -1,20 +1,105 @@
 ---
 // Why Blue Star (Figma desktop 128:3866, mobile 135:1578). Indexable.
 // data-node = desktop node id, data-node-m = mobile node id (QA swaps them for the 390 run).
-// The dark header sits inside the hero section (Figma embeds it in "Section / Hero + comparison").
+// The dark header sits over the hero photo (Figma embeds it in "Section / Hero + comparison"); it is kept outside <main>.
+// Copy: /home/claude/bluestar-work/pages/why-blue-star/content.md (approved 2026-10-16). New blocks use the content kit.
 import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CallBar from '../../components/CallBar.astro';
 import Hero from '../../sections/why-blue-star/Hero.astro';
 import Reasons from '../../sections/why-blue-star/Reasons.astro';
+import ProseCta from '../../sections/why-blue-star/ProseCta.astro';
 import FinalCta from '../../sections/why-blue-star/FinalCta.astro';
-const title = 'Do You Need a Public Adjuster? Blue Star vs. Going It Alone';
-const description = 'Scope, inventory, control, cost, speed and final say. Handling a claim yourself vs. hiring a builder led public adjuster.';
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+const title = 'Is a Public Adjuster Worth It? Blue Star vs. Going It Alone';
+const description = "When a public adjuster is worth it, and when it isn't. Scope, inventory, cost, speed and final say, compared with handling the claim yourself.";
 ---
 <Base title={title} description={description}>
+  <div class="absolute top-0 left-0 right-0 z-20" data-node="128:3871" data-node-m="135:1584"><Header theme="dark" overlay={false} /></div>
   <main class="bs-why">
     <Hero />
+    <ProseCta
+      id="why-worth-title"
+      bg="white"
+      title="When Is a Public Adjuster Worth It?"
+      body={['A public adjuster earns the fee when the loss is bigger than the first estimate. That gap is widest on these claims.']}
+      list={[
+        '**A fire or smoke loss.** Charred framing is easy to see. Smoke byproducts in porous materials and doors can take an industrial hygienist to prove. [Fire and smoke damage claims](/claims/fire-smoke-damage/)',
+        '**A total loss or a long rebuild.** Dwelling, contents, loss of use and code upgrades are separate coverages. Each one gets measured on its own. [Ordinance or law coverage](/claims/code-upgrades/)',
+        "**A business that can't open.** Lost income and extra expense have to be quantified from your books. Accountants on our team do that work. [Commercial claims](/claims/commercial/)",
+        '**A contents claim with thousands of items.** Every item needs a description, an age and a replacement price, room by room. [Contents and valuables claims](/claims/contents-valuables/)',
+        "**An estimate far below your contractor's bid.** A wide gap between the carrier's number and a real repair bid often points to missing scope.",
+        '**A denial or a low payment.** A second read of the policy and the cause of loss can change the answer. Not always. [Denied or underpaid claims](/claims/denied-or-underpaid/)',
+      ]}
+      after={[
+        'A Los Angeles house fire needed a full strip out. The carrier offered $38,000. It settled at $276,000.',
+        'On a smoke damage claim, an industrial hygienist proved combustion byproducts in porous materials and doors. The offer was $17,000. It settled for about $1.1 million.',
+      ]}
+      note="Results reflect specific losses and policies. Past results don't guarantee a similar outcome. [See more of our results](/results/)"
+    />
+    <KitProse
+      id="why-notfor-title"
+      bg="paper"
+      title="When You May Not Need a Public Adjuster"
+      body={["Some claims don't need us. We'll tell you at the free review, before you sign anything."]}
+      list={[
+        "**The loss is small.** If the damage is easy to see, easy to price and close to your deductible, our fee can take most of what we'd add.",
+        "**The offer is already fair.** If the carrier's estimate matches a licensed contractor's bid line for line, and every coverage that applies has been paid, there's little left to recover.",
+        "**Coverage is clearly excluded.** If the policy plainly excludes what caused the damage, better measurement won't change the answer. We'll read the exclusion with you and say so.",
+        '**The claim is going well.** If your adjuster answers, the scope looks complete and you have time for the paperwork, you may not need anyone.',
+        "**You need legal advice.** If you've been asked for a sworn statement, or the dispute is about how the carrier handled your claim, talk to an attorney. We don't give legal advice. When a claim needs counsel, we work alongside your attorney.",
+      ]}
+    />
     <Reasons />
+    <KitProse
+      id="why-speed-title"
+      bg="paper"
+      title="Does a Public Adjuster Make the Claim Faster?"
+      body={[
+        "Don't hire one for speed. A Florida state study found the opposite.",
+        "Florida's Office of Program Policy Analysis and Government Accountability reviewed claims filed with Citizens Property Insurance from March 2008 to June 2009 (OPPAGA Report 10-06). On non catastrophe claims, the median claim with a public adjuster took 115 days to close. Without one, it took 41. On catastrophe claims, represented claims typically took 132 to 296 days longer.",
+        "Payments on the represented claims were higher, before the public adjuster's fee. The report says public adjusters may present a larger scope of damage and often take claims to mediation or appraisal, which takes time. Claims without a public adjuster included some handled by attorneys. And the study covers one insurer in Florida, not California.",
+        "So we don't sell speed. We measure the whole loss, and you decide when an offer is good enough to take.",
+      ]}
+    />
+    <KitProse
+      id="why-vet-title"
+      bg="white"
+      title="Before You Hire Any Public Adjuster"
+      list={[
+        '**Check the license.** California licenses public adjusters through the Department of Insurance. Look the number up before you sign. Ours is CA DOI License No. 6015234.',
+        '**Be wary of a contract at the door.** Someone who arrives uninvited with paperwork in hand is selling. Take the contract home and read it.',
+        '**Find the required line.** California requires the contract to say, in plain view, "We represent the insured only."',
+        '**Know your exit.** In California you may cancel within three business days of signing and receiving the contract, or five calendar days if your property is in a declared catastrophic disaster area.',
+        '**Ask who works your file.** The person who signs you up should be the person who scopes the loss and argues it. With us, a senior adjuster leads every claim, from the first call to the final settlement.',
+      ]}
+    />
+    <KitFaq
+      id="why-faq-title"
+      bg="paper"
+      title="Questions About Hiring a Public Adjuster"
+      items={[
+        { q: 'How does a public adjuster get paid?', a: "No upfront cost. We're paid a percentage of what we recover. The fee is written into the contract you sign. In California, our fee can never leave you with less than your insurer had already paid before you hired us. [Public adjuster fees](/fees/)" },
+        { q: 'Are public adjusters legitimate?', a: "Yes, when they're licensed. In California, public adjusters are licensed by the Department of Insurance, and state law sets what their contracts must say. Check the license number before you sign anything." },
+        { q: 'Can I hire a public adjuster after my claim has been denied or partially paid?', a: "Yes. We read the denial or payment letter against your policy and tell you at the free review whether there's room to dispute it. [Denied or underpaid claims](/claims/denied-or-underpaid/)" },
+        { q: 'When is it too late to hire a public adjuster?', a: "As early as you can is best. If you already have an offer, it's usually not too late. Your policy sets its own deadlines, so check them now rather than later. [Claim questions, answered](/faq/)" },
+        { q: 'Should I hire a public adjuster or a lawyer?', a: "It depends on the dispute. If it's about what the loss is worth, a public adjuster measures and negotiates it. If it's about a sworn statement, a lawsuit or how the carrier handled your claim, talk to a lawyer. When a claim needs counsel, we work alongside your attorney." },
+      ]}
+    />
+    <KitProse
+      id="why-related-title"
+      bg="white"
+      title="Keep Reading"
+      list={[
+        '[How a public adjuster works](/how-it-works/)',
+        '[Public adjuster fees](/fees/)',
+        '[Our results](/results/)',
+        '[Michael Rapport, founder](/about/michael-rapport/)',
+        '[What to do in the first 48 hours](/first-48-hours/)',
+      ]}
+    />
     <FinalCta />
   </main>
   <div data-node="128:6114" data-node-m="141:929"><Footer /></div>

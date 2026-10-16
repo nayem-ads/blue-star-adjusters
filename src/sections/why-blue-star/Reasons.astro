@@ -7,22 +7,25 @@ import Icon from '../../components/Icon.astro';
 import Logo from '../../components/Logo.astro';
 import Img from '../../components/Img.astro';
 import { ROUTES } from '../../data/site';
+import KitStyles from '../kit/KitStyles.astro';
+import { md } from '../kit/md';
 const circle = {
   outline: 'bg-white border border-navy text-navy',
   paper: 'bg-paper text-navy',
   ghost: 'border border-white text-white',
 };
-const r1 = { t: 'We Work for You Alone.', b: "Unlike the adjuster sent by your insurance company, our sole obligation is to you. There is no conflict of interest, and no divided loyalty between you and the insurer's balance sheet." };
+const r1 = { t: 'We Work for You Alone.', b: "The adjuster your insurance company sends is paid to settle the claim for the insurer. A public adjuster is licensed to work only for the policyholder. Our sole obligation is to you, with no divided loyalty between you and the insurer's balance sheet." };
 const quote = 'Remember: the tallest buildings in our major cities are named after insurance companies, as are our stadiums and arenas. That wealth came from somewhere.';
-const r2 = { t: 'We Start Early, Finish Strong.', b: 'Our ability to affect your outcome diminishes with time. Bringing us in at the start, before any missteps are made, gives us the most room to work.' };
-const r3 = { t: 'Expert Team, Every Claim.', b: 'Your claim is handled by a full team: building estimators, inventory specialists, accountants, and licensed public adjusters working in concert. Not a single generalist on their own.' };
+const r2 = { t: 'We Start Early, Finish Strong.', b: 'Our ability to affect your outcome diminishes with time. Bringing us in at the start, before the first estimate is final and before anything is thrown away, gives us the most room to work.' };
+const r3 = { t: 'A Senior Adjuster. A Full Team.', b: 'A senior adjuster leads your claim from the first call to the final settlement. Behind that adjuster are building estimators, inventory specialists, accountants, and licensed public adjusters working in concert. Not a single generalist on their own.' };
 const r4 = { t: 'Free Initial Review.', b: "Schedule a free review to discuss the details of your claim at no cost. We'll explain what we can do, and you decide whether to proceed, with no pressure." };
-const r5 = { t: 'Experience You Can Trust.', b: "Blue Star Adjusters is a new firm, built intentionally by a veteran of one of the nation's leading public adjusting firms. You get the benefit of deep industry experience without the outdated methods that come with it." };
-const r6 = { t: 'Paid by Percentage.', strong: "No upfront cost. We're paid a percentage of what we recover.", b: 'Our incentive is aligned with yours: the higher your recovery, the better for both of us.' };
+const r5 = { t: 'Experience You Can Trust.', b: "Blue Star Adjusters is a new firm, built by Michael Rapport, a top producer at one of the nation's leading public adjusting firms, across hundreds of losses. You get the benefit of deep industry experience without the outdated methods that come with it. [Meet Michael Rapport](/about/michael-rapport/)" };
+const r6 = { t: 'Paid by Percentage.', strong: "No upfront cost. We're paid a percentage of what we recover.", b: 'Our incentive is aligned with yours: the higher your recovery, the better for both of us. In California, our fee can never leave you with less than your insurer had already paid before you hired us.', link: '[Public adjuster fees, explained](/fees/)' };
 const skylineAlt = 'Looking straight up at glass office towers at dusk.';
 const estimatorAltM = 'A contractor reviews plans on a truck tailgate beside a home being rebuilt after a wildfire.';
 const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailgate beside new framing on a burned hillside.';
 ---
+<KitStyles />
 <section aria-labelledby="why-reasons-title" class="relative bg-white" data-node="128:5778" data-node-m="135:5401">
   <!-- Desktop bento -->
   <div class="hidden lg:block max-w-[1280px] mx-auto px-[80px] pt-[120px] pb-[120px]">
@@ -57,7 +60,7 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
           <h3 class="m-0 mt-[16px] t-h3 text-navy" data-node="128:5864">{r2.t}</h3>
           <p class="m-0 mt-[16px] t-small font-medium text-ink" data-node="128:5865">{r2.b}</p>
         </article>
-        <article class="rounded-[2px] flex-1 min-h-0 bg-white border border-line px-[28px] pt-[28px] box-border" data-node="128:5866">
+        <article class="rounded-[2px] flex-1 min-h-0 bg-white border border-line px-[28px] pt-[28px] pb-[28px] box-border" data-node="128:5866">
           <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.paper]} data-node="128:5867"><Icon name="building" size={24} /></span>
           <h3 class="m-0 mt-[16px] t-h3 text-navy" data-node="128:5870">{r3.t}</h3>
           <p class="m-0 mt-[16px] t-small font-medium text-ink" data-node="128:5871">{r3.b}</p>
@@ -76,7 +79,7 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
             <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.paper]} data-node="128:6051"><Icon name="search" size={24} /></span>
             <h3 class="m-0 mt-[16px] t-h3 text-navy" data-node="128:6055">{r5.t}</h3>
           </div>
-          <p class="m-0 flex-1 min-w-0 max-w-[334px] t-body text-ink" data-node="128:6056">{r5.b}</p>
+          <p class="m-0 flex-1 min-w-0 max-w-[334px] t-body text-ink" data-node="128:6056" set:html={md(r5.b)} />
         </article>
       </div>
       <div class="flex flex-col gap-[24px]" data-node="128:6057">
@@ -90,6 +93,7 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
           <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.ghost]} data-node="128:6070"><Icon name="shield" size={24} /></span>
           <h3 class="m-0 mt-[16px] t-h3" data-node="128:6074">{r6.t}</h3>
           <p class="m-0 mt-[16px] t-body" data-node="128:6075"><strong class="font-semibold">{r6.strong}</strong> {r6.b}</p>
+          <p class="m-0 mt-[16px] t-body why-onnavy" set:html={md(r6.link)} />
         </article>
       </div>
     </div>
@@ -101,7 +105,7 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
       <h2 class="m-0 why-m-h2 text-navy" data-node-m="135:5403">Six Strong<br /> Reasons.</h2>
       <div aria-hidden="true" class="why-hticks-m mt-[20px] h-[12px] opacity-[.45]" data-node-m="135:5404"></div>
     </div>
-    <article class="relative overflow-hidden h-[318px] bg-navy text-white rounded-[4px] px-[24px] pt-[28px] box-border" data-node-m="135:5450">
+    <article class="relative overflow-hidden min-h-[318px] bg-navy text-white rounded-[4px] px-[24px] pt-[28px] pb-[32px] box-border" data-node-m="135:5450">
       <span aria-hidden="true" class="absolute left-[196.8px] top-[78px] opacity-[.07] pointer-events-none" data-node-m="135:5451"><Logo variant="mark-white" bare width={247.092} height={300} label="" /></span>
       <span aria-hidden="true" class:list={['relative flex items-center justify-center w-[40px] h-[40px] rounded-full box-border', circle.ghost]} data-node-m="135:5456"><Icon name="shield" size={24} /></span>
       <h3 class="relative m-0 mt-[16px] why-m-h3" data-node-m="135:5460">{r1.t}</h3>
@@ -120,7 +124,7 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
       <span aria-hidden="true" class="why-crop-m absolute inset-[12px]" data-node-m="135:5541"></span>
     </figure>
 
-    <article class="h-[262px] bg-paper rounded-[4px] px-[24px] pt-[28px] box-border" data-node-m="135:5550">
+    <article class="min-h-[262px] bg-paper rounded-[4px] px-[24px] pt-[28px] pb-[32px] box-border" data-node-m="135:5550">
       <div class="flex gap-[16px] items-center" data-node-m="135:5551">
         <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border shrink-0', circle.outline]} data-node-m="135:5552"><Icon name="clock" size={24} /></span>
         <h3 class="m-0 tm-h3 text-navy" data-node-m="135:5556">{r2.t}</h3>
@@ -128,16 +132,6 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
       <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5557">{r2.b}</p>
     </article>
 
-    <ul class="m-0 p-0 list-none grid grid-cols-[minmax(0,168fr)_minmax(0,170fr)] gap-[12px] min-h-[184px]" data-node-m="135:5603">
-      <li class="bg-navy text-white rounded-[4px] p-[20px] pb-[24px] box-border flex flex-col justify-between" data-node-m="135:5604">
-        <Icon name="home" size={28} />
-        <span class="why-fact" data-node-m="135:5608">We represent the insured only.</span>
-      </li>
-      <li class="bg-white border border-line text-navy rounded-[4px] p-[20px] pb-[24px] box-border flex flex-col justify-between" data-node-m="135:5609">
-        <Icon name="shield" size={28} />
-        <span class="why-fact" data-node-m="135:5613">CA License No. 6015234</span>
-      </li>
-    </ul>
 
     <article class="border border-line rounded-[4px] overflow-hidden" data-node-m="135:5614">
       <div class="h-[232px]" data-node-m="135:5615"><Img node="135:5615" alt={estimatorAltM} class="w-full h-full object-cover" /></div>
@@ -164,7 +158,7 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
         <span aria-hidden="true" class:list={['flex items-center justify-center w-[40px] h-[40px] rounded-full box-border shrink-0', circle.paper]} data-node-m="135:5638"><Icon name="building" size={24} /></span>
         <h3 class="m-0 tm-h3 text-navy" data-node-m="135:5641">{r5.t}</h3>
       </div>
-      <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5642">{r5.b}</p>
+      <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5642" set:html={md(r5.b)} />
     </article>
 
     <article class="why-fee bg-paper rounded-[4px] px-[25.5px] pt-[29.5px] pb-[33.5px]" data-node-m="135:5643">
@@ -173,6 +167,7 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
         <h3 class="m-0 flex-1 tm-h3 text-navy" data-node-m="135:5649">{r6.t}</h3>
       </div>
       <p class="m-0 mt-[16px] tm-body text-ink" data-node-m="135:5650"><strong class="font-semibold">{r6.strong}</strong> {r6.b}</p>
+      <p class="m-0 mt-[16px] tm-body text-ink" set:html={md(r6.link)} />
     </article>
   </div>
 </section>
@@ -216,9 +211,9 @@ const estimatorAlt = 'A contractor in a hard hat reviews plans on a truck tailga
       linear-gradient(var(--c), var(--c)) right bottom / 14px 1.5px no-repeat,
       linear-gradient(var(--c), var(--c)) right bottom / 1.5px 14px no-repeat;
   }
+  .why-onnavy :global(.bs-kit-link) { color: #fff; }
   .why-fee { box-shadow: inset 0 0 0 1.5px var(--color-navy); }
   .why-m-h2 { font-family: var(--font-display); font-weight: 700; font-size: 44px; line-height: 46px; letter-spacing: -0.01em; }
   .why-m-h3 { font-family: var(--font-display); font-weight: 600; font-size: 26px; line-height: 30px; letter-spacing: -0.01em; }
   .why-m-quote { font-family: var(--font-display); font-weight: 600; font-size: 25px; line-height: 31px; letter-spacing: -0.01em; }
-  .why-fact { font-family: var(--font-display); font-weight: 600; font-size: 20px; line-height: 24px; letter-spacing: -0.01em; }
 </style>

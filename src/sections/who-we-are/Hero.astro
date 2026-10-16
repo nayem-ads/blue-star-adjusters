@@ -5,7 +5,9 @@ import Pic from './Pic.astro';
 import CropMarks from './CropMarks.astro';
 import DimLine from './DimLine.astro';
 import Ruler from './Ruler.astro';
-import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+import Icon from '../../components/Icon.astro';
+import { PHONE_DISPLAY, PHONE_TEL, ROUTES, LICENSE } from '../../data/site';
+const trust = ['No upfront cost', 'You always have final say on any settlement', LICENSE];
 ---
 <section aria-labelledby="wwa-title" class="relative bg-paper overflow-hidden" data-node="128:3460" data-node-m="128:6371">
   <div class="relative max-w-[1280px] mx-auto min-h-[720px] lg:min-h-[800px] px-[20px] lg:px-[80px] pt-[252px] pb-[48px] lg:pt-[88px] lg:pb-[96px]">
@@ -17,18 +19,23 @@ import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
       <Pic node="128:3475" nodeM="128:6372" priority alt="A house frame going back up after a fire, plans on a sawhorse, tape and laser meter in low sun." class="w-full h-full object-cover" dataNode="128:3475" dataNodeM="128:6372" />
     </div>
     <CropMarks corners="tl bl" class="absolute left-[104px] top-[8px] w-[16px] h-[208px] lg:left-[calc(55%-12px)] lg:top-[28px] lg:h-[728px]" node="128:3480" nodeM="128:6784" />
-    <DimLine label="25 years as a developer and builder" class="absolute left-[112px] right-[20px] top-[220px] lg:left-[55%] lg:right-[40px] lg:top-[760px]" node="128:3481" nodeM="128:6397" />
+    <DimLine label="" class="absolute left-[112px] right-[20px] top-[220px] lg:left-[55%] lg:right-[40px] lg:top-[760px]" node="128:3481" nodeM="128:6397" />
 
     <div class="relative lg:w-[min(600px,calc(55vw-104px))]">
       <p class="hidden lg:flex items-center gap-[16px] m-0 t-label text-ink whitespace-nowrap w-max" data-node="128:3461">
         <span aria-hidden="true" class="block w-[40px] h-[1.5px] bg-royal"></span><span>Who We Are</span>
       </p>
-      <h1 id="wwa-title" class="m-0 tm-display text-navy lg:mt-[22px] lg:-ml-[4px] lg:w-full lg:text-[clamp(72px,7.5vw,96px)] lg:leading-[0.9584em] lg:tracking-[-0.025em]" data-node="128:3464" data-node-m="128:6403">Same Experience.<br /> A New Way.</h1>
-      <p class="m-0 mt-[16px] tm-lead text-ink lg:mt-[40px] lg:w-[520px] lg:max-w-full lg:text-[24px] lg:leading-[36px]" data-node="128:3465" data-node-m="128:6404">We left a legacy firm to build something leaner, more responsive, and 100% focused on you, without the bureaucracy that slows claims down.</p>
-      <div class="mt-[24px] flex flex-col gap-[12px] lg:mt-[48px] lg:flex-row lg:flex-wrap lg:gap-[16px] lg:w-max lg:max-w-full" data-node="128:3466">
+      <h1 id="wwa-title" class="m-0 tm-display text-navy text-[38px] leading-[42px] lg:mt-[22px] lg:-ml-[3px] lg:w-full lg:text-[clamp(48px,4.4vw,60px)] lg:leading-[1.04em] lg:tracking-[-0.025em]" data-node="128:3464" data-node-m="128:6403">Blue Star Adjusters. A Public Adjusting Firm in Sacramento.</h1>
+      <p class="m-0 mt-[16px] tm-lead text-ink lg:mt-[28px] lg:w-[560px] lg:max-w-full lg:text-[19px] lg:leading-[30px]" data-node="128:3465" data-node-m="128:6404">Blue Star Adjusters is a licensed public adjusting firm in Sacramento, CA DOI License No. 6015234, with its head office on R Street. Our founder, Michael Rapport, was a top producer at one of the nation's leading public adjusting firms, across hundreds of losses. A senior adjuster leads every claim, from the first call to the final settlement. We represent the insured only.</p>
+      <div class="mt-[24px] flex flex-col gap-[12px] lg:mt-[36px] lg:flex-row lg:flex-wrap lg:gap-[16px] lg:w-max lg:max-w-full" data-node="128:3466">
         <Button href={ROUTES.freeClaimReview} class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="128:3467" data-node-m="128:6405">Schedule a Free Review</Button>
         <Button href={PHONE_TEL} variant="outline" icon="phone" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[235px]" data-node="128:3471" data-node-m="128:6409">Call {PHONE_DISPLAY}</Button>
       </div>
+      <ul class="m-0 p-0 list-none mt-[24px] lg:mt-[28px] flex flex-col gap-[8px] lg:gap-[6px]">
+        {trust.map((t) => (
+          <li class="flex items-center gap-[10px]"><Icon name="check" size={18} class="shrink-0 text-royal" /><span class="bs-wnudge text-[15px] leading-[24px] font-medium text-ink">{t}</span></li>
+        ))}
+      </ul>
     </div>
   </div>
 </section>

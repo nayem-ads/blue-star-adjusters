@@ -11,8 +11,11 @@ import NextSection from '../../sections/fcr/NextSection.astro';
 import FeesSection from '../../sections/fcr/FeesSection.astro';
 import Review from '../../sections/fcr/Review.astro';
 import Faq from '../../sections/fcr/Faq.astro';
-const title = 'Free Claim Review | Blue Star Adjusters';
-const description = 'Tell us what happened. We’ll read your policy. There is no cost or obligation for the initial review. Licensed public adjusters; you have final say.';
+import Covers from '../../sections/fcr/Covers.astro';
+import FinalCta from '../../sections/fcr/FinalCta.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+const title = 'Free Insurance Claim Review from Blue Star Adjusters';
+const description = 'Free insurance claim review from a licensed public adjuster. No cost or obligation. Same business day callback, Monday to Friday, 9 AM to 5 PM Pacific.';
 ---
 <Base title={title} description={description}>
   <FcrStyles />
@@ -20,9 +23,17 @@ const description = 'Tell us what happened. We’ll read your policy. There is n
   <main>
     <RequestSection />
     <NextSection />
+    <Covers />
     <FeesSection />
     <Review />
     <Faq />
+    <KitProse id="fcr-related" bg="paper" title="Related" list={[
+      '[How a public adjuster works on your claim](/how-it-works/)',
+      '[Public adjuster fees](/fees/)',
+      '[Denied or underpaid claims](/claims/denied-or-underpaid/)',
+      '[What to do in the first 48 hours](/first-48-hours/)',
+    ]} />
+    <FinalCta />
   </main>
   <div data-node="73:2865" data-node-m="74:4478"><Footer /></div>
   <CallBar />

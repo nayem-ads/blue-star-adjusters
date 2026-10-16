@@ -5,25 +5,38 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import CallBar from '../../../components/CallBar.astro';
 import Icon from '../../../components/Icon.astro';
-import Hero from '../../../sections/claims/Hero.astro';
-import LawDoc from '../../../sections/claims/LawDoc.astro';
+import Hero from '../../../sections/claims/ale/Hero.astro';
+import LawDoc from '../../../sections/claims/ale/LawDoc.astro';
 import PhotoSplit from '../../../sections/claims/PhotoSplit.astro';
 import Related from '../../../sections/claims/Related.astro';
 import Cta from '../../../sections/claims/Cta.astro';
 import Includes from '../../../sections/claims/ale/Includes.astro';
-import { page, hero, heroLead, includes, law, detail, detailLink as l, related, cta } from '../../../data/claims/additional-living-expenses';
+import Rules from '../../../sections/claims/ale/Rules.astro';
+import KitProse from '../../../sections/kit/KitProse.astro';
+import KitFaq from '../../../sections/kit/KitFaq.astro';
+import { page, hero, heroLead, heroTagline, includes, notCovered, law, rules, rebuildGap, notFor, detail, detailMore, detailLink as l, faq, related, cta } from '../../../data/claims/additional-living-expenses';
 ---
 <Base title={page.title} description={page.description}>
   <div class="absolute left-0 right-0 top-0 z-40" data-node={page.header[0]} data-node-m={page.header[1]}><Header theme="dark" overlay /></div>
   <main class="bs-ale bs-fit">
     <Hero {...hero} />
-    <Includes heroLead={heroLead} {...includes} />
+    <Includes heroLead={heroLead} heroTagline={heroTagline} {...includes} />
+    <KitProse {...notCovered} bg="white" />
     <LawDoc {...law} />
-    <PhotoSplit {...detail}>
-      <a slot="block-0" href={l.href} class="inline-flex items-center gap-[12px] py-[12px] border-b border-navy text-navy tm-body-strong lg:t-body-strong" data-node={l.node[0]} data-node-m={l.node[1]}>
-        <span data-node={l.text[0]} data-node-m={l.text[1]}>{l.label}</span><Icon name="arrow-right" size={24} />
-      </a>
-    </PhotoSplit>
+    <Rules {...rules} bg="white" />
+    <KitProse {...rebuildGap} bg="paper" />
+    <KitProse {...notFor} bg="white" />
+    <div class="bs-ale-detail">
+      <PhotoSplit {...detail}>
+        <Fragment slot="block-0">
+          <p class="m-0 w-full tm-body lg:t-body text-ink">{detailMore}</p>
+          <a href={l.href} class="inline-flex items-center gap-[12px] py-[12px] border-b border-navy text-navy tm-body-strong lg:t-body-strong" data-node={l.node[0]} data-node-m={l.node[1]}>
+            <span data-node={l.text[0]} data-node-m={l.text[1]}>{l.label}</span><Icon name="arrow-right" size={24} />
+          </a>
+        </Fragment>
+      </PhotoSplit>
+    </div>
+    <KitFaq {...faq} bg="white" />
     <Related {...related} />
     <Cta {...cta} />
   </main>
@@ -31,5 +44,8 @@ import { page, hero, heroLead, includes, law, detail, detailLink as l, related, 
   <CallBar node={page.callBar} />
 </Base>
 <style is:global>
+  /* Detail sits between two white sections: paper band so neighbours stay distinct. */
+  .bs-ale h1, .bs-ale h2 { text-wrap: balance; }
+  .bs-ale-detail .bs-psplit { background-color: var(--color-paper); }
   @media (max-width: 1023.98px) { .bs-ale :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }
 </style>

@@ -1,5 +1,6 @@
 ---
 // Locations hub (Figma desktop 217:961, mobile 217:10664). data-node = desktop id, data-node-m = mobile id.
+// Copy: /home/claude/bluestar-work/pages/locations/content.md (approved 2026-10-16). New blocks use the content kit.
 import Base from '../../layouts/Base.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -8,15 +9,61 @@ import LocStyles from '../../sections/locations/LocStyles.astro';
 import Hero from '../../sections/locations/Hero.astro';
 import Offices from '../../sections/locations/Offices.astro';
 import StateRules from '../../sections/locations/StateRules.astro';
+import ProseCta from '../../sections/locations/ProseCta.astro';
 import FinalCta from '../../sections/locations/FinalCta.astro';
+import KitProse from '../../sections/kit/KitProse.astro';
+import KitFaq from '../../sections/kit/KitFaq.astro';
+const title = 'California Public Adjuster Offices | Blue Star Adjusters';
+const description = 'Blue Star Adjusters is a licensed public adjuster in California, Nevada, Oregon, Washington, Arizona and Colorado. Find your office and its local number.';
 ---
-<Base title="Public Adjuster Offices in CA, NV, OR, WA and AZ | Blue Star Adjusters" description="Seven offices in Sacramento, Santa Monica, San Francisco, Reno, Portland, Seattle and Scottsdale. Local codes, local contractors, and the rules of each state.">
+<Base title={title} description={description}>
   <LocStyles />
   <div data-node="217:962" data-node-m="217:10665"><Header theme="light" /></div>
   <main class="bs-locations bs-fit">
     <Hero />
     <Offices />
+    <KitProse
+      id="loc-proof-title"
+      bg="white"
+      title="What the Carrier Offered. What We Recovered."
+      body={[
+        '**Los Angeles house fire, full strip out.** Offered $38,000. Settled at $276,000.',
+        "*Results reflect specific losses and policies. Past results don't guarantee a similar outcome.*",
+        "The carrier's first number is a starting point. We scope the loss trade by trade and price it to current code.",
+        '[More claim results](/results/)',
+      ]}
+    />
     <StateRules />
+    <ProseCta
+      id="loc-notfor-title"
+      bg="paper"
+      title="When a Public Adjuster May Not Be Worth It"
+      body={["On a small loss, or when the carrier's offer is already fair, our fee may outweigh what we add. We'll tell you so at the free review, before you sign anything."]}
+    />
+    <KitFaq
+      id="loc-faq-title"
+      bg="white"
+      title="Questions About Public Adjusters in California"
+      items={[
+        { q: 'Do public adjusters in California need a license?', a: 'Yes. California requires public adjusters to be licensed, bonded and tested. Ours is CA DOI License No. 6015234.' },
+        { q: "How do I check a public adjuster's license?", a: ['Use the California Department of Insurance license number search. Enter the number without spaces. Do it before you sign, with us or anyone else.', '[Check a license with the California Department of Insurance](https://cdicloud.insurance.ca.gov/cal/LicenseNumberSearch)'] },
+        { q: 'What restrictions apply to public adjusters after a disaster in California?', a: "A public adjuster can't solicit you while the loss is under way. For a home in a catastrophic disaster area, solicitation has to wait until seven calendar days after the loss producing event ends, unless you make the first call. No public adjuster may solicit or contact you between 6 PM and 8 AM unless you ask." },
+        { q: 'What cancellation rights do I have after signing?', a: 'In California, three business days after you sign and receive the contract. If your property is in a declared catastrophic disaster area, you have five calendar days.' },
+        { q: 'How are public adjuster fees structured in California?', a: ["No upfront cost. We're paid a percentage of what we recover. The percentage is written into the contract before we start, and in California our fee can never leave you with less than your insurer had already paid before you hired us.", '[Public adjuster fees, explained](/fees/)'] },
+        { q: 'Can I hire a public adjuster after a denial or a partial payment?', a: ["Often, yes. If you already have an offer, it's usually not too late. Bring the denial letter or the offer to the free review and we'll tell you whether we can add value, and why.", '[Denied or underpaid claims](/claims/denied-or-underpaid/)'] },
+      ]}
+    />
+    <KitProse
+      id="loc-related-title"
+      bg="paper"
+      title="Related"
+      list={[
+        '[How a public adjuster works on your claim](/how-it-works/)',
+        '[Who we are](/about/)',
+        '[Public adjuster fees](/fees/)',
+        '[Contact Blue Star Adjusters](/contact/)',
+      ]}
+    />
     <FinalCta />
   </main>
   <div data-node="217:8257" data-node-m="217:12011"><Footer /></div>

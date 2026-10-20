@@ -18,11 +18,11 @@ const { chip, title, id = 'kit-faq', items, bg = 'white' } = Astro.props;
       {items.map((r, i) => (
         <div class:list={['flex flex-col py-[28px] lg:flex-row lg:items-start lg:py-[40px] border-b', i === items.length - 1 ? 'border-navy' : 'border-line']}>
           <div class="lg:w-[480px] lg:shrink-0 lg:pr-[48px]">
-            <h3 class="m-0 text-navy tm-h3 lg:t-h3">{r.q}</h3>
+            <h3 class="m-0 text-navy tm-h3 lg:t-h3" data-faq-q>{r.q}</h3>
           </div>
           <div class="mt-[16px] lg:mt-0 flex gap-[16px] lg:block lg:flex-1 lg:min-w-0">
             <span aria-hidden="true" class="lg:hidden block w-[2px] shrink-0 bg-royal"></span>
-            <div class="bs-kit-prose flex-1 min-w-0">
+            <div class="bs-kit-prose flex-1 min-w-0" data-faq-a>
               {(Array.isArray(r.a) ? r.a : [r.a]).map((p) => <p class="m-0 text-ink tm-body lg:t-lead" set:html={md(p)} />)}
             </div>
           </div>

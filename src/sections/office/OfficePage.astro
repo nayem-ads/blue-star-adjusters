@@ -25,6 +25,24 @@ const bgs = d.blocks.map((b) => {
   return bg as Bg;
 });
 const ctaBg: Bg = prev === 'paper' ? 'white' : 'paper';
+// Structured data for this office (the firm itself is described sitewide by scripts/seo-schema.mjs).
+// Only the head office (Sacramento) has its own street address; other offices list the area they serve.
+const site = String(Astro.site ?? 'https://bluestaradjusters.com').replace(/\/$/, '');
+const row = (k: string) => d.office.rows.find((r) => r.kind === k)?.value;
+const STATES: Record<string, string> = { CA: 'California', NV: 'Nevada', OR: 'Oregon', WA: 'Washington', AZ: 'Arizona' };
+const officeLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': `${site}${d.route}#office`,
+  name: `Blue Star Adjusters, ${d.city}`,
+  url: `${site}${d.route}`,
+  telephone: '+1-' + officePhone(d).replace(/\D/g, '').replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3'),
+  ...(row('email') ? { email: row('email') } : {}),
+  ...(d.city === 'Sacramento' ? { address: { '@type': 'PostalAddress', streetAddress: '1610 R Street, Suite 300', addressLocality: 'Sacramento', addressRegion: 'CA', postalCode: '95811', addressCountry: 'US' } } : {}),
+  areaServed: [{ '@type': 'City', name: d.city }, { '@type': 'State', name: STATES[d.state] ?? d.state }],
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '17:00' }],
+  parentOrganization: { '@id': `${site}/#org` },
+};
 ---
 <Base title={d.title} description={d.description}>
   <div {...nodes(d, 'header')}><Header theme="light" /></div>
@@ -44,6 +62,7 @@ const ctaBg: Bg = prev === 'paper' ? 'white' : 'paper';
   </main>
   <div {...nodes(d, 'footer')}><Footer /></div>
   <CallBar node={d.n.callbar?.[1] ?? undefined} phone={officePhone(d)} />
+  <script type="application/ld+json" set:html={JSON.stringify(officeLd)} />
 </Base>
 <style is:global>
   @media (max-width: 1023.98px) { .bs-office :where(.tm-body,.tm-body-strong,.tm-lead,.tm-h2,.tm-h3,.tm-display){position:relative;top:1px} }

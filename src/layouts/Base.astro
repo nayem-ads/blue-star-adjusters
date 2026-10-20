@@ -1,7 +1,10 @@
 ---
 import '../styles/global.css';
 interface Props { title: string; description?: string; noindex?: boolean; bodyClass?: string }
-const { title, description = '', noindex = true, bodyClass = '' } = Astro.props;
+// Indexing is off unless the build sets PUBLIC_INDEXABLE=true (production only). Pages that pass noindex stay hidden either way.
+const indexable = import.meta.env.PUBLIC_INDEXABLE === 'true';
+const { title, description = '', noindex = !indexable, bodyClass = '' } = Astro.props;
+const shareImage = new URL('/hero-poster.jpg', Astro.site).href;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 <!doctype html>
@@ -17,6 +20,17 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Blue Star Adjusters" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="Fire-damaged home after a loss, photographed in the field." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content={shareImage} />
   </head>
   <body class={bodyClass}>
     <slot />

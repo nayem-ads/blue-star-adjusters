@@ -83,7 +83,7 @@ const id = (n?: number) => (n ? q(n) : undefined);
                     <button type="button" id={`faq-q${r.n}`} aria-expanded={r.open ? 'true' : 'false'} aria-controls={`faq-a${r.n}`}
                       class="bs-faq-btn relative w-full flex items-center gap-[16px] min-h-[48px] text-left cursor-pointer lg:items-start lg:gap-[32px] lg:min-h-0"
                       data-node={id(d[5])} data-node-m={id(m[5])}>
-                      <span class="bs-faq-q flex-1 min-w-0 text-navy" data-node={id(d[6])} data-node-m={id(m[6])}>{r.q}</span>
+                      <span class="bs-faq-q flex-1 min-w-0 text-navy" data-node={id(d[6])} data-node-m={id(m[6])} data-faq-q>{r.q}</span>
                       <span aria-hidden="true" class="bs-faq-toggle relative block shrink-0 w-[44px] h-[44px] rounded-full" data-node={id(d[7])} data-node-m={id(m[7])}>
                         <span class="bs-faq-bar absolute left-[14px] top-[21px] w-[16px] h-[2px]"></span>
                         <span class="bs-faq-bar bs-faq-bar--v absolute left-[21px] top-[14px] w-[2px] h-[16px]"></span>
@@ -92,7 +92,7 @@ const id = (n?: number) => (n ? q(n) : undefined);
                   </h3>
                   <div id={`faq-a${r.n}`} role="region" aria-labelledby={`faq-q${r.n}`} hidden={!r.open}
                     class="flex flex-col items-start gap-[16px] pr-[60px] lg:pr-[76px]" data-node={r.open ? id(d[8]) : undefined} data-node-m={r.open ? id(m[8]) : undefined}>
-                    <p class="m-0 tm-body lg:t-body text-ink w-full" data-node={r.open ? id(d[9]) : undefined} data-node-m={r.open ? id(m[9]) : undefined} set:html={md(r.a)} />
+                    <p class="m-0 tm-body lg:t-body text-ink w-full" data-node={r.open ? id(d[9]) : undefined} data-node-m={r.open ? id(m[9]) : undefined} set:html={md(r.a)} data-faq-a />
                     {r.link && (
                       <p class="m-0 py-[10px] lg:py-0 lg:pt-[4px]">
                         <a href={r.link[1]} class="text-navy tm-body-strong lg:t-body-strong" style="top:0"><span class="underline">{r.link[0].replace(/\S+$/, '')}</span><span class="whitespace-nowrap"><span class="underline">{r.link[0].match(/\S+$/)?.[0]}</span><Icon name="arrow-right" size={20} class="inline-block align-middle ml-[8px] -mt-[2px]" /></span></a>

@@ -43,10 +43,10 @@ const sub = 'font-body font-medium text-[15px] leading-[24px] text-ink';
       {faqs.map((f) => (
         <details class="fcr-faq border-t border-line py-[20px] lg:py-[24px]" open={f.open} data-node={f.d} data-node-m={f.m}>
           <summary class="fcr-faq__q flex items-center gap-[16px] lg:gap-[24px] cursor-pointer">
-            <h3 class="m-0 flex-1 min-w-0 font-body font-semibold text-[18px] leading-[28px] lg:text-[20px] lg:leading-[32px] text-navy">{f.q}</h3>
+            <h3 class="m-0 flex-1 min-w-0 font-body font-semibold text-[18px] leading-[28px] lg:text-[20px] lg:leading-[32px] text-navy" data-faq-q>{f.q}</h3>
             <Icon name="chevron-down" size={24} class="fcr-faq__chev shrink-0 text-navy" />
           </summary>
-          <p class="m-0 mt-[8px] lg:mt-[12px] lg:w-[560px] max-w-full tm-body lg:t-body text-ink">{f.a}</p>
+          <p class="m-0 mt-[8px] lg:mt-[12px] lg:w-[560px] max-w-full tm-body lg:t-body text-ink" data-faq-a>{f.a}</p>
         </details>
       ))}
     </div>

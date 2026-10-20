@@ -39,6 +39,11 @@ const legal = [
   { label: 'Terms', href: '/terms/', w: 'lg:min-w-[37px]' },
   { label: 'Accessibility', href: '/accessibility/', w: 'lg:min-w-[73px]' },
 ];
+// Member and community: NAPIA + PCAPIA only (20 Oct 2026). Same white cards as the quiz page.
+const assoc = [
+  { src: '/img/assoc/napia.webp', alt: 'National Association of Public Insurance Adjusters (NAPIA) member' },
+  { src: '/img/assoc/pcapia.webp', alt: 'Pacific Coast Association of Public Insurance Adjusters (PCAPIA) member' },
+];
 const colHead = 'tm-label lg:t-label m-0';
 const item = 'bs-flink block tm-body lg:t-small';
 ---
@@ -74,6 +79,13 @@ const item = 'bs-flink block tm-body lg:t-small';
         <p class={colHead}>Offices</p>
         <p class="tm-body m-0">{offices.map((l, i) => <>{i > 0 && ', '}<a href={l.href} class="bs-flink">{l.label}</a></>)}</p>
       </div>
+    </div>
+
+    <div class="flex flex-col gap-[16px]">
+      <p class={colHead}>Member and community</p>
+      <ul class="flex gap-[16px] lg:gap-[24px]">
+        {assoc.map((a) => <li class="list-none flex-1 lg:flex-none lg:w-[280px] h-[104px] lg:h-[120px] bg-white rounded-[20px] flex items-center justify-center p-[16px]"><img src={a.src} alt={a.alt} loading="lazy" decoding="async" class="block max-h-[72px] lg:max-h-[84px] max-w-full w-auto h-auto object-contain" /></li>)}
+      </ul>
     </div>
 
     <div class="border-t border-white pt-[24px] flex flex-col gap-[6px] lg:flex-row lg:justify-between lg:items-start lg:gap-0 t-legal">

@@ -25,11 +25,11 @@ const qa = [
       {qa.map((r, i) => (
         <div class:list={['flex flex-col pt-[28px] pb-[28px] lg:flex-row lg:items-start lg:pt-[40px] lg:pb-[40px] border-b', i === qa.length - 1 ? 'border-line lg:border-navy' : 'border-line']} data-node={r.d} data-node-m={r.m}>
           <div class="lg:w-[480px] lg:shrink-0 lg:pr-[48px]">
-            <h3 class="m-0 text-navy tm-h3 lg:t-h3" data-node={r.qd} data-node-m={r.qm}>{r.q}</h3>
+            <h3 class="m-0 text-navy tm-h3 lg:t-h3" data-node={r.qd} data-node-m={r.qm} data-faq-q>{r.q}</h3>
           </div>
           <div class="mt-[16px] lg:mt-0 flex gap-[16px] lg:block lg:flex-1 lg:min-w-0">
             <span aria-hidden="true" class="lg:hidden block w-[2px] shrink-0 bg-royal"></span>
-            <div class="bs-kit-prose flex-1 min-w-0">
+            <div class="bs-kit-prose flex-1 min-w-0" data-faq-a>
               {r.a.map((p, j) => <p class="m-0 text-ink tm-body lg:t-lead w-full" data-node={j === 0 ? r.td : undefined} data-node-m={j === 0 ? r.tm : undefined} set:html={md(p)} />)}
             </div>
           </div>

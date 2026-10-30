@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /home-b/
+Disallow: /free-claim-review/thank-you/
+
+Sitemap: https://bluestaradjusters.com/sitemap.xml

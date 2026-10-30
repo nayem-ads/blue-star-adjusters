@@ -1,6 +1,24 @@
 User-agent: *
 Allow: /
+Disallow: /home
+Disallow: /home/
+Disallow: /home-b/
+Disallow: /free-claim-review/thank-you/
+
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+Allow: /
+Disallow: /home
+Disallow: /home/
 Disallow: /home-b/
 Disallow: /free-claim-review/thank-you/
 
 Sitemap: https://bluestaradjusters.com/sitemap.xml
+Sitemap: https://bluestaradjusters.com/sitemap-index.xml

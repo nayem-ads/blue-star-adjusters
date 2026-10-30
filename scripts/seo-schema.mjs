@@ -1,10 +1,10 @@
-// Astro integration (runs after smart-quotes): SEO output that needs the whole built site.
-// 1. JSON-LD on every page: the firm (ProfessionalService), WebSite, WebPage (or AboutPage/ContactPage/ProfilePage/CollectionPage),
-//    page-specific entities (Local Office ProfessionalService, Claim Service, Founder Person, Article), BreadcrumbList, and FAQPage
-//    built from the FAQ rows actually rendered on the page (elements marked data-faq-q / data-faq-a).
-// 2. sitemap.xml listing only pages that are indexable (no robots noindex meta).
-// 3. robots.txt: open by default unless PUBLIC_INDEXABLE=false, pointing to the sitemap.
-// Facts used here come from approved site copy only (firm name, toll free & local lines, head office, licensed states, hours).
+// Astro integration (runs after smart-quotes): SEO + AEO output that needs the whole built site.
+// 1. JSON-LD on every page: the firm (ProfessionalService), WebSite, WebPage (or AboutPage/ContactPage/ProfilePage/CollectionPage)
+//    with SpeakableSpecification, page-specific entities (Local Office ProfessionalService, Claim Service, Founder Person, Article),
+//    BreadcrumbList, and FAQPage built from the FAQ rows actually rendered on the page (elements marked data-faq-q / data-faq-a).
+// 2. sitemap.xml and sitemap-index.xml listing only pages that are indexable (no robots noindex meta).
+// 3. llms.txt and llms-full.txt for AI Answer Engines (ChatGPT Search, Perplexity, Claude, Gemini).
+// 4. robots.txt: open by default unless PUBLIC_INDEXABLE=false, allowing search + AI bots and disallowing /home, /home-b/, etc.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -209,6 +209,32 @@ function pageType(route) {
   return 'WebPage';
 }
 
+const ROBOTS_OPEN = `User-agent: *
+Allow: /
+Disallow: /home
+Disallow: /home/
+Disallow: /home-b/
+Disallow: /free-claim-review/thank-you/
+
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+Allow: /
+Disallow: /home
+Disallow: /home/
+Disallow: /home-b/
+Disallow: /free-claim-review/thank-you/
+
+Sitemap: ${SITE}/sitemap.xml
+Sitemap: ${SITE}/sitemap-index.xml
+`;
+
 export default function seoSchema() {
   return {
     name: 'seo-schema',
@@ -229,6 +255,7 @@ export default function seoSchema() {
         for (const p of pages) {
           const title = decode((p.html.match(/<title>([^<]*)<\/title>/) || [, ''])[1]);
           const desc = decode((p.html.match(/<meta name="description" content="([^"]*)"/) || [, ''])[1]);
+          const isNoindex = /<meta name="robots" content="[^"]*noindex/.test(p.html);
           const url = SITE + p.route;
           const crumbs = [{ route: '/', name: 'Home' }];
           const segs = p.route.split('/').filter(Boolean);
@@ -316,6 +343,12 @@ export default function seoSchema() {
             mainEntityRef = { '@id': articleId };
           }
 
+          const f = faqs(p.html);
+          p.title = title;
+          p.desc = desc;
+          p.faqs = f;
+          p.isNoindex = isNoindex;
+
           const graph = [
             ORG,
             FOUNDER,
@@ -330,21 +363,64 @@ export default function seoSchema() {
               about: { '@id': ORG_ID },
               ...(mainEntityRef ? { mainEntity: mainEntityRef } : {}),
               ...(crumbs.length > 1 ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),
+              ...(!isNoindex ? { speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', ...(f.length ? ['[data-faq-q]', '[data-faq-a]'] : [])] } } : {}),
             },
             ...extraEntities,
           ];
           if (crumbs.length > 1) graph.push({ '@type': 'BreadcrumbList', '@id': `${url}#breadcrumb`, itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: SITE + c.route })) });
-          const f = faqs(p.html);
           if (f.length) { nFaq++; graph.push({ '@type': 'FAQPage', '@id': `${url}#faq`, mainEntity: f.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) }); }
           const ld = `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')}</script>`;
           fs.writeFileSync(p.file, p.html.replace('</head>', `${ld}</head>`));
         }
+
         const live = pages
-          .filter((p) => !/<meta name="robots" content="[^"]*noindex/.test(p.html))
+          .filter((p) => !p.isNoindex)
           .sort((a, b) => (a.route === '/' ? -1 : b.route === '/' ? 1 : a.route.localeCompare(b.route)));
+
         fs.writeFileSync(path.join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${live.map((p) => `  <url><loc>${SITE}${p.route}</loc></url>`).join('\n')}\n</urlset>\n`);
-        fs.writeFileSync(path.join(root, 'robots.txt'), INDEXABLE ? `User-agent: *\nAllow: /\nDisallow: /home-b/\nDisallow: /free-claim-review/thank-you/\n\nSitemap: ${SITE}/sitemap.xml\n` : 'User-agent: *\nDisallow: /\n');
-        console.log(`seo-schema: JSON-LD on ${pages.length} pages (${nFaq} with FAQPage), sitemap ${live.length} URLs, robots ${INDEXABLE ? 'open' : 'blocked'}`);
+        fs.writeFileSync(path.join(root, 'sitemap-index.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap><loc>${SITE}/sitemap.xml</loc></sitemap>\n</sitemapindex>\n`);
+
+        const llmsHeader = `# Blue Star Adjusters
+
+> Blue Star Adjusters LLC is a licensed public adjusting firm representing policyholders (homeowners and businesses)—never insurance companies—on property damage insurance claims across California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, and Hawaii. A senior adjuster leads every claim from initial review to final settlement. No upfront cost; contingency fee based on recovery.
+
+## Firm Details & Verified Licenses
+- **Founding Principal:** Michael Rapport
+- **Head Office:** 1610 R Street, Suite 300, Sacramento, CA 95811
+- **Toll-Free Phone:** (888) 971-2524
+- **Hours:** Monday to Friday, 9 AM to 5 PM Pacific (same business day callback)
+- **Email:** mike@bluestaradjusters.com
+- **Associations:** National Association of Public Insurance Adjusters (NAPIA), Pacific Coast Association of Public Insurance Adjusters (PCAPIA)
+- **State Firm Licenses:**
+  - California: CA DOI License No. 6015234
+  - Nevada: Firm License No. 4263596
+  - Oregon: Firm License No. 3004448214
+  - Washington: Firm License No. 1382428
+  - Arizona: Firm License No. 3004469742
+  - Colorado: Firm License No. 969283
+- **Local Office Lines:**
+  - Sacramento, CA: (916) 507-1005
+  - Santa Monica / Los Angeles, CA: (213) 572-6005
+  - San Francisco, CA: (628) 300-0741
+  - Reno, NV: (775) 993-5511
+  - Portland, OR: (971) 610-0741
+  - Seattle, WA: (564) 465-4550
+  - Scottsdale, AZ: (480) 933-1557
+`;
+
+        const llmsPages = live.map((p) => `- [${p.title}](${SITE}${p.route}): ${p.desc}`).join('\n');
+        fs.writeFileSync(path.join(root, 'llms.txt'), `${llmsHeader}\n## Pages\n${llmsPages}\n\n## Full Q&A Knowledge Base\n- [Complete FAQ & Claim Guide Knowledge Base](${SITE}/llms-full.txt)\n`);
+
+        const llmsFullBody = live.map((p) => {
+          const faqLines = p.faqs.length
+            ? '\n' + p.faqs.map((x) => `### Q: ${x.q}\nA: ${x.a}`).join('\n\n')
+            : '';
+          return `## ${p.title}\nURL: ${SITE}${p.route}\nSummary: ${p.desc}${faqLines}`;
+        }).join('\n\n---\n\n');
+        fs.writeFileSync(path.join(root, 'llms-full.txt'), `${llmsHeader}\n---\n\n${llmsFullBody}\n`);
+
+        fs.writeFileSync(path.join(root, 'robots.txt'), INDEXABLE ? ROBOTS_OPEN : 'User-agent: *\nDisallow: /\n');
+        console.log(`seo-schema: JSON-LD on ${pages.length} pages (${nFaq} with FAQPage), sitemap ${live.length} URLs, llms.txt generated, robots ${INDEXABLE ? 'open' : 'blocked'}`);
       },
     },
   };

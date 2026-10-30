@@ -4,7 +4,7 @@ import { ROUTES } from '../site';
 import { ctaNodes } from './commercial';
 
 export const page = {
-  title: 'Roof Insurance Claims for Wind, Hail and Fallen Trees',
+  title: 'Roof Claims: Wind, Hail and Fallen Trees | Blue Star',
   description: "Wind, hail or a fallen tree damaged your roof? We document the lost roof life, the framing and the storm date, then negotiate your roof insurance claim.",
   header: ['229:8931', '229:9361'] as const,
   footer: ['229:9333', '229:9548'] as const,

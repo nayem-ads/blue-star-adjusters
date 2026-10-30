@@ -5,7 +5,7 @@ import { ROUTES } from '../site';
 const scottsdale: OfficeData = {
   route: ROUTES.scottsdale,
   title: "Public Adjuster in Arizona | Scottsdale Office | Blue Star",
-  description: "Blue Star Adjusters is a licensed Arizona public adjuster in Scottsdale. The three rules ARS 20-321.02 sets for adjusters, and what they mean for you.",
+  description: "Licensed Arizona public adjuster in Scottsdale. We measure and negotiate the loss; your contractor builds. What Arizona law requires of every adjuster.",
   city: "Scottsdale",
   state: "AZ",
   hero: {

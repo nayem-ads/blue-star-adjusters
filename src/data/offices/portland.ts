@@ -5,7 +5,7 @@ import { ROUTES } from '../site';
 const portland: OfficeData = {
   route: ROUTES.portland,
   title: "Public Adjuster in Oregon | Portland Office | Blue Star",
-  description: "Blue Star Adjusters is a licensed Oregon public adjuster in Portland. Oregon's wildfire order, the state's own claim tips, and how to check a license.",
+  description: "Licensed Oregon public adjuster in Portland. We price the repair line by line, build the contents list room by room, and explain Oregon's wildfire orders.",
   city: "Portland",
   state: "OR",
   hero: {

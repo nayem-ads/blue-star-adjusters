@@ -5,7 +5,7 @@ import { ROUTES } from '../site';
 const seattle: OfficeData = {
   route: ROUTES.seattle,
   title: "Public Adjuster in Washington State | Seattle | Blue Star",
-  description: "Blue Star Adjusters is a licensed public adjuster in Washington State, based in Seattle. What the state's wildfire data shows, and how to check a license.",
+  description: "Licensed public adjuster in Seattle for Washington claims. Where the money comes from when a dwelling limit runs out, and what the state's wildfire data shows.",
   city: "Seattle",
   state: "WA",
   hero: {

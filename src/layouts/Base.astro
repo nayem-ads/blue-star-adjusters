@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css';
 interface Props { title: string; description?: string; noindex?: boolean; bodyClass?: string }
-// Indexing is off unless the build sets PUBLIC_INDEXABLE=true (production only). Pages that pass noindex stay hidden either way.
-const indexable = import.meta.env.PUBLIC_INDEXABLE === 'true';
+// Indexing is on by default unless PUBLIC_INDEXABLE=false. Pages that pass noindex stay hidden either way.
+const indexable = import.meta.env.PUBLIC_INDEXABLE !== 'false';
 const { title, description = '', noindex = !indexable, bodyClass = '' } = Astro.props;
 const shareImage = new URL('/hero-poster.jpg', Astro.site).href;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;

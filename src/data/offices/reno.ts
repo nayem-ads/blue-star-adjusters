@@ -5,7 +5,7 @@ import { ROUTES } from '../site';
 const reno: OfficeData = {
   route: ROUTES.reno,
   title: "Public Adjuster in Reno, Nevada | Blue Star Adjusters",
-  description: "Blue Star Adjusters is a licensed Nevada public adjuster for Reno homes and businesses. What Nevada law asks of an adjuster, and how to check a license.",
+  description: "Licensed Nevada public adjuster in Reno. We inspect room by room, price the repair line by line, and negotiate with your insurer. No upfront cost.",
   city: "Reno",
   state: "NV",
   hero: {

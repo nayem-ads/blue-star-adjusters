@@ -45,6 +45,6 @@ export const ROUTES = {
 } as const;
 
 // FormSubmit (https://formsubmit.co). First submission sends an activation email to FORM_TO.
-export const FORM_TO = 'nayem.adsmanager@gmail.com';
-export const FORM_CC = 'mike@bluestaradjusters.com';
+export const FORM_TO = 'mike@bluestaradjusters.com';
+export const FORM_CC = 'nayem.adsmanager@gmail.com';
 export const FORM_ACTION = `https://formsubmit.co/${FORM_TO}`;

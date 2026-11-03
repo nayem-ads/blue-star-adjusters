@@ -44,7 +44,7 @@ export const ROUTES = {
   scottsdale: '/locations/arizona/scottsdale/',
 } as const;
 
-// FormSubmit (https://formsubmit.co). First submission sends an activation email to FORM_TO.
+// Lead routing via Blue Star's Resend-backed API (lead@bluestaradjusters.com -> mike@bluestaradjusters.com, CC nayem.adsmanager@gmail.com).
 export const FORM_TO = 'mike@bluestaradjusters.com';
 export const FORM_CC = 'nayem.adsmanager@gmail.com';
-export const FORM_ACTION = `https://formsubmit.co/${FORM_TO}`;
+export const FORM_ACTION = 'https://quiz.bluestaradjusters.com/api/site-lead';

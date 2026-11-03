@@ -20,6 +20,22 @@ export function initForms() {
   document.querySelectorAll<HTMLFormElement>('form[data-lead-form]').forEach((form) => {
     const next = form.querySelector<HTMLInputElement>('[data-next]');
     if (next) next.value = new URL(next.value, location.origin).href;
+    // Capture landing URL and first-touch UTMs for attribution in lead alert emails
+    const ensureHidden = (name: string, val: string) => {
+      if (!val) return;
+      let el = form.querySelector<HTMLInputElement>(`input[type=hidden][name="${name}"]`);
+      if (!el) { el = document.createElement('input'); el.type = 'hidden'; el.name = name; form.appendChild(el); }
+      el.value = val;
+    };
+    try {
+      const qs = new URLSearchParams(location.search);
+      ensureHidden('landing_url', location.href.split('#')[0]);
+      ensureHidden('referrer', document.referrer || '');
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'].forEach((k) => {
+        const v = qs.get(k);
+        if (v) ensureHidden(k, v);
+      });
+    } catch {}
     const controls = () => [...form.querySelectorAll<HTMLInputElement>('input:not([type=hidden]):not([name=_honey]), textarea, select')];
     controls().forEach((c) => {
       c.addEventListener('blur', () => { if (c.value) setState(c, validate(c)); });

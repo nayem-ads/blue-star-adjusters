@@ -38,10 +38,12 @@ export const ROUTES = {
   sacramento: '/locations/california/sacramento/',
   santaMonica: '/locations/california/santa-monica/',
   sanFrancisco: '/locations/california/san-francisco/',
+  newportBeach: '/locations/california/newport-beach/',
   reno: '/locations/nevada/reno/',
   portland: '/locations/oregon/portland/',
   seattle: '/locations/washington/seattle/',
   scottsdale: '/locations/arizona/scottsdale/',
+  denver: '/locations/colorado/denver/',
 } as const;
 
 // Lead routing via Blue Star's Resend-backed API (lead@bluestaradjusters.com -> mike@bluestaradjusters.com, CC nayem.adsmanager@gmail.com).

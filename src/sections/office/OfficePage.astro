@@ -26,10 +26,17 @@ const bgs = d.blocks.map((b) => {
 });
 const ctaBg: Bg = prev === 'paper' ? 'white' : 'paper';
 // Structured data for this office (the firm itself is described sitewide by scripts/seo-schema.mjs).
-// Only the head office (Sacramento) has its own street address; other offices list the area they serve.
 const site = String(Astro.site ?? 'https://bluestaradjusters.com').replace(/\/$/, '');
 const row = (k: string) => d.office.rows.find((r) => r.kind === k)?.value;
-const STATES: Record<string, string> = { CA: 'California', NV: 'Nevada', OR: 'Oregon', WA: 'Washington', AZ: 'Arizona' };
+const STATES: Record<string, string> = {
+  CA: 'California', NV: 'Nevada', OR: 'Oregon', WA: 'Washington',
+  AZ: 'Arizona', CO: 'Colorado', UT: 'Utah', ND: 'North Dakota', TX: 'Texas',
+};
+const OFFICE_ADDRESSES: Record<string, Record<string, string>> = {
+  Sacramento: { '@type': 'PostalAddress', streetAddress: '1610 R Street, Suite 300', addressLocality: 'Sacramento', addressRegion: 'CA', postalCode: '95811', addressCountry: 'US' },
+  'Newport Beach': { '@type': 'PostalAddress', streetAddress: '4695 MacArthur Court, 11th Floor', addressLocality: 'Newport Beach', addressRegion: 'CA', postalCode: '92660', addressCountry: 'US' },
+  Denver: { '@type': 'PostalAddress', streetAddress: '2301 Blake Street, Ste 100', addressLocality: 'Denver', addressRegion: 'CO', postalCode: '80205', addressCountry: 'US' },
+};
 const officeLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
@@ -38,7 +45,7 @@ const officeLd = {
   url: `${site}${d.route}`,
   telephone: '+1-' + officePhone(d).replace(/\D/g, '').replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3'),
   ...(row('email') ? { email: row('email') } : {}),
-  ...(d.city === 'Sacramento' ? { address: { '@type': 'PostalAddress', streetAddress: '1610 R Street, Suite 300', addressLocality: 'Sacramento', addressRegion: 'CA', postalCode: '95811', addressCountry: 'US' } } : {}),
+  ...(OFFICE_ADDRESSES[d.city] ? { address: OFFICE_ADDRESSES[d.city] } : {}),
   areaServed: [{ '@type': 'City', name: d.city }, { '@type': 'State', name: STATES[d.state] ?? d.state }],
   openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '17:00' }],
   parentOrganization: { '@id': `${site}/#org` },

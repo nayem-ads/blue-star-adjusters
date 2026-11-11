@@ -7,10 +7,12 @@ const cities = [
   { name: 'Santa Monica', st: 'CA', href: '/locations/california/santa-monica/', d: ['128:5343', '128:5346', '128:5347', '128:5349'], m: ['135:1628', '135:1629', '135:1634', '135:1630'], tone: 'a' },
   { name: 'Sacramento', st: 'CA', href: '/locations/california/sacramento/', d: ['128:5350', '128:5353', '128:5354', '128:5357'], m: ['135:1636', '135:1637', '135:1642', '135:1638'], tone: 'b' },
   { name: 'San Francisco', st: 'CA', href: '/locations/california/san-francisco/', d: ['128:5358', '128:5361', '128:5362', '128:5364'], m: ['135:1644', '135:1645', '135:1650', '135:1646'], tone: 'a' },
-  { name: 'Reno', st: 'NV', href: '/locations/nevada/reno/', d: ['128:5365', '128:5368', '128:5369', '128:5371'], m: ['135:1652', '135:1653', '135:1658', '135:1654'], tone: 'b' },
-  { name: 'Portland', st: 'OR', href: '/locations/oregon/portland/', d: ['128:5372', '128:5375', '128:5376', '128:5378'], m: ['135:1660', '135:1661', '135:1666', '135:1662'], tone: 'a' },
-  { name: 'Seattle', st: 'WA', href: '/locations/washington/seattle/', d: ['128:5379', '128:5382', '128:5383', '128:5385'], m: ['135:1668', '135:1669', '135:1674', '135:1670'], tone: 'b' },
-  { name: 'Scottsdale', st: 'AZ', href: '/locations/arizona/scottsdale/', d: ['128:5386', '128:5389', '128:5390', '128:5392'], m: ['135:1676', '135:1677', '135:1682', '135:1678'], tone: 'a' },
+  { name: 'Newport Beach', st: 'CA', href: '/locations/california/newport-beach/', d: ['', '', '', ''], m: ['', '', '', ''], tone: 'b' },
+  { name: 'Reno', st: 'NV', href: '/locations/nevada/reno/', d: ['128:5365', '128:5368', '128:5369', '128:5371'], m: ['135:1652', '135:1653', '135:1658', '135:1654'], tone: 'a' },
+  { name: 'Portland', st: 'OR', href: '/locations/oregon/portland/', d: ['128:5372', '128:5375', '128:5376', '128:5378'], m: ['135:1660', '135:1661', '135:1666', '135:1662'], tone: 'b' },
+  { name: 'Seattle', st: 'WA', href: '/locations/washington/seattle/', d: ['128:5379', '128:5382', '128:5383', '128:5385'], m: ['135:1668', '135:1669', '135:1674', '135:1670'], tone: 'a' },
+  { name: 'Scottsdale', st: 'AZ', href: '/locations/arizona/scottsdale/', d: ['128:5386', '128:5389', '128:5390', '128:5392'], m: ['135:1676', '135:1677', '135:1682', '135:1678'], tone: 'b' },
+  { name: 'Denver', st: 'CO', href: '/locations/colorado/denver/', d: ['', '', '', ''], m: ['', '', '', ''], tone: 'a' },
 ];
 ---
 <section aria-labelledby="wwa-where" class="relative bg-white" data-node="128:5326" data-node-m="135:1614">
@@ -22,7 +24,7 @@ const cities = [
       </div>
       <h2 id="wwa-where" class="m-0 mt-[24px] lg:mt-[14px] tm-h2 lg:t-h2 text-navy w-full lg:w-[367px]" data-node="128:5328" data-node-m="135:1617">Where We Work.</h2>
       <p class="m-0 mt-[16px] lg:mt-[24px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]">Head office: 1610 R Street, Suite 300, Sacramento, California 95811.</p>
-      <p class="m-0 mt-[12px] lg:mt-[16px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]" data-node="128:5329" data-node-m="135:1618">Offices in Santa Monica, Sacramento, San Francisco, Reno, Portland, Seattle and Scottsdale, plus Utah, Hawaii and Colorado. Our firm licenses are the six states in the table above.</p>
+      <p class="m-0 mt-[12px] lg:mt-[16px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]" data-node="128:5329" data-node-m="135:1618">Offices in Santa Monica, Sacramento, San Francisco, Newport Beach, Reno, Portland, Seattle, Scottsdale and Denver, plus Utah and Hawaii. Our firm licenses are the nine states in the table above.</p>
       <p class="m-0 mt-[12px] lg:mt-[16px] tm-body lg:t-body text-ink w-[330px] max-w-full lg:w-[328px]">Monday to Friday, 9 AM to 5 PM Pacific. We call back the same business day.</p>
       <Button href={ROUTES.freeClaimReview} variant="outline" class="hidden lg:inline-flex mt-[48px] lg:min-w-[253px]" data-node="128:5338">Schedule a Free Review</Button>
       <a href="/locations/" class="wwa-all hidden lg:inline-flex items-center gap-[8px] mt-[24px] text-royal t-body-strong underline">All our offices<Icon name="arrow-right" size={20} /></a>
@@ -32,12 +34,12 @@ const cities = [
       <ul class="m-0 p-0 list-none" aria-label="Offices">
         {cities.map((c) => (
           <li class="relative">
-            <a href={c.href} data-node-m={c.m[0]} class="wwa-city flex items-start h-[83px] lg:h-[80px] border-b border-line lg:border-navy/30">
+            <a href={c.href} data-node-m={c.m[0] || undefined} class="wwa-city flex items-start h-[83px] lg:h-[80px] border-b border-line lg:border-navy/30">
               <Icon name="map-pin" size={24} class="hidden lg:block shrink-0 mt-[27px] text-royal" />
-              <span class:list={['wwa-city__name flex-1 min-w-0 lg:flex-none mt-[19px] lg:mt-[15px] lg:ml-[24px] font-display font-semibold text-[40px] leading-[44px] lg:leading-[48px] tracking-[-1px] lg:tracking-[-0.4px] whitespace-nowrap lg:pr-[1px]', c.tone === 'a' ? 'text-ink' : 'text-navy lg:font-medium']} data-node={c.d[1]} data-node-m={c.m[1]}>{c.name}</span>
-              <span class="flex flex-col items-center gap-[4px] ml-[12px] mt-[16px] lg:ml-auto lg:mt-[27px]" data-node-m={c.m[3]}>
+              <span class:list={['wwa-city__name flex-1 min-w-0 lg:flex-none mt-[19px] lg:mt-[15px] lg:ml-[24px] font-display font-semibold text-[40px] leading-[44px] lg:leading-[48px] tracking-[-1px] lg:tracking-[-0.4px] whitespace-nowrap lg:pr-[1px]', c.tone === 'a' ? 'text-ink' : 'text-navy lg:font-medium']} data-node={c.d[1] || undefined} data-node-m={c.m[1] || undefined}>{c.name}</span>
+              <span class="flex flex-col items-center gap-[4px] ml-[12px] mt-[16px] lg:ml-auto lg:mt-[27px]" data-node-m={c.m[3] || undefined}>
                 <Icon name="map-pin" size={20} class="lg:hidden text-royal" />
-                <span class="flex items-center h-[26px] lg:h-[28px] px-[8px] border border-navy rounded-[2px] tm-label lg:t-label text-navy" data-node={c.d[2]} data-node-m={c.m[2]}>{c.st}</span>
+                <span class="flex items-center h-[26px] lg:h-[28px] px-[8px] border border-navy rounded-[2px] tm-label lg:t-label text-navy" data-node={c.d[2] || undefined} data-node-m={c.m[2] || undefined}>{c.st}</span>
               </span>
             </a>
           </li>

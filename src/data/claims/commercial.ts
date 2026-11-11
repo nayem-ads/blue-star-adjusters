@@ -38,7 +38,7 @@ export const hero = {
 export const scope = {
   title: 'What a Commercial Public Adjuster Does on a Business Claim',
   lead: 'Commercial claims are more complex: more code requirements, more stakeholders, more ways for carriers to undervalue the loss.',
-  after: 'Blue Star is licensed in California, Nevada, Oregon, Washington, Arizona and Colorado.',
+  after: 'Blue Star is licensed in California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, North Dakota and Texas.',
 };
 
 // New content blocks (kit sections). Copy strings use md(): [text](/route/), **bold**, *italic*.

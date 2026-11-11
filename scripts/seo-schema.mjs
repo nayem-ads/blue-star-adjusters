@@ -58,11 +58,34 @@ const CREDENTIALS = {
     identifier: '3004469742',
     recognizedBy: { '@type': 'GovernmentOrganization', name: 'Arizona Department of Insurance and Financial Institutions', url: 'https://difi.az.gov/license-search' },
   },
+  UT: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'Utah Public Adjuster Firm License No. 1141455',
+    credentialCategory: 'Public Adjuster Firm License',
+    identifier: '1141455',
+    recognizedBy: { '@type': 'GovernmentOrganization', name: 'Utah Insurance Department', url: 'https://insurance.utah.gov/consumer/general/licensee-search' },
+  },
+  ND: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'North Dakota Public Adjuster Firm License No. 3004515634',
+    credentialCategory: 'Public Adjuster Firm License',
+    identifier: '3004515634',
+    recognizedBy: { '@type': 'GovernmentOrganization', name: 'North Dakota Insurance Department', url: 'https://sbs.naic.org/solar-web/pages/public/stateBasedSearch.jsf?state=ND' },
+  },
+  TX: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'Texas Public Adjuster Firm License No. 3579947',
+    credentialCategory: 'Public Adjuster Firm License',
+    identifier: '3579947',
+    recognizedBy: { '@type': 'GovernmentOrganization', name: 'Texas Department of Insurance', url: 'https://www.sircon.com/Texas' },
+  },
 };
 
 const HOURS = [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '17:00' }];
 const HEAD_ADDRESS = { '@type': 'PostalAddress', streetAddress: '1610 R Street, Suite 300', addressLocality: 'Sacramento', addressRegion: 'CA', postalCode: '95811', addressCountry: 'US' };
-const STATES_SERVED = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Colorado', 'Utah', 'Hawaii'].map((name) => ({ '@type': 'State', name }));
+const NEWPORT_ADDRESS = { '@type': 'PostalAddress', streetAddress: '4695 MacArthur Court, 11th Floor', addressLocality: 'Newport Beach', addressRegion: 'CA', postalCode: '92660', addressCountry: 'US' };
+const DENVER_ADDRESS = { '@type': 'PostalAddress', streetAddress: '2301 Blake Street, Ste 100', addressLocality: 'Denver', addressRegion: 'CO', postalCode: '80205', addressCountry: 'US' };
+const STATES_SERVED = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Colorado', 'Utah', 'North Dakota', 'Texas', 'Hawaii'].map((name) => ({ '@type': 'State', name }));
 const ASSOCIATIONS = [
   { '@type': 'Organization', name: 'National Association of Public Insurance Adjusters (NAPIA)', url: 'https://www.napia.com/' },
   { '@type': 'Organization', name: 'Pacific Coast Association of Public Insurance Adjusters (PCAPIA)', url: 'https://www.pcapia.org/' },
@@ -100,7 +123,7 @@ const ORG = {
     telephone: '+1-888-971-2524',
     email: 'mike@bluestaradjusters.com',
     contactType: 'customer service',
-    areaServed: ['US-CA', 'US-NV', 'US-OR', 'US-WA', 'US-AZ', 'US-CO', 'US-UT', 'US-HI'],
+    areaServed: ['US-CA', 'US-NV', 'US-OR', 'US-WA', 'US-AZ', 'US-CO', 'US-UT', 'US-ND', 'US-TX', 'US-HI'],
     availableLanguage: ['English'],
   }],
   founder: { '@id': PERSON_ID },
@@ -146,6 +169,15 @@ const OFFICES = {
     state: 'California',
     cred: CREDENTIALS.CA,
   },
+  '/locations/california/newport-beach/': {
+    name: 'Blue Star Adjusters — Newport Beach Office',
+    telephone: '+1-949-991-1447',
+    city: 'Newport Beach',
+    AreaExtra: 'Orange County',
+    state: 'California',
+    cred: CREDENTIALS.CA,
+    address: NEWPORT_ADDRESS,
+  },
   '/locations/nevada/reno/': {
     name: 'Blue Star Adjusters — Reno Office',
     telephone: '+1-775-993-5511',
@@ -173,6 +205,14 @@ const OFFICES = {
     city: 'Scottsdale',
     state: 'Arizona',
     cred: CREDENTIALS.AZ,
+  },
+  '/locations/colorado/denver/': {
+    name: 'Blue Star Adjusters — Denver Office',
+    telephone: '+1-720-741-7858',
+    city: 'Denver',
+    state: 'Colorado',
+    cred: CREDENTIALS.CO,
+    address: DENVER_ADDRESS,
   },
 };
 
@@ -382,30 +422,39 @@ export default function seoSchema() {
 
         const llmsHeader = `# Blue Star Adjusters
 
-> Blue Star Adjusters LLC is a licensed public adjusting firm representing policyholders (homeowners and businesses)—never insurance companies—on property damage insurance claims across California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, and Hawaii. A senior adjuster leads every claim from initial review to final settlement. No upfront cost; contingency fee based on recovery.
+> Blue Star Adjusters LLC is a licensed public adjusting firm representing policyholders (homeowners and businesses)—never insurance companies—on property damage insurance claims across California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, North Dakota, Texas, and Hawaii. A senior adjuster leads every claim from initial review to final settlement. No upfront cost; contingency fee based on recovery.
 
 ## Firm Details & Verified Licenses
 - **Founding Principal:** Michael Rapport
 - **Head Office:** 1610 R Street, Suite 300, Sacramento, CA 95811
+- **Newport Beach Office:** 4695 MacArthur Court, 11th Floor, Newport Beach, CA 92660
+- **Denver Office:** 2301 Blake Street, Ste 100, Denver, CO 80205
 - **Toll-Free Phone:** (888) 971-2524
 - **Hours:** Monday to Friday, 9 AM to 5 PM Pacific (same business day callback)
 - **Email:** mike@bluestaradjusters.com
 - **Associations:** National Association of Public Insurance Adjusters (NAPIA), Pacific Coast Association of Public Insurance Adjusters (PCAPIA)
-- **State Firm Licenses:**
+- **State Firm Licenses (9 States):**
   - California: CA DOI License No. 6015234
   - Nevada: Firm License No. 4263596
   - Oregon: Firm License No. 3004448214
   - Washington: Firm License No. 1382428
   - Arizona: Firm License No. 3004469742
   - Colorado: Firm License No. 969283
+  - Utah: Firm License No. 1141455
+  - North Dakota: Firm License No. 3004515634
+  - Texas: Firm License No. 3579947
 - **Local Office Lines:**
   - Sacramento, CA: (916) 507-1005
   - Santa Monica / Los Angeles, CA: (213) 572-6005
   - San Francisco, CA: (628) 300-0741
+  - Newport Beach / Orange County, CA: (949) 991-1447
   - Reno, NV: (775) 993-5511
   - Portland, OR: (971) 610-0741
   - Seattle, WA: (564) 465-4550
   - Scottsdale, AZ: (480) 933-1557
+  - Denver, CO: (720) 741-7858
+  - Utah: (385) 355-7730
+  - Honolulu, HI: (808) 400-3754
 `;
 
         const llmsPages = live.map((p) => `- [${p.title}](${SITE}${p.route}): ${p.desc}`).join('\n');

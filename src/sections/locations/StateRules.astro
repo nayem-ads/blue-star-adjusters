@@ -4,12 +4,15 @@
 import Icon from '../../components/Icon.astro';
 import Logo from '../../components/Logo.astro';
 const licenses = [
-  { state: 'California', no: '6015234', offices: 'Sacramento, Santa Monica, San Francisco' },
+  { state: 'California', no: '6015234', offices: 'Sacramento, Santa Monica, San Francisco, Newport Beach' },
   { state: 'Nevada', no: '4263596', offices: 'Reno' },
   { state: 'Oregon', no: '3004448214', offices: 'Portland' },
   { state: 'Washington', no: '1382428', offices: 'Seattle' },
   { state: 'Arizona', no: '3004469742', offices: 'Scottsdale' },
-  { state: 'Colorado', no: '969283', offices: 'Colorado line' },
+  { state: 'Colorado', no: '969283', offices: 'Denver' },
+  { state: 'Utah', no: '1141455', offices: 'Utah line' },
+  { state: 'North Dakota', no: '3004515634', offices: 'Toll-free line' },
+  { state: 'Texas', no: '3579947', offices: 'Toll-free line' },
 ];
 const head = ['State', 'Firm license No.', 'Offices'];
 const rules = [
@@ -29,6 +32,18 @@ const rules = [
   { title: 'Arizona. We Measure. Your Contractor Builds.', src: 'ARS 20-321.02', body: [
     'Arizona bars adjusters from taking any part, directly or indirectly, in repairing property on a claim they adjust. We measure and negotiate. Your contractor builds.',
   ], d: '217:8080', m: '217:11929' },
+  { title: 'Colorado. No Financial Interest in Repairs.', src: 'C.R.S. 10-2-417', body: [
+    'Colorado bars public adjusters from holding any direct or indirect financial interest in the mitigation or repair of a claim they adjust, prohibits upfront fees prior to settlement, and gives you 72 hours to rescind a contract.',
+  ] },
+  { title: 'Utah. State-Filed Contracts and No Referral Kickbacks.', src: 'Utah Code 31A-26-312 and 31A-26-401', body: [
+    'Utah requires public adjusters to use written contract forms filed with the Utah Insurance Department and prohibits taking any referral fee or compensation from a contractor or repair firm.',
+  ] },
+  { title: 'North Dakota. Adjusting and Contracting Stay Separate.', src: 'N.D.C.C. 26.1-26.8-03', body: [
+    'North Dakota bars a public adjuster from soliciting or entering an agreement to repair or replace damaged property on a claim they adjust, keeping the repair scope free of contractor conflicts.',
+  ] },
+  { title: 'Texas. Contractors Cannot Act as Public Adjusters.', src: 'Tex. Ins. Code Ch. 4102', body: [
+    'Texas prohibits unlicensed contractors from negotiating insurance claims on a policyholder’s behalf and bars licensed public adjusters from participating, directly or indirectly, in reconstructing or repairing the property.',
+  ] },
 ];
 ---
 <section aria-labelledby="loc-rules-title" class="lc-rules relative overflow-hidden bg-navy text-white" data-node="217:8010" data-node-m="217:11855">
@@ -40,16 +55,16 @@ const rules = [
     <div class="hidden lg:flex flex-col items-start gap-[16px] w-[256px] shrink-0" data-node="217:8011">
       <p class="m-0 t-label whitespace-nowrap" data-node="217:8012">§ 02</p>
       <span aria-hidden="true" class="block w-[256px] h-px bg-white opacity-40"></span>
-      <p class="m-0 border border-white rounded-[2px] px-[8px] py-[4px] t-label whitespace-nowrap" data-node="217:8014">6 states</p>
+      <p class="m-0 border border-white rounded-[2px] px-[8px] py-[4px] t-label whitespace-nowrap" data-node="217:8014">9 states</p>
     </div>
     <div class="lg:hidden flex items-start gap-[12px] h-[50px]" data-node-m="217:11861">
       <p class="m-0 mt-[5px] tm-label whitespace-nowrap" data-node-m="217:11862">§ 02</p>
       <span aria-hidden="true" class="flex-1 h-[2px] mt-[12px] bg-white opacity-[.174]"></span>
-      <p class="m-0 border border-white rounded-[2px] px-[8px] py-[4px] tm-label whitespace-nowrap" data-node-m="217:11864">6 states</p>
+      <p class="m-0 border border-white rounded-[2px] px-[8px] py-[4px] tm-label whitespace-nowrap" data-node-m="217:11864">9 states</p>
     </div>
 
     <div class="lg:flex-1 lg:min-w-0" data-node="217:8016">
-      <h2 id="loc-rules-title" class="m-0 mt-[8px] lg:mt-0 tm-h2 lg:t-h2">Licensed Public Adjusters in California and Five More States.</h2>
+      <h2 id="loc-rules-title" class="m-0 mt-[8px] lg:mt-0 tm-h2 lg:t-h2">Licensed Public Adjusters in California and Eight More States.</h2>
       <p class="m-0 mt-[16px] lg:mt-[24px] tm-body lg:t-lead opacity-90">Blue Star Adjusters LLC holds a public adjusting firm license in each state below. Each state writes its own rules for public adjusters. Here is one worth knowing in each.</p>
 
       <!-- Firm licenses: desktop table, mobile rows -->

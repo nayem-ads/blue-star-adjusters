@@ -25,13 +25,14 @@ const offices = [
   { label: 'Santa Monica', href: '/locations/california/santa-monica/' },
   { label: 'Sacramento', href: '/locations/california/sacramento/' },
   { label: 'San Francisco', href: '/locations/california/san-francisco/' },
+  { label: 'Newport Beach', href: '/locations/california/newport-beach/' },
   { label: 'Reno', href: '/locations/nevada/reno/' },
   { label: 'Portland', href: '/locations/oregon/portland/' },
   { label: 'Seattle', href: '/locations/washington/seattle/' },
   { label: 'Scottsdale', href: '/locations/arizona/scottsdale/' },
+  { label: 'Denver', href: '/locations/colorado/denver/' },
   { label: 'Utah', href: '/locations/' },
   { label: 'Hawaii', href: '/locations/' },
-  { label: 'Colorado', href: '/locations/' },
 ];
 // w = Figma text box widths (43:188-43:190) so the desktop links row is 201px as in Figma.
 const legal = [
@@ -69,7 +70,7 @@ const item = 'bs-flink block tm-body lg:t-small';
           <p class={colHead}>Claims</p>
           <ul class="contents">{claims.map((l) => <li class="list-none"><a href={l.href} class={item}>{l.label}</a></li>)}</ul>
         </div>
-        <div class="hidden lg:flex flex-col gap-[12px] lg:w-[104px]">
+        <div class="hidden lg:flex flex-col gap-[12px] lg:w-[118px]">
           <p class={colHead}>Offices</p>
           <ul class="contents">{offices.map((l) => <li class="list-none"><a href={l.href} class={item}>{l.label}</a></li>)}</ul>
         </div>

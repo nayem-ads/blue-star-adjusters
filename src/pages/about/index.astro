@@ -18,7 +18,7 @@ import KitProse from '../../sections/kit/KitProse.astro';
 import WhereWeWork from '../../sections/who-we-are/WhereWeWork.astro';
 import FinalCta from '../../sections/who-we-are/FinalCta.astro';
 const title = 'Public Adjusting Firm in Sacramento | Blue Star Adjusters';
-const description = 'Blue Star Adjusters is a licensed public adjusting firm in Sacramento. A senior adjuster leads every claim. See all six firm licenses and check each one.';
+const description = 'Blue Star Adjusters is a licensed public adjusting firm in Sacramento. A senior adjuster leads every claim. See all nine firm licenses and check each one.';
 const licenseRows = [
   ['California', '6015234', '[California Department of Insurance license search](https://cdicloud.insurance.ca.gov/cal/LicenseNumberSearch)'],
   ['Nevada', '4263596', '[Nevada Division of Insurance license search](https://di.nv.gov/nv/r/doi/licensing/search)'],
@@ -26,10 +26,13 @@ const licenseRows = [
   ['Colorado', '969283', '[Colorado Division of Insurance, verify a license](https://doi.colorado.gov/for-consumers/consumer-protection)'],
   ['Washington', '1382428', '[Washington Office of the Insurance Commissioner lookup](https://www.insurance.wa.gov/consumertoolkit/search.aspx)'],
   ['Arizona', '3004469742', '[Arizona Department of Insurance and Financial Institutions license search](https://difi.az.gov/license-search)'],
+  ['Utah', '1141455', '[Utah Insurance Department licensee search](https://insurance.utah.gov/consumer/general/licensee-search)'],
+  ['North Dakota', '3004515634', '[North Dakota Insurance Department lookup (NAIC SBS)](https://sbs.naic.org/solar-web/pages/public/stateBasedSearch.jsf?state=ND)'],
+  ['Texas', '3579947', '[Texas Department of Insurance agent and adjuster lookup (Sircon)](https://www.sircon.com/Texas)'],
 ];
 const faq = [
   { q: 'Is Blue Star Adjusters licensed in California?', a: 'Yes. Our California firm license is CA DOI License No. 6015234, held by Blue Star Adjusters LLC. You can enter that number in the California Department of Insurance license search and see it yourself.' },
-  { q: "How do I check a public adjuster's license?", a: "Use the state regulator's lookup, not the adjuster's own website. In California, the Department of Insurance license search takes a license number. Every one of our six firm licenses is in the table above, next to the lookup for its state." },
+  { q: "How do I check a public adjuster's license?", a: "Use the state regulator's lookup, not the adjuster's own website. In California, the Department of Insurance license search takes a license number. Every one of our nine firm licenses is in the table above, next to the lookup for its state." },
   { q: 'Who will work on my claim?', a: 'A senior adjuster leads every claim, from the first call to the final settlement. Building estimators, inventory specialists and accountants work under that adjuster. The adjuster who walks your property is the one who negotiates it.' },
   { q: 'Do you work for my insurance company?', a: 'No. We represent the insured only. The adjuster your insurer sends works for the insurance company. You always have final say on any settlement.' },
   { q: 'How are you paid?', a: "No upfront cost. We're paid a percentage of what we recover. In California, our fee can never leave you with less than your insurer had already paid before you hired us. The free review costs nothing." },
@@ -46,7 +49,7 @@ const faq = [
     <NoConflict />
     <Founder />
     <Results />
-    <KitTable chip="07" id="wwa-licenses" bg="paper" title="Licensed Public Adjusters in California and Five More States." intro="Blue Star Adjusters LLC holds a public adjusting firm license in six states. Don't take our word for it. Check each number with the state regulator. Some lookups search by license number, others by the name Blue Star Adjusters." head={['State', 'Firm license No.', 'Check it with the regulator']} rows={licenseRows} note="Blue Star Adjusters is a member of PCAPIA." />
+    <KitTable chip="07" id="wwa-licenses" bg="paper" title="Licensed Public Adjusters in California and Eight More States." intro="Blue Star Adjusters LLC holds a public adjusting firm license in nine states. Don't take our word for it. Check each number with the state regulator. Some lookups search by license number, others by the name Blue Star Adjusters." head={['State', 'Firm license No.', 'Check it with the regulator']} rows={licenseRows} note="Blue Star Adjusters is a member of PCAPIA." />
     <WhereWeWork />
     <KitFaq chip="09" id="wwa-faq" bg="paper" title="Questions About Our Public Adjusting Firm in Sacramento" items={faq} />
     <KitProse chip="10" id="wwa-related" bg="white" title="Related" list={['[How a public adjuster works on your claim](/how-it-works/)', '[Why homeowners choose Blue Star](/why-blue-star/)', '[Who we serve](/who-we-serve/)', '[Public adjuster fees, explained](/fees/)']} />

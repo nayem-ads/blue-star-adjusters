@@ -5,15 +5,17 @@ import Button from '../../components/Button.astro';
 import Pic from './Pic.astro';
 import TaglineRule from './TaglineRule.astro';
 import { PHONE_DISPLAY, PHONE_TEL, ROUTES } from '../../data/site';
+const { id = 'cta' } = Astro.props as { id?: string };
+const titleId = `${id}-title`;
 ---
-<section aria-labelledby="cta-title" class="relative bg-ink text-white overflow-hidden h-[720px] lg:h-[704px]" data-node="57:298" data-node-m="63:719">
+<section id={id} aria-labelledby={titleId} class="relative bg-ink text-white overflow-hidden h-[720px] lg:h-[704px]" data-node="57:298" data-node-m="63:719">
   <Pic d="57:299" m="63:720" alt="Burned exercise equipment in the ash of a destroyed home." wrap="absolute inset-0" />
   <div aria-hidden="true" class="absolute inset-0 bg-ink opacity-[.44] lg:bg-black lg:opacity-[.40]"></div>
   <div aria-hidden="true" class="cta-soft absolute bg-ink lg:bg-black left-0 right-0 top-[80px] bottom-0 lg:top-0 lg:right-auto lg:w-[840px]"></div>
   <div class="relative h-full max-w-[1280px] mx-auto px-[20px] pt-[142px] lg:px-[80px] lg:pt-[120px]">
     <div class="flex flex-col items-start gap-[20px] lg:gap-[24px] lg:w-[800px]" data-node="57:302" data-node-m="63:723">
       <TaglineRule node="74:1763" nodeM="74:3683" />
-      <h2 id="cta-title" class="m-0 tm-h2 lg:t-display-l w-full" data-node="57:303" data-node-m="63:724">Call Before the Carrier<br class="hidden lg:inline" /> Sets the Narrative.</h2>
+      <h2 id={titleId} class="m-0 tm-h2 lg:t-display-l w-full" data-node="57:303" data-node-m="63:724">Call Before the Carrier<br class="hidden lg:inline" /> Sets the Narrative.</h2>
       <p class="m-0 tm-body lg:t-lead lg:w-[560px]" data-node="57:304" data-node-m="63:725"><em class="not-italic">Your insurance company has an adjuster protecting their interests. You have the right to one too.</em></p>
       <div class="flex flex-col gap-[12px] w-full pt-[8px] lg:flex-row lg:gap-[16px] lg:w-auto lg:pt-[16px]" data-node="57:305" data-node-m="63:726">
         <Button href={ROUTES.freeClaimReview} variant="on-dark" class="h-[56px] w-full lg:h-[52px] lg:w-auto lg:min-w-[253px]" data-node="57:306" data-node-m="63:727">Schedule a Free Review</Button>

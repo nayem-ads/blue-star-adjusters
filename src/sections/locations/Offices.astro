@@ -7,19 +7,17 @@ import Icon from '../../components/Icon.astro';
 import Img from '../../components/Img.astro';
 import Logo from '../../components/Logo.astro';
 import { ROUTES, telHref } from '../../data/site';
-interface Office { name: string; head?: { label: string; address: string }; address?: string; phone: string; phoneNote?: string; href?: string; link?: string; img?: string; alt?: string }
+interface Office { name: string; head?: { label: string; address: string }; address?: string; license: string; phone: string; phoneNote?: string; href?: string; link?: string; img?: string; alt?: string }
 const offices: Office[] = [
-  { name: 'Sacramento, California.', head: { label: 'Head office.', address: '1610 R Street, Suite 300, Sacramento, California 95811' }, phone: '(916) 507-1005', href: ROUTES.sacramento, link: 'Public adjuster in Sacramento', img: '217:6482', alt: 'Craftsman bungalow under elm trees' },
-  { name: 'Santa Monica, California', phone: '(213) 572-6005', phoneNote: '(Los Angeles line)', href: ROUTES.santaMonica, link: 'Public adjuster in Santa Monica', img: '217:6499', alt: 'Spanish revival home with a palm tree' },
-  { name: 'San Francisco, California', phone: '(628) 300-0741', href: ROUTES.sanFrancisco, link: 'Public adjuster in San Francisco', img: '217:6510', alt: 'Victorian houses on a hill in fog' },
-  { name: 'Newport Beach, California', address: '4695 MacArthur Court, 11th Floor, Newport Beach, California 92660', phone: '(949) 991-1447', href: ROUTES.newportBeach, link: 'Public adjuster in Newport Beach', img: '217:6499', alt: 'Coastal Southern California Spanish revival home' },
-  { name: 'Reno, Nevada', phone: '(775) 993-5511', href: ROUTES.reno, link: 'Public adjuster in Reno', img: '217:6522', alt: 'Mountain modern home with sagebrush' },
-  { name: 'Portland, Oregon', phone: '(971) 610-0741', href: ROUTES.portland, link: 'Public adjuster in Portland', img: '217:6533', alt: 'Cedar shingle Craftsman home in the rain' },
-  { name: 'Seattle, Washington', phone: '(564) 465-4550', href: ROUTES.seattle, link: 'Public adjuster in Seattle', img: '217:6554', alt: 'Cedar modern home among fir trees, overcast sky' },
-  { name: 'Scottsdale, Arizona', phone: '(480) 933-1557', href: ROUTES.scottsdale, link: 'Public adjuster in Scottsdale', img: '217:6565', alt: 'Desert modern home with a saguaro at sunset' },
-  { name: 'Denver, Colorado', address: '2301 Blake Street, Ste 100, Denver, Colorado 80205', phone: '(720) 741-7858', href: ROUTES.denver, link: 'Public adjuster in Denver', img: '217:6522', alt: 'Modern Colorado mountain home' },
-  { name: 'Utah', phone: '(385) 355-7730' },
-  { name: 'Honolulu, Hawaii', phone: '(808) 400-3754' },
+  { name: 'Sacramento, California.', head: { label: 'Head office.', address: '1610 R Street, Suite 300, Sacramento, California 95811' }, license: 'CA DOI License #6015234', phone: '(916) 507-1005', href: ROUTES.sacramento, link: 'Public adjuster in Sacramento', img: '217:6482', alt: 'Craftsman bungalow under elm trees' },
+  { name: 'Santa Monica, California', license: 'CA DOI License #6015234', phone: '(213) 572-6005', phoneNote: '(Los Angeles line)', href: ROUTES.santaMonica, link: 'Public adjuster in Santa Monica', img: '217:6499', alt: 'Spanish revival home with a palm tree' },
+  { name: 'San Francisco, California', license: 'CA DOI License #6015234', phone: '(628) 300-0741', href: ROUTES.sanFrancisco, link: 'Public adjuster in San Francisco', img: '217:6510', alt: 'Victorian houses on a hill in fog' },
+  { name: 'Newport Beach, California', address: '4695 MacArthur Court, 11th Floor, Newport Beach, California 92660', license: 'CA DOI License #6015234', phone: '(949) 991-1447', href: ROUTES.newportBeach, link: 'Public adjuster in Newport Beach', img: '217:6499', alt: 'Coastal Southern California Spanish revival home' },
+  { name: 'Reno, Nevada', license: 'NV License #4263596', phone: '(775) 993-5511', href: ROUTES.reno, link: 'Public adjuster in Reno', img: '217:6522', alt: 'Mountain modern home with sagebrush' },
+  { name: 'Portland, Oregon', license: 'OR License #3004448214', phone: '(971) 610-0741', href: ROUTES.portland, link: 'Public adjuster in Portland', img: '217:6533', alt: 'Cedar shingle Craftsman home in the rain' },
+  { name: 'Seattle, Washington', license: 'WA License #1382428', phone: '(564) 465-4550', href: ROUTES.seattle, link: 'Public adjuster in Seattle', img: '217:6554', alt: 'Cedar modern home among fir trees, overcast sky' },
+  { name: 'Scottsdale, Arizona', license: 'AZ License #3004469742', phone: '(480) 933-1557', href: ROUTES.scottsdale, link: 'Public adjuster in Scottsdale', img: '217:6565', alt: 'Desert modern home with a saguaro at sunset' },
+  { name: 'Denver, Colorado', address: '2301 Blake Street, Ste 100, Denver, Colorado 80205', license: 'CO License #969283', phone: '(720) 741-7858', href: ROUTES.denver, link: 'Public adjuster in Denver', img: '217:6522', alt: 'Modern Colorado mountain home' },
 ];
 const head = ['Office', 'Local number', 'Office page'];
 const tileTitle = 'We represent the insured only.';
@@ -57,6 +55,7 @@ const tileFee = "No upfront cost. We're paid a percentage of what we recover.";
               <span class="block t-body-strong text-navy">{o.name}</span>
               {o.head && <span class="block mt-[4px] t-small text-ink"><span class="t-label text-ink">{o.head.label}</span> {o.head.address}</span>}
               {o.address && <span class="block mt-[4px] t-small text-ink">{o.address}</span>}
+              <span class="block mt-[4px] t-small text-muted tabular-nums">{o.license}</span>
             </th>
             <td class="py-[16px] pr-[24px] align-middle">
               <a href={telHref(o.phone)} class="lc-link inline-flex items-center gap-[8px] t-body-strong text-navy whitespace-nowrap"><Icon name="phone" size={20} class="shrink-0" />{o.phone}</a>
@@ -82,6 +81,7 @@ const tileFee = "No upfront cost. We're paid a percentage of what we recover.";
               <p class="m-0 tm-body-strong text-navy">{o.name}</p>
               {o.head && <p class="m-0 mt-[2px] tm-body text-ink"><span class="tm-label">{o.head.label}</span> {o.head.address}</p>}
               {o.address && <p class="m-0 mt-[2px] tm-body text-ink">{o.address}</p>}
+              <p class="m-0 mt-[2px] tm-body text-muted tabular-nums">{o.license}</p>
             </div>
           </div>
           <div class="mt-[4px] flex flex-col">
@@ -93,7 +93,10 @@ const tileFee = "No upfront cost. We're paid a percentage of what we recover.";
     </ul>
 
     <div class="mt-[40px] lg:mt-[56px] flex flex-col gap-[32px] lg:flex-row lg:items-stretch lg:gap-[64px]">
-      <p class="m-0 text-ink tm-body lg:t-lead lg:flex-1 lg:min-w-0 lg:self-center">Our firm licenses are listed state by state below. Call any line and we'll tell you at the free review whether we can take your claim.</p>
+      <div class="flex flex-col gap-[12px] lg:flex-1 lg:min-w-0 lg:self-center">
+        <p class="m-0 text-ink tm-body lg:t-lead">In Utah (UT License #1141455), call our statewide Utah line at <a href={telHref('(385) 355-7730')} class="lc-link font-semibold text-navy whitespace-nowrap">(385) 355-7730</a>. In North Dakota (ND License #3004515634) and Texas (TX License #3579947), call <a href={telHref('(888) 971-2524')} class="lc-link font-semibold text-navy whitespace-nowrap">(888) 971-2524</a>.</p>
+        <p class="m-0 text-ink tm-body lg:t-body">Our nine firm licenses are listed state by state below. Call any line and we'll tell you at the free review whether we can take your claim.</p>
+      </div>
       <div class="relative overflow-hidden bg-navy rounded-[2px] px-[24px] pt-[32px] pb-[28px] lg:w-[544px] lg:shrink-0 lg:p-[40px]" data-node="217:6574" data-node-m="217:11302">
         <span aria-hidden="true" class="absolute right-[-40px] top-[24px] opacity-[.07] pointer-events-none" data-node="217:6575"><Logo variant="mark-white" bare width={214.1} height={260} label="" /></span>
         <p class="relative m-0 tm-h2 lg:t-h3 text-white" data-node="217:6581" data-node-m="217:11308">{tileTitle}</p>

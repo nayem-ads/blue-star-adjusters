@@ -19,7 +19,7 @@ const body = [
     </div>
     <div class="bs-kit-prose lg:flex-1 lg:min-w-0">
       {body.map((p) => <p class="m-0 text-ink tm-body lg:t-lead">{p}</p>)}
-      <div class="mt-[32px] lg:mt-[40px] flex flex-col gap-[12px] lg:flex-row lg:gap-[16px] lg:w-fit">
+      <div class="mt-[32px] lg:mt-[40px] flex flex-col gap-[12px] lg:flex-row lg:flex-wrap lg:gap-[16px]">
         <Button href={ROUTES.freeClaimReview} variant="solid" class="max-lg:w-full max-lg:h-[56px] lg:w-[253px]">Schedule a Free Review</Button>
         <Button href={PHONE_TEL} variant="outline" icon="phone" class="max-lg:w-full max-lg:h-[56px] lg:w-[235px]">Call {PHONE_DISPLAY}</Button>
       </div>

@@ -1,5 +1,5 @@
 ---
-// Offices: Is There a Public Adjuster Near Me? (Figma Homepage v2 482:1883), ten offices; Utah, Hawaii and Colorado have no page (plain text). Desktop 57:281, mobile 63:697.
+// Offices: Is There a Public Adjuster Near Me? (Figma Homepage v2 482:1883), nine offices across active firm-licensed states. Desktop 57:281, mobile 63:697.
 import Icon from '../../components/Icon.astro';
 import Button from '../../components/Button.astro';
 import FactChip from './FactChip.astro';
@@ -15,8 +15,6 @@ const offices = [
   { name: 'Seattle', w: 'lg:min-w-[199px]', href: '/locations/washington/seattle/', d: ['74:1714', '57:296'], m: ['63:711', '63:712'] },
   { name: 'Scottsdale', w: 'lg:min-w-[281px]', href: '/locations/arizona/scottsdale/', d: ['74:1718', '57:297'], m: ['63:713', '63:714'] },
   { name: 'Denver', w: 'lg:min-w-[234px]', href: '/locations/colorado/denver/', d: ['', ''], m: ['', ''] },
-  { name: 'Utah', w: 'lg:min-w-[156px]', href: '', d: ['', ''], m: ['', ''] },
-  { name: 'Hawaii', w: 'lg:min-w-[199px]', href: '', d: ['', ''], m: ['', ''] },
 ];
 ---
 <section aria-labelledby="offices-title" class="relative bg-white overflow-hidden" data-node="57:281" data-node-m="63:697">
@@ -30,10 +28,10 @@ const offices = [
       </div>
       <div class="contents lg:flex lg:flex-col lg:items-start lg:gap-[20px] lg:w-[400px] lg:shrink-0" data-node="57:284">
         <ul class="order-4 lg:order-none self-start m-0 p-0 list-none flex flex-wrap gap-[12px]" data-node="74:1722" data-node-m="74:3671">
-          <li><FactChip icon="map-pin" node="74:1723" nodeM="74:3672">11 offices</FactChip></li>
+          <li><FactChip icon="map-pin" node="74:1723" nodeM="74:3672">9 offices</FactChip></li>
           <li><FactChip icon="document" node="74:1728" nodeM="74:3677">9 licensed states</FactChip></li>
         </ul>
-        <p class="order-5 lg:order-none m-0 tm-body lg:t-small text-ink" data-node="57:285" data-node-m="63:699">Offices from Hawaii to Denver, and from Newport Beach to Seattle. We know your community, your local codes and your local contractors.</p>
+        <p class="order-5 lg:order-none m-0 tm-body lg:t-small text-ink" data-node="57:285" data-node-m="63:699">Offices from Newport Beach and Santa Monica to Seattle, Scottsdale and Denver. We know your community, your local codes and your local contractors.</p>
         <p class="order-6 lg:order-none m-0 tm-body lg:t-small text-ink">Looking for a public adjuster in California? Our California offices are in Sacramento, San Francisco, Santa Monica and Newport Beach. Head office: 1610 R Street, Suite 300, Sacramento, California 95811.</p>
       </div>
     </div>

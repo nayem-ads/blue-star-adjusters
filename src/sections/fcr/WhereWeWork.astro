@@ -1,5 +1,5 @@
 ---
-// "Where we work" panel (85:3246): offices line + the six licensed states (RULES 1; Utah and Hawaii are offices only, no firm license).
+// "Where we work" panel (85:3246): nine offices + nine firm-licensed states.
 // variant d = desktop sidebar card, m = mobile panel in FeesSection.
 import IconCircle from './IconCircle.astro';
 interface Props { variant: 'd'|'m' }
@@ -12,6 +12,6 @@ const txt = d ? 'm-0 font-body font-medium text-[15px] leading-[24px] text-ink' 
     <IconCircle name="map-pin" />
     <h2 class:list={['m-0 text-navy whitespace-nowrap', d ? 't-body-strong' : 'tm-body-strong']}>Where we work</h2>
   </div>
-  <p class={txt}>Santa Monica, Sacramento, San Francisco, Newport Beach, Reno, Portland, Seattle, Scottsdale and Denver, plus Utah and Hawaii.</p>
-  <p class={txt}>Firm licenses: California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, North Dakota and Texas. <a href="/locations/" class="text-royal underline underline-offset-[3px] hover:text-navy">Offices and local numbers</a></p>
+  <p class={txt}>Offices in Santa Monica, Sacramento, San Francisco, Newport Beach, Reno, Portland, Seattle, Scottsdale and Denver.</p>
+  <p class:list={[txt, 'tabular-nums']}>Firm licenses: CA DOI #6015234 · NV #4263596 · OR #3004448214 · WA #1382428 · AZ #3004469742 · CO #969283 · UT #1141455 · ND #3004515634 · TX #3579947. <a href="/locations/" class="text-royal underline underline-offset-[3px] hover:text-navy">Offices and local numbers</a></p>
 </div>

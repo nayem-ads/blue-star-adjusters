@@ -85,7 +85,7 @@ const HOURS = [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tu
 const HEAD_ADDRESS = { '@type': 'PostalAddress', streetAddress: '1610 R Street, Suite 300', addressLocality: 'Sacramento', addressRegion: 'CA', postalCode: '95811', addressCountry: 'US' };
 const NEWPORT_ADDRESS = { '@type': 'PostalAddress', streetAddress: '4695 MacArthur Court, 11th Floor', addressLocality: 'Newport Beach', addressRegion: 'CA', postalCode: '92660', addressCountry: 'US' };
 const DENVER_ADDRESS = { '@type': 'PostalAddress', streetAddress: '2301 Blake Street, Ste 100', addressLocality: 'Denver', addressRegion: 'CO', postalCode: '80205', addressCountry: 'US' };
-const STATES_SERVED = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Colorado', 'Utah', 'North Dakota', 'Texas', 'Hawaii'].map((name) => ({ '@type': 'State', name }));
+const STATES_SERVED = ['California', 'Nevada', 'Oregon', 'Washington', 'Arizona', 'Colorado', 'Utah', 'North Dakota', 'Texas'].map((name) => ({ '@type': 'State', name }));
 const ASSOCIATIONS = [
   { '@type': 'Organization', name: 'National Association of Public Insurance Adjusters (NAPIA)', url: 'https://www.napia.com/' },
   { '@type': 'Organization', name: 'Pacific Coast Association of Public Insurance Adjusters (PCAPIA)', url: 'https://www.pcapia.org/' },
@@ -123,7 +123,7 @@ const ORG = {
     telephone: '+1-888-971-2524',
     email: 'mike@bluestaradjusters.com',
     contactType: 'customer service',
-    areaServed: ['US-CA', 'US-NV', 'US-OR', 'US-WA', 'US-AZ', 'US-CO', 'US-UT', 'US-ND', 'US-TX', 'US-HI'],
+    areaServed: ['US-CA', 'US-NV', 'US-OR', 'US-WA', 'US-AZ', 'US-CO', 'US-UT', 'US-ND', 'US-TX'],
     availableLanguage: ['English'],
   }],
   founder: { '@id': PERSON_ID },
@@ -422,7 +422,7 @@ export default function seoSchema() {
 
         const llmsHeader = `# Blue Star Adjusters
 
-> Blue Star Adjusters LLC is a licensed public adjusting firm representing policyholders (homeowners and businesses)—never insurance companies—on property damage insurance claims across California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, North Dakota, Texas, and Hawaii. A senior adjuster leads every claim from initial review to final settlement. No upfront cost; contingency fee based on recovery.
+> Blue Star Adjusters LLC is a licensed public adjusting firm representing policyholders (homeowners and businesses)—never insurance companies—on property damage insurance claims across California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, North Dakota, and Texas. A senior adjuster leads every claim from initial review to final settlement. No upfront cost; contingency fee based on recovery.
 
 ## Firm Details & Verified Licenses
 - **Founding Principal:** Michael Rapport
@@ -443,7 +443,7 @@ export default function seoSchema() {
   - Utah: Firm License No. 1141455
   - North Dakota: Firm License No. 3004515634
   - Texas: Firm License No. 3579947
-- **Local Office Lines:**
+- **Local Office Lines (9 Offices):**
   - Sacramento, CA: (916) 507-1005
   - Santa Monica / Los Angeles, CA: (213) 572-6005
   - San Francisco, CA: (628) 300-0741
@@ -453,8 +453,9 @@ export default function seoSchema() {
   - Seattle, WA: (564) 465-4550
   - Scottsdale, AZ: (480) 933-1557
   - Denver, CO: (720) 741-7858
-  - Utah: (385) 355-7730
-  - Honolulu, HI: (808) 400-3754
+- **Statewide Lines:**
+  - Utah Statewide Line: (385) 355-7730
+  - North Dakota & Texas Toll-Free Line: (888) 971-2524
 `;
 
         const llmsPages = live.map((p) => `- [${p.title}](${SITE}${p.route}): ${p.desc}`).join('\n');

@@ -17,6 +17,7 @@ const faqs = [
   { q: 'What should I send?', a: 'Your policy, the carrier’s letters and photos, if you have them. All optional. You can also send them after the first call.' },
 ];
 const sub = 'font-body font-medium text-[15px] leading-[24px] text-ink';
+const formHref = Astro.url.pathname.includes('thank-you') ? '/free-claim-review/#fcr-form' : '#fcr-form';
 ---
 <section aria-labelledby="fcr-faq" class="bg-white">
   <div class="max-w-[1280px] mx-auto flex flex-col gap-[24px] px-[20px] pt-[64px] pb-[56px] lg:flex-row lg:items-start lg:gap-[32px] lg:px-[80px] lg:py-[120px]" data-node="73:2817" data-node-m="74:4438">
@@ -24,7 +25,7 @@ const sub = 'font-body font-medium text-[15px] leading-[24px] text-ink';
       <h2 id="fcr-faq" class="m-0 w-full tm-h2 lg:t-h2 text-navy" data-node="73:2819" data-node-m="74:4439">Your Questions.<br />Straight Answers.</h2>
       <DimLine class="hidden lg:flex" node="73:2820" />
       <p class="m-0 w-full order-3 lg:order-none tm-body-strong lg:t-body-strong text-ink" data-node="73:2826" data-node-m="74:4473">Still have a question?</p>
-      <Button href="#fcr-form" class="order-4 lg:order-none w-full h-[56px] lg:w-auto lg:h-[52px]" data-node="73:2828" data-node-m="74:4474">Request My Review</Button>
+      <Button href={formHref} class="order-4 lg:order-none w-full h-[56px] lg:w-auto lg:h-[52px]" data-node="73:2828" data-node-m="74:4474">Request My Review</Button>
       <div class="order-5 lg:order-none flex flex-col gap-[20px] lg:gap-[24px] pt-[8px] w-full" data-node="85:3187">
         <div class="flex gap-[16px] items-center">
           <IconCircle name="phone" />

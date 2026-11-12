@@ -6,6 +6,18 @@ export const telHref = (display: string) => 'tel:+1' + display.replace(/\D/g, ''
 export const LICENSE = 'CA DOI License No. 6015234';
 export const ADDRESS = '1610 R Street, Suite 300, Sacramento, California 95811';
 
+export const FIRM_LICENSES = [
+  { state: 'California', code: 'CA', no: '6015234', label: 'CA DOI License #6015234' },
+  { state: 'Nevada', code: 'NV', no: '4263596', label: 'NV License #4263596' },
+  { state: 'Oregon', code: 'OR', no: '3004448214', label: 'OR License #3004448214' },
+  { state: 'Washington', code: 'WA', no: '1382428', label: 'WA License #1382428' },
+  { state: 'Arizona', code: 'AZ', no: '3004469742', label: 'AZ License #3004469742' },
+  { state: 'Colorado', code: 'CO', no: '969283', label: 'CO License #969283' },
+  { state: 'Utah', code: 'UT', no: '1141455', label: 'UT License #1141455' },
+  { state: 'North Dakota', code: 'ND', no: '3004515634', label: 'ND License #3004515634' },
+  { state: 'Texas', code: 'TX', no: '3579947', label: 'TX License #3579947' },
+] as const;
+
 export const ROUTES = {
   home: '/',
   homeB: '/home-b/',

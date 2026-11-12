@@ -1,7 +1,7 @@
 ---
-// 04 Seven Offices: desktop 128:5008 (1280×1252), mobile 135:1531 (390×912).
-// Desktop: head-office column (Sacramento + intro) and two rows of three. Mobile: intro in the head, then a
-// horizontal scroller with all 7 cards (spec 135:4814) and a position indicator (CSS scroll-driven, no JS).
+// 04 Nine Offices: desktop 128:5008 (1280×1252), mobile 135:1531 (390×912).
+// Desktop: head-office column (Sacramento + intro) and rows of three. Mobile: intro in the head, then a
+// horizontal scroller with all 9 cards (spec 135:4814) and a position indicator (CSS scroll-driven, no JS).
 import images from '../../data/images.json';
 import SectionIndex from './SectionIndex.astro';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../data/site';
@@ -10,32 +10,32 @@ type Office = { city: string; state: string; href: string; note: string; alt: st
   d: { card: string; photo: string; img: string; tags: string; city: string; note: string; area: string }; m: string;
   mm?: { card: string; photo: string; img: string; tags: string; city: string; note: string } };
 const offices: Office[] = [
-  { city: 'Sacramento', state: 'CA', head: true, href: '/locations/california/sacramento/', note: '1610 R Street, Suite 300.',
+  { city: 'Sacramento', state: 'CA', head: true, href: '/locations/california/sacramento/', note: '1610 R Street, Suite 300 · CA DOI License #6015234.',
     alt: 'Sacramento neighbourhood home, exterior.',
     d: { card: '128:5028', photo: '128:5029', img: '128:5030', tags: '128:5032', city: '128:5037', note: '128:5038', area: 'ct-a-sac' }, m: '135:4817',
     mm: { card: '135:1550', photo: '135:1551', img: '135:1552', tags: '135:1556', city: '135:1555', note: '135:1561' } },
-  { city: 'Santa Monica', state: 'CA', href: '/locations/california/santa-monica/', note: '',
+  { city: 'Santa Monica', state: 'CA', href: '/locations/california/santa-monica/', note: 'CA DOI License #6015234.',
     alt: 'A Spanish revival home with a palm tree in Santa Monica.',
     d: { card: '128:5255', photo: '128:5256', img: '128:5257', tags: '128:5261', city: '128:5264', note: '128:5265', area: 'ct-a-1' }, m: '135:4831' },
-  { city: 'San Francisco', state: 'CA', href: '/locations/california/san-francisco/', note: 'In San Francisco, the code sets the rebuild scope, not what burned.',
+  { city: 'San Francisco', state: 'CA', href: '/locations/california/san-francisco/', note: 'In San Francisco, the code sets the rebuild scope, not what burned. CA DOI License #6015234.',
     alt: 'Victorian houses on a San Francisco hill in fog.',
     d: { card: '128:5266', photo: '128:5267', img: '128:5268', tags: '128:5272', city: '128:5275', note: '128:5276', area: 'ct-a-2' }, m: '135:4843' },
-  { city: 'Reno', state: 'NV', href: '/locations/nevada/reno/', note: 'Nevada bars adjusters from giving legal advice. When your claim needs counsel, we work alongside your attorney.',
+  { city: 'Reno', state: 'NV', href: '/locations/nevada/reno/', note: 'Nevada bars adjusters from giving legal advice. When your claim needs counsel, we work alongside your attorney. NV License #4263596.',
     alt: 'A mountain modern home among sagebrush near Reno.',
     d: { card: '128:5277', photo: '128:5278', img: '128:5279', tags: '128:5283', city: '128:5286', note: '128:5287', area: 'ct-a-3' }, m: '135:4855' },
-  { city: 'Portland', state: 'OR', href: '/locations/oregon/portland/', note: 'Our Oregon firm license is 3004448214.',
+  { city: 'Portland', state: 'OR', href: '/locations/oregon/portland/', note: 'OR License #3004448214.',
     alt: 'A cedar shingle Craftsman home in the Portland rain.',
     d: { card: '128:5289', photo: '128:5290', img: '128:5291', tags: '128:5295', city: '128:5298', note: '128:5299', area: 'ct-a-4' }, m: '135:4867' },
-  { city: 'Seattle', state: 'WA', href: '/locations/washington/seattle/', note: 'Underinsurance is common here.',
+  { city: 'Seattle', state: 'WA', href: '/locations/washington/seattle/', note: 'Underinsurance is common here. WA License #1382428.',
     alt: 'A cedar modern home among firs under an overcast Seattle sky.',
     d: { card: '128:5300', photo: '128:5301', img: '128:5302', tags: '128:5306', city: '128:5309', note: '128:5310', area: 'ct-a-5' }, m: '135:4879' },
-  { city: 'Scottsdale', state: 'AZ', href: '/locations/arizona/scottsdale/', note: 'We measure and negotiate. Your contractor builds.',
+  { city: 'Scottsdale', state: 'AZ', href: '/locations/arizona/scottsdale/', note: 'We measure and negotiate. Your contractor builds. AZ License #3004469742.',
     alt: 'A desert modern home with a saguaro at sunset in Scottsdale.',
     d: { card: '128:5311', photo: '128:5312', img: '128:5313', tags: '128:5317', city: '128:5320', note: '128:5321', area: 'ct-a-6' }, m: '135:4891' },
-  { city: 'Newport Beach', state: 'CA', href: '/locations/california/newport-beach/', note: '4695 MacArthur Court, 11th Floor.',
+  { city: 'Newport Beach', state: 'CA', href: '/locations/california/newport-beach/', note: '4695 MacArthur Court, 11th Floor · CA DOI License #6015234.',
     alt: 'A coastal Southern California home with palm trees in Newport Beach.',
     d: { card: '', photo: '', img: '128:5257', tags: '', city: '', note: '', area: 'ct-a-7' }, m: '135:4831' },
-  { city: 'Denver', state: 'CO', href: '/locations/colorado/denver/', note: '2301 Blake Street, Ste 100. Our Colorado firm license is 969283.',
+  { city: 'Denver', state: 'CO', href: '/locations/colorado/denver/', note: '2301 Blake Street, Ste 100 · CO License #969283.',
     alt: 'A modern Colorado home near Denver.',
     d: { card: '', photo: '', img: '128:5279', tags: '', city: '', note: '', area: 'ct-a-8' }, m: '135:4855' },
 ];
@@ -46,7 +46,7 @@ const states = [
 ];
 const chipW: Record<string, [number, number]> = { CA: [36, 34], NV: [37, 35], OR: [37, 36], WA: [41, 39], AZ: [35, 34], CO: [36, 34], 'Head office': [95, 89] };
 const cw = (k: string) => `--w:${chipW[k][0]}px;--wm:${chipW[k][1]}px`;
-const intro = 'With offices in Santa Monica, Sacramento, San Francisco, Newport Beach, Reno, Portland, Seattle, Scottsdale, and Denver, plus Utah and Hawaii, we know your community, your local codes, and your local contractors.';
+const intro = 'With offices in Santa Monica, Sacramento, San Francisco, Newport Beach, Reno, Portland, Seattle, Scottsdale, and Denver, we know your community, your local codes, and your local contractors.';
 ---
 <section aria-labelledby="ct-offices-h" class="ct-offices bg-white" data-node="128:5008" data-node-m="135:1531">
   <div class="max-w-[1280px] mx-auto px-[20px] pt-[64px] pb-[56px] lg:px-[80px] lg:pt-[120px] lg:pb-[120px]">
@@ -95,8 +95,8 @@ const intro = 'With offices in Santa Monica, Sacramento, San Francisco, Newport 
     </div>
 
     <div class="mt-[40px] lg:mt-[64px] border-t-2 border-navy pt-[24px] lg:pt-[32px] lg:flex lg:gap-[48px] lg:items-start">
-      <p class="m-0 tm-h3 lg:t-h3 text-navy lg:w-[368px] lg:shrink-0">Utah and Hawaii.</p>
-      <p class="m-0 mt-[12px] lg:mt-[4px] tm-body lg:t-body text-ink">Firm licenses: California, Nevada, Oregon, Washington, Arizona, Colorado, Utah, North Dakota and Texas. <a href="/locations/" class="ct-inl">See every license number by state</a></p>
+      <p class="m-0 tm-h3 lg:t-h3 text-navy lg:w-[368px] lg:shrink-0">Utah, North Dakota and Texas.</p>
+      <p class="m-0 mt-[12px] lg:mt-[4px] tm-body lg:t-body text-ink tabular-nums">Utah statewide line: <a href="tel:+13853557730" class="ct-inl">(385) 355-7730</a> · North Dakota and Texas: <a href={PHONE_TEL} class="ct-inl">{PHONE_DISPLAY}</a>. Firm licenses: CA DOI #6015234 · NV #4263596 · OR #3004448214 · WA #1382428 · AZ #3004469742 · CO #969283 · UT #1141455 · ND #3004515634 · TX #3579947. <a href="/locations/" class="ct-inl">See all offices and state rules</a></p>
     </div>
   </div>
 </section>
